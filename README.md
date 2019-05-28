@@ -1,7 +1,7 @@
 # ethereum
 Examples related to ethereum
 
-![](architecture/ethereum.svg)
+![](architecture/Ethereum.svg)
 
 
 | Ethereum Concepts   | Instances                | More info (text) | More info (video) |   Install  |  Examples |

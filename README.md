@@ -6,7 +6,7 @@ Examples related to ethereum
 
 | Ethereum Concepts | Instances                | More info (text) | More info (video) |   Install  |  Examples |
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
-| General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]   |  [youtube-exp]
+| General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
 | Dvelopment tools | [consensys-dev]
 
@@ -17,7 +17,7 @@ Examples related to ethereum
 [youtube-exp]:  https://www.youtube.com/results?search_query=ethereum+explained
 [youtube-arch]: https://www.youtube.com/results?search_query=ethereum+architecture
 [consensys-dev]: https://ethereum.consensys.net/
-
+[basics]:       https://consensys.net/academy/blockchain-basics-book/
 
 | Building blocks   | Instances                              | Github | Documentation |
 | ---------------   |  ---------                             | ------ | --------------|

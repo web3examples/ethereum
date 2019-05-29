@@ -6,7 +6,7 @@ Examples related to ethereum
 
 | Ethereum Concepts | Instances                | More info (text) | More info (video) |   Install  |  Examples |
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
-| General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]   |  [youtube-exp]
+| General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
 | Development tools | [consensys-dev]
 | Full node software | [trinity]
@@ -20,7 +20,8 @@ Examples related to ethereum
 [youtube-arch]:  https://www.youtube.com/results?search_query=ethereum+architecture
 [consensys-dev]: https://ethereum.consensys.net/
 [basics]:        https://consensys.net/academy/blockchain-basics-book/
-[trinity]:       https://trinity-client.readthedocs.io/en/latest/
+[ethdocs]:       http://www.ethdocs.org
+[trinity]:       https://trinity-client.readthedocs.io
 
 | Building blocks   | Instances                              | Github | Documentation |
 | ---------------   |  ---------                             | ------ | --------------|

@@ -33,5 +33,10 @@ Examples related to ethereum
 
 | Ethereum Applications | Instance            |  Github |
 | ---------------   |  ---------          | ------- |
+| Games              | [cheezewiz]<br>[cryptokit]
 
+
+
+[cheezewiz]: https://www.cheezewizards.com/
+[cryptokit]: https://www.cryptokitties.co/
 

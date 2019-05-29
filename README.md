@@ -8,7 +8,7 @@ Examples related to ethereum
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
 | General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
-| Development tools | [consensys-dev]
+| Development tools | [consensys-dev]           | [eth-devnews]
 | Full node software | [trinity]  | [client-overview]
 | Development of ethereum itself | [eth-mag]
 
@@ -24,6 +24,7 @@ Examples related to ethereum
 [trinity]:         https://trinity-client.readthedocs.io
 [client-overview]: http://www.ethdocs.org/en/latest/ethereum-clients
 [eth-mag]:         https://ethereum-magicians.org/
+[eth-devnews]:     https://weekinethereumnews.com/
 
 
 | Building blocks   | Instances                              | Github | Documentation |

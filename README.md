@@ -10,7 +10,7 @@ Examples related to ethereum
 | Architecture    |                             |                   | [youtube-arch]
 | Development tools | [consensys-dev]
 | Full node software | [trinity]  | [client-overview]
-
+| Development of ethereum itself | [eth-mag]
 
 [ethereum.org]:    https://www.ethereum.org/
 [eth-intro]:       https://medium.com/coinmonks/https-medium-com-ritesh-modi-solidity-chapter1-63dfaff08a11
@@ -23,7 +23,7 @@ Examples related to ethereum
 [ethdocs]:         http://www.ethdocs.org
 [trinity]:         https://trinity-client.readthedocs.io
 [client-overview]: http://www.ethdocs.org/en/latest/ethereum-clients
-
+[eth-mag]:         https://ethereum-magicians.org/
 
 
 | Building blocks   | Instances                              | Github | Documentation |

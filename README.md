@@ -8,8 +8,9 @@ Examples related to ethereum
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
 | General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
-| Development tools | [consensys-dev]           | [eth-devnews]
-| Full node software | [trinity]  | [client-overview]
+| Full node software | [trinity] 
+Geth<br>Parity Ethereum<br>Aleth/eth<br>Trinity/PyEVM<br>EthereumJS<br>EthereumJ/Harmony<br>Pantheon<br>Turbo Geth<br>Nimbus<br> Mana/Exthereum<br>Mantis<br>Nethereum
+| [client-overview]
 | Development of ethereum itself | [eth-mag]
 
 [ethereum.org]:    https://www.ethereum.org/
@@ -23,20 +24,49 @@ Examples related to ethereum
 [ethdocs]:         http://www.ethdocs.org
 [trinity]:         https://trinity-client.readthedocs.io
 [client-overview]: http://www.ethdocs.org/en/latest/ethereum-clients
+https://pegasys.tech/solutions/
+
 [eth-mag]:         https://ethereum-magicians.org/
 [eth-devnews]:     https://weekinethereumnews.com/
+
+| Development tools     | Instances                              | Github         | Documentation |
+| ---------------       |  ---------                             | ------         | --------------|
+| General info          | [consensys-dev]                        | [eth-devnews]
 
 
 | Building blocks   | Instances                              | Github | Documentation |
 | ---------------   |  ---------                             | ------ | --------------|
+| Blockchain access | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
+| Deploy            | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
+| Tools             | [pocketh]
+
+
+[infura]:         https://mainnet.infura.io/
+[infura-github]:  https://github.com/INFURA
+[blockcypher]:    https://www.blockcypher.com/
+[blc-github]:     https://github.com/blockcypher
+[zeppelinos]:     https://zeppelinos.org/
+[zep-github]:     https://github.com/zeppelinos
+[zep-docu]:       https://blog.zeppelinos.org/
+[truffle]:        https://truffleframework.com/
+[truffle-github]: https://github.com/trufflesuite/truffle
+[truffle-docu]:   https://truffleframework.com/docs
+[pocketh]:        https://github.com/ajsantander/pocketh
+
+
 
 
 | Ethereum Applications | Instance            |  Github |
-| ---------------   |  ---------          | ------- |
+| ---------------       |  ---------          | ------- |
 | Games              | [cheezewiz]<br>[cryptokit]
-
-
 
 [cheezewiz]: https://www.cheezewizards.com/
 [cryptokit]: https://www.cryptokitties.co/
+
+
+| Layer 2           | Instance            |  Github |
+| ---------------   |  ---------          | ------- |
+| Plasma
+| State Channels
+| Elastic Sidechains
 

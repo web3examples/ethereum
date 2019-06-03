@@ -8,8 +8,7 @@ Examples related to ethereum
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
 | General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
-| Full node software | [trinity] 
-Geth<br>Parity Ethereum<br>Aleth/eth<br>Trinity/PyEVM<br>EthereumJS<br>EthereumJ/Harmony<br>Pantheon<br>Turbo Geth<br>Nimbus<br> Mana/Exthereum<br>Mantis<br>Nethereum
+| Full node software | Geth<br>Parity Ethereum<br>Aleth/eth<br>[Trinity/PyEVM]<br>EthereumJS<br>EthereumJ/Harmony<br>Pantheon<br>Turbo Geth<br>Nimbus<br> Mana/Exthereum<br>Mantis<br>Nethereum
 | [client-overview]
 | Development of ethereum itself | [eth-mag]
 
@@ -22,7 +21,7 @@ Geth<br>Parity Ethereum<br>Aleth/eth<br>Trinity/PyEVM<br>EthereumJS<br>EthereumJ
 [consensys-dev]:   https://ethereum.consensys.net/
 [basics]:          https://consensys.net/academy/blockchain-basics-book/
 [ethdocs]:         http://www.ethdocs.org
-[trinity]:         https://trinity-client.readthedocs.io
+[Trinity/PyEVM]:         https://trinity-client.readthedocs.io
 [client-overview]: http://www.ethdocs.org/en/latest/ethereum-clients
 https://pegasys.tech/solutions/
 

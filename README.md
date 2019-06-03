@@ -8,9 +8,10 @@ Examples related to ethereum
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
 | General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
-| Full node software | Geth<br>Parity Ethereum<br>Aleth/eth<br>[Trinity/PyEVM]<br>EthereumJS<br>EthereumJ/Harmony<br>Pantheon<br>Turbo Geth<br>Nimbus<br> Mana/Exthereum<br>Mantis<br>Nethereum
-| [client-overview]
+| Full node software | | [client-overview] [understand nodes]
 | Development of ethereum itself | [eth-mag]
+| Wallets
+
 
 [ethereum.org]:    https://www.ethereum.org/
 [eth-intro]:       https://medium.com/coinmonks/https-medium-com-ritesh-modi-solidity-chapter1-63dfaff08a11
@@ -21,12 +22,34 @@ Examples related to ethereum
 [consensys-dev]:   https://ethereum.consensys.net/
 [basics]:          https://consensys.net/academy/blockchain-basics-book/
 [ethdocs]:         http://www.ethdocs.org
-[Trinity/PyEVM]:         https://trinity-client.readthedocs.io
+[Trinity/PyEVM]:   https://trinity-client.readthedocs.io
 [client-overview]: http://www.ethdocs.org/en/latest/ethereum-clients
-https://pegasys.tech/solutions/
-
+[Pantheon]:        https://pegasys.tech/solutions/
+[understand nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 [eth-mag]:         https://ethereum-magicians.org/
 [eth-devnews]:     https://weekinethereumnews.com/
+
+| Ethereum Nodes  | Language |  Github | Documentation |
+| --------------- |  --------| ------  | --------------|
+| Geth	          | Go	     | 
+| Parity	        | Rust	
+| cpp-ethereum	  | C++	
+| [Trinity/PyEVM] |	Python	
+| EthereumJS      |	JavaScript	
+| Ethereum(J)	    | Java
+| Harmony         |	Java	
+| Pantheon      	| Java	
+| ruby-ethereum	  | Ruby	
+| ethereumH	      | Haskell
+| Quorum	        | Go 
+| Exthereum	      | Elixir 	
+| Aleth/eth       |
+| Turbo Geth      |
+| Nimbus          |
+| Mana/Exthereum  |
+| Mantis          |
+| Nethereum       |
+
 
 | Development tools     | Instances                              | Github         | Documentation |
 | ---------------       |  ---------                             | ------         | --------------|
@@ -51,8 +74,6 @@ https://pegasys.tech/solutions/
 [truffle-github]: https://github.com/trufflesuite/truffle
 [truffle-docu]:   https://truffleframework.com/docs
 [pocketh]:        https://github.com/ajsantander/pocketh
-
-
 
 
 | Ethereum Applications | Instance            |  Github |

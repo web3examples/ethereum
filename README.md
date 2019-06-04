@@ -19,7 +19,6 @@ Examples related to ethereum
 [eth-fordevs]:     https://blockgeeks.com/guides/?tagfilter=true&filter=Blockchain%20for%20Developers
 [youtube-exp]:     https://www.youtube.com/results?search_query=ethereum+explained
 [youtube-arch]:    https://www.youtube.com/results?search_query=ethereum+architecture
-[consensys-dev]:   https://ethereum.consensys.net/
 [basics]:          https://consensys.net/academy/blockchain-basics-book/
 [ethdocs]:         http://www.ethdocs.org
 [Trinity/PyEVM]:   https://trinity-client.readthedocs.io
@@ -27,7 +26,6 @@ Examples related to ethereum
 [Pantheon]:        https://pegasys.tech/solutions/
 [understand nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 [eth-mag]:         https://ethereum-magicians.org/
-[eth-devnews]:     https://weekinethereumnews.com/
 
 | Ethereum Nodes  | Language |  Github | Documentation |
 | --------------- |  --------| ------  | --------------|
@@ -53,16 +51,15 @@ Examples related to ethereum
 
 | Development tools     | Instances                              | Github         | Documentation |
 | ---------------       |  ---------                             | ------         | --------------|
-| General info          | [consensys-dev]                        | [eth-devnews]
-
-
-| Building blocks   | Instances                              | Github | Documentation |
-| ---------------   |  ---------                             | ------ | --------------|
-| Blockchain access | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
-| Deploy            | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
+| General info          | [consensys-dev]                        | [eth-devnews]<br>[tool-list]
 | Tools             | [pocketh]
+| Deploy            | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
+| Blockchain access | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
 
-
+[consensys-dev]:  https://ethereum.consensys.net/
+[eth-devnews]:    https://weekinethereumnews.com/
+[tool-list]:      https://github.com/ConsenSys/ethereum-developer-tools-list
+[pocketh]:        https://github.com/ajsantander/pocketh
 [infura]:         https://mainnet.infura.io/
 [infura-github]:  https://github.com/INFURA
 [blockcypher]:    https://www.blockcypher.com/
@@ -73,7 +70,11 @@ Examples related to ethereum
 [truffle]:        https://truffleframework.com/
 [truffle-github]: https://github.com/trufflesuite/truffle
 [truffle-docu]:   https://truffleframework.com/docs
-[pocketh]:        https://github.com/ajsantander/pocketh
+
+
+| Building blocks   | Instances                              | Github | Documentation |
+| ---------------   |  ---------                             | ------ | --------------|
+
 
 
 | Ethereum Applications | Instance            |  Github |

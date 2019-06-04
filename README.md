@@ -52,6 +52,7 @@ Examples related to ethereum
 | Development tools     | Instances                              | Github         | Documentation |
 | ---------------       |  ---------                             | ------         | --------------|
 | General info          | [consensys-dev]                        | [eth-devnews]<br>[tool-list]
+] Programming languages | [solidity-docs]
 | Tools             | [pocketh]
 | Deploy            | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
 | Blockchain access | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
@@ -70,7 +71,7 @@ Examples related to ethereum
 [truffle]:        https://truffleframework.com/
 [truffle-github]: https://github.com/trufflesuite/truffle
 [truffle-docu]:   https://truffleframework.com/docs
-
+[solidity-docs]:  https://solidity.readthedocs.io
 
 | Building blocks   | Instances                              | Github | Documentation |
 | ---------------   |  ---------                             | ------ | --------------|

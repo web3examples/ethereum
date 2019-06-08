@@ -11,6 +11,7 @@ Examples related to ethereum
 | Full node software | | [client-overview] [understand nodes]
 | Development of ethereum itself | [eth-mag]
 | Wallets
+| Name services   | [ens]                          | [ens-tutorial] | [youtube-ens]     | [ens-manager] 
 
 
 [ethereum.org]:    https://www.ethereum.org/
@@ -26,6 +27,10 @@ Examples related to ethereum
 [Pantheon]:        https://pegasys.tech/solutions/
 [understand nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 [eth-mag]:         https://ethereum-magicians.org/
+[ens]:             https://ens.domains/
+[ens-tutorial]:    https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial
+[youtube-ens]:     https://www.youtube.com/results?search_query=ens+ethereum
+[ens-manager]:     https://manager.ens.domains/
 
 | Ethereum Nodes  | Language |  Github | Documentation |
 | --------------- |  --------| ------  | --------------|

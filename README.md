@@ -6,7 +6,7 @@ Examples related to ethereum
 
 | Ethereum Concepts | Instances                | More info (text) | More info (video) |   Install  |  Examples |
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
-| General info    |    |   [ethereum.org]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
+| General info    |    |   [ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
 | Full node software | | [client-overview] [understand nodes]
 | Development of ethereum itself | [eth-mag]
@@ -14,6 +14,7 @@ Examples related to ethereum
 | Name services   | [ens]                          | [ens-tutorial] | [youtube-ens]     | [ens-manager] 
 
 
+[ethhub]:          https://docs.ethhub.io/
 [ethereum.org]:    https://www.ethereum.org/
 [eth-intro]:       https://medium.com/coinmonks/https-medium-com-ritesh-modi-solidity-chapter1-63dfaff08a11
 [eth-guide]:       https://blockgeeks.com/guides/ethereum/

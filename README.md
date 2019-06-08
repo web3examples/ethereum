@@ -73,21 +73,23 @@ Examples related to ethereum
 [truffle-docu]:   https://truffleframework.com/docs
 [solidity-docs]:  https://solidity.readthedocs.io
 
-| Networks        | Eth Faucet                                     | Erc-20 Faucet | Blockexplorer |
+| [Networks]      | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |
 | --------------- |  ---------                                     | ------        |   ----         |
-| Mainnet         |  -                                             | -             |
+| Mainnet         |  -                                             | -             | [etherscan]
 | Ropsten         | [metamask-faucet]<br>[ropsten-faucet]          |               | [etherscan-ropsten]
 | Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]  | [etherscan-kovan]
 | Rinkeby         |                                                |               | [etherscan-rinkeby] 
-| Goerli          |                                                |               | [etherscan-goerli]
+| Goerli          | [goerli-faucet]                                |               | [etherscan-goerli]
 | Local testnet
 
+[Networks]:           https://chainid.network/
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
 [kovan-faucet]:       https://faucet.kovan.network/
 [radarrelay]:         https://faucet.kovan.radarrelay.com/
 [tokenpla]:           https://tokenpla.net/asset/kovan/
 [kovan-gitter]:       https://gitter.im/kovan-testnet/faucet
+[goerli-faucet]:      https://goerli-faucet.slock.it/
 [etherscan]:          https://etherscan.io/
 [etherscan-ropsten]:  https://ropsten.etherscan.io/
 [etherscan-rinkeby]:  https://rinkeby.etherscan.io/
@@ -102,10 +104,15 @@ Examples related to ethereum
 
 | Ethereum Applications | Instance            |  Github |
 | ---------------       |  ---------          | ------- |
+[ Overview              | [statofthedapps]<br>[dappradar]<br>[consensys-overview]<>
 | Games              | [cheezewiz]<br>[cryptokit]
 
-[cheezewiz]: https://www.cheezewizards.com/
-[cryptokit]: https://www.cryptokitties.co/
+[consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
+[statofthedapps]:       https://www.stateofthedapps.com/
+[dappradar]:            https://dappradar.com/
+
+[cheezewiz]:            https://www.cheezewizards.com/
+[cryptokit]:            https://www.cryptokitties.co/
 
 
 | Layer 2           | Instance            |  Github |

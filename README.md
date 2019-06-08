@@ -73,6 +73,21 @@ Examples related to ethereum
 [truffle-docu]:   https://truffleframework.com/docs
 [solidity-docs]:  https://solidity.readthedocs.io
 
+| Test networks   | Eth Faucet                                     | Erc-20 Faucet
+| --------------- |  ---------                                     | ------       |
+| Ropsten         | [metamask-faucet]<br>[ropsten-faucet]
+| Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]
+| Rinkeby
+| Goerli
+| Local testnet
+
+[metamask-faucet]: https://faucet.metamask.io
+[ropsten-faucet]:  https://faucet.ropsten.be/
+[kovan-faucet]:    https://faucet.kovan.network/
+[radarrelay]:      https://faucet.kovan.radarrelay.com/
+[tokenpla]:        https://tokenpla.net/asset/kovan/
+[kovan-gitter]:     https://gitter.im/kovan-testnet/faucet
+
 | Building blocks   | Instances                              | Github | Documentation |
 | ---------------   |  ---------                             | ------ | --------------|
 

@@ -73,20 +73,27 @@ Examples related to ethereum
 [truffle-docu]:   https://truffleframework.com/docs
 [solidity-docs]:  https://solidity.readthedocs.io
 
-| Test networks   | Eth Faucet                                     | Erc-20 Faucet
-| --------------- |  ---------                                     | ------       |
-| Ropsten         | [metamask-faucet]<br>[ropsten-faucet]
-| Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]
-| Rinkeby
-| Goerli
+| Networks        | Eth Faucet                                     | Erc-20 Faucet | Blockexplorer |
+| --------------- |  ---------                                     | ------        |   ----         |
+| Mainnet         |  -                                             | -             |
+| Ropsten         | [metamask-faucet]<br>[ropsten-faucet]          |               | [etherscan-ropsten]
+| Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]  | [etherscan-kovan]
+| Rinkeby         |                                                |               | [etherscan-rinkeby] 
+| Goerli          |                                                |               | [etherscan-goerli]
 | Local testnet
 
-[metamask-faucet]: https://faucet.metamask.io
-[ropsten-faucet]:  https://faucet.ropsten.be/
-[kovan-faucet]:    https://faucet.kovan.network/
-[radarrelay]:      https://faucet.kovan.radarrelay.com/
-[tokenpla]:        https://tokenpla.net/asset/kovan/
-[kovan-gitter]:     https://gitter.im/kovan-testnet/faucet
+[metamask-faucet]:    https://faucet.metamask.io
+[ropsten-faucet]:     https://faucet.ropsten.be/
+[kovan-faucet]:       https://faucet.kovan.network/
+[radarrelay]:         https://faucet.kovan.radarrelay.com/
+[tokenpla]:           https://tokenpla.net/asset/kovan/
+[kovan-gitter]:       https://gitter.im/kovan-testnet/faucet
+[etherscan]:          https://etherscan.io/
+[etherscan-ropsten]:  https://ropsten.etherscan.io/
+[etherscan-rinkeby]:  https://rinkeby.etherscan.io/
+[etherscan-kovan]:    https://kovan.etherscan.io/
+[etherscan-goerli]:   https://goerli.etherscan.io/
+
 
 | Building blocks   | Instances                              | Github | Documentation |
 | ---------------   |  ---------                             | ------ | --------------|

@@ -49,14 +49,14 @@ Examples related to ethereum
 | Nethereum       |
 
 
-| Development tools     | Instances                              | Github                        | Documentation |
-| ---------------       |  ---------                             | ------                        | --------------|
+| Development tools     | Instances                              | Github                           | Documentation |
+| ---------------       |  ---------                             | ------                           | --------------|
 | General info          | [consensys-dev]                        | [eth-devnews]
-[ Tools                 | [tool-list]
+| Tools                 | [tool-list]
 | Programming languages | [solidity-docs]
-| Online edit&deploy    | [play-eth]<br>[remix-eth]              |                               | [remix-docu]
-| Deploy            | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
-| Blockchain access | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
+| Online edit&deploy    | [remix-eth]<br>[play-eth]              |                                  | [remix-docu]
+| Deploy                | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
+| Blockchain access     | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
 
 [consensys-dev]:  https://ethereum.consensys.net/
 [eth-devnews]:    https://weekinethereumnews.com/
@@ -81,11 +81,11 @@ Examples related to ethereum
 
 | [Networks]      | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |
 | --------------- |  ---------                                     | ------        |   ----         |
-| Mainnet         |  -                                             | -             | [etherscan]
-| Ropsten         | [metamask-faucet]<br>[ropsten-faucet]          |               | [etherscan-ropsten]
-| Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]  | [etherscan-kovan]
-| Rinkeby         |                                                |               | [etherscan-rinkeby] 
-| Goerli          | [goerli-faucet]                                |               | [etherscan-goerli]
+| Mainnet         |  -                                             | -             | [etherscan]<br>[blockscout]<br>[bloxy]
+| Ropsten         | [metamask-faucet]<br>[ropsten-faucet]          |               | [etherscan-ropsten]<br>[blockscout-ropsten]
+| Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]  | [etherscan-kovan]<br>[blockscout-kovan]
+| Rinkeby         |                                                |               | [etherscan-rinkeby]<br> [blockscout-rinkeby]
+| Goerli          | [goerli-faucet]                                |               | [etherscan-goerli]<br>[blockscout-goerli]
 | Local testnet
 
 [Networks]:           https://chainid.network/
@@ -98,9 +98,17 @@ Examples related to ethereum
 [goerli-faucet]:      https://goerli-faucet.slock.it/
 [etherscan]:          https://etherscan.io/
 [etherscan-ropsten]:  https://ropsten.etherscan.io/
-[etherscan-rinkeby]:  https://rinkeby.etherscan.io/
 [etherscan-kovan]:    https://kovan.etherscan.io/
+[etherscan-rinkeby]:  https://rinkeby.etherscan.io/
 [etherscan-goerli]:   https://goerli.etherscan.io/
+
+[blockscout]: https://blockscout.com/eth/mainnet
+[blockscout-ropsten]: https://blockscout.com/eth/ropsten
+[blockscout-kovan]:   https://blockscout.com/eth/kovan
+[blockscout-rinkeby]: https://blockscout.com/eth/rinkeby
+[blockscout-goerli]:  https://blockscout.com/eth/goerli
+
+[bloxy]:              https://bloxy.info
 
 
 | Building blocks   | Instances                              | Github | Documentation |

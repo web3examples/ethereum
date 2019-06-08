@@ -49,22 +49,23 @@ Examples related to ethereum
 | Nethereum       |
 
 
-| Development tools     | Instances                              | Github         | Documentation |
-| ---------------       |  ---------                             | ------         | --------------|
-| General info          | [consensys-dev]                        | [eth-devnews]<br>[tool-list]
+| Development tools     | Instances                              | Github                        | Documentation |
+| ---------------       |  ---------                             | ------                        | --------------|
+| General info          | [consensys-dev]                        | [eth-devnews]
+[ Tools                 | [tool-list]
 | Programming languages | [solidity-docs]
-| Tools             | [pocketh]
+| Online edit&deploy    | [play-eth]<br>[remix-eth]              |                               | [remix-docu]
 | Deploy            | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
 | Blockchain access | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
 
 [consensys-dev]:  https://ethereum.consensys.net/
 [eth-devnews]:    https://weekinethereumnews.com/
 [tool-list]:      https://github.com/ConsenSys/ethereum-developer-tools-list
-[pocketh]:        https://github.com/ajsantander/pocketh
-[infura]:         https://mainnet.infura.io/
-[infura-github]:  https://github.com/INFURA
-[blockcypher]:    https://www.blockcypher.com/
-[blc-github]:     https://github.com/blockcypher
+
+
+[play-eth]:       https://play.ethereum.org/editor-solidity/
+[remix-eth]:      https://remix.ethereum.org
+[remix-docu]:     https://remix.readthedocs.io
 [zeppelinos]:     https://zeppelinos.org/
 [zep-github]:     https://github.com/zeppelinos
 [zep-docu]:       https://blog.zeppelinos.org/
@@ -72,6 +73,11 @@ Examples related to ethereum
 [truffle-github]: https://github.com/trufflesuite/truffle
 [truffle-docu]:   https://truffleframework.com/docs
 [solidity-docs]:  https://solidity.readthedocs.io
+[infura]:         https://mainnet.infura.io/
+[infura-github]:  https://github.com/INFURA
+[blockcypher]:    https://www.blockcypher.com/
+[blc-github]:     https://github.com/blockcypher
+
 
 | [Networks]      | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |
 | --------------- |  ---------                                     | ------        |   ----         |
@@ -104,11 +110,11 @@ Examples related to ethereum
 
 | Ethereum Applications | Instance            |  Github |
 | ---------------       |  ---------          | ------- |
-[ Overview              | [statofthedapps]<br>[dappradar]<br>[consensys-overview]<>
+| Overview              | [stateofthedapps]<br>[dappradar]<br>[consensys-overview]
 | Games              | [cheezewiz]<br>[cryptokit]
 
 [consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
-[statofthedapps]:       https://www.stateofthedapps.com/
+[stateofthedapps]:      https://www.stateofthedapps.com/
 [dappradar]:            https://dappradar.com/
 
 [cheezewiz]:            https://www.cheezewizards.com/

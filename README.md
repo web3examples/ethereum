@@ -61,10 +61,10 @@ Examples related to ethereum
 | General info          | [consensys-dev]            | [eth-devnews]
 | Tools                 | [tool-list]
 | Programming languages | [solidity-docs]
-| Online edit&deploy    | [remix-eth]<br>[play-eth]  | [remix-docu]      |
-| Deploy &              | [truffle]                  | [truffle-docu]    |                   | [truffle-github]
-| Upgrade contracts     | [zeppelinos]               | [zep-docu]        | [youtube-zep]     | [zep-github]  
-| Blockchain access     | [infura]<br>[blockcypher]  |                   |                    | [infura-github]<br>[blc-github]  |  
+| Online edit&deploy    | [remix-eth]<br>[play-eth]  | [remix-docu]            |
+| Deploy &              | [truffle]                  | [truffle-docu]          |                   | [truffle-github]
+| Upgrade contracts     | [zeppelinos]               | [zep-docu]<br>[sol5-zep]| <span style="color:red"> [youtube-zep] </span>    | [zep-github]  
+| Blockchain access     | [infura]<br>[blockcypher]  |                         |                  | [infura-github]<br>[blc-github]  |  
 
 [consensys-dev]:  https://ethereum.consensys.net/
 [eth-devnews]:    https://weekinethereumnews.com/
@@ -86,6 +86,7 @@ Examples related to ethereum
 [blockcypher]:    https://www.blockcypher.com/
 [blc-github]:     https://github.com/blockcypher
 [youtube-zep]:    https://www.youtube.com/watch?v=kIHKo3DWuUo
+[sol5-zep]:       https://kauri.io/article/315cbd6c71574e2686e15f0a20003089/how-to-write-upgradeable-smart-contracts-with-truffle-5.0-and-zeppelinos-2.0
 
 
 | [Networks]      | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |

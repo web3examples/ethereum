@@ -63,7 +63,7 @@ Examples related to ethereum
 | Programming languages | [solidity-docs]
 | Online edit&deploy    | [remix-eth]<br>[play-eth]  | [remix-docu]            |
 | Deploy               | [truffle]                  | [truffle-docu]          |                   | [truffle-github]
-| Upgrade contracts     | [zeppelinos]               | [zep-docu]<br>[sol5-zep]|  [youtube-zep] #1 | [zep-github]  
+| Upgrade contracts     | [zeppelinos]               | [zep-docu]<br>[sol5-zep]|  [youtube-zep] [#1] #1 GH-1 | [zep-github]  
 | Blockchain access     | [infura]<br>[blockcypher]  |                         |                  | [infura-github]<br>[blc-github]  |  
 
 [consensys-dev]:  https://ethereum.consensys.net/

@@ -14,6 +14,7 @@ Examples related to ethereum
 | Name services   | [ens]                          | [ens-tutorial] | [youtube-ens]     | [ens-manager] 
 
 
+
 [ethhub]:          https://docs.ethhub.io/
 [ethereum.org]:    https://www.ethereum.org/
 [eth-intro]:       https://medium.com/coinmonks/https-medium-com-ritesh-modi-solidity-chapter1-63dfaff08a11
@@ -55,14 +56,15 @@ Examples related to ethereum
 | Nethereum       |
 
 
-| Development tools     | Instances                              | Github                           | Documentation |
-| ---------------       |  ---------                             | ------                           | --------------|
-| General info          | [consensys-dev]                        | [eth-devnews]
+| Development tools     | Instances                  |  More info (text) | More info (video) | Github   | Examples |
+| ---------------       |  ---------                 | ------            | --------------    | ---------| ---------|
+| General info          | [consensys-dev]            | [eth-devnews]
 | Tools                 | [tool-list]
 | Programming languages | [solidity-docs]
-| Online edit&deploy    | [remix-eth]<br>[play-eth]              |                                  | [remix-docu]
-| Deploy                | [truffle]<br>[zeppelinos]              | [truffle-github]<br>[zep-github] | [truffle-docu]<br>[zep-docu]
-| Blockchain access     | [infura]<br>[blockcypher]              | [infura-github]<br>[blc-github]  |  
+| Online edit&deploy    | [remix-eth]<br>[play-eth]  | [remix-docu]      |
+| Deploy &              | [truffle]                  | [truffle-docu]    |                   | [truffle-github]
+| Upgrade contracts     | [zeppelinos]               | [zep-docu]        | [youtube-zep]     | [zep-github]  
+| Blockchain access     | [infura]<br>[blockcypher]  |                   |                    | [infura-github]<br>[blc-github]  |  
 
 [consensys-dev]:  https://ethereum.consensys.net/
 [eth-devnews]:    https://weekinethereumnews.com/
@@ -83,6 +85,7 @@ Examples related to ethereum
 [infura-github]:  https://github.com/INFURA
 [blockcypher]:    https://www.blockcypher.com/
 [blc-github]:     https://github.com/blockcypher
+[youtube-zep]:    https://www.youtube.com/watch?v=kIHKo3DWuUo
 
 
 | [Networks]      | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |

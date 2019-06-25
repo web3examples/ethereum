@@ -63,7 +63,7 @@ Examples related to ethereum
 | Programming languages | [solidity-docs]
 | Online edit&deploy    | [remix-eth]<br>[play-eth]  | [remix-docu]            |
 | Deploy               | [truffle]                  | [truffle-docu]          |                   | [truffle-github]
-| Upgrade contracts     | [zeppelinos]               | [zep-docu]<br>[sol5-zep]|  [youtube-zep] [web3examples/ethereum#1] | [zep-github]  
+| Upgrade contracts     | [zeppelinos]               | [zep-docu]<br>[sol5-zep]|  [youtube-zep] **[i1]** | [zep-github]  
 | Blockchain access     | [infura]<br>[blockcypher]  |                         |                  | [infura-github]<br>[blc-github]  |  
 
 [consensys-dev]:  https://ethereum.consensys.net/
@@ -86,8 +86,8 @@ Examples related to ethereum
 [youtube-zep]:    https://www.youtube.com/watch?v=kIHKo3DWuUo
 [sol5-zep]:       https://kauri.io/article/315cbd6c71574e2686e15f0a20003089/how-to-write-upgradeable-smart-contracts-with-truffle-5.0-and-zeppelinos-2.0
 
-#web3 0.2
-Note: still uses web3.js 0.2
+
+[i1]: https://github.com/web3examples/ethereum/issues/1
 
 | [Networks]      | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |
 | --------------- |  ---------                                     | ------        |   ----         |

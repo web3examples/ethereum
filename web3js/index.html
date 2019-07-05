@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="web3-browserify.js">   </script>  
+    </head>
+
+    <body>
+        <h1>Check web3-browserify.js</h1>   
+        <script type="text/javascript">         
+        console.log(`location.href=${location.href}`);
+     //    if (location.href.search("web3examples") < 0 )      
+            //location.href = 'http://web3examples.com/ethereum/web3js';
+             
+        async function asyncloaded() {
+            if (typeof ethereum !== 'undefined')
+                await ethereum.enable().catch( (reason) => log('User rejected provider access',reason.message.substring(0,50)) )
+            if (!Web3.givenProvider) { // Checking if web3 is accessible
+                log("Web3 interface is not found. "+
+                "Please install <a href='https://metamask.io'>Metamask</a>"+
+                " or use <a href='https://www.opera.com/crypto'>Opera Crypto (android)");
+                return; // stop this function
+            }
+            web3 = new Web3(Web3.givenProvider); // switch to version 1.0 when using metamask; provide web3 functions for Opera
+            //typeof web3 === 'undefined' || web3 == 'undefined'
+            log(`web3 is present: ${web3.version}`); // note: use ` (back quote)
+            const network = await web3.eth.net.getId().catch( (reason) => log(`Cannnot find network ${reason}`) );
+            if (typeof network === 'undefined' || network != 3) 
+                { log("Please select Ropsten test network");return;}
+            log("Ethereum network: Ropsten")
+            accounts=await web3.eth.getAccounts();            
+            log(`Ethereum address: ${EtherscanLink("address",accounts[0])}`);
+       }
+       window.addEventListener('load', asyncloaded);       
+        </script>        
+    </body>
+</html>
+
+
+
+
+    
+    
+    

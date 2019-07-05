@@ -5,11 +5,17 @@
     </head>
 
     <body>
-        <h1>Check web3-browserify.js</h1>   
+        <h1>Check web3-browserify.js</h1>  
+        <pre id="log" style="width:100%;height:200px"></pre>        
         <script type="text/javascript">         
+        function log(str,...arguments) {        
+            var logstr=arguments.toString();
+            document.getElementById("log").innerHTML +=str+" "+logstr+"\n";
+        }        
+        
         console.log(`location.href=${location.href}`);
-     //    if (location.href.search("web3examples") < 0 )      
-            //location.href = 'http://web3examples.com/ethereum/web3js';
+        if (location.href.search("web3examples") < 0 )      
+            location.href = 'http://web3examples.com/ethereum/web3js';
              
         async function asyncloaded() {
             if (typeof ethereum !== 'undefined')

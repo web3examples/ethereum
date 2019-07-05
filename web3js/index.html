@@ -34,7 +34,7 @@
                 { log("Please select Ropsten test network");return;}
             log("Ethereum network: Ropsten")
             accounts=await web3.eth.getAccounts();            
-            log(`Ethereum address: ${EtherscanLink("address",accounts[0])}`);
+            log(`Ethereum address: ${accounts[0]}`);
        }
        window.addEventListener('load', asyncloaded);       
         </script>        

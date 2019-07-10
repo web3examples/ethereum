@@ -1,7 +1,7 @@
 # Installation of Metamask Windows
 
 ## Video
-[Install_Metamask_Windows]: https://siderus.io/ipfs/QmU7wfbXmXVVJutMbaL2mbYJRZg7ovEHpSFG9jbhJ2Gs45
+[https://siderus.io/ipfs/QmU7wfbXmXVVJutMbaL2mbYJRZg7ovEHpSFG9jbhJ2Gs45]
 
 ## Starting point
 Metamask not installed

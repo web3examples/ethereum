@@ -6,10 +6,6 @@
 ## Starting point
 Metamask not installed
 
-
-# A collapsible section with markdown
-<details>
-  <summary>Click see instruction</summary>
 ## Instruction
 | Location	                                                        | Action| Object     |
 | ---------                                                         | ------| ---------  |
@@ -34,4 +30,4 @@ Metamask not installed
 |                                                                   | Click | Confirm   |
 | chrome-extension://nkbi…/home.html#initialize/end-of-flow         | Click | All Done  |
 | chrome-extension://nkbi…/home.html#                               | Close | {windows} |
-</details>
+

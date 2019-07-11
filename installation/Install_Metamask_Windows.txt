@@ -1,0 +1,3 @@
+Location	                                                      | Action  | Object
+https://www.google.com – Search bar                               | Enter   | metamask
+https://www.google.com/search?q=metamask                          | Click   | MetaMask  

@@ -25,7 +25,8 @@ var ipfs_element = document.getElementById("ipfs")
 ipfs_element.hidden=true;
 
 var video=document.createElement("video");
-video.src="https://siderus.io/ipfs/"+ipfs_element.innerText;
+//video.src="https://siderus.io/ipfs/"+ipfs_element.innerText;
+video.src="http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText;
 video.class="videoplayer";
 video.controls=true;
 video.height='400'; 
@@ -33,6 +34,12 @@ video.autoplay=true;
 video.muted=true;  // otherwise not playing automatically
 video.ontimeupdate = function() {VideoLocation()}; // call function when movie at different location
 document.body.appendChild(video);
+
+var position=document.createElement("p");
+
+document.body.appendChild(position);
+
+
 
 var table=document.createElement("table");
 table.style.borderCollapse = "collapse";
@@ -69,7 +76,7 @@ function generateTableHead(table, data) {
 function rowclick(event) {   
   var id=Number(event.target.parentNode.id);
   var time=Number(alldata[id][TimeIndex]);
-  if (isNaN(time)) time=0
+  if (isNaN(time)) time=0;
   video.currentTime=time;
 }
 
@@ -87,7 +94,7 @@ row.addEventListener("click", rowclick);
 }
 
 function generateTable(table, data) {
-  rownr=0;  
+  rownr=1;  // header is 0
   for (let element of data) {    
     generateRow(table,element, rownr++);
   }
@@ -98,9 +105,9 @@ var previous_row=-1;
     
 function VideoLocation() {
     var t= video.currentTime;
-    
+    position.innerText="Position: "+t.toFixed(0)+" seconds";
     function check  (x) { return Number(x[TimeIndex] >= t); } 
-    var y= alldata.findIndex(check ) -1 ;    
+    var y= alldata.findIndex(check )  ;    
     if (y >=0  && y != previous_row ) {
         if (previous_row >=0)
             document.getElementById(previous_row.toString()).style.backgroundColor=previous_colour;

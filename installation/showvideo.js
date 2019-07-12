@@ -16,9 +16,9 @@ Location| Action| Object   | Time
 
 var pathArray = decodeURIComponent(window.location.pathname).split( '/' );
 var filename=pathArray.pop();
-var filenameparts=filename.split( '.' );
+filename=filename.replace(".html", "")
 var header=document.createElement("h1");
-header.innerText=filenameparts[0];
+header.innerText=filename;
 document.body.appendChild(header);
 
 var ipfs_element = document.getElementById("ipfs")

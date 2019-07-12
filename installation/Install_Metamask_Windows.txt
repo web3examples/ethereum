@@ -1,4 +1,4 @@
-Location	                                                      | Action  | Object   | 0
+Location	                                                      | Action  | Object   | Time
 https://www.google.com – Search bar                               | Enter   | metamask  | 1
 https://www.google.com/search?q=metamask                          | Click   | MetaMask  | 7
 https://metamask.io                                               | Click | get chrome extension | 11

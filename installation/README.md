@@ -3,7 +3,7 @@
 
 | Object          | Windows                     | Macintosh  |  Ubuntu     |
 | --------------- | ---------                   | ---------  | ---------   | 
-| Metamask        | [Install_Metamask_Windows](Install_Metamask_Windows.html)
+| Metamask        | [Install Metamask Windows](Install Metamask Windows.html)
 | web3.js         |
 
 

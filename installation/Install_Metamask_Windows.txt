@@ -1,22 +1,22 @@
-Location	                                                      | Action  | Object
-https://www.google.com – Search bar                               | Enter   | metamask
-https://www.google.com/search?q=metamask                          | Click   | MetaMask  
-https://metamask.io                                               | Click | get chrome extension
-https://chrome.google.com/webstore/...                            | Click | Add to Chrome
-Popup Add “MetaMask”?	                                            | Click | Add extension
-chrome-extension://nkbi../home.html#initialize/welcome            | Click | Get Started
-chrome-extension://nkbi…/home.html#initialize/select-action       | Click | Create a wallet
-chrome-extension://nkbi…/home.html#initialize/metametrics-opt-in  | Click | I agree
-Start menu	                                                      | Start | {password manager}
-Password manager	                                                | Do    | Create random password
-Password manager	                                                | Copy  | Password
-chrome-extension:…    field: New password                         | Paste | {password}
-chrome-extension:…    field: Confirm password                     | Paste | {password}
-chrome-extension:…    checkbox: I have read …                     | Click | {checkbox}
-chrome-extension://nkbi…/home.html#initialize/seed-phrase         | Click | Click here to reveal…
-{ paper}                                                          | Write | {seed phrase}
-                                                                  | Click | Next
-chrome-extension://nkbi…/home.html#initialize/seed-phrase/confirm | Click | { All the words}
-                                                                  | Click | Confirm
-chrome-extension://nkbi…/home.html#initialize/end-of-flow         | Click | All Done
-chrome-extension://nkbi…/home.html#                               | Close | {windows}
+Location	                                                      | Action  | Object   | 0
+https://www.google.com – Search bar                               | Enter   | metamask  | 1
+https://www.google.com/search?q=metamask                          | Click   | MetaMask  | 7
+https://metamask.io                                               | Click | get chrome extension | 11
+https://chrome.google.com/webstore/...                            | Click | Add to Chrome | 16
+Popup Add “MetaMask”?	                                            | Click | Add extension | 19
+chrome-extension://nkbi../home.html#initialize/welcome            | Click | Get Started| 33
+chrome-extension://nkbi…/home.html#initialize/select-action       | Click | Create a wallet |35
+chrome-extension://nkbi…/home.html#initialize/metametrics-opt-in  | Click | I agree |40
+Start menu	                                                      | Start | {password manager} |42
+Password manager	                                                | Do    | Create random password | 44
+Password manager	                                                | Copy  | Password | 45
+chrome-extension:…    field: New password                         | Paste | {password} |47
+chrome-extension:…    field: Confirm password                     | Paste | {password} | 48
+chrome-extension:…    checkbox: I have read …                     | Click | {checkbox} | 49
+chrome-extension://nkbi…/home.html#initialize/seed-phrase         | Click | Click here to reveal… | 50
+{ paper}                                                          | Write | {seed phrase} | 55
+                                                                  | Click | Next |60
+chrome-extension://nkbi…/home.html#initialize/seed-phrase/confirm | Click | { All the words} |63
+                                                                  | Click | Confirm | 85
+chrome-extension://nkbi…/home.html#initialize/end-of-flow         | Click | All Done |87 
+chrome-extension://nkbi…/home.html#                               | Close | {windows} |90

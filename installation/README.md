@@ -5,7 +5,7 @@
 | --------------- | ---------                                                   | ---------  | ---------   | 
 | Metamask        | [Install MetaMask Windows](Install MetaMask Windows.html)   |
 | Node.js         | [Install node.js Windows](Install node.js Windows.html)     | [Install node.js Macintosh](Install node.js Macintosh.html)
-| Web3 package    |                                                             | [Install tools Macintosh](Install tools Macintosh.html)
+| Web3 package    |                                                             | [Install tools Macintosh](Install tools Macintosh.html)<br>[Install Web3 Macintosh](Install Web3 Macintosh.html)
 
 | Object          | Instance
 | --------------- | ---------                   

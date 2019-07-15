@@ -1,0 +1,31 @@
+<div id="mermaid">
+graph TD
+Choose_OS{Choose OS}
+Choose_OS-->|Windows| w3
+Choose_OS-->|Macintosh| m2
+Choose_OS-->|Ubuntu| u1
+
+m2-->m3
+u1-->u2
+u2-->u3
+
+u1[Install python Ubuntu]
+
+m2[Install tools Macintosh]
+u2[Install tools Ubuntu]
+
+w3[Install Web3  Windows]
+m3[Install Web3 Macintosh]
+u3[Install Web3 Ubuntu]
+
+click u1 "../installation/Install python Ubuntu.html"
+
+click m2 "../installation/Install tools Macintosh.html"
+click u2 "../installation/Install tools Ubuntu.html"
+
+click w3 "../installation/Install Web3 Windows.html"
+click m3 "../installation/Install Web3 Macintosh.html"
+click u3 "../installation/Install Web3 Ubuntu.html"
+</div>
+<script src="showdiagram.js"></script>
+

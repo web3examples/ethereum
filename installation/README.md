@@ -9,9 +9,15 @@
 
 | Object          | Instance
 | --------------- | ---------                   
-| Test Eth        | [Get Ropsten ETH via Faucet.html](Get Ropsten ETH via Faucet.html)
+| Test Eth        | [Get Ropsten ETH via Faucet](Get Ropsten ETH via Faucet.html)
 | web3.js 0.2     | [Use web3 0.2 from chrome console with MetaMask](Use web3 0.2 from chrome console with MetaMask.html)
 | web3.js 1.0     | [Use web3 1.0 from chrome console with MetaMask](Use web3 1.0 from chrome console with MetaMask.html)
+| Ganache-cli     | [Install ganache-cli Windows - Use HTTPS](Install ganache-cli Windows - Use HTTPS.html)
+| Ganache         | [Install ganache Windows - Use HTTPS](Install ganache Windows - Use HTTPS].html)
+| Geth            | [Install geth Windows-use https](Install geth Windows-use https].html)
 
-
-
+# Use
+| Object          | Instance
+| --------------- | ---------       
+| Websockets      | [Use ganache-cli Windows WS]([Use ganache-cli Windows WS].html) <br> [Use ganache-cli Windows WS Subscriptions](Use ganache-cli Windows WS Subscriptions.html)
+| Load chain      | [Load geth goerli windows](Load geth goerli windows.html)

@@ -1,0 +1,33 @@
+<div id="ipfs">QmUDniP9ZAW9Z8CKoRbypQpeghdjpYiTZDAWjBTaFZgBxL</div>
+<div id="timetable">
+Location         | Action| Object                                                               | Time
+Command window 1 | Enter | npm install -g ganache-cli                                           | 2
+Command window 1 | Enter | ganache-cli                                                          | 14
+Command window 1 | Copy  | {Mnemonic}                                                           | 28
+Command window 1 | Enter | ctrl-c                                                               | 33
+Command window 1 | Enter | ganache-cli -m ""                                                    | 37
+Command window 1 | Paste | {Mnemonic}                                                           | 44
+Command window 1 | Enter | " {enter}                                                            | 46
+Command window 2 | Enter | curl -d "{""method"":""web3_clientVersion""}"  http://localhost:8545 | 59
+
+</div>
+<div id="goal">
+The goal is to run a local blockchain and communicate with it via a RPC call.
+</div>
+<div id="explain">
+The software ganache-cli is downloaded and installed.
+
+As you can see ganache-cli show accounts and private keys. The accounts already have ETH assigned to them.
+Every time you start ganache-cli, different keys are generated. However when you use the Mnemonic you can use 
+the same accounts every time, which is usefull in testing.
+Also notice the port that ganache-cli is using:8545
+
+A RPC call is made to do a simple function call, to check the version of the software. This uses the port of ganache-cli.
+</div>
+<div id="prerequisites">
+Node.js is installed, which includes npm
+Curl is installed (can be found here: https://curl.haxx.se/download.html)
+Jq is installed (can be found here: https://stedolan.github.io/jq/download/)
+Two cmd windows are open.
+</div>
+<script src="showvideo.js"></script>

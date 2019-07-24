@@ -1,0 +1,45 @@
+<div id="ipfs">QmT7mNCYUAe3mdVmuw1TeA4y18n867CtscKLfsy83pvGg7</div>
+<div id="timetable">
+Location                                      | Action| Object                      | Time
+Cmd-1                                         | Enter |                             | 1
+geth --testnet removedb
+Cmd-1 - Remove ...                            | Enter | y                           | 3
+Cmd-1                                         | Enter |                             | 10
+geth --testnet --syncmode "light" --rpc console
+
+https://gist.github.com/rfikki/c895641b6405c082f68bcf139cf2f7ae
+
+
+
+
+Cmd-1 / Geth                                  | Enter |                             | 20
+web3.version
+Cmd-1 / Geth                                  | Enter |                             | 26
+web3.eth.syncing
+Cmd-2                                         | Enter |                             | 35
+curl -H "Content-Type: application/json"  -d "{""method"":""web3_clientVersion"",""id"":67}"  http://localhost:8545  
+Cmd-2                                         | Enter |                             | 45
+curl -H "Content-Type: application/json"  -d "{""method"":""eth_blockNumber"",""id"":67}"  http://localhost:8545  
+Chrome                                        | Enter | https://ropsten-stats.parity.io/   | 57
+Cmd-1 / Geth                                  | Enter |                             | 165
+web3.eth.syncing
+Cmd-2                                         | Enter |                             | 169
+curl -H "Content-Type: application/json"  -d "{""method"":""eth_blockNumber"",""id"":67}"  http://localhost:8545  
+Cmd-2                                        | Copy   | {output}                    | 178
+Cmd-2                                        | Enter  | hex2dec                     | 183
+Cmd-2                                        | Paste  | {output}                    | 184
+
+</div>
+<div id="goal">
+The goal is to load a local copy of a (test) blockchain and communicate with it via a RPC call.
+</div>
+<div id="explain">
+The goerli chain is loaded with the Geth software. This is a small test chain so it loads fast.
+</div>
+<div id="prerequisites">
+Chrome and 2 cmd windows are started
+Geth is installed
+Hex2dec is installed
+Curl is installed
+</div>
+<script src="showvideo.js"></script>

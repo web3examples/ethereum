@@ -1,0 +1,9 @@
+pragma solidity >=0.4.0 <0.7.0;
+contract TestPay {
+    function ContractBalance()            public view returns (uint) { return address(this).balance;  }
+    function ()                           external payable           {                                }
+    function PayToContract()              public payable             {                                }
+    function RequestFromContract()        public                     { msg.sender.transfer(0.1 ether);}
+    function Transfer(address payable to) public                     { to.transfer(0.05 ether);       }
+}
+// RequestFromContract()	0xc5f98578

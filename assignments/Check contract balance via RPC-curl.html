@@ -1,0 +1,77 @@
+<div id="ipfs">QmNd46viDJi6rSkNBrgx3Jy6KL5qZVyCJDm2kdkA4oCcB2</div>
+<div id="timetable">
+Location                                                    | Action| Object                          | Time
+Chrome                                                      | Click | Tab Keccak                      | 1
+https://emn178.github.io/online-tools/keccak_256.html       | Paste | ContractBalance()               | 3
+Chrome Output field                                         | Copy  | { first 8 characters }          | 5
+Chrome                                                      | Click | Tab Function Signature Database | 13
+https://www.4byte.directory/                                | Paste | { signature }                   | 15
+https://www.4byte.directory/                                | Click | Search                          | 17
+Taskbar                                                     | Select| Command Prompt                  | 24
+Command Prompt                                              | Paste |                                 | 33                                           
+curl -H "Content-Type: application/json" -d "{""jsonrpc"":""2.0"",""method"":""eth_call"",""params"":[{""from"":""
+Taskbar                                                     | Select| Chrome                          | 37
+Chrome                                                      | Click | Fox icon                        | 41
+MetaMask popup                                              | Click | Account 1                       | 42
+Taskbar                                                     | Click | Command Prompt                  | 44
+Command Prompt                                              | Paste | { account }                     | 46
+Command Prompt                                              | Paste |                                 | 53
+"",""to"":""
+Taskbar                                                     | Select| Chrome                          | 57
+MetaMask popup                                              | Click | Contract Interaction            | 60
+MetaMask popup - Contract interaction details               | Click | To                              | 62
+Taskbar                                                     | Click | Command Prompt                  | 65
+Command Prompt                                              | Paste | { contract address }            | 68
+Command Prompt                                              | Paste |                                 | 74
+"",""data"":""
+Taskbar                                                     | Select| Chrome                          | 80
+Chrome Search Signatures                                    | Copy  | {signature}                     | 90
+Taskbar                                                     | Click | Command Prompt                  | 94
+Command Prompt                                              | Enter | 0x                              | 96
+Command Prompt                                              | Paste | { signature }                   | 98
+Command Prompt                                              | Paste & enter   |                       | 104
+""},""latest""],""id"":67}" https://ropsten.infura.io
+Command Prompt - output of curl                             | Copy  |  { non zero characters }        | 110
+Taskbar                                                     | Select| Chrome                          | 113
+Chrome                                                      | Click | Tab Hexadecimal..               | 115
+https://www.binaryhexconverter.com/hex-to-decimal-converter | Paste | {output}                        | 118
+https://www.binaryhexconverter.com/hex-to-decimal-converter | Click | Convert                         | 121
+Chrome                                                      | Click | Fox icon                        | 124
+MetaMask popup                                              | Click | Contract interaction            | 128
+MetaMask popup Contract interaction - Details               | Click | Arrow                           | 130
+https://ropsten.etherscan.io/address/...                    | Click | Contract                        | 146
+Chrome                                                      | Click | Tab Hexadecimal..               | 115
+</div>
+<div id="goal">
+The goal is to see how to interact via RPC calls.
+</div>
+<div id="explain">
+Call the function ContractBalance to get the balance of a smart contract (from previous example).
+</div>
+<div id="prerequisites">
+Curl installed, metamask installed and example "Transfer eth with contract-via play" has been run.
+Chrome tabs opened with:
+- https://emn178.github.io/online-tools/keccak_256.html
+- https://www.4byte.directory/
+- https://www.binaryhexconverter.com/hex-to-decimal-converter
+Cmd window opened
+The following contract has been deployed:
+pragma solidity >=0.4.0 <0.7.0;
+contract TestPay {
+    function ContractBalance()            public view returns (uint) { return address(this).balance;  }
+    function ()                           external payable           {                                }
+    function PayToContract()              public payable             {                                }
+    function RequestFromContract()        public                     { msg.sender.transfer(0.1 ether);}
+    function Transfer(address payable to) public                     { to.transfer(0.05 ether);       }
+}
+https://ropsten.etherscan.io/address/0x01848a2cfc60d5b24eb6630f12048c1825059afc
+
+Enter command:
+curl -H "Content-Type: application/json" -d "{""jsonrpc"":""2.0"",""method"":""eth_call"",""params"":[{""from"":""0xEA9a7c7cD8d4Dc3acc6f0AaEc1506C8D6041a1c5"",""to"":""0x01848a2cFc60d5b24EB6630F12048C1825059AfC"",""data"":""0x3b668059""},""latest""],""id"":67}" https://ropsten.infura.io
+
+Output:
+{"jsonrpc":"2.0","id":67,"result":"0x00000000000000000000000000000000000000000000000002b4c77783338000"}
+
+
+</div>
+<script src="showvideo.js"></script>

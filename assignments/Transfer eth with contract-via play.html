@@ -1,0 +1,78 @@
+<div id="ipfs">QmYP543Tfh85v9mZQWKyq8NHt6h4Njnh2KQocniAPYfHqF</div>
+<div id="timetable">
+Location                                         | Action| Object                    | Time
+Chrome                                           | Enter | play.ethereum.org         | 2
+https://ethereum-play.github.io/editor-solidity/ | Click | Solidity editor           | 5
+Chrome(above right)                              | Click | { fox icon }              | 9
+https://ethereum-play.github.io/editor-solidity/ | Paste |  | 17
+pragma solidity >=0.4.0 <0.7.0;
+contract TestPay {
+    function ContractBalance()            public view returns (uint) { return address(this).balance;  }
+    function ()                           external payable           {                                }
+    function PayToContract()              public payable             {                                }
+    function RequestFromContract()        public                     { msg.sender.transfer(0.1 ether);}
+    function Transfer(address payable to) public                     { to.transfer(0.05 ether);       }
+}
+https://ethereum-play.github.io/editor-solidity/  | Click | Publish     | 19
+Metamask popup - Connect Request                  | Click | Connect     | 26
+Metamask popup - Contract Deployment              | Click | Confirm     | 30
+TestPay (mid right)                               | Click | i           | 92
+Ropsten.etherscan.io..                            | Click | Contract    | 101
+Chrome tabs                                       | Click | play editor | 107
+TestPay / ContractBalance                         | Click | Arrow       | 115
+TestPay / Contract address                        | Copy  |{address}    | 122
+Chrome (above right)                              | Click | Fox icon    | 127
+Metamask popup                                    | Click | Send        | 131
+Metamask To:                                      | Paste | {address}   | 133
+Metamask Amount:                                  | Enter | 0.123       | 139
+Metamask                                          | Press | Next        | 144
+Metamask                                          | Press | Confirm     | 147
+Chrome / outside metamask popup                   | Click | {background}| 174
+TestPay / ContractBalance                         | Click | Arrow       | 177
+Chrome Tabs                                       | Click | Ropsten ..  | 183
+Chrome - above left                               | Click | Refresh icon| 188
+Chrome tabs                                       | Click | play editor | 195
+TestPay / PayToContract                           | Enter | 0.222       | 207
+TestPay / PayToContract / dropdown selector       | Select| Ether       | 211
+Testpay / PayToContract                           | Click | Arrow       | 215
+Metamask popup - PayToContract                    | Click | Confirm     | 221
+Chrome (above right)                              | Click | Fox icon    | 226
+Chrome / outside metamask popup                   | Click | {background}| 243
+TestPay / ContractBalance                         | Click | Arrow       | 247
+Chrome Tabs                                       | Click | Ropsten ..  | 251
+Chrome - above left                               | Click | Refresh icon| 254
+Chrome tabs                                       | Click | play editor | 257
+TestPay / RequestFromContract                     | Click | Arrow       | 267
+Metamask popup - Contract Interaction             | Click | Confirm     | 273
+Chrome (above right)                              | Click | Fox icon    | 277
+Chrome / outside metamask popup                   | Click | {background}| 317
+TestPay / ContractBalance                         | Click | Arrow       | 321
+Chrome Tabs                                       | Click | Ropsten ..  | 326
+Chrome - above left                               | Click | Refresh icon| 329
+Chrome tabs                                       | Click | play editor | 330
+Chrome (above right)                              | Click | Fox icon    | 334
+Metamask popup - Account 1                        | Click | Account 1   | 337
+Chrome / outside metamask popup                   | Click | {background}| 340
+TestPay / Transfer - to field                     | Paste | {address}   |344 
+TestPay / Transfer                                | Click | arrow       | 346
+Metamask popup - Contract Interaction             | Click | Confirm     | 352
+Chrome (above right)                              | Click | Fox icon    | 354
+Chrome Tabs                                       | Click | Ropsten ..  | 394
+Chrome - above left                               | Click | Refresh icon| 396
+Chrome tabs                                       | Click | play editor | 401
+TestPay / ContractBalance                         | Click | Arrow       | 405
+</div>
+<div id="goal">
+The goal is to transfer eth between a contract and a user address
+</div>
+<div id="explain">
+A small contract is created with play ethereum and interacted with.
+- Transfer 0.123 eth from metamask to contract
+- Pay 0.222 eth to contract
+- Request (0.1) eth from contract
+- Transfer (0.10 eth from contract to own address
+</div>
+<div id="prerequisites">
+Metamask installed and about 1 Eth on Ropsten account.
+</div>
+<script src="showvideo.js"></script>

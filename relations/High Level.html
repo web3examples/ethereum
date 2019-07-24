@@ -1,47 +1,129 @@
 <div id="mermaid">
 graph TD
-subgraph d1
-a1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 1
+subgraph Day_1
+
+subgraph Prep_1;e1;e14;end
+d1
 end
-subgraph d2
-a1-->a2
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 2
+subgraph Day_2
+d2
+subgraph Prep_2;e2;e3;end
 end
-subgraph d3
-a2-->a3
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 3
+subgraph Day_3
+d3
+subgraph Prep_3;e6;end
 end
-subgraph d4
-a3-->a4
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 4
+subgraph Day_4
+d4
+subgraph Prep_4;e4;end
 Create_Smart_Contract_Solidity
 end
-subgraph d5
-a4-->a5
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 5
+subgraph Day_5
+d5
+subgraph Prep_5;e5;end
 Create_Web_Insterface
 end
-subgraph d6
-a5-->a6
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 6
+subgraph Day_6
+d6
+subgraph Prep_6;e11;end
 end
-subgraph d7
-a6-->a7
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 7
+subgraph Day_7
+d7
+subgraph Prep_7;e7;end
 end
-subgraph d8
-a7-->a8
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 8
+subgraph Day_8
+d8
+subgraph Prep_8;e10;end
 end
-subgraph d9
-a8-->a9
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 9
+subgraph Day_9
+d9
+subgraph Prep_9;e9;end
 end
-subgraph d10
-a9-->a10
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 10
+subgraph Day_10
+d10
+subgraph Prep_10;e10;end
 end
-subgraph d11
-a10-->a11
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 11
+subgraph Day_11
+d11
+subgraph Prep_11;e11;end
 Create_IPFS
 end
-subgraph d12
-a11-->a12
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 12
+subgraph Day_12
+d12
+subgraph Prep_12;e12;end
 Create_IPFS-->Create_Dapp
 Create_Smart_Contract_Solidity-->Create_Dapp
 Create_Web_Insterface-->Create_Dapp
 end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 13
+subgraph optional
+d13; %% Put this box at the end
+e8; e13
+end
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% 14
+subgraph to-distribute
+d14; %% Put this box at the end
+end
+
+%% All the stuff to order the days
+d1[1];d2[2];d3[3];d4[4];d5[5];d6[6];d7[7];d8[8];d9[9];d10[10];d11[11];d12[12];d13[-];d14[-]
+d1-->d2;d2-->d3;d3-->d4;d4-->d5;d5-->d6;d6-->d7;d7-->d8;d8-->d9;d9-->d10;d10-->d11;d11-->d12;d12-->d13;d13-->d14
+
+%% All the stuff for mastering ethereum
+%% e0(Mastering Ethereum);
+e1(E1: What is Ethereum?);e2(E2: Ethereum Basics);e3(E3: Ethereum Clients)
+e4(E4: Keys and Addresses);e5(E5: Wallets);e6(E6: Transactions);e7(E7: Smart contracts and Solidity)
+e8(E8: Smart contracts and Vyper);e9(E9: Smart contract Security);e10(E10: Tokens);e11(E11: Oracles)
+e12(E12: Decentralized Applications: DApps);e13(E13: The Ethereum Virtual Machine);e14(E14: Consensus)
+click e0 "https://github.com/ethereumbook/ethereumbook/blob/develop/book.asciidoc"
+click e1 "https://github.com/ethereumbook/ethereumbook/tree/develop/01what-is.asciidoc"
+click e2 "https://github.com/ethereumbook/ethereumbook/tree/develop/02intro.asciidoc"
+click e3 "https://github.com/ethereumbook/ethereumbook/tree/develop/03clients.asciidoc"
+click e4 "https://github.com/ethereumbook/ethereumbook/tree/develop/04keys-addresses.asciidoc"
+click e5 "https://github.com/ethereumbook/ethereumbook/tree/develop/05wallets.asciidoc"
+click e6 "https://github.com/ethereumbook/ethereumbook/tree/develop/06transactions.asciidoc"
+click e7 "https://github.com/ethereumbook/ethereumbook/tree/develop/07smart-contracts-solidity.asciidoc"
+click e8 "https://github.com/ethereumbook/ethereumbook/tree/develop/08smart-contracts-vyper.asciidoc"
+click e9 "https://github.com/ethereumbook/ethereumbook/tree/develop/09smart-contracts-security.asciidoc"
+click e10 "https://github.com/ethereumbook/ethereumbook/tree/develop/10tokens.asciidoc"
+click e11 "https://github.com/ethereumbook/ethereumbook/tree/develop/11oracles.asciidoc"
+click e12 "https://github.com/ethereumbook/ethereumbook/tree/develop/12dapps.asciidoc"
+click e13 "https://github.com/ethereumbook/ethereumbook/tree/develop/13evm.asciidoc"
+click e14 "https://github.com/ethereumbook/ethereumbook/tree/develop/14consensus.asciidoc"
+%% e0-->e1;e1-->e2;e2-->e3;e3-->e4;e4-->e5;e5-->e6;e6-->e7;e7-->e8;e8-->e9;e9-->e10;e10-->e11;e11-->e12;e12-->e13;e13-->e14
+classDef className fill:lightpink,stroke:#333,stroke-width:2px;
+class e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12,e13,e14 className;
+%% e0,
+
+
 </div>
 <script src="showdiagram.js"></script>
+
+
+
 

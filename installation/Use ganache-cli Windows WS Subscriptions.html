@@ -1,0 +1,30 @@
+<div id="ipfs">QmSu3yxhYGFc2wVy7iKHUZiDJBK5Brie4dhuYiiA7M75Ea</div>
+<div id="timetable">
+Location         | Action| Object                                                  | Time
+Command window 1 | Enter | ganache-cli                                             | 2
+Command window 3 | Enter | wscurl ws://localhost:8545                              | 10
+Command window 3 | Enter | {"method": "eth_subscribe", "params": ["newHeads"]}     | 18
+Command window 1 | Scroll| {Available Accounts}                                    | 24
+Command window 1 | Copy  | {Account 0}                                             | 28
+Command window 2 | Enter | set account=                                            | 30
+Command window 2 | Paste | {Account 0} {Enter}                                     | 35
+Command window 1 | Scroll| {End of text}                                           | 38
+Command window 2 | Paste | curl -d "{""method"":""eth_sendTransaction"",""params"":{""from"":""%account%"",""to"":""%account%"",""value"":""0x1""}}" http://localhost:8545 | 50
+</div>
+<div id="goal">
+The goal is see how publications work.
+</div>
+<div id="explain">
+The software ganache-cli is started.
+The wscurl is used to open a websocket. A command is entered to subscribe to new blocks.
+In a third window a transaction is send (send 1 eth from the first available account to itself).
+As you can see the subscription shows an update when a new block is created.
+</div>
+<div id="prerequisites">
+Node.js is installed, which includes npm
+Ganache-cli is installed.
+wscurl is installed.
+curl is installed.
+Three cmd windows are open.
+</div>
+<script src="showvideo.js"></script>

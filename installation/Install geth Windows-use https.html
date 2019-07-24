@@ -1,0 +1,36 @@
+<div id="ipfs">QmXjU7EvqRvyanoEyaywX8hbjswMmgfr8uMQmcmk1JgwAw</div>
+<div id="timetable">
+Location                                      | Action| Object                    | Time
+Chrome                                        | Search| geth download             | 1
+https://www.google.com/search?q=geth+download | Click | Downloads Go Ethereum     | 5
+https://geth.ethereum.org/downloads           | Click | Geth..for Windows         | 10
+Chrome - low left                             | Click | geth-windows-amd64-...    | 21
+Windows protected your PC - left              | Click | More info                 | 24
+Windows protected your PC                     | Click | Run anyway                | 26
+Account controls                              | Click | Yes                       | 29
+Chrome                                        | Click | { close window }          | 33
+Window geth..Setup: License Agreement         | Click | I Agree                   | 37
+Window geth..Setup: Installation Options      | Click | Next                      | 39
+Window geth..Setup: Installation folder       | Click | Install                   | 41
+Window geth..Setup: Completed                 | Click | Close                     | 47
+Start menu                                    | Start | Command prompt {1}        | 59
+Start menu                                    | Start | Command prompt {2}        | 62
+Command prompt 1                              | Enter | geth --dev --rpc console  | 67
+Command prompt 1 / Geth console               | Enter | web3.version              | 76
+Command window 2                              | Enter |                           | 82
+curl -H "Content-Type: application/json"  -d "{""method"":""web3_clientVersion"",""id"":67}"  http://localhost:8545  
+</div>
+<div id="goal">
+The goal is to run a local blockchain and communicate with it via a RPC call.
+</div>
+<div id="explain">
+The software geth (go ethereum) is downloaded and installed.
+
+A RPC call is made to do a simple function call, to check the version of the software. 
+Not more complete parameters of curl have to be used with geth.
+</div>
+<div id="prerequisites">
+Chrome is started
+Curl is installed (can be found here: https://curl.haxx.se/download.html)
+</div>
+<script src="showvideo.js"></script>

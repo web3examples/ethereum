@@ -4,6 +4,11 @@ Examples related to ethereum
 ![](architecture/Ethereum.svg)
 
 
+[Install Ethereum software](installation)
+[Use Ethereum software](use)
+
+
+
 | Ethereum Concepts | Instances                | More info (text) | More info (video) |   Install  |  Examples |
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
 | General info    |    |   [ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]

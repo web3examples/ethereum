@@ -1,11 +1,15 @@
 # ethereum
 Examples related to ethereum
 
+[Install Ethereum software](installation)
+<br>
+[Use Ethereum software](use)
+
+
 ![](architecture/Ethereum.svg)
 
 
-[Install Ethereum software](installation)
-[Use Ethereum software](use)
+
 
 
 

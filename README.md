@@ -15,12 +15,12 @@ Examples related to ethereum
 
 | Ethereum Concepts | Instances                | More info (text) | More info (video) |   Install  |  Examples |
 | --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
-| General info    |    |   [ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]   |  [youtube-exp]
+| General info    |    |   [ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]<br>[kauri]   |  [youtube-exp]
 | Architecture    |                             |                   | [youtube-arch]
 | Full node software | | [client-overview] [understand nodes]
 | Development of ethereum itself | [eth-mag]
 | Wallets
-| Name services   | [ens]                          | [ens-tutorial] | [youtube-ens]     | [ens-manager] 
+| Name services   | [ens]<br>[enssimple]        | [ens-tutorial] | [youtube-ens]     | [ens-manager] 
 
 
 
@@ -33,6 +33,9 @@ Examples related to ethereum
 [youtube-arch]:    https://www.youtube.com/results?search_query=ethereum+architecture
 [basics]:          https://consensys.net/academy/blockchain-basics-book/
 [ethdocs]:         http://www.ethdocs.org
+[kauri]:           https://kauri.io
+
+
 [Trinity/PyEVM]:   https://trinity-client.readthedocs.io
 [client-overview]: http://www.ethdocs.org/en/latest/ethereum-clients
 [Pantheon]:        https://pegasys.tech/solutions/
@@ -42,6 +45,8 @@ Examples related to ethereum
 [ens-tutorial]:    https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial
 [youtube-ens]:     https://www.youtube.com/results?search_query=ens+ethereum
 [ens-manager]:     https://manager.ens.domains/
+[enssimple]:       https://ethsimple.com/
+
 
 | Ethereum Nodes  | Language |  Github | Documentation |
 | --------------- |  --------| ------  | --------------|
@@ -63,6 +68,64 @@ Examples related to ethereum
 | Mana/Exthereum  |
 | Mantis          |
 | Nethereum       |
+
+
+| Solidity                                  | Instances
+| ---------------                           | -------- 
+| Overview                                  | [solidity_indepth]<br>[solidity_overview]<br>[learn_solidity]
+| Layout, comments, natspec                 | [tosh_layout] [natspec]
+| General data types                        | [tosh_datatypes]
+| Ether and Time Units                      | [tosh_ethertime]
+| Control Structures                        | [tosh_control]
+| Function Calls                            | [tosh_io] [tosh_functionret]
+| Special Variables & functions             | [tosh_specials]
+| Operators                                 | [tosh_operators]
+[ Variables Scoping                         | [tosh_scoping]
+| Arrays/Structs/Enums/Mapping              | [sol_mapping] [coursetro_map]
+| Interfacing with other Contracts          | [tosh_import]
+| Creating contracts                        | [sol_create] [tosh_createcon]
+| Contract Inheritance (incl multiple)      | [tosh_inherit]
+| Abstract Contracts                        | [tosh_abstract]
+| Visibility Specifiers and Getters         | [sol_vis]
+| Fallback Functions                        | [tosh_fallback]
+| Function Modifiers                        | [tosh_modifiers]
+| Events                                    | [tosh_events]
+| Error handling                            | [sol_error] [tosh_except]
+
+
+
+ 
+
+
+[solidity_indepth]:  https://solidity.readthedocs.io/en/develop/solidity-in-depth.html
+[sol_vis]:           https://solidity.readthedocs.io/en/develop/contracts.html#visibility-and-getters
+[sol_create]:        https://solidity.readthedocs.io/en/develop/contracts.html#creating-contracts
+[sol_mapping]:       https://solidity.readthedocs.io/en/develop/types.html#mapping-types
+[sol_error]:         https://solidity.readthedocs.io/en/develop/control-structures.html#error-handling-assert-require-revert-and-exceptions
+
+[solidity_overview]: https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
+[learn_solidity]:    https://www.bitdegree.org/learn/learn-solidity
+[natspec]:           https://solidity.readthedocs.io/en/develop/natspec-format.html
+[tosh_layout]:       https://www.toshblocks.com/solidity/layout-solidity-based-smart-contracts/
+[tosh_datatypes]:    https://www.toshblocks.com/solidity/general-value-data-types-solidity/
+[tosh_ethertime]:    https://www.toshblocks.com/solidity/ether-units-time-units-solidity-programming-language/
+[tosh_specials]:     https://www.toshblocks.com/solidity/globally-available-variables-functions/
+[tosh_operators]:    https://www.toshblocks.com/solidity/operators-arithmetic-logical-bitwise/
+[tosh_control]:      https://www.toshblocks.com/solidity/control-structure-solidity-programming-language/
+[tosh_scoping]:      https://www.toshblocks.com/solidity/scoping-declarations-variables-solidity/
+[tosh_io]:           https://www.toshblocks.com/solidity/input-output-parameters-functions/
+[tosh_functionret]:  https://www.toshblocks.com/solidity/function-calls-return-types-solidity/
+[tosh_modifiers]:    https://www.toshblocks.com/solidity/function-modifiers-solidity-how-they-works/
+[tosh_fallback]:     https://www.toshblocks.com/solidity/fallback-function-solidity/
+[tosh_abstract]:     https://www.toshblocks.com/solidity/abstract-contracts-solidity/
+[tosh_createcon]:    https://www.toshblocks.com/solidity/creating-contracts-via-new-operator/
+[tosh_inherit]:      https://www.toshblocks.com/solidity/inheriting-smart-contracts/
+[tosh_import]:       https://www.toshblocks.com/solidity/importing-compiling-smart-contracts/
+[tosh_events]:       https://www.toshblocks.com/solidity/events-logging-solidity/
+[tosh_except]:       https://www.toshblocks.com/solidity/exceptions-solidity/
+
+[coursetro_map]:     https://coursetro.com/posts/code/102/Solidity-Mappings-&-Structs-Tutorial
+
 
 
 | Development tools     | Instances                  |  More info (text) | More info (video) | Github   | Examples |
@@ -130,15 +193,26 @@ Examples related to ethereum
 [bloxy]:              https://bloxy.info
 
 
-| Building blocks   | Instances                              | Github | Documentation |
-| ---------------   |  ---------                             | ------ | --------------|
+| Building blocks   | Instances       | Tools            | Demo | Github             | Documentation 
+| ---------------   |  ---------      |----              | ------             | --------------
+| Oracles-chainlink | [chainlink]     | [chainlink_exp]  | [chainlink_github] | [chainlink_docs]
+| Oracles-provable  | [provable]      | [provable_test]  | [provable_github]  | [provable_docs]
 
+[provable]:         http://provable.xyz
+[provable_github]:  https://github.com/provable-things
+[provable_docs]:    https://docs.provable.xyz/
+[provable_test]:    http://app.provable.xyz/home/test_query
 
+[chainlink]:        https://chain.link
+[chainlink_exp]:    https://explorer.chain.link
+[chainlink_github]: https://github.com/smartcontractkit/chainlink
+[chainlink_docs]:   https://docs.chain.link/docs
 
 | Ethereum Applications | Instance            |  Github |
 | ---------------       |  ---------          | ------- |
 | Overview              | [stateofthedapps]<br>[dappradar]<br>[consensys-overview]
-| Games              | [cheezewiz]<br>[cryptokit]
+| Games                 | [cheezewiz]<br>[cryptokit]
+| EasyProgramming       | [scratch_play]      | [scratch_github]
 
 [consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
 [stateofthedapps]:      https://www.stateofthedapps.com/
@@ -147,6 +221,8 @@ Examples related to ethereum
 [cheezewiz]:            https://www.cheezewizards.com/
 [cryptokit]:            https://www.cryptokitties.co/
 
+[scratch_play]:         https://scratch.addisonbrown.com.au/
+[scratch_github]:       https://github.com/naddison36/eth-scratch3
 
 | Layer 2           | Instance            |  Github |
 | ---------------   |  ---------          | ------- |

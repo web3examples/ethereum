@@ -13,14 +13,14 @@ Examples related to ethereum
 
 
 
-| Ethereum Concepts | Instances                | More info (text) | More info (video) |   Install  |  Examples |
-| --------------- |  ---------                  | ---------       | ---------          | ---------  |  -------- | 
-| General info    |    |   [ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]<br>[kauri]   |  [youtube-exp]
-| Architecture    |                             |                   | [youtube-arch]
-| Full node software | | [client-overview] [understand nodes]
-| Development of ethereum itself | [eth-mag]
+| Ethereum Concepts | Instances              | More info (text) | More info (video) |   Install  |  Examples |
+| --------------- |  ---------               | ---------       | ---------          | ---------  |  -------- | 
+| General info    |                          |   [ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[eth-fordevs]<br>[basics]<br>[ethdocs]<br>[kauri]   |  [youtube-exp]
+| Architecture    |                          |                   | [youtube-arch]
+| Full node software |                       |     [client-overview] [understand nodes]
+| Development of ethereum itself             | [eth-mag]
 | Wallets
-| Name services   | [ens]<br>[enssimple]        | [ens-tutorial] | [youtube-ens]     | [ens-manager] 
+
 
 
 
@@ -41,11 +41,6 @@ Examples related to ethereum
 [Pantheon]:        https://pegasys.tech/solutions/
 [understand nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 [eth-mag]:         https://ethereum-magicians.org/
-[ens]:             https://ens.domains/
-[ens-tutorial]:    https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial
-[youtube-ens]:     https://www.youtube.com/results?search_query=ens+ethereum
-[ens-manager]:     https://manager.ens.domains/
-[enssimple]:       https://ethsimple.com/
 
 
 | Ethereum Nodes  | Language |  Github | Documentation |
@@ -193,10 +188,13 @@ Examples related to ethereum
 [bloxy]:              https://bloxy.info
 
 
-| Building blocks   | Instances       | Tools            | Demo | Github             | Documentation 
-| ---------------   |  ---------      |----              | ------             | --------------
-| Oracles-chainlink | [chainlink]     | [chainlink_exp]  | [chainlink_github] | [chainlink_docs]
-| Oracles-provable  | [provable]      | [provable_test]  | [provable_github]  | [provable_docs]
+| Building blocks       | Instances              | Tools & demo                                  | Github             | Documentation              | Tutorial
+| ---------------       | ---------              | ----                                          | ------             | --------------             | -----
+| Oracles-chainlink     | [chainlink]            | [chainlink_exp]                               | [chainlink_github] | [chainlink_docs]           |
+| Oracles-provable      | [provable]             | [provable_test]                               | [provable_github]  | [provable_docs]            |
+| Ethereum Name Service | [ens]<br>[ens-manager] | [youtube-ens]<br>[enssimple]<br>[ens_build]   |                    | [ens_docu]<br>[ens_work]   | [ens-tut1]<br>[ens-tut2]<br>[ens-tut3]
+| ENS and DNS           |                        |                                               |                    |                            | [ens_dns]
+| ENS and IPFS          | [ensipfs_examples]<br>[ensipfs_link]
 
 [provable]:         http://provable.xyz
 [provable_github]:  https://github.com/provable-things
@@ -207,6 +205,26 @@ Examples related to ethereum
 [chainlink_exp]:    https://explorer.chain.link
 [chainlink_github]: https://github.com/smartcontractkit/chainlink
 [chainlink_docs]:   https://docs.chain.link/docs
+
+[ens]:              https://ens.domains/
+[ens_docu]:         https://docs.ens.domains/
+[ens-tut1]:         https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial
+[ens-tut2]:         https://medium.com/tenzorum-project/the-ultimate-ens-and-%C4%91app-tutorial-a4f2ede94b08
+[ens-tut3]:         https://medium.com/@industral/how-to-integrate-ens-in-your-app-4dfa42c36b0e
+
+[youtube-ens]:      https://www.youtube.com/results?search_query=ens+ethereum
+[ens-manager]:      https://manager.ens.domains/
+[enssimple]:        https://ethsimple.com/
+[ens_work]:         https://medium.com/@industral/ens-ethereum-name-service-how-it-works-cc57ed296473
+[ens_build]:        https://github.com/EthWorks/ENSBuilder
+
+[ens_dns]:          https://medium.com/the-ethereum-name-service/step-by-step-guide-of-how-to-claim-your-dns-domain-on-ens-60a2d2dcbe6e
+
+[ensipfs_examples]: http://almonit.club/ens+ipfs/list-of_ENSIPFS-websites.html
+[ensipfs_link]:     https://medium.com/the-ethereum-name-service/how-to-host-your-dapp-with-ipfs-ens-and-access-it-via-ethdns-c96046059d87
+
+
+
 
 | Ethereum Applications | Instance            |  Github |
 | ---------------       |  ---------          | ------- |

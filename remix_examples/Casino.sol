@@ -11,7 +11,7 @@ contract Casino {
     }
 
     /** Perform the bet and pay out if you win
-        @dev several temporary variabled are created to make debugging easier
+        @dev several temporary variables are created to make debugging easier
     */
     function betAndWin() public payable returns(bool win)  {
         address payable betPlacer = address(msg.sender);

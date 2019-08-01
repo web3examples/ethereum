@@ -1,0 +1,59 @@
+<div id="ipfs">QmWbL3trSuyWmPQ7nCWLT5PbfCaiPmYiyTs5z8KFamY5SB</div>
+<div id="timetable">
+Location                                     | Action      | Object         | Time
+https://remix.ethereum.org - Home tabindex   | Click       | X              | 1
+Remix - Command windows (lower right)        | Enter       |                | 10
+remix.loadurl("https://github.com/web3examples/ethereum/remix_examples/Casino.sol")
+Remix - File Explorers - github              | Click       | web3examples   | 11
+Remix - File Explorers - github              | Click       | ethereum       | 13
+Remix - File Explorers - github              | Click       | remix_examples | 14
+Remix - File Explorers - github              | Right-click | Casino.sol     | 15
+Remix - File Explorers - github              | Click       | Copy to Browser explorer | 16
+Remix - File Explorers - browser             | Click       | Casino.sol     | 18
+Remix - Left toolbar                          | Click | Solidity compiler icon    | 31
+Remix - Solidity Compiler - black bar         | Click | Compile ballot.sol        | 35
+Remix - Left toolbar                          | Click | Deploy & run transactions | 41
+Remix - Deploy & run transactions - Value     | Enter | 12                        | 44
+Remix - Deploy & run transactions - orange bar| Click | Deploy                    | 50
+Remix - Deployed contracts - grey bar         | Click | ">" icon                  | 54
+Remix - Deployed contracts - 1st blue bar     | Click | getBankBal..              | 58
+Remix - Deployed contracts - orange bar       | Click | betAndWin                 | 62
+Remix - Command windows (lower right)        | Click  | {transaction}             | 72
+Remix - Value                                 | Enter | 15                        | 86
+Remix - Deployed contracts - orange bar       | Click | betAndWin                 | 88
+Remix - Command windows (lower right)        | Click  | {transaction}             | 92
+
+Remix - Value                                 | Enter | 5                         | 96
+Remix - Deployed contracts - orange bar       | Click | betAndWin                 | 100
+Remix - Command windows (lower right)        | Click  | {transaction}             | 107
+Remix - Deployed contracts - 1st blue bar     | Click | getBankBal..              | 111
+
+Remix - Value                                 | Enter | 5                         | 116
+Remix - Deployed contracts - orange bar       | Click | betAndWin                 | 118
+Remix - Command windows (lower right)        | Click  | {transaction}             | 120
+Remix - Deployed contracts - 1st blue bar     | Click | getBankBal..              | 129
+
+Remix - Value                                 | Enter | 5                         | 131
+Remix - Deployed contracts - orange bar       | Click | betAndWin                 | 135
+Remix - Command windows (lower right)        | Click  | {transaction}             | 137
+Remix - Deployed contracts - 1st blue bar     | Click | getBankBal..              | 143
+
+Remix - Value                                 | Enter | 5                         | 149
+Remix - Deployed contracts - orange bar       | Click | betAndWin                 | 151
+Remix - Command windows (lower right)        | Click  | {transaction}             | 155
+Remix - Deployed contracts - 1st blue bar     | Click | getBankBal..              | 160
+</div>
+<div id="goal">
+Use remix to run a smart contract with an in browser blockchain.
+</div>
+<div id="explain">
+Remix contains an in browser blockchain which is used by default.
+A smart contract is loaded from github. The smart contact implements a casino where you can bet on an coin, with 50% win and 50% loose odd.
+When you win you get back twice as much as you bet. When you loose, you loose your bet.
+After the contract is deployed first 2 faulty scenario's are shown: a bet with no money used to bet and a bet with more money than the bank has.
+Afterwards a few rounds are played until you win.
+</div>
+<div id="prerequisites">
+Chrome is started and remix is opened with plugins enabled.
+</div>
+<script src="showvideo.js"></script>

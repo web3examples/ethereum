@@ -32,61 +32,49 @@ video.controls=true;
 video.height='500'; 
 video.autoplay=true; 
 video.muted=true;  // otherwise not playing automatically
-video.ontimeupdate = function() {VideoLocation()}; // call function when movie at different location
+video.ontimeupdate = function() {VideoLocation()}; // call function when movie is at a different location
 document.body.appendChild(video);
+
+var newline=document.createElement("br");
+document.body.appendChild(newline);
+
+CreateButton("Back 1 sec",   ()=> video.currentTime -=1 );
+CreateButton("Forward 1 sec",()=> video.currentTime +=1 );
+CreateButton("25% slower",   ()=> {video.playbackRate *=0.75;video.play();});
+CreateButton("Normal speed", ()=>{video.playbackRate =1;video.play();} );
+CreateButton("25% faster",   ()=> {video.playbackRate *=1.25;video.play();} );
+CreateButton("Pause",        ()=> video.pause() );
+CreateButton("Play",         ()=> video.play() );
 
 var position=document.createElement("p");
 document.body.appendChild(position);
 
-
 var tablediv=document.createElement("div");
 tablediv.style.overflowY="auto";
 tablediv.style.height="30%";
-
 var table=document.createElement("table");
 table.style.borderCollapse = "collapse";
-//document.body.appendChild(table);
-
 tablediv.appendChild(table)
 document.body.appendChild(tablediv);
 
-var timetable_element=document.getElementById("timetable");
-timetable_element.hidden=true;
-var txt = timetable_element.innerText;
-var alldata=[];    
-var lines=txt.split("\n");
-
-if (lines[lines.length-1]=="") lines.pop(); // get rid of last empty line
-do {
-    let line=lines.shift();
-    if (line.length >0) { // skip empty lines
-        var linedata=line.split("|");
-        var outputline=[];
-        for (let part of linedata) {
-            part = part.trim();
-            if (part.length==0 ) {
-                var txt=""
-                do {
-                    line=lines.shift();
-                    console.log(`len=${lines.length} line=${line}`);
-                    var fNoBarYet=(line.indexOf("|") <=0) 
-                    if (fNoBarYet)
-                        txt += line+"<br>";
-                } while (lines.length >0 && fNoBarYet )
-                part = "<pre>"+txt+"</pre>";
-                if (!fNoBarYet) lines.unshift(line);
-            }
-            outputline.push(part);
-        }
-       alldata.push(outputline);
-    }
-
-} while (lines.length >0);
-
-
-generateTableHead(table,alldata[0]);
+var alldata = ReadTimeTable(table);
 var TimeIndex=alldata[0].indexOf('Time');
-generateTable(table,alldata.slice(1));
+            
+            
+            
+//var header=document.createElement("h2");
+//header.innerText=filename;
+//document.body.insertAdjacentElement("afterbegin", header)
+
+/////////////////////////////// Functions
+            
+function CreateButton(name,funct) {
+    var buttonback=document.createElement("button");
+    buttonback.innerHTML = name;
+    buttonback.addEventListener("click", funct);
+    document.body.appendChild(buttonback);
+}      
+            
             
 function generateTableHead(table, data) {
   let thead = table.createTHead();
@@ -100,11 +88,16 @@ function generateTableHead(table, data) {
   }
 }
 
-function rowclick(event) {   
-  var id=Number(event.target.parentNode.id);
-  var time=Number(alldata[id][TimeIndex]);
-  if (isNaN(time)) time=0;
-  video.currentTime=time;
+function rowclick(event) {  
+
+    var node=event.target    
+    var id=node.id;
+    if (!id) { node=node.parentNode;id=node.id;}
+    if (!id) { node=node.parentNode;id=node.id;} // to handle the "pre"'s
+    if (!id) return; // no id found
+    var time=Number(alldata[id][TimeIndex]);
+    if (isNaN(time)) time=0;
+    video.currentTime=time;
 }
 
 function generateRow(table, sub,rownr) {
@@ -132,9 +125,11 @@ var previous_colour=""
 var previous_row=-1;
     
 function VideoLocation() {
-    var t= video.currentTime;
-    position.innerText="Position: "+t.toFixed(0)+" seconds";
-    function check  (x) { return Number(x[TimeIndex] >= t); } 
+    
+    position.innerText=`Position: ${video.currentTime.toFixed(0)}`;
+    position.innerText+=` (of ${video.duration.toFixed(0)} seconds)`;
+    position.innerText+=` speed=${video.playbackRate.toFixed(1)}`;
+    function check  (x) { return Number(x[TimeIndex] >= video.currentTime); } 
     var y= alldata.findIndex(check )  ;    
     if (y >=0  && y != previous_row ) {
         if (previous_row >=0)
@@ -145,4 +140,46 @@ function VideoLocation() {
     }
  }   
     
+
+function ReadTimeTable(table)  {
+    var timetable_element=document.getElementById("timetable");
+    timetable_element.hidden=true;
+    var txt = timetable_element.innerText;
+    var tabledata=[];    
+    var lines=txt.split("\n");
+
+    if (lines[lines.length-1]=="") lines.pop(); // get rid of last empty line
+    do {
+        let line=lines.shift();
+        if (line.length >0) { // skip empty lines
+            var linedata=line.split("|");
+            var outputline=[];
+            for (let part of linedata) {
+                part = part.trim();
+                if (part.length==0 ) {
+                    var txt=""
+                    do {
+                        line=lines.shift();
+                        var fNoBarYet=(line.indexOf("|") <=0) 
+                        if (fNoBarYet)
+                            txt += line+"<br>";
+                    } while (lines.length >0 && fNoBarYet )
+                    part = "<pre>"+txt+"</pre>";
+                    if (!fNoBarYet) lines.unshift(line);
+                }
+                outputline.push(part);
+            }
+           tabledata.push(outputline);
+        }
+
+    } while (lines.length >0);
+
+
+    generateTableHead(table,tabledata[0]);
+    
+    generateTable(table,tabledata.slice(1));
+    
+    return tabledata;
+}             
+
 

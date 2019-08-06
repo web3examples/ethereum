@@ -14,8 +14,10 @@
         }        
         
         console.log(`location.href=${location.href}`);
-        if (location.href.search("web3examples") < 0 )      
+        if (location.href.search("web3examples") < 0 ) {
+            console.log('Switching to online version');
             location.href = 'http://web3examples.com/ethereum/web3js';
+        }
              
         async function asyncloaded() {
             if (typeof ethereum !== 'undefined')

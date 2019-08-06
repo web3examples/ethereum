@@ -28,8 +28,11 @@ var video=document.createElement("video");
 //video.src="https://siderus.io/ipfs/"+ipfs_element.innerText;
 video.src="http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText;
 video.class="videoplayer";
-video.controls=true;
-video.height='500'; 
+video.controls=false;
+
+// video.style.height="50%";
+
+
 video.autoplay=true; 
 video.muted=true;  // otherwise not playing automatically
 video.ontimeupdate = function() {VideoLocation()}; // call function when movie is at a different location
@@ -38,6 +41,7 @@ document.body.appendChild(video);
 var newline=document.createElement("br");
 document.body.appendChild(newline);
 
+CreateButton("Rewind",       ()=> video.currentTime =0 );
 CreateButton("Back 1 sec",   ()=> video.currentTime -=1 );
 CreateButton("Forward 1 sec",()=> video.currentTime +=1 );
 CreateButton("25% slower",   ()=> {video.playbackRate *=0.75;video.play();});
@@ -45,6 +49,10 @@ CreateButton("Normal speed", ()=>{video.playbackRate =1;video.play();} );
 CreateButton("25% faster",   ()=> {video.playbackRate *=1.25;video.play();} );
 CreateButton("Pause",        ()=> video.pause() );
 CreateButton("Play",         ()=> video.play() );
+CreateButton("Toggle controls",()=> { video.controls= !video.controls;} );
+CreateButton("Toggle audio",()=> { video.muted= !video.muted;} );
+CreateButton("Full screen",()=> { video.requestFullscreen(); } );
+
 
 var position=document.createElement("p");
 document.body.appendChild(position);
@@ -52,6 +60,9 @@ document.body.appendChild(position);
 var tablediv=document.createElement("div");
 tablediv.style.overflowY="auto";
 tablediv.style.height="30%";
+tablediv.style.outline="1px";
+tablediv.style.outlineStyle="solid";
+
 var table=document.createElement("table");
 table.style.borderCollapse = "collapse";
 tablediv.appendChild(table)
@@ -138,8 +149,7 @@ function VideoLocation() {
         previous_row=y;
         document.getElementById(y.toString()).style.backgroundColor = "lightgray";
     }
- }   
-    
+}   
 
 function ReadTimeTable(table)  {
     var timetable_element=document.getElementById("timetable");
@@ -147,38 +157,31 @@ function ReadTimeTable(table)  {
     var txt = timetable_element.innerText;
     var tabledata=[];    
     var lines=txt.split("\n");
-
     if (lines[lines.length-1]=="") lines.pop(); // get rid of last empty line
     do {
         let line=lines.shift();
-        if (line.length >0) { // skip empty lines
-            var linedata=line.split("|");
-            var outputline=[];
-            for (let part of linedata) {
-                part = part.trim();
-                if (part.length==0 ) {
-                    var txt=""
-                    do {
-                        line=lines.shift();
-                        var fNoBarYet=(line.indexOf("|") <=0) 
-                        if (fNoBarYet)
-                            txt += line+"<br>";
-                    } while (lines.length >0 && fNoBarYet )
-                    part = "<pre>"+txt+"</pre>";
-                    if (!fNoBarYet) lines.unshift(line);
-                }
-                outputline.push(part);
+        if (line.length ==0) { continue;}  // skip empty lines
+        var linedata=line.split("|");
+        var outputline=[];
+        for (let part of linedata) {
+            part = part.trim();
+            if (part.length==0) { // get data from the next lines
+                var txt=""
+                do {
+                    line=lines.shift();
+                    var fBarFound=(line.indexOf("|") >=0) 
+                    if (!fBarFound)
+                        txt += line+"<br>";
+                } while (lines.length >0 && !fBarFound )
+                part = "<pre>"+txt+"</pre>";
+                if (fBarFound) lines.unshift(line);
             }
-           tabledata.push(outputline);
+            outputline.push(part);
         }
-
+        tabledata.push(outputline);
     } while (lines.length >0);
-
-
     generateTableHead(table,tabledata[0]);
-    
     generateTable(table,tabledata.slice(1));
-    
     return tabledata;
 }             
 

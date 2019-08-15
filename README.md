@@ -68,12 +68,14 @@ Examples related to ethereum
 
 ## Wallets
 
+
 | Ethereum Wallets  | Language |  Github | Documentation |
 | ----------------- | --------| 
 | ...
 
 
 ### Wallets with Web3.js interfaces
+
 
 | Wallets & Web3.js  | Language |  Github | Documentation |
 | ------------------ | --------- | -------| 
@@ -82,10 +84,12 @@ Examples related to ethereum
 
 ### Multisig wallets
 
+
 ### Contract based wallets
 
 
 ### Hierarchical Deterministic Wallets
+
 
 | HD Wallets         | Standards  | More information   | Github                    | Examples
 | ------------------ | ---------- | ------------------ | ------------------------- | --------------

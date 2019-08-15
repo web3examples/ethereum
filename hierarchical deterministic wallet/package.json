@@ -1,0 +1,19 @@
+{
+  "name": "hierarchical deterministic wallet",
+  "version": "1.0.0",
+  "author": "Gerard Persoon (mail@gpersoon.com)",
+  "description": "Show how hierarchical deterministic wallets work",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./index.js"
+  },
+  "dependencies": {
+    "bip39": "^3.0.2",
+    "hdkey": "^1.1.1",
+    "web3": "^1.2.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/web3examples/web3examples.github.io"
+  }
+}

@@ -35,4 +35,4 @@ console.log(test1._privateKey.toString('hex'));
 
 
 account=web3.eth.accounts.privateKeyToAccount("0x"+root.privateKey.toString('hex'));
-console.log(account);
+console.log(account.address);

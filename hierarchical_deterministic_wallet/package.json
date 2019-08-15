@@ -1,5 +1,5 @@
 {
-  "name": "hierarchical deterministic wallet",
+  "name": "hierarchical_deterministic_wallet",
   "version": "1.0.0",
   "author": "Gerard Persoon (mail@gpersoon.com)",
   "description": "Show how hierarchical deterministic wallets work",

@@ -38,23 +38,26 @@ Examples related to ethereum
 [understand nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 [eth-mag]:         https://ethereum-magicians.org/
 
+
+
+
 ## Ethereum nodes
 
 
 | Ethereum Nodes  | Language |  Github | Documentation |
 | --------------- |  --------| ------  | --------------|
-| Geth	          | Go	     | 
-| Parity	        | Rust	
-| cpp-ethereum	  | C++	
-| [Trinity/PyEVM] |	Python	
-| EthereumJS      |	JavaScript	
-| Ethereum(J)	    | Java
-| Harmony         |	Java	
-| Pantheon      	| Java	
-| ruby-ethereum	  | Ruby	
-| ethereumH	      | Haskell
-| Quorum	        | Go 
-| Exthereum	      | Elixir 	
+| Geth            | Go       | 
+| Parity          | Rust
+| cpp-ethereum    | C++
+| [Trinity/PyEVM] |	Python
+| EthereumJS      |	JavaScript
+| Ethereum(J)     | Java
+| Harmony         |	Java
+| Pantheon        | Java
+| ruby-ethereum   | Ruby
+| ethereumH       | Haskell
+| Quorum          | Go 
+| Exthereum       | Elixir 
 | Aleth/eth       |
 | Turbo Geth      |
 | Nimbus          |
@@ -62,6 +65,35 @@ Examples related to ethereum
 | Mantis          |
 | Nethereum       |
 
+
+## Wallets
+
+| Ethereum Wallets  | Language |  Github | Documentation |
+| ----------------- |
+
+### Wallets with Web3.js interfaces
+
+| Wallets & Web3.js  | Language |  Github | Documentation |
+| ------------------ |
+| MetaMask
+
+### Multisig wallets
+
+### Contract based wallets
+
+
+### Hierarchical Deterministic Wallets
+
+| HD Wallets         | Standards  | More information   | Github                    | Examples
+| ------------------ | ---------- | ------------------ | ------------------------- | --------------
+| Menemonics         | [bip39]    | [bip39-wordlist]   | [bip39-js]<br>[bip39-npm] | [bip39-online]
+
+
+[bip39]:            https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
+[bip39-js]:         https://github.com/bitcoinjs/bip39
+[bip39-npm]:        https://www.npmjs.com/package/bip39
+[bip39-wordlist]:   https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
+[bip39-online]:     https://iancoleman.io/bip39/
 
 | Solidity                                  | Instances
 | ---------------                           | -------- 

@@ -1,0 +1,16 @@
+View contracts
+To see contacts do the following:
+
+Install MetaMask
+In MetaMask: select Main Ethereum Network
+Find a contract on etherscan with source code, for example: https://etherscan.io/address/0x514910771af9ca656af840dff83e8264ecf986ca#code
+Check out the compiler version, e.g.: v0.4.16+commit.d7661dd9
+In Remix, via the plugin manager: add "Solidity compiler" and "Deploy & run transactions"
+In file manager: create a new file (+).
+Copy & Paste the source code of the contract from etherscan to remix
+Select Solidity compiler and select the appropriate compiler version (v0.4.16+commit.d7661dd9)
+Click "compile"
+Select Deploy & run transactions
+Select "Injected Web3" in the Environment dropdown
+Paste the address of the contact (e.g. 0x514910771af9ca656af840dff83e8264ecf986ca) in the "At Address" field
+Now you can interact with the contract. You can select other interfaces in the dropdown box in the middle and press "At Address" again.

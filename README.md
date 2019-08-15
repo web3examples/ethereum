@@ -69,13 +69,16 @@ Examples related to ethereum
 ## Wallets
 
 | Ethereum Wallets  | Language |  Github | Documentation |
-| ----------------- |
+| ----------------- | --------| 
+| ...
+
 
 ### Wallets with Web3.js interfaces
 
 | Wallets & Web3.js  | Language |  Github | Documentation |
-| ------------------ |
+| ------------------ | --------- | -------| 
 | MetaMask
+| ....
 
 ### Multisig wallets
 

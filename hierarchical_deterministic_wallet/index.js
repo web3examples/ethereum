@@ -23,6 +23,5 @@ var account=web3.eth.accounts.privateKeyToAccount("0x"+root.privateKey.toString(
 console.log(`Correspinding account: ${account.address}`);
 
 // priv key: 0x04BFCEDBBAA686F15643DB581857BF06CE19830D10CBA4EBF4B35899F1410AD4
-// 0x6c728716a68499d486cDA1701AB13C7b57f30aA0
-// metamask: https://github.com/MetaMask/eth-hd-keyring/blob/master/index.js#L8
+// account:  0x6c728716a68499d486cDA1701AB13C7b57f30aA0
 // compare to: https://iancoleman.io/bip39/ - tab "BIP44" - Coin: ETH

@@ -91,16 +91,24 @@ Examples related to ethereum
 ### Hierarchical Deterministic Wallets
 
 
-| HD Wallets         | Standards  | More information   | Github                    | Examples
-| ------------------ | ---------- | ------------------ | ------------------------- | --------------
-| Menemonics         | [bip39]    | [bip39-wordlist]   | [bip39-js]<br>[bip39-npm] | [bip39-online]
+| HD Wallets         | Standards          | More information   | Github                    | Examples
+| ------------------ | ----------         | ------------------ | ------------------------- | --------------
+| Concepts           |                    | [hdw]<br>[build-hdw]
+| Mnemonics          | [bip39]            | [bip39-wordlist]   | [bip39-js]<br>[bip39-npm] | [bip39-online]
+| Key Derivation     | [bip32]<br>[bip44] | [coin-constants]   | [coin-constants-js]
 
+[hdw]:               https://coinsutra.com/hd-wallets-deterministic-wallet/
+[build-hdw]:         https://medium.com/@harshagoli/so-you-want-to-build-an-ethereum-hd-wallet-cb2b7d7e4998
+[bip39]:             https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
+[bip39-js]:          https://github.com/bitcoinjs/bip39
+[bip39-npm]:         https://www.npmjs.com/package/bip39
+[bip39-wordlist]:    https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
+[bip39-online]:      https://iancoleman.io/bip39/
+[bip32]:             https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki
+[bip44]:             https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki
+[coin-constants]:    https://github.com/satoshilabs/slips/blob/master/slip-0044.md
+[coin-constants-js]: https://github.com/bitcoinjs/bip44-constants
 
-[bip39]:            https://github.com/bitcoin/bips/blob/master/bip-0039.mediawiki
-[bip39-js]:         https://github.com/bitcoinjs/bip39
-[bip39-npm]:        https://www.npmjs.com/package/bip39
-[bip39-wordlist]:   https://github.com/bitcoin/bips/blob/master/bip-0039/english.txt
-[bip39-online]:     https://iancoleman.io/bip39/
 
 | Solidity                                  | Instances
 | ---------------                           | -------- 

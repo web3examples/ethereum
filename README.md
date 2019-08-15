@@ -109,6 +109,8 @@ Examples related to ethereum
 [coin-constants]:    https://github.com/satoshilabs/slips/blob/master/slip-0044.md
 [coin-constants-js]: https://github.com/bitcoinjs/bip44-constants
 
+## Solidity
+
 
 | Solidity                                  | Instances
 | ---------------                           | -------- 

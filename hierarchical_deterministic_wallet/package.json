@@ -1,8 +1,8 @@
 {
-  "name": "hierarchical deterministic wallet",
+  "name": "hierarchical deterministic wallet",
   "version": "1.0.0",
   "author": "Gerard Persoon (mail@gpersoon.com)",
-  "description": "Show how hierarchical deterministic wallets work",
+  "description": "Show how hierarchical deterministic wallets work",
   "license": "MIT",
   "scripts": {
     "start": "node ./index.js"

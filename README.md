@@ -397,25 +397,28 @@ Examples
 | React                 | Angular
 | -----------           | ---------
 | [openzep-starter]     | [web3-in-angular]
-| [truffle-react]
-| [rimble]
-| [web3react]
-| [vortex]
+| [truffle-react]       | [angulartruffledapp]
+| [rimble]              | [quintorangular]
+| [web3react]           | [limelabsangular]
+| [vortex]              | [ngeth]
 | [tasit]
 | [drizzle]
 | [dapparatus]
 
 
-[openzep-starter]:  https://github.com/OpenZeppelin/starter-kit
-[truffle-react]:    https://github.com/truffle-box/react-box
-[web3react]:        https://github.com/NoahZinsmeister/web3-react
-[vortex]:           https://github.com/Horyus/ethvtx
-[tasit]:            https://github.com/tasitlabs/tasitsdk
-[drizzle]:          https://github.com/truffle-box/drizzle-box
-[dapparatus]:       https://github.com/austintgriffith/dapparatus
-[rimble]:           https://rimble.consensys.design/
-
-[web3-in-angular]:   https://medium.com/b2expand/inject-web3-in-angular-6-0-a03ca345892
+[openzep-starter]:      https://github.com/OpenZeppelin/starter-kit
+[truffle-react]:        https://github.com/truffle-box/react-box
+[web3react]:            https://github.com/NoahZinsmeister/web3-react
+[vortex]:               https://github.com/Horyus/ethvtx
+[tasit]:                https://github.com/tasitlabs/tasitsdk
+[drizzle]:              https://github.com/truffle-box/drizzle-box
+[dapparatus]:           https://github.com/austintgriffith/dapparatus
+[rimble]:               https://rimble.consensys.design/
+[web3-in-angular]:      https://medium.com/b2expand/inject-web3-in-angular-6-0-a03ca345892
+[angulartruffledapp]:   https://www.trufflesuite.com/boxes/angulartruffledapp
+[quintorangular]:       https://www.trufflesuite.com/boxes/angular-truffle-box
+[limelabsangular]:      https://www.trufflesuite.com/boxes/limelabs-angular-box
+[ngeth]:                https://github.com/B2-Expand/ngeth
 
 # Wallets
 

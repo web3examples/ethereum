@@ -27,8 +27,8 @@ This document contains info about:
 * [Layer 2](#layer-2)
 
 Examples
-* [Install Ethereum software](installation)
-* [Use Ethereum software](demo)
+* [Install Ethereum software](install)
+* [Demo Ethereum software](demo)
 
 
 # Ethereum Concepts

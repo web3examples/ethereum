@@ -396,19 +396,19 @@ Examples
 
 | React 
 | -----------
-|
+| [web3react]
+| [vortex]
+| [tasit]
+| [drizzle]
+| [dapparatus]
+| [rimble]
 
-
-
-Web 3 JS https://github.com/ethereum/web3.js/
-Web 3 React https://github.com/NoahZinsmeister/web3-react
-Vortex (react) https://github.com/Horyus/vortex
-Tasit (react native)https://github.com/tasitlabs/tasitsdk
-Drizzle (react) https://github.com/truffle-box/drizzle-box
-Ether JS https://github.com/ethers-io/ethers.js/
-https://github.com/austintgriffith/dapparatus  (api react)
-
-https://rimble.consensys.design/
+[web3react]:    https://github.com/NoahZinsmeister/web3-react
+[vortex]:       https://github.com/Horyus/vortex
+[tasit]:        https://github.com/tasitlabs/tasitsdk
+[drizzle]:      https://github.com/truffle-box/drizzle-box
+[dapparatus]:   https://github.com/austintgriffith/dapparatus
+[rimble]:       https://rimble.consensys.design/
 
 
 # Wallets

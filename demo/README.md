@@ -1,6 +1,6 @@
 # Demo of ethereum software
 
-([Up](..) [Home](..\..))
+These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\..))
 
 | Object                         | Instance
 | ---------------                | ---------     

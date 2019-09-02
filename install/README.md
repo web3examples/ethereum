@@ -1,5 +1,6 @@
 # Installation of ethereum software
 
+([Up](..) [Home](..\..))
 
 | Object          | Windows                                                     | Macintosh                                                      |  Ubuntu     |
 | --------------- | ---------                                                   | ---------                                                      | ---------   | 

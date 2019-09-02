@@ -11,11 +11,22 @@ This document contains info about:
 * [Interfaces](#interfaces)
     * [RPC APIs](#rpc-apis)
     * [Other interfaces](#other-interfaces)
-    * [Web3.js](#web3.js)
-    * [Multisig wallet](#multisig wallet)
-    * [Alternative apis](#alternative-apis)
+    * [Web3.js](#web3js)
     * [React](#react)
-* [](#)
+* [Wallets](#wallets)
+    * [Mobile Wallets](#Mobile Wallets)
+    * [Hardware wallets](#Hardware wallets)
+    * [Contract based wallets](#Contract based wallets)
+    * [Hierarchical Deterministic Wallets](#Hierarchical Deterministic Wallets)
+* [Login and user data](#Login and user data)
+* [Solidity](#Solidity)
+* [Developement tools](#Developement tools)
+* [Network instances](#Network instances)
+* [Building blocks](#Building blocks)
+* [Applications](#Applications)
+* [Layer 2](#Layer 2)
+* [Other learning material](#Other learning material)
+
 
 Examples
 * [Install Ethereum software](installation)
@@ -398,20 +409,15 @@ https://github.com/austintgriffith/dapparatus  (api react)
 https://rimble.consensys.design/
 
 
-### Ethereum wallets (with webconnect support)
+# Wallets
 
-
-| Android       | IOS           | Android and IOS  | Hardware
-| -----------   | ------------- | -------------    | -----------
-| [walleth]     | [tokenary]    | [trustwallet]    | [safepal]
-|               | [rainbow]     | [pillar]         | [gridplus]
-|               |               | [argent]         | [trezor]
-|               |               | [coinomi]        | [ledger]
-|               |               |                  | [keepkey]
-|               |               |                  | [ether_cards]
-|               |               |                  | [bitbox]
-|               |               |                  | [secalot]
-|               |               |                  | [wookong]
+## Mobile Wallets
+| Android       | IOS           | Android and IOS  
+| -----------   | ------------- | -------------    
+| [walleth]     | [tokenary]    | [trustwallet]    
+|               | [rainbow]     | [pillar]         
+|               |               | [argent]         
+|               |               | [coinomi]        
 
 [walleth]:      https://walleth.org/
 [trustwallet]:  https://trustwallet.com/
@@ -419,8 +425,21 @@ https://rimble.consensys.design/
 [rainbow]:      https://rainbow.me/
 [pillar]:       https://pillarproject.io/
 [argent]:       https://www.argent.xyz/
-
 [coinomi]:      https://www.coinomi.com/en/
+
+## Hardware wallets
+
+| Hardware
+| -----------   
+| [safepal]
+| [gridplus]
+| [trezor]
+| [ledger]
+| [keepkey]
+| [ether_cards]
+| [bitbox]
+| [secalot]
+| [wookong]
 
 [safepal]:      https://safepal.io/
 [gridplus]:     https://gridplus.io/
@@ -432,20 +451,10 @@ https://rimble.consensys.design/
 [secalot]:      https://www.secalot.com/
 [wookong]:      https://wookong.nbltrust.com/en
 
-### Login and user data (IPFS)
-
-| System        | Github               | Documentation
-| --------      | -------              | -------------
-| [3box]        | [3box_github]        | [3box_docs]
-
-[3box]:         https://3box.io/
-[3box_github]:  https://github.com/3box/3box
-[3box_docs]:    https://docs.3box.io/
-
-### Contract based wallets
+## Contract based wallets
 
 
-### Hierarchical Deterministic Wallets
+## Hierarchical Deterministic Wallets
 
 
 | HD Wallets         | Standards          | More information   | Github                    | Examples
@@ -467,9 +476,19 @@ https://rimble.consensys.design/
 [coin-constants-js]: https://github.com/bitcoinjs/bip44-constants
 
 
+# Login and user data
+
+| System        | Github               | Documentation
+| --------      | -------              | -------------
+| [3box]        | [3box_github]        | [3box_docs]
+
+[3box]:         https://3box.io/
+[3box_github]:  https://github.com/3box/3box
+[3box_docs]:    https://docs.3box.io/
 
 
-## Solidity
+
+# Solidity
 
 
 | Solidity                                  | Instances
@@ -533,6 +552,7 @@ https://rimble.consensys.design/
 [yt_sol_6datatypes]:    https://www.youtube.com/watch?v=8UhO3IKApSg
 [yt_sol_7string]:       https://www.youtube.com/watch?v=6iiWwT0O2fY
 
+# Developement tools
 
 | Development tools     | Instances                  |  More info (text) | More info (video) | Github   | Examples |
 | ---------------       |  ---------                 | ------            | --------------    | ---------| ---------|
@@ -540,7 +560,7 @@ https://rimble.consensys.design/
 | Tools                 | [tool-list]
 | Programming languages | [solidity-docs]
 | Online edit&deploy    | [remix-eth]<br>[play-eth]  | [remix-docu]            |
-| Deploy               | [truffle]                  | [truffle-docu]          |                   | [truffle-github]
+| Deploy                | [truffle]                  | [truffle-docu]          |                   | [truffle-github]
 | Upgrade contracts     | [zeppelinos]               | [zep-docu]<br>[sol5-zep]|  [youtube-zep] **[i1]** | [zep-github]  
 
 
@@ -562,6 +582,8 @@ https://rimble.consensys.design/
 
 
 [i1]: https://github.com/web3examples/ethereum/issues/1
+
+# Network instances
 
 | (Test) Networks | Info   | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |
 | --------------- |  ---   |---------                                       | ------        |   ----         |
@@ -596,14 +618,15 @@ https://rimble.consensys.design/
 
 [bloxy]:              https://bloxy.info
 
+# Building blocks
 
-| Building blocks       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
+| Building block        | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
 | ---------------       | ---------                               | ----                                          | ------             | --------------             | -----
 | Oracles-chainlink     | [chainlink]                             | [chainlink_exp]                               | [chainlink_github] | [chainlink_docs]           |
 | Oracles-provable      | [provable]                              | [provable_test]                               | [provable_github]  | [provable_docs]            |
 | Ethereum Name Service | [ens]<br>[ens-manager]<br>[ens_discuss] | [youtube-ens]<br>[enssimple]<br>[ens_build]   | [ens_github]       | [ens_docu]<br>[ens_work]   | [ens-tut1]<br>[ens-tut2]<br>[ens-tut3]
 | ENS and IPFS          | See [../ipfs]
-
+| Gas station           | [gsn]
 
 [provable]:         http://provable.xyz
 [provable_github]:  https://github.com/provable-things
@@ -629,10 +652,9 @@ https://rimble.consensys.design/
 [ens_work]:         https://medium.com/@industral/ens-ethereum-name-service-how-it-works-cc57ed296473
 [ens_build]:        https://github.com/EthWorks/ENSBuilder
 
+[gsn]:              https://gsn.openzeppelin.com/
 
-
-
-
+# Applications
 
 | Ethereum Applications | Instance            |  Github |
 | ---------------       |  ---------          | ------- |
@@ -651,6 +673,8 @@ https://rimble.consensys.design/
 [scratch_play]:         https://scratch.addisonbrown.com.au/
 [scratch_github]:       https://github.com/naddison36/eth-scratch3
 
+
+# Layer 2
 | Layer 2           | Instance            |  Github |
 | ---------------   |  ---------          | ------- |
 | Plasma
@@ -658,10 +682,12 @@ https://rimble.consensys.design/
 | Elastic Sidechains
 
 
-building blocks
-https://gsn.openzeppelin.com/
 
 
-veel links
-https://buidl.guide/academic/learning
-https://ethhub.io/
+# Other learning material
+
+Other learning material can be found here:
+
+* https://buidl.guide/academic/learning
+* https://ethhub.io
+

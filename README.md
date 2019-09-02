@@ -414,6 +414,7 @@ https://rimble.consensys.design/
 # Wallets
 
 ## Mobile Wallets
+
 | Android       | IOS           | Android and IOS  
 | -----------   | ------------- | -------------    
 | [walleth]     | [tokenary]    | [trustwallet]    
@@ -677,6 +678,7 @@ https://rimble.consensys.design/
 
 
 # Layer 2
+
 | Layer 2           | Instance            |  Github |
 | ---------------   |  ---------          | ------- |
 | Plasma

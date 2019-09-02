@@ -37,7 +37,7 @@ Examples
 
 | Ethereum Concepts   | Instances                | More info (text) | More info (video) |   Install  |  Examples |
 | ---------------     |  ---------               | ---------       | ---------          | ---------  |  -------- | 
-| General info        | [howwork]<br>[ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[basics]<br>[ethdocs]<br>[kauri]   |  [youtube-exp]
+| General info        | [howwork]<br>[ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[basics]<br>[ethdocs]<br>[kauri]<br>[buidl] |  [youtube-exp]
 | Architecture        |                          |                   | [youtube-arch]
 | Developer resources | [consensys_dev]<br>[eth-fordevs]
 | Full node software  |                       |     [client-overview] [understand nodes]
@@ -53,12 +53,14 @@ Examples
 [basics]:          https://consensys.net/academy/blockchain-basics-book/
 [ethdocs]:         http://www.ethdocs.org
 [kauri]:           https://kauri.io
+[buidl]:           https://buidl.guide/academic/learning
 [consensys_dev]:   https://ethereum.consensys.net/
 [eth-fordevs]:     https://blockgeeks.com/guides/?tagfilter=true&filter=Blockchain%20for%20Developers
 
 [Pantheon]:        https://pegasys.tech/solutions/
 [understand nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 [eth-mag]:         https://ethereum-magicians.org/
+
 
 # Explorers
 
@@ -67,7 +69,7 @@ Examples
 | [etherscan]       | [bloxy_db]    | [ethviewer]   | [poolwatch] | [bloxy_erc20]     | [bloxy_dapps]   | [ens_manager]
 | [ethplorer]       | [nodetracker] | [bloxy_graph] |             | [amberdata_tokens]|                 | [ethsimple]
 | [etherchain]      | [ethernodes]  | [ethtective]  |             | [enjinx_erc20]    |                 | [etherscan_ens]
-| [blockscout]      | [amberdata_db]|               |             | [emoon_erc20]     |                 | [etherchain_ens]|
+| [blockscout]      | [amberdata_db]|               |             | [emoon_erc20]     |                 | [etherchain_ens]
 | [enjinx]          | [ethstats]    |               |             |                   |                 | [emoon_ens]
 | [blockchain_com]  | [etherblockchain]
 | [btc_com]         | [dlethexplorer]
@@ -682,12 +684,4 @@ https://rimble.consensys.design/
 | Elastic Sidechains
 
 
-
-
-# Other learning material
-
-Other learning material can be found here:
-
-* https://buidl.guide/academic/learning
-* https://ethhub.io
 

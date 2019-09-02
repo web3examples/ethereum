@@ -5,15 +5,16 @@ This document contains info about:
 * [Ethereum Concepts](#ethereum-concepts)
 * [Explorers](#explorers)
 * [Node software](#node-software)
-   * [Node versions](#node-versions)
-   * [Running node](#running-node)
-   * [Node as a service](#Node as a service)
+    * [Node versions](#node-versions)
+    * [Running node](#running-node)
+    * [Node as a service](#Node as a service)
 *[Interfaces](#interfaces)
-    *[RPC APIs](#rpc-apis)
-    *[Web3.js](#web3.js)
-    *[Multisig wallet](#multisig wallet)
-    *[Alternative apis](#alternative-apis)
-    *[React](#react)
+    * [RPC APIs](#rpc-apis)
+    * [Other interfaces](#other-interfaces)
+    * [Web3.js](#web3.js)
+    * [Multisig wallet](#multisig wallet)
+    * [Alternative apis](#alternative-apis)
+    * [React](#react)
 *[](#)
 # 
 
@@ -260,15 +261,22 @@ Examples
 
 ## RPC APIs
 
-| Instance                  |  Language    | Documentation       | Github
-| ---------                 | ----------   | --------------      | ----------
-| Web3.js 0.x               | [Javascript] | [web3js0.2_docs]    | [web3js0.2_github]
-| Web3.js 1.x **(Current)** | [Javascript] | [web3js1.2_docs]    | [web3js1.2_github] 
-| Web3.js 2.x               | [Javascript] | [web3js2.0_docs]    | [web3js2.0_github]
-| Web3wrapper               | [Typescript] | [web3-wrapper_docs] | [web3-wrapper_github]
-| Web3py                    | [Python]     | [web3py_docs]       | [web3py_github]
-| [web3j]                   | [Java]       | [web3j_docs]        | [web3j_github]
-| EthRPC                    | [Go]         |                     | [ethrpc_github]
+| Instance                  |  Language    | Documentation           | Github
+| ---------                 | ----------   | --------------          | ----------
+| Web3.js 0.x               | [Javascript] | [web3js0.2_docs]        | [web3js0.2_github]
+| Web3.js 1.x **(Current)** | [Javascript] | [web3js1.2_docs]        | [web3js1.2_github] 
+| Web3.js 2.x               | [Javascript] | [web3js2.0_docs]        | [web3js2.0_github]
+| Ether.js                  | [Javascript] | [etherjs_docs]          | [etherjs_github]
+| Truffle contract          | [Javascript] |                         | [truffle_github]
+| Ethjs                     | [Javascript] |                         | [ethjs_github]
+| Web3wrapper               | [Typescript] | [web3-wrapper_docs]     | [web3-wrapper_github]
+| Web3py                    | [Python]     | [web3py_docs]           | [web3py_github]
+| Web3J                     | [Java]       | [web3j]<br>[web3j_docs] | [web3j_github]
+| EthRPC                    | [Go]         |                         | [ethrpc_github]
+| hs-web3                   | [Haskell]    |                         | [hs-web3_github]
+| web3j-scala               | [Scala]      |                         | [scalaweb3_github]
+| purescript-web3           | [Purescript] |                         | [purescrweb3_github]
+| web3.php                  | [PHP]        |                         |
 
 [web3js0.2_docs]:       https://github.com/ethereum/wiki/wiki/JavaScript-API
 [web3js0.2_github]:     https://github.com/ethereum/web3.js/tree/0.20.7
@@ -278,21 +286,45 @@ Examples
 [web3js2.0_github]:     https://github.com/ethereum/web3.js/tree/2.x
 [web3-wrapper_docs]:    https://0x.org/docs/web3-wrapper#introduction
 [web3-wrapper_github]:  https://github.com/0xProject/0x-monorepo/tree/development/packages/web3-wrapper
+[etherjs_docs]:         https://docs.ethers.io/ethers.js/html/
+[etherjs_github]:       https://github.com/ethers-io/ethers.js/
+[truffle_github]:       https://github.com/trufflesuite/truffle/tree/master/packages/truffle-contract
+[ethjs_github]:         https://github.com/ethjs/ethjs
+
 [web3py_docs]:          https://web3py.readthedocs.io
 [web3py_github]:        https://github.com/ethereum/web3.py
 [web3j]:                https://web3j.io/
 [web3j_docs]:           https://docs.web3j.io/
 [web3j_github]:         https://github.com/web3j/web3j
 [ethrpc]:               https://github.com/onrik/ethrpc
+[hs-web3_github]:       https://github.com/airalab/hs-web3
+[scalaweb3_github]:     https://github.com/mslinn/web3j-scala
+[purescrweb3_github]:   https://github.com/f-o-a-m/purescript-web3
+[php_github]            https://github.com/sc0Vu/web3.php
 
 [Typescript]:           https://www.typescriptlang.org/
+[Haskell]:              https://www.haskell.org/
+[PHP]:                  https://www.php.net/manual/en/intro-whatis.php
+[Scala]:                https://www.scala-lang.org/
+[Purescript]:           http://www.purescript.org/
 
 ## Other interfaces
+
+| Interface         | Documentation |  Github
+| -----------       | --------------| ---------
+| [walletconnect]
+| [univ_login]
+| [squarelink]
+| [scatter]
+| [instadapp]       | [instadapp_docs] | [instadapp_github]
 
 [walletconnect]:        https://walletconnect.org
 [univ_login]:           https://universallogin.io/
 [squarelink]:           https://squarelink.com/
 [scatter]:              https://get-scatter.com/
+[instadapp]:    https://instadapp.io/compound/
+[instadapp_docs]:   https://github.com/InstaDApp/docs
+[instadapp_github]:   https://github.com/InstaDApp/docs
 
 ## Web3.js
 
@@ -349,25 +381,13 @@ Examples
 
 [authereum]:        https://authereum.org/
 
-
-## Multisig wallet
-
-| Multisig wallet
-| ----
-| [instadapp]
-
-
-[instadapp]:    https://instadapp.io/compound/
-
-
-
-
-
-ether.js https://github.com/ethers-io/ethers.js/
-truffle-contract https://github.com/trufflesuite/truffle/tree/develop/packages/truffle-contract
-ethjs https://github.com/ethjs/ethjs
-
 ## React
+
+| React 
+| -----------
+|
+
+
 
 Web 3 JS https://github.com/ethereum/web3.js/
 Web 3 React https://github.com/NoahZinsmeister/web3-react

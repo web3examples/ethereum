@@ -7,7 +7,7 @@ These video's show how to install required software. ([Up](..) [Home](..\..))
 | Metamask        | [Install MetaMask Windows](Install MetaMask Windows.html)       |
 | Node.js 10      | [Install node.js 10 Windows](Install node.js 10 Windows.html)   | [Install node.js Macintosh](Install node.js Macintosh.html)    | [Install node.js 10 Ubuntu](Install node.js 10 Ubuntu.html)
 | Node.js 12      | [Install node.js 12 Windows](Install node.js 12 Windows.html)   |                                                                | [Install node.js 12 Ubuntu](Install node.js 12 Ubuntu.html)
-| Web3 package    | [Install Web3 WIndows](Install Web3 Windows.html)               | [Install tools Macintosh](Install tools Macintosh.html)<br>[Install Web3 Macintosh](Install Web3 Macintosh.html)    | [Install python Ubuntu](Install python Ubuntu.html) <br>[Install tools Ubuntu](Install tools Ubuntu.html) <br> [Install Web3 Ubuntu](Install Web3 Ubuntu.html)
+| Web3 package    | [Install Web3 Windows](Install Web3 Windows.html)               | [Install tools Macintosh](Install tools Macintosh.html)<br>[Install Web3 Macintosh](Install Web3 Macintosh.html)    | [Install python Ubuntu](Install python Ubuntu.html) <br>[Install tools Ubuntu](Install tools Ubuntu.html) <br> [Install Web3 Ubuntu](Install Web3 Ubuntu.html)
 | Ganache-cli     | [Install ganache-cli Windows - Use HTTPS](Install ganache-cli Windows - Use HTTPS.html)
 | Ganache         | [Install ganache Windows - Use HTTPS](Install ganache Windows - Use HTTPS.html)
 | Geth            | [Install geth Windows-use https](Install geth Windows-use https.html)

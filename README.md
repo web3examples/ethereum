@@ -12,7 +12,7 @@ This document contains info about:
     * [RPC APIs](#rpc-apis)
     * [Other interfaces](#other-interfaces)
     * [Web3.js](#web3js)
-    * [React](#react)
+    * [UX frameworks](#ux-frameworks)
 * [Wallets](#wallets)
     * [Mobile Wallets](#Mobile Wallets)
     * [Hardware wallets](#Hardware wallets)
@@ -392,24 +392,30 @@ Examples
 
 [authereum]:        https://authereum.org/
 
-## React
+## UX frameworks
 
-| React 
-| -----------
+| React                 | Angular
+| -----------           | ---------
+| [openzep-starter]     | [web3-in-angular]
+| [truffle-react]
+| [rimble]
 | [web3react]
 | [vortex]
 | [tasit]
 | [drizzle]
 | [dapparatus]
-| [rimble]
 
-[web3react]:    https://github.com/NoahZinsmeister/web3-react
-[vortex]:       https://github.com/Horyus/vortex
-[tasit]:        https://github.com/tasitlabs/tasitsdk
-[drizzle]:      https://github.com/truffle-box/drizzle-box
-[dapparatus]:   https://github.com/austintgriffith/dapparatus
-[rimble]:       https://rimble.consensys.design/
 
+[openzep-starter]:  https://github.com/OpenZeppelin/starter-kit
+[truffle-react]:    https://github.com/truffle-box/react-box
+[web3react]:        https://github.com/NoahZinsmeister/web3-react
+[vortex]:           https://github.com/Horyus/ethvtx
+[tasit]:            https://github.com/tasitlabs/tasitsdk
+[drizzle]:          https://github.com/truffle-box/drizzle-box
+[dapparatus]:       https://github.com/austintgriffith/dapparatus
+[rimble]:           https://rimble.consensys.design/
+
+[web3-in-angular]:   https://medium.com/b2expand/inject-web3-in-angular-6-0-a03ca345892
 
 # Wallets
 

@@ -8,16 +8,14 @@ This document contains info about:
     * [Node versions](#node-versions)
     * [Running node](#running-node)
     * [Node as a service](#Node as a service)
-*[Interfaces](#interfaces)
+* [Interfaces](#interfaces)
     * [RPC APIs](#rpc-apis)
     * [Other interfaces](#other-interfaces)
     * [Web3.js](#web3.js)
     * [Multisig wallet](#multisig wallet)
     * [Alternative apis](#alternative-apis)
     * [React](#react)
-*[](#)
-# 
-
+* [](#)
 
 Examples
 * [Install Ethereum software](installation)

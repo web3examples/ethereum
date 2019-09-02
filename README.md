@@ -86,7 +86,7 @@ Examples
 [etherchain]:       https://www.etherchain.org/
 [blockscout]:       https://blockscout.com/eth/mainnet/
 [enjinx]:           https://enjinx.io/eth/transactions
-[enjinx]_erc20]:    https://enjinx.io/eth/tokens
+[enjinx_erc20]:     https://enjinx.io/eth/tokens
 [blockchain_com]:   https://www.blockchain.com/explorer?currency=ETH
 [btc_com]:          https://eth.btc.com/
 [blockchair]:       https://blockchair.com/ethereum/blocks
@@ -205,7 +205,7 @@ Examples
 [dapp-infra]:     https://hackernoon.com/ethereum-dapp-infrastructure-2b4f1e6bfa38
 [setup]:          https://www.freecodecamp.org/news/ethereum-69-how-to-set-up-a-fully-synced-blockchain-node-in-10-mins-f6318d7aad40/
 
-[kubernetes]:     https://imti.co/ethereum-kubernetes/
+[ethereum-kubernetes]:     https://imti.co/ethereum-kubernetes/
 [aws-setup]:      https://docs.aws.amazon.com/blockchain-templates/latest/developerguide/blockchain-templates-create-stack.html
 [ibm-container1]: https://developer.ibm.com/tutorials/deploying-ethereum-blockchain-to-ibm-container/
 [ibm-container2]: https://medium.com/coinmonks/part-1-ethereum-blockchain-on-ibm-cloud-deploying-private-ethereum-blockchain-on-ibm-cloud-9d241afd3887
@@ -215,7 +215,7 @@ Examples
 [geth_setup]:     https://geth.ethereum.org/install-and-build/Installing-Geth         
 [parity_setup]:   https://wiki.parity.io/Setup
                   
-[ha]              https://docs.pantheon.pegasys.tech/en/latest/Deploying-Pantheon/High-Availability/
+[ha]:             https://docs.pantheon.pegasys.tech/en/latest/Deploying-Pantheon/High-Availability/
                   
                   
 [secure]:         https://www.researchgate.net/publication/327971402_Attack_and_Defence_of_Ethereum_Remote_APIs
@@ -287,7 +287,7 @@ Examples
 | hs-web3                   | [Haskell]    |                         | [hs-web3_github]
 | web3j-scala               | [Scala]      |                         | [scalaweb3_github]
 | purescript-web3           | [Purescript] |                         | [purescrweb3_github]
-| web3.php                  | [PHP]        |                         |
+| web3.php                  | [PHP]        |                         | [php_github]
 
 [web3js0.2_docs]:       https://github.com/ethereum/wiki/wiki/JavaScript-API
 [web3js0.2_github]:     https://github.com/ethereum/web3.js/tree/0.20.7
@@ -311,7 +311,7 @@ Examples
 [hs-web3_github]:       https://github.com/airalab/hs-web3
 [scalaweb3_github]:     https://github.com/mslinn/web3j-scala
 [purescrweb3_github]:   https://github.com/f-o-a-m/purescript-web3
-[php_github]            https://github.com/sc0Vu/web3.php
+[php_github]:           https://github.com/sc0Vu/web3.php
 
 [Typescript]:           https://www.typescriptlang.org/
 [Haskell]:              https://www.haskell.org/

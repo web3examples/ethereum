@@ -286,6 +286,8 @@ Examples
 | web3j-scala               | [Scala]      |                         | [scalaweb3_github]
 | purescript-web3           | [Purescript] |                         | [purescrweb3_github]
 | web3.php                  | [PHP]        |                         | [php_github]
+| ethereum php              | [PHP]        |                         | [ethereumphp_github]
+| web3 swift                | [Swift]      |                         | [web3swift]
 
 [web3js0.2_docs]:       https://github.com/ethereum/wiki/wiki/JavaScript-API
 [web3js0.2_github]:     https://github.com/ethereum/web3.js/tree/0.20.7
@@ -310,12 +312,15 @@ Examples
 [scalaweb3_github]:     https://github.com/mslinn/web3j-scala
 [purescrweb3_github]:   https://github.com/f-o-a-m/purescript-web3
 [php_github]:           https://github.com/sc0Vu/web3.php
+[ethereumphp_github]:   https://github.com/digitaldonkey/ethereum-php
+[web3swift]:            https://github.com/BANKEX/web3swift
 
 [Typescript]:           https://www.typescriptlang.org/
 [Haskell]:              https://www.haskell.org/
 [PHP]:                  https://www.php.net/manual/en/intro-whatis.php
 [Scala]:                https://www.scala-lang.org/
 [Purescript]:           http://www.purescript.org/
+[Swift]:                https://swift.org
 
 ## Other interfaces
 
@@ -392,12 +397,12 @@ Examples
 
 ## UX frameworks
 
-| React                 | Angular
-| -----------           | ---------
-| [openzep-starter]     | [web3-in-angular]
-| [truffle-react]       | [angulartruffledapp]
-| [rimble]              | [quintorangular]
-| [web3react]           | [limelabsangular]
+| React                 | Angular                   | Vue
+| -----------           | ---------                 | ------
+| [openzep-starter]     | [web3-in-angular]         | [vueweb3]
+| [truffle-react]       | [angulartruffledapp]      | [trufflevue]
+| [rimble]              | [quintorangular]          | [vuebox]
+| [web3react]           | [limelabsangular]         | [vuedark]
 | [vortex]              | [ngeth]
 | [tasit]
 | [drizzle]
@@ -417,6 +422,12 @@ Examples
 [quintorangular]:       https://www.trufflesuite.com/boxes/angular-truffle-box
 [limelabsangular]:      https://www.trufflesuite.com/boxes/limelabs-angular-box
 [ngeth]:                https://github.com/B2-Expand/ngeth
+
+[vueweb3]:              https://github.com/morrislaptop/vue-web3
+[trufflevue]:           https://www.trufflesuite.com/boxes/truffle-vue
+[vuebox]:               https://truffleframework.org/boxes/vue-box
+[vuedark]:              https://truffleframework.org/boxes/vue-dark-chocolate
+
 
 # Wallets
 

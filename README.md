@@ -209,7 +209,7 @@ Examples
 ## Running node
 
 | Install & run | Install Paas      | Secure            | Management tools
-| ----          | ----------------  | ----
+| ----          | ----------------  | ----              | -----------
 | [grid]        | [kubernetes]      | [secure]          | [eth-netstats]
 | [geth_setup]  | [aws-setup]
 | [parity_setup]| [azure-setup] 

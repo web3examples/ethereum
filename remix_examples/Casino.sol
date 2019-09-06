@@ -1,5 +1,5 @@
 // Load in remix: remix.loadurl("https://github.com/web3examples/ethereum/remix_examples/Casino.sol")
-pragma solidity >=0.4.0 <0.7.0;
+pragma solidity >=0.5.0 <0.7.0;
 
 /** @author Gerard Persoon
     @title A simple casino

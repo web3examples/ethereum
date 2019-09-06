@@ -20,8 +20,10 @@ This document contains info about:
     * [Hierarchical Deterministic Wallets](#hierarchical-deterministic-wallets)
 * [Login and user data](#login-and-user-data)
 * [Solidity](#solidity)
-* [Developement tools](#developement-tools)
+* [Development tools](#development-tools)
 * [Network instances](#network-instances)
+* [Security](#security)
+* [Best practices](#best-practices)
 * [Building blocks](#building-blocks)
 * [Applications](#applications)
 * [Layer 2](#layer-2)
@@ -33,32 +35,51 @@ Examples
 
 # Ethereum Concepts
 
-| Ethereum Concepts   | Instances                | More info (text) | More info (video) |   Install  |  Examples |
-| ---------------     |  ---------               | ---------       | ---------          | ---------  |  -------- | 
-| General info        | [howwork]<br>[ethereum.org]<br>[ethhub]<br>[eth-intro]<br>[eth-guide]<br>[basics]<br>[ethdocs]<br>[kauri]<br>[buidl] |  [youtube-exp]
-| Architecture        |                          |                   | [youtube-arch]
-| Developer resources | [consensys_dev]<br>[eth-fordevs]
-| Full node software  |                       |     [client-overview] [understand nodes]
-| Development of ethereum itself             | [eth-mag]
+| General info      | Development       | Youtube          | Info sources         | Online courses    
+| ---------------   | -----------       | ---------------- | ---------------      | ---------------
+| [mastering]       | [dappuniversity]  | [youtube-exp]    | [eth-mag]            | [zastrin]
+| [ethereum.org]    | [dev_tut]         | [youtube-arch]   | [tcrpartybot]        | [coursetro]
+| [ethhub]          | [blockgeeks-devs] |                  | [tokeneconomy]       | [tutorialspoint]
+| [eth-intro]       | [buidl]           |                  | [weekinethereumnews] | [ethereumdev]
+| [eth-guide]       | [eth_nw_learn]    |                  | [eth_stackexchange]  | [ludu]
+| [basics]          | [kauri]           |                  | [delegatecall]
+| [howwork]         | [ethereumbuilders]  
+| [ethdocs] (error) | [parity_wiki]
 
-[howwork]:         https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
-[ethhub]:          https://docs.ethhub.io/
-[ethereum.org]:    https://www.ethereum.org/
-[eth-intro]:       https://medium.com/coinmonks/https-medium-com-ritesh-modi-solidity-chapter1-63dfaff08a11
-[eth-guide]:       https://blockgeeks.com/guides/ethereum/
-[youtube-exp]:     https://www.youtube.com/results?search_query=ethereum+explained
-[youtube-arch]:    https://www.youtube.com/results?search_query=ethereum+architecture
-[basics]:          https://consensys.net/academy/blockchain-basics-book/
-[ethdocs]:         http://www.ethdocs.org
-[kauri]:           https://kauri.io
-[buidl]:           https://buidl.guide/academic/learning
-[consensys_dev]:   https://ethereum.consensys.net/
-[eth-fordevs]:     https://blockgeeks.com/guides/?tagfilter=true&filter=Blockchain%20for%20Developers
 
-[Pantheon]:        https://pegasys.tech/solutions/
-[understand nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
-[eth-mag]:         https://ethereum-magicians.org/
+[mastering]:          https://github.com/ethereumbook/ethereumbook
+[howwork]:            https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
+[ethhub]:             https://docs.ethhub.io/
+[ethereum.org]:       https://www.ethereum.org/
+[eth-intro]:          https://medium.com/coinmonks/https-medium-com-ritesh-modi-solidity-chapter1-63dfaff08a11
+[eth-guide]:          https://blockgeeks.com/guides/ethereum/
+[basics]:             https://consensys.net/academy/blockchain-basics-book/
+[ethdocs]:            http://www.ethdocs.org
 
+[dappuniversity]:     http://www.dappuniversity.com/
+[dev_tut]:            https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
+[blockgeeks-devs]:    https://blockgeeks.com/guides/?tagfilter=true&filter=Blockchain%20for%20Developers
+[buidl]:              https://buidl.guide
+[eth_nw_learn]:       https://ethereum.network/learn
+[kauri]:              https://kauri.io
+[ethereumbuilders]:   https://ethereumbuilders.gitbooks.io/guide/content/en/
+[parity_wiki]:        https://wiki.parity.io/Development-Overview
+
+[youtube-exp]:        https://www.youtube.com/results?search_query=ethereum+explained
+[youtube-arch]:       https://www.youtube.com/results?search_query=ethereum+architecture
+
+[eth-mag]:            https://ethereum-magicians.org/
+[tcrpartybot]:        https://twitter.com/tcrpartybot
+[tokeneconomy]:       http://weekly.tokeneconomy.co/
+[weekinethereumnews]: https://weekinethereumnews.com/
+[eth_stackexchange]:  https://ethereum.stackexchange.com/
+[delegatecall]:       https://delegatecall.com/
+
+[zastrin]:            https://www.zastrin.com/courses/simple-voting-vid/lessons/1-1
+[coursetro]:          https://coursetro.com/courses/20/Developing-Ethereum-Smart-Contracts-for-Beginners
+[tutorialspoint]:     https://www.tutorialspoint.com/ethereum/index.htm
+[ethereumdev]:        https://ethereumdev.io/
+[ludu]:               https://www.ludu.co/course/ethereum
 
 # Explorers
 
@@ -130,7 +151,7 @@ Examples
 
 | Ethereum Nodes     | Information      | Language     |  Github            | Documentation                 | 
 | ---------------    |  --------        | ------       | --------------     | ----
-| Overview           | [client-overview]|              |  
+| Overview           | [client-overview]<br>[understand_nodes]|              |  
 | Go Ethereum (~70%) | [geth]           | [go]         | [geth_github]      | [geth_docs]
 | Parity (~25%)      | [parity_eth]     | [rust]       | [parity_github]    | [parity_docs]
 | Aleth/eth (cpp-eth)| [cpp_eth]        | [cpp]        | [aleth_eth_github] | [cpp_docs]
@@ -142,8 +163,9 @@ Examples
 | Quorum             | [quorum]         | [go]         | [quorum_github]    | [quorum_docs]
 
 
+[Pantheon]:         https://pegasys.tech/solutions/
 [client-overview]:  http://www.ethdocs.org/en/latest/ethereum-clients
-
+[understand_nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 
 [geth]:             https://geth.ethereum.org/
 [go]:               https://golang.org/
@@ -187,16 +209,18 @@ Examples
 ## Running node
 
 | Install & run | Install Paas      | Secure            | Management tools
-|----           | ---               | ----
-| [geth_setup]  |
-| [parity_setup]| 
-| [running]     | [kubernetes]      | [secure]          | [eth-netstats]
-| [archive]     | [aws-setup]
-| [howto]       | [azure-setup]
-| [dapp-infra]  | [ethereum-kubernetes]
-| [setup]       | [ibm-container1]
-| [ha]          | [ibm-container2]
+| ----          | ----------------  | ----
+| [grid]        | [kubernetes]      | [secure]          | [eth-netstats]
+| [geth_setup]  | [aws-setup]
+| [parity_setup]| [azure-setup] 
+| [running]     | [ethereum-kubernetes]
+| [archive]     | [ibm-container1]
+| [howto]       | [ibm-container2]
+| [dapp-infra]  | 
+| [setup]       | 
+| [ha]          | 
 
+[grid]:           https://grid.ethereum.org/
 [running]:        https://docs.ethhub.io/using-ethereum/running-an-ethereum-node/
 [archive]:        https://blog.slock.it/how-to-not-run-an-ethereum-archive-node-a-journey-d038b4da398b
 [howto]:          https://kauri.io/article/c287fe53de9b4073a18065443253a86d/how-to-install-and-synchronize-your-own-remote-ethereum-node
@@ -331,6 +355,9 @@ Examples
 | [squarelink]
 | [scatter]
 | [instadapp]       | [instadapp_docs] | [instadapp_github]
+| [unreal_ether]
+| [scratch_play]    |                  | [scratch_github]
+| [sbt-ethereum]    |                  | [sbt_eth_github]
 
 [walletconnect]:        https://walletconnect.org
 [univ_login]:           https://universallogin.io/
@@ -339,6 +366,14 @@ Examples
 [instadapp]:    https://instadapp.io/compound/
 [instadapp_docs]:   https://github.com/InstaDApp/docs
 [instadapp_github]:   https://github.com/InstaDApp/docs
+
+[unreal_ether]:         https://www.unrealengine.com/marketplace/en-US/slug/etherlinker
+
+[scratch_play]:         https://scratch.addisonbrown.com.au/
+[scratch_github]:       https://github.com/naddison36/eth-scratch3
+[sbt-ethereum]:         https://www.sbt-ethereum.io/
+[sbt_eth_github]:       https://github.com/swaldman/sbt-ethereum
+
 
 ## Web3.js
 
@@ -511,11 +546,57 @@ Examples
 
 # Solidity
 
+## Overview
+
+| Overview                   | Solidity collections & examples
+| -----------------          |  ---------------
+| [cryptozombies]            | [code_examples]
+| [solidity_indepth]         | [smartcontract_codes]
+| [solidity_overview]        | [etherscan_verified]
+| [learn_solidity]           | [github_sol]
+| [blockgeeks_sol1]          | [contractfinder]
+| [blockgeeks_sol2]          | [ethpm_registry]
+| [yt_sol_1basics]           | [openzeppelin_ctr]
+| [soliditykoans]            | [verified_contracts]
+| [top10_tut]                |
+| [bitdegree]                | [azure_samples]
+| [babysteps]                | [top5]
+| [cheatsheet]
+| [awesome-sol]
+
+[cryptozombies]:     https://cryptozombies.io/en/lesson/1
+[solidity_indepth]:  https://solidity.readthedocs.io/en/develop/solidity-in-depth.html
+[solidity_overview]: https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
+[learn_solidity]:    https://www.bitdegree.org/learn/learn-solidity
+[blockgeeks_sol1]:   https://blockgeeks.com/guides/solidity/
+[blockgeeks_sol2]:   https://blockgeeks.com/introduction-to-solidity-part-1/
+[yt_sol_1basics]:    https://www.youtube.com/watch?v=v_hU0jPtLto 
+[soliditykoans]:     https://soliditykoans.org/
+[top10_tut]:         https://dev.to/charumalikcs/top-10-solidity-tutorials-1495
+[bitdegree]:         https://www.bitdegree.org/learn/learn-solidity
+[babysteps]:         https://github.com/cyrusadkisson/solidity-baby-steps
+[cheatsheet]:        https://intellipaat.com/blog/tutorial/blockchain-tutorial/blockchain-cheat-sheet/
+[awesome-sol]:       https://github.com/bkrem/awesome-solidity
+
+
+[code_examples]:       https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
+[smartcontract_codes]: https://smartcontract.codes
+[etherscan_verified]:  https://etherscan.io/contractsVerified
+[github_sol]:          https://github.com/search?q=pragma+solidity&ref=searchresults&type=Code&utf8=%E2%9C%93
+[contractfinder]:      https://github.com/pipeos-one/pipeline/blob/master/docs/ContractFinder.md
+[ethpm_registry]:      https://docs.ethpm.com/public-registry-directory
+[openzeppelin_ctr]:    https://github.com/OpenZeppelin/openzeppelin-contracts-ethereum-package
+[azure_samples]:       https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/application-and-smart-contract-samples
+[top5]:                https://bytescout.com/blog/top-5-smart-contracts.html
+
+[verified_contracts]:  https://github.com/runtimeverification/verified-smart-contracts
+
+
+## Details
 
 | Solidity                                  | Instances
 | ---------------                           | -------- 
-| Overview                                  | [solidity_indepth]<br>[solidity_overview]<br>[learn_solidity]<br>[blockgeeks]<br>[yt_sol_1basics]
-| Layout, comments, natspec                 | [tosh_layout] [natspec]
+| Layout, comments, natspec                 | [tosh_layout] [natspec] [sol_style]
 | General data types                        | [tosh_datatypes]  [yt_sol_7string]
 | Ether and Time Units                      | [tosh_ethertime]
 | Control Structures                        | [tosh_control]
@@ -534,14 +615,11 @@ Examples
 | Events                                    | [tosh_events] [yt_sol_5events]
 | Error handling                            | [sol_error] [tosh_except]
 
-[solidity_indepth]:  https://solidity.readthedocs.io/en/develop/solidity-in-depth.html
 [sol_vis]:           https://solidity.readthedocs.io/en/develop/contracts.html#visibility-and-getters
 [sol_create]:        https://solidity.readthedocs.io/en/develop/contracts.html#creating-contracts
 [sol_mapping]:       https://solidity.readthedocs.io/en/develop/types.html#mapping-types
 [sol_error]:         https://solidity.readthedocs.io/en/develop/control-structures.html#error-handling-assert-require-revert-and-exceptions
-
-[solidity_overview]: https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
-[learn_solidity]:    https://www.bitdegree.org/learn/learn-solidity
+[sol_style]:         https://solidity.readthedocs.io/en/latest/style-guide.html
 [natspec]:           https://solidity.readthedocs.io/en/develop/natspec-format.html
 [tosh_layout]:       https://www.toshblocks.com/solidity/layout-solidity-based-smart-contracts/
 [tosh_datatypes]:    https://www.toshblocks.com/solidity/general-value-data-types-solidity/
@@ -560,49 +638,50 @@ Examples
 [tosh_import]:       https://www.toshblocks.com/solidity/importing-compiling-smart-contracts/
 [tosh_events]:       https://www.toshblocks.com/solidity/events-logging-solidity/
 [tosh_except]:       https://www.toshblocks.com/solidity/exceptions-solidity/
-
 [coursetro_map]:     https://coursetro.com/posts/code/102/Solidity-Mappings-&-Structs-Tutorial
-[blockgeeks]:        https://blockgeeks.com/introduction-to-solidity-part-1/
 [zohaid_library]:    https://zohaib.me/reusable-code-in-solidity-using-library/
-
-[yt_sol_1basics]:       https://www.youtube.com/watch?v=v_hU0jPtLto 
-[yt_sol_2inherit]:      https://www.youtube.com/watch?v=6hkmLOtIq8A
-[yt_sol_3modifiers]:    https://www.youtube.com/watch?v=3ObTNzDM3wI
-[yt_sol_4imports]:      https://www.youtube.com/watch?v=0Lyf_3kA3Ms
-[yt_sol_5events]:       https://www.youtube.com/watch?v=Jlq997yOoRs
-[yt_sol_6datatypes]:    https://www.youtube.com/watch?v=8UhO3IKApSg
-[yt_sol_7string]:       https://www.youtube.com/watch?v=6iiWwT0O2fY
-
-# Developement tools
-
-| Development tools     | Instances                  |  More info (text) | More info (video) | Github   | Examples |
-| ---------------       |  ---------                 | ------            | --------------    | ---------| ---------|
-| General info          | [consensys-dev]            | [eth-devnews]
-| Tools                 | [tool-list]
-| Programming languages | [solidity-docs]
-| Online edit&deploy    | [remix-eth]<br>[play-eth]  | [remix-docu]            |
-| Deploy                | [truffle]                  | [truffle-docu]          |                   | [truffle-github]
-| Upgrade contracts     | [zeppelinos]               | [zep-docu]<br>[sol5-zep]|  [youtube-zep] **[i1]** | [zep-github]  
+[yt_sol_2inherit]:   https://www.youtube.com/watch?v=6hkmLOtIq8A
+[yt_sol_3modifiers]: https://www.youtube.com/watch?v=3ObTNzDM3wI
+[yt_sol_4imports]:   https://www.youtube.com/watch?v=0Lyf_3kA3Ms
+[yt_sol_5events]:    https://www.youtube.com/watch?v=Jlq997yOoRs
+[yt_sol_6datatypes]: https://www.youtube.com/watch?v=8UhO3IKApSg
+[yt_sol_7string]:    https://www.youtube.com/watch?v=6iiWwT0O2fY
 
 
-[consensys-dev]:  https://ethereum.consensys.net/
-[eth-devnews]:    https://weekinethereumnews.com/
-[tool-list]:      https://github.com/ConsenSys/ethereum-developer-tools-list
-[play-eth]:       https://play.ethereum.org/editor-solidity/
-[remix-eth]:      https://remix.ethereum.org
-[remix-docu]:     https://remix.readthedocs.io
-[zeppelinos]:     https://zeppelinos.org/
-[zep-github]:     https://github.com/zeppelinos
-[zep-docu]:       https://blog.zeppelinos.org/
-[truffle]:        https://truffleframework.com/
-[truffle-github]: https://github.com/trufflesuite/truffle
-[truffle-docu]:   https://truffleframework.com/docs
-[solidity-docs]:  https://solidity.readthedocs.io
-[youtube-zep]:    https://www.youtube.com/watch?v=kIHKo3DWuUo
-[sol5-zep]:       https://kauri.io/article/315cbd6c71574e2686e15f0a20003089/how-to-write-upgradeable-smart-contracts-with-truffle-5.0-and-zeppelinos-2.0
+# Development tools
 
 
-[i1]: https://github.com/web3examples/ethereum/issues/1
+| Developer portal   | Online editors   | Deployment       | Package managers
+| ------------------ | ---------------  | ---------------- | -------------------
+| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]
+| [tool-list]        | [remix-eth]      | [zeppelinos]     | [aragonpm]
+| [toolkit]          | [superblocks]    | [embark]         |
+| [tools-dutch]      | [ethfiddle]      | [dapptools]
+| [eth_dev]          |                  | [more-frameworks]
+
+
+[consensys-dev]:   https://ethereum.consensys.net/
+[tool-list]:       https://github.com/ConsenSys/ethereum-developer-tools-list
+[toolkit]:         http://www.dappuniversity.com/articles/blockchain-developer-toolkit
+[tools-dutch]:     https://www.uitlegblockchain.nl/tools-voor-de-ontwikkeling-van-ethereum-dapps/
+[eth_dev]:          https://www.ethereum.org/developers/
+
+[play-eth]:        https://ethereum-play.github.io/editor-solidity/
+[remix-eth]:       https://remix.ethereum.org
+[superblocks]:     https://lab.superblocks.com
+[ethfiddle]:       https://ethfiddle.com/
+
+[truffle]:         https://truffleframework.com/
+[zeppelinos]:      https://zeppelinos.org/
+[embark]:          https://embark.status.im/
+[dapptools]:       http://dapp.tools/dapp/
+[more-frameworks]: https://github.com/ConsenSys/ethereum-developer-tools-list#frameworks
+
+[ethpm]:           https://www.ethpm.com/
+[aragonpm]:        https://hack.aragon.org/docs/apm-intro.html
+
+
+
 
 # Network instances
 
@@ -638,6 +717,70 @@ Examples
 [blockscout-goerli]:  https://blockscout.com/eth/goerli
 
 [bloxy]:              https://bloxy.info
+
+
+
+# Security
+
+|  Weaknesses      | Measures               | Security tools  | Bug bounties  | Audits        | Formal verify
+| -----------      | ------------------     | ----------------| ----------    | ------        | ---
+| [swc]            | [considerations]       | [amberdata]     | [bugbounty]   | [rtver_audit] | [rtver_formal]
+| [known_attacks1] | [sec_best_practices]   | [sectools]      |               |               | [verx]
+| [known_attacks2] |                        | [securify]
+| [list2016]       | [loomavoid]
+| [sol_hacks]      | [sec2016]  
+
+
+
+[swc]:                  https://github.com/SmartContractSecurity/SWC-registry
+[known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
+[known_attacks2]:       https://consensys.github.io/smart-contract-best-practices/known_attacks/
+
+[list2016]:             https://blog.ethereum.org/2016/06/19/thinking-smart-contract-security
+[sol_hacks]:            https://hackernoon.com/hackpedia-16-solidity-hacks-vulnerabilities-their-fixes-and-real-world-examples-f3210eba5148
+
+[considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
+[sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
+[loomavoid]:            https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d
+[sec2016]:              https://blog.ethereum.org/2016/06/10/smart-contract-security/
+
+[amberdata]:            https://amberdata.io/dashboards/security
+[sectools]:             https://consensys.github.io/smart-contract-best-practices/security_tools/
+[securify]:             https://securify.chainsecurity.com/
+
+
+[bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/
+
+
+[rtver_audit]:          https://runtimeverification.com/smartcontract/
+
+
+[rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
+[verx]:                 https://verx.ch/
+
+
+# Best practices
+
+| Best practice     | Details               | Verify source         | Register function
+| ----------------  | ------------          | ----------            | -----------
+|                   | [metamask_api]        | [etherscan_verify]    | [register_function]
+|                   | [register_function]   | [ethscan_auto]        | [4bytes]
+|                   | [4bytes]              | [etherchain_verify]
+
+[metamask_api]:         https://metamask.github.io/metamask-docs/API_Reference/JSON_RPC_API
+
+[etherscan_verify]:     https://etherscan.io/verifyContract
+[ethscan_auto]:         https://kalis.me/verify-truffle-smart-contracts-etherscan/
+[etherchain_verify]:    https://www.etherchain.org/tools/verifyContract
+
+[register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
+[4bytes]:               https://www.4byte.directory
+
+
+
+
+
+
 
 # Building blocks
 
@@ -691,8 +834,7 @@ Examples
 [cryptokit]:            https://www.cryptokitties.co/
 [ethernaut]:            https://ethernaut.openzeppelin.com
 
-[scratch_play]:         https://scratch.addisonbrown.com.au/
-[scratch_github]:       https://github.com/naddison36/eth-scratch3
+
 
 
 # Layer 2

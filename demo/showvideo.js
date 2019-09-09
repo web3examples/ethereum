@@ -24,18 +24,27 @@ document.body.insertAdjacentElement("afterbegin", header)
 var ipfs_element = document.getElementById("ipfs")
 ipfs_element.hidden=true;
 
+function videoerror(event)
+{   let error = event;
+    if (event.path && event.path[0]) {     // Chrome v60
+      error = event.path[0].error;
+    }    
+    if (event.originalTarget) { // Firefox v55
+      error = error.originalTarget.error;
+    }
+    alert(`Video error: ${error.message}`);     // Here comes the error message
+}
+
 var video=document.createElement("video");
 //video.src="https://siderus.io/ipfs/"+ipfs_element.innerText;
 video.src="http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText;
 video.class="videoplayer";
 video.controls=false;
-
 // video.style.height="50%";
-
-
 video.autoplay=true; 
 video.muted=true;  // otherwise not playing automatically
 video.ontimeupdate = function() {VideoLocation()}; // call function when movie is at a different location
+video.addEventListener('error', videoerror, true);
 document.body.appendChild(video);
 
 var newline=document.createElement("br");
@@ -152,6 +161,7 @@ function VideoLocation() {
 }   
 
 function ReadTimeTable(table)  {
+console.log("In ReadTimeTable");
     var timetable_element=document.getElementById("timetable");
     timetable_element.hidden=true;
     var txt = timetable_element.innerText;
@@ -160,7 +170,7 @@ function ReadTimeTable(table)  {
     if (lines[lines.length-1]=="") lines.pop(); // get rid of last empty line
     do {
         let line=lines.shift();
-        if (line.length ==0) { continue;}  // skip empty lines
+        if (line.length==0) { continue;}  // skip empty lines
         var linedata=line.split("|");
         var outputline=[];
         for (let part of linedata) {
@@ -169,6 +179,7 @@ function ReadTimeTable(table)  {
                 var txt=""
                 do {
                     line=lines.shift();
+                    if (lines.length==0) { break;}  // extra end check                    
                     var fBarFound=(line.indexOf("|") >=0) 
                     if (!fBarFound)
                         txt += line+"<br>";

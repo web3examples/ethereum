@@ -377,14 +377,14 @@ Examples
 
 ## Web3.js
 
-| Browser extention     | Browser ext via contract | In mobile browser    | Connect via alt.apis   | Browser import             | Browser import via contract |
-| --------------------- | ------------------------ | ---------------------| ---------------------  | --------------             | --------------------------  |
-| [metamask]            |[dapper]                  | [metamask_mobile]    | [walletconnect_web3js] | [portis]                   | [authereum]
+| Browser extention     | Browser ext via contract | In mobile browser    | Connect via alt.apis   | Browser import             | Iframe wallet | Browser import via contract |
+| --------------------- | ------------------------ | ---------------------| ---------------------  | --------------             | ------------  | -----
+| [metamask]            |[dapper]                  | [metamask_mobile]    | [walletconnect_web3js] | [portis]                   | [myethvault]  | [authereum]
 | [equal]               |[gnosis_safe]             | [opera_mobile]       | [squarelink_web3js]    | [fortmatic]                | 
 | [mathwallet]          |                          | [trustwallet]        | [scatter_web3js]       | [burner_wallet] (insecure) |
 | [saturn_wallet]       |                          | [cipher]             |                        | [bitski]
 |                       |                          | [coinbase]           |                        | [torus]
-|                       |                          | [status.im]          |                        | [myethvault]
+|                       |                          | [status.im]          |                        | 
 |                       |                          | [dapppocket]
 |                       |                          | [go_wallet]
 |                       |                          | [alphawallet]
@@ -559,7 +559,7 @@ Examples
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
 | [soliditykoans]            | [verified_contracts]
-| [top10_tut]                |
+| [top10_tut]                | 
 | [bitdegree]                | [azure_samples]
 | [babysteps]                | [top5]
 | [cheatsheet]
@@ -725,17 +725,18 @@ Examples
 
 ## Weaknesses and Measures
 
-|  Weaknesses           | Measures               
-| -----------           | ------------------     
-| [swc]                 | [considerations]       
-| [known_attacks1]      | [sec_best_practices]   
+|  Weaknesses           | Measures               | Standards & checklists | Papers
+| -----------           | ------------------     | -----------            | -------------
+| [swc]                 | [considerations]       | [audit_standards]      | [paper_overview]
+| [known_attacks1]      | [sec_best_practices]   | [audit_checklist]    
 | [known_attacks2]      | [safety]
 | [list2016]            | [loomavoid] 
 | [sol_hacks]           | [sec2016] 
 | [smartdec_knowledge]  | [awesome_sec]    
-| [list_vul]        
+| [list_vul]            | [secure_pattern]
 | [dasp]
 | [notsosmart]
+| [detector_docs]
 
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
@@ -747,6 +748,8 @@ Examples
 [list_vul]:             https://github.com/runtimeverification/verified-smart-contracts/wiki/List-of-Security-Vulnerabilities
 [dasp]:                 https://www.dasp.co/
 [notsosmart]:           https://github.com/crytic/not-so-smart-contracts
+[detector_docs]:        https://github.com/crytic/slither/wiki/Detector-Documentation
+
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
 [sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
@@ -754,70 +757,120 @@ Examples
 [loomavoid]:            https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d
 [sec2016]:              https://blog.ethereum.org/2016/06/10/smart-contract-security/
 [awesome_sec]:          https://github.com/crytic/awesome-ethereum-security
+[secure_pattern]:       http://eprints.cs.univie.ac.at/5433/7/sanerws18iwbosemain-id1-p-380f58e-35576-preprint.pdf
+
+[audit_standards]:      https://www.smartcontractsecurityalliance.com/
+[audit_checklist]:      https://medium.com/quillhash/quillaudits-smart-contracts-audit-check-list-d65a305ec1a3
+
+[paper_overview]:       https://github.com/hyeonleee/Smart_Contract_Security_Analysis
+
 
 ## Security tools
 
-| Verify smart contracts |Security tools  | Formal verify  | Token checks    | Fuzzer
-| ----------------       |  ---           | ---------      | -------------   | ---------
-| [mythx]                |[sectools]      | [rtver_formal] | [erc20_check]   | [contractfuzzer]
-| [securify]             |[teEther]       | [verx]         |                 | [echidna]
-| [Oyente]
-| [Maian]
-| [vandal]
-| [madmax]
+| Verify smart contracts | Security tools  | Formal verify    | Token checks    | Fuzzer             | Decompile
+| ----------------       |   ---           | ---------        | -------------   | ---------          | -------------
+| [mythx]                | [sectools]      | [rtver_formal]   | [erc20_check]   | [contractfuzzer]   | [reversing]
+| [securify]             | [teEther]       | [verx]           |                 | [echidna]          | [ethvm_decompile]
+| [quantstamp_prot]      | [surya]         | [formal_overview]|                 |                    | [evmdis]
+| [Oyente]               |                 |                  |                 |                    | [pyevmasm] 
+| [Maian]                |                 |                  |                 |                    | [ethersplay]
+| [vandal]               |                 |                  |                 |                    | [jeb_decompiler]
+| [madmax]               |                 |                  |                 |                    | [contract-library]
+| [rattle]               |                 |                  |                 |                    | [eveem]
+| [slither]              |                 |                  |                 |                    | [yasold]
+|                        |                 |                  |                 |                    | [abi_dec]
+|                        |                 |                  |                 |                    | [opcode_tool]
 
 
-[securify]:             https://securify.chainsecurity.com/
 [mythx]:                https://mythx.io
+[securify]:             https://securify.chainsecurity.com/
+[quantstamp_prot]:      https://protocol.quantstamp.com/
 [Oyente]:               https://oyente.melonport.com
 [Maian]:                https://github.com/MAIAN-tool/MAIAN
 [vandal]:               https://github.com/usyd-blockchain/vandal
 [madmax]:               https://github.com/nevillegrech/MadMax
+[rattle]:               https://github.com/crytic/rattle
+[slither]:              https://github.com/crytic/slither
 
 
 [sectools]:             https://consensys.github.io/smart-contract-best-practices/security_tools/
 [teEther]:              https://github.com/nescio007/teether
+[ethersplay]:           https://github.com/crytic/ethersplay
+[surya]:                https://github.com/ConsenSys/surya
 
 [rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
 [verx]:                 https://verx.ch/
+[formal_overview]:      https://github.com/pirapira/ethereum-formal-verification-overview/
 
 [erc20_check]:          https://testsuite.net/
 
-//fuzzer
 [contractfuzzer]:       https://github.com/gongbell/ContractFuzzer
 [echidna]:              https://github.com/crytic/echidna
 
+[reversing]:            https://arvanaghi.com/blog/reversing-ethereum-smart-contracts/
+[ethvm_decompile]:      https://ethervm.io/decompile
+[evmdis]:               https://github.com/Arachnid/evmdis
+[pyevmasm]:             https://github.com/crytic/pyevmasm
+[jeb_decompiler]:       https://www.pnfsoftware.com/blog/ethereum-smart-contract-decompiler/
+[contract-library]:     https://www.contract-library.com/
+[eveem]:                https://eveem.org/
+[yasold]:               https://github.com/ajlopez/Yasold
+[abi_dec]:              https://github.com/beched/abi-decompiler
+[opcode_tool]:          https://etherscan.io/opcode-tool
 
 ## Bounties and audits
 
-| Audits         | Bug Bounty 
-| -----------    | ----------
-| [rtver_audit]  | [bugbounty]
-| [amberdata]
-| [calistocw_audit]
+| Auditors           | Audit requests  | Audit reports        | Bug Bounty / audit platform | How to
+| -----------        | ----------      | -----------          | ------                      | ------------
+| [overview_auditors]| [calistocw_req] | [public_audits]      | [bugbounty]                 | [howtoaudit]
+| [diligence]        |                 | [authio_audits]      | [bountyone]
+| [rtver_audit]      |                 | [quillhash_audits]   | [calistocw_audit]
+| [amberdata]        |                 | [iosiro_audits]      | [solidified]
+| [certik]           |                 | [openzeppelin_audits]| 
+| [decenter]
+| [quantstamp]
+| [authio]
+| [openxcell]
+| [quillhash]
+| [hacken_io]
+| [trailofbits]
+| [chainsecurity]
+| [iosiro]
+| [itransition]
+| [openzeppelin_secaud]
 
-[bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/
 
+[overview_auditors]:    https://www.smartcontractaudits.com/audit-providers/companies/1
+[diligence]:            https://diligence.consensys.net/
 [rtver_audit]:          https://runtimeverification.com/smartcontract/
 [amberdata]:            https://amberdata.io/dashboards/security
+[certik]:               https://certik.org/security-audits.html
+[decenter]:             https://www.decenter.com/audits/
+[experfy]:              https://www.experfy.com/hire/smart-contract-audits
+[quantstamp]:           https://quantstamp.com/audits
+[authio]:               https://authio.org/
+[openxcell]:            https://www.openxcell.com/smart-contracts-audit
+[quillhash]:            https://audits.quillhash.com/smart-contract-audit
+[hacken_io]:            https://hacken.io/services/#blockchain-security
+[trailofbits]:          https://www.trailofbits.com/services/blockchain-security/
+[chainsecurity]:        https://chainsecurity.com/
+[iosiro]:               https://www.iosiro.com/
+[itransition]:          https://www.itransition.com/technologies/smart-contract-consulting
+[openzeppelin_secaud]:  https://openzeppelin.com/security-audits/
+
+[calistocw_req]:        https://github.com/EthereumCommonwealth/Auditing/issues
+
+[public_audits]:        https://github.com/sigp/public-audits
+[authio_audits]:        https://authio.org/audits
+[quillhash_audits]:     https://audits.quillhash.com/smart-contract-audit#reports
+[iosiro_audits]:        https://www.iosiro.com/audits/
+[openzeppelin_audits]:  https://blog.openzeppelin.com/security-audits/
+
+[howtoaudit]:           https://blockgeeks.com/guides/audit-smart-contract/
 [calistocw_audit]:      https://github.com/EthereumCommonwealth/Auditing
-
-
-//auditing
-https://github.com/EthereumCommonwealth/Auditing
-https://callisto.network/smart-contract-audit/
-https://certik.org/security-audits.html
-https://www.smartcontractaudits.com 
-https://github.com/sigp/public-audits
-https://blog.smartdec.net/smartdec-smart-contract-audit-beginners-guide-d04cc7f1c571
-https://openzeppelin.com/security-audits/
-
-https://blog.openzeppelin.com/security-audits/
-
-https://www.smartcontractaudits.com/audit-providers/companies/1
-
-
-
+[bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/
+[bountyone]:            https://bountyone.io/
+[solidified]:           https://solidified.io/
 
 # Best practices
 
@@ -904,6 +957,7 @@ https://www.smartcontractaudits.com/audit-providers/companies/1
 | Plasma
 | State Channels
 | Elastic Sidechains
+
 
 
 

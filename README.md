@@ -384,7 +384,7 @@ Examples
 | [mathwallet]          |                          | [trustwallet]        | [scatter_web3js]       | [burner_wallet] (insecure) |
 | [saturn_wallet]       |                          | [cipher]             |                        | [bitski]
 |                       |                          | [coinbase]           |                        | [torus]
-|                       |                          | [status.im]
+|                       |                          | [status.im]          |                        | [myethvault]
 |                       |                          | [dapppocket]
 |                       |                          | [go_wallet]
 |                       |                          | [alphawallet]
@@ -427,6 +427,7 @@ Examples
 [burner_wallet]:    https://github.com/austintgriffith/burner-wallet
 [bitski]:           https://www.bitski.com/
 [torus]:            https://tor.us
+[myethvault]:       https://myethvault.com/
 
 [authereum]:        https://authereum.org/
 
@@ -722,41 +723,100 @@ Examples
 
 # Security
 
-|  Weaknesses      | Measures               | Security tools  | Bug bounties  | Audits        | Formal verify
-| -----------      | ------------------     | ----------------| ----------    | ------        | ---
-| [swc]            | [considerations]       | [amberdata]     | [bugbounty]   | [rtver_audit] | [rtver_formal]
-| [known_attacks1] | [sec_best_practices]   | [sectools]      |               |               | [verx]
-| [known_attacks2] |                        | [securify]
-| [list2016]       | [loomavoid]
-| [sol_hacks]      | [sec2016]  
+## Weaknesses and Measures
 
+|  Weaknesses           | Measures               
+| -----------           | ------------------     
+| [swc]                 | [considerations]       
+| [known_attacks1]      | [sec_best_practices]   
+| [known_attacks2]      | [safety]
+| [list2016]            | [loomavoid] 
+| [sol_hacks]           | [sec2016] 
+| [smartdec_knowledge]  | [awesome_sec]    
+| [list_vul]        
+| [dasp]
+| [notsosmart]
 
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
 [known_attacks2]:       https://consensys.github.io/smart-contract-best-practices/known_attacks/
-
 [list2016]:             https://blog.ethereum.org/2016/06/19/thinking-smart-contract-security
 [sol_hacks]:            https://hackernoon.com/hackpedia-16-solidity-hacks-vulnerabilities-their-fixes-and-real-world-examples-f3210eba5148
+[smartdec_knowledge]:   https://tool.smartdec.net/knowledge
+[list_vul]:             https://github.com/runtimeverification/verified-smart-contracts/wiki/List-of-Security-Vulnerabilities
+[dasp]:                 https://www.dasp.co/
+[notsosmart]:           https://github.com/crytic/not-so-smart-contracts
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
 [sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
+[safety]:               https://github.com/ethereum/wiki/wiki/Safety
 [loomavoid]:            https://medium.com/loom-network/how-to-secure-your-smart-contracts-6-solidity-vulnerabilities-and-how-to-avoid-them-part-1-c33048d4d17d
 [sec2016]:              https://blog.ethereum.org/2016/06/10/smart-contract-security/
+[awesome_sec]:          https://github.com/crytic/awesome-ethereum-security
 
-[amberdata]:            https://amberdata.io/dashboards/security
-[sectools]:             https://consensys.github.io/smart-contract-best-practices/security_tools/
+## Security tools
+
+| Verify smart contracts |Security tools  | Formal verify  | Token checks    | Fuzzer
+| ----------------       |  ---           | ---------      | -------------   | ---------
+| [mythx]                |[sectools]      | [rtver_formal] | [erc20_check]   | [contractfuzzer]
+| [securify]             |[teEther]       | [verx]         |                 | [echidna]
+| [Oyente]
+| [Maian]
+| [vandal]
+| [madmax]
+
+
 [securify]:             https://securify.chainsecurity.com/
+[mythx]:                https://mythx.io
+[Oyente]:               https://oyente.melonport.com
+[Maian]:                https://github.com/MAIAN-tool/MAIAN
+[vandal]:               https://github.com/usyd-blockchain/vandal
+[madmax]:               https://github.com/nevillegrech/MadMax
 
 
-[bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/
-
-
-[rtver_audit]:          https://runtimeverification.com/smartcontract/
-
+[sectools]:             https://consensys.github.io/smart-contract-best-practices/security_tools/
+[teEther]:              https://github.com/nescio007/teether
 
 [rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
 [verx]:                 https://verx.ch/
+
+[erc20_check]:          https://testsuite.net/
+
+//fuzzer
+[contractfuzzer]:       https://github.com/gongbell/ContractFuzzer
+[echidna]:              https://github.com/crytic/echidna
+
+
+## Bounties and audits
+
+| Audits         | Bug Bounty 
+| -----------    | ----------
+| [rtver_audit]  | [bugbounty]
+| [amberdata]
+| [calistocw_audit]
+
+[bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/
+
+[rtver_audit]:          https://runtimeverification.com/smartcontract/
+[amberdata]:            https://amberdata.io/dashboards/security
+[calistocw_audit]:      https://github.com/EthereumCommonwealth/Auditing
+
+
+//auditing
+https://github.com/EthereumCommonwealth/Auditing
+https://callisto.network/smart-contract-audit/
+https://certik.org/security-audits.html
+https://www.smartcontractaudits.com 
+https://github.com/sigp/public-audits
+https://blog.smartdec.net/smartdec-smart-contract-audit-beginners-guide-d04cc7f1c571
+https://openzeppelin.com/security-audits/
+
+https://blog.openzeppelin.com/security-audits/
+
+https://www.smartcontractaudits.com/audit-providers/companies/1
+
+
 
 
 # Best practices

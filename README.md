@@ -2,31 +2,40 @@
 Examples related to ethereum. ([Home](..))
 
 This document contains info about:
-* [Ethereum Concepts](#ethereum-concepts)
-* [Explorers](#explorers)
-* [Node software](#node-software)
-    * [Node versions](#node-versions)
-    * [Running node](#running-node)
-    * [Node as a service](#node-as-a-service)
-* [Interfaces](#interfaces)
-    * [RPC APIs](#rpc-apis)
-    * [Other interfaces](#other-interfaces)
-    * [Web3.js](#web3js)
-    * [UX frameworks](#ux-frameworks)
-* [Wallets](#wallets)
-    * [Mobile Wallets](#mobile-wallets)
-    * [Hardware wallets](#hardware-wallets)
-    * [Contract based wallets](#contract-based-wallets)
-    * [Hierarchical Deterministic Wallets](#hierarchical-deterministic-wallets)
-* [Login and user data](#login-and-user-data)
-* [Solidity](#solidity)
-* [Development tools](#development-tools)
-* [Network instances](#network-instances)
-* [Security](#security)
-* [Best practices](#best-practices)
-* [Building blocks](#building-blocks)
-* [Applications](#applications)
-* [Layer 2](#layer-2)
+- [Ethereum](#ethereum)
+- [Ethereum Concepts](#ethereum-concepts)
+- [Explorers](#explorers)
+- [Node software](#node-software)
+  - [Node versions](#node-versions)
+  - [Running node](#running-node)
+  - [Node as a service](#node-as-a-service)
+- [Interfaces](#interfaces)
+  - [RPC APIs](#rpc-apis)
+  - [Other interfaces](#other-interfaces)
+  - [Web3.js](#web3js)
+  - [UX frameworks](#ux-frameworks)
+- [Wallets](#wallets)
+  - [Mobile Wallets](#mobile-wallets)
+  - [Hardware wallets](#hardware-wallets)
+  - [Contract based wallets](#contract-based-wallets)
+  - [Hierarchical Deterministic Wallets](#hierarchical-deterministic-wallets)
+- [Login and user data](#login-and-user-data)
+- [Solidity](#solidity)
+  - [Overview](#overview)
+  - [Details](#details)
+- [Development tools](#development-tools)
+- [Network instances](#network-instances)
+- [Security](#security)
+  - [Weaknesses and Measures](#weaknesses-and-measures)
+  - [Security tools](#security-tools)
+  - [Bounties and audits](#bounties-and-audits)
+- [Best practices](#best-practices)
+- [Building blocks](#building-blocks)
+- [Applications](#applications)
+  - [Financial](#financial)
+  - [Games](#games)
+  - [Other](#other)
+- [Layer 2](#layer-2)
 
 Examples
 * [Install Ethereum software](install)
@@ -933,20 +942,55 @@ Examples
 
 # Applications
 
-| Ethereum Applications | Instance            |  Github |
-| ---------------       |  ---------          | ------- |
-| Overview              | [stateofthedapps]<br>[dappradar]<br>[consensys-overview]
-| Games                 | [cheezewiz]<br>[cryptokit]<br>[ethernaut]
-| EasyProgramming       | [scratch_play]      | [scratch_github]
+
+| Overview   
+| ---------- 
+| [stateofthedapps]
+| [dappradar]
+| [consensys-overview]
 
 [consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [dappradar]:            https://dappradar.com/
 
+
+## Financial
+
+## Games
+
+| Overview   | Specific
+| ---------- | --------------
+|            | [cheezewiz]
+|            | [cryptokit]
+|            | [ethernaut]
+
+## Other 
+
+
+
+| Ethereum Applications | Instance            |  Github |
+| ---------------       |  ---------          | ------- |
+
+
+
+
+
 [cheezewiz]:            https://www.cheezewizards.com/
 [cryptokit]:            https://www.cryptokitties.co/
 [ethernaut]:            https://ethernaut.openzeppelin.com
 
+
+
+apps
+https://blockchaingame.world/dapp
+https://dappsmarket.net/
+https://mathdapp.store/?blockchain=ethereum
+https://blockchaingamer.net/
+dapp.review
+dapp.com
+https://dappradar.com/
+dappbirds.com
+https://dapponline.io/
 
 
 

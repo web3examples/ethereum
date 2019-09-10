@@ -942,44 +942,36 @@ Examples
 
 # Applications
 
-
 | Overview   
 | ---------- 
 | [stateofthedapps]
 | [dappradar]
 | [consensys-overview]
 
-[consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [dappradar]:            https://dappradar.com/
-
+[consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
 
 ## Financial
 
+| Financial
+|------------
+|
+
 ## Games
 
-| Overview   | Specific
-| ---------- | --------------
-|            | [cheezewiz]
-|            | [cryptokit]
-|            | [ethernaut]
-
-## Other 
-
-
-
-| Ethereum Applications | Instance            |  Github |
-| ---------------       |  ---------          | ------- |
-
-
-
-
+| Games
+| ---------- 
+| [cheezewiz]
+| [cryptokit]
+| [ethernaut]
 
 [cheezewiz]:            https://www.cheezewizards.com/
 [cryptokit]:            https://www.cryptokitties.co/
 [ethernaut]:            https://ethernaut.openzeppelin.com
 
 
+## Other 
 
 apps
 https://blockchaingame.world/dapp

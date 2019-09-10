@@ -31,10 +31,13 @@ This document contains info about:
   - [Bounties and audits](#bounties-and-audits)
 - [Best practices](#best-practices)
 - [Building blocks](#building-blocks)
+  - [Oracles](#oracles)
+  - [Ethereum Name System](#ethereum-name-system)
+  - [Other Building blocks](#other-building-blocks)
 - [Applications](#applications)
+  - [Overview](#overview-1)
   - [Financial](#financial)
   - [Games](#games)
-  - [Other](#other)
 - [Layer 2](#layer-2)
 
 Examples
@@ -355,10 +358,12 @@ Examples
 [Purescript]:           http://www.purescript.org/
 [Swift]:                https://swift.org
 
+
+
 ## Other interfaces
 
-| Interface         | Documentation |  Github
-| -----------       | --------------| ---------
+| Interface         | Documentation    |  Github
+| -----------       | --------------   | ---------
 | [walletconnect]
 | [univ_login]
 | [squarelink]
@@ -367,14 +372,15 @@ Examples
 | [unreal_ether]
 | [scratch_play]    |                  | [scratch_github]
 | [sbt-ethereum]    |                  | [sbt_eth_github]
+| [hybrix]          | [hybix_docs]     | [hybix_github]
 
 [walletconnect]:        https://walletconnect.org
 [univ_login]:           https://universallogin.io/
 [squarelink]:           https://squarelink.com/
 [scatter]:              https://get-scatter.com/
-[instadapp]:    https://instadapp.io/compound/
-[instadapp_docs]:   https://github.com/InstaDApp/docs
-[instadapp_github]:   https://github.com/InstaDApp/docs
+[instadapp]:            https://instadapp.io/compound/
+[instadapp_docs]:       https://github.com/InstaDApp/docs
+[instadapp_github]:     https://github.com/InstaDApp/docs
 
 [unreal_ether]:         https://www.unrealengine.com/marketplace/en-US/slug/etherlinker
 
@@ -382,7 +388,9 @@ Examples
 [scratch_github]:       https://github.com/naddison36/eth-scratch3
 [sbt-ethereum]:         https://www.sbt-ethereum.io/
 [sbt_eth_github]:       https://github.com/swaldman/sbt-ethereum
-
+[hybrix]:               https://hybrix.io
+[hybix_docs]:           https://api.hybrix.io/help/
+[hybix_github]:         https://github.com/hybrix-io
 
 ## Web3.js
 
@@ -899,20 +907,15 @@ Examples
 [4bytes]:               https://www.4byte.directory
 
 
-
-
-
-
-
 # Building blocks
 
-| Building block        | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
-| ---------------       | ---------                               | ----                                          | ------             | --------------             | -----
-| Oracles-chainlink     | [chainlink]                             | [chainlink_exp]                               | [chainlink_github] | [chainlink_docs]           |
-| Oracles-provable      | [provable]                              | [provable_test]                               | [provable_github]  | [provable_docs]            |
-| Ethereum Name Service | [ens]<br>[ens-manager]<br>[ens_discuss] | [youtube-ens]<br>[enssimple]<br>[ens_build]   | [ens_github]       | [ens_docu]<br>[ens_work]   | [ens-tut1]<br>[ens-tut2]<br>[ens-tut3]
-| ENS and IPFS          | See [../ipfs]
-| Gas station           | [gsn]
+## Oracles
+
+| Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
+| ----------    | ---------                               | ----                                          | ------             | --------------             | -----
+| Chainlink     | [chainlink]                             | [chainlink_exp]                               | [chainlink_github] | [chainlink_docs]           |
+| Provable      | [provable]                              | [provable_test]                               | [provable_github]  | [provable_docs]            |
+
 
 [provable]:         http://provable.xyz
 [provable_github]:  https://github.com/provable-things
@@ -923,6 +926,14 @@ Examples
 [chainlink_exp]:    https://explorer.chain.link
 [chainlink_github]: https://github.com/smartcontractkit/chainlink
 [chainlink_docs]:   https://docs.chain.link/docs
+
+## Ethereum Name System
+
+| Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
+| ----------    | ---------                               | ----                                          | ------             | --------------             | -----
+| Ethereum Name Service | [ens]<br>[ens-manager]<br>[ens_discuss] | [youtube-ens]<br>[enssimple]<br>[ens_build]   | [ens_github]       | [ens_docu]<br>[ens_work]   | [ens-tut1]<br>[ens-tut2]<br>[ens-tut3]
+| ENS and IPFS          | See [../ipfs]
+
 
 [ens]:              https://ens.domains/
 [ens_discuss]:      https://discuss.ens.domains/
@@ -938,51 +949,146 @@ Examples
 [ens_work]:         https://medium.com/@industral/ens-ethereum-name-service-how-it-works-cc57ed296473
 [ens_build]:        https://github.com/EthWorks/ENSBuilder
 
+## Other Building blocks
+
+| Building block        | Instances   | Dashboard
+| --------------------- | ----------- | --------
+| Gas station           | [gsn]       |
+| DEX                   | [0x]        | [0xtracker]
+| Lending               | [compound]  | 
+
 [gsn]:              https://gsn.openzeppelin.com/
+
+[0x]:               https://0x.org/
+[0xtracker]:        https://0xtracker.com/
+
+[compound]: https://compound.finance/
 
 # Applications
 
-| Overview   
-| ---------- 
-| [stateofthedapps]
+Also see: [Projects](../ecosystem/#projects)
+
+## Overview
+
+| Dapps                         | Projects   
+| ----------                    | -----
+| [stateofthedapps]             | [etnw_projects]
 | [dappradar]
 | [consensys-overview]
+| [mathdapp]
+| [dappreview]
+| [dappcom]
+| [superdapps]
+| [appco]
+| [dapps_trust]
+| [dapps_walletc]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [dappradar]:            https://dappradar.com/
 [consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
+[mathdapp]:             https://mathdapp.store/?blockchain=ethereum
+[dappreview]:           https://dapp.review/explore
+[dappcom]:              https://www.dapp.com
+[superdapps]:           https://superdapps.com
+[appco]:                https://app.co/all
+[dapps_trust]:          https://dapps.trustwallet.com
+[dapps_walletc]:        https://walletconnect.org/apps
+
+
 
 ## Financial
 
-| Financial
-|------------
-|
+* [defi_intro]
+
+[defi_intro]:   https://medium.com/quiknode/the-ultimate-intro-to-defi-dada84136c3
+
+| Overview          | Financial   | Dashboards     | 
+|------------       | ----        | -----
+| [defiprime]       | [zerion]    | [defipulse]
+| [defimap]         | [instadapp] | [loanscan]
+| [etherscan_defi]  | [bamboo]    | [etherscan_defi]
+| [100defi]         | [balance]   |
+| [awedefi]         | [settle]
+| [ongdefi]         | [dexag]
+| [defirate]        | [airswap]
+|                   | [dydx]
+|                   | [etherisc]
+
+[defiprime]:        https://defiprime.com/
+[defimap]:          https://www.theblockcrypto.com/genesis/15376/mapping-out-ethereums-defi/
+[etherscan_defi]:   https://etherscan.io/accounts/label/defi
+[100defi]:          https://media.consensys.net/the-100-projects-pioneering-decentralized-finance-717478ddcdf2
+[awedefi]:          https://www.block123.com/en/feature/awesome-ethereum-defi-decentralized-finance-list
+[ongdefi]:          https://github.com/ong/awesome-decentralized-finance
+[defirate]:         https://defirate.com/
+
+[zerion]:           https://zerion.io/en
+[instadapp]:        https://instadapp.io
+[bamboo]:           https://bamboorelay.com/
+[balance]:          https://balance.io/
+[settle]:           https://settle.finance
+[dexag]:            https://dex.ag/
+[airswap]:          https://www.airswap.io/
+[dydx]:             https://dydx.exchange/
+[etherisc]:         https://etherisc.com/
+
+[defipulse]:        http://defipulse.com
+[loanscan]:         https://loanscan.io/
+
+
+
+
 
 ## Games
 
-| Games
-| ---------- 
-| [cheezewiz]
-| [cryptokit]
-| [ethernaut]
+| Overview       | Games
+| ----------     | ------------
+| [bcgworld]     | [cheezewiz]
+| [dappsmarket]  | [cryptokit]
+|                | [ethernaut]
+
+[bcgworld]:     https://blockchaingame.world/dapp
+[dappsmarket]:  https://dappsmarket.net/
 
 [cheezewiz]:            https://www.cheezewizards.com/
 [cryptokit]:            https://www.cryptokitties.co/
 [ethernaut]:            https://ethernaut.openzeppelin.com
 
 
-## Other 
 
-apps
-https://blockchaingame.world/dapp
-https://dappsmarket.net/
-https://mathdapp.store/?blockchain=ethereum
-https://blockchaingamer.net/
-dapp.review
-dapp.com
-https://dappradar.com/
-dappbirds.com
-https://dapponline.io/
+ 
+
+ 
+
+
+https://fck.com/
+https://github.com/dice2-win/contracts/blob/master/Dice2Win.sol
+
+https://www.castlecrypto.gg/blockchain-games-list/
+Crypto Kitties - https://www.cryptokitties.co/
+Cheeze Wizards - https://www.cheezewizards.com/
+MyCryptoHeroes - https://www.mycryptoheroes.net/
+Etheremon - https://www.etheremon.com/
+Megacryptopolis - https://www.megacryptopolis.com/
+Blockchain Cuties Universe - https://blockchaincuties.com/
+Hyperdragons - https://hyperdragons.alfakingdom.com/
+Decentraland		https://decentraland.org/		
+Axie Infinity		https://axieinfinity.com/		
+Footbattle		http://footbattle.io/		
+Kitty Bounties		http://kittybounties.com/		
+Augur		https://www.augur.net/		
+OpenSea		https://opensea.io/		
+CryptoHeroes		https://www.mycryptoheroes.net/		
+Heaven Cat		https://heaven.cat/		
+Kitty Helper		https://kittyhelper.co/		
+Crypt-Oink		https://www.crypt-oink.io/		
+https://kickback.events/
+
+marketplaces:
+https://www.emoon.io/
+
+
+
 
 
 

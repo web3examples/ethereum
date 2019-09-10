@@ -30,14 +30,18 @@ This document contains info about:
   - [Security tools](#security-tools)
   - [Bounties and audits](#bounties-and-audits)
 - [Best practices](#best-practices)
+  - [Blacklists](#blacklists)
 - [Building blocks](#building-blocks)
   - [Oracles](#oracles)
   - [Ethereum Name System](#ethereum-name-system)
+  - [Financial Building blocks](#financial-building-blocks)
   - [Other Building blocks](#other-building-blocks)
 - [Applications](#applications)
   - [Overview](#overview-1)
   - [Financial](#financial)
   - [Games](#games)
+  - [Legal](#legal)
+  - [Other applications](#other-applications)
 - [Layer 2](#layer-2)
 
 Examples
@@ -571,12 +575,12 @@ Examples
 | [cryptozombies]            | [code_examples]
 | [solidity_indepth]         | [smartcontract_codes]
 | [solidity_overview]        | [etherscan_verified]
-| [learn_solidity]           | [github_sol]
+| [learn_solidity]           | 
 | [blockgeeks_sol1]          | [contractfinder]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
 | [soliditykoans]            | [verified_contracts]
-| [top10_tut]                | 
+| [top10_tut]                | [github_sol]
 | [bitdegree]                | [azure_samples]
 | [babysteps]                | [top5]
 | [cheatsheet]
@@ -746,7 +750,7 @@ Examples
 | -----------           | ------------------     | -----------            | -------------
 | [swc]                 | [considerations]       | [audit_standards]      | [paper_overview]
 | [known_attacks1]      | [sec_best_practices]   | [audit_checklist]    
-| [known_attacks2]      | [safety]
+| [known_attacks2]      | [safety]               | [slowmist_checklist]
 | [list2016]            | [loomavoid] 
 | [sol_hacks]           | [sec2016] 
 | [smartdec_knowledge]  | [awesome_sec]    
@@ -778,26 +782,29 @@ Examples
 
 [audit_standards]:      https://www.smartcontractsecurityalliance.com/
 [audit_checklist]:      https://medium.com/quillhash/quillaudits-smart-contracts-audit-check-list-d65a305ec1a3
+[slowmist_checklist]:   https://www.slowmist.com/en/service-smart-contract-security-audit.html
+
 
 [paper_overview]:       https://github.com/hyeonleee/Smart_Contract_Security_Analysis
 
 
 ## Security tools
 
-| Verify smart contracts | Security tools  | Formal verify    | Token checks    | Fuzzer             | Decompile
-| ----------------       |   ---           | ---------        | -------------   | ---------          | -------------
-| [mythx]                | [sectools]      | [rtver_formal]   | [erc20_check]   | [contractfuzzer]   | [reversing]
-| [securify]             | [teEther]       | [verx]           |                 | [echidna]          | [ethvm_decompile]
-| [quantstamp_prot]      | [surya]         | [formal_overview]|                 |                    | [evmdis]
-| [Oyente]               |                 |                  |                 |                    | [pyevmasm] 
-| [Maian]                |                 |                  |                 |                    | [ethersplay]
-| [vandal]               |                 |                  |                 |                    | [jeb_decompiler]
-| [madmax]               |                 |                  |                 |                    | [contract-library]
-| [rattle]               |                 |                  |                 |                    | [eveem]
-| [slither]              |                 |                  |                 |                    | [yasold]
-|                        |                 |                  |                 |                    | [abi_dec]
-|                        |                 |                  |                 |                    | [opcode_tool]
-
+| Verify smart contracts    | Security tools  | Formal verify    | Token checks    | Fuzzer             | Decompile           | Investigate
+| ----------------          |   ---           | ---------        | -------------   | ---------          | -------------       | -----
+| [mythx]                   | [sectools]      | [rtver_formal]   | [erc20_check]   | [contractfuzzer]   | [reversing]         | [chainalysis]
+| [securify]                | [teEther]       | [verx]           |                 | [echidna]          | [ethvm_decompile]   | [ey_analyzer]
+| [quantstamp_prot]         | [surya]         | [formal_overview]|                 |                    | [evmdis]            | [elliptic]
+| [Oyente]                  |                 |                  |                 |                    | [pyevmasm]          | [cs-intell]
+| [Maian]                   |                 |                  |                 |                    | [ethersplay]        | [ciphertrace]
+| [vandal]                  |                 |                  |                 |                    | [jeb_decompiler]    | [spyderforensics]
+| [madmax]                  |                 |                  |                 |                    | [contract-library]  | [czorro]
+| [rattle]                  |                 |                  |                 |                    | [eveem]             | [scorechain]
+| [slither]                 |                 |                  |                 |                    | [yasold]            | [cipherblade]
+| [anchainai]               |                 |                  |                 |                    | [abi_dec]           | [dmgblockchain] 
+| [crytic]<br>[crytic_docs] |                 |                  |                 |                    | [opcode_tool]       | [blockchainintel]
+|                           |                 |                  |                 |                    | [octopus]           | [crystalblockchain]
+|                           |                 |                  |                 |                    |                     | [blockseer]
 
 [mythx]:                https://mythx.io
 [securify]:             https://securify.chainsecurity.com/
@@ -808,7 +815,9 @@ Examples
 [madmax]:               https://github.com/nevillegrech/MadMax
 [rattle]:               https://github.com/crytic/rattle
 [slither]:              https://github.com/crytic/slither
-
+[anchainai]:            https://cap.anchainai.com
+[crytic]:               https://crytic.io/
+[crytic_docs]:          https://blog.trailofbits.com/2019/08/02/crytic-continuous-assurance-for-smart-contracts/
 
 [sectools]:             https://consensys.github.io/smart-contract-best-practices/security_tools/
 [teEther]:              https://github.com/nescio007/teether
@@ -834,30 +843,55 @@ Examples
 [yasold]:               https://github.com/ajlopez/Yasold
 [abi_dec]:              https://github.com/beched/abi-decompiler
 [opcode_tool]:          https://etherscan.io/opcode-tool
+[octopus]:              https://github.com/quoscient/octopus
+
+
+[chainalysis]:          https://www.chainalysis.com/
+[ey_analyzer]:          https://www.ey.com/en_gl/news/2018/04/ey-announces-blockchain-audit-technology
+[elliptic]:             https://www.elliptic.co/
+[cs-intell]:            https://www.cs-intell.com/
+[ciphertrace]:          https://ciphertrace.com/
+[spyderforensics]:      https://www.spyderforensics.com/
+[czorro]:               http://czorro.com/
+[scorechain]:           https://ethereum.scorechain.com/
+[cipherblade]:          https://cipherblade.com/
+[dmgblockchain]:        https://dmgblockchain.com
+[blockchainintel]:      https://www.blockchainintel.com
+[crystalblockchain]:    https://crystalblockchain.com/
+[blockseer]:            https://www.blockseer.com
 
 ## Bounties and audits
 
-| Auditors           | Audit requests  | Audit reports        | Bug Bounty / audit platform | How to
-| -----------        | ----------      | -----------          | ------                      | ------------
-| [overview_auditors]| [calistocw_req] | [public_audits]      | [bugbounty]                 | [howtoaudit]
-| [diligence]        |                 | [authio_audits]      | [bountyone]
-| [rtver_audit]      |                 | [quillhash_audits]   | [calistocw_audit]
-| [amberdata]        |                 | [iosiro_audits]      | [solidified]
-| [certik]           |                 | [openzeppelin_audits]| 
-| [decenter]
-| [quantstamp]
-| [authio]
-| [openxcell]
-| [quillhash]
-| [hacken_io]
-| [trailofbits]
-| [chainsecurity]
-| [iosiro]
-| [itransition]
-| [openzeppelin_secaud]
+| Overview              | Auditors           | Audit requests  | Audit reports        | Bug Bounty / audit platform | How to
+| -------------------   | -----------        | ----------      | -----------          | ------                      | ------------
+| [overview_auditors]   | [calistocw_req]    | [public_audits] |                      | [bugbounty]               | [howtoaudit]
+| [etherscan_auditors]  | [diligence]        |                 | [authio_audits]      | [bountyone]
+|                       | [rtver_audit]      |                 | [quillhash_audits]   | [calistocw_audit]
+|                       | [amberdata]        |                 | [iosiro_audits]      | [solidified]
+|                       | [certik]           |                 | [openzeppelin_audits]| 
+|                       | [decenter]         |                 | [trailofbits_audits]
+|                       | [quantstamp]       |                 | [slowmist_audits]
+|                       | [authio]
+|                       | [openxcell]
+|                       | [quillhash]
+|                       | [hacken_io]
+|                       | [trailofbits]
+|                       | [chainsecurity]
+|                       | [iosiro]
+|                       | [itransition]
+|                       | [openzeppelin_secaud]
+|                       | [blockchainfirm]
+|                       | [mixbytes]
+|                       | [newalchemy]
+|                       | [naumovlab]
+|                       | [practicalassurance]
+|                       | [slowmist]
+|                       | [somish]
 
 
 [overview_auditors]:    https://www.smartcontractaudits.com/audit-providers/companies/1
+[etherscan_auditors]:   https://etherscan.io/directory/Smart_Contracts/Smart_Contracts_Audit_And_Security
+
 [diligence]:            https://diligence.consensys.net/
 [rtver_audit]:          https://runtimeverification.com/smartcontract/
 [amberdata]:            https://amberdata.io/dashboards/security
@@ -874,6 +908,14 @@ Examples
 [iosiro]:               https://www.iosiro.com/
 [itransition]:          https://www.itransition.com/technologies/smart-contract-consulting
 [openzeppelin_secaud]:  https://openzeppelin.com/security-audits/
+[blockchainfirm]:       https://www.blockchainfirm.io/smart-contract-audit
+[mixbytes]:             https://mixbytes.io/audit
+[newalchemy]:           https://audits.newalchemy.io/
+[naumovlab]:            https://naumovlab.com/audit.html
+[practicalassurance]:   https://practicalassurance.com/smart-contract-audit
+[slowmist]:             https://www.slowmist.com/en/#service
+[somish]:               https://www.somish.com/blockchain/smart-contract-audit/
+
 
 [calistocw_req]:        https://github.com/EthereumCommonwealth/Auditing/issues
 
@@ -882,6 +924,9 @@ Examples
 [quillhash_audits]:     https://audits.quillhash.com/smart-contract-audit#reports
 [iosiro_audits]:        https://www.iosiro.com/audits/
 [openzeppelin_audits]:  https://blog.openzeppelin.com/security-audits/
+[trailofbits_audits]:   https://github.com/trailofbits/publications#security-reviews
+[slowmist_audits]:      https://github.com/slowmist/Knowledge-Base/blob/master/open-report/README.md
+
 
 [howtoaudit]:           https://blockgeeks.com/guides/audit-smart-contract/
 [calistocw_audit]:      https://github.com/EthereumCommonwealth/Auditing
@@ -891,11 +936,13 @@ Examples
 
 # Best practices
 
-| Best practice     | Details               | Verify source         | Register function
-| ----------------  | ------------          | ----------            | -----------
-|                   | [metamask_api]        | [etherscan_verify]    | [register_function]
-|                   | [register_function]   | [ethscan_auto]        | [4bytes]
-|                   | [4bytes]              | [etherchain_verify]
+| Best practice     | Details               | Verify source         | Register function     
+| ----------------  | ------------          | ----------            | -----------           
+|                   | [metamask_api]        | [etherscan_verify]    | [register_function]   
+|                   |                       | [ethscan_auto]        | [4bytes]              
+|                   |                       | [etherchain_verify]   |                       
+
+
 
 [metamask_api]:         https://metamask.github.io/metamask-docs/API_Reference/JSON_RPC_API
 
@@ -905,6 +952,32 @@ Examples
 
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
+
+
+## Blacklists
+
+| Site blacklist            | Address blacklist     | Token blacklist      | ENS blacklist
+| --------------            | -----------------     | ---------------      | ------------
+| [metamask_blacklist]      | [metamask_address]    | [etherscan_tokphish] |  [ens_blacklist]
+| [infura_blacklist_api]    | [etherscan_actphish] 
+| [cryptoscamdb]            | [etherscan_actheist]
+| [belgium_blacklist]       | [cryptoscamdb]
+| [phishfort]
+
+
+[metamask_blacklist]:   https://github.com/MetaMask/eth-phishing-detect
+[infura_blacklist_api]: https://api.infura.io/v2/blacklist
+[cryptoscamdb]:         https://cryptoscamdb.org/
+[belgium_blacklist]:    https://www.fsma.be/en/warnings/companies-operating-unlawfully-in-belgium?field_type_of_fraude_tid_i18n=10595
+[phishfort]:            https://www.phishfort.com/
+
+[metamask_address]:     https://github.com/MetaMask/metamask-extension/blob/develop/app/scripts/controllers/transactions/lib/recipient-blacklist.js
+[etherscan_actphish]:   https://etherscan.io/accounts/label/phish-hack
+[etherscan_actheist]:   https://etherscan.io/accounts/label/heist
+
+[etherscan_tokphish]:   https://etherscan.io/tokens/label/phish-hack
+
+[ens_blacklist]:        https://github.com/ensdomains/blacklist
 
 
 # Building blocks
@@ -949,24 +1022,35 @@ Examples
 [ens_work]:         https://medium.com/@industral/ens-ethereum-name-service-how-it-works-cc57ed296473
 [ens_build]:        https://github.com/EthWorks/ENSBuilder
 
-## Other Building blocks
+## Financial Building blocks
 
-| Building block        | Instances   | Dashboard
-| --------------------- | ----------- | --------
-| Gas station           | [gsn]       |
-| DEX                   | [0x]        | [0xtracker]
-| Lending               | [compound]  | 
-
-[gsn]:              https://gsn.openzeppelin.com/
+| Building block               | Instances   | Dashboard
+| ---------------------        | ----------- | --------
+| DEX                          | [0x]        | [0xtracker]
+| Lending                      | [compound]  | 
 
 [0x]:               https://0x.org/
 [0xtracker]:        https://0xtracker.com/
+[compound]:         https://compound.finance/
 
-[compound]: https://compound.finance/
+
+## Other Building blocks
+
+| Building block               | Instances              | Dashboard
+| ---------------------        | -----------            | --------
+| TCR (Token Curated Registry) | [tcr]
+| Gas station                  | [gsn]                  |
+| Query                        | [thegraph]<br>[bigquery]
+
+[tcr]:              http://tokenengineering.net/tcr
+[gsn]:              https://gsn.openzeppelin.com/
+
+[thegraph]:         https://thegraph.com/
+[bigquery]:         https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain
 
 # Applications
 
-Also see: [Projects](../ecosystem/#projects)
+Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Overview
 
@@ -982,6 +1066,7 @@ Also see: [Projects](../ecosystem/#projects)
 | [appco]
 | [dapps_trust]
 | [dapps_walletc]
+| [coincodex]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [dappradar]:            https://dappradar.com/
@@ -993,7 +1078,7 @@ Also see: [Projects](../ecosystem/#projects)
 [appco]:                https://app.co/all
 [dapps_trust]:          https://dapps.trustwallet.com
 [dapps_walletc]:        https://walletconnect.org/apps
-
+[coincodex]:            https://coincodex.com/dapp-list/ethereum/
 
 
 ## Financial
@@ -1006,17 +1091,18 @@ Also see: [Projects](../ecosystem/#projects)
 |------------       | ----        | -----
 | [defiprime]       | [zerion]    | [defipulse]
 | [defimap]         | [instadapp] | [loanscan]
-| [etherscan_defi]  | [bamboo]    | [etherscan_defi]
+| [defirate]        | [bamboo]    | [etherscan_defi]
 | [100defi]         | [balance]   |
 | [awedefi]         | [settle]
 | [ongdefi]         | [dexag]
-| [defirate]        | [airswap]
+|                   | [airswap]
 |                   | [dydx]
 |                   | [etherisc]
+|                   | [augur]
 
 [defiprime]:        https://defiprime.com/
 [defimap]:          https://www.theblockcrypto.com/genesis/15376/mapping-out-ethereums-defi/
-[etherscan_defi]:   https://etherscan.io/accounts/label/defi
+
 [100defi]:          https://media.consensys.net/the-100-projects-pioneering-decentralized-finance-717478ddcdf2
 [awedefi]:          https://www.block123.com/en/feature/awesome-ethereum-defi-decentralized-finance-list
 [ongdefi]:          https://github.com/ong/awesome-decentralized-finance
@@ -1031,63 +1117,88 @@ Also see: [Projects](../ecosystem/#projects)
 [airswap]:          https://www.airswap.io/
 [dydx]:             https://dydx.exchange/
 [etherisc]:         https://etherisc.com/
+[augur]:    		https://www.augur.net/		
+
 
 [defipulse]:        http://defipulse.com
 [loanscan]:         https://loanscan.io/
-
-
-
-
+[etherscan_defi]:   https://etherscan.io/accounts/label/defi
 
 ## Games
 
-| Overview       | Games
-| ----------     | ------------
-| [bcgworld]     | [cheezewiz]
-| [dappsmarket]  | [cryptokit]
-|                | [ethernaut]
+| Overview          | Games                 | Marketplace
+| ----------        | ------------          | -------------
+| [bcgworld]        | [cheezewiz]           | [opensea]
+| [dappsmarket]     | [cryptokit]
+| [cryptogaming]    | [ethernaut]
+| [state_games]     | [mycryptoHeroes]
+| [radar_games]     | [etheremon]
+| [dappcom_games]   | [megacryptopolis]
+| [sdapps_games]    | [bccuties]
+| [castlecrypto]    | [hyperdragons]
+|                   | [decentraland]
+|                   | [axieinfinity]
+|                   | [footbattle]
+|                   | [kittybounties]
+|                   | [heavencat]
+|                   | [kittyhelper]
+|                   | [cryptoink]
 
-[bcgworld]:     https://blockchaingame.world/dapp
-[dappsmarket]:  https://dappsmarket.net/
 
-[cheezewiz]:            https://www.cheezewizards.com/
-[cryptokit]:            https://www.cryptokitties.co/
-[ethernaut]:            https://ethernaut.openzeppelin.com
-
-
-
- 
-
- 
+[bcgworld]:      https://blockchaingame.world/dapp
+[dappsmarket]:   https://dappsmarket.net/
+[cryptogaming]:  https://www.cryptogaming.com/top-10-crypto-games/
+[state_games]:   https://www.stateofthedapps.com/rankings/platform/ethereum/category/games
+[radar_games]:   https://dappradar.com/rankings/protocol/ethereum/category/games
+[dappcom_games]: https://www.dapp.com/search/Crypto%20Games
+[sdapps_games]:  https://superdapps.com/protocol/ethereum/dapp-category/games/
+[castlecrypto]:  https://www.castlecrypto.gg/ethereum-games/
 
 
-https://fck.com/
-https://github.com/dice2-win/contracts/blob/master/Dice2Win.sol
+[cheezewiz]:        https://www.cheezewizards.com/
+[cryptokit]:        https://www.cryptokitties.co/
+[ethernaut]:        https://ethernaut.openzeppelin.com
+[mycryptoHeroes]:   https://www.mycryptoheroes.net/
+[etheremon]:        https://www.etheremon.com/
+[megacryptopolis]:  https://www.megacryptopolis.com/
+[bccuties]:         https://blockchaincuties.com/
+[hyperdragons]:     https://hyperdragons.alfakingdom.com/
+[decentraland]:		https://decentraland.org/		
+[axieinfinity]: 	https://axieinfinity.com/		
+[footbattle]:       http://footbattle.io/		
+[kittybounties]:	http://kittybounties.com/		
+[heavencat]:    	https://heaven.cat/		
+[kittyhelper]:		https://kittyhelper.co/		
+[cryptoink]:    	https://www.crypt-oink.io/		
 
-https://www.castlecrypto.gg/blockchain-games-list/
-Crypto Kitties - https://www.cryptokitties.co/
-Cheeze Wizards - https://www.cheezewizards.com/
-MyCryptoHeroes - https://www.mycryptoheroes.net/
-Etheremon - https://www.etheremon.com/
-Megacryptopolis - https://www.megacryptopolis.com/
-Blockchain Cuties Universe - https://blockchaincuties.com/
-Hyperdragons - https://hyperdragons.alfakingdom.com/
-Decentraland		https://decentraland.org/		
-Axie Infinity		https://axieinfinity.com/		
-Footbattle		http://footbattle.io/		
-Kitty Bounties		http://kittybounties.com/		
-Augur		https://www.augur.net/		
-OpenSea		https://opensea.io/		
-CryptoHeroes		https://www.mycryptoheroes.net/		
-Heaven Cat		https://heaven.cat/		
-Kitty Helper		https://kittyhelper.co/		
-Crypt-Oink		https://www.crypt-oink.io/		
+
+[opensea]:      	https://opensea.io/		
+
 https://kickback.events/
 
 marketplaces:
 https://www.emoon.io/
 
 
+## Legal
+
+| Legal
+|-------------
+| [kleros]
+
+[kleros]:       https://court.kleros.io/
+
+
+## Other applications
+
+| Tickets           | ...
+| -------------     |
+| [kickback]
+| [noblockno]
+
+
+[kickback]:     https://kickback.events/
+[noblockno]:    http://www.noblockno.party/
 
 
 

@@ -10,7 +10,7 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 | Websockets                     | [Use ganache-cli Windows WS](Use ganache-cli Windows WS.html) 
 | Subscriptions                  | [Use ganache-cli Windows WS Subscriptions](Use ganache-cli Windows WS Subscriptions.html)
 | Load chain                     | [Load geth goerli windows](Load geth goerli windows.html)
-| Play - Transfer eth            | [Transfer eth with contract-via play](Transfer eth with contract-via play.html)
+| Play - Transfer eth            | [Play - Transfer eth with contract](Play - Transfer eth with contract.html)
 | Check contract balance curl    | [Check contract balance via RPC-curl](Check contract balance via RPC-curl.html)
 | Check contract balance online  | [Check contract balance via RPC-online](Check contract balance via RPC-online.html)
 | Publish source                 | [Publish on etherscan and interact](Publish on etherscan and interact.html)

@@ -1,4 +1,5 @@
 // Adapted from https://docs.provable.xyz/#ethereum-quick-start & converted to solidity 0.5
+// https://raw.githubusercontent.com/web3examples/ethereum/master/solidity_examples/ProvableTempOracle.sol
 
 pragma solidity ^0.5.0;
 import "github.com/provable-things/ethereum-api/provableAPI_0.5.sol";

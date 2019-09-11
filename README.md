@@ -61,7 +61,7 @@ Examples
 | [basics]          | [kauri]           |                  | [delegatecall]
 | [howwork]         | [ethereumbuilders]  
 | [ethdocs] (error) | [parity_wiki]
-
+| bBlockchainlabsnz]
 
 [mastering]:          https://github.com/ethereumbook/ethereumbook
 [howwork]:            https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
@@ -71,6 +71,8 @@ Examples
 [eth-guide]:          https://blockgeeks.com/guides/ethereum/
 [basics]:             https://consensys.net/academy/blockchain-basics-book/
 [ethdocs]:            http://www.ethdocs.org
+bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
+
 
 [dappuniversity]:     http://www.dappuniversity.com/
 [dev_tut]:            https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial

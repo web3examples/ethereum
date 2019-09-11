@@ -1036,17 +1036,27 @@ Examples
 
 ## Other Building blocks
 
-| Building block               | Instances              | Dashboard
-| ---------------------        | -----------            | --------
-| TCR (Token Curated Registry) | [tcr]
-| Gas station                  | [gsn]                  |
-| Query                        | [thegraph]<br>[bigquery]
+| TCR (Token Curated Registry) | Gas station | Query        | Geo      | Ricardian contracts
+| ---------------------        | ----------- | --------     | ----     |----
+| [tcr]                        | [gsn]       | [thegraph]   | [xyo]    | [sftprotocol]
+|                              |             | [bigquery]   | [foam]   |
+|                              |             |              | [platin]
+
 
 [tcr]:              http://tokenengineering.net/tcr
 [gsn]:              https://gsn.openzeppelin.com/
 
 [thegraph]:         https://thegraph.com/
 [bigquery]:         https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain
+
+
+[xyo]:              https://xyo.network/
+[foam]:             https://www.foam.space/
+[platin]:           https://platin.io/
+[fysical.org]:      https://fysical.org/
+[streetcred]:       https://www.streetcred.co/
+
+[sftprotocol]:      https://github.com/zerolawtech/SFT-Protocol
 
 # Applications
 
@@ -1129,9 +1139,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | Overview          | Games                 | Marketplace
 | ----------        | ------------          | -------------
 | [bcgworld]        | [cheezewiz]           | [opensea]
-| [dappsmarket]     | [cryptokit]
-| [cryptogaming]    | [ethernaut]
-| [state_games]     | [mycryptoHeroes]
+| [dappsmarket]     | [cryptokit]           | [wax]
+| [cryptogaming]    | [ethernaut]           | [emoon]
+| [state_games]     | [mycryptoHeroes]      | [dmarket]
 | [radar_games]     | [etheremon]
 | [dappcom_games]   | [megacryptopolis]
 | [sdapps_games]    | [bccuties]
@@ -1143,6 +1153,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 |                   | [heavencat]
 |                   | [kittyhelper]
 |                   | [cryptoink]
+|                   | [cryptovoxels]
 
 
 [bcgworld]:      https://blockchaingame.world/dapp
@@ -1170,47 +1181,76 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [heavencat]:    	https://heaven.cat/		
 [kittyhelper]:		https://kittyhelper.co/		
 [cryptoink]:    	https://www.crypt-oink.io/		
-
+[cryptovoxels]:     https://www.cryptovoxels.com/
 
 [opensea]:      	https://opensea.io/		
-
-https://kickback.events/
-
-marketplaces:
-https://www.emoon.io/
-
+[wax]:              https://explorer.wax.io/
+[emoon]:            https://www.emoon.io/
+[dmarket]:          https://dmarket.com
 
 ## Legal
 
-| Legal
-|-------------
-| [kleros]
+| Dispute Resolution  | Tools
+|-------------        | ----------
+| [kleros]            | [accordproject]
+| [smartjudge]
+| [mattereum]
+| [jury.online]
+| [jur.io]
+| [confideal]
 
 [kleros]:       https://court.kleros.io/
+[smartjudge]:   https://github.com/COMSYS/smartjudge
+[mattereum]:    https://mattereum.com/services/
+[jury.online]:  https://jury.online/
+[jur.io]:       https://jur.io
+[confideal]:    https://confideal.io/
 
+
+[accordproject]: https://www.accordproject.org/
 
 ## Other applications
 
-| Tickets           | ...
+| Tickets           | 
 | -------------     |
 | [kickback]
 | [noblockno]
+| [aventus]
+| [upgraded-inc]
+| [goblockparty]
+| [true-tickets]
+| [blocktix]
+| [eventchain]
+| [eventx]
+| [blocktix]
+| [lavamovement]
+| [citizenticket]
+| [crypto.tickets]
 
 
-[kickback]:     https://kickback.events/
-[noblockno]:    http://www.noblockno.party/
-
-
-
+[kickback]:         https://kickback.events/
+[noblockno]:        http://www.noblockno.party/
+[aventus]:          https://aventus.io/
+[upgraded-inc]:     https://www.upgraded-inc.com/
+[goblockparty]:     https://www.goblockparty.com/
+[true-tickets]:     https://true-tickets.com/
+[blocktix]:         https://blocktix.io/
+[eventchain]:       https://eventchain.io
+[eventx]:           https://www.eventx.network/
+[blocktix]:         https://blocktix.io/
+[lavamovement]:     http://www.lavamovement.com/
+[citizenticket]:    https://www.citizenticket.co.uk/bitticket/
+[crypto.tickets]:   https://crypto.tickets
 
 # Layer 2
 
-| Layer 2           | Instance            |  Github |
-| ---------------   |  ---------          | ------- |
-| Plasma
-| State Channels
-| Elastic Sidechains
+| Plasma          |  State Channels | Elastic Sidechains | Smart contract alternatives
+| --------------- |  ---------      | -------            | -----------
+|                 |                 |                    | [arbitrum1]
+|                 |                 |                    | [arbitrum2]
 
 
+[arbitrum1]: https://offchainlabs.com
+[arbitrum2]: https://ethresear.ch/t/introducing-arbitrum-a-new-layer-2-solution/3825
 
 

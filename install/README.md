@@ -13,6 +13,6 @@ These video's show how to install required software. ([Up](..) [Home](..\..))
 | Geth            | [Install geth Windows-use https](Install geth Windows-use https.html)
 | Remix           | [Prepare Remix](Prepare Remix.html)
 | Git             | [Install git Windows](Install git Windows.html)
-
+| Truffle         | [Install Truffle](Install Truffle.html)
 
 

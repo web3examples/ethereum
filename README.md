@@ -715,8 +715,8 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 | Mainnet         |        |                                                | -             | [etherscan]<br>[blockscout]<br>[bloxy]
 | Ropsten         |        | [metamask-faucet]<br>[ropsten-faucet]          |               | [etherscan-ropsten]<br>[blockscout-ropsten]
 | Kovan           |        | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]  | [etherscan-kovan]<br>[blockscout-kovan]
-| Rinkeby         |        |                                                |               | [etherscan-rinkeby]<br> [blockscout-rinkeby]
-| Goerli          |        | [goerli-faucet]                                |               | [etherscan-goerli]<br>[blockscout-goerli]
+| Rinkeby         |        | [rinkeby-faucet]                               |               | [etherscan-rinkeby]<br> [blockscout-rinkeby]
+| Goerli          |        | [goerli-faucet1]<br>[goerli-faucet2]           |               | [etherscan-goerli]<br>[blockscout-goerli]
 | Local testnet
 
 [network_ids]:        https://chainid.network/
@@ -727,7 +727,9 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [radarrelay]:         https://faucet.kovan.radarrelay.com/
 [tokenpla]:           https://tokenpla.net/asset/kovan/
 [kovan-gitter]:       https://gitter.im/kovan-testnet/faucet
-[goerli-faucet]:      https://goerli-faucet.slock.it/
+[rinkeby-faucet]:     https://faucet.rinkeby.io/
+[goerli-faucet1]:     https://goerli-faucet.slock.it/
+[goerli-faucet2]:     https://faucet.goerli.mudit.blog/
 [etherscan]:          https://etherscan.io/
 [etherscan-ropsten]:  https://ropsten.etherscan.io/
 [etherscan-kovan]:    https://kovan.etherscan.io/

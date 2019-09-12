@@ -3,6 +3,7 @@ Examples related to ethereum. ([Home](..))
 
 This document contains info about:
 - [Ethereum](#ethereum)
+- [Examples](#examples)
 - [Ethereum Concepts](#ethereum-concepts)
 - [Explorers](#explorers)
 - [Node software](#node-software)
@@ -13,6 +14,7 @@ This document contains info about:
   - [RPC APIs](#rpc-apis)
   - [Other interfaces](#other-interfaces)
   - [Web3.js](#web3js)
+  - [Webj3 browser](#webj3-browser)
   - [UX frameworks](#ux-frameworks)
 - [Wallets](#wallets)
   - [Mobile Wallets](#mobile-wallets)
@@ -44,10 +46,11 @@ This document contains info about:
   - [Other applications](#other-applications)
 - [Layer 2](#layer-2)
 
-Examples
-* [Install Ethereum software](install)
-* [Demo Ethereum software](demo)
+# Examples
 
+| Install Video                        | Demo video                      | Demo application
+| -------------                        | -------------                   | ---------
+| [Install Ethereum software](install) | [Demo Ethereum software](demo)  | [Casino](casino)
 
 # Ethereum Concepts
 
@@ -453,6 +456,23 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [myethvault]:       https://myethvault.com/
 
 [authereum]:        https://authereum.org/
+
+## Webj3 browser
+
+
+
+
+| CDN versions                              | Browserified
+| --------------                            | -----------
+| [jsdelivr_web3]<br> [jsdelivr_polyfill]   | [create_browserify]<br>[browserifyweb3]
+
+
+[jsdelivr_web3]:     https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.1/dist/web3.min.js
+[jsdelivr_polyfill]: https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js
+
+[create_browserify]: https://github.com/web3examples/ethereum/tree/master/web3js
+[browserifyweb3]:    http://web3examples.com/ethereum/web3js/web3-browserify.js
+
 
 ## UX frameworks
 

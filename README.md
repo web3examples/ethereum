@@ -48,11 +48,12 @@ This document contains info about:
 
 | Install Video                        | Demo video                      | Demo application
 | -------------                        | -------------                   | ---------
-| [Install Ethereum software](install) | [Demo Ethereum software](demo)  | [Casino_github1](casino) [casino_github] [casino]
+| [Install Ethereum software](install) | [Demo Ethereum software](demo)  |  [casino]<br>[casino_github]
 
 
 [casino]:         http://web3examples.com/ethereum/casino/
-[casino_github]:  casino
+[casino_github]:  https://github.com/web3examples/ethereum/tree/master/casino
+
 
 # Ethereum Concepts
 

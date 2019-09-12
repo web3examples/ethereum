@@ -1,8 +1,6 @@
-# Ethereum
 Examples related to ethereum. ([Home](..))
 
 This document contains info about:
-- [Ethereum](#ethereum)
 - [Examples](#examples)
 - [Ethereum Concepts](#ethereum-concepts)
 - [Explorers](#explorers)
@@ -50,7 +48,11 @@ This document contains info about:
 
 | Install Video                        | Demo video                      | Demo application
 | -------------                        | -------------                   | ---------
-| [Install Ethereum software](install) | [Demo Ethereum software](demo)  | [Casino](casino)
+| [Install Ethereum software](install) | [Demo Ethereum software](demo)  | [Casino_github1](casino) [casino_github] [casino]
+
+
+[casino]:         http://web3examples.com/ethereum/casino/
+[casino_github]:  casino
 
 # Ethereum Concepts
 

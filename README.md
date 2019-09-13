@@ -374,35 +374,59 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 
 ## Other interfaces
 
-| Interface         | Documentation    |  Github
-| -----------       | --------------   | ---------
-| [walletconnect]
-| [univ_login]
-| [squarelink]
-| [scatter]
-| [instadapp]       | [instadapp_docs] | [instadapp_github]
-| [unreal_ether]
-| [scratch_play]    |                  | [scratch_github]
-| [sbt-ethereum]    |                  | [sbt_eth_github]
-| [hybrix]          | [hybix_docs]     | [hybix_github]
+| Interface                      | Documentation        |  Github
+| -----------                    | --------------       | ---------
+| [walletconnect]                | [walletconnect_docs] | [walletconnect_github]
+| [univ_login]                   | [univ_login_docs]    | [univ_login_github]
+| [squarelink]                   | [squarelink_docs]    | [squarelink_github]
+| [scatter]                      | [scatter_docs]       | [scatter_github]
+| [instadapp]                    | [instadapp_docs]     | [instadapp_github]
+| [unreal_ether]                 | [unreal_ether_docs]  | [unreal_bitbucket]
+| [scratch_play]                 |                      | [scratch_github]
+| [sbt-ethereum]                 |                      | [sbt_eth_github]
+| [hybrix]                       | [hybix_docs]         | [hybix_github]
+| [trueblocks] (aka quickblocks) | [trueblocks_docs]    | [trueblocks_github]
 
 [walletconnect]:        https://walletconnect.org
+[walletconnect_docs]:   https://github.com/walletconnect
+[walletconnect_github]: https://docs.walletconnect.org/
+
 [univ_login]:           https://universallogin.io/
+[univ_login_docs]:      https://universalloginsdk.readthedocs.io
+[univ_login_github]:    https://github.com/UniversalLogin/UniversalLoginSDK
+
 [squarelink]:           https://squarelink.com/
+[squarelink_docs]:      https://dev.squarelink.com
+[squarelink_github]:    https://github.com/Squarelink-Inc
+
+
 [scatter]:              https://get-scatter.com/
+[scatter_docs]:         https://github.com/GetScatter
+[scatter_github]:       https://get-scatter.com/docs/getting-started
+
 [instadapp]:            https://instadapp.io/compound/
 [instadapp_docs]:       https://github.com/InstaDApp/docs
 [instadapp_github]:     https://github.com/InstaDApp/docs
 
 [unreal_ether]:         https://www.unrealengine.com/marketplace/en-US/slug/etherlinker
+[unreal_ether_docs]:    https://bitbucket.org/kelheor/etherlinker-for-ue4/wiki
+[unreal_bitbucket]:     https://bitbucket.org/kelheor/etherlinker-for-ue4/src/master/
+
 
 [scratch_play]:         https://scratch.addisonbrown.com.au/
 [scratch_github]:       https://github.com/naddison36/eth-scratch3
+
 [sbt-ethereum]:         https://www.sbt-ethereum.io/
 [sbt_eth_github]:       https://github.com/swaldman/sbt-ethereum
+
 [hybrix]:               https://hybrix.io
 [hybix_docs]:           https://api.hybrix.io/help/
 [hybix_github]:         https://github.com/hybrix-io
+
+[trueblocks]:           http://trueblocks.io
+[trueblocks_docs]:      http://trueblocks.io/docs
+[trueblocks_github]:    https://github.com/Great-Hill-Corporation/trueblocks-core
+
 
 ## Web3.js
 
@@ -600,7 +624,7 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 | [cryptozombies]            | [code_examples]
 | [solidity_indepth]         | [smartcontract_codes]
 | [solidity_overview]        | [etherscan_verified]
-| [learn_solidity]           | 
+| [learn_solidity]           | [blockscout_verified]
 | [blockgeeks_sol1]          | [contractfinder]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
@@ -629,14 +653,17 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [code_examples]:       https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
 [smartcontract_codes]: https://smartcontract.codes
 [etherscan_verified]:  https://etherscan.io/contractsVerified
-[github_sol]:          https://github.com/search?q=pragma+solidity&ref=searchresults&type=Code&utf8=%E2%9C%93
+[blockscout_verified]: https://blockscout.com
 [contractfinder]:      https://github.com/pipeos-one/pipeline/blob/master/docs/ContractFinder.md
 [ethpm_registry]:      https://docs.ethpm.com/public-registry-directory
 [openzeppelin_ctr]:    https://github.com/OpenZeppelin/openzeppelin-contracts-ethereum-package
+[verified_contracts]:  https://github.com/runtimeverification/verified-smart-contracts
+[github_sol]:          https://github.com/search?q=pragma+solidity&ref=searchresults&type=Code&utf8=%E2%9C%93
 [azure_samples]:       https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/application-and-smart-contract-samples
 [top5]:                https://bytescout.com/blog/top-5-smart-contracts.html
 
-[verified_contracts]:  https://github.com/runtimeverification/verified-smart-contracts
+
+
 
 
 ## Details
@@ -698,9 +725,9 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 # Development tools
 
 
-| Developer portal   | Online editors   | Deployment       | Package managers
-| ------------------ | ---------------  | ---------------- | -------------------
-| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]
+| Developer portal   | Online editors   | Deployment       | Package managers   | Frontend
+| ------------------ | ---------------  | ---------------- | -------------------| ---------
+| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]            | [oneclickdapp]
 | [tool-list]        | [remix-eth]      | [zeppelinos]     | [aragonpm]
 | [toolkit]          | [superblocks]    | [embark]         |
 | [tools-dutch]      | [ethfiddle]      | [dapptools]
@@ -727,6 +754,7 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [ethpm]:           https://www.ethpm.com/
 [aragonpm]:        https://hack.aragon.org/docs/apm-intro.html
 
+[oneclickdapp]:    https://oneclickdapp.com
 
 
 

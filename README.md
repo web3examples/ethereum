@@ -12,8 +12,7 @@ This document contains info about:
   - [RPC APIs](#rpc-apis)
   - [Other interfaces](#other-interfaces)
   - [Web3.js](#web3js)
-  - [Webj3 browser](#webj3-browser)
-  - [UX frameworks](#ux-frameworks)
+  - [Web3.js in browser](#web3js-in-browser)
 - [Wallets](#wallets)
   - [Mobile Wallets](#mobile-wallets)
   - [Hardware wallets](#hardware-wallets)
@@ -24,12 +23,18 @@ This document contains info about:
   - [Overview](#overview)
   - [Details](#details)
 - [Development tools](#development-tools)
-- [Network instances](#network-instances)
+- [Frontend](#frontend)
+  - [Design apps](#design-apps)
+  - [Libraries](#libraries)
+- [Network instances & Buy/get](#network-instances--buyget)
 - [Security](#security)
   - [Weaknesses and Measures](#weaknesses-and-measures)
   - [Security tools](#security-tools)
   - [Bounties and audits](#bounties-and-audits)
 - [Best practices](#best-practices)
+  - [Design](#design)
+  - [Technical best practice](#technical-best-practice)
+  - [Blockchain Patterns](#blockchain-patterns)
   - [Blacklists](#blacklists)
 - [Building blocks](#building-blocks)
   - [Oracles](#oracles)
@@ -37,6 +42,7 @@ This document contains info about:
   - [Financial Building blocks](#financial-building-blocks)
   - [Other Building blocks](#other-building-blocks)
 - [Applications](#applications)
+  - [Use cases](#use-cases)
   - [Overview](#overview-1)
   - [Financial](#financial)
   - [Games](#games)
@@ -67,7 +73,8 @@ This document contains info about:
 | [basics]          | [kauri]           |                  | [delegatecall]
 | [howwork]         | [ethereumbuilders]  
 | [ethdocs] (error) | [parity_wiki]
-| bBlockchainlabsnz]
+| [Blockchainlabsnz]
+| [eth.wiki]
 
 [mastering]:          https://github.com/ethereumbook/ethereumbook
 [howwork]:            https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
@@ -77,8 +84,8 @@ This document contains info about:
 [eth-guide]:          https://blockgeeks.com/guides/ethereum/
 [basics]:             https://consensys.net/academy/blockchain-basics-book/
 [ethdocs]:            http://www.ethdocs.org
-bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
-
+[Blockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
+[eth.wiki]:           https://eth.wiki
 
 [dappuniversity]:     http://www.dappuniversity.com/
 [dev_tut]:            https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
@@ -484,10 +491,7 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 
 [authereum]:        https://authereum.org/
 
-## Webj3 browser
-
-
-
+## Web3.js in browser
 
 | CDN versions                              | Browserified
 | --------------                            | -----------
@@ -499,40 +503,6 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 
 [create_browserify]: https://github.com/web3examples/ethereum/tree/master/web3js
 [browserifyweb3]:    http://web3examples.com/ethereum/web3js/web3-browserify.js
-
-
-## UX frameworks
-
-| React                 | Angular                   | Vue
-| -----------           | ---------                 | ------
-| [openzep-starter]     | [web3-in-angular]         | [vueweb3]
-| [truffle-react]       | [angulartruffledapp]      | [trufflevue]
-| [rimble]              | [quintorangular]          | [vuebox]
-| [web3react]           | [limelabsangular]         | [vuedark]
-| [vortex]              | [ngeth]
-| [tasit]
-| [drizzle]
-| [dapparatus]
-
-
-[openzep-starter]:      https://github.com/OpenZeppelin/starter-kit
-[truffle-react]:        https://github.com/truffle-box/react-box
-[web3react]:            https://github.com/NoahZinsmeister/web3-react
-[vortex]:               https://github.com/Horyus/ethvtx
-[tasit]:                https://github.com/tasitlabs/tasitsdk
-[drizzle]:              https://github.com/truffle-box/drizzle-box
-[dapparatus]:           https://github.com/austintgriffith/dapparatus
-[rimble]:               https://rimble.consensys.design/
-[web3-in-angular]:      https://medium.com/b2expand/inject-web3-in-angular-6-0-a03ca345892
-[angulartruffledapp]:   https://www.trufflesuite.com/boxes/angulartruffledapp
-[quintorangular]:       https://www.trufflesuite.com/boxes/angular-truffle-box
-[limelabsangular]:      https://www.trufflesuite.com/boxes/limelabs-angular-box
-[ngeth]:                https://github.com/B2-Expand/ngeth
-
-[vueweb3]:              https://github.com/morrislaptop/vue-web3
-[trufflevue]:           https://www.trufflesuite.com/boxes/truffle-vue
-[vuebox]:               https://truffleframework.org/boxes/vue-box
-[vuedark]:              https://truffleframework.org/boxes/vue-dark-chocolate
 
 
 # Wallets
@@ -624,7 +594,7 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 | [cryptozombies]            | [code_examples]
 | [solidity_indepth]         | [smartcontract_codes]
 | [solidity_overview]        | [etherscan_verified]
-| [learn_solidity]           | [blockscout_verified]
+| [learn_solidity]           | 
 | [blockgeeks_sol1]          | [contractfinder]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
@@ -653,7 +623,6 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [code_examples]:       https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
 [smartcontract_codes]: https://smartcontract.codes
 [etherscan_verified]:  https://etherscan.io/contractsVerified
-[blockscout_verified]: https://blockscout.com
 [contractfinder]:      https://github.com/pipeos-one/pipeline/blob/master/docs/ContractFinder.md
 [ethpm_registry]:      https://docs.ethpm.com/public-registry-directory
 [openzeppelin_ctr]:    https://github.com/OpenZeppelin/openzeppelin-contracts-ethereum-package
@@ -725,9 +694,9 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 # Development tools
 
 
-| Developer portal   | Online editors   | Deployment       | Package managers   | Frontend
-| ------------------ | ---------------  | ---------------- | -------------------| ---------
-| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]            | [oneclickdapp]
+| Developer portal   | Online editors   | Deployment       | Package managers   
+| ------------------ | ---------------  | ---------------- | ------------------- 
+| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]            
 | [tool-list]        | [remix-eth]      | [zeppelinos]     | [aragonpm]
 | [toolkit]          | [superblocks]    | [embark]         |
 | [tools-dutch]      | [ethfiddle]      | [dapptools]
@@ -754,16 +723,62 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [ethpm]:           https://www.ethpm.com/
 [aragonpm]:        https://hack.aragon.org/docs/apm-intro.html
 
+
+
+# Frontend
+
+## Design apps
+
+| Auto generate frontend   | 
+| ------------------------ |
+| [oneclickdapp]
+
 [oneclickdapp]:    https://oneclickdapp.com
 
 
+## Libraries
 
-# Network instances
+| React                 | Angular                   | Vue
+| -----------           | ---------                 | ------
+| [openzep-starter]     | [web3-in-angular]         | [vueweb3]
+| [truffle-react]       | [angulartruffledapp]      | [trufflevue]
+| [rimble]              | [quintorangular]          | [vuebox]
+| [web3react]           | [limelabsangular]         | [vuedark]
+| [vortex]              | [ngeth]
+| [tasit]
+| [drizzle]
+| [dapparatus]
 
-| (Test) Networks | Info   | Eth Faucet (test Eth)                          | Erc-20 Faucet | Blockexplorer |
-| --------------- |  ---   |---------                                       | ------        |   ----         |
+
+[openzep-starter]:      https://github.com/OpenZeppelin/starter-kit
+[truffle-react]:        https://github.com/truffle-box/react-box
+[rimble]:               https://rimble.consensys.design/
+[web3react]:            https://github.com/NoahZinsmeister/web3-react
+[vortex]:               https://github.com/Horyus/ethvtx
+[tasit]:                https://github.com/tasitlabs/tasitsdk
+[drizzle]:              https://github.com/truffle-box/drizzle-box
+[dapparatus]:           https://github.com/austintgriffith/dapparatus
+
+[web3-in-angular]:      https://medium.com/b2expand/inject-web3-in-angular-6-0-a03ca345892
+[angulartruffledapp]:   https://www.trufflesuite.com/boxes/angulartruffledapp
+[quintorangular]:       https://www.trufflesuite.com/boxes/angular-truffle-box
+[limelabsangular]:      https://www.trufflesuite.com/boxes/limelabs-angular-box
+[ngeth]:                https://github.com/B2-Expand/ngeth
+
+[vueweb3]:              https://github.com/morrislaptop/vue-web3
+[trufflevue]:           https://www.trufflesuite.com/boxes/truffle-vue
+[vuebox]:               https://truffleframework.org/boxes/vue-box
+[vuedark]:              https://truffleframework.org/boxes/vue-dark-chocolate
+
+ 
+
+
+# Network instances & Buy/get
+
+| (Test) Networks | Info   | Buy ETH (or get test Eth)                      | Erc-20 Faucet | Blockexplorer 
+| --------------- |  ---   |---------                                       | ------        |   ----         
 | Overview        | [comp_testnets]<br>[network_ids]
-| Mainnet         |        |                                                | -             | [etherscan]<br>[blockscout]<br>[bloxy]
+| Mainnet         |        | [moonpay]<br>[sendwyre]<br>[coinbase]          | -             | [etherscan]<br>[blockscout]<br>[bloxy]
 | Ropsten         |        | [metamask-faucet]<br>[ropsten-faucet]          |               | [etherscan-ropsten]<br>[blockscout-ropsten]
 | Kovan           |        | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]  | [etherscan-kovan]<br>[blockscout-kovan]
 | Rinkeby         |        | [rinkeby-faucet]                               |               | [etherscan-rinkeby]<br> [blockscout-rinkeby]
@@ -772,6 +787,12 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 
 [network_ids]:        https://chainid.network/
 [comp_testnets]:      https://ethereum.stackexchange.com/questions/27048/comparison-of-the-different-testnets
+
+[moonpay]:            https://www.moonpay.io/
+[sendwyre]:           https://www.sendwyre.com/
+[coinbase]:           https://www.coinbase.com/
+
+
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
 [kovan-faucet]:       https://faucet.kovan.network/
@@ -813,7 +834,7 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 | [dasp]
 | [notsosmart]
 | [detector_docs]
-
+| [solcbuginfo]
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
@@ -825,6 +846,7 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [dasp]:                 https://www.dasp.co/
 [notsosmart]:           https://github.com/crytic/not-so-smart-contracts
 [detector_docs]:        https://github.com/crytic/slither/wiki/Detector-Documentation
+[solcbuginfo]:          https://etherscan.io/solcbuginfo
 
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
@@ -989,24 +1011,177 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [bountyone]:            https://bountyone.io/
 [solidified]:           https://solidified.io/
 
+
+
 # Best practices
 
-| Best practice     | Details               | Verify source         | Register function     
-| ----------------  | ------------          | ----------            | -----------           
-|                   | [metamask_api]        | [etherscan_verify]    | [register_function]   
-|                   |                       | [ethscan_auto]        | [4bytes]              
-|                   |                       | [etherchain_verify]   |                       
+## Design
 
+See also [Security best practices](#security-best-practices)
 
+| Design            | Frontend          | TCR
+| ----------------  | ------------      | -----
+| [bc_design]       | [ux_design]       | [tcr_design]
 
-[metamask_api]:         https://metamask.github.io/metamask-docs/API_Reference/JSON_RPC_API
+[bc_design]:            https://media.consensys.net/designing-for-blockchain-whats-different-and-what-s-at-stake-b867eeade1c9
+[ux_design]:            https://rimble.consensys.design/guides/ux/connect-a-wallet-conditions
+[tcr_design]:           https://hackernoon.com/token-curated-registry-tcr-design-patterns-4de6d18efa15
+
+## Technical best practice
+
+| Verify source         | Register function name | Register token   | Define Icon     
+| ----------            | -----------            | -------------    | ------------
+| [etherscan_verify]    | [register_function]    | [register_token] | [token_icon]
+| [etherchain_verify]   | [4bytes]                                    
+| [blockscout_verify]
+| [ethscan_auto] 
 
 [etherscan_verify]:     https://etherscan.io/verifyContract
+[etherchain_verify]:    https://etherchain.org/tools/verifyContract
+[blockscout_verify]:    https://blockscout.com
 [ethscan_auto]:         https://kalis.me/verify-truffle-smart-contracts-etherscan/
-[etherchain_verify]:    https://www.etherchain.org/tools/verifyContract
 
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
+
+[register_token]:       https://metamask.github.io/metamask-docs/Best_Practices/Registering_Your_Token
+[token_icon]:           https://metamask.github.io/metamask-docs/Best_Practices/Defining_Your_Icon
+
+ 
+
+## Blockchain Patterns
+
+| Pattern                | Details                                     
+| -------------------    | ------------------------------------------  
+| Verifier / oracle      | [pattern1_oracle]<br>[maxwoe_action]
+| Reverse Verifier       | [pattern2_reverseoracle]
+| Ricardian contract     | [pattern3_legalpair]
+| Encrypt                | [pattern4_encrypt]
+| Tokenisation           | [pattern5_tokenise]
+| Off-chain data         | [pattern6_offchain]
+| State channel          | [pattern7_state]
+| Multisig               | [pattern8_multisig]
+| Offchain secret        | [pattern9_offchain]
+| X-Confirmation         | [pattern10_xconf]
+| Contract Registry      | [pattern11_registry]<br>[maxwoe_maintenance]
+| Relay / upgradeable    | [maxwoe_maintenance]  
+| Data Contract          | [pattern12_datacontract]<br>[maxwoe_maintenance] Data segregation
+| Embedded Permission    | [pattern13_embed_perm]<br>[maxwoe_authorization] Ownership
+| Factory Contract       | [pattern14_factorycontr]<br>[firstlook]
+| Leader-member Contract | [firstlook]<br>[maxwoe_maintenance] Satellite 
+| Equivalent Contract    | [firstlook] 
+| Incentive Execution    | [pattern15_incentive_exec]
+| Auto Deprecation       | [maxwoe_lifecycle]
+| Mortal Patterns        | [maxwoe_lifecycle]
+| Restrict access using modifiers | [maxwoe_authorization] Access restriction<br>[cons_modifiers]
+| Commit-Reveal          | [scottworks]<br>[maxwoe_action]
+| Time Locking Functions | [scottworks]
+| Pull Over Push         | [scottworks]<br>[cons_pulloverpush]
+| Emergency Stop / Circuit breaker | [scottworks]<br>[maxwoe_security]
+| Pull payment           | [maxwoe_action]
+| State machine          | [maxwoe_action]
+| Check Effects Interaction (external call last)  | [maxwoe_security]<br>[cons_afterextcalls]<br>[sol_checkeffect]
+| Speed bump             | [maxwoe_security]
+| Rate limit             | [maxwoe_security]
+| Mutex                  | [maxwoe_security]
+| Balance limit          |   
+
+Seperation of concerns design 
+| Enforce invariants | [cons_enforce]<br>[cons_assertrequirerevert]<br>[cons_fallbackcheck]
+Emitting events
+Using libraries ( Oraclize, SafeMath and StringUtils )
+
+| Explicit marking         | [cons_mark-untrusted]<br>[cons_explicit]
+| Avoid transfer and send  | [cons_notranssend]
+| Handle errors in external calls | [cons_handleexterr]
+| Don't delegatecall to untrusted code | [cons_nodelegateuntrusted]
+| Don't assume balance | [cons_forcesend]
+| Don't assume private | [cons_public]
+| Don't depend parties | [cons_dropoff]
+| Be aware of numbers | [cons_negate]<br>[cons_division]
+| Keep it simple      | [cons_fallback]
+| Lock compiler version | [cons_compilerversion]
+
+
+[sol_checkeffect]:           https://solidity.readthedocs.io/en/develop/security-considerations.html?highlight=check%20effects#use-the-checks-effects-interactions-pattern
+
+[cons_mark-untrusted]:       https://consensys.github.io/smart-contract-best-practices/recommendations/#mark-untrusted-contracts
+[cons_afterextcalls]:        https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-state-changes-after-external-calls
+[cons_notranssend]:          https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-transfer-and-send
+[cons_handleexterr]:         https://consensys.github.io/smart-contract-best-practices/recommendations/#handle-errors-in-external-calls
+[cons_pulloverpush]:         https://consensys.github.io/smart-contract-best-practices/recommendations/#favor-pull-over-push-for-external-calls
+[cons_nodelegateuntrusted]:  https://consensys.github.io/smart-contract-best-practices/recommendations/#dont-delegatecall-to-untrusted-code
+[cons_forcesend]:            https://consensys.github.io/smart-contract-best-practices/recommendations/#remember-that-ether-can-be-forcibly-sent-to-an-account
+[cons_public]:               https://consensys.github.io/smart-contract-best-practices/recommendations/#remember-that-on-chain-data-is-public
+[cons_dropoff]:              https://consensys.github.io/smart-contract-best-practices/recommendations/#beware-of-the-possibility-that-some-participants-may-drop-offline-and-not-return
+
+[cons_negate]:               https://consensys.github.io/smart-contract-best-practices/recommendations/#beware-of-negation-of-the-most-negative-signed-integer
+[cons_division]:             https://consensys.github.io/smart-contract-best-practices/recommendations/#beware-rounding-with-integer-division
+
+[cons_enforce]:              https://consensys.github.io/smart-contract-best-practices/recommendations/#enforce-invariants-with-assert
+[cons_assertrequirerevert]:  https://consensys.github.io/smart-contract-best-practices/recommendations/#use-assert-require-revert-properly
+[cons_modifiers]:            https://consensys.github.io/smart-contract-best-practices/recommendations/#use-modifiers-only-for-assertions
+
+[cons_fallback]:             https://consensys.github.io/smart-contract-best-practices/recommendations/#keep-fallback-functions-simple
+[cons_fallbackcheck]:        https://consensys.github.io/smart-contract-best-practices/recommendations/#check-data-length-in-fallback-functions
+[cons_explicit]:             https://consensys.github.io/smart-contract-best-practices/recommendations/#explicitly-mark-visibility-in-functions-and-state-variables
+
+[cons_compilerversion]:      https://consensys.github.io/smart-contract-best-practices/recommendations/#lock-pragmas-to-specific-compiler-version
+
+[maxwoe_action]:             https://github.com/maxwoe/solidity_patterns#action-and-control
+[maxwoe_authorization]:      https://github.com/maxwoe/solidity_patterns#authorization
+[maxwoe_lifecycle]:          https://github.com/maxwoe/solidity_patterns#lifecycle
+[maxwoe_maintenance]:        https://github.com/maxwoe/solidity_patterns#maintenance
+[maxwoe_security]:           https://github.com/maxwoe/solidity_patterns#security
+
+[scottworks]:                https://medium.com/@scottworks/2-meme-bounty-design-pattern-decisions-23f33a7a15da
+
+[pattern1_oracle]:           http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=4
+[pattern2_reverseoracle]:    http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=6
+[pattern3_legalpair]:        http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=7
+[pattern4_encrypt]:          http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=8
+[pattern5_tokenise]:         http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=9
+[pattern6_offchain]:         http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=10
+[pattern7_state]:            http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=11
+[pattern8_multisig]:         http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=12
+[pattern9_offchain]:         http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=13
+[pattern10_xconf]:           http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=14
+[pattern11_registry]:        http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=15
+[pattern12_datacontract]:    http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=16
+[pattern13_embed_perm]:      http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=17
+[pattern14_factorycontr]:    http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=18
+[pattern15_incentive_exec]:  http://www.pautasso.info/biblio-pdf/blockchain-europlop2018.pdf#page=19
+[firstlook]:                 https://arxiv.org/pdf/1909.00939.pdf#page=7
+
+
+
+
+
+https://github.com/ConsenSys/smart-contract-best-practices/blob/master/docs/recommendations.md
+// best practices
+https://yos.io/2018/10/20/smart-contract-vulnerabilities-and-how-to-mitigate-them/
+https://blog.indorse.io/security-best-practises-for-smart-contract-programming-in-solidity-part-2-state-of-the-b558798181ca
+https://hackernoon.com/ethereum-ux-tools-the-ultimate-guide-aad1cd2c128
+https://github.com/ConsenSys/smart-contract-best-practices
+https://solidity.readthedocs.io/en/develop/common-patterns.html
+https://fravoll.github.io/solidity-patterns/proxy_delegate.html
+https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Fallback-functions-and-the-fundamental-limitations-of-using-send()-in-Ethereum-&-Solidity
+(moved elsewhere)
+https://fravoll.github.io/solidity-patterns/
+https://consensys.github.io/smart-contract-best-practices/recommendations/
+https://medium.com/quiknode/practical-advice-for-solidity-developers-f2c33b88c0e6   ==> nog meer tools
+https://metamask.github.io/metamask-docs/Best_Practices/Registering_Your_Token
+https://diligence.consensys.net/research/
+[yt_sol_8debug]:        https://www.youtube.com/watch?v=7z52hP26MFs
+https://medium.com/@lyricalpolymath/web3-design-principles-f21db2f240c1
+https://stories.jolocom.com/the-designers-guide-to-web3-hackathons-33b7055bc86a
+design patterns ethereum
+design patterns consensys
+pattern blockchain
+architecure
+dapp development pattern
+
+https://consensys.github.io/smart-contract-best-practices/
 
 
 ## Blacklists
@@ -1091,10 +1266,10 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 
 ## Other Building blocks
 
-| TCR (Token Curated Registry) | Gas station | Query        | Geo      | Ricardian contracts
-| ---------------------        | ----------- | --------     | ----     |----
-| [tcr]                        | [gsn]       | [thegraph]   | [xyo]    | [sftprotocol]
-|                              |             | [bigquery]   | [foam]   |
+| TCR (Token Curated Registry) | Gas station | Query        | Geo      
+| ---------------------        | ----------- | --------     | ----     
+| [tcr]                        | [gsn]       | [thegraph]   | [xyo]    
+|                              |             | [bigquery]   | [foam]   
 |                              |             |              | [platin]
 
 
@@ -1111,11 +1286,20 @@ bBlockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [fysical.org]:      https://fysical.org/
 [streetcred]:       https://www.streetcred.co/
 
-[sftprotocol]:      https://github.com/zerolawtech/SFT-Protocol
+
 
 # Applications
 
 Also see: [Ecosystem - Projects](../ecosystem/#projects)
+
+## Use cases
+
+| Overview
+| ------------------
+| [bc_usecases]
+
+[bc_usecases]:  https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md
+
 
 ## Overview
 
@@ -1245,24 +1429,26 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Legal
 
-| Dispute Resolution  | Tools
-|-------------        | ----------
-| [kleros]            | [accordproject]
-| [smartjudge]
+| Dispute Resolution  | Tools           | Other
+|-------------        | ----------      | ----
+| [kleros]            | [accordproject] | [openlaw]
+| [smartjudge]        |                 | [sftprotocol]
 | [mattereum]
 | [jury.online]
 | [jur.io]
 | [confideal]
 
-[kleros]:       https://court.kleros.io/
-[smartjudge]:   https://github.com/COMSYS/smartjudge
-[mattereum]:    https://mattereum.com/services/
-[jury.online]:  https://jury.online/
-[jur.io]:       https://jur.io
-[confideal]:    https://confideal.io/
-
+[kleros]:        https://court.kleros.io/
+[smartjudge]:    https://github.com/COMSYS/smartjudge
+[mattereum]:     https://mattereum.com/services/
+[jury.online]:   https://jury.online/
+[jur.io]:        https://jur.io
+[confideal]:     https://confideal.io/
 
 [accordproject]: https://www.accordproject.org/
+
+[openlaw]:       http://openlaw.io/
+[sftprotocol]:   https://github.com/zerolawtech/SFT-Protocol
 
 ## Other applications
 

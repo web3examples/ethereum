@@ -835,6 +835,8 @@ This document contains info about:
 | [notsosmart]
 | [detector_docs]
 | [solcbuginfo]
+| [attack_vectors]
+| [defects]
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
@@ -847,7 +849,9 @@ This document contains info about:
 [notsosmart]:           https://github.com/crytic/not-so-smart-contracts
 [detector_docs]:        https://github.com/crytic/slither/wiki/Detector-Documentation
 [solcbuginfo]:          https://etherscan.io/solcbuginfo
+[attack_vectors]:       https://github.com/sigp/solidity-security-blog
 
+[defects]:              https://www.researchgate.net/publication/334908571_Defects_and_Vulnerabilities_in_Smart_Contracts_a_Classification_using_the_NIST_Bugs_Framework
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
 [sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
@@ -1019,13 +1023,20 @@ This document contains info about:
 
 See also [Security best practices](#security-best-practices)
 
-| Design            | Frontend          | TCR
-| ----------------  | ------------      | -----
-| [bc_design]       | [ux_design]       | [tcr_design]
+| Design            | Frontend          | TCR                 | State machine
+| ----------------  | ------------      | -----               | ---------------
+| [bc_design]       | [ux_design]       | [tcr_design]        | see  [Blockchain Patterns](#blockchain-patterns)
+|                   |                   |                     | [tokenfoundry]
+|                   |                   |                     | [finitestate]
 
 [bc_design]:            https://media.consensys.net/designing-for-blockchain-whats-different-and-what-s-at-stake-b867eeade1c9
 [ux_design]:            https://rimble.consensys.design/guides/ux/connect-a-wallet-conditions
 [tcr_design]:           https://hackernoon.com/token-curated-registry-tcr-design-patterns-4de6d18efa15
+
+
+[tokenfoundry]:         https://medium.com/tokenfoundry/a-solidity-implementation-of-the-state-machine-design-pattern-25de8b1dfbc5
+[finitestate]:          https://blog.acolyer.org/2018/03/20/designing-secure-ethereum-smart-contracts-a-finite-state-machine-approach/
+
 
 ## Technical best practice
 
@@ -1051,59 +1062,84 @@ See also [Security best practices](#security-best-practices)
 
 ## Blockchain Patterns
 
-| Pattern                | Details                                     
-| -------------------    | ------------------------------------------  
-| Verifier / oracle      | [pattern1_oracle]<br>[maxwoe_action]
-| Reverse Verifier       | [pattern2_reverseoracle]
-| Ricardian contract     | [pattern3_legalpair]
-| Encrypt                | [pattern4_encrypt]
-| Tokenisation           | [pattern5_tokenise]
-| Off-chain data         | [pattern6_offchain]
-| State channel          | [pattern7_state]
-| Multisig               | [pattern8_multisig]
-| Offchain secret        | [pattern9_offchain]
-| X-Confirmation         | [pattern10_xconf]
-| Contract Registry      | [pattern11_registry]<br>[maxwoe_maintenance]
-| Relay / upgradeable    | [maxwoe_maintenance]  
-| Data Contract          | [pattern12_datacontract]<br>[maxwoe_maintenance] Data segregation
-| Embedded Permission    | [pattern13_embed_perm]<br>[maxwoe_authorization] Ownership
-| Factory Contract       | [pattern14_factorycontr]<br>[firstlook]
-| Leader-member Contract | [firstlook]<br>[maxwoe_maintenance] Satellite 
-| Equivalent Contract    | [firstlook] 
-| Incentive Execution    | [pattern15_incentive_exec]
-| Auto Deprecation       | [maxwoe_lifecycle]
-| Mortal Patterns        | [maxwoe_lifecycle]
-| Restrict access using modifiers | [maxwoe_authorization] Access restriction<br>[cons_modifiers]
-| Commit-Reveal          | [scottworks]<br>[maxwoe_action]
-| Time Locking Functions | [scottworks]
-| Pull Over Push         | [scottworks]<br>[cons_pulloverpush]
-| Emergency Stop / Circuit breaker | [scottworks]<br>[maxwoe_security]
-| Pull payment           | [maxwoe_action]
-| State machine          | [maxwoe_action]
-| Check Effects Interaction (external call last)  | [maxwoe_security]<br>[cons_afterextcalls]<br>[sol_checkeffect]
-| Speed bump             | [maxwoe_security]
-| Rate limit             | [maxwoe_security]
-| Mutex                  | [maxwoe_security]
-| Balance limit          |   
+| Pattern                                        | Details                                     
+| -------------------                            | --------------------------------------------------------
+| Verifier / oracle                              | [pattern1_oracle]<br>[maxwoe_action]<br>[fravoll_oracle]
+| Reverse Verifier                               | [pattern2_reverseoracle]
+| Ricardian contract                             | [pattern3_legalpair]
+| Encrypt                                        | [pattern4_encrypt]
+| Tokenisation                                   | [pattern5_tokenise]
+| Off-chain data                                 | [pattern6_offchain]
+| State channel                                  | [pattern7_state]
+| Multisig                                       | [pattern8_multisig]
+| Offchain secret                                | [pattern9_offchain]
+| X-Confirmation                                 | [pattern10_xconf]
+| Contract Registry                              | [pattern11_registry]<br>[maxwoe_maintenance]<br>[i6mi6] Name Registry
+| Relay / upgradeable / proxy                    | [maxwoe_maintenance]<br>[fravoll_proxy]<br>[zep_proxy]
+| Data Contract                                  | [pattern12_datacontract]<br>[maxwoe_maintenance] Data segregation<br>[fravoll_externalstorage]
+| Embedded Permission / Restricting Access       | [pattern13_embed_perm]<br>[maxwoe_authorization] Ownership<br>[cons_dontorigin]<br>[fravoll_access]<br>[sol_restrict]
+| Factory Contract                               | [pattern14_factorycontr]<br>[firstlook]<br>[i6mi6]
+| Leader-member Contract                         | [firstlook]<br>[maxwoe_maintenance] Satellite 
+| Equivalent Contract                            | [firstlook] 
+| Incentive Execution                            | [pattern15_incentive_exec]
+| Auto Deprecation                               | [maxwoe_lifecycle]
+| Mortal Patterns                                | [maxwoe_lifecycle]<br>[i6mi6]
+| Restrict access using modifiers                | [maxwoe_authorization] Access restriction<br>[cons_modifiers]
+| Commit-Reveal                                  | [scottworks]<br>[maxwoe_action]<br>[fravoll_random]
+| Time Locking Functions                         | [scottworks]
+| Pull Over Push / Withdrawal                    | [scottworks]<br>[cons_pulloverpush]<br>[i6mi6] Withdrawal<br>[sol_withdraw]
+| Emergency Stop / Circuit breaker               | [scottworks]<br>[maxwoe_security]<br>[fravoll_emergencystop]
+| Pull payment                                   | [maxwoe_action]
+| State machine                                  | [maxwoe_action]<br>[fravoll_state]<br>[sol_state]<br>{ See [Design](#design) }
+| Check Effects Interaction (external call last) | [maxwoe_security]<br>[cons_afterextcalls]<br>[sol_checkeffect]<br>[fravoll_checkseffect]
+| Speed bump                                     | [maxwoe_security]
+| Rate limit                                     | [maxwoe_security]
+| Mutex                                          | [maxwoe_security]
+| Balance limit                                  | [maxwoe_security]
+| Enforce invariants                             | [cons_enforce]<br>[cons_assertrequirerevert]<br>[cons_fallbackcheck]<br>[fravoll_guardcheck]
+| Explicit marking                               | [cons_mark-untrusted]<br>[cons_explicit]
+| Avoid transfer and send                        | [cons_notranssend]<br>[fravoll_securetransfer]
+| Handle errors in external calls                | [cons_handleexterr]
+| Keep it simple                                 | [cons_fallback]<br>[cons_dontshadow]
+| Lock compiler version                          | [cons_compilerversion]
+| Emit events                                    | [cons_events]
+| Use compiler checks                            | [cons_types]:
+| Don't delegatecall to untrusted code           | [cons_nodelegateuntrusted]
+| Don't assume balance                           | [cons_forcesend]
+| Don't assume private                           | [cons_public]
+| Don't depend parties                           | [cons_dropoff]
+| Be aware of numbers                            | [cons_negate]<br>[cons_division]
+| Be aware of time                               | [cons_timemanipulation]<br>[cons_15seconds]<br>[cons_blocknrtime]
+| Be aware of inherit                            | [cons_inherit]
+| Be aware of extcodesize                        | [cons_extcodesize]
+| Seperation of concerns                         |
+| Use libraries (math, strings )                 |
 
-Seperation of concerns design 
-| Enforce invariants | [cons_enforce]<br>[cons_assertrequirerevert]<br>[cons_fallbackcheck]
-Emitting events
-Using libraries ( Oraclize, SafeMath and StringUtils )
+| Mapping Iterator                               | [i6mi6]<br>[rayonprotocol]
+ 
 
-| Explicit marking         | [cons_mark-untrusted]<br>[cons_explicit]
-| Avoid transfer and send  | [cons_notranssend]
-| Handle errors in external calls | [cons_handleexterr]
-| Don't delegatecall to untrusted code | [cons_nodelegateuntrusted]
-| Don't assume balance | [cons_forcesend]
-| Don't assume private | [cons_public]
-| Don't depend parties | [cons_dropoff]
-| Be aware of numbers | [cons_negate]<br>[cons_division]
-| Keep it simple      | [cons_fallback]
-| Lock compiler version | [cons_compilerversion]
 
+[zep_proxy]:                 https://blog.openzeppelin.com/proxy-patterns/
+
+[fravoll_guardcheck]:        https://fravoll.github.io/solidity-patterns/guard_check.html
+[fravoll_state]:             https://fravoll.github.io/solidity-patterns/state_machine.html
+[fravoll_oracle]:            https://fravoll.github.io/solidity-patterns/oracle.html
+[fravoll_random]:            https://fravoll.github.io/solidity-patterns/randomness.html
+[fravoll_access]:            https://fravoll.github.io/solidity-patterns/access_restriction.html
+[fravoll_checkseffect]:      https://fravoll.github.io/solidity-patterns/checks_effects_interactions.html
+[fravoll_securetransfer]:    https://fravoll.github.io/solidity-patterns/secure_ether_transfer.html
+[fravoll_emergencystop]:     https://fravoll.github.io/solidity-patterns/emergency_stop.html
+[fravoll_proxy]:             https://fravoll.github.io/solidity-patterns/proxy_delegate.html
+[fravoll_externalstorage]:   https://fravoll.github.io/solidity-patterns/eternal_storage.html
+
+[i6mi6]:                     https://medium.com/@i6mi6/solidty-smart-contracts-design-patterns-ecfa3b1e9784
+[rayonprotocol]:             https://medium.com/rayonprotocol/creating-a-smart-contract-having-iterable-mapping-9b117a461115
 
 [sol_checkeffect]:           https://solidity.readthedocs.io/en/develop/security-considerations.html?highlight=check%20effects#use-the-checks-effects-interactions-pattern
+
+[sol_withdraw]:              https://solidity.readthedocs.io/en/v0.5.3/common-patterns.html#withdrawal-from-contracts
+[sol_restrict]:              https://solidity.readthedocs.io/en/v0.5.3/common-patterns.html#restricting-access
+[sol_state]:                 https://solidity.readthedocs.io/en/v0.5.3/common-patterns.html#state-machine
 
 [cons_mark-untrusted]:       https://consensys.github.io/smart-contract-best-practices/recommendations/#mark-untrusted-contracts
 [cons_afterextcalls]:        https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-state-changes-after-external-calls
@@ -1127,6 +1163,21 @@ Using libraries ( Oraclize, SafeMath and StringUtils )
 [cons_explicit]:             https://consensys.github.io/smart-contract-best-practices/recommendations/#explicitly-mark-visibility-in-functions-and-state-variables
 
 [cons_compilerversion]:      https://consensys.github.io/smart-contract-best-practices/recommendations/#lock-pragmas-to-specific-compiler-version
+
+[cons_events]:               https://consensys.github.io/smart-contract-best-practices/recommendations/#use-events-to-monitor-contract-activity
+
+[cons_dontshadow]:           https://consensys.github.io/smart-contract-best-practices/recommendations/#be-aware-that-built-ins-can-be-shadowed
+[cons_dontorigin]:           https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-using-txorigin
+
+[cons_timemanipulation]:     https://consensys.github.io/smart-contract-best-practices/recommendations/#timestamp-manipulation
+[cons_15seconds]:            https://consensys.github.io/smart-contract-best-practices/recommendations/#the-15-second-rule
+[cons_blocknrtime]:          https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-using-blocknumber-as-a-timestamp
+
+[cons_inherit]:              https://consensys.github.io/smart-contract-best-practices/recommendations/#multiple-inheritance-caution
+
+[cons_types]:                https://consensys.github.io/smart-contract-best-practices/recommendations/#use-interface-type-instead-of-the-address-for-type-safety
+
+[cons_extcodesize]:          https://consensys.github.io/smart-contract-best-practices/recommendations/#avoid-using-extcodesize-to-check-for-externally-owned-accounts
 
 [maxwoe_action]:             https://github.com/maxwoe/solidity_patterns#action-and-control
 [maxwoe_authorization]:      https://github.com/maxwoe/solidity_patterns#authorization
@@ -1154,8 +1205,25 @@ Using libraries ( Oraclize, SafeMath and StringUtils )
 [firstlook]:                 https://arxiv.org/pdf/1909.00939.pdf#page=7
 
 
+ 
+
+Same patterns:
+* https://medium.com/heartbankstudio/smart-contract-design-patterns-8b7ca8b80dfb
+* https://eprints.cs.univie.ac.at/5665/1/bare_conf.pdf
+* https://www.researchgate.net/publication/325900304_Applying_Design_Patterns_in_Smart_Contracts
 
 
+
+http://fc17.ifca.ai/wtsc/An%20empirical%20analysis%20of%20smart%20contracts%20-%20platforms,%20applications,%20and%20design%20patterns.pdf
+https://www.hillside.net/plop/2017/papers/proceedings/papers/19-zhang.pdf
+https://liamz.co/blog/how-to-design-modular-smart-contracts-in-solidity-using-the-target-pattern/
+https://medium.com/robhitchens/solidity-crud-epilogue-e563e794fde
+
+https://medium.com/@bryn.bellomy/solidity-tutorial-building-a-simple-auction-contract-fcc918b0878a
+
+https://www.mdpi.com/2227-7080/7/1/6/htm
+https://blog.indorse.io/ethereum-upgradeable-smart-contract-strategies-456350d0557c
+https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/data-modelling.md
 
 https://github.com/ConsenSys/smart-contract-best-practices/blob/master/docs/recommendations.md
 // best practices
@@ -1164,10 +1232,10 @@ https://blog.indorse.io/security-best-practises-for-smart-contract-programming-i
 https://hackernoon.com/ethereum-ux-tools-the-ultimate-guide-aad1cd2c128
 https://github.com/ConsenSys/smart-contract-best-practices
 https://solidity.readthedocs.io/en/develop/common-patterns.html
-https://fravoll.github.io/solidity-patterns/proxy_delegate.html
+
 https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Fallback-functions-and-the-fundamental-limitations-of-using-send()-in-Ethereum-&-Solidity
 (moved elsewhere)
-https://fravoll.github.io/solidity-patterns/
+
 https://consensys.github.io/smart-contract-best-practices/recommendations/
 https://medium.com/quiknode/practical-advice-for-solidity-developers-f2c33b88c0e6   ==> nog meer tools
 https://metamask.github.io/metamask-docs/Best_Practices/Registering_Your_Token

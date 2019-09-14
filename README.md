@@ -831,7 +831,7 @@ This document contains info about:
 | [sol_hacks]           | [sec2016] 
 | [smartdec_knowledge]  | [awesome_sec]    
 | [list_vul]            | [secure_pattern]
-| [dasp]
+| [dasp]                | [vulnerable_mitigate]
 | [notsosmart]
 | [detector_docs]
 | [solcbuginfo]
@@ -860,6 +860,7 @@ This document contains info about:
 [sec2016]:              https://blog.ethereum.org/2016/06/10/smart-contract-security/
 [awesome_sec]:          https://github.com/crytic/awesome-ethereum-security
 [secure_pattern]:       http://eprints.cs.univie.ac.at/5433/7/sanerws18iwbosemain-id1-p-380f58e-35576-preprint.pdf
+[vulnerable_mitigate]:  https://yos.io/2018/10/20/smart-contract-vulnerabilities-and-how-to-mitigate-them/
 
 [audit_standards]:      https://www.smartcontractsecurityalliance.com/
 [audit_checklist]:      https://medium.com/quillhash/quillaudits-smart-contracts-audit-check-list-d65a305ec1a3
@@ -1026,11 +1027,14 @@ See also [Security best practices](#security-best-practices)
 | Design            | Frontend          | TCR                 | State machine
 | ----------------  | ------------      | -----               | ---------------
 | [bc_design]       | [ux_design]       | [tcr_design]        | see  [Blockchain Patterns](#blockchain-patterns)
-|                   |                   |                     | [tokenfoundry]
+|                   | [web3_design]     |                     | [tokenfoundry]
 |                   |                   |                     | [finitestate]
 
 [bc_design]:            https://media.consensys.net/designing-for-blockchain-whats-different-and-what-s-at-stake-b867eeade1c9
 [ux_design]:            https://rimble.consensys.design/guides/ux/connect-a-wallet-conditions
+
+[web3_design]:          https://medium.com/@lyricalpolymath/web3-design-principles-f21db2f240c1
+
 [tcr_design]:           https://hackernoon.com/token-curated-registry-tcr-design-patterns-4de6d18efa15
 
 
@@ -1066,7 +1070,7 @@ See also [Security best practices](#security-best-practices)
 | -------------------                            | --------------------------------------------------------
 | Verifier / oracle                              | [pattern1_oracle]<br>[maxwoe_action]<br>[fravoll_oracle]
 | Reverse Verifier                               | [pattern2_reverseoracle]
-| Ricardian contract                             | [pattern3_legalpair]
+| Ricardian contract                             | [pattern3_legalpair]<br>[wiki_ricardian]
 | Encrypt                                        | [pattern4_encrypt]
 | Tokenisation                                   | [pattern5_tokenise]
 | Off-chain data                                 | [pattern6_offchain]
@@ -1075,7 +1079,7 @@ See also [Security best practices](#security-best-practices)
 | Offchain secret                                | [pattern9_offchain]
 | X-Confirmation                                 | [pattern10_xconf]
 | Contract Registry                              | [pattern11_registry]<br>[maxwoe_maintenance]<br>[i6mi6] Name Registry
-| Relay / upgradeable / proxy                    | [maxwoe_maintenance]<br>[fravoll_proxy]<br>[zep_proxy]
+| Relay / upgradeable / proxy                    | [maxwoe_maintenance]<br>[fravoll_proxy]<br>[zep_proxy]<br>[indorse]
 | Data Contract                                  | [pattern12_datacontract]<br>[maxwoe_maintenance] Data segregation<br>[fravoll_externalstorage]
 | Embedded Permission / Restricting Access       | [pattern13_embed_perm]<br>[maxwoe_authorization] Ownership<br>[cons_dontorigin]<br>[fravoll_access]<br>[sol_restrict]
 | Factory Contract                               | [pattern14_factorycontr]<br>[firstlook]<br>[i6mi6]
@@ -1116,8 +1120,17 @@ See also [Security best practices](#security-best-practices)
 | Use libraries (math, strings )                 |
 
 | Mapping Iterator                               | [i6mi6]<br>[rayonprotocol]
- 
+| Target / Callback                              | [liamz]
+| Unstructured Storage                           | [zep_unstruct]
 
+
+[wiki_ricardian]:   https://en.wikipedia.org/wiki/Ricardian_contract
+
+[indorse]:  https://blog.indorse.io/ethereum-upgradeable-smart-contract-strategies-456350d0557c
+
+[zep_unstruct]: https://blog.openzeppelin.com/upgradeability-using-unstructured-storage/
+
+[liamz]:                     https://liamz.co/blog/how-to-design-modular-smart-contracts-in-solidity-using-the-target-pattern/
 
 [zep_proxy]:                 https://blog.openzeppelin.com/proxy-patterns/
 
@@ -1207,49 +1220,15 @@ See also [Security best practices](#security-best-practices)
 
  
 
-Same patterns:
+Mostely the same patterns:
 * https://medium.com/heartbankstudio/smart-contract-design-patterns-8b7ca8b80dfb
 * https://eprints.cs.univie.ac.at/5665/1/bare_conf.pdf
 * https://www.researchgate.net/publication/325900304_Applying_Design_Patterns_in_Smart_Contracts
-
-
-
-http://fc17.ifca.ai/wtsc/An%20empirical%20analysis%20of%20smart%20contracts%20-%20platforms,%20applications,%20and%20design%20patterns.pdf
-https://www.hillside.net/plop/2017/papers/proceedings/papers/19-zhang.pdf
-https://liamz.co/blog/how-to-design-modular-smart-contracts-in-solidity-using-the-target-pattern/
-https://medium.com/robhitchens/solidity-crud-epilogue-e563e794fde
-
-https://medium.com/@bryn.bellomy/solidity-tutorial-building-a-simple-auction-contract-fcc918b0878a
-
-https://www.mdpi.com/2227-7080/7/1/6/htm
-https://blog.indorse.io/ethereum-upgradeable-smart-contract-strategies-456350d0557c
-https://github.com/liamzebedee/awesome-solidity-patterns/blob/master/data-modelling.md
-
-https://github.com/ConsenSys/smart-contract-best-practices/blob/master/docs/recommendations.md
-// best practices
-https://yos.io/2018/10/20/smart-contract-vulnerabilities-and-how-to-mitigate-them/
-https://blog.indorse.io/security-best-practises-for-smart-contract-programming-in-solidity-part-2-state-of-the-b558798181ca
-https://hackernoon.com/ethereum-ux-tools-the-ultimate-guide-aad1cd2c128
-https://github.com/ConsenSys/smart-contract-best-practices
-https://solidity.readthedocs.io/en/develop/common-patterns.html
-
-https://github.com/ConsenSys/Ethereum-Development-Best-Practices/wiki/Fallback-functions-and-the-fundamental-limitations-of-using-send()-in-Ethereum-&-Solidity
-(moved elsewhere)
-
-https://consensys.github.io/smart-contract-best-practices/recommendations/
-https://medium.com/quiknode/practical-advice-for-solidity-developers-f2c33b88c0e6   ==> nog meer tools
-https://metamask.github.io/metamask-docs/Best_Practices/Registering_Your_Token
-https://diligence.consensys.net/research/
-[yt_sol_8debug]:        https://www.youtube.com/watch?v=7z52hP26MFs
-https://medium.com/@lyricalpolymath/web3-design-principles-f21db2f240c1
-https://stories.jolocom.com/the-designers-guide-to-web3-hackathons-33b7055bc86a
-design patterns ethereum
-design patterns consensys
-pattern blockchain
-architecure
-dapp development pattern
-
-https://consensys.github.io/smart-contract-best-practices/
+* http://fc17.ifca.ai/wtsc/An %20empirical%20analysis%20of%20smart%20contracts%20-%20platforms,%20applications,%20and%20design%20patterns.pdf
+* https://www.hillside.net/plop/2017/papers/proceedings/papers/19-zhang.pdf
+* https://medium.com/robhitchens/solidity-crud-epilogue-e563e794fde
+* https://hackernoon.com/best-practices-to-level-up-your-ethereum-smart-contracts-944d5cea2cab
+* https://github.com/liamzebedee/awesome-solidity-patterns
 
 
 ## Blacklists

@@ -20,7 +20,7 @@ This document contains info about:
   - [Hierarchical Deterministic Wallets](#hierarchical-deterministic-wallets)
 - [Login and user data](#login-and-user-data)
 - [Solidity](#solidity)
-  - [Overview](#overview)
+  - [Solidity Overview](#solidity-overview)
   - [Details](#details)
 - [Development](#development)
   - [Development tools](#development-tools)
@@ -39,15 +39,21 @@ This document contains info about:
   - [Blockchain Patterns](#blockchain-patterns)
   - [Blacklists](#blacklists)
 - [Building blocks](#building-blocks)
+  - [Tokens](#tokens)
+    - [Token design](#token-design)
+    - [Fungible tokens](#fungible-tokens)
+    - [Nonfungible tokens](#nonfungible-tokens)
+    - [STO](#sto)
   - [Oracles](#oracles)
   - [Ethereum Name System](#ethereum-name-system)
   - [Financial Building blocks](#financial-building-blocks)
   - [Other Building blocks](#other-building-blocks)
 - [Applications](#applications)
   - [Use cases](#use-cases)
-  - [Overview](#overview-1)
+  - [Application Overview](#application-overview)
   - [Financial](#financial)
   - [Games](#games)
+  - [Marketplace](#marketplace)
   - [Legal](#legal)
   - [Other applications](#other-applications)
 - [Layer 2](#layer-2)
@@ -77,6 +83,7 @@ This document contains info about:
 | [ethdocs] (error) | [parity_wiki]
 | [Blockchainlabsnz]
 | [eth.wiki]
+| [metalist]
 
 [mastering]:          https://github.com/ethereumbook/ethereumbook
 [howwork]:            https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
@@ -88,6 +95,7 @@ This document contains info about:
 [ethdocs]:            http://www.ethdocs.org
 [Blockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [eth.wiki]:           https://eth.wiki
+[metalist]:           https://github.com/buddies2705/Awesome-Ethereum-Metalist
 
 [dappuniversity]:     http://www.dappuniversity.com/
 [dev_tut]:            https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
@@ -395,6 +403,7 @@ This document contains info about:
 | [sbt-ethereum]                 |                      | [sbt_eth_github]
 | [hybrix]                       | [hybix_docs]         | [hybix_github]
 | [trueblocks] (aka quickblocks) | [trueblocks_docs]    | [trueblocks_github]
+| [blocknative]                  | [blocknative_docs]   | [blocknative_github]
 
 [walletconnect]:        https://walletconnect.org
 [walletconnect_docs]:   https://github.com/walletconnect
@@ -437,15 +446,20 @@ This document contains info about:
 [trueblocks_github]:    https://github.com/Great-Hill-Corporation/trueblocks-core
 
 
+[blocknative]:          https://www.blocknative.com
+[blocknative_docs]:     https://www.blocknative.com/developer-quick-integration-guide
+[blocknative_github]:   https://github.com/blocknative
+
+
 ## Web3.js
 
 | Browser extention     | Browser ext via contract | In mobile browser    | Connect via alt.apis   | Browser import             | Iframe wallet | Browser import via contract |
 | --------------------- | ------------------------ | ---------------------| ---------------------  | --------------             | ------------  | -----
-| [metamask]            |[dapper]                  | [metamask_mobile]    | [walletconnect_web3js] | [portis]                   | [myethvault]  | [authereum]
-| [equal]               |[gnosis_safe]             | [opera_mobile]       | [squarelink_web3js]    | [fortmatic]                | 
+| [metamask]            | [dapper]                 | [metamask_mobile]    | [walletconnect_web3js] | [portis]                   | [myethvault]  | [authereum]
+| [equal]               | [gnosis_safe]            | [opera_mobile]       | [squarelink_web3js]    | [fortmatic]                |               | [nifty]
 | [mathwallet]          |                          | [trustwallet]        | [scatter_web3js]       | [burner_wallet] (insecure) |
 | [saturn_wallet]       |                          | [cipher]             |                        | [bitski]
-|                       |                          | [coinbase]           |                        | [torus]
+| [tokenary_safari]     |                          | [coinbase]           |                        | [torus]
 |                       |                          | [status.im]          |                        | 
 |                       |                          | [dapppocket]
 |                       |                          | [go_wallet]
@@ -461,6 +475,8 @@ This document contains info about:
 [equal]:            https://equal.tech/
 [mathwallet]:       https://www.mathwallet.org/en/
 [saturn_wallet]:    https://forum.saturn.network/t/saturn-wallet-ethereum-and-ethereum-classic-dapp-browser-user-manual/1234
+
+[tokenary_safari]: https://apps.apple.com/us/app/ethereum-wallet-tokenary/id1375542355?l=en&mt=12
 
 [dapper]:           https://www.meetdapper.com/
 [gnosis_safe]:      https://safe.gnosis.io/
@@ -492,6 +508,8 @@ This document contains info about:
 [myethvault]:       https://myethvault.com/
 
 [authereum]:        https://authereum.org/
+[nifty]:            https://niftygateway.com
+
 
 ## Web3.js in browser
 
@@ -539,6 +557,7 @@ This document contains info about:
 | [bitbox]
 | [secalot]
 | [wookong]
+| [kasse]
 
 [safepal]:      https://safepal.io/
 [gridplus]:     https://gridplus.io/
@@ -549,6 +568,7 @@ This document contains info about:
 [bitbox]:       https://shiftcrypto.ch/
 [secalot]:      https://www.secalot.com/
 [wookong]:      https://wookong.nbltrust.com/en
+[kasse]:        https://kasseusa.com/
 
 ## Contract based wallets
 
@@ -589,7 +609,7 @@ This document contains info about:
 
 # Solidity
 
-## Overview
+## Solidity Overview
 
 | Overview                   | Solidity collections & examples
 | -----------------          |  ---------------
@@ -738,12 +758,13 @@ This document contains info about:
 |               | [parity_checklist]        | [ocean_int]
 |               | [elopio_checkist]
 |               | [leewayhertz_checklist]
-
+|               | [con_checklist]
 
 
 [parity_checklist]:      https://www.parity.io/paritys-checklist-for-secure-smart-contract-development/
 [elopio_checkist]:       http://elopio.net/blog/quality-checklist-before-audit/
 [leewayhertz_checklist]: https://www.leewayhertz.com/solidity-developers/
+[con_checklist]:         https://consensys.github.io/smart-contract-best-practices/documentation_procedures/
 
 [ocean_int]:             https://blog.oceanprotocol.com/continuous-integration-at-ocean-be2584564af1
 
@@ -861,6 +882,8 @@ This document contains info about:
 | [attack_vectors]
 | [defects]
 | [dec_app_security]
+| [pitfalls]
+| [crypto_hacks]
 
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
@@ -876,9 +899,10 @@ This document contains info about:
 [solcbuginfo]:          https://etherscan.io/solcbuginfo
 [attack_vectors]:       https://github.com/sigp/solidity-security-blog
 [defects]:              https://www.researchgate.net/publication/334908571_Defects_and_Vulnerabilities_in_Smart_Contracts_a_Classification_using_the_NIST_Bugs_Framework
-
-
 [dec_app_security]:     https://dasp.co
+[pitfalls]:             https://blog.bankex.org/nine-pitfalls-of-ethereum-smart-contracts-to-be-avoided-f7464761211c
+[crypto_hacks]:         https://www.tokens-economy.com/hacks/
+
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
 [sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
@@ -1060,21 +1084,18 @@ This document contains info about:
 
 See also [Security best practices](#security-best-practices)
 
-| Design            | Frontend          | TCR           | Token design      | State machine
-| ----------------  | ------------      | -----         | --------          | ---------------
-| [bc_design]       | [ux_design]       | [tcr_design]  | [audit_design]    | see  [Blockchain Patterns](#blockchain-patterns)
-|                   | [web3_design]     |               |                   | [tokenfoundry]
-|                   |                   |               |                   | [finitestate]
+| Design            | Frontend          | TCR           | Token design           | State machine
+| ----------------  | ------------      | -----         | --------               | ---------------
+| [bc_design]       | [ux_design]       | [tcr_design]  | See [Tokens](#tokens)  | see  [Blockchain Patterns](#blockchain-patterns)
+|                   | [web3_design]     |               |                        | [tokenfoundry]
+|                   |                   |               |                        | [finitestate]
 
 [bc_design]:            https://media.consensys.net/designing-for-blockchain-whats-different-and-what-s-at-stake-b867eeade1c9
 [ux_design]:            https://rimble.consensys.design/guides/ux/connect-a-wallet-conditions
 
 [web3_design]:          https://medium.com/@lyricalpolymath/web3-design-principles-f21db2f240c1
 
-[audit_design]:         https://ethereum.stackexchange.com/questions/37171/what-is-checklist-for-auditing-a-smart-contract/43448#43448
-
 [tcr_design]:           https://hackernoon.com/token-curated-registry-tcr-design-patterns-4de6d18efa15
-
 
 [tokenfoundry]:         https://medium.com/tokenfoundry/a-solidity-implementation-of-the-state-machine-design-pattern-25de8b1dfbc5
 [finitestate]:          https://blog.acolyer.org/2018/03/20/designing-secure-ethereum-smart-contracts-a-finite-state-machine-approach/
@@ -1082,9 +1103,9 @@ See also [Security best practices](#security-best-practices)
 
 ## Technical best practice
 
-| Verify source         | Register function name | Register token   | Define Icon     
-| ----------            | -----------            | -------------    | ------------
-| [etherscan_verify]    | [register_function]    | [register_token] | [token_icon]
+| Verify source         | Register function name   
+| ----------            | -----------            
+| [etherscan_verify]    | [register_function]   
 | [etherchain_verify]   | [4bytes]                                    
 | [blockscout_verify]
 | [ethscan_auto] 
@@ -1097,10 +1118,7 @@ See also [Security best practices](#security-best-practices)
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
 
-[register_token]:       https://metamask.github.io/metamask-docs/Best_Practices/Registering_Your_Token
-[token_icon]:           https://metamask.github.io/metamask-docs/Best_Practices/Defining_Your_Icon
 
- 
 
 ## Blockchain Patterns
 
@@ -1303,6 +1321,128 @@ Mostely the same patterns:
 
 # Building blocks
 
+## Tokens
+
+| Best practices            | Details
+| -----------------         | ---------
+| Latest standard           | [cons_latest]
+| Prevent front run         | [cons_frontrun]<br>See [Blockchain Patterns](#blockchain-patterns)
+| Prevent 0x0 address       | [cons_adr0x0]
+| Prevent contract address  | [cons_adrcontract]
+| Register token & icon     | [metamask_onetime]<br>[metamask_permanent]<br>[etherscan_icon]<br>[trivial]<br>[parity_token]<br>[trustwallet_assets]
+| Dapp Icon                 | [app_icon]
+| Manual add token          | [metamask_manual]<br>[coinomi_manual]<br>[trust_manual]<br>[myether_manual]
+| Exchange listing          | [coinist_exchange]
+
+[cons_latest]:        https://consensys.github.io/smart-contract-best-practices/tokens/#comply-with-the-latest-standard
+[cons_frontrun]:      https://consensys.github.io/smart-contract-best-practices/tokens/#be-aware-of-front-running-attacks-on-eip-20
+[cons_adr0x0]:        https://consensys.github.io/smart-contract-best-practices/tokens/#prevent-transferring-tokens-to-the-0x0-address
+[cons_adrcontract]:   https://consensys.github.io/smart-contract-best-practices/tokens/#prevent-transferring-tokens-to-the-contract-address
+
+
+[metamask_onetime]:   https://metamask.github.io/metamask-docs/Best_Practices/Registering_Your_Token
+[metamask_permanent]: https://github.com/MetaMask/eth-contract-metadata
+[etherscan_icon]:     https://ethereum.stackexchange.com/questions/31902/how-to-verify-token-after-etherscan-and-submit-icon
+[trivial]:            https://www.trivial.co/api
+[parity_token]:       https://wiki.parity.io/Token-Registry
+[trustwallet_assets]: https://github.com/trustwallet/assets
+
+[dapp_icon]:          https://metamask.github.io/metamask-docs/Best_Practices/Defining_Your_Icon
+
+[metamask_manual]:    https://metamask.zendesk.com/hc/en-us/articles/360015489031-How-to-View-Your-Tokens
+[coinomi_manual]:     https://coinomi.freshdesk.com/support/solutions/articles/29000009779-how-to-manually-add-an-erc20-token-
+[trust_manual]:       https://www.bitprime.co.nz/knowledge-base/manually-add-tokens-trust-wallet/
+[myether_manual]:     https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/
+
+[coinist_exchange]: https://www.coinist.io/how-to-get-your-digital-token-listed-on-an-exchange/
+
+### Token design
+
+| Design            | Legal
+| -----             | -----
+| [token_canvas]    | [country_law]
+
+[token_canvas]:     https://canvas.tokens-economy.com/
+
+[country_law]:      https://ico.tokens-economy.com/
+
+### Fungible tokens 
+
+https://wiki.parity.io/Token-Deployment
+
+Libraries
+
+https://github.com/parity-contracts/token-registry/blob/master/contracts/BasicCoin.sol
+
+
+
+### Nonfungible tokens
+
+| Overview                  | Marketplace
+| ----------                | ----------
+| [nonfungalliance]         | See [Marketplace](#marketplace)    
+
+
+
+[nonfungalliance]:   https://nonfungiblealliance.org/resources
+
+
+https://medium.com/coinmonks/jumping-into-solidity-the-erc721-standard-part-3-5f38e012248b
+
+[audit_design]:         https://ethereum.stackexchange.com/questions/37171/what-is-checklist-for-auditing-a-smart-contract/43448#43448
+
+/ erc20
+
+| Token overview
+| ----------------
+| [etherscan_tokens]
+| [etherwallet_tokens]
+| [eidoo_tokens]
+| [kleros_tokens]
+
+[etherscan_tokens]:     https://etherscan.io/tokens
+[etherwallet_tokens]:   https://github.com/kvhnuke/etherwallet/blob/mercury/app/scripts/tokens/ethTokens.json
+[eidoo_tokens]:         https://eidoo.io/erc20-tokens-list
+[kleros_tokens]:        https://tokens.kleros.io/tokens
+
+https://vittominacori.github.io/erc20-generator/
+
+https://www.toptal.com/ethereum/create-erc20-token-tutorial
+
+
+[token_bestpractice]:   https://consensys.github.io/smart-contract-best-practices/tokens/
+
+
+https://hackernoon.com/create-your-own-ethereum-token-bfa6302084da
+https://gist.github.com/anonymous/9eabd0015ca7dd431992a522aa8c51cd#file-erc20-sol
+https://remix.ethereum.org/#gist=9eabd0015ca7dd431992a522aa8c51cd#file-erc20-sol
+
+[yt_sol_9erc20]:        https://www.youtube.com/watch?v=r7XojpIDuhA
+[yt_sol_10currency]:    https://www.youtube.com/watch?v=IWC9-yGoDGs
+[yt_sol_11tokens]:      https://www.youtube.com/watch?v=WfkPTyvOL_g
+http://tokenfactory.surge.sh/#/tokensearch
+
+erc721
+https://medium.com/blockchannel/walking-through-the-erc721-full-implementation-72ad72735f3c
+https://ethereum.stackexchange.com/questions/73454/erc721-token-burn-and-mint-again/73603
+https://eips.ethereum.org/EIPS/eip-721
+
+https://github.com/ConsenSys/artifaqt/blob/master/contract/contracts/eip721/EIP721.sol
+https://github.com/OpenZeppelin/zeppelin-solidity/tree/master/contracts/token/ERC721
+
+https://yos.io/2019/04/14/erc-standards-you-should-know-about/
+
+[mintable]:             https://mintable.app
+[mintable_github]:      https://github.com/VexyCats/ERC-721_SDK_Mintable.app
+[mintable_listed]:      https://mintable.app/create
+
+
+### STO
+
+https://medium.com/@CoindyOfficial/sto-token-standards-57071e6726bd
+
+https://token.security/stn/
+
 ## Oracles
 
 | Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
@@ -1392,7 +1532,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [bc_usecases]:  https://github.com/wso2/ETAC/blob/master/blockchain/blockchain-usecases.md
 
 
-## Overview
+## Application Overview
 
 | Dapps                         | Projects   
 | ----------                    | -----
@@ -1407,6 +1547,11 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [dapps_trust]
 | [dapps_walletc]
 | [coincodex]
+| [spiderdata]
+| [makionaire]
+| [topdapps]
+| [block123]
+| [wiki-dapps]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [dappradar]:            https://dappradar.com/
@@ -1419,7 +1564,11 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [dapps_trust]:          https://dapps.trustwallet.com
 [dapps_walletc]:        https://walletconnect.org/apps
 [coincodex]:            https://coincodex.com/dapp-list/ethereum/
-
+[spiderdata]:           https://www.spiderdata.com/dapps/ethereum
+[makionaire]:           https://makionaire.com/trust-dapps-list/
+[topdapps]:             https://topdapps.org/
+[block123]:             https://www.block123.com/en/
+[wiki-dapps]:           https://github.com/ethereum/wiki/wiki/Decentralized-apps-(dapps)
 
 ## Financial
 
@@ -1466,12 +1615,12 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Games
 
-| Overview          | Games                 | Marketplace
-| ----------        | ------------          | -------------
-| [bcgworld]        | [cheezewiz]           | [opensea]
-| [dappsmarket]     | [cryptokit]           | [wax]
-| [cryptogaming]    | [ethernaut]           | [emoon]
-| [state_games]     | [mycryptoHeroes]      | [dmarket]
+| Overview          | Games                 
+| ----------        | ------------          
+| [bcgworld]        | [cheezewiz]           
+| [dappsmarket]     | [cryptokit]           
+| [cryptogaming]    | [ethernaut]           
+| [state_games]     | [mycryptoHeroes]      
 | [radar_games]     | [etheremon]
 | [dappcom_games]   | [megacryptopolis]
 | [sdapps_games]    | [bccuties]
@@ -1513,10 +1662,73 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [cryptoink]:    	https://www.crypt-oink.io/		
 [cryptovoxels]:     https://www.cryptovoxels.com/
 
-[opensea]:      	https://opensea.io/		
-[wax]:              https://explorer.wax.io/
-[emoon]:            https://www.emoon.io/
-[dmarket]:          https://dmarket.com
+
+## Marketplace
+
+| Marketplace       | Get listed            | Github
+| -------------     | -----------           | ----
+| [opensea]         | [opensea_listed]      | [opensea_github]
+| [wax]             | [wax_listed]          | [wax_github]
+| [emoon]           | [emoon_listed]
+| [dmarket]         | [dmarket_listed]      | [dmarket_github]
+| [knownorigin]     | [knownorigin_listed]  | [knownorigin_github]
+| [rarebits]        | [rarebits_listed]     | [rarebits_github]
+| [superrare]       | [superrare_listed]    | [superrare_github]
+| [auctionity]      | [auctionity_listed]   | [auctionity_github]
+| [spiderdex]
+| [cryptobundle]
+| [makersplace]
+| [nonfungible]
+
+[opensea]:              https://opensea.io/
+[opensea_listed]:       https://opensea.io/get-listed
+[opensea_github]:       https://github.com/ProjectOpenSea
+
+[wax]:                  https://explorer.wax.io/
+[wax_listed]:           https://wax.io/blog/new-sell-your-games-on-the-wax-blockchain-and-well-share-the-commission-with-you
+[wax_github]:           https://github.com/worldwide-asset-exchange
+
+[emoon]:                https://www.emoon.io/
+[emoon_listed]:         http://sra-spec.s3-website-us-east-1.amazonaws.com/
+
+[dmarket]:              https://dmarket.com
+[dmarket_listed]:       https://dmarket.com/blog/intro-dmarket-com/
+[dmarket_github]:       https://github.com/suntechsoft/dmarket-doc
+
+[knownorigin]:          https://knownorigin.io/
+[knownorigin_listed]:   https://docs.google.com/forms/d/e/1FAIpQLSfqwAGYvgF4pycks2EcZQQeznKQJQ_T4PN70aY4iUhDvPL3wA/viewform
+[knownorigin_github]:   https://github.com/knownorigin
+
+[rarebits]:             https://rarebits.io/
+[rarebits_listed]:      https://rarebits.io/developers/submit
+[rarebits_github]:      https://github.com/rarebitsio
+
+[superrare]:            https://superrare.co/market
+[superrare_listed]:     https://docs.google.com/forms/d/e/1FAIpQLScTZhB9On31j-uoFzMD3hg0gGNf3hgjVyBz1xwCHsOBSydvPw/viewform
+[superrare_github]:     https://github.com/Pixura
+
+[auctionity]:           https://app.auctionity.com/
+[auctionity_listed]:    https://app.auctionity.com/dashboard/seller
+[auctionity_github]:    https://github.com/auctionity
+
+[spiderdex]:            https://www.spiderdex.com/
+
+[cryptobundle]:         https://cryptobundle.io
+[makersplace]:          https://makersplace.com/
+
+[nonfungible]:          https://nonfungible.com/
+
+| Collectibles
+| -----------------
+| [art_directory]
+| [cryptoarte]
+| [cryptoskulls]
+| [crypto-art]
+
+[art_directory]:        https://blockchainart.directory/bad.html
+[cryptoarte]:           https://www.cryptoarte.io/
+[cryptoskulls]:         https://cryptoskulls.com/
+[crypto-art]:           https://github.com/obxium/awesome-crypto-art
 
 ## Legal
 
@@ -1578,11 +1790,11 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 | Plasma          |  State Channels | Elastic Sidechains | Smart contract alternatives
 | --------------- |  ---------      | -------            | -----------
-|                 |                 |                    | [arbitrum1]
+|                 | [awesome_state] |                    | [arbitrum1]
 |                 |                 |                    | [arbitrum2]
 
 
-[arbitrum1]: https://offchainlabs.com
-[arbitrum2]: https://ethresear.ch/t/introducing-arbitrum-a-new-layer-2-solution/3825
-
+[awesome_state]:    https://github.com/machinomy/awesome-state-channels
+[arbitrum1]:        https://offchainlabs.com
+[arbitrum2]:        https://ethresear.ch/t/introducing-arbitrum-a-new-layer-2-solution/3825
 

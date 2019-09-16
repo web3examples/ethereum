@@ -22,7 +22,9 @@ This document contains info about:
 - [Solidity](#solidity)
   - [Overview](#overview)
   - [Details](#details)
-- [Development tools](#development-tools)
+- [Development](#development)
+  - [Development tools](#development-tools)
+  - [Development process](#development-process)
 - [Frontend](#frontend)
   - [Design apps](#design-apps)
   - [Libraries](#libraries)
@@ -657,6 +659,9 @@ This document contains info about:
 | Function Modifiers                        | [tosh_modifiers] [yt_sol_3modifiers]
 | Events                                    | [tosh_events] [yt_sol_5events]
 | Error handling                            | [sol_error] [tosh_except]
+| Idiosyncrasies                            | [mig_idiosyncrasies]
+
+[mig_idiosyncrasies]: https://github.com/miguelmota/solidity-idiosyncrasies
 
 [sol_vis]:           https://solidity.readthedocs.io/en/develop/contracts.html#visibility-and-getters
 [sol_create]:        https://solidity.readthedocs.io/en/develop/contracts.html#creating-contracts
@@ -691,7 +696,9 @@ This document contains info about:
 [yt_sol_7string]:    https://www.youtube.com/watch?v=6iiWwT0O2fY
 
 
-# Development tools
+# Development
+
+## Development tools
 
 
 | Developer portal   | Online editors   | Deployment       | Package managers   
@@ -701,7 +708,7 @@ This document contains info about:
 | [toolkit]          | [superblocks]    | [embark]         |
 | [tools-dutch]      | [ethfiddle]      | [dapptools]
 | [eth_dev]          |                  | [more-frameworks]
-
+|                    |                  | [superblocks]
 
 [consensys-dev]:   https://ethereum.consensys.net/
 [tool-list]:       https://github.com/ConsenSys/ethereum-developer-tools-list
@@ -719,10 +726,26 @@ This document contains info about:
 [embark]:          https://embark.status.im/
 [dapptools]:       http://dapp.tools/dapp/
 [more-frameworks]: https://github.com/ConsenSys/ethereum-developer-tools-list#frameworks
+[superblocks]:      https://superblocks.com/
 
 [ethpm]:           https://www.ethpm.com/
 [aragonpm]:        https://hack.aragon.org/docs/apm-intro.html
 
+## Development process
+
+| Overview      | Checklist                 | Continious integration
+| -----------   | -----                     | ----------
+|               | [parity_checklist]        | [ocean_int]
+|               | [elopio_checkist]
+|               | [leewayhertz_checklist]
+
+
+
+[parity_checklist]:      https://www.parity.io/paritys-checklist-for-secure-smart-contract-development/
+[elopio_checkist]:       http://elopio.net/blog/quality-checklist-before-audit/
+[leewayhertz_checklist]: https://www.leewayhertz.com/solidity-developers/
+
+[ocean_int]:             https://blog.oceanprotocol.com/continuous-integration-at-ocean-be2584564af1
 
 
 # Frontend
@@ -827,16 +850,18 @@ This document contains info about:
 | [swc]                 | [considerations]       | [audit_standards]      | [paper_overview]
 | [known_attacks1]      | [sec_best_practices]   | [audit_checklist]    
 | [known_attacks2]      | [safety]               | [slowmist_checklist]
-| [list2016]            | [loomavoid] 
-| [sol_hacks]           | [sec2016] 
-| [smartdec_knowledge]  | [awesome_sec]    
-| [list_vul]            | [secure_pattern]
-| [dasp]                | [vulnerable_mitigate]
-| [notsosmart]
+| [list2016]            | [loomavoid]            | [quorum_checklist]
+| [sol_hacks]           | [sec2016]              | [king_checklist] 
+| [smartdec_knowledge]  | [awesome_sec]          | [knownsec_checklist]
+| [list_vul]            | [secure_pattern]       | [crfinlabs_checklist]
+| [dasp]                | [vulnerable_mitigate]  | [ethdevs_checklist]
+| [notsosmart]          |                        | [miguelmota_checklist]
 | [detector_docs]
 | [solcbuginfo]
 | [attack_vectors]
 | [defects]
+| [dec_app_security]
+
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
@@ -850,8 +875,10 @@ This document contains info about:
 [detector_docs]:        https://github.com/crytic/slither/wiki/Detector-Documentation
 [solcbuginfo]:          https://etherscan.io/solcbuginfo
 [attack_vectors]:       https://github.com/sigp/solidity-security-blog
-
 [defects]:              https://www.researchgate.net/publication/334908571_Defects_and_Vulnerabilities_in_Smart_Contracts_a_Classification_using_the_NIST_Bugs_Framework
+
+
+[dec_app_security]:     https://dasp.co
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
 [sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
@@ -865,7 +892,12 @@ This document contains info about:
 [audit_standards]:      https://www.smartcontractsecurityalliance.com/
 [audit_checklist]:      https://medium.com/quillhash/quillaudits-smart-contracts-audit-check-list-d65a305ec1a3
 [slowmist_checklist]:   https://www.slowmist.com/en/service-smart-contract-security-audit.html
-
+[quorum_checklist]:     https://docs.goquorum.com/en/latest/Security/Framework/Decentralized%20Application/Smart%20Contracts%20Security/
+[king_checklist]:       https://www.kingoftheether.com/contract-safety-checklist.html
+[knownsec_checklist]:   https://github.com/knownsec/Ethereum-Smart-Contracts-Security-CheckList
+[crfinlabs_checklist]:  https://github.com/cryptofinlabs/audit-checklist
+[ethdevs_checklist]:    http://ethdevs.com/solidity-smart-contract-security-the-checklist/
+[miguelmota_checklist]: https://github.com/miguelmota/solidity-audit-checklist
 
 [paper_overview]:       https://github.com/hyeonleee/Smart_Contract_Security_Analysis
 
@@ -953,10 +985,10 @@ This document contains info about:
 |                       | [certik]           |                 | [openzeppelin_audits]| 
 |                       | [decenter]         |                 | [trailofbits_audits]
 |                       | [quantstamp]       |                 | [slowmist_audits]
-|                       | [authio]
-|                       | [openxcell]
-|                       | [quillhash]
-|                       | [hacken_io]
+|                       | [authio]           |                 | [faireum_audit]
+|                       | [openxcell]        |                 | [quantstamp1]
+|                       | [quillhash]        |                 | [quantstamp2]
+|                       | [hacken_io]        |                 | [quantstamp3]
 |                       | [trailofbits]
 |                       | [chainsecurity]
 |                       | [iosiro]
@@ -1008,6 +1040,10 @@ This document contains info about:
 [openzeppelin_audits]:  https://blog.openzeppelin.com/security-audits/
 [trailofbits_audits]:   https://github.com/trailofbits/publications#security-reviews
 [slowmist_audits]:      https://github.com/slowmist/Knowledge-Base/blob/master/open-report/README.md
+[faireum_audit]:        https://faireum.io/assets/files/Faireum_smart_contracts_security_analysis.pdf
+[quantstamp1]:          https://certificate.quantstamp.com/
+[quantstamp2]:          https://certificate.quantstamp.com/view/substratum-token
+[quantstamp3]:          https://certificate.quantstamp.com/view/pool-together-contracts
 
 
 [howtoaudit]:           https://blockgeeks.com/guides/audit-smart-contract/
@@ -1024,16 +1060,18 @@ This document contains info about:
 
 See also [Security best practices](#security-best-practices)
 
-| Design            | Frontend          | TCR                 | State machine
-| ----------------  | ------------      | -----               | ---------------
-| [bc_design]       | [ux_design]       | [tcr_design]        | see  [Blockchain Patterns](#blockchain-patterns)
-|                   | [web3_design]     |                     | [tokenfoundry]
-|                   |                   |                     | [finitestate]
+| Design            | Frontend          | TCR           | Token design      | State machine
+| ----------------  | ------------      | -----         | --------          | ---------------
+| [bc_design]       | [ux_design]       | [tcr_design]  | [audit_design]    | see  [Blockchain Patterns](#blockchain-patterns)
+|                   | [web3_design]     |               |                   | [tokenfoundry]
+|                   |                   |               |                   | [finitestate]
 
 [bc_design]:            https://media.consensys.net/designing-for-blockchain-whats-different-and-what-s-at-stake-b867eeade1c9
 [ux_design]:            https://rimble.consensys.design/guides/ux/connect-a-wallet-conditions
 
 [web3_design]:          https://medium.com/@lyricalpolymath/web3-design-principles-f21db2f240c1
+
+[audit_design]:         https://ethereum.stackexchange.com/questions/37171/what-is-checklist-for-auditing-a-smart-contract/43448#43448
 
 [tcr_design]:           https://hackernoon.com/token-curated-registry-tcr-design-patterns-4de6d18efa15
 
@@ -1098,7 +1136,7 @@ See also [Security best practices](#security-best-practices)
 | Check Effects Interaction (external call last) | [maxwoe_security]<br>[cons_afterextcalls]<br>[sol_checkeffect]<br>[fravoll_checkseffect]
 | Speed bump                                     | [maxwoe_security]
 | Rate limit                                     | [maxwoe_security]
-| Mutex                                          | [maxwoe_security]
+| Mutex / Reentry Protect                        | [maxwoe_security]
 | Balance limit                                  | [maxwoe_security]
 | Enforce invariants                             | [cons_enforce]<br>[cons_assertrequirerevert]<br>[cons_fallbackcheck]<br>[fravoll_guardcheck]
 | Explicit marking                               | [cons_mark-untrusted]<br>[cons_explicit]
@@ -1122,7 +1160,11 @@ See also [Security best practices](#security-best-practices)
 | Mapping Iterator                               | [i6mi6]<br>[rayonprotocol]
 | Target / Callback                              | [liamz]
 | Unstructured Storage                           | [zep_unstruct]
+| Frontrunning prevention                        | [coinmonks_order]<br>[frontrun]
 
+
+[frontrun]:  https://forum.openzeppelin.com/t/protecting-against-front-running-and-transaction-reordering/1314
+[coinmonks_order]:  https://medium.com/coinmonks/solidity-transaction-ordering-attacks-1193a014884e
 
 [wiki_ricardian]:   https://en.wikipedia.org/wiki/Ricardian_contract
 
@@ -1229,7 +1271,9 @@ Mostely the same patterns:
 * https://medium.com/robhitchens/solidity-crud-epilogue-e563e794fde
 * https://hackernoon.com/best-practices-to-level-up-your-ethereum-smart-contracts-944d5cea2cab
 * https://github.com/liamzebedee/awesome-solidity-patterns
-
+* https://medium.com/coinmonks/common-attacks-in-solidity-and-how-to-defend-against-them-9bc3994c7c18
+* https://www.sitepoint.com/smart-contract-safety-best-practices-design-patterns/
+* 
 
 ## Blacklists
 

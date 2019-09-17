@@ -20,3 +20,4 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 | Remix - debug                  | [Remix - debug](Remix - debug.html)
 | Remix - ropsten - debug gas    | [Remix - ropsten - debug gas](Remix - ropsten - debug gas.html)
 | Play - oracle                  | [Play - Provable Temperature Oracle](Play - Provable Temperature Oracle.html)
+| Play - ERC20 token             | [Play - ERC20](Play - ERC20.html)

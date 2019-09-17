@@ -2,6 +2,8 @@ Examples related to ethereum. ([Home](..))
 
 This document contains info about:
 - [Examples](#examples)
+  - [Interactive demo applications](#interactive-demo-applications)
+  - [Installation and Demo video's](#installation-and-demo-videos)
 - [Ethereum Concepts](#ethereum-concepts)
 - [Explorers](#explorers)
 - [Node software](#node-software)
@@ -41,7 +43,7 @@ This document contains info about:
 - [Building blocks](#building-blocks)
   - [Tokens](#tokens)
     - [Token design](#token-design)
-    - [Fungible tokens](#fungible-tokens)
+    - [Fungible tokens (ERC20)](#fungible-tokens-erc20)
     - [Nonfungible tokens](#nonfungible-tokens)
     - [STO](#sto)
   - [Oracles](#oracles)
@@ -60,13 +62,27 @@ This document contains info about:
 
 # Examples
 
-| Install Video                        | Demo video                      | Demo application
-| -------------                        | -------------                   | ---------
-| [Install Ethereum software](install) | [Demo Ethereum software](demo)  |  [casino]<br>[casino_github]
+## Interactive demo applications
+
+| Demo application              | Link       | Github
+| ---------                     | -------    | -----
+| Log your location (check-in)  | [location] | [location_github]
+| Mini casino: bet and win      | [casino]   | [casino_github]
+
+[location]:         http://web3examples.com/location
+[location_github]:  https://github.com/web3examples/location
+
+[casino]:           http://web3examples.com/ethereum/casino/
+[casino_github]:    https://github.com/web3examples/ethereum/tree/master/casino
 
 
-[casino]:         http://web3examples.com/ethereum/casino/
-[casino_github]:  https://github.com/web3examples/ethereum/tree/master/casino
+
+## Installation and Demo video's
+| Install Video                        | Demo video                      
+| -------------                        | -------------                  
+| [Install Ethereum software](install) | [Demo Ethereum software](demo)  
+
+
 
 
 # Ethereum Concepts
@@ -140,6 +156,7 @@ This document contains info about:
 | [coinmcap_exp]
 | [cryptohound]
 | [emoon_exp]
+| [aleth_exp]
 
 [etherscan]:        https://etherscan.io/
 [ethplorer]:        https://ethplorer.io/
@@ -156,6 +173,7 @@ This document contains info about:
 [coinmcap_exp]:     https://blockchain.coinmarketcap.com/chain/ethereum
 [cryptohound]:      https://www.c-hound.ai/app/home
 [emoon_exp]:        http://portfolio.emoon.io/explorer/address
+[aleth_exp]:        https://lite-explorer.aleth.io/
 
 [dlethexplorer]:    https://dlethexplorer.dltlabs.com/dashboard
 
@@ -611,10 +629,10 @@ This document contains info about:
 
 ## Solidity Overview
 
-| Overview                   | Solidity collections & examples
-| -----------------          |  ---------------
-| [cryptozombies]            | [code_examples]
-| [solidity_indepth]         | [smartcontract_codes]
+| Overview                   | Solidity collections    | Solidity code examples
+| -----------------          |  ---------------        | ----------------
+| [cryptozombies]            | [code_examples]         | [soliditybyexample]
+| [solidity_indepth]         | [smartcontract_codes]   | [babysteps]
 | [solidity_overview]        | [etherscan_verified]
 | [learn_solidity]           | 
 | [blockgeeks_sol1]          | [contractfinder]
@@ -623,8 +641,7 @@ This document contains info about:
 | [soliditykoans]            | [verified_contracts]
 | [top10_tut]                | [github_sol]
 | [bitdegree]                | [azure_samples]
-| [babysteps]                | [top5]
-| [cheatsheet]
+| [cheatsheet]               | [top5]
 | [awesome-sol]
 
 [cryptozombies]:     https://cryptozombies.io/en/lesson/1
@@ -654,7 +671,7 @@ This document contains info about:
 [top5]:                https://bytescout.com/blog/top-5-smart-contracts.html
 
 
-
+[soliditybyexample]:  https://solidity-by-example.org/
 
 
 ## Details
@@ -729,6 +746,7 @@ This document contains info about:
 | [tools-dutch]      | [ethfiddle]      | [dapptools]
 | [eth_dev]          |                  | [more-frameworks]
 |                    |                  | [superblocks]
+|                    |                  | [buidler]
 
 [consensys-dev]:   https://ethereum.consensys.net/
 [tool-list]:       https://github.com/ConsenSys/ethereum-developer-tools-list
@@ -746,7 +764,8 @@ This document contains info about:
 [embark]:          https://embark.status.im/
 [dapptools]:       http://dapp.tools/dapp/
 [more-frameworks]: https://github.com/ConsenSys/ethereum-developer-tools-list#frameworks
-[superblocks]:      https://superblocks.com/
+[superblocks]:     https://superblocks.com/
+[buidler]:         https://buidler.dev
 
 [ethpm]:           https://www.ethpm.com/
 [aragonpm]:        https://hack.aragon.org/docs/apm-intro.html
@@ -884,7 +903,7 @@ This document contains info about:
 | [dec_app_security]
 | [pitfalls]
 | [crypto_hacks]
-
+| [buggy_erc20]
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
@@ -902,7 +921,7 @@ This document contains info about:
 [dec_app_security]:     https://dasp.co
 [pitfalls]:             https://blog.bankex.org/nine-pitfalls-of-ethereum-smart-contracts-to-be-avoided-f7464761211c
 [crypto_hacks]:         https://www.tokens-economy.com/hacks/
-
+[buggy_erc20]:          https://github.com/sec-bit/awesome-buggy-erc20-tokens
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
 [sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
@@ -1002,7 +1021,7 @@ This document contains info about:
 
 | Overview              | Auditors           | Audit requests  | Audit reports        | Bug Bounty / audit platform | How to
 | -------------------   | -----------        | ----------      | -----------          | ------                      | ------------
-| [overview_auditors]   | [calistocw_req]    | [public_audits] |                      | [bugbounty]               | [howtoaudit]
+| [overview_auditors]   | [calistocw_req]    | [public_audits] |                      | [bugbounty]                 | [howtoaudit]
 | [etherscan_auditors]  | [diligence]        |                 | [authio_audits]      | [bountyone]
 |                       | [rtver_audit]      |                 | [quillhash_audits]   | [calistocw_audit]
 |                       | [amberdata]        |                 | [iosiro_audits]      | [solidified]
@@ -1332,7 +1351,7 @@ Mostely the same patterns:
 | Register token & icon     | [metamask_onetime]<br>[metamask_permanent]<br>[etherscan_icon]<br>[trivial]<br>[parity_token]<br>[trustwallet_assets]
 | Dapp Icon                 | [app_icon]
 | Manual add token          | [metamask_manual]<br>[coinomi_manual]<br>[trust_manual]<br>[myether_manual]
-| Exchange listing          | [coinist_exchange]
+| Exchange listing          | [coinist_exchange]<<br>[etherdelta_exchange]<br>[tokenmint_dex]
 
 [cons_latest]:        https://consensys.github.io/smart-contract-best-practices/tokens/#comply-with-the-latest-standard
 [cons_frontrun]:      https://consensys.github.io/smart-contract-best-practices/tokens/#be-aware-of-front-running-attacks-on-eip-20
@@ -1354,7 +1373,10 @@ Mostely the same patterns:
 [trust_manual]:       https://www.bitprime.co.nz/knowledge-base/manually-add-tokens-trust-wallet/
 [myether_manual]:     https://kb.myetherwallet.com/en/tokens/how-to-add-custom-token/
 
-[coinist_exchange]: https://www.coinist.io/how-to-get-your-digital-token-listed-on-an-exchange/
+[coinist_exchange]:     https://www.coinist.io/how-to-get-your-digital-token-listed-on-an-exchange/
+[etherdelta_exchange]:  https://tokenmint.io/blog/how-to-list-your-custom-erc20-token-to-etherdelta.html
+[tokenmint_dex]:        https://tokenmint.io/blog/decentralized-exchanges-list.html
+
 
 ### Token design
 
@@ -1366,15 +1388,41 @@ Mostely the same patterns:
 
 [country_law]:      https://ico.tokens-economy.com/
 
-### Fungible tokens 
+### Fungible tokens (ERC20)
 
-https://wiki.parity.io/Token-Deployment
-
-Libraries
-
-https://github.com/parity-contracts/token-registry/blob/master/contracts/BasicCoin.sol
+* https://github.com/OpenZeppelin/openzeppelin-contracts
 
 
+| Library               | Solidity version
+| --------              | ------------------
+| [openzeppelin_erc20]  | 0.5.0
+| [parity_basiccoin]    | 0.4.24
+| [stackexchange_erc20] | 0.5.7
+| [consensys_eip20]     | 0.4.21
+| [consensys_tokenfact] | 0.4.4
+| [theethereum_erc20]   | 0.5.0
+| [paxos_erc20]         | 0.4.24
+| [giladhaimov_erc20]   | 0.4.19
+
+[parity_basiccoin]:     https://github.com/parity-contracts/token-registry/blob/master/contracts/BasicCoin.sol
+[openzeppelin_erc20]:   https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20
+[stackexchange_erc20]:  https://ethereum.stackexchange.com/questions/68970/looking-for-updated-and-stable-standard-erc-20-smart-contract-template-which-wil
+[consensys_eip20]:      https://github.com/ConsenSys/Tokens/tree/master/contracts/eip20
+[consensys_tokenfact]:  https://github.com/ConsenSys/Token-Factory/tree/master/contracts
+[theethereum_erc20]:    https://theethereum.wiki/w/index.php/ERC20_Token_Standard
+[paxos_erc20]:          https://github.com/paxosglobal/pax-contracts/tree/master/contracts
+[giladhaimov_erc20]:  https://gist.github.com/giladHaimov/8e81dbde10c9aeff69a1d683ed6870be#file-basicerc20-sol
+
+
+ERC20 tutorial
+
+https://medium.com/@kctheservant/exploring-an-erc20-token-contract-ff9b90087b4d
+https://www.toptal.com/ethereum/create-erc20-token-tutorial
+https://www.dappuniversity.com/articles/code-your-own-cryptocurrency-on-ethereum
+https://hashnode.com/post/how-to-build-your-own-ethereum-based-erc20-token-and-launch-an-ico-in-next-20-minutes-cjbcpwzec01c93awtbij90uzn
+https://steemit.com/ethereum/@maxnachamkin/how-to-create-your-own-ethereum-token-in-an-hour-erc20-verified
+https://eattheblocks.com/erc20-token-tutorial-create-a-custom-token-in-solidity/
+https://hackernoon.com/how-to-create-your-own-cryptocurrency-token-b4e3eeac34aa
 
 ### Nonfungible tokens
 

@@ -78,11 +78,10 @@ This document contains info about:
 
 
 ## Installation and Demo video's
+
 | Install Video                        | Demo video                      
 | -------------                        | -------------                  
 | [Install Ethereum software](install) | [Demo Ethereum software](demo)  
-
-
 
 
 # Ethereum Concepts

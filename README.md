@@ -630,7 +630,7 @@ This document contains info about:
 
 | Overview                   | Solidity collections    | Solidity code examples
 | -----------------          |  ---------------        | ----------------
-| [cryptozombies]            | [code_examples]         | [soliditybyexample]
+| [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg]
 | [solidity_indepth]         | [smartcontract_codes]   | [babysteps]
 | [solidity_overview]        | [etherscan_verified]
 | [learn_solidity]           | 
@@ -643,19 +643,18 @@ This document contains info about:
 | [cheatsheet]               | [top5]
 | [awesome-sol]
 
-[cryptozombies]:     https://cryptozombies.io/en/lesson/1
-[solidity_indepth]:  https://solidity.readthedocs.io/en/develop/solidity-in-depth.html
-[solidity_overview]: https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
-[learn_solidity]:    https://www.bitdegree.org/learn/learn-solidity
-[blockgeeks_sol1]:   https://blockgeeks.com/guides/solidity/
-[blockgeeks_sol2]:   https://blockgeeks.com/introduction-to-solidity-part-1/
-[yt_sol_1basics]:    https://www.youtube.com/watch?v=v_hU0jPtLto 
-[soliditykoans]:     https://soliditykoans.org/
-[top10_tut]:         https://dev.to/charumalikcs/top-10-solidity-tutorials-1495
-[bitdegree]:         https://www.bitdegree.org/learn/learn-solidity
-[babysteps]:         https://github.com/cyrusadkisson/solidity-baby-steps
-[cheatsheet]:        https://intellipaat.com/blog/tutorial/blockchain-tutorial/blockchain-cheat-sheet/
-[awesome-sol]:       https://github.com/bkrem/awesome-solidity
+[cryptozombies]:       https://cryptozombies.io/en/lesson/1
+[solidity_indepth]:    https://solidity.readthedocs.io/en/develop/solidity-in-depth.html
+[solidity_overview]:   https://ethereumbuilders.gitbooks.io/guide/content/en/solidity_tutorials.html
+[learn_solidity]:      https://www.bitdegree.org/learn/learn-solidity
+[blockgeeks_sol1]:     https://blockgeeks.com/guides/solidity/
+[blockgeeks_sol2]:     https://blockgeeks.com/introduction-to-solidity-part-1/
+[yt_sol_1basics]:      https://www.youtube.com/watch?v=v_hU0jPtLto 
+[soliditykoans]:       https://soliditykoans.org/
+[top10_tut]:           https://dev.to/charumalikcs/top-10-solidity-tutorials-1495
+[bitdegree]:           https://www.bitdegree.org/learn/learn-solidity
+[cheatsheet]:          https://intellipaat.com/blog/tutorial/blockchain-tutorial/blockchain-cheat-sheet/
+[awesome-sol]:         https://github.com/bkrem/awesome-solidity
 
 
 [code_examples]:       https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
@@ -670,8 +669,9 @@ This document contains info about:
 [top5]:                https://bytescout.com/blog/top-5-smart-contracts.html
 
 
-[soliditybyexample]:  https://solidity-by-example.org/
-
+[soliditybyexample]:   https://solidity-by-example.org/
+[smartcontractprg]:    https://smartcontractprogrammer.com/
+[babysteps]:           https://github.com/cyrusadkisson/solidity-baby-steps
 
 ## Details
 

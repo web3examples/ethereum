@@ -628,10 +628,10 @@ This document contains info about:
 
 ## Solidity Overview
 
-| Overview                   | Solidity collections    | Solidity code examples
-| -----------------          |  ---------------        | ----------------
-| [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg]
-| [solidity_indepth]         | [smartcontract_codes]   | [babysteps]
+| Overview                   | Solidity collections    | Solidity code examples                    | Solidity training
+| -----------------          |  ---------------        | ----------------                          | -------------
+| [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)
+| [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]
 | [solidity_overview]        | [etherscan_verified]
 | [learn_solidity]           | 
 | [blockgeeks_sol1]          | [contractfinder]
@@ -672,6 +672,9 @@ This document contains info about:
 [soliditybyexample]:   https://solidity-by-example.org/
 [smartcontractprg]:    https://smartcontractprogrammer.com/
 [babysteps]:           https://github.com/cyrusadkisson/solidity-baby-steps
+
+[ninabreznik_learn]:  https://ninabreznik.github.io/workshop-solidity/
+[willitscale_learn]:   https://github.com/willitscale/learning-solidity
 
 ## Details
 
@@ -1121,21 +1124,24 @@ See also [Security best practices](#security-best-practices)
 
 ## Technical best practice
 
-| Verify source         | Register function name   
-| ----------            | -----------            
-| [etherscan_verify]    | [register_function]   
-| [etherchain_verify]   | [4bytes]                                    
+| Publish source                                | Register function name   
+| ----------                                    |  -----------            
+| [etherscan_verify]<br>[etherscan_ver_howto]   | [register_function]   
+| [etherchain_verify]                           | [4bytes]                                    
 | [blockscout_verify]
 | [ethscan_auto] 
+| [publish_ipfsremix]
 
 [etherscan_verify]:     https://etherscan.io/verifyContract
+[etherscan_ver_howto]:  https://tokenmint.io/blog/how-to-verify-ethereum-smart-contracts-source-code.html
+
 [etherchain_verify]:    https://etherchain.org/tools/verifyContract
 [blockscout_verify]:    https://blockscout.com
 [ethscan_auto]:         https://kalis.me/verify-truffle-smart-contracts-etherscan/
+[publish_ipfsremix]:    https://twitter.com/EthereumRemix/status/1173892756265152512
 
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
-
 
 
 ## Blockchain Patterns
@@ -1492,11 +1498,10 @@ https://token.security/stn/
 
 ## Oracles
 
-| Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
-| ----------    | ---------                               | ----                                          | ------             | --------------             | -----
-| Chainlink     | [chainlink]                             | [chainlink_exp]                               | [chainlink_github] | [chainlink_docs]           |
-| Provable      | [provable]                              | [provable_test]                               | [provable_github]  | [provable_docs]            |
-
+| Oracle frameworks | Tools & demo     | Github             | Documentation    
+| ----------        | ---------        | ----               | ------           
+|  [chainlink]      | [chainlink_exp]  | [chainlink_github] | [chainlink_docs] 
+|  [provable]       | [provable_test]  | [provable_github]  | [provable_docs]  
 
 [provable]:         http://provable.xyz
 [provable_github]:  https://github.com/provable-things
@@ -1507,6 +1512,14 @@ https://token.security/stn/
 [chainlink_exp]:    https://explorer.chain.link
 [chainlink_github]: https://github.com/smartcontractkit/chainlink
 [chainlink_docs]:   https://docs.chain.link/docs
+
+| Oracle examples | Oracle tutorials
+| -------------   | --------------
+| [randomoracle]  | [toptal_oracle]
+
+[randomoracle]:   https://github.com/stupeters187/randomOarcle
+[toptal_oracle]:  https://www.toptal.com/ethereum/ethereum-oracle-contracts-tutorial-pt1
+
 
 ## Ethereum Name System
 

@@ -4,3 +4,5 @@ package-lock.json
 .secret
 .infura
 old/
+*.abi
+*.bin

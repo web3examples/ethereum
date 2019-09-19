@@ -149,8 +149,8 @@ This document contains info about:
 | [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    | [ens_manager]
 | [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    |                  | [ethsimple]
 | [etherchain]      | [ethernodes]      | [ethtective]  |             | [enjinx_erc20]     | [opensea_rinkeby] |                  | [etherscan_ens]
-| [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      |                   |                  | [etherchain_ens]
-| [enjinx]          | [ethstats]        |               |             |                    |                   |                  | [emoon_ens]
+| [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      | [bloxy]           |                  | [etherchain_ens]
+| [enjinx]          | [ethstats]        |               |             |                    | [etherscan_tokens]|                  | [emoon_ens]
 | [blockchain_com]  | [etherblockchain] |
 | [btc_com]         | [dlethexplorer]
 | [blockchair]
@@ -166,6 +166,8 @@ This document contains info about:
 [tokentxns]:        https://etherscan.io/tokentxns-nft
 [mintable_exp]:     https://mintable.app/manager
 [opensea_rinkeby]:  https://rinkeby.opensea.io/assets
+[etherscan_tokens]: https://rinkeby.etherscan.io/token/0x07fe0d8237299cda9fd5507d20b8602c71eb3658
+
 
 
 [etherscan]:        https://etherscan.io/
@@ -1070,7 +1072,7 @@ This document contains info about:
 |                       | [openxcell]        |                 | [quantstamp1]
 |                       | [quillhash]        |                 | [quantstamp2]
 |                       | [hacken_io]        |                 | [quantstamp3]
-|                       | [trailofbits]
+|                       | [trailofbits]      |                 | [sigmaprime_dapper]
 |                       | [chainsecurity]
 |                       | [iosiro]
 |                       | [itransition]
@@ -1125,7 +1127,7 @@ This document contains info about:
 [quantstamp1]:          https://certificate.quantstamp.com/
 [quantstamp2]:          https://certificate.quantstamp.com/view/substratum-token
 [quantstamp3]:          https://certificate.quantstamp.com/view/pool-together-contracts
-
+[sigmaprime_dapper]:    https://blog.sigmaprime.io/dapper-wallet-review.html
 
 [howtoaudit]:           https://blockgeeks.com/guides/audit-smart-contract/
 [calistocw_audit]:      https://github.com/EthereumCommonwealth/Auditing
@@ -1566,12 +1568,17 @@ Mostely the same patterns:
 | [consensys_artifaqt]    | 0.4.24
 | [decentraland_erc721]   | 0.4.18
 | [district0x_erc721]     | 0.4.18
+| [ethpm_snake_erc721]    | multiple
 
 [openzep_erc721]:       https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol
 [0xcert_erc721]:        https://github.com/0xcert/ethereum-erc721/tree/master/src/contracts/tokens
 [consensys_artifaqt]:   https://github.com/ConsenSys/artifaqt/blob/master/contract/contracts/eip721/EIP721.sol
 [decentraland_erc721]:  https://github.com/decentraland/erc721/blob/master/contracts
 [district0x_erc721]:    https://github.com/district0x/memefactory-contracts/blob/master/contracts/token/ERC721BasicToken.sol
+
+[opensea_erc721]:       https://github.com/ProjectOpenSea/opensea-creatures/tree/master/contracts
+
+[ethpm_snake_erc721]: http://explorer.ethpm.com/browse/mainnet/erc721.snakecharmers.eth
 
 
 http://erc721.org/
@@ -1597,6 +1604,10 @@ http://erc721.org/
 * https://ethereum.stackexchange.com/questions/73454/erc721-token-burn-and-mint-again/73603
 * https://eips.ethereum.org/EIPS/eip-721
 * https://blog.ippon.tech/non-fungible-tokens-on-the-ethereum-blockchain/
+https://docs.openzeppelin.com/contracts/2.x/tokens
+https://kauri.io/article/27640de6baba4aa99d57fd158af5c019/v2/creating-a-flexible-nft-(part-1)
+https://nonfungible.com/blog/supporting-thousands-projects
+https://steemit.com/erc721/@qwoyn/building-an-erc721-non-fungible-token-smart-contract-and-using-metamask-to-interact-with-it-via-a-web-interface-part-i
 
 
 * https://rinkeby.opensea.io/
@@ -1759,9 +1770,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Application Overview
 
-| Dapps                             | Projects   
-| ----------                        | -----
-| [stateofthedapps]<br>[sotd_sheet] | [etnw_projects]
+| Dapps                             | Projects          | NFT
+| ----------                        | -----             | ----
+| [stateofthedapps]<br>[sotd_sheet] | [etnw_projects]   | [nonfungible]
 | [dappradar]
 | [consensys-overview]
 | [mathdapp]
@@ -1778,9 +1789,11 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [block123]
 | [wiki-dapps]
 | [10dapps]
+| [wutui] (chinese)
 
+[wutui]:                https://wutui.pro/dapps/?chain=eth&category=all
 [stateofthedapps]:      https://www.stateofthedapps.com/
-[sotd_sheet]: https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
+[sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
 
 [dappradar]:            https://dappradar.com/
 [consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
@@ -1798,6 +1811,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [block123]:             https://www.block123.com/en/
 [wiki-dapps]:           https://github.com/ethereum/wiki/wiki/Decentralized-apps-(dapps)
 [10dapps]:              https://10dapps.com/dapp_ranking?category=all&network=Ethereum
+
+
+[nonfungible]: https://nonfungible.com/market/history
 
 
 ## Financial

@@ -16,6 +16,7 @@ This document contains info about:
   - [Web3.js](#web3js)
   - [Web3.js in browser](#web3js-in-browser)
 - [Wallets](#wallets)
+  - [Wallet (just) for coins](#wallet-just-for-coins)
   - [Mobile Wallets](#mobile-wallets)
   - [Hardware wallets](#hardware-wallets)
   - [Contract based wallets](#contract-based-wallets)
@@ -42,10 +43,17 @@ This document contains info about:
   - [Blacklists](#blacklists)
 - [Building blocks](#building-blocks)
   - [Tokens](#tokens)
+    - [Token overview](#token-overview)
+    - [Token best practices](#token-best-practices)
     - [Token design](#token-design)
     - [Fungible tokens (ERC20)](#fungible-tokens-erc20)
-    - [Nonfungible tokens](#nonfungible-tokens)
-    - [STO](#sto)
+    - [Nonfungible tokens ERC 721](#nonfungible-tokens-erc-721)
+    - [ERC 721x](#erc-721x)
+    - [ERC 223](#erc-223)
+    - [ERC 777](#erc-777)
+    - [ERC 827](#erc-827)
+    - [ERC 1155](#erc-1155)
+    - [Security token ERC 1400](#security-token-erc-1400)
   - [Oracles](#oracles)
   - [Ethereum Name System](#ethereum-name-system)
   - [Financial Building blocks](#financial-building-blocks)
@@ -86,16 +94,16 @@ This document contains info about:
 
 # Ethereum Concepts
 
-| General info      | Development       | Youtube          | Info sources         | Online courses    
-| ---------------   | -----------       | ---------------- | ---------------      | ---------------
-| [mastering]       | [dappuniversity]  | [youtube-exp]    | [eth-mag]            | [zastrin]
-| [ethereum.org]    | [dev_tut]         | [youtube-arch]   | [tcrpartybot]        | [coursetro]
-| [ethhub]          | [blockgeeks-devs] |                  | [tokeneconomy]       | [tutorialspoint]
-| [eth-intro]       | [buidl]           |                  | [weekinethereumnews] | [ethereumdev]
-| [eth-guide]       | [eth_nw_learn]    |                  | [eth_stackexchange]  | [ludu]
-| [basics]          | [kauri]           |                  | [delegatecall]
-| [howwork]         | [ethereumbuilders]  
-| [ethdocs] (error) | [parity_wiki]
+| General info      | Youtube          | Info sources         | Online courses    
+| ---------------   | ---------------- | ---------------      | ---------------
+| [mastering]       | [youtube-exp]    | [eth-mag]            | [zastrin]
+| [ethereum.org]    | [youtube-arch]   | [tcrpartybot]        | [coursetro]
+| [ethhub]          |                  | [tokeneconomy]       | [tutorialspoint]
+| [eth-intro]       |                  | [weekinethereumnews] | [ethereumdev]
+| [eth-guide]       |                  | [eth_stackexchange]  | [ludu]
+| [basics]          |                  | [delegatecall]       | [austin]
+| [howwork]         | 
+| [ethdocs] (error) | 
 | [Blockchainlabsnz]
 | [eth.wiki]
 | [metalist]
@@ -112,14 +120,9 @@ This document contains info about:
 [eth.wiki]:           https://eth.wiki
 [metalist]:           https://github.com/buddies2705/Awesome-Ethereum-Metalist
 
-[dappuniversity]:     http://www.dappuniversity.com/
-[dev_tut]:            https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
-[blockgeeks-devs]:    https://blockgeeks.com/guides/?tagfilter=true&filter=Blockchain%20for%20Developers
-[buidl]:              https://buidl.guide
-[eth_nw_learn]:       https://ethereum.network/learn
-[kauri]:              https://kauri.io
-[ethereumbuilders]:   https://ethereumbuilders.gitbooks.io/guide/content/en/
-[parity_wiki]:        https://wiki.parity.io/Development-Overview
+
+
+
 
 [youtube-exp]:        https://www.youtube.com/results?search_query=ethereum+explained
 [youtube-arch]:       https://www.youtube.com/results?search_query=ethereum+architecture
@@ -136,17 +139,19 @@ This document contains info about:
 [tutorialspoint]:     https://www.tutorialspoint.com/ethereum/index.htm
 [ethereumdev]:        https://ethereumdev.io/
 [ludu]:               https://www.ludu.co/course/ethereum
+[austin]:             https://medium.com/@austin_48503/rapid-dapp-prototyping-3823e1f565c4
+
 
 # Explorers
 
-| Block explorer    | Dashboards    | Block Visuals | Miners      | Tokens            | Dapps           | ENS
-| ---------------   | ----------    | ------------- | -----       | -----             | -----           | -----
-| [etherscan]       | [bloxy_db]    | [ethviewer]   | [poolwatch] | [bloxy_erc20]     | [bloxy_dapps]   | [ens_manager]
-| [ethplorer]       | [nodetracker] | [bloxy_graph] |             | [amberdata_tokens]|                 | [ethsimple]
-| [etherchain]      | [ethernodes]  | [ethtective]  |             | [enjinx_erc20]    |                 | [etherscan_ens]
-| [blockscout]      | [amberdata_db]|               |             | [emoon_erc20]     |                 | [etherchain_ens]
-| [enjinx]          | [ethstats]    |               |             |                   |                 | [emoon_ens]
-| [blockchain_com]  | [etherblockchain]
+| Block explorer    | Dashboards        | Block Visuals | Miners      | Tokens             | NFTs (ERC721)     |  Dapps           | ENS
+| ---------------   | ----------        | ------------- | -----       | -----              | -----             | -----            | -----------
+| [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    | [ens_manager]
+| [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    |                  | [ethsimple]
+| [etherchain]      | [ethernodes]      | [ethtective]  |             | [enjinx_erc20]     | [opensea_rinkeby] |                  | [etherscan_ens]
+| [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      |                   |                  | [etherchain_ens]
+| [enjinx]          | [ethstats]        |               |             |                    |                   |                  | [emoon_ens]
+| [blockchain_com]  | [etherblockchain] |
 | [btc_com]         | [dlethexplorer]
 | [blockchair]
 | [minergate]
@@ -156,6 +161,12 @@ This document contains info about:
 | [cryptohound]
 | [emoon_exp]
 | [aleth_exp]
+
+
+[tokentxns]:        https://etherscan.io/tokentxns-nft
+[mintable_exp]:     https://mintable.app/manager
+[opensea_rinkeby]:  https://rinkeby.opensea.io/assets
+
 
 [etherscan]:        https://etherscan.io/
 [ethplorer]:        https://ethplorer.io/
@@ -209,7 +220,7 @@ This document contains info about:
 
 | Ethereum Nodes     | Information      | Language     |  Github            | Documentation                 | 
 | ---------------    |  --------        | ------       | --------------     | ----
-| Overview           | [client-overview]<br>[understand_nodes]|              |  
+| Overview           | [client-overview]<br>[understand_nodes]|             |  
 | Go Ethereum (~70%) | [geth]           | [go]         | [geth_github]      | [geth_docs]
 | Parity (~25%)      | [parity_eth]     | [rust]       | [parity_github]    | [parity_docs]
 | Aleth/eth (cpp-eth)| [cpp_eth]        | [cpp]        | [aleth_eth_github] | [cpp_docs]
@@ -544,6 +555,17 @@ This document contains info about:
 
 # Wallets
 
+
+## Wallet (just) for coins
+
+| Overvieew
+| -----
+| [blockspot_wallets]
+| [etherscan_wallets]
+
+[blockspot_wallets]:    https://blockspot.io/wallets/
+[etherscan_wallets]:    https://etherscan.io/directory/Wallet
+
 ## Mobile Wallets
 
 | Android       | IOS           | Android and IOS  
@@ -739,7 +761,6 @@ This document contains info about:
 
 ## Development tools
 
-
 | Developer portal   | Online editors   | Deployment       | Package managers   
 | ------------------ | ---------------  | ---------------- | ------------------- 
 | [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]            
@@ -747,14 +768,27 @@ This document contains info about:
 | [toolkit]          | [superblocks]    | [embark]         |
 | [tools-dutch]      | [ethfiddle]      | [dapptools]
 | [eth_dev]          |                  | [more-frameworks]
-|                    |                  | [superblocks]
-|                    |                  | [buidler]
+| [dappuniversity]   |                  | [superblocks]
+| [dev_tut]          |                  | [buidler]
+| [blockgeeks-devs] 
+| [buidl] 
+| [eth_nw_learn]
+| [kauri] 
+| [ethereumbuild] 
+| [parity_wiki]
 
 [consensys-dev]:   https://ethereum.consensys.net/
 [tool-list]:       https://github.com/ConsenSys/ethereum-developer-tools-list
-[toolkit]:         http://www.dappuniversity.com/articles/blockchain-developer-toolkit
 [tools-dutch]:     https://www.uitlegblockchain.nl/tools-voor-de-ontwikkeling-van-ethereum-dapps/
-[eth_dev]:          https://www.ethereum.org/developers/
+[eth_dev]:         https://www.ethereum.org/developers/
+[dappuniversity]:  http://www.dappuniversity.com/
+[dev_tut]:         https://github.com/ethereum/wiki/wiki/Ethereum-Development-Tutorial
+[blockgeeks-devs]: https://blockgeeks.com/guides/?tagfilter=true&filter=Blockchain%20for%20Developers
+[buidl]:           https://buidl.guide
+[eth_nw_learn]:    https://ethereum.network/learn
+[kauri]:           https://kauri.io
+[ethereumbuild]:   https://ethereumbuilders.gitbooks.io/guide/content/en/
+[parity_wiki]:     https://wiki.parity.io/Development-Overview
 
 [play-eth]:        https://ethereum-play.github.io/editor-solidity/
 [remix-eth]:       https://remix.ethereum.org
@@ -887,17 +921,17 @@ This document contains info about:
 
 ## Weaknesses and Measures
 
-|  Weaknesses           | Measures               | Standards & checklists | Papers
-| -----------           | ------------------     | -----------            | -------------
-| [swc]                 | [considerations]       | [audit_standards]      | [paper_overview]
-| [known_attacks1]      | [sec_best_practices]   | [audit_checklist]    
-| [known_attacks2]      | [safety]               | [slowmist_checklist]
-| [list2016]            | [loomavoid]            | [quorum_checklist]
-| [sol_hacks]           | [sec2016]              | [king_checklist] 
-| [smartdec_knowledge]  | [awesome_sec]          | [knownsec_checklist]
-| [list_vul]            | [secure_pattern]       | [crfinlabs_checklist]
-| [dasp]                | [vulnerable_mitigate]  | [ethdevs_checklist]
-| [notsosmart]          |                        | [miguelmota_checklist]
+|  Weaknesses           | Token weaknesses   | Measures               | Standards & checklists | Papers
+| -----------           | ------------------ |----                    | -----------            | -------------
+| [swc]                 | [buggy_erc20]      | [considerations]       | [audit_standards]      | [paper_overview]
+| [known_attacks1]      | [withdrawal]       | [sec_best_practices]   | [audit_checklist]    
+| [known_attacks2]      |                    | [safety]               | [slowmist_checklist]
+| [list2016]            |                    | [loomavoid]            | [quorum_checklist]
+| [sol_hacks]           |                    | [sec2016]              | [king_checklist] 
+| [smartdec_knowledge]  |                    | [awesome_sec]          | [knownsec_checklist]
+| [list_vul]            |                    | [secure_pattern]       | [crfinlabs_checklist]
+| [dasp]                |                    | [vulnerable_mitigate]  | [ethdevs_checklist]
+| [notsosmart]          |                    |                        | [miguelmota_checklist]
 | [detector_docs]
 | [solcbuginfo]
 | [attack_vectors]
@@ -905,7 +939,7 @@ This document contains info about:
 | [dec_app_security]
 | [pitfalls]
 | [crypto_hacks]
-| [buggy_erc20]
+
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
@@ -923,7 +957,9 @@ This document contains info about:
 [dec_app_security]:     https://dasp.co
 [pitfalls]:             https://blog.bankex.org/nine-pitfalls-of-ethereum-smart-contracts-to-be-avoided-f7464761211c
 [crypto_hacks]:         https://www.tokens-economy.com/hacks/
+
 [buggy_erc20]:          https://github.com/sec-bit/awesome-buggy-erc20-tokens
+[withdrawal]:           https://arxiv.org/pdf/1907.00903.pdf
 
 [considerations]:       https://solidity.readthedocs.io/en/develop/security-considerations.html
 [sec_best_practices]:   https://consensys.github.io/smart-contract-best-practices/
@@ -1347,6 +1383,33 @@ Mostely the same patterns:
 
 ## Tokens
 
+### Token overview
+
+| Token   | Info                             | Main difference           | More info
+| ----    | -----                            | -----                     | ----------
+| erc20   | [icoguru_20]                     |                           | [Fungible tokens (ERC20)](#fungible-tokens-erc20)
+| erc223  | [diff20-223]<br>[icoguru_223]    | tokenFallback function    | [ERC 223](#erc-223)
+| erc827  | [icoguru_827]                    | transfer value and data   | [ERC 827](#erc-827)
+| erc777  | [icoguru_777]                    |                           | [ERC 777](#erc-777)
+| erc721  | [icoguru_721]                    | safeTransferFrom          | [Nonfungible tokens ERC 721](#nonfungible-tokens-erc-721)
+| erc721x |                                  | Gaming platform           |
+| erc1155 | [enjin_erc1155]                  | Multitoken / meta offchain|
+| erc621  |                                  |                           |
+| erc1400 |                                  | Security token            | [Security token ERC 1400](#security-token-erc-1400)
+| erc1155 | [icoguru_1155]
+| erc948  |                                  | subscription
+
+[icoguru_20]:     https://icoguru.io/wiki/erc-20
+[icoguru_223]:    https://icoguru.io/wiki/erc-223
+[icoguru_721]:    https://icoguru.io/wiki/erc-721
+[icoguru_777]:    https://icoguru.io/wiki/erc-777
+[icoguru_827]:    https://icoguru.io/wiki/erc-827
+[icoguru_1155]:   https://icoguru.io/wiki/erc-1155
+[enjin_erc1155]:  https://blog.enjincoin.io/erc-1155-the-final-token-standard-on-ethereum-a83fce9f5714
+[diff20-223]:     https://adoriasoft.com/blog/difference-between-erc20-and-erc223-token-standards/
+
+### Token best practices
+
 | Best practices            | Details
 | -----------------         | ---------
 | Latest standard           | [cons_latest]
@@ -1395,19 +1458,34 @@ Mostely the same patterns:
 
 ### Fungible tokens (ERC20)
 
-* https://github.com/OpenZeppelin/openzeppelin-contracts
+
+| Token overview
+| ----------------
+| [etherscan_tokens]
+| [etherwallet_tokens]
+| [eidoo_tokens]
+| [kleros_tokens]
+| [blockspot_coins]
+
+[etherscan_tokens]:     https://etherscan.io/tokens
+[etherwallet_tokens]:   https://github.com/kvhnuke/etherwallet/blob/mercury/app/scripts/tokens/ethTokens.json
+[eidoo_tokens]:         https://eidoo.io/erc20-tokens-list
+[kleros_tokens]:        https://tokens.kleros.io/tokens
+[blockspot_coins]:      https://blockspot.io/coins/
+[bloxy_erc20]:          https://bloxy.info/list_tokens/ERC20
 
 
-| Library               | Solidity version
-| --------              | ------------------
-| [openzeppelin_erc20]  | 0.5.0
-| [parity_basiccoin]    | 0.4.24
-| [stackexchange_erc20] | 0.5.7
-| [consensys_eip20]     | 0.4.21
-| [consensys_tokenfact] | 0.4.4
-| [theethereum_erc20]   | 0.5.0
-| [paxos_erc20]         | 0.4.24
-| [giladhaimov_erc20]   | 0.4.19
+
+| Implementation (source) | Solidity version
+| --------                | ------------------
+| [openzeppelin_erc20]    | 0.5.0
+| [parity_basiccoin]      | 0.4.24
+| [stackexchange_erc20]   | 0.5.7
+| [consensys_eip20]       | 0.4.21
+| [consensys_tokenfact]   | 0.4.4
+| [theethereum_erc20]     | 0.5.0
+| [paxos_erc20]           | 0.4.24
+| [giladhaimov_erc20]     | 0.4.19
 
 [parity_basiccoin]:     https://github.com/parity-contracts/token-registry/blob/master/contracts/BasicCoin.sol
 [openzeppelin_erc20]:   https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20
@@ -1416,72 +1494,113 @@ Mostely the same patterns:
 [consensys_tokenfact]:  https://github.com/ConsenSys/Token-Factory/tree/master/contracts
 [theethereum_erc20]:    https://theethereum.wiki/w/index.php/ERC20_Token_Standard
 [paxos_erc20]:          https://github.com/paxosglobal/pax-contracts/tree/master/contracts
-[giladhaimov_erc20]:  https://gist.github.com/giladHaimov/8e81dbde10c9aeff69a1d683ed6870be#file-basicerc20-sol
+[giladhaimov_erc20]:    https://gist.github.com/giladHaimov/8e81dbde10c9aeff69a1d683ed6870be#file-basicerc20-sol
 
 
-ERC20 tutorial
+| Tutorial 
+| --------------
+| [etc20-1]
+| [etc20-2]
+| [etc20-3]
+| [etc20-4]
+| [etc20-5]
+| [etc20-6]
+| [etc20-7]
+| [etc20-8]
+| [etc20-9]
 
-https://medium.com/@kctheservant/exploring-an-erc20-token-contract-ff9b90087b4d
-https://www.toptal.com/ethereum/create-erc20-token-tutorial
-https://www.dappuniversity.com/articles/code-your-own-cryptocurrency-on-ethereum
-https://hashnode.com/post/how-to-build-your-own-ethereum-based-erc20-token-and-launch-an-ico-in-next-20-minutes-cjbcpwzec01c93awtbij90uzn
-https://steemit.com/ethereum/@maxnachamkin/how-to-create-your-own-ethereum-token-in-an-hour-erc20-verified
-https://eattheblocks.com/erc20-token-tutorial-create-a-custom-token-in-solidity/
-https://hackernoon.com/how-to-create-your-own-cryptocurrency-token-b4e3eeac34aa
+[etc20-1]:    https://medium.com/@kctheservant/exploring-an-erc20-token-contract-ff9b90087b4d
+[etc20-2]:    https://www.toptal.com/ethereum/create-erc20-token-tutorial
+[etc20-3]:    https://www.dappuniversity.com/articles/code-your-own-cryptocurrency-on-ethereum
+[etc20-4]:    https://hashnode.com/post/how-to-build-your-own-ethereum-based-erc20-token-and-launch-an-ico-in-next-20-minutes-cjbcpwzec01c93awtbij90uzn
+[etc20-5]:    https://steemit.com/ethereum/@maxnachamkin/how-to-create-your-own-ethereum-token-in-an-hour-erc20-verified
+[etc20-6]:    https://eattheblocks.com/erc20-token-tutorial-create-a-custom-token-in-solidity/
+[etc20-7]:    https://hackernoon.com/how-to-create-your-own-cryptocurrency-token-b4e3eeac34aa
+[etc20-8]:    https://medium.com/ethex-market/erc20-approve-allow-explained-88d6de921ce9
+[etc20-9]:    https://www.wealdtech.com/articles/understanding-erc20-token-contracts/
 
-### Nonfungible tokens
+
+
+
+// check
+* https://vittominacori.github.io/erc20-generator/
+* https://www.toptal.com/ethereum/create-erc20-token-tutorial
+* https://consensys.github.io/smart-contract-best-practices/tokens/
+* https://hackernoon.com/create-your-own-ethereum-token-bfa6302084da
+* https://gist.github.com/anonymous/9eabd0015ca7dd431992a522aa8c51cd#file-erc20-sol
+* https://remix.ethereum.org/#gist=9eabd0015ca7dd431992a522aa8c51cd#file-erc20-sol
+* [yt_sol_9erc20]:        https://www.youtube.com/watch?v=r7XojpIDuhA
+* [yt_sol_10currency]:    https://www.youtube.com/watch?v=IWC9-yGoDGs
+* [yt_sol_11tokens]:      https://www.youtube.com/watch?v=WfkPTyvOL_g
+* http://tokenfactory.surge.sh/#/tokensearch
+*[audit_token]:         https://ethereum.stackexchange.com/questions/37171/what-is-checklist-for-auditing-a-smart-contract/43448#43448
+
+
+
+
+### Nonfungible tokens ERC 721
+
+
+| Token overview
+| ----------------
+| [bloxy_erc721]
+
+[bloxy_erc721]: https://bloxy.info/list_tokens/ERC721
+
+
+
+
 
 | Overview                  | Marketplace
 | ----------                | ----------
 | [nonfungalliance]         | See [Marketplace](#marketplace)    
 
 
-
 [nonfungalliance]:   https://nonfungiblealliance.org/resources
 
 
-https://medium.com/coinmonks/jumping-into-solidity-the-erc721-standard-part-3-5f38e012248b
+| Implementation (source) | Solidity version
+| -------                 | --------
+| [openzep_erc721]        | 0.5.0
+| [0xcert_erc721]         | 0.5.6
+| [consensys_artifaqt]    | 0.4.24
+| [decentraland_erc721]   | 0.4.18
+| [district0x_erc721]     | 0.4.18
 
-[audit_design]:         https://ethereum.stackexchange.com/questions/37171/what-is-checklist-for-auditing-a-smart-contract/43448#43448
-
-/ erc20
-
-| Token overview
-| ----------------
-| [etherscan_tokens]
-| [etherwallet_tokens]
-| [eidoo_tokens]
-| [kleros_tokens]
-
-[etherscan_tokens]:     https://etherscan.io/tokens
-[etherwallet_tokens]:   https://github.com/kvhnuke/etherwallet/blob/mercury/app/scripts/tokens/ethTokens.json
-[eidoo_tokens]:         https://eidoo.io/erc20-tokens-list
-[kleros_tokens]:        https://tokens.kleros.io/tokens
-
-https://vittominacori.github.io/erc20-generator/
-
-https://www.toptal.com/ethereum/create-erc20-token-tutorial
+[openzep_erc721]:       https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol
+[0xcert_erc721]:        https://github.com/0xcert/ethereum-erc721/tree/master/src/contracts/tokens
+[consensys_artifaqt]:   https://github.com/ConsenSys/artifaqt/blob/master/contract/contracts/eip721/EIP721.sol
+[decentraland_erc721]:  https://github.com/decentraland/erc721/blob/master/contracts
+[district0x_erc721]:    https://github.com/district0x/memefactory-contracts/blob/master/contracts/token/ERC721BasicToken.sol
 
 
-[token_bestpractice]:   https://consensys.github.io/smart-contract-best-practices/tokens/
+http://erc721.org/
 
 
-https://hackernoon.com/create-your-own-ethereum-token-bfa6302084da
-https://gist.github.com/anonymous/9eabd0015ca7dd431992a522aa8c51cd#file-erc20-sol
-https://remix.ethereum.org/#gist=9eabd0015ca7dd431992a522aa8c51cd#file-erc20-sol
 
-[yt_sol_9erc20]:        https://www.youtube.com/watch?v=r7XojpIDuhA
-[yt_sol_10currency]:    https://www.youtube.com/watch?v=IWC9-yGoDGs
-[yt_sol_11tokens]:      https://www.youtube.com/watch?v=WfkPTyvOL_g
-http://tokenfactory.surge.sh/#/tokensearch
+| Tutorial   | Put on marketplace
+| ---------- | -----------------
+|            | [opensea_erc721]
 
-erc721
-https://medium.com/blockchannel/walking-through-the-erc721-full-implementation-72ad72735f3c
-https://ethereum.stackexchange.com/questions/73454/erc721-token-burn-and-mint-again/73603
-https://eips.ethereum.org/EIPS/eip-721
 
-https://github.com/ConsenSys/artifaqt/blob/master/contract/contracts/eip721/EIP721.sol
-https://github.com/OpenZeppelin/zeppelin-solidity/tree/master/contracts/token/ERC721
+[opensea_erc721]:   https://docs.opensea.io/docs/1-structuring-your-smart-contract
+
+
+* https://fulldecent.blogspot.com/2018/06/nontechnical-what-is-erc-721.html
+* https://kauri.io/article/9a7a50e503a1477f8b91397ecf1677da/understanding-openzeppelin-erc721
+* https://medium.com/crypto-currently/the-anatomy-of-erc721-e9db77abfc24
+
+* https://www.youtube.com/watch?v=Zcx72UjuTSQ
+* https://medium.com/coinmonks/a-simple-erc-721-example-c3f72b5aa19
+* https://medium.com/coinmonks/jumping-into-solidity-the-erc721-standard-part-3-5f38e012248b
+* https://medium.com/blockchannel/walking-through-the-erc721-full-implementation-72ad72735f3c
+* https://ethereum.stackexchange.com/questions/73454/erc721-token-burn-and-mint-again/73603
+* https://eips.ethereum.org/EIPS/eip-721
+* https://blog.ippon.tech/non-fungible-tokens-on-the-ethereum-blockchain/
+
+
+* https://rinkeby.opensea.io/
+* https://docs.opensea.io/docs/getting-started
 
 https://yos.io/2019/04/14/erc-standards-you-should-know-about/
 
@@ -1490,7 +1609,53 @@ https://yos.io/2019/04/14/erc-standards-you-should-know-about/
 [mintable_listed]:      https://mintable.app/create
 
 
-### STO
+https://consensys.net/web3studio/bootleg
+
+
+
+
+### ERC 721x
+
+* https://github.com/loomnetwork/erc721x
+* https://erc721x.org/
+
+
+
+### ERC 223 
+
+| Token overview
+| ----------------
+| [bloxy_erc223]
+
+
+[bloxy_erc223]: https://bloxy.info/list_tokens/ERC223
+
+
+
+### ERC 777
+
+https://github.com/0xjac/ERC777
+https://docs.openzeppelin.org/v2.3.0/api/token/erc777
+
+### ERC 827
+
+https://bloxy.info/list_tokens/ERC827
+
+
+### ERC 1155
+
+https://projecthydro.org/blog/developing-a-digital-art-ownership-dapp-the-basics/
+https://github.com/ethereum/eips/issues/1155
+
+### Security token ERC 1400
+
+| Implemenation (source) | Solidity version
+| --------               | ------------------
+| [polymath_token]       | 0.5.8
+
+[polymath_token]: https://github.com/PolymathNetwork/polymath-core/tree/master/contracts/tokens
+
+
 
 https://medium.com/@CoindyOfficial/sto-token-standards-57071e6726bd
 
@@ -1594,9 +1759,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Application Overview
 
-| Dapps                         | Projects   
-| ----------                    | -----
-| [stateofthedapps]             | [etnw_projects]
+| Dapps                             | Projects   
+| ----------                        | -----
+| [stateofthedapps]<br>[sotd_sheet] | [etnw_projects]
 | [dappradar]
 | [consensys-overview]
 | [mathdapp]
@@ -1612,8 +1777,11 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [topdapps]
 | [block123]
 | [wiki-dapps]
+| [10dapps]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
+[sotd_sheet]: https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
+
 [dappradar]:            https://dappradar.com/
 [consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7
 [mathdapp]:             https://mathdapp.store/?blockchain=ethereum
@@ -1629,6 +1797,8 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [topdapps]:             https://topdapps.org/
 [block123]:             https://www.block123.com/en/
 [wiki-dapps]:           https://github.com/ethereum/wiki/wiki/Decentralized-apps-(dapps)
+[10dapps]:              https://10dapps.com/dapp_ranking?category=all&network=Ethereum
+
 
 ## Financial
 

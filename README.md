@@ -564,16 +564,21 @@ This document contains info about:
 | -----
 | [blockspot_wallets]
 | [etherscan_wallets]
+| [myetherwallet]
+
+
 
 [blockspot_wallets]:    https://blockspot.io/wallets/
 [etherscan_wallets]:    https://etherscan.io/directory/Wallet
+[myetherwallet]: https://www.myetherwallet.com/
+
 
 ## Mobile Wallets
 
 | Android       | IOS           | Android and IOS  
 | -----------   | ------------- | -------------    
 | [walleth]     | [tokenary]    | [trustwallet]    
-|               | [rainbow]     | [pillar]         
+|               | [rainbow]     | [pillar]   (NFT)      
 |               |               | [argent]         
 |               |               | [coinomi]        
 
@@ -1564,6 +1569,7 @@ Mostely the same patterns:
 | Implementation (source) | Solidity version
 | -------                 | --------
 | [openzep_erc721]        | 0.5.0
+| [0xcert_erc721ref]      | 0.5.6
 | [0xcert_erc721]         | 0.5.6
 | [consensys_artifaqt]    | 0.4.24
 | [decentraland_erc721]   | 0.4.18
@@ -1571,7 +1577,8 @@ Mostely the same patterns:
 | [ethpm_snake_erc721]    | multiple
 
 [openzep_erc721]:       https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol
-[0xcert_erc721]:        https://github.com/0xcert/ethereum-erc721/tree/master/src/contracts/tokens
+[0xcert_erc721ref]:     https://github.com/0xcert/ethereum-erc721/tree/master/src/contracts/tokens
+[0xcert_erc721]:        https://github.com/0xcert/framework/tree/master/packages/0xcert-ethereum-erc721-contracts/src/contracts
 [consensys_artifaqt]:   https://github.com/ConsenSys/artifaqt/blob/master/contract/contracts/eip721/EIP721.sol
 [decentraland_erc721]:  https://github.com/decentraland/erc721/blob/master/contracts
 [district0x_erc721]:    https://github.com/district0x/memefactory-contracts/blob/master/contracts/token/ERC721BasicToken.sol
@@ -1592,6 +1599,7 @@ http://erc721.org/
 
 [opensea_erc721]:   https://docs.opensea.io/docs/1-structuring-your-smart-contract
 
+https://docs.opensea.io/docs
 
 * https://fulldecent.blogspot.com/2018/06/nontechnical-what-is-erc-721.html
 * https://kauri.io/article/9a7a50e503a1477f8b91397ecf1677da/understanding-openzeppelin-erc721
@@ -1608,7 +1616,9 @@ https://docs.openzeppelin.com/contracts/2.x/tokens
 https://kauri.io/article/27640de6baba4aa99d57fd158af5c019/v2/creating-a-flexible-nft-(part-1)
 https://nonfungible.com/blog/supporting-thousands-projects
 https://steemit.com/erc721/@qwoyn/building-an-erc721-non-fungible-token-smart-contract-and-using-metamask-to-interact-with-it-via-a-web-interface-part-i
-
+https://blog.userfeeds.io/let-them-speak-a-simple-guide-on-how-to-build-a-social-platform-for-an-erc-721-token-d9651e353026
+https://medium.com/@merunasgrincalaitis/create-an-art-marketplace-in-ethereum-with-erc-721-tokens-in-10-minutes-using-0xcert-f059fc951904
+https://kauri.io/article/b382103e9496409c90c495f35940887e
 
 * https://rinkeby.opensea.io/
 * https://docs.opensea.io/docs/getting-started
@@ -1925,6 +1935,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [cryptobundle]
 | [makersplace]
 | [nonfungible]
+| [marketplace_e11]
+
+[marketplace_e11]:      https://marketplace.e11.io/
 
 [opensea]:              https://opensea.io/
 [opensea_listed]:       https://opensea.io/get-listed

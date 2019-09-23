@@ -5,10 +5,10 @@ pragma solidity ^0.5.0;
 contract EIP721 {  
     event Transfer(address indexed _from, address indexed _to, uint256 indexed _tokenId);
 
-    string internal name;
-    string internal symbol;
-    address internal admin;
-    uint256 internal counter = 10;
+    string public  name;
+    string public  symbol;
+    address public  admin;
+    uint256 public  counter = 10;
     uint256[] internal allTokens; 
     mapping(uint256 => uint256) internal allTokensIndex;  
     mapping(address => uint256[]) internal ownedTokens;   

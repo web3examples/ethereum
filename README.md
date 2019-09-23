@@ -21,6 +21,7 @@ This document contains info about:
   - [Hardware wallets](#hardware-wallets)
   - [Contract based wallets](#contract-based-wallets)
   - [Hierarchical Deterministic Wallets](#hierarchical-deterministic-wallets)
+  - [Buy ETH](#buy-eth)
 - [Login and user data](#login-and-user-data)
 - [Solidity](#solidity)
   - [Solidity Overview](#solidity-overview)
@@ -31,7 +32,10 @@ This document contains info about:
 - [Frontend](#frontend)
   - [Design apps](#design-apps)
   - [Libraries](#libraries)
-- [Network instances & Buy/get](#network-instances--buyget)
+- [Testnets](#testnets)
+  - [Testnet overview](#testnet-overview)
+  - [Testnet instances](#testnet-instances)
+  - [Testnet explorers](#testnet-explorers)
 - [Security](#security)
   - [Weaknesses and Measures](#weaknesses-and-measures)
   - [Security tools](#security-tools)
@@ -65,6 +69,7 @@ This document contains info about:
   - [Games](#games)
   - [Marketplace](#marketplace)
   - [Legal](#legal)
+  - [Data exchange](#data-exchange)
   - [Other applications](#other-applications)
 - [Layer 2](#layer-2)
 
@@ -161,6 +166,11 @@ This document contains info about:
 | [cryptohound]
 | [emoon_exp]
 | [aleth_exp]
+| [bloxy]
+| [eth_bitaps]
+| [aleth_explore]
+| [aleth_lt_explore]
+
 
 
 [tokentxns]:        https://etherscan.io/tokentxns-nft
@@ -169,11 +179,10 @@ This document contains info about:
 [etherscan_tokens]: https://rinkeby.etherscan.io/token/0x07fe0d8237299cda9fd5507d20b8602c71eb3658
 
 
-
 [etherscan]:        https://etherscan.io/
+[blockscout]:       https://blockscout.com/eth/mainnet
 [ethplorer]:        https://ethplorer.io/
 [etherchain]:       https://www.etherchain.org/
-[blockscout]:       https://blockscout.com/eth/mainnet/
 [enjinx]:           https://enjinx.io/eth/transactions
 [enjinx_erc20]:     https://enjinx.io/eth/tokens
 [blockchain_com]:   https://www.blockchain.com/explorer?currency=ETH
@@ -186,6 +195,10 @@ This document contains info about:
 [cryptohound]:      https://www.c-hound.ai/app/home
 [emoon_exp]:        http://portfolio.emoon.io/explorer/address
 [aleth_exp]:        https://lite-explorer.aleth.io/
+[bloxy]:            https://bloxy.info
+[eth_bitaps]:       https://teth.bitaps.com
+[aleth_lt_explore]: https://lite-explorer.aleth.io/
+[aleth_explore]:    https://aleth.io
 
 [dlethexplorer]:    https://dlethexplorer.dltlabs.com/dashboard
 
@@ -213,6 +226,11 @@ This document contains info about:
 [etherscan_ens]:    https://etherscan.io/enslookup
 [etherchain_ens]:   https://www.etherchain.org/ens/lookup
 [emoon_ens]:        https://portfolio.emoon.io/whois
+
+
+
+https://github.com/gobitfly/etherchain-light
+https://github.com/etherparty/explorer
 
 
 
@@ -483,59 +501,40 @@ This document contains info about:
 
 ## Web3.js
 
-| Browser extention     | Browser ext via contract | In mobile browser    | Connect via alt.apis   | Browser import             | Iframe wallet | Browser import via contract |
-| --------------------- | ------------------------ | ---------------------| ---------------------  | --------------             | ------------  | -----
-| [metamask]            | [dapper]                 | [metamask_mobile]    | [walletconnect_web3js] | [portis]                   | [myethvault]  | [authereum]
-| [equal]               | [gnosis_safe]            | [opera_mobile]       | [squarelink_web3js]    | [fortmatic]                |               | [nifty]
-| [mathwallet]          |                          | [trustwallet]        | [scatter_web3js]       | [burner_wallet] (insecure) |
-| [saturn_wallet]       |                          | [cipher]             |                        | [bitski]
-| [tokenary_safari]     |                          | [coinbase]           |                        | [torus]
-|                       |                          | [status.im]          |                        | 
-|                       |                          | [dapppocket]
-|                       |                          | [go_wallet]
-|                       |                          | [alphawallet]
-|                       |                          | [qpocket]
-|                       |                          | [tokenpocket]
-|                       |                          | [buntoy]
-|                       |                          | [cobo]
-|                       |                          | [mainframeos]
+| Browser extention     | Browser ext via contract | Connect via alt.apis     | Browser import             | Iframe wallet | Browser import via contract |
+| --------------------- | ------------------------ | ---------------------    | --------------             | ------------  | --------------------------- 
+| [metamask]            | [dapper]                 | [wc_web3js]<br>[wc_docs] | [portis]                   | [myethvault]  | [authereum]
+| [equal]               |                          | [squarelink_web3js]      | [fortmatic]                |               | [nifty]
+| [mathwallet]          |                          | [scatter_web3js]         | [burner_wallet] (insecure) |
+| [saturn_wallet]       |                          | [walletlink]             | [bitski]
+| [tokenary_safari]     |                          |                          | [torus]
+| [guarda_ext] (NA)
 
 
-[metamask]:         https://metamask.io/
-[equal]:            https://equal.tech/
-[mathwallet]:       https://www.mathwallet.org/en/
-[saturn_wallet]:    https://forum.saturn.network/t/saturn-wallet-ethereum-and-ethereum-classic-dapp-browser-user-manual/1234
+[metamask]:             https://metamask.io/
+[equal]:                https://equal.tech/
+[mathwallet]:           https://www.mathwallet.org/en/
+[saturn_wallet]:        https://forum.saturn.network/t/saturn-wallet-ethereum-and-ethereum-classic-dapp-browser-user-manual/1234
+[tokenary_safari]:      https://apps.apple.com/us/app/ethereum-wallet-tokenary/id1375542355?l=en&mt=12
+[guarda_ext]:           https://guarda.co/guarda-extension
 
-[tokenary_safari]: https://apps.apple.com/us/app/ethereum-wallet-tokenary/id1375542355?l=en&mt=12
 
-[dapper]:           https://www.meetdapper.com/
-[gnosis_safe]:      https://safe.gnosis.io/
+[dapper]:               https://www.meetdapper.com/
 
-[metamask_mobile]:  https://mobile.metamask.io/
-[opera_mobile]:     https://www.opera.com/mobile
-[trustwallet]:      https://trustwallet.com
-[cipher]:           https://www.cipherbrowser.com/
-[coinbase]:         https://wallet.coinbase.com/
-[status.im]:        https://status.im/
-[dapppocket]:       https://www.dapppocket.io/
-[go_wallet]:        https://www.go-wallet.app/en
-[alphawallet]:      https://alphawallet.com/
-[qpocket]:          https://qpocket.io/
-[tokenpocket]:      https://tokenpocket.jp/en/
-[buntoy]:           https://buntoy.com/buntoy.html
-[cobo]:             https://cobo.com/
-[mainframeos]:      https://mainframeos.com/
 
-[walletconnect_web3js]: https://www.npmjs.com/package/@walletconnect/web3-subprovider
+[wc_web3js]:            https://www.npmjs.com/package/@walletconnect/web3-subprovider
+[wc_docs]:              https://walletconnect.readthedocs.io
 [squarelink_web3js]:    https://github.com/Squarelink-Inc/Squarelink-Web3
 [scatter_web3js]:       https://github.com/GetScatter/scatter-js
+[walletlink]:           https://www.walletlink.org
 
-[portis]:           https://www.portis.io
-[fortmatic]:        https://fortmatic.com/
-[burner_wallet]:    https://github.com/austintgriffith/burner-wallet
-[bitski]:           https://www.bitski.com/
-[torus]:            https://tor.us
-[myethvault]:       https://myethvault.com/
+[portis]:               https://www.portis.io
+[fortmatic]:            https://fortmatic.com
+[burner_wallet]:        https://github.com/austintgriffith/burner-wallet
+[bitski]:               https://www.bitski.com/
+[torus]:                https://tor.us
+
+[myethvault]:           https://myethvault.com/
 
 [authereum]:        https://authereum.org/
 [nifty]:            https://niftygateway.com
@@ -560,35 +559,76 @@ This document contains info about:
 
 ## Wallet (just) for coins
 
-| Overvieew
+| Overview
 | -----
+| [sotd_wallets]
 | [blockspot_wallets]
 | [etherscan_wallets]
 | [myetherwallet]
+| [42wallets]
+| [cryptowisser]
 
-
-
+[sotd_wallets]:         https://www.stateofthedapps.com/rankings/category/wallet
 [blockspot_wallets]:    https://blockspot.io/wallets/
 [etherscan_wallets]:    https://etherscan.io/directory/Wallet
-[myetherwallet]: https://www.myetherwallet.com/
+[myetherwallet]:        https://www.myetherwallet.com/
+[42wallets]:            https://cryptospace.ng/a-list-of-42-wallets-that-supports-ethereum-and-ethereum-tokens/
+[cryptowisser]:         https://www.cryptowisser.com/wallets/
 
 
 ## Mobile Wallets
 
-| Android       | IOS           | Android and IOS  
-| -----------   | ------------- | -------------    
-| [walleth]     | [tokenary]    | [trustwallet]    
-|               | [rainbow]     | [pillar]   (NFT)      
-|               |               | [argent]         
-|               |               | [coinomi]        
+| Dapps (web3js)    | Walletconnect support |Walletlink support  |  Contract based   
+| ----------        | -----------           | ------------       | -------------     
+| [metamask_mobile] | [walleth]             | [coinbase]         | [gnosis_safe] 
+| [opera_mobile]    | [trustwallet]           
+| [trustwallet]     | [tokenary]  |           
+| [cipher]          | [pillar]
+| [coinbase]        | [metamask]
+| [status.im]       | [argent]
+| [dapppocket]      | [safepal]
+| [go_wallet]       | [equaltech]
+| [alphawallet]     | [coinomi]
+| [qpocket]         | [rainbow]
+| [tokenpocket]
+| [buntoy]
+| [cobo]
+| [mainframeos]
+| [inzhoop]
+| [buntoy]
+| [qpocket]
+
+[gnosis_safe]:      https://safe.gnosis.io/
+
 
 [walleth]:      https://walleth.org/
 [trustwallet]:  https://trustwallet.com/
 [tokenary]:     https://tokenary.io/
-[rainbow]:      https://rainbow.me/
 [pillar]:       https://pillarproject.io/
 [argent]:       https://www.argent.xyz/
+[safepal]:      https://safepal.io/
+[equaltech]:    https://equal.tech/
 [coinomi]:      https://www.coinomi.com/en/
+
+[rainbow]:      https://rainbow.me/
+
+[metamask_mobile]:  https://mobile.metamask.io/
+[opera_mobile]:     https://www.opera.com/mobile
+[trustwallet]:      https://trustwallet.com
+[cipher]:           https://www.cipherbrowser.com/
+[coinbase]:         https://wallet.coinbase.com/
+[status.im]:        https://status.im/
+[dapppocket]:       https://www.dapppocket.io/
+[go_wallet]:        https://www.go-wallet.app/en
+[alphawallet]:      https://alphawallet.com/
+[qpocket]:          https://qpocket.io/
+[tokenpocket]:      https://tokenpocket.jp/en/
+[buntoy]:           https://buntoy.com/buntoy.html
+[cobo]:             https://cobo.com/
+[mainframeos]:      https://mainframeos.com/
+[inzhoop]:          https://inzhoop.com/
+[buntoy]:           https://www.buntoy.com
+[qpocket]:          https://qpocket.io/
 
 ## Hardware wallets
 
@@ -639,6 +679,19 @@ This document contains info about:
 [bip44]:             https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki
 [coin-constants]:    https://github.com/satoshilabs/slips/blob/master/slip-0044.md
 [coin-constants-js]: https://github.com/bitcoinjs/bip44-constants
+
+
+## Buy ETH
+
+| Buy ETH
+| ------
+| [moonpay]
+| [sendwyre]
+| [coinbase]
+
+[moonpay]:            https://www.moonpay.io/
+[sendwyre]:           https://www.sendwyre.com/
+[coinbase]:           https://www.coinbase.com/
 
 
 # Login and user data
@@ -879,50 +932,82 @@ This document contains info about:
  
 
 
-# Network instances & Buy/get
+# Testnets
 
-| (Test) Networks | Info   | Buy ETH (or get test Eth)                      | Erc-20 Faucet | Blockexplorer 
-| --------------- |  ---   |---------                                       | ------        |   ----         
-| Overview        | [comp_testnets]<br>[network_ids]
-| Mainnet         |        | [moonpay]<br>[sendwyre]<br>[coinbase]          | -             | [etherscan]<br>[blockscout]<br>[bloxy]
-| Ropsten         |        | [metamask-faucet]<br>[ropsten-faucet]          |               | [etherscan-ropsten]<br>[blockscout-ropsten]
-| Kovan           |        | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter] | [radarrelay]  | [etherscan-kovan]<br>[blockscout-kovan]
-| Rinkeby         |        | [rinkeby-faucet]                               |               | [etherscan-rinkeby]<br> [blockscout-rinkeby]
-| Goerli          |        | [goerli-faucet1]<br>[goerli-faucet2]           |               | [etherscan-goerli]<br>[blockscout-goerli]
-| Local testnet
+## Testnet overview
+| Overview        
+| --------------
+| [comp_testnets]
+| [network_ids]
+| [coinmonks_testnets]
+| [kauri_testnets]
 
 [network_ids]:        https://chainid.network/
 [comp_testnets]:      https://ethereum.stackexchange.com/questions/27048/comparison-of-the-different-testnets
+[coinmonks_testnets]: https://medium.com/coinmonks/ethereum-test-network-21baa86072fa
+[kauri_testnets]:     https://kauri.io/article/3eba08b801a44776a07607b9e046dd08/ethereum-101-part-6-mainnet-and-testnets
 
-[moonpay]:            https://www.moonpay.io/
-[sendwyre]:           https://www.sendwyre.com/
-[coinbase]:           https://www.coinbase.com/
 
+## Testnet instances
+
+| (Test) Networks |  Faucet (Get test Eth)                                        | Github
+| --------------- | ---------                                                     | ------ 
+| Ropsten         | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]
+| Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]
+| Rinkeby         | [rinkeby-faucet]                                              | [rinkeby_github]
+| Goerli          | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]
 
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
+
+[ropsten-bitaps]:     https://teth.bitaps.com/
+
 [kovan-faucet]:       https://faucet.kovan.network/
-[radarrelay]:         https://faucet.kovan.radarrelay.com/
+
 [tokenpla]:           https://tokenpla.net/asset/kovan/
 [kovan-gitter]:       https://gitter.im/kovan-testnet/faucet
 [rinkeby-faucet]:     https://faucet.rinkeby.io/
 [goerli-faucet1]:     https://goerli-faucet.slock.it/
 [goerli-faucet2]:     https://faucet.goerli.mudit.blog/
-[etherscan]:          https://etherscan.io/
+
+[ropsten_github]:     https://github.com/ethereum/ropsten
+[kovan_github]:       https://github.com/kovan-testnet/proposal
+[rinkeby_github]:     https://github.com/ethereum/EIPs/issues/225
+[goerli_github]:      https://github.com/goerli/testnet
+
+
+## Testnet explorers
+
+Also see [Explorers](#explorers)
+
+| (Test) Networks | Etherscan            | Blockscout           | BlockexplorerOne     | Bitaps           | Aleth Lite          | Aleth
+| --------------- | ------               | -----------------    | ------------         | -----------      | -------------       | -----
+| Ropsten         | [etherscan-ropsten]  | [blockscout-ropsten] | [blockexone_ropsten] | [bitaps_ropsten] | [aleth_lt_ropsten]  | 
+| Kovan           | [etherscan-kovan]    | [blockscout-kovan]   |                      |                  | [aleth_lt_kovan]    |
+| Rinkeby         | [etherscan-rinkeby]  | [blockscout-rinkeby] | [blockexone_rinkeby] |                  | [aleth_lt_rinkeby]  | 
+| Goerli          | [etherscan-goerli]   | [blockscout-goerli]  |                      |                  | [aleth_lt_goerli]   | [aleth_goerli]
+
 [etherscan-ropsten]:  https://ropsten.etherscan.io/
 [etherscan-kovan]:    https://kovan.etherscan.io/
 [etherscan-rinkeby]:  https://rinkeby.etherscan.io/
 [etherscan-goerli]:   https://goerli.etherscan.io/
 
-[blockscout]: https://blockscout.com/eth/mainnet
 [blockscout-ropsten]: https://blockscout.com/eth/ropsten
 [blockscout-kovan]:   https://blockscout.com/eth/kovan
 [blockscout-rinkeby]: https://blockscout.com/eth/rinkeby
 [blockscout-goerli]:  https://blockscout.com/eth/goerli
 
-[bloxy]:              https://bloxy.info
+[blockexone_rinkeby]: https://blockexplorer.one/ethereum/rinkeby
+[blockexone_ropsten]: https://blockexplorer.one/ethereum/ropsten
 
+[bitaps_ropsten]:     https://teth.bitaps.com/
 
+[aleth_lt_ropsten]:   https://lite-explorer.ropsten.aleth.io/
+[aleth_lt_kovan]:     https://lite-explorer.kovan.aleth.io/
+[aleth_lt_rinkeby]:   https://lite-explorer.rinkeby.aleth.io/
+[aleth_lt_goerli]:    https://lite-explorer.goerli.aleth.io/
+
+[aleth_goerli]:       https://goerli.aleth.io/
 
 # Security
 
@@ -1167,9 +1252,9 @@ See also [Security best practices](#security-best-practices)
 
 ## Technical best practice
 
-| Publish source                                | Register function name   
-| ----------                                    |  -----------            
-| [etherscan_verify]<br>[etherscan_ver_howto]   | [register_function]   
+| Publish source                                | Register function name   | Show transaction info
+| ----------                                    |  -----------             | ---------------
+| [etherscan_verify]<br>[etherscan_ver_howto]   | [register_function]      | [radspec]
 | [etherchain_verify]                           | [4bytes]                                    
 | [blockscout_verify]
 | [ethscan_auto] 
@@ -1185,6 +1270,8 @@ See also [Security best practices](#security-best-practices)
 
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
+
+[radspec]:              https://github.com/aragon/radspec
 
 
 ## Blockchain Patterns
@@ -1543,6 +1630,14 @@ Mostely the same patterns:
 *[audit_token]:         https://ethereum.stackexchange.com/questions/37171/what-is-checklist-for-auditing-a-smart-contract/43448#43448
 
 
+| Erc-20 Faucet 
+| ---------
+| [radarrelay]
+
+[radarrelay]:         https://faucet.kovan.radarrelay.com/
+
+
+
 
 
 ### Nonfungible tokens ERC 721
@@ -1801,7 +1896,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [10dapps]
 | [wutui] (chinese)
 
-[wutui]:                https://wutui.pro/dapps/?chain=eth&category=all
+
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
 
@@ -1821,9 +1916,10 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [block123]:             https://www.block123.com/en/
 [wiki-dapps]:           https://github.com/ethereum/wiki/wiki/Decentralized-apps-(dapps)
 [10dapps]:              https://10dapps.com/dapp_ranking?category=all&network=Ethereum
+[dappstatus]:           https://dappstatus.com/
+[wutui]:                https://wutui.pro/dapps/?chain=eth&category=all
 
-
-[nonfungible]: https://nonfungible.com/market/history
+[nonfungible]:          https://nonfungible.com/market/history
 
 
 ## Financial
@@ -2011,6 +2107,25 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 [openlaw]:       http://openlaw.io/
 [sftprotocol]:   https://github.com/zerolawtech/SFT-Protocol
+
+
+## Data exchange
+
+| Data exchange
+| ---------------
+| [oceanprotocol]
+| [xbrnetwork]
+| [dirtprotocol]
+| [district0x]
+| [gxbio]
+| [streamr]
+
+[oceanprotocol]:  https://oceanprotocol.com/
+[xbrnetwork]:     https://xbr.network/
+[dirtprotocol]:   https://dirtprotocol.com/
+[district0x]:     https://district0x.io/
+[gxbio]:          https://www.gxb.io/en/
+[streamr]:        https://streamr.network/
 
 ## Other applications
 

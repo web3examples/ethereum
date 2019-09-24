@@ -1,0 +1,28 @@
+Get Ropsten ETH via Faucet.html
+Use web3 0.2 from chrome console with MetaMask.html
+Use web3 1.0 from chrome console with MetaMask.html
+Use ganache-cli Windows WS.html
+Use ganache-cli Windows WS Subscriptions.html
+t1sol
+Check contract balance via RPC-curl.html
+Check contract balance via RPC-online.html
+Load geth goerli windows.html
+Publish on etherscan and interact.html
+Remix - debug.html
+Remix - natspec.html
+Remix - ropsten - debug gas.html
+remix current contracts.txt
+old
+showvideo.js
+Remix - compile and use Casino.html
+Play - Transfer eth with contract.html
+Play - Provable Temperature Oracle.html
+Play - ERC20.html
+README.md
+Remix - deploy ropsten.html
+Play - Deploy contract ERC721.html
+Play  - Check ERC721 interface.html
+Play  - Mint one ERC721 token.html
+Play  - See ERC721 token in Metamask.html
+Find ERC721 token in Opensea.html
+a.txt

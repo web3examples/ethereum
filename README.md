@@ -26,6 +26,7 @@ This document contains info about:
 - [Solidity](#solidity)
   - [Solidity Overview](#solidity-overview)
   - [Details](#details)
+  - [Alternative languages for solidity](#alternative-languages-for-solidity)
 - [Development](#development)
   - [Development tools](#development-tools)
   - [Development process](#development-process)
@@ -58,6 +59,7 @@ This document contains info about:
     - [ERC 827](#erc-827)
     - [ERC 1155](#erc-1155)
     - [Security token ERC 1400](#security-token-erc-1400)
+  - [Rule engines](#rule-engines)
   - [Oracles](#oracles)
   - [Ethereum Name System](#ethereum-name-system)
   - [Financial Building blocks](#financial-building-blocks)
@@ -149,13 +151,13 @@ This document contains info about:
 
 # Explorers
 
-| Block explorer    | Dashboards        | Block Visuals | Miners      | Tokens             | NFTs (ERC721)     |  Dapps           | ENS
-| ---------------   | ----------        | ------------- | -----       | -----              | -----             | -----            | -----------
-| [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    | [ens_manager]
-| [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    |                  | [ethsimple]
-| [etherchain]      | [ethernodes]      | [ethtective]  |             | [enjinx_erc20]     | [opensea_rinkeby] |                  | [etherscan_ens]
-| [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      | [bloxy]           |                  | [etherchain_ens]
-| [enjinx]          | [ethstats]        |               |             |                    | [etherscan_tokens]|                  | [emoon_ens]
+| Block explorer    | Dashboards        | Block Visuals | Miners      | Tokens             | NFTs (ERC721)     |  Dapps           
+| ---------------   | ----------        | ------------- | -----       | -----              | -----             | -----            
+| [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    
+| [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    |                  
+| [etherchain]      | [ethernodes]      | [ethtective]  |             | [enjinx_erc20]     | [opensea_rinkeby] |                  
+| [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      | [bloxy]           |                  
+| [enjinx]          | [ethstats]        |               |             |                    | [etherscan_tokens]|                  
 | [blockchain_com]  | [etherblockchain] |
 | [btc_com]         | [dlethexplorer]
 | [blockchair]
@@ -221,11 +223,6 @@ This document contains info about:
 
 [emoon_erc20]:      http://portfolio.emoon.io/portfolios/default/queryblockchain
 
-[ens_manager]:      https://manager.ens.domains/
-[ethsimple]:        https://ethsimple.com
-[etherscan_ens]:    https://etherscan.io/enslookup
-[etherchain_ens]:   https://www.etherchain.org/ens/lookup
-[emoon_ens]:        https://portfolio.emoon.io/whois
 
 
 
@@ -508,7 +505,8 @@ https://github.com/etherparty/explorer
 | [mathwallet]          |                          | [scatter_web3js]         | [burner_wallet] (insecure) |
 | [saturn_wallet]       |                          | [walletlink]             | [bitski]
 | [tokenary_safari]     |                          |                          | [torus]
-| [guarda_ext] (NA)
+| [guarda_ext]
+| [venus_ext] (cybermiles network)
 
 
 [metamask]:             https://metamask.io/
@@ -517,10 +515,9 @@ https://github.com/etherparty/explorer
 [saturn_wallet]:        https://forum.saturn.network/t/saturn-wallet-ethereum-and-ethereum-classic-dapp-browser-user-manual/1234
 [tokenary_safari]:      https://apps.apple.com/us/app/ethereum-wallet-tokenary/id1375542355?l=en&mt=12
 [guarda_ext]:           https://guarda.co/guarda-extension
-
+[venus_ext]:            https://www.cybermiles.io/en-us/blockchain-infrastructure/venus/
 
 [dapper]:               https://www.meetdapper.com/
-
 
 [wc_web3js]:            https://www.npmjs.com/package/@walletconnect/web3-subprovider
 [wc_docs]:              https://walletconnect.readthedocs.io
@@ -714,8 +711,8 @@ https://github.com/etherparty/explorer
 | -----------------          |  ---------------        | ----------------                          | -------------
 | [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)
 | [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]
-| [solidity_overview]        | [etherscan_verified]
-| [learn_solidity]           | 
+| [solidity_overview]        | [etherscan_verified]    |                                           | [bitdegree_sol]
+| [learn_solidity]           | [secondstate]
 | [blockgeeks_sol1]          | [contractfinder]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
@@ -749,14 +746,15 @@ https://github.com/etherparty/explorer
 [github_sol]:          https://github.com/search?q=pragma+solidity&ref=searchresults&type=Code&utf8=%E2%9C%93
 [azure_samples]:       https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/application-and-smart-contract-samples
 [top5]:                https://bytescout.com/blog/top-5-smart-contracts.html
-
+[secondstate]:         https://eth.search.secondstate.io/
 
 [soliditybyexample]:   https://solidity-by-example.org/
 [smartcontractprg]:    https://smartcontractprogrammer.com/
 [babysteps]:           https://github.com/cyrusadkisson/solidity-baby-steps
 
 [ninabreznik_learn]:  https://ninabreznik.github.io/workshop-solidity/
-[willitscale_learn]:   https://github.com/willitscale/learning-solidity
+[willitscale_learn]:  https://github.com/willitscale/learning-solidity
+[bitdegree_sol]:      https://www.bitdegree.org/learn/learn-solidity
 
 ## Details
 
@@ -816,6 +814,34 @@ https://github.com/etherparty/explorer
 [yt_sol_6datatypes]: https://www.youtube.com/watch?v=8UhO3IKApSg
 [yt_sol_7string]:    https://www.youtube.com/watch?v=6iiWwT0O2fY
 
+
+## Alternative languages for solidity
+
+| Alternatives
+| ------
+| [vyper]
+| [yul]
+| [assembly]
+| [lll]
+| [solidityx]
+| [flint]
+| [bamboo]
+| [logikon]
+| [pyramid]
+| [huff]
+| [lity]
+
+[vyper]:     https://vyper.readthedocs.io/en/v0.1.0-beta.12/
+[yul]:       https://solidity.readthedocs.io/en/v0.5.11/yul.html
+[assembly]:  https://solidity.readthedocs.io/en/v0.5.11/assembly.html
+[lll]:       https://lll-docs.readthedocs.io/en/latest/lll_introduction.html
+[solidityx]: https://solidityx.org/
+[flint]:     https://github.com/flintlang/flint
+[bamboo]:    https://github.com/cornellblockchain/bamboo
+[logikon]:   https://github.com/logikon-lang/logikon
+[pyramid]:   https://github.com/MichaelBurge/pyramid-scheme
+[huff]:      https://github.com/AztecProtocol/huff
+[lity]:      https://www.litylang.org
 
 # Development
 
@@ -1256,7 +1282,7 @@ See also [Security best practices](#security-best-practices)
 | ----------                                    |  -----------             | ---------------
 | [etherscan_verify]<br>[etherscan_ver_howto]   | [register_function]      | [radspec]
 | [etherchain_verify]                           | [4bytes]                                    
-| [blockscout_verify]
+| [blockscout_verify]                           | [clef_4bytes]
 | [ethscan_auto] 
 | [publish_ipfsremix]
 
@@ -1270,6 +1296,8 @@ See also [Security best practices](#security-best-practices)
 
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
+
+[clef_4bytes]:          https://github.com/ethereum/go-ethereum/tree/master/signer/fourbyte
 
 [radspec]:              https://github.com/aragon/radspec
 
@@ -1777,6 +1805,24 @@ https://medium.com/@CoindyOfficial/sto-token-standards-57071e6726bd
 
 https://token.security/stn/
 
+
+## Rule engines
+
+Rule engines are use for automatic signing & processing of transactions via rules
+
+| Engine
+| ----------
+| [clef_overview]<br>[clef_readme]
+| [lity_rules]
+| [wonka]
+
+
+[clef_overview]:  http://adam.schmideg.net/go-ethereum/clef/Overview
+[clef_readme]:    https://github.com/ethereum/go-ethereum/blob/master/cmd/clef/README.md
+[lity_rules]:     https://www.litylang.org/business_rules/
+[wonka]:          https://github.com/Nethereum/Wonka
+
+
 ## Oracles
 
 | Oracle frameworks | Tools & demo     | Github             | Documentation    
@@ -1803,6 +1849,24 @@ https://token.security/stn/
 
 
 ## Ethereum Name System
+
+| Ens explorer      | Ens market place
+| -------------     |  --------------
+| [ens_manager]     | [enslisting]
+| [ethsimple]       |
+| [etherscan_ens]   |
+| [etherchain_ens]  |
+| [emoon_ens]       |
+
+
+[ens_manager]:      https://manager.ens.domains/
+[ethsimple]:        https://ethsimple.com
+[etherscan_ens]:    https://etherscan.io/enslookup
+[etherchain_ens]:   https://www.etherchain.org/ens/lookup
+[emoon_ens]:        https://portfolio.emoon.io/whois
+
+[enslisting]: https://enslisting.com/
+
 
 | Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
 | ----------    | ---------                               | ----                                          | ------             | --------------             | -----
@@ -1967,12 +2031,12 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Games
 
-| Overview          | Games                 
-| ----------        | ------------          
-| [bcgworld]        | [cheezewiz]           
-| [dappsmarket]     | [cryptokit]           
-| [cryptogaming]    | [ethernaut]           
-| [state_games]     | [mycryptoHeroes]      
+| Overview          | Games                 | Game development platform
+| ----------        | ------------          | -------------
+| [bcgworld]        | [cheezewiz]           | [blockade]
+| [dappsmarket]     | [cryptokit]           | [ultraio]
+| [cryptogaming]    | [ethernaut]           | [cocosbcx]
+| [state_games]     | [mycryptoHeroes]      | [xaya]
 | [radar_games]     | [etheremon]
 | [dappcom_games]   | [megacryptopolis]
 | [sdapps_games]    | [bccuties]
@@ -2005,15 +2069,20 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [megacryptopolis]:  https://www.megacryptopolis.com/
 [bccuties]:         https://blockchaincuties.com/
 [hyperdragons]:     https://hyperdragons.alfakingdom.com/
-[decentraland]:		https://decentraland.org/		
-[axieinfinity]: 	https://axieinfinity.com/		
+[decentraland]:	  	https://decentraland.org/		
+[axieinfinity]:   	https://axieinfinity.com/		
 [footbattle]:       http://footbattle.io/		
-[kittybounties]:	http://kittybounties.com/		
-[heavencat]:    	https://heaven.cat/		
-[kittyhelper]:		https://kittyhelper.co/		
-[cryptoink]:    	https://www.crypt-oink.io/		
+[kittybounties]:  	http://kittybounties.com/		
+[heavencat]:      	https://heaven.cat/		
+[kittyhelper]:	  	https://kittyhelper.co/		
+[cryptoink]:      	https://www.crypt-oink.io/		
 [cryptovoxels]:     https://www.cryptovoxels.com/
 
+
+[blockade]:         https://platform.blockade.games/
+[ultraio]:          https://ultra.io/
+[cocosbcx]:         https://www.cocosbcx.io/
+[xaya]:             https://xaya.io/
 
 ## Marketplace
 

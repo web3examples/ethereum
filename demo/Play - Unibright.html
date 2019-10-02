@@ -1,0 +1,39 @@
+<div id="ipfs">QmahiHKLEZBgPJk7Q2QnX9oH3apFc6C6EYudv3yihcsi6e</div>
+<div id="timetable">
+Location                                          | Action  | Object                    | Time
+Chrome new tab                                    | Login   |                           | 0
+https://authentication.unibright.io/
+https://designer.unibright.io/workflow-designer   | Click   | Open an existing workflow | 3
+Open workflow                                     | Click   | BasicFlow                 | 6
+Open workflow                                     | Click   | Open                      | 7
+Workflow Designer tab                             | Click   | Validate                  | 16
+Chrome new tab                                    | Enter   |                           | 20
+https://ethereum-play.github.io/editor-solidity/
+Workflow Designer tab                             | Click   | Code preview              | 31
+Popup Code preview                                | Click   | Select syntax             | 36
+Popup Code preview                                | Click   | Ethereum                  | 37
+Popup Code preview                                | Copy    | { Code }                  | 57
+editor-solidity tab - left pane                   | Paste   | { Code }                  | 64
+left pane - line 53 import ...                    | Enter   | //                        | 75
+right pane - MultiPartyApproval                   | Click   | Publish                   | 83
+Metamask Popup                                    | Click   | Confirm                   | 87
+MultiPartyApproval                                | Click   | "-" icon                  | 120
+Owner                                             | Click   | arrow icon                | 123
+contractState                                     | Click   | arrow icon                | 129
+cancel                                            | Click   | arrow icon                | 138
+Metamask Popup                                    | Click   | Confirm                   | 142
+contractState                                     | Click   | arrow icon                | 152
+</div>
+<div id="goal">
+The goal is to see that a contract created by Unibright is indeed a working solidity contract.
+</div>
+<div id="explain">
+The import statement has to be commented out, because the UnibrightContract code is already present above.
+The owner address shown is the metamask account that has been used to deploy the contract.
+The contract state changes from 2 (RUNNING) to 3 (CANCELLED) by using the "cancel" function.
+</div>
+<div id="prerequisites">
+Metamask installed and some Eth on Goerli account. Chrome is started and Goerli is selected in Metamask.
+Unibright account has been made and a workflow has been created.
+</div>
+<script src="showvideo.js"></script>

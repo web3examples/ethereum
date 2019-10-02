@@ -114,6 +114,7 @@ This document contains info about:
 | [Blockchainlabsnz]
 | [eth.wiki]
 | [metalist]
+| [concourseopen]
 
 [mastering]:          https://github.com/ethereumbook/ethereumbook
 [howwork]:            https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
@@ -126,7 +127,7 @@ This document contains info about:
 [Blockchainlabsnz]:   https://github.com/BlockchainLabsNZ/awesome-solidity
 [eth.wiki]:           https://eth.wiki
 [metalist]:           https://github.com/buddies2705/Awesome-Ethereum-Metalist
-
+[concourseopen]:      https://concourseopen.com/
 
 
 
@@ -208,10 +209,10 @@ This document contains info about:
 [etherblockchain]:  https://www.etherblockchain.io/
 
 [ethviewer]:        http://ethviewer.live/
+[bloxy_graph]:      https://bloxy.info/token_graphs/ETH
 [ethtective]:       https://ethtective.com
 
 [poolwatch]:        https://www.poolwatch.io/coin/ethereum
-[bloxy_graph]:      https://bloxy.info/token_graphs/ETH
 [bloxy_erc20]:      https://bloxy.info/list_tokens/ERC20
 [bloxy_dapps]:      https://bloxy.info/list_dapps
 [bloxy_db]:         http://stat.bloxy.info/superset/dashboard/today/
@@ -711,8 +712,8 @@ https://github.com/etherparty/explorer
 | -----------------          |  ---------------        | ----------------                          | -------------
 | [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)
 | [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]
-| [solidity_overview]        | [etherscan_verified]    |                                           | [bitdegree_sol]
-| [learn_solidity]           | [secondstate]
+| [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]
+| [learn_solidity]           | [secondstate]	       |										   | [kcl_class]
 | [blockgeeks_sol1]          | [contractfinder]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
@@ -751,10 +752,12 @@ https://github.com/etherparty/explorer
 [soliditybyexample]:   https://solidity-by-example.org/
 [smartcontractprg]:    https://smartcontractprogrammer.com/
 [babysteps]:           https://github.com/cyrusadkisson/solidity-baby-steps
+[compiler_errors]: 	   https://github.com/CJ42/Solidity-Compiler-Debug-List
 
-[ninabreznik_learn]:  https://ninabreznik.github.io/workshop-solidity/
-[willitscale_learn]:  https://github.com/willitscale/learning-solidity
-[bitdegree_sol]:      https://www.bitdegree.org/learn/learn-solidity
+[ninabreznik_learn]:   https://ninabreznik.github.io/workshop-solidity/
+[willitscale_learn]:   https://github.com/willitscale/learning-solidity
+[bitdegree_sol]:       https://www.bitdegree.org/learn/learn-solidity
+[kcl_class]:		   https://blockchain.kcl.ac.uk/cryptocurrencyclass/
 
 ## Details
 
@@ -767,7 +770,7 @@ https://github.com/etherparty/explorer
 | Function Calls                            | [tosh_io] [tosh_functionret]
 | Special Variables & functions             | [tosh_specials]
 | Operators                                 | [tosh_operators]
-[ Variables Scoping                         | [tosh_scoping]
+| Variables Scoping                         | [tosh_scoping]
 | Arrays/Structs/Enums/Mapping              | [sol_mapping] [coursetro_map] [yt_sol_6datatypes]
 | Interfacing with other Contracts          | [tosh_import] [zohaid_library] [yt_sol_4imports]
 | Creating contracts                        | [sol_create] [tosh_createcon]
@@ -847,13 +850,13 @@ https://github.com/etherparty/explorer
 
 ## Development tools
 
-| Developer portal   | Online editors   | Deployment       | Package managers   
-| ------------------ | ---------------  | ---------------- | ------------------- 
-| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]            
-| [tool-list]        | [remix-eth]      | [zeppelinos]     | [aragonpm]
-| [toolkit]          | [superblocks]    | [embark]         |
-| [tools-dutch]      | [ethfiddle]      | [dapptools]
-| [eth_dev]          |                  | [more-frameworks]
+| Developer portal   | Online editors   | Deployment       | Package managers    | Graphical tools               | Debugger
+| ------------------ | ---------------  | ---------------- | ------------------- | ---------------               | ----------
+| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]             | [sol2uml]                     | [remix-eth]
+| [tool-list]        | [remix-eth]      | [zeppelinos]     | [aragonpm]          | [surya] (uses: [graphviz])    | [truffle]
+| [toolkit]          | [superblocks]    | [embark]         |                     | [solgraph] (uses: [graphviz]) | [evmlab]
+| [tools-dutch]      | [ethfiddle]      | [dapptools]      |                     | [piet]                        | [graphdebugger]
+| [eth_dev]          |                  | [more-frameworks]|                     | [sif]
 | [dappuniversity]   |                  | [superblocks]
 | [dev_tut]          |                  | [buidler]
 | [blockgeeks-devs] 
@@ -891,6 +894,18 @@ https://github.com/etherparty/explorer
 
 [ethpm]:           https://www.ethpm.com/
 [aragonpm]:        https://hack.aragon.org/docs/apm-intro.html
+
+[sol2uml]:         https://www.npmjs.com/package/sol2uml
+[surya]:           https://github.com/ConsenSys/surya
+[graphviz]:        https://graphviz.gitlab.io/
+[solgraph]:        https://github.com/raineorshine/solgraph
+[piet]:            https://piet.slock.it/
+[sif]:             https://github.com/chao-peng/SIF
+
+
+[evmlab]:          https://github.com/ethereum/evmlab
+[graphdebugger]:   https://github.com/fergarrui/ethereum-graph-debugger
+
 
 ## Development process
 
@@ -1107,7 +1122,7 @@ Also see [Explorers](#explorers)
 | ----------------          |   ---           | ---------        | -------------   | ---------          | -------------       | -----
 | [mythx]                   | [sectools]      | [rtver_formal]   | [erc20_check]   | [contractfuzzer]   | [reversing]         | [chainalysis]
 | [securify]                | [teEther]       | [verx]           |                 | [echidna]          | [ethvm_decompile]   | [ey_analyzer]
-| [quantstamp_prot]         | [surya]         | [formal_overview]|                 |                    | [evmdis]            | [elliptic]
+| [quantstamp_prot]         |                 | [formal_overview]|                 |                    | [evmdis]            | [elliptic]
 | [Oyente]                  |                 |                  |                 |                    | [pyevmasm]          | [cs-intell]
 | [Maian]                   |                 |                  |                 |                    | [ethersplay]        | [ciphertrace]
 | [vandal]                  |                 |                  |                 |                    | [jeb_decompiler]    | [spyderforensics]
@@ -1135,7 +1150,7 @@ Also see [Explorers](#explorers)
 [sectools]:             https://consensys.github.io/smart-contract-best-practices/security_tools/
 [teEther]:              https://github.com/nescio007/teether
 [ethersplay]:           https://github.com/crytic/ethersplay
-[surya]:                https://github.com/ConsenSys/surya
+
 
 [rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
 [verx]:                 https://verx.ch/
@@ -2084,6 +2099,33 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [cocosbcx]:         https://www.cocosbcx.io/
 [xaya]:             https://xaya.io/
 
+
+## Autonomous organisations
+
+| DAO				| LAO / Smart Company 
+| --------------	| ---------
+| [aragon]			| [thelao]
+| [autark]			| [korporatio]
+| [the_dao_next]    
+| [makerdao]
+| [molochdao]
+| [dorg]
+| [foundups]
+| [steam_dao]
+
+[aragon]: 			https://aragon.org/
+[autark]: 			https://www.autark.xyz/apps
+[the_dao_next]:		https://github.com/the-dao/whitepaper
+[makerdao]: 		https://makerdao.com/en/
+[molochdao]:		https://molochdao.com/
+[dorg]:				https://dorg.tech
+[foundups]:  		https://www.foundups.com/
+[steam_dao]:		https://developers.steem.io/services/steem.dao
+
+
+[thelao]:			https://www.thelao.io/
+[korporatio]: 		https://korporatio.com/
+
 ## Marketplace
 
 | Marketplace       | Get listed            | Github
@@ -2196,7 +2238,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [gxbio]:          https://www.gxb.io/en/
 [streamr]:        https://streamr.network/
 
-## Other applications
+## Tickets
 
 | Tickets           | 
 | -------------     |
@@ -2228,6 +2270,33 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [lavamovement]:     http://www.lavamovement.com/
 [citizenticket]:    https://www.citizenticket.co.uk/bitticket/
 [crypto.tickets]:   https://crypto.tickets
+
+## Tokenize
+
+| Overview tokenisation | Tokenize projects
+| ---------				| -----
+| [digalive]  			| [alphapoint]
+|						| [harbor]	
+|						| [polymath]
+|						| [smartvalor]
+|						| [smartlands]
+|						| [realt]
+|						| [vertalo]
+|						| [blocksquare]
+|						| [assetblock]
+
+
+[digalive]: 		https://digitalasset.live/
+
+[alphapoint]: 		https://alphapoint.com/
+[harbor]: 			https://harbor.com/
+[polymath]: 		https://polymath.network/
+[smartvalor]: 		https://smartvalor.com/en/
+[smartlands]: 		https://smartlands.io/
+[realt]: 			https://realt.co/
+[vertalo]:			https://www.vertalo.com/
+[blocksquare]:		https://blocksquare.io/
+[assetblock]: 		https://www.assetblock.com/
 
 # Layer 2
 

@@ -1865,9 +1865,9 @@ Rule engines are use for automatic signing & processing of transactions via rule
 
 ## Ethereum Name System
 
-| Ens explorer      | Ens market place
-| -------------     |  --------------
-| [ens_manager]     | [enslisting]
+| Ens explorer      | Ens market place | Ens commercial
+| -------------     |  --------------  | ------------
+| [ens_manager]     | [enslisting]     | [encircaens]
 | [ethsimple]       |
 | [etherscan_ens]   |
 | [etherchain_ens]  |
@@ -1880,7 +1880,9 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [etherchain_ens]:   https://www.etherchain.org/ens/lookup
 [emoon_ens]:        https://portfolio.emoon.io/whois
 
-[enslisting]: https://enslisting.com/
+[enslisting]:       https://enslisting.com/
+
+[encircaens]:       https://www.encirca.com/eth/reg/
 
 
 | Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
@@ -1902,6 +1904,29 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [enssimple]:        https://ethsimple.com/
 [ens_work]:         https://medium.com/@industral/ens-ethereum-name-service-how-it-works-cc57ed296473
 [ens_build]:        https://github.com/EthWorks/ENSBuilder
+
+
+### ENS Alternatives
+
+| ENS Alternative
+|------------
+| [dtype_alias]
+| [unstoppabledomains]
+| [bns]
+| [bns_github]
+| [namecoin]
+| [emerdns]
+| [onename_blockstack]
+| [handshake]
+
+[dtype_alias]:          https://eips.ethereum.org/EIPS/eip-2193
+[unstoppabledomains]:   https://unstoppabledomains.com/
+[bns]:                  https://blockchain-dns.info/
+[bns_github]:           https://github.com/B-DNS/Resolver/
+[namecoin]:             https://bit.namecoin.org/
+[emerdns]:              https://emercoin.com/en/emerdns
+[onename_blockstack]:   https://onename.com/
+[handshake]:            https://handshake.org/
 
 ## Financial Building blocks
 

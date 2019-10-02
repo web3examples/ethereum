@@ -27,4 +27,4 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 | Play - See ERC721 token in Metamask   | [Play - See ERC721 token in Metamask](Play - See ERC721 token in Metamask.html)
 | Find ERC721 token in Opensea          | [Find ERC721 token in Opensea](Find ERC721 token in Opensea.html)
 | Play - Unibright                      | [Play - Unibright](Play - Unibright.html)
-| Piet - Unibright                      | [Play - Unibright](Play - Unibright.html)
+| Piet - Unibright                      | [Piet - Unibright](Piet - Unibright.html)

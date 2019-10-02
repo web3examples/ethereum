@@ -6,3 +6,4 @@ package-lock.json
 old/
 *.abi
 *.bin
+demo/a.txt

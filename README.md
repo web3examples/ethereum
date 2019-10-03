@@ -62,6 +62,7 @@ This document contains info about:
   - [Rule engines](#rule-engines)
   - [Oracles](#oracles)
   - [Ethereum Name System](#ethereum-name-system)
+    - [ENS Alternatives](#ens-alternatives)
   - [Financial Building blocks](#financial-building-blocks)
   - [Other Building blocks](#other-building-blocks)
 - [Applications](#applications)
@@ -69,10 +70,12 @@ This document contains info about:
   - [Application Overview](#application-overview)
   - [Financial](#financial)
   - [Games](#games)
+  - [Autonomous organisations](#autonomous-organisations)
   - [Marketplace](#marketplace)
   - [Legal](#legal)
   - [Data exchange](#data-exchange)
-  - [Other applications](#other-applications)
+  - [Tickets](#tickets)
+  - [Tokenize](#tokenize)
 - [Layer 2](#layer-2)
 
 # Examples
@@ -343,15 +346,19 @@ https://github.com/etherparty/explorer
 | [ethernode]       | [usehedge]    | [chainstack]        | [google-cloud]|
 | [rockside]        | [ocyan]
 | [alchemyapi]      | [etherniti]
+| [rpcslockit]      | [blockscout_api]
+| [nodesmith]
 
 [infura]:         https://mainnet.infura.io/
 [cloudflare]:     https://cloudflare-eth.com
 [fiews]:          https://fiews.io/free-rpc
 [linkpool]:       https://docs.linkpool.io/docs/rpc_main
-
 [ethernode]:      https://www.ethernode.biz/
 [rockside]:       https://www.rockside.io/documentation/index.html#usage
 [alchemyapi]:     https://docs.alchemyapi.io/docs/alchemy-api-reference
+[rpcslockit]:     https://rpc.slock.it/
+[nodesmith]:      https://docs.nodesmith.io/#/ethereum/apiRef
+
 
 
 [etherscan]:      https://etherscan.io/apis#proxy
@@ -361,6 +368,7 @@ https://github.com/etherparty/explorer
 [usehedge]:       https://docs.usehedge.com/
 [ocyan]:          https://ocyan.com/
 [etherniti]:      https://docs.etherniti.org/
+[blockscout_api]: https://blockscout.com/etc/mainnet/api_docs
 
 [quiknode]:         https://quiknode.io/
 [blockdaemon]:      https://blockdaemon.com/
@@ -976,27 +984,30 @@ https://github.com/etherparty/explorer
 # Testnets
 
 ## Testnet overview
+
 | Overview        
 | --------------
 | [comp_testnets]
 | [network_ids]
 | [coinmonks_testnets]
 | [kauri_testnets]
+| [grliproposal]
 
 [network_ids]:        https://chainid.network/
 [comp_testnets]:      https://ethereum.stackexchange.com/questions/27048/comparison-of-the-different-testnets
 [coinmonks_testnets]: https://medium.com/coinmonks/ethereum-test-network-21baa86072fa
 [kauri_testnets]:     https://kauri.io/article/3eba08b801a44776a07607b9e046dd08/ethereum-101-part-6-mainnet-and-testnets
+[grliproposal]:       https://dev.to/5chdn/the-grli-testnet-proposal---a-call-for-participation-58pf
 
 
 ## Testnet instances
 
-| (Test) Networks |  Faucet (Get test Eth)                                        | Github
-| --------------- | ---------                                                     | ------ 
-| Ropsten         | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]
-| Kovan           | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]
-| Rinkeby         | [rinkeby-faucet]                                              | [rinkeby_github]
-| Goerli          | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]
+| (Test) Networks | Info                                             | Faucet (Get test Eth)                                        | Github
+| --------------- | --------                                         |  ---------                                                     | ------ 
+| Ropsten         | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]
+| Kovan           | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]
+| Rinkeby         | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]
+| Goerli          | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]
 
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
@@ -1132,7 +1143,7 @@ Also see [Explorers](#explorers)
 | [anchainai]               |                 |                  |                 |                    | [abi_dec]           | [dmgblockchain] 
 | [crytic]<br>[crytic_docs] |                 |                  |                 |                    | [opcode_tool]       | [blockchainintel]
 |                           |                 |                  |                 |                    | [octopus]           | [crystalblockchain]
-|                           |                 |                  |                 |                    |                     | [blockseer]
+|                           |                 |                  |                 |                    | [etherscan_opcode]  | [blockseer]
 
 [mythx]:                https://mythx.io
 [securify]:             https://securify.chainsecurity.com/
@@ -1172,7 +1183,7 @@ Also see [Explorers](#explorers)
 [abi_dec]:              https://github.com/beched/abi-decompiler
 [opcode_tool]:          https://etherscan.io/opcode-tool
 [octopus]:              https://github.com/quoscient/octopus
-
+[etherscan_opcode]:     https://etherscan.io/opcode-tool
 
 [chainalysis]:          https://www.chainalysis.com/
 [ey_analyzer]:          https://www.ey.com/en_gl/news/2018/04/ey-announces-blockchain-audit-technology
@@ -1676,10 +1687,12 @@ Mostely the same patterns:
 | Erc-20 Faucet 
 | ---------
 | [radarrelay]
+| [compound_dai]
+
 
 [radarrelay]:         https://faucet.kovan.radarrelay.com/
 
-
+[compound_dai]: https://app.compound.finance/asset/cDAI
 
 
 
@@ -1999,7 +2012,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [wiki-dapps]
 | [10dapps]
 | [wutui] (chinese)
-
+| [hydrostore] (hydro based dapps)
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -2022,6 +2035,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [10dapps]:              https://10dapps.com/dapp_ranking?category=all&network=Ethereum
 [dappstatus]:           https://dappstatus.com/
 [wutui]:                https://wutui.pro/dapps/?chain=eth&category=all
+[hydrostore]: https://hydrostore.io/
 
 [nonfungible]:          https://nonfungible.com/market/history
 

@@ -155,17 +155,17 @@ This document contains info about:
 
 # Explorers
 
-| Block explorer    | Dashboards        | Block Visuals | Miners      | Tokens             | NFTs (ERC721)     |  Dapps           
-| ---------------   | ----------        | ------------- | -----       | -----              | -----             | -----            
-| [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    
-| [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    |                  
+| Block explorer    | Dashboards        | Block Visuals | Miners      | Tokens             | NFTs (ERC721)     |  Dapps           | Explorer source
+| ---------------   | ----------        | ------------- | -----       | -----              | -----             | -----            | --------------
+| [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    | [etchain_light]
+| [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    |                  | [etherparty]
 | [etherchain]      | [ethernodes]      | [ethtective]  |             | [enjinx_erc20]     | [opensea_rinkeby] |                  
 | [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      | [bloxy]           |                  
-| [enjinx]          | [ethstats]        |               |             |                    | [etherscan_tokens]|                  
-| [blockchain_com]  | [etherblockchain] |
-| [btc_com]         | [dlethexplorer]
-| [blockchair]
-| [minergate]
+| [enjinx]          | [ethstats_net]    |               |             |                    | [etherscan_tokens]|                  
+| [blockchain_com]  | [ethstats_io]     |
+| [btc_com]         | [etherblockchain] 
+| [blockchair]      | [dlethexplorer_db]
+| [minergate]       |
 | [blockexplorer1]
 | [myethwal]
 | [coinmcap_exp]
@@ -176,13 +176,9 @@ This document contains info about:
 | [eth_bitaps]
 | [aleth_explore]
 | [aleth_lt_explore]
+| [dlethexplorer]
 
 
-
-[tokentxns]:        https://etherscan.io/tokentxns-nft
-[mintable_exp]:     https://mintable.app/manager
-[opensea_rinkeby]:  https://rinkeby.opensea.io/assets
-[etherscan_tokens]: https://rinkeby.etherscan.io/token/0x07fe0d8237299cda9fd5507d20b8602c71eb3658
 
 
 [etherscan]:        https://etherscan.io/
@@ -190,7 +186,7 @@ This document contains info about:
 [ethplorer]:        https://ethplorer.io/
 [etherchain]:       https://www.etherchain.org/
 [enjinx]:           https://enjinx.io/eth/transactions
-[enjinx_erc20]:     https://enjinx.io/eth/tokens
+
 [blockchain_com]:   https://www.blockchain.com/explorer?currency=ETH
 [btc_com]:          https://eth.btc.com/
 [blockchair]:       https://blockchair.com/ethereum/blocks
@@ -205,33 +201,39 @@ This document contains info about:
 [eth_bitaps]:       https://teth.bitaps.com
 [aleth_lt_explore]: https://lite-explorer.aleth.io/
 [aleth_explore]:    https://aleth.io
+[dlethexplorer]:    https://dlethexplorer.dltlabs.com/blocks
 
-[dlethexplorer]:    https://dlethexplorer.dltlabs.com/dashboard
-
-[ethstats]:         https://ethstats.io/
+[bloxy_db]:         http://stat.bloxy.info/superset/dashboard/today/
+[nodetracker]:      https://etherscan.io/nodetracker
+[ethernodes]:       https://www.ethernodes.org/network/1
+[amberdata_db]:     https://amberdata.io/dashboards/transactions
+[ethstats_net]:     https://ethstats.net
+[ethstats_io]:      https://ethstats.io/
 [etherblockchain]:  https://www.etherblockchain.io/
+[dlethexplorer_db]: https://dlethexplorer.dltlabs.com/dashboard
+
+
 
 [ethviewer]:        http://ethviewer.live/
 [bloxy_graph]:      https://bloxy.info/token_graphs/ETH
 [ethtective]:       https://ethtective.com
 
 [poolwatch]:        https://www.poolwatch.io/coin/ethereum
+
 [bloxy_erc20]:      https://bloxy.info/list_tokens/ERC20
-[bloxy_dapps]:      https://bloxy.info/list_dapps
-[bloxy_db]:         http://stat.bloxy.info/superset/dashboard/today/
-
-[nodetracker]:      https://etherscan.io/nodetracker
-[ethernodes]:       https://www.ethernodes.org/network/1
-[amberdata_db]:     https://amberdata.io/dashboards/transactions
 [amberdata_tokens]: https://amberdata.io/dashboards/applications
-
 [emoon_erc20]:      http://portfolio.emoon.io/portfolios/default/queryblockchain
+[enjinx_erc20]:     https://enjinx.io/eth/tokens
 
+[tokentxns]:        https://etherscan.io/tokentxns-nft
+[mintable_exp]:     https://mintable.app/manager
+[opensea_rinkeby]:  https://rinkeby.opensea.io/assets
+[etherscan_tokens]: https://rinkeby.etherscan.io/token/0x07fe0d8237299cda9fd5507d20b8602c71eb3658
 
+[bloxy_dapps]:      https://bloxy.info/list_dapps
 
-
-https://github.com/gobitfly/etherchain-light
-https://github.com/etherparty/explorer
+[etchain_light]:    https://github.com/gobitfly/etherchain-light
+[etherparty]:       https://github.com/etherparty/explorer
 
 
 
@@ -992,22 +994,25 @@ https://github.com/etherparty/explorer
 | [coinmonks_testnets]
 | [kauri_testnets]
 | [grliproposal]
+| [ethhub_testnets]
 
 [network_ids]:        https://chainid.network/
 [comp_testnets]:      https://ethereum.stackexchange.com/questions/27048/comparison-of-the-different-testnets
 [coinmonks_testnets]: https://medium.com/coinmonks/ethereum-test-network-21baa86072fa
 [kauri_testnets]:     https://kauri.io/article/3eba08b801a44776a07607b9e046dd08/ethereum-101-part-6-mainnet-and-testnets
 [grliproposal]:       https://dev.to/5chdn/the-grli-testnet-proposal---a-call-for-participation-58pf
+[ethhub_testnets]:    https://docs.ethhub.io/using-ethereum/test-networks/
 
 
 ## Testnet instances
 
-| (Test) Networks | Info                                             | Faucet (Get test Eth)                                        | Github
-| --------------- | --------                                         |  ---------                                                     | ------ 
-| Ropsten         | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]
-| Kovan           | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]
-| Rinkeby         | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]
-| Goerli          | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]
+| (Test) Networks | Chainnr | Info                                             | Faucet (Get test Eth)                                         | Github             
+| --------------- | ------- | --------                                         |  ---------                                                    | ------             
+| Ropsten         | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]   
+| Kovan           | 42      | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]     
+| Rinkeby         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]   
+| Goerli          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]    
+
 
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
@@ -1026,6 +1031,31 @@ https://github.com/etherparty/explorer
 [kovan_github]:       https://github.com/kovan-testnet/proposal
 [rinkeby_github]:     https://github.com/ethereum/EIPs/issues/225
 [goerli_github]:      https://github.com/goerli/testnet
+
+
+
+## Testnet dashboards
+
+| (Test) Networks | Own dashboard   | Parity                        | Ethernodes    | EthStats
+| --------------- | --------        | -----                         | ----------    | -------
+| Ropsten         |                 | [ropsten_stats_parity]        | [ropsten_en]  |
+| Kovan           |                 | [kovan_stats_parity] (NA)     | [kovan_en]    |
+| Rinkeby         | [rinkeby_stats] |                               | [rinkeby_en]  | [rinkeby_es]
+| Goerli          | [goerli_stats]  |                               | [goerli_en]   | [goerli_es]
+
+[rinkeby_stats]:            https://stats.rinkeby.io/
+[goerli_stats]:             https://stats.goerli.net/
+[ropsten_stats_parity]:     https://ropsten-stats.parity.io/
+[kovan_stats_parity]:       https://kovan-stats.parity.io/
+
+
+[ropsten_en]:       https://www.ethernodes.org/network/3
+[kovan_en]:         https://www.ethernodes.org/network/42
+[rinkeby_en]:       https://www.ethernodes.org/network/4
+[goerli_en]:        https://www.ethernodes.org/network/5
+
+[rinkeby_es]:       https://rinkeby.ethstats.io/
+[goerli_es]:        https://goerli.ethstats.io/
 
 
 ## Testnet explorers
@@ -1686,14 +1716,13 @@ Mostely the same patterns:
 
 | Erc-20 Faucet 
 | ---------
-| [radarrelay]
-| [compound_dai]
+| [radarrelay_faucet]
+| [compound_dai_faucet]
+| [singularitynet_faucet]
 
-
-[radarrelay]:         https://faucet.kovan.radarrelay.com/
-
-[compound_dai]: https://app.compound.finance/asset/cDAI
-
+[radarrelay_faucet]:        https://faucet.kovan.radarrelay.com/
+[compound_dai_faucet]:      https://app.compound.finance/asset/cDAI
+[singularitynet_faucet]:    https://faucet.singularitynet.io/
 
 
 ### Nonfungible tokens ERC 721

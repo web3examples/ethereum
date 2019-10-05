@@ -2,7 +2,7 @@
 pragma solidity >=0.5.0 <0.7.0;
 
 /** @author Gerard Persoon
-    @title A simple casino
+    @title A simple casino, for educational purposes only
 */
 contract Casino {
 

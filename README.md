@@ -336,6 +336,11 @@ This document contains info about:
 
 [eth-netstats]: https://github.com/cubedro/eth-netstats
 
+https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
+https://grafana.com/grafana/download
+https://gist.github.com/karalabe/e7ca79abdec54755ceae09c08bd090cd
+https://grafana.com/grafana/dashboards/6976
+
 ## Node as a service
 
 
@@ -1862,6 +1867,9 @@ https://medium.com/@CoindyOfficial/sto-token-standards-57071e6726bd
 
 https://token.security/stn/
 
+### Synthetic Token
+https://tokenbuilder.umaproject.org/
+
 
 ## Rule engines
 
@@ -1907,45 +1915,84 @@ Rule engines are use for automatic signing & processing of transactions via rule
 
 ## Ethereum Name System
 
-| Ens explorer      | Ens market place | Ens commercial
-| -------------     |  --------------  | ------------
-| [ens_manager]     | [enslisting]     | [encircaens]
-| [ethsimple]       |
-| [etherscan_ens]   |
-| [etherchain_ens]  |
-| [emoon_ens]       |
+### ENS Overview
 
-
-[ens_manager]:      https://manager.ens.domains/
-[ethsimple]:        https://ethsimple.com
-[etherscan_ens]:    https://etherscan.io/enslookup
-[etherchain_ens]:   https://www.etherchain.org/ens/lookup
-[emoon_ens]:        https://portfolio.emoon.io/whois
-
-[enslisting]:       https://enslisting.com/
-
-[encircaens]:       https://www.encirca.com/eth/reg/
-
-
-| Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
-| ----------    | ---------                               | ----                                          | ------             | --------------             | -----
-| Ethereum Name Service | [ens]<br>[ens-manager]<br>[ens_discuss] | [youtube-ens]<br>[enssimple]<br>[ens_build]   | [ens_github]       | [ens_docu]<br>[ens_work]   | [ens-tut1]<br>[ens-tut2]<br>[ens-tut3]
-| ENS and IPFS          | See [../ipfs]
+| Overview          | Tutorial      | Github            | Features
+| ------            | ------        | ----              | ----------
+| [ens]             | [ens-tut1]    | [ens_github]      | [ens_tor]<br>[ens_tor_list]
+| [ens_discuss]     | [ens-tut2]    |                   | [ens_txt]
+| [youtube-ens]     | [ens-tut3]    |                   | [ens_multicoin]
+| [ens_build]       |               |                   | [ens_luxe]
+| [ens_docu]        |               |                   | [ens_xyz]
+| [ens_work]   
 
 
 [ens]:              https://ens.domains/
 [ens_discuss]:      https://discuss.ens.domains/
 [ens_docu]:         https://docs.ens.domains/
+
+
+
+
+
 [ens-tut1]:         https://www.toptal.com/ethereum/ethereum-name-service-dapp-tutorial
 [ens-tut2]:         https://medium.com/tenzorum-project/the-ultimate-ens-and-%C4%91app-tutorial-a4f2ede94b08
 [ens-tut3]:         https://medium.com/@industral/how-to-integrate-ens-in-your-app-4dfa42c36b0e
+
 [ens_github]:       https://github.com/ensdomains
 
+
 [youtube-ens]:      https://www.youtube.com/results?search_query=ens+ethereum
-[ens-manager]:      https://manager.ens.domains/
-[enssimple]:        https://ethsimple.com/
+
+
 [ens_work]:         https://medium.com/@industral/ens-ethereum-name-service-how-it-works-cc57ed296473
 [ens_build]:        https://github.com/EthWorks/ENSBuilder
+[ens_tor]:          https://medium.com/the-ethereum-name-service/ens-now-supports-tor-onion-address-resolution-9bb3bdff6217
+[ens_tor_list]:     https://medium.com/the-ethereum-name-service/list-of-ens-names-that-resolve-to-tor-onion-websites-99140a4c674f
+
+[ens_txt]:          https://medium.com/the-ethereum-name-service/new-text-records-now-available-for-ens-names-in-manager-a0ebb9cda73a
+[ens_multicoin]:    https://medium.com/the-ethereum-name-service/ens-receives-binancex-grant-to-add-multi-coin-support-dcent-wallet-to-pilot-f342d691281
+[ens_luxe]:         https://nic.luxe/
+[ens_xyz]:          https://gen.xyz/
+
+### ENS tools
+|Ens registrar  | registrar tutorial |Ens explorer      | Ens market place | Tools 
+|-------------- | -------------      | ---------------- |  --------------  | ----------
+| [ens_manager] | [reg_tut]          | [etherscan_ens]  | [enslisting]     | Metamask: .....eth/ (trailing /)
+| [enssimple]   |                    | [etherchain_ens] | [ensopensea]     | [thegraphens]
+| [encircaens]  |                    | [emoon_ens]      | [gomommy]
+|               |                    |                  | [namebazaar]
+|               |                    |                  | [emoonens]
+
+
+
+
+[ens_manager]:      https://manager.ens.domains/
+[ethsimple]:        https://ethsimple.com
+[encircaens]:       https://www.encirca.com/eth/reg/
+
+[reg_tut]:          https://medium.com/the-ethereum-name-service/step-by-step-guide-to-registering-a-eth-name-on-the-new-ens-registrar-c07d3ab9d6a6
+
+[etherscan_ens]:    https://etherscan.io/enslookup
+[etherchain_ens]:   https://www.etherchain.org/ens/lookup
+[emoon_ens]:        https://portfolio.emoon.io/whois
+
+[enslisting]:       https://enslisting.com/
+[ensopensea]:       https://opensea.io/category/ens
+[gomommy]:          https://github.com/rdchksec/ENS-Marketplace
+[namebazaar]:       https://namebazaar.io/
+[emoonens]:         https://www.emoon.io/category/ENS
+
+[thegraphens]:      https://thegraph.com/explorer/subgraph/ensdomains/ens
+
+
+| Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
+| ----------    | ---------                               | ----                                          | ------             | --------------             | -----
+
+| ENS and IPFS          | See [../ipfs]
+
+
+
 
 
 ### ENS Alternatives
@@ -1960,6 +2007,7 @@ Rule engines are use for automatic signing & processing of transactions via rule
 | [emerdns]
 | [onename_blockstack]
 | [handshake]
+| [diode]
 
 [dtype_alias]:          https://eips.ethereum.org/EIPS/eip-2193
 [unstoppabledomains]:   https://unstoppabledomains.com/
@@ -1969,6 +2017,8 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [emerdns]:              https://emercoin.com/en/emerdns
 [onename_blockstack]:   https://onename.com/
 [handshake]:            https://handshake.org/
+[diode]:                https://diode.io/
+
 
 ## Financial Building blocks
 
@@ -1984,18 +2034,20 @@ Rule engines are use for automatic signing & processing of transactions via rule
 
 ## Other Building blocks
 
-| TCR (Token Curated Registry) | Gas station | Query        | Geo      
-| ---------------------        | ----------- | --------     | ----     
-| [tcr]                        | [gsn]       | [thegraph]   | [xyo]    
-|                              |             | [bigquery]   | [foam]   
-|                              |             |              | [platin]
-
+| TCR (Token Curated Registry) | Gas station | Query          | Geo      
+| ---------------------        | ----------- | --------       | ----     
+| [tcr]                        | [gsn]       | [thegraph]     | [xyo]    
+|                              |             | [bigquery]     | [foam]   
+|                              |             | [hookpad]      | [platin]
+|                              |             | [geth_graphql] |
 
 [tcr]:              http://tokenengineering.net/tcr
 [gsn]:              https://gsn.openzeppelin.com/
 
 [thegraph]:         https://thegraph.com/
 [bigquery]:         https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain
+[hookpad]:          https://hookpad.io/
+[geth_graphql]:     https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
 
 
 [xyo]:              https://xyo.network/
@@ -2003,6 +2055,7 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [platin]:           https://platin.io/
 [fysical.org]:      https://fysical.org/
 [streetcred]:       https://www.streetcred.co/
+
 
 
 

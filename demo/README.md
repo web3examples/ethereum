@@ -29,4 +29,5 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 | Play - Unibright                      | [Play - Unibright](Play - Unibright.html)
 | Piet - Unibright                      | [Piet - Unibright](Piet - Unibright.html)
 | Aragon - create company               | [Aragon - create company](Aragon - create company.html)
-| Create ERC20 via web.html             | [Create ERC20 via web](Create ERC20 via web.html)
+| Create ERC20 via web                  | [Create ERC20 via web](Create ERC20 via web.html)
+| Geth Prometheus Grafana               | [Geth Prometheus Grafana](Geth Prometheus Grafana.html)

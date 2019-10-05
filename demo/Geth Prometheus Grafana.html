@@ -1,0 +1,82 @@
+<div id="ipfs">QmTjbvWaARYsQtxwRCswN3uTz28vuM5VZf9u6DJNYSkiF2</div>
+<div id="timetable">
+Location                                          | Action       | Object         | Time
+cmd window                                        | Enter        |                | 3
+geth --goerli --pprof --metrics --metrics.expensive
+Chrome                                            | Enter        | prometheus.io  | 15
+Prometheus.io                                     | Click        | Download       | 18
+Download - operating system - popular             | Select       | Windows        | 21
+prometheus                                        | Click        |                | 25
+prometheus-x.x.x.windows-amd64.tar.gz
+Chrome download bar                               | Double click |                | 40
+prometheus-x.x...tar.gz
+7zip                                              | Double click |                | 43
+prometheus-x.x.x.windows-amd64.tar
+7zip                                              | Double click |                | 44
+prometheus-x.x.x.windo...
+Explorer window c:\tmp                            | Drag         | {Files 7zip }  | 50
+Chrome new tab                                    | Enter        |                | 61
+github.com/karalabe/geth-prometheus
+github - karalabe - geth-prometheus               | Click        | prometheus.yml | 69
+github - geth-prometheus - prometheus.yml         | Click        | Raw            | 70
+https://raw.githubusercontent....prometheus.yml   | Copy         | {configuration}| 75
+Explorer window c:\tmp                            | Double click | prometheus.yml | 82
+Notepad - prometheus.yml                          | Paste        | {configuration}| 84
+Notepad - prometheus.yml - targets - geth:6060    | Replace with |                | 90
+- targets: ['localhost:6060']
+Notepad - prometheus.yml - end                    | Enter        | {empty line}   | 93
+Notepad - prometheus.yml                          | Click        | {close}        | 96
+Explorer window c:\tmp                            | Double click | prometheus.exe | 99
+Chrome new tab                                    | Enter        |                | 110
+grafana.com
+grafana.com                                       | Click        | Get Grafana    | 114
+You Run It                                        | Click        | Download       | 117
+Download Grafana                                  | Click        | Windows        | 119
+Windows Installer                                 | Click        | Download the installer | 121
+Chrome download bar                               | Double click |                | 133
+grafana-x.x.x.wind...msi
+Popup Windows protected your PC                   | Click        | More info      | 137
+Popup Windows protected your PC                   | Click        | Run anyway     | 138
+Popup Grafana - Welcome to the Grafana OSS ..     | Click        | Next           | 141
+Popup Grafana - End-User...- I accept the..       | Click        | Checkbox       | 143
+Popup Grafana - End-User...                       | Click        | Next           | 144
+Popup Grafana - Custom Setup                      | Click        | Next           | 145
+Popup Grafana - Ready to install Grafana OSS      | Click        | Install        | 146
+Popup Grafana - Completed the Grafana OSS...      | Click        | Finish         | 159
+Chrome new tab                                    | Enter        |                | 164
+http://localhost:3000
+Grafana - first field                             | Enter        | admin          | 168
+Grafana - second field                            | Enter        | admin          | 171
+Grafana                                           | Click        | Log In         | 176
+Grafana - Change Password                         | Click        | Skip           | 178
+Grafana - Home Dashboard                          | Click        | Add data source| 183
+Add data source - Prometheus                      | Click        | Select         | 185
+Data Sources / Prometheus - HTTP - URL            | Select       |                | 187
+http://localhost:9090
+Data Sources / Prometheus - low                   | Click        | Save & Test    | 191
+Data Sources / Prometheus - low                   | Click        | Back           | 197
+Grafana "+" (hoover)                              | Click        | Import         | 200
+Chrome new tab                                    | Enter        |                | 210
+https://gist.github.com/karalabe/e7ca79abdec54755ceae09c08bd090cd
+karalabe / dashboard.json                         | Click        | Raw            | 217
+https://gist.githubusercontent../dashboard.json   | Copy         | {configuration}| 220
+Chrome tab Grafana - Import - Or paste JSON       | Paste        | {configuration}| 224
+Chrome tab Grafana - Import - Or paste JSON       | Click        | Load           | 227
+Import - Select a prometheus data source          | Select       | Prometheus     | 230
+Import (green button)                             | Click        | Import         | 232
+</div>
+<div id="goal">
+The goal is install the Prometheus and Grafana monitoring software.
+</div>
+<div id="explain">
+Prometheus and Grafana are installed and configured. 
+Geth is started with the parameters to provide monitoring information.
+Grafana shows a dashboard.
+</div>
+<div id="prerequisites">
+Chrome is started. A command prompt is started. 
+Explorer window is started in a writeable dircetory (c:\tmp)
+7zip installed and the .gz file extension is attached to 7zip, geth is installed
+.yml file extension is attached to notepad.
+</div>
+<script src="showvideo.js"></script>

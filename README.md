@@ -404,6 +404,7 @@ https://grafana.com/grafana/dashboards/6976
 | Ether.js                  | [Javascript] | [etherjs_docs]          | [etherjs_github]
 | Truffle contract          | [Javascript] |                         | [truffle_github]
 | Ethjs                     | [Javascript] |                         | [ethjs_github]
+| Web3data.js (amberdata)   | [Javascript] | [[web3datajs]           | [web3datajs_github]
 | Web3wrapper               | [Typescript] | [web3-wrapper_docs]     | [web3-wrapper_github]
 | Web3py                    | [Python]     | [web3py_docs]           | [web3py_github]
 | Web3J                     | [Java]       | [web3j]<br>[web3j_docs] | [web3j_github]
@@ -425,6 +426,11 @@ https://grafana.com/grafana/dashboards/6976
 [web3-wrapper_github]:  https://github.com/0xProject/0x-monorepo/tree/development/packages/web3-wrapper
 [etherjs_docs]:         https://docs.ethers.io/ethers.js/html/
 [etherjs_github]:       https://github.com/ethers-io/ethers.js/
+
+[web3datajs]: https://medium.com/amberdata/same-code-no-node-web3datajs-the-easiest-blockchain-library-8df4d96a60e
+[web3datajs_github]: https://github.com/web3data/web3data-js
+
+
 [truffle_github]:       https://github.com/trufflesuite/truffle/tree/master/packages/truffle-contract
 [ethjs_github]:         https://github.com/ethjs/ethjs
 
@@ -1718,6 +1724,9 @@ Mostely the same patterns:
 * http://tokenfactory.surge.sh/#/tokensearch
 *[audit_token]:         https://ethereum.stackexchange.com/questions/37171/what-is-checklist-for-auditing-a-smart-contract/43448#43448
 
+https://github.com/ethereum934/eth-mimblewimble
+
+
 
 | Erc-20 Faucet 
 | ---------
@@ -1871,6 +1880,17 @@ https://token.security/stn/
 https://tokenbuilder.umaproject.org/
 
 
+
+## meta transactions
+
+| Meta
+|----------
+| [biconomy]
+
+[biconomy]: https://biconomy.io
+
+
+
 ## Rule engines
 
 Rule engines are use for automatic signing & processing of transactions via rules
@@ -1921,7 +1941,7 @@ Rule engines are use for automatic signing & processing of transactions via rule
 | ------            | ------        | ----              | ----------
 | [ens]             | [ens-tut1]    | [ens_github]      | [ens_tor]<br>[ens_tor_list]
 | [ens_discuss]     | [ens-tut2]    |                   | [ens_txt]
-| [youtube-ens]     | [ens-tut3]    |                   | [ens_multicoin]
+| [youtube-ens]     | [ens-tut3]    |                   | [ens_multicoin]<br>[EIP2304]
 | [ens_build]       |               |                   | [ens_luxe]
 | [ens_docu]        |               |                   | [ens_xyz]
 | [ens_work]   
@@ -1951,7 +1971,11 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [ens_tor_list]:     https://medium.com/the-ethereum-name-service/list-of-ens-names-that-resolve-to-tor-onion-websites-99140a4c674f
 
 [ens_txt]:          https://medium.com/the-ethereum-name-service/new-text-records-now-available-for-ens-names-in-manager-a0ebb9cda73a
+
 [ens_multicoin]:    https://medium.com/the-ethereum-name-service/ens-receives-binancex-grant-to-add-multi-coin-support-dcent-wallet-to-pilot-f342d691281
+[EIP2304]:          https://eips.ethereum.org/EIPS/eip-2304
+
+
 [ens_luxe]:         https://nic.luxe/
 [ens_xyz]:          https://gen.xyz/
 

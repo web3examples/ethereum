@@ -1,5 +1,8 @@
 # ethereum relations
 
+Use [GitHub + Mermaid](https://chrome.google.com/webstore/detail/github-%20-mermaid/goiiopgdnkogdbjmncgedmgpoajilohe) extension
+
+
 ```mermaid
 graph TD
 Q-->A

@@ -2119,6 +2119,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [10dapps]
 | [wutui] (chinese)
 | [hydrostore] (hydro based dapps)
+| [squarelinkdapps] (login first)
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -2141,7 +2142,8 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [10dapps]:              https://10dapps.com/dapp_ranking?category=all&network=Ethereum
 [dappstatus]:           https://dappstatus.com/
 [wutui]:                https://wutui.pro/dapps/?chain=eth&category=all
-[hydrostore]: https://hydrostore.io/
+[hydrostore]:           https://hydrostore.io/
+[squarelinkdapps]:      https://app.squarelink.com/explore
 
 [nonfungible]:          https://nonfungible.com/market/history
 

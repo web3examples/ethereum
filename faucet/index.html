@@ -40,8 +40,8 @@ Faucet Balance: <input type="text" name="faucet" id="faucet" value="0"/>ETH<br>
 Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
 <br>
 <div class="loader" id="spinner"  style="display:none">#</div>
-<input type="button" id="give" value="Give to faucet" style="border-radius: 10px;font-size : 30px;width: 200;height: 50;color:yellow;background-color:Red "   class="primary" onclick="doTransferEth(addressSelf,addressFaucet)"/>
-<input type="button" id="get" value="Get from faucet" style="border-radius: 10px;font-size : 30px;width: 200;height: 50;color:yellow;background-color:Green " class="primary" onclick="doTransferEth(addressFaucet,addressSelf)"/>
+<input type="button" id="give" value="Give to faucet" style="border-radius: 10px;font-size : 30px;width: 200;height: 50;color:yellow;background-color:Red "   class="primary" onclick="doTransferEth(addressSelf,addressFaucet,10)"/>
+<input type="button" id="get" value="Get from faucet" style="border-radius: 10px;font-size : 30px;width: 200;height: 50;color:yellow;background-color:Green " class="primary" onclick="doTransferEth(addressFaucet,addressSelf,0.1)"/>
 
 <br>
 <pre id="log" style="width:100%;height:200px"></pre> 
@@ -77,12 +77,23 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
     }
 
     
-    async function doTransferEth(address1,address2) {
+    async function doTransferEth(address1,address2,maxValue) {
       var result = 0
+      
+      var amount = document.getElementById("amount").value;
+            
+      if (amount > maxValue) {
+        log (`Max amount to transfer is ${maxValue} ETH`);
+        return;
+      }
+      var amountWei=web3.utils.toWei(amount )
+      
       document.getElementById("give").style.display = "none";
       document.getElementById("get").style.display = "none";
-      document.getElementById("spinner").style.display = "block";          
-      result = await  web3.eth.sendTransaction({from: address1,to: address2,gas: 200000,value: web3.utils.toWei(amount.toString())}).catch(x => log(`Error: ${x.code} ${x.message}`));
+      document.getElementById("spinner").style.display = "block";      
+
+      
+      result = await  web3.eth.sendTransaction({from: address1,to: address2,gas: 200000,value: amountWei}).catch(x => log(`Error: ${x.code} ${x.message}`));
       document.getElementById("spinner").style.display = "none";
       document.getElementById("give").style.display = "block";
       document.getElementById("get").style.display = "block";          
@@ -98,7 +109,7 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
         document.getElementById("balance").value = precise(ethBalance).toString();
         var weiFaucetBalance=await web3.eth.getBalance(addressFaucet)        
         document.getElementById("faucet").value = precise(web3.utils.fromWei(weiFaucetBalance, 'ether'));        
-        document.getElementById("amount").value = precise(amount).toString();
+        
    }
     
     async function asyncloaded() {
@@ -127,6 +138,7 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
         
         log(`My own address: ${EtherscanLink("address",addressSelf)}`);
         log(`Faucet address: ${EtherscanLink("address",addressFaucet)}`);
+        document.getElementById("amount").value = precise(0.1).toString();
         updateBalances() 
    }     
    window.addEventListener('load', asyncloaded);       

@@ -96,7 +96,7 @@ This document contains info about:
 [casino]:            http://web3examples.com/ethereum/casino/
 [casino_github]:     https://github.com/web3examples/ethereum/tree/master/casino
 
-[w3e_faucet]         http://web3examples.com/ethereum/faucet
+[w3e_faucet]:        http://web3examples.com/ethereum/faucet
 [w3e_faucet_github]: https://github.com/web3examples/ethereum/tree/master/faucet
 
 

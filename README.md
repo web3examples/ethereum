@@ -80,26 +80,27 @@ This document contains info about:
 
 # Examples
 
-## Interactive demo applications
 
-| Demo application              | Link       | Github
-| ---------                     | -------    | -----
-| Log your location (check-in)  | [location] | [location_github]
-| Mini casino: bet and win      | [casino]   | [casino_github]
+| Demo application              | Link         | Github
+| ---------                     | -------      | -----
+| Log your location (check-in)  | [location]   | [location_github]
+| Mini casino: bet and win      | [casino]     | [casino_github]
+| Faucet                        | [w3e_faucet] | [w3e_faucet_github]
 
-[location]:         http://web3examples.com/location
-[location_github]:  https://github.com/web3examples/location
+[location]:          http://web3examples.com/location
+[location_github]:   https://github.com/web3examples/location
 
-[casino]:           http://web3examples.com/ethereum/casino/
-[casino_github]:    https://github.com/web3examples/ethereum/tree/master/casino
+[casino]:            http://web3examples.com/ethereum/casino/
+[casino_github]:     https://github.com/web3examples/ethereum/tree/master/casino
+
+[w3e_faucet]         http://web3examples.com/ethereum/faucet
+[w3e_faucet_github]: https://github.com/web3examples/ethereum/tree/master/faucet
 
 
-
-## Installation and Demo video's
-
-| Install Video                        | Demo video                      
-| -------------                        | -------------                  
-| [Install Ethereum software](install) | [Demo Ethereum software](demo)  
+| Type of video's   | List of video's
+| -------------     | -------------                  
+| Install           | [Install Ethereum software](install) 
+| Demo              | [Demo Ethereum software](demo)  
 
 
 # Ethereum Concepts
@@ -471,6 +472,8 @@ https://grafana.com/grafana/dashboards/6976
 | [hybrix]                       | [hybix_docs]         | [hybix_github]
 | [trueblocks] (aka quickblocks) | [trueblocks_docs]    | [trueblocks_github]
 | [blocknative]                  | [blocknative_docs]   | [blocknative_github]
+| [hedgehog]                     | [hedgehog_docs]      | [hedgehog_github]
+| [3box_idwallet]                | [3box_idwallet_docs] | [3box_idwallet_github]
 
 [walletconnect]:        https://walletconnect.org
 [walletconnect_docs]:   https://github.com/walletconnect
@@ -517,16 +520,26 @@ https://grafana.com/grafana/dashboards/6976
 [blocknative_docs]:     https://www.blocknative.com/developer-quick-integration-guide
 [blocknative_github]:   https://github.com/blocknative
 
+[hedgehog]:             https://hedgehog.audius.co/
+[hedgehog_docs]:        https://audiusproject.github.io/hedgehog-docs
+[hedgehog_github]:      https://github.com/AudiusProject/hedgehog
+
+[3box_idwallet]:        https://medium.com/3box/introducing-identitywallet-sdk-4750d6afa519
+[3box_idwallet_docs]:   https://docs.3box.io/build/wallets
+[3box_idwallet_github]: https://github.com/3box/identity-wallet-js
+
+
+
 
 ## Web3.js
 
-| Browser extention     | Browser ext via contract | Connect via alt.apis     | Browser import             | Iframe wallet | Browser import via contract |
-| --------------------- | ------------------------ | ---------------------    | --------------             | ------------  | --------------------------- 
-| [metamask]            | [dapper]                 | [wc_web3js]<br>[wc_docs] | [portis]                   | [myethvault]  | [authereum]
-| [equal]               |                          | [squarelink_web3js]      | [fortmatic]                |               | [nifty]
+| Browser extention     | Browser ext via contract | Connect via alt.apis     | Browser import             | Iframe wallet                              | Browser import via contract |
+| --------------------- | ------------------------ | ---------------------    | --------------             | ------------                               | --------------------------- 
+| [metamask]            | [dapper]                 | [wc_web3js]<br>[wc_docs] | [portis]                   | [myethvault]                               | [authereum]
+| [equal]               |                          | [squarelink_web3js]      | [fortmatic]                | [mascara] (depricated)<br>[mascare_wallet] | [nifty]
 | [mathwallet]          |                          | [scatter_web3js]         | [burner_wallet] (insecure) |
 | [saturn_wallet]       |                          | [walletlink]             | [bitski]
-| [tokenary_safari]     |                          |                          | [torus]
+| [tokenary_safari]     |                          | [kirby] (also iframe)    | [torus]
 | [guarda_ext]
 | [venus_ext] (cybermiles network)
 
@@ -546,6 +559,8 @@ https://grafana.com/grafana/dashboards/6976
 [squarelink_web3js]:    https://github.com/Squarelink-Inc/Squarelink-Web3
 [scatter_web3js]:       https://github.com/GetScatter/scatter-js
 [walletlink]:           https://www.walletlink.org
+[kirby]:                https://github.com/joincivil/kirby-web3
+
 
 [portis]:               https://www.portis.io
 [fortmatic]:            https://fortmatic.com
@@ -554,6 +569,8 @@ https://grafana.com/grafana/dashboards/6976
 [torus]:                https://tor.us
 
 [myethvault]:           https://myethvault.com/
+[mascara]:              https://github.com/MetaMask/mascara
+[mascare_wallet]:       https://wallet.metamask.io/
 
 [authereum]:        https://authereum.org/
 [nifty]:            https://niftygateway.com

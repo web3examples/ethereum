@@ -40,7 +40,7 @@ var video=document.createElement("video");
 video.src="http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText;
 video.class="videoplayer";
 video.controls=false;
-// video.style.height="50%";
+video.style.height="33%";
 video.autoplay=true; 
 video.muted=true;  // otherwise not playing automatically
 video.ontimeupdate = function() {VideoLocation()}; // call function when movie is at a different location
@@ -80,7 +80,16 @@ document.body.appendChild(tablediv);
 var alldata = ReadTimeTable(table);
 var TimeIndex=alldata[0].indexOf('Time');
             
-            
+var chat=document.createElement("iframe");
+chat.src="https://gitter.im/web3examples/community/~embed"
+chat.width="100%"
+chat.height="200"
+chat.style.outline="1px";
+chat.style.outlineStyle="solid";
+document.body.appendChild(chat);
+
+
+ //<iframe src= height="100%" width="100%" ></iframe>  
             
 //var header=document.createElement("h2");
 //header.innerText=filename;

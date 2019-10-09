@@ -53,6 +53,8 @@ document.body.appendChild(newline);
 CreateButton("Rewind",       ()=> video.currentTime =0 );
 CreateButton("Back 1 sec",   ()=> video.currentTime -=1 );
 CreateButton("Forward 1 sec",()=> video.currentTime +=1 );
+CreateButton("Back 30 sec",   ()=> video.currentTime -=30 );
+CreateButton("Forward 30 sec",()=> video.currentTime +=30 );
 CreateButton("25% slower",   ()=> {video.playbackRate *=0.75;video.play();});
 CreateButton("Normal speed", ()=>{video.playbackRate =1;video.play();} );
 CreateButton("25% faster",   ()=> {video.playbackRate *=1.25;video.play();} );

@@ -1846,7 +1846,7 @@ https://yos.io/2019/04/14/erc-standards-you-should-know-about/
 
 https://consensys.net/web3studio/bootleg
 
-
+https://github.com/gianni-dalerta/awesome-nft
 
 
 ### ERC 721x
@@ -1928,6 +1928,13 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [wonka]:          https://github.com/Nethereum/Wonka
 
 
+
+## Multisig wallets
+
+https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyLimit.sol
+
+
+
 ## Oracles
 
 | Oracle frameworks | Tools & demo     | Github             | Documentation    
@@ -2000,13 +2007,13 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [ens_xyz]:          https://gen.xyz/
 
 ### ENS tools
-|Ens registrar  | registrar tutorial |Ens explorer      | Ens market place | Tools 
-|-------------- | -------------      | ---------------- |  --------------  | ----------
-| [ens_manager] | [reg_tut]          | [etherscan_ens]  | [enslisting]     | Metamask: .....eth/ (trailing /)
-| [enssimple]   |                    | [etherchain_ens] | [ensopensea]     | [thegraphens]
-| [encircaens]  |                    | [emoon_ens]      | [gomommy]
-|               |                    |                  | [namebazaar]
-|               |                    |                  | [emoonens]
+|Ens registrar  | registrar tutorial |Ens explorer           | Ens market place | Tools 
+|-------------- | -------------      | ----------------      |  --------------  | ----------
+| [ens_manager] | [reg_tut]          | [etherscan_ens]       | [enslisting]     | Metamask: .....eth/ (trailing /)
+| [enssimple]   |                    | [etherchain_ens]      | [ensopensea]     | [thegraphens]
+| [encircaens]  |                    | [emoon_ens]           | [gomommy]
+|               |                    | [opensea_ens] (log in)| [namebazaar]
+|               |                    |                       | [emoonens]
 
 
 
@@ -2020,6 +2027,11 @@ Rule engines are use for automatic signing & processing of transactions via rule
 [etherscan_ens]:    https://etherscan.io/enslookup
 [etherchain_ens]:   https://www.etherchain.org/ens/lookup
 [emoon_ens]:        https://portfolio.emoon.io/whois
+
+[opensea_ens]:      https://opensea.io/ens
+
+
+
 
 [enslisting]:       https://enslisting.com/
 [ensopensea]:       https://opensea.io/category/ens

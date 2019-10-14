@@ -1152,7 +1152,7 @@ Also see [Explorers](#explorers)
 
 [aleth_goerli]:       https://goerli.aleth.io/
 
-[athereum_exp]:       http://athexplorer.ava.network/block
+[athereum_exp]:       http://athexplorer.ava.network
 
 
 

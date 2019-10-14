@@ -2117,23 +2117,43 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 | ---------------------        | ----------- | --------
 | DEX                          | [0x]        | [0xtracker]
 | Lending                      | [compound]  | 
+| Insurance                    | [etherisc]
+
 
 [0x]:               https://0x.org/
 [0xtracker]:        https://0xtracker.com/
 [compound]:         https://compound.finance/
 
+[etherisc]:         https://etherisc.com/
 
-## Other Building blocks
+## Token Curated Registry
 
-| TCR (Token Curated Registry) | Gas station | Query          | Geo      
-| ---------------------        | ----------- | --------       | ----     
-| [tcr]                        | [gsn]       | [thegraph]     | [xyo]    
-|                              |             | [bigquery]     | [foam]   
-|                              |             | [hookpad]      | [platin]
-|                              |             | [geth_graphql] |
+| TCR (Token Curated Registry) 
+| ---------------------        
+| [tcr]                        
 
 [tcr]:              http://tokenengineering.net/tcr
+
+
+## Gas station
+
+| Gas station
+|---------
+| [gsn]
+
 [gsn]:              https://gsn.openzeppelin.com/
+
+
+## Query
+
+| Query
+|----------
+| [thegraph]
+| [bigquery]
+| [hookpad]
+| [geth_graphql]
+
+
 
 [thegraph]:         https://thegraph.com/
 [bigquery]:         https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain
@@ -2141,12 +2161,31 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 [geth_graphql]:     https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
 
 
+## Geo
+
+| Geo
+|------
+| [xyo]
+| [foam]
+| [platin]
+| [fysical.org]
+| [streetcred]
+
 [xyo]:              https://xyo.network/
 [foam]:             https://www.foam.space/
 [platin]:           https://platin.io/
 [fysical.org]:      https://fysical.org/
 [streetcred]:       https://www.streetcred.co/
 
+
+
+## Profiles
+
+| Profiles
+|----------
+| [3box]
+
+[3box]:     https://3box.io/
 
 
 
@@ -2234,7 +2273,6 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [ongdefi]         | [dexag]
 |                   | [airswap]
 |                   | [dydx]
-|                   | [etherisc]
 |                   | [augur]
 
 [defiprime]:        https://defiprime.com/
@@ -2253,7 +2291,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [dexag]:            https://dex.ag/
 [airswap]:          https://www.airswap.io/
 [dydx]:             https://dydx.exchange/
-[etherisc]:         https://etherisc.com/
+
 [augur]:    		https://www.augur.net/		
 
 

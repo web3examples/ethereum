@@ -155,11 +155,23 @@ function generateTable(table, data) {
 var previous_colour=""
 var previous_row=-1;
     
+
+    
 function VideoLocation() {
     
     position.innerText=`Position: ${video.currentTime.toFixed(0)}`;
+    
+    var tPlayed=0;
+    for (let i=0;i< video.played.length;i++) {
+        tPlayed += video.played.end(i) - video.played.start(i);
+    }
+    position.innerText+=` Played: ${tPlayed.toFixed(0)}`;
+
     position.innerText+=` (of ${video.duration.toFixed(0)} seconds)`;
     position.innerText+=` speed=${video.playbackRate.toFixed(1)}`;
+    
+    
+    
     function check  (x) { return Number(x[TimeIndex] >= video.currentTime); } 
     var y= alldata.findIndex(check )  ;    
     if (y >=0  && y != previous_row ) {

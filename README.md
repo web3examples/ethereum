@@ -477,6 +477,9 @@ https://grafana.com/grafana/dashboards/6976
 | [blocknative]                  | [blocknative_docs]   | [blocknative_github]
 | [hedgehog]                     | [hedgehog_docs]      | [hedgehog_github]
 | [3box_idwallet]                | [3box_idwallet_docs] | [3box_idwallet_github]
+| [provide]                      | [provide_docs]       | [provide_github]
+| [samsung]
+| [pacs_android]                 |                      | [pacs_android_github]
 
 [walletconnect]:        https://walletconnect.org
 [walletconnect_docs]:   https://github.com/walletconnect
@@ -534,15 +537,33 @@ https://grafana.com/grafana/dashboards/6976
 
 
 
+
+
+[provide]:              https://provide.services/
+[provide_docs]:         https://docs.provide.services/#platform-overview
+[provide_github]:       https://github.com/provideservices
+
+
+[samsung]:              https://developer.samsung.com/blockchain
+
+[pacs_android]:         https://ethereum-android.com/
+[pacs_android_github]:  https://github.com/p-acs/ethereum-android-lib
+
+
+
+
+
+
+
 ## Web3.js
 
-| Browser extention     | Browser ext via contract | Connect via alt.apis     | Browser import             | Iframe wallet                              | Browser import via contract |
-| --------------------- | ------------------------ | ---------------------    | --------------             | ------------                               | --------------------------- 
-| [metamask]            | [dapper]                 | [wc_web3js]<br>[wc_docs] | [portis]                   | [myethvault]                               | [authereum]
-| [equal]               |                          | [squarelink_web3js]      | [fortmatic]                | [mascara] (depricated)<br>[mascare_wallet] | [nifty]
-| [mathwallet]          |                          | [scatter_web3js]         | [burner_wallet] (insecure) |
-| [saturn_wallet]       |                          | [walletlink]             | [bitski]
-| [tokenary_safari]     |                          | [kirby] (also iframe)    | [torus]
+| Browser extention     | Browser ext (contract| Connect via alt.apis     | Browser import             | Iframe wallet                       | Browser import via contract | Browser ext+ OS
+| --------------------- | ---------------------| ---------------------    | --------------             | ------------                        | --------------------------- |-----
+| [metamask]            | [dapper]             | [wc_web3js]<br>[wc_docs] | [portis]                   | [myethvault]                        | [authereum]                 | [frame]
+| [equal]               |                      | [squarelink_web3js]      | [fortmatic]                | [mascara] (old)<br>[mascare_wallet] | [nifty]
+| [mathwallet]          |                      | [scatter_web3js]         | [burner_wallet] (insecure) |
+| [saturn_wallet]       |                      | [walletlink]             | [bitski]
+| [tokenary_safari]     |                      | [kirby] (also iframe)    | [torus]
 | [guarda_ext]
 | [venus_ext] (cybermiles network)
 
@@ -575,9 +596,10 @@ https://grafana.com/grafana/dashboards/6976
 [mascara]:              https://github.com/MetaMask/mascara
 [mascare_wallet]:       https://wallet.metamask.io/
 
-[authereum]:        https://authereum.org/
-[nifty]:            https://niftygateway.com
+[authereum]:            https://authereum.org/
+[nifty]:                https://niftygateway.com
 
+[frame]:                https://frame.sh/
 
 ## Web3.js in browser
 
@@ -1037,13 +1059,13 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Testnet instances
 
-| (Test) Networks | Chainnr | Info                                             | Faucet (Get test Eth)                                         | Github             
-| --------------- | ------- | --------                                         |  ---------                                                    | ------             
-| Ropsten         | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]   
-| Kovan           | 42      | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]     
-| Rinkeby         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]   
-| Goerli          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]    
-
+| (Test) Networks | Chainnr | Info                                             | Faucet (Get test Eth)                                         | Github             | Details
+| --------------- | ------- | --------                                         |  ---------                                                    | ------             | ----------
+| Ropsten         | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]   | [ropsten_details]
+| Kovan           | 42      | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]     | [kovan_details]
+| Rinkeby         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]   | [rinkeby_details]
+| Goerli          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]    | [goerli_details]
+| Athereum        | 43110   | Ava                                              | [athereum_faucet]                                             |                    | [athereum_details]
 
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
@@ -1057,6 +1079,7 @@ https://grafana.com/grafana/dashboards/6976
 [rinkeby-faucet]:     https://faucet.rinkeby.io/
 [goerli-faucet1]:     https://goerli-faucet.slock.it/
 [goerli-faucet2]:     https://faucet.goerli.mudit.blog/
+[athereum_faucet]:    http://athfaucet.ava.network
 
 [ropsten_github]:     https://github.com/ethereum/ropsten
 [kovan_github]:       https://github.com/kovan-testnet/proposal
@@ -1064,6 +1087,11 @@ https://grafana.com/grafana/dashboards/6976
 [goerli_github]:      https://github.com/goerli/testnet
 
 
+[ropsten_details]:    https://github.com/ethereum-lists/chains/blob/master/_data/chains/3.json
+[kovan_details]:      https://github.com/ethereum-lists/chains/blob/master/_data/chains/42.json
+[rinkeby_details]:    https://github.com/ethereum-lists/chains/blob/master/_data/chains/4.json
+[goerli_details]:     https://github.com/ethereum-lists/chains/blob/master/_data/chains/5.json
+[athereum_details]:   https://github.com/ethereum-lists/chains/blob/master/_data/chains/43110.json
 
 ## Testnet dashboards
 
@@ -1073,6 +1101,7 @@ https://grafana.com/grafana/dashboards/6976
 | Kovan           |                 | [kovan_stats_parity] (NA)     | [kovan_en]    |
 | Rinkeby         | [rinkeby_stats] |                               | [rinkeby_en]  | [rinkeby_es]
 | Goerli          | [goerli_stats]  |                               | [goerli_en]   | [goerli_es]
+| Athereum        |
 
 [rinkeby_stats]:            https://stats.rinkeby.io/
 [goerli_stats]:             https://stats.goerli.net/
@@ -1093,12 +1122,13 @@ https://grafana.com/grafana/dashboards/6976
 
 Also see [Explorers](#explorers)
 
-| (Test) Networks | Etherscan            | Blockscout           | BlockexplorerOne     | Bitaps           | Aleth Lite          | Aleth
-| --------------- | ------               | -----------------    | ------------         | -----------      | -------------       | -----
-| Ropsten         | [etherscan-ropsten]  | [blockscout-ropsten] | [blockexone_ropsten] | [bitaps_ropsten] | [aleth_lt_ropsten]  | 
-| Kovan           | [etherscan-kovan]    | [blockscout-kovan]   |                      |                  | [aleth_lt_kovan]    |
-| Rinkeby         | [etherscan-rinkeby]  | [blockscout-rinkeby] | [blockexone_rinkeby] |                  | [aleth_lt_rinkeby]  | 
-| Goerli          | [etherscan-goerli]   | [blockscout-goerli]  |                      |                  | [aleth_lt_goerli]   | [aleth_goerli]
+| (Test) Networks | Etherscan            | Blockscout           | BlockexplorerOne     | Bitaps           | Aleth Lite          | Aleth             | Own
+| --------------- | ------               | -----------------    | ------------         | -----------      | -------------       | -----             | -------
+| Ropsten         | [etherscan-ropsten]  | [blockscout-ropsten] | [blockexone_ropsten] | [bitaps_ropsten] | [aleth_lt_ropsten]  |                   |
+| Kovan           | [etherscan-kovan]    | [blockscout-kovan]   |                      |                  | [aleth_lt_kovan]    |                   |
+| Rinkeby         | [etherscan-rinkeby]  | [blockscout-rinkeby] | [blockexone_rinkeby] |                  | [aleth_lt_rinkeby]  |                   |
+| Goerli          | [etherscan-goerli]   | [blockscout-goerli]  |                      |                  | [aleth_lt_goerli]   | [aleth_goerli]    |
+| Athereum        |                      |                      |                      |                  |                     |                   | [athereum_exp]
 
 [etherscan-ropsten]:  https://ropsten.etherscan.io/
 [etherscan-kovan]:    https://kovan.etherscan.io/
@@ -1121,6 +1151,11 @@ Also see [Explorers](#explorers)
 [aleth_lt_goerli]:    https://lite-explorer.goerli.aleth.io/
 
 [aleth_goerli]:       https://goerli.aleth.io/
+
+[athereum_exp]:       http://athexplorer.ava.network/block
+
+
+
 
 # Security
 
@@ -2152,6 +2187,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [wutui] (chinese)
 | [hydrostore] (hydro based dapps)
 | [squarelinkdapps] (login first)
+| [android_apps]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -2176,6 +2212,8 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [wutui]:                https://wutui.pro/dapps/?chain=eth&category=all
 [hydrostore]:           https://hydrostore.io/
 [squarelinkdapps]:      https://app.squarelink.com/explore
+
+[android_apps]:         https://play.google.com/store/search?q=ethereum&c=apps
 
 [nonfungible]:          https://nonfungible.com/market/history
 

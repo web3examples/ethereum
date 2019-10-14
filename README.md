@@ -2261,6 +2261,20 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [loanscan]:         https://loanscan.io/
 [etherscan_defi]:   https://etherscan.io/accounts/label/defi
 
+
+## Insurance
+
+| Insurance 
+| ------
+| [fizzy]
+| [etherisc]
+| [sproutinsure]
+
+[fizzy]:            https://fizzy.axa/en-gb/
+[etherisc]:         https://etherisc.com/
+[sproutinsure]:     http://sproutinsure.com/
+
+
 ## Games
 
 | Overview          | Games                 | Game development platform

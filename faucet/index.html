@@ -51,21 +51,10 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
     var addressFaucet = 0;
     var addressSelf = 0;
     const amount =0.1;
-    var network = 0;
-
-    function getNetwork() {
-        switch(network) {
-              case 3:  return "ropsten";
-              case 42: return "kovan";
-              case 4:  return "rinkeby";
-              case 5:  return "goerli";
-              case 43110: return "athereum";
-            }    
-        return "not supported";
-    }
+    var network;
 
     function EtherscanLink(pref,link) {   
-       return `<a href="https://${getNetwork()}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
+       return `<a href="https://${web3.eth.net.getNetworkType()}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
     }
     
     function log(str,...arguments) {        
@@ -112,6 +101,29 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
         document.getElementById("faucet").value = precise(web3.utils.fromWei(weiFaucetBalance, 'ether'));        
         
    }
+   
+   
+const promisify = (inner) =>
+  new Promise((resolve, reject) =>
+    inner((err, res) => {
+      if (err) { reject(err) }
+      resolve(res);
+    })
+  );   
+   
+   async function ethChainId() {
+        return await promisify(cb =>ethereum.sendAsync(   
+        {
+            method: "eth_chainId",
+            params: [ ], 
+            id: 1
+        },cb) ).catch(console.log);
+   }   
+   
+   
+   
+   
+   
     
     async function asyncloaded() {
         if (typeof ethereum !== 'undefined')
@@ -125,10 +137,27 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
         web3 = new Web3(Web3.givenProvider || ethereum); // switch to version 1.0 when using metamask; provide web3 functions for Opera
         //typeof web3 === 'undefined' || web3 == 'undefined'
         log(`web3 is present: ${web3.version}`); // note: use ` (back quote)
-        network = await web3.eth.net.getId().catch( (reason) => log(`Cannnot find network ${reason}`) );            
-        if (typeof network === 'undefined' || network == 1) 
+        
+        
+        var chainIdResult = await ethChainId();
+        
+        var chainId=parseInt(chainIdResult.result)
+        log (`Found chainid ${chainId}`);
+        
+        
+        const chainInfo = await fetch(`https://raw.githubusercontent.com/ethereum-lists/chains/master/_data/chains/${chainId}.json`);
+        const chainJson = await chainInfo.json();
+        console.log(chainJson);
+        
+        log(`Chain id: ${chainId} name: ${chainJson.name} shortname: ${chainJson.shortName} <a href="${chainJson.infoURL}" target="_blank" >more info</a>`);
+        
+        
+        
+        network = await web3.eth.net.getNetworkType().catch( (reason) => log(`Cannnot find network ${reason}`) );            
+        log(`Ethereum network: ${network}`) 
+        if (typeof network === 'undefined' || network == "main") 
             { log("Please select a test network");return;}
-        log(`Ethereum network: ${getNetwork()}`)
+
         
         addressFaucet = web3.eth.accounts.privateKeyToAccount(privateKey).address; // vanity address: '0x111Eb30919a11DA63423cECC8424969A5cF18099': ~Web3            
         web3.eth.accounts.wallet.add(privateKey);

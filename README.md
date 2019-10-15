@@ -755,16 +755,6 @@ https://grafana.com/grafana/dashboards/6976
 [coinbase]:           https://www.coinbase.com/
 
 
-# Login and user data
-
-| System        | Github               | Documentation
-| --------      | -------              | -------------
-| [3box]        | [3box_github]        | [3box_docs]
-
-[3box]:         https://3box.io/
-[3box_github]:  https://github.com/3box/3box
-[3box_docs]:    https://docs.3box.io/
-
 
 
 # Solidity
@@ -1405,7 +1395,7 @@ See also [Security best practices](#security-best-practices)
 | [etherscan_verify]<br>[etherscan_ver_howto]   | [register_function]      | [radspec]
 | [etherchain_verify]                           | [4bytes]                                    
 | [blockscout_verify]                           | [clef_4bytes]
-| [ethscan_auto] 
+| [ethscan_auto]                                | [curated4b]
 | [publish_ipfsremix]
 
 [etherscan_verify]:     https://etherscan.io/verifyContract
@@ -1418,8 +1408,8 @@ See also [Security best practices](#security-best-practices)
 
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
-
 [clef_4bytes]:          https://github.com/ethereum/go-ethereum/tree/master/signer/fourbyte
+[curated4b]:            https://github.com/ethereum-lists/4bytes
 
 [radspec]:              https://github.com/aragon/radspec
 
@@ -2178,14 +2168,15 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 [streetcred]:       https://www.streetcred.co/
 
 
+# Login and user data
 
-## Profiles
+| System        | Github               | Documentation
+| --------      | -------              | -------------
+| [3box]        | [3box_github]        | [3box_docs]
 
-| Profiles
-|----------
-| [3box]
-
-[3box]:     https://3box.io/
+[3box]:         https://3box.io/
+[3box_github]:  https://github.com/3box/3box
+[3box_docs]:    https://docs.3box.io/
 
 
 

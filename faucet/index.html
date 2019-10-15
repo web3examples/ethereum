@@ -53,8 +53,9 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
     const amount =0.1;
     var network;
 
-    function EtherscanLink(pref,link) {   
-       return `<a href="https://${web3.eth.net.getNetworkType()}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
+    async function EtherscanLink(pref,link) {     
+       var nwType = await web3.eth.net.getNetworkType();
+       return `<a href="https://${nwType}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
     }
     
     function log(str,...arguments) {        
@@ -89,7 +90,7 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
       document.getElementById("get").style.display = "block";          
       console.log(result);
       if (result) 
-          log(`Transaction: ${EtherscanLink("tx",result.transactionHash)}`);
+          log(`Transaction: ${await EtherscanLink("tx",result.transactionHash)}`);
       updateBalances() 
     }
     
@@ -166,8 +167,8 @@ const promisify = (inner) =>
         var accounts=await web3.eth.getAccounts();
         addressSelf = accounts[0];
         
-        log(`My own address: ${EtherscanLink("address",addressSelf)}`);
-        log(`Faucet address: ${EtherscanLink("address",addressFaucet)}`);
+        log(`My own address: ${await EtherscanLink("address",addressSelf)}`);
+        log(`Faucet address: ${await EtherscanLink("address",addressFaucet)}`);
         document.getElementById("amount").value = precise(0.1).toString();
         updateBalances() 
    }     

@@ -814,27 +814,27 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Details
 
-| Solidity                                  | Instances
-| ---------------                           | -------- 
-| Layout, comments, natspec                 | [tosh_layout] [natspec] [sol_style]
-| General data types                        | [tosh_datatypes]  [yt_sol_7string]
-| Ether and Time Units                      | [tosh_ethertime]
-| Control Structures                        | [tosh_control]
-| Function Calls                            | [tosh_io] [tosh_functionret]
-| Special Variables & functions             | [tosh_specials]
-| Operators                                 | [tosh_operators]
-| Variables Scoping                         | [tosh_scoping]
-| Arrays/Structs/Enums/Mapping              | [sol_mapping] [coursetro_map] [yt_sol_6datatypes]
-| Interfacing with other Contracts          | [tosh_import] [zohaid_library] [yt_sol_4imports]
-| Creating contracts                        | [sol_create] [tosh_createcon]
-| Contract Inheritance (incl multiple)      | [tosh_inherit] [yt_sol_2inherit]
-| Abstract Contracts                        | [tosh_abstract]
-| Visibility Specifiers and Getters         | [sol_vis]
-| Fallback Functions                        | [tosh_fallback]
-| Function Modifiers                        | [tosh_modifiers] [yt_sol_3modifiers]
-| Events                                    | [tosh_events] [yt_sol_5events]
-| Error handling                            | [sol_error] [tosh_except]
-| Idiosyncrasies                            | [mig_idiosyncrasies]
+| Solidity                                  | Explain                             | Video               | Source example
+| ---------------                           | --------                            | -------             | --------------------
+| Layout, comments, natspec                 | [tosh_layout] [natspec] [sol_style] |                     |
+| General data types                        | [tosh_datatypes]                    | [yt_sol_7string]    | [sbe_state]
+| Ether and Time Units                      | [tosh_ethertime]                    |                     |
+| Control Structures                        | [tosh_control]                      |                     |
+| Function Calls                            | [tosh_io] [tosh_functionret]        |                     |
+| Special Variables & functions             | [tosh_specials]                     |                     |
+| Operators                                 | [tosh_operators]                    |                     |
+| Variables Scoping                         | [tosh_scoping]                      |                     |
+| Arrays/Structs/Enums/Mapping              | [sol_mapping] [coursetro_map]       | [yt_sol_6datatypes] |
+| Interfacing with other Contracts          | [tosh_import] [zohaid_library]      | [yt_sol_4imports]   |
+| Creating contracts                        | [sol_create] [tosh_createcon]       |                     |
+| Contract Inheritance (incl multiple)      | [tosh_inherit]                      | [yt_sol_2inherit]   |
+| Abstract Contracts                        | [tosh_abstract]                     |                     |
+| Visibility Specifiers and Getters         | [sol_vis]                           |                     |
+| Fallback Functions                        | [tosh_fallback]                     |                     |
+| Function Modifiers                        | [tosh_modifiers]                    | [yt_sol_3modifiers] |
+| Events                                    | [tosh_events]                       | [yt_sol_5events]    |
+| Error handling                            | [sol_error] [tosh_except]           |                     |
+| Idiosyncrasies                            | [mig_idiosyncrasies]                |                     |
 
 [mig_idiosyncrasies]: https://github.com/miguelmota/solidity-idiosyncrasies
 
@@ -870,6 +870,46 @@ https://grafana.com/grafana/dashboards/6976
 [yt_sol_6datatypes]: https://www.youtube.com/watch?v=8UhO3IKApSg
 [yt_sol_7string]:    https://www.youtube.com/watch?v=6iiWwT0O2fY
 
+[sbe_state]:    https://solidity-by-example.org/state-variables
+[sbe_state]:    https://solidity-by-example.org/hello-world
+[sbe_state]:    https://solidity-by-example.org/state-variables
+[sbe_state]:    https://solidity-by-example.org/ether-units
+[sbe_state]:    https://solidity-by-example.org/gas
+[sbe_state]:    https://solidity-by-example.org/function
+[sbe_state]:    https://solidity-by-example.org/view-and-pure-functions
+[sbe_state]:    https://solidity-by-example.org/function-modifier
+[sbe_state]:    https://solidity-by-example.org/inheritance
+[sbe_state]:    https://solidity-by-example.org/shadowing-inherited-state-variables
+[sbe_state]:    https://solidity-by-example.org/constructor
+[sbe_state]:    https://solidity-by-example.org/super
+[sbe_state]:    https://solidity-by-example.org/visibility
+[sbe_state]:    https://solidity-by-example.org/events
+[sbe_state]:    https://solidity-by-example.org/error
+[sbe_state]:    https://solidity-by-example.org/loop
+[sbe_state]:    https://solidity-by-example.org/enum
+[sbe_state]:    https://solidity-by-example.org/mapping
+[sbe_state]:    https://solidity-by-example.org/array
+[sbe_state]:    https://solidity-by-example.org/structs
+[sbe_state]:    https://solidity-by-example.org/new-contract
+[sbe_state]:    https://solidity-by-example.org/calling-contract
+[sbe_state]:    https://solidity-by-example.org/call
+[sbe_state]:    https://solidity-by-example.org/delegatecall
+[sbe_state]:    https://solidity-by-example.org/Library
+[sbe_state]:    https://solidity-by-example.org/payable
+[sbe_state]:    https://solidity-by-example.org/sending-ether
+[sbe_state]:    https://solidity-by-example.org/fallback
+[sbe_state]:    https://solidity-by-example.org/fallback-gas-limit
+[sbe_state]:    https://solidity-by-example.org/re-entrancy
+[sbe_state]:    https://solidity-by-example.org/self-destruct
+[sbe_state]:    https://solidity-by-example.org/hashing
+
+[sbe_state]:    https://solidity-by-example.org/signature
+[sbe_state]:    https://solidity-by-example.org/import
+[sbe_state]:    https://solidity-by-example.org/safe-math
+
+
+
+
 
 ## Alternative languages for solidity
 
@@ -903,16 +943,16 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Development tools
 
-| Developer portal   | Online editors   | Deployment       | Package managers    | Graphical tools               | Debugger
-| ------------------ | ---------------  | ---------------- | ------------------- | ---------------               | ----------
-| [consensys-dev]    | [play-eth]       | [truffle]        | [ethpm]             | [sol2uml]                     | [remix-eth]
-| [tool-list]        | [remix-eth]      | [zeppelinos]     | [aragonpm]          | [surya] (uses: [graphviz])    | [truffle]
-| [toolkit]          | [superblocks]    | [embark]         |                     | [solgraph] (uses: [graphviz]) | [evmlab]
-| [tools-dutch]      | [ethfiddle]      | [dapptools]      |                     | [piet]                        | [graphdebugger]
-| [eth_dev]          |                  | [more-frameworks]|                     | [sif]
-| [dappuniversity]   |                  | [superblocks]
-| [dev_tut]          |                  | [buidler]
-| [blockgeeks-devs] 
+| Developer portal   | Online editors   | Package managers | Graphical tools               | Debugger
+| ------------------ | ---------------  | -----------------| ---------------               | ----------
+| [consensys-dev]    | [play-eth]       | [ethpm]          | [sol2uml]                     | [remix-eth]
+| [tool-list]        | [remix-eth]      | [aragonpm]       | [surya] (uses: [graphviz])    | [truffle]
+| [toolkit]          | [superblocks]    |                  | [solgraph] (uses: [graphviz]) | [evmlab]
+| [tools-dutch]      | [ethfiddle]      |                  | [piet]                        | [graphdebugger]
+| [eth_dev]          |                  |                  | [sif]
+| [dappuniversity]   |                  | 
+| [dev_tut]          |                  | 
+| [blockgeeks-devs]  |                  | 
 | [buidl] 
 | [eth_nw_learn]
 | [kauri] 
@@ -937,13 +977,7 @@ https://grafana.com/grafana/dashboards/6976
 [superblocks]:     https://lab.superblocks.com
 [ethfiddle]:       https://ethfiddle.com/
 
-[truffle]:         https://truffleframework.com/
-[zeppelinos]:      https://zeppelinos.org/
-[embark]:          https://embark.status.im/
-[dapptools]:       http://dapp.tools/dapp/
-[more-frameworks]: https://github.com/ConsenSys/ethereum-developer-tools-list#frameworks
-[superblocks]:     https://superblocks.com/
-[buidler]:         https://buidler.dev
+
 
 [ethpm]:           https://www.ethpm.com/
 [aragonpm]:        https://hack.aragon.org/docs/apm-intro.html
@@ -959,6 +993,31 @@ https://grafana.com/grafana/dashboards/6976
 [evmlab]:          https://github.com/ethereum/evmlab
 [graphdebugger]:   https://github.com/fergarrui/ethereum-graph-debugger
 
+
+## Deployment frameworks
+
+| Overview           |  Framework
+| --------------     | -----------
+| [more-frameworks]  | [truffle]
+|                    | [zeppelinos]
+|                    | [embark]
+|                    | [dapptools]
+|                    | [superblocks]
+|                    | [buidler]
+|                    | [brownie]
+|                    | [etherlime]
+
+
+[more-frameworks]: https://github.com/ConsenSys/ethereum-developer-tools-list#frameworks
+
+[truffle]:         https://truffleframework.com/
+[zeppelinos]:      https://zeppelinos.org/
+[embark]:          https://embark.status.im/
+[dapptools]:       http://dapp.tools/dapp/
+[superblocks]:     https://superblocks.com/
+[buidler]:         https://buidler.dev
+[brownie]:         https://github.com/iamdefinitelyahuman/brownie
+[etherlime]:       https://github.com/LimeChain/etherlime
 
 ## Development process
 
@@ -976,6 +1035,58 @@ https://grafana.com/grafana/dashboards/6976
 [con_checklist]:         https://consensys.github.io/smart-contract-best-practices/documentation_procedures/
 
 [ocean_int]:             https://blog.oceanprotocol.com/continuous-integration-at-ocean-be2584564af1
+
+
+## Testing
+
+| Testing overview | Tools          | Also see                                          | Coverage       | Examples
+|------------      | -------------  |----------                                         | --------       | ----------
+| [rocktest]       | [eth_tester]   | [Security tools](#security-tools)                 | [sol-coverage] | [tontine]
+| [jaxtest]        | [dappeteer]    | [Javascript test tools](../../javascript)         |                | [qainfotech_truf]
+| [solstate]       |                | [Deployment frameworks](#deployment-frameworks)   |                | [truf_test_yt]
+| [edgefundtest]   |                | [Bounties and audits](#bounties-and-audits)       |                | [ddns_test]
+| [ethhubtest]     |                | [Testnets](#testnets)                             |                | [mintest]
+|                  |                |                                                   |                | [erc20test]
+|                  |                |                                                   |                | [testguide]
+|                  |                |                                                   |                | [front_test]
+|                  |                |                                                   |                | 
+|                  |                |                                                   |                | 
+|                  |                |                                                   |                | 
+
+
+
+
+[rocktest]:         https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001
+[jaxtest]:          https://jaxenter.com/ins-outs-testing-blockchain-apps-146447.html
+[solstate]:         https://dappsdev.org/hands-on/testing/solidity-state-machines/
+[edgefundtest]:     https://medium.com/edgefund/testing-and-code-coverage-of-solidity-smart-contracts-660cb6291701
+[ethhubtest]:       https://docs.ethhub.io/ethereum-basics/development/testing/
+
+
+[eth_tester]:       https://github.com/ethereum/eth-tester
+[dappeteer]:        https://github.com/decentraland/dappeteer
+
+
+[tontine]:          https://developer.ibm.com/recipes/tutorials/work-with-ethereum-solidity-and-truffle-unit-testing-in-tontine-dapp-game/#r_step4
+[qainfotech_truf]:  https://qainfotech.com/truffle-a-framework-for-solidity-smart-contracts/
+[truf_test_yt]:     https://www.youtube.com/watch?v=b2VInFwZmNw
+[ddns_test]:        https://hack.bg/blog/tutorials/part-two-unit-testing-build-a-decentralized-domain-name-system-ddns-on-top-of-ethereum/
+[mintest]:          https://hackernoon.com/minimal-solidity-contract-testing-with-ganache-and-jest-f735547d9643
+[erc20test]:        https://medium.com/coinmonks/how-to-test-ethereum-smart-contracts-ac28fa852281
+[testguide]:        https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-ethereum-smart-contracts-in-go-9fc34b178d78
+[front_test]:       https://ethereum.gitbooks.io/frontier-guide/testing_contracts_and_transactions.html
+
+[sol-coverage]:     https://github.com/sc-forks/solidity-coverage
+
+
+### Blockchain test
+
+| Blockchain tests
+| --------------
+| [ethereum_test]
+
+[ethereum_test]:    https://github.com/ethereum/tests
+
 
 
 # Frontend
@@ -1290,7 +1401,7 @@ Also see [Explorers](#explorers)
 | Overview              | Auditors           | Audit requests  | Audit reports        | Bug Bounty / audit platform | How to
 | -------------------   | -----------        | ----------      | -----------          | ------                      | ------------
 | [overview_auditors]   | [calistocw_req]    | [public_audits] |                      | [bugbounty]                 | [howtoaudit]
-| [etherscan_auditors]  | [diligence]        |                 | [authio_audits]      | [bountyone]
+| [etherscan_auditors]  | [diligence]        |                 | [authio_audits]      | [bountyone]                 | [audit_bp]
 |                       | [rtver_audit]      |                 | [quillhash_audits]   | [calistocw_audit]
 |                       | [amberdata]        |                 | [iosiro_audits]      | [solidified]
 |                       | [certik]           |                 | [openzeppelin_audits]| 
@@ -1357,13 +1468,13 @@ Also see [Explorers](#explorers)
 [quantstamp3]:          https://certificate.quantstamp.com/view/pool-together-contracts
 [sigmaprime_dapper]:    https://blog.sigmaprime.io/dapper-wallet-review.html
 
-[howtoaudit]:           https://blockgeeks.com/guides/audit-smart-contract/
 [calistocw_audit]:      https://github.com/EthereumCommonwealth/Auditing
 [bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/
 [bountyone]:            https://bountyone.io/
 [solidified]:           https://solidified.io/
 
-
+[howtoaudit]:           https://blockgeeks.com/guides/audit-smart-contract/
+[audit_bp]:             https://dev.to/smartym/how-to-test-ethereum-smart-contracts-audit-best-practices-53kg
 
 # Best practices
 
@@ -2218,6 +2329,8 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [hydrostore] (hydro based dapps)
 | [squarelinkdapps] (login first)
 | [android_apps]
+| [tryethereum.today]
+
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -2242,8 +2355,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [wutui]:                https://wutui.pro/dapps/?chain=eth&category=all
 [hydrostore]:           https://hydrostore.io/
 [squarelinkdapps]:      https://app.squarelink.com/explore
-
 [android_apps]:         https://play.google.com/store/search?q=ethereum&c=apps
+[tryethereum.today]:    https://tryethereum.today/
+
 
 [nonfungible]:          https://nonfungible.com/market/history
 

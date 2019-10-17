@@ -566,7 +566,7 @@ https://grafana.com/grafana/dashboards/6976
 | [tokenary_safari]     |                      | [kirby] (also iframe)    | [torus]
 | [guarda_ext]
 | [venus_ext] (cybermiles network)
-
+| [squarelink_ext]<br>[sl_ext_github]
 
 [metamask]:             https://metamask.io/
 [equal]:                https://equal.tech/
@@ -575,6 +575,9 @@ https://grafana.com/grafana/dashboards/6976
 [tokenary_safari]:      https://apps.apple.com/us/app/ethereum-wallet-tokenary/id1375542355?l=en&mt=12
 [guarda_ext]:           https://guarda.co/guarda-extension
 [venus_ext]:            https://www.cybermiles.io/en-us/blockchain-infrastructure/venus/
+
+[squarelink_ext]:       https://chrome.google.com/webstore/detail/squarelink/agfcekccejfcalclbcgjndkgjboidhbk
+[sl_ext_github]:        https://github.com/Squarelink-Inc/Squarelink-Extension
 
 [dapper]:               https://www.meetdapper.com/
 

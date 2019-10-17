@@ -816,7 +816,7 @@ https://grafana.com/grafana/dashboards/6976
 
 | Solidity                                  | Explain                             | Video               | Source example
 | ---------------                           | --------                            | -------             | --------------------
-| Layout, comments, natspec                 | [tosh_layout] [natspec] [sol_style] |                     |
+| Layout, comments, natspec                 | [tosh_layout]<br>[natspec]<br>[sol_style] |                     |
 | General data types                        | [tosh_datatypes]                    | [yt_sol_7string]    | [sbe_state]
 | Ether and Time Units                      | [tosh_ethertime]                    |                     |
 | Control Structures                        | [tosh_control]                      |                     |
@@ -870,45 +870,42 @@ https://grafana.com/grafana/dashboards/6976
 [yt_sol_6datatypes]: https://www.youtube.com/watch?v=8UhO3IKApSg
 [yt_sol_7string]:    https://www.youtube.com/watch?v=6iiWwT0O2fY
 
-[sbe_state]:    https://solidity-by-example.org/state-variables
-[sbe_state]:    https://solidity-by-example.org/hello-world
-[sbe_state]:    https://solidity-by-example.org/state-variables
-[sbe_state]:    https://solidity-by-example.org/ether-units
-[sbe_state]:    https://solidity-by-example.org/gas
-[sbe_state]:    https://solidity-by-example.org/function
-[sbe_state]:    https://solidity-by-example.org/view-and-pure-functions
-[sbe_state]:    https://solidity-by-example.org/function-modifier
-[sbe_state]:    https://solidity-by-example.org/inheritance
-[sbe_state]:    https://solidity-by-example.org/shadowing-inherited-state-variables
-[sbe_state]:    https://solidity-by-example.org/constructor
-[sbe_state]:    https://solidity-by-example.org/super
-[sbe_state]:    https://solidity-by-example.org/visibility
-[sbe_state]:    https://solidity-by-example.org/events
-[sbe_state]:    https://solidity-by-example.org/error
-[sbe_state]:    https://solidity-by-example.org/loop
-[sbe_state]:    https://solidity-by-example.org/enum
-[sbe_state]:    https://solidity-by-example.org/mapping
-[sbe_state]:    https://solidity-by-example.org/array
-[sbe_state]:    https://solidity-by-example.org/structs
-[sbe_state]:    https://solidity-by-example.org/new-contract
-[sbe_state]:    https://solidity-by-example.org/calling-contract
-[sbe_state]:    https://solidity-by-example.org/call
-[sbe_state]:    https://solidity-by-example.org/delegatecall
-[sbe_state]:    https://solidity-by-example.org/Library
-[sbe_state]:    https://solidity-by-example.org/payable
-[sbe_state]:    https://solidity-by-example.org/sending-ether
-[sbe_state]:    https://solidity-by-example.org/fallback
-[sbe_state]:    https://solidity-by-example.org/fallback-gas-limit
-[sbe_state]:    https://solidity-by-example.org/re-entrancy
-[sbe_state]:    https://solidity-by-example.org/self-destruct
-[sbe_state]:    https://solidity-by-example.org/hashing
 
-[sbe_state]:    https://solidity-by-example.org/signature
-[sbe_state]:    https://solidity-by-example.org/import
-[sbe_state]:    https://solidity-by-example.org/safe-math
+[sbe_hello]:         https://solidity-by-example.org/hello-world
+[sbe_state]:         https://solidity-by-example.org/state-variables
+[sbe_ether]:         https://solidity-by-example.org/ether-units
+[sbe_gas]:           https://solidity-by-example.org/gas
+[sbe_function]:      https://solidity-by-example.org/function
+[sbe_viewpure]:      https://solidity-by-example.org/view-and-pure-functions
+[sbe_functmod]:      https://solidity-by-example.org/function-modifier
+[sbe_inherit]:       https://solidity-by-example.org/inheritance
+[sbe_shadow]:        https://solidity-by-example.org/shadowing-inherited-state-variables
+[sbe_constructor]:   https://solidity-by-example.org/constructor
+[sbe_super]:         https://solidity-by-example.org/super
+[sbe_visibil]:       https://solidity-by-example.org/visibility
+[sbe_events]:        https://solidity-by-example.org/events
+[sbe_error]:         https://solidity-by-example.org/error
+[sbe_loop]:          https://solidity-by-example.org/loop
+[sbe_enum]:          https://solidity-by-example.org/enum
+[sbe_mapping]:       https://solidity-by-example.org/mapping
+[sbe_array]:         https://solidity-by-example.org/array
+[sbe_struct]:        https://solidity-by-example.org/structs
+[sbe_newcontract]:   https://solidity-by-example.org/new-contract
+[sbe_callcontract]:  https://solidity-by-example.org/calling-contract
+[sbe_call]:          https://solidity-by-example.org/call
+[sbe_dg_call]:       https://solidity-by-example.org/delegatecall
+[sbe_libarary]:      https://solidity-by-example.org/Library
+[sbe_payable]:       https://solidity-by-example.org/payable
+[sbe_sendeth]:       https://solidity-by-example.org/sending-ether
+[sbe_fallback]:      https://solidity-by-example.org/fallback
+[sbe_fallbackgas]:   https://solidity-by-example.org/fallback-gas-limit
+[sbe_reenter]:       https://solidity-by-example.org/re-entrancy
+[sbe_selfdestr]:     https://solidity-by-example.org/self-destruct
+[sbe_hash]:          https://solidity-by-example.org/hashing
 
-
-
+[sbe_sign]:          https://solidity-by-example.org/signature
+[sbe_import]:        https://solidity-by-example.org/import
+[sbe_math]:          https://solidity-by-example.org/safe-math
 
 
 ## Alternative languages for solidity

@@ -112,7 +112,7 @@ This document contains info about:
 | ---------------   | ---------------- | ---------------      | ---------------
 | [mastering]       | [youtube-exp]    | [eth-mag]            | [zastrin]
 | [ethereum.org]    | [youtube-arch]   | [tcrpartybot]        | [coursetro]
-| [ethhub]          |                  | [tokeneconomy]       | [tutorialspoint]
+| [ethhub]          |                  | [tokeneconomy]       | [tutorialspoint_eth]
 | [eth-intro]       |                  | [weekinethereumnews] | [ethereumdev]
 | [eth-guide]       |                  | [eth_stackexchange]  | [ludu]
 | [basics]          |                  | [delegatecall]       | [austin]
@@ -151,7 +151,7 @@ This document contains info about:
 
 [zastrin]:            https://www.zastrin.com/courses/simple-voting-vid/lessons/1-1
 [coursetro]:          https://coursetro.com/courses/20/Developing-Ethereum-Smart-Contracts-for-Beginners
-[tutorialspoint]:     https://www.tutorialspoint.com/ethereum/index.htm
+[tutorialspoint_eth]: https://www.tutorialspoint.com/ethereum
 [ethereumdev]:        https://ethereumdev.io/
 [ludu]:               https://www.ludu.co/course/ethereum
 [austin]:             https://medium.com/@austin_48503/rapid-dapp-prototyping-3823e1f565c4
@@ -761,20 +761,21 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Solidity Overview
 
-| Overview                   | Solidity collections    | Solidity code examples                    | Solidity training
-| -----------------          |  ---------------        | ----------------                          | -------------
-| [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)
-| [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]
-| [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]
-| [learn_solidity]           | [secondstate]	       |										   | [kcl_class]
+| Overview                   | Solidity collections    | Solidity code examples                    | Solidity training                           | Cheat sheets
+| -----------------          |  ---------------        | ----------------                          | -------------                               | -------
+| [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)                     | [cheatsheet1]
+| [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]  | [cheatsheet2]
+| [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]                             | [cheatsheet3] 
+| [learn_solidity]           | [secondstate]           |                                           | [kcl_class]
 | [blockgeeks_sol1]          | [contractfinder]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
 | [soliditykoans]            | [verified_contracts]
 | [top10_tut]                | [github_sol]
 | [bitdegree]                | [azure_samples]
-| [cheatsheet]               | [top5]
-| [awesome-sol]
+| [awesome-sol]              | [top5]
+| [tutorialspoint_sol]
+| [manojpramesh]
 
 [cryptozombies]:       https://cryptozombies.io/en/lesson/1
 [solidity_indepth]:    https://solidity.readthedocs.io/en/develop/solidity-in-depth.html
@@ -786,9 +787,14 @@ https://grafana.com/grafana/dashboards/6976
 [soliditykoans]:       https://soliditykoans.org/
 [top10_tut]:           https://dev.to/charumalikcs/top-10-solidity-tutorials-1495
 [bitdegree]:           https://www.bitdegree.org/learn/learn-solidity
-[cheatsheet]:          https://intellipaat.com/blog/tutorial/blockchain-tutorial/blockchain-cheat-sheet/
 [awesome-sol]:         https://github.com/bkrem/awesome-solidity
+[tutorialspoint_sol]:  https://www.tutorialspoint.com/solidity/
+[manojpramesh]:        https://github.com/manojpramesh/solidity-cheatsheet
 
+
+[cheatsheet1]:         https://intellipaat.com/blog/tutorial/blockchain-tutorial/blockchain-cheat-sheet/
+[cheatsheet2]:         https://s3-eu-west-1.amazonaws.com/b9-academy-assets/public/solidity-cheatsheet.png
+[cheatsheet3]:         https://topmonks.github.io/solidity_quick_ref/
 
 [code_examples]:       https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
 [smartcontract_codes]: https://smartcontract.codes
@@ -805,36 +811,36 @@ https://grafana.com/grafana/dashboards/6976
 [soliditybyexample]:   https://solidity-by-example.org/
 [smartcontractprg]:    https://smartcontractprogrammer.com/
 [babysteps]:           https://github.com/cyrusadkisson/solidity-baby-steps
-[compiler_errors]: 	   https://github.com/CJ42/Solidity-Compiler-Debug-List
+[compiler_errors]:     https://github.com/CJ42/Solidity-Compiler-Debug-List
 
 [ninabreznik_learn]:   https://ninabreznik.github.io/workshop-solidity/
 [willitscale_learn]:   https://github.com/willitscale/learning-solidity
 [bitdegree_sol]:       https://www.bitdegree.org/learn/learn-solidity
-[kcl_class]:		   https://blockchain.kcl.ac.uk/cryptocurrencyclass/
+[kcl_class]:           https://blockchain.kcl.ac.uk/cryptocurrencyclass/
 
 ## Details
 
-| Solidity                                  | Explain                             | Video               | Source example
-| ---------------                           | --------                            | -------             | --------------------
-| Layout, comments, natspec                 | [tosh_layout]<br>[natspec]<br>[sol_style] |                     |
-| General data types                        | [tosh_datatypes]                    | [yt_sol_7string]    | [sbe_state]
-| Ether and Time Units                      | [tosh_ethertime]                    |                     |
-| Control Structures                        | [tosh_control]                      |                     |
-| Function Calls                            | [tosh_io] [tosh_functionret]        |                     |
-| Special Variables & functions             | [tosh_specials]                     |                     |
-| Operators                                 | [tosh_operators]                    |                     |
-| Variables Scoping                         | [tosh_scoping]                      |                     |
-| Arrays/Structs/Enums/Mapping              | [sol_mapping] [coursetro_map]       | [yt_sol_6datatypes] |
-| Interfacing with other Contracts          | [tosh_import] [zohaid_library]      | [yt_sol_4imports]   |
-| Creating contracts                        | [sol_create] [tosh_createcon]       |                     |
-| Contract Inheritance (incl multiple)      | [tosh_inherit]                      | [yt_sol_2inherit]   |
-| Abstract Contracts                        | [tosh_abstract]                     |                     |
-| Visibility Specifiers and Getters         | [sol_vis]                           |                     |
-| Fallback Functions                        | [tosh_fallback]                     |                     |
-| Function Modifiers                        | [tosh_modifiers]                    | [yt_sol_3modifiers] |
-| Events                                    | [tosh_events]                       | [yt_sol_5events]    |
-| Error handling                            | [sol_error] [tosh_except]           |                     |
-| Idiosyncrasies                            | [mig_idiosyncrasies]                |                     |
+| Solidity                                  | Explain                                   | Video               | Source example
+| ---------------                           | --------                                  | -------             | --------------------
+| Layout, comments, natspec                 | [sol_style]<br>[natspec]<br>[tosh_layout] |                     |
+| General data types                        | [tosh_datatypes]                          | [yt_sol_7string]    | [sbe_state]
+| Ether and Time Units                      | [tosh_ethertime]                          |                     |
+| Control Structures                        | [tosh_control]                            |                     |
+| Function Calls                            | [tosh_io] [tosh_functionret]              |                     |
+| Special Variables & functions             | [tosh_specials]                           |                     |
+| Operators                                 | [tosh_operators]                          |                     |
+| Variables Scoping                         | [tosh_scoping]                            |                     |
+| Arrays/Structs/Enums/Mapping              | [sol_mapping] [coursetro_map]             | [yt_sol_6datatypes] |
+| Interfacing with other Contracts          | [tosh_import] [zohaid_library]            | [yt_sol_4imports]   |
+| Creating contracts                        | [sol_create] [tosh_createcon]             |                     |
+| Contract Inheritance (incl multiple)      | [tosh_inherit]                            | [yt_sol_2inherit]   |
+| Abstract Contracts                        | [tosh_abstract]                           |                     |
+| Visibility Specifiers and Getters         | [sol_vis]                                 |                     |
+| Fallback Functions                        | [tosh_fallback]                           |                     |
+| Function Modifiers                        | [tosh_modifiers]                          | [yt_sol_3modifiers] |
+| Events                                    | [tosh_events]                             | [yt_sol_5events]    |
+| Error handling                            | [sol_error] [tosh_except]                 |                     |
+| Idiosyncrasies                            | [mig_idiosyncrasies]                      |                     |
 
 [mig_idiosyncrasies]: https://github.com/miguelmota/solidity-idiosyncrasies
 
@@ -2394,7 +2400,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [airswap]:          https://www.airswap.io/
 [dydx]:             https://dydx.exchange/
 
-[augur]:    		https://www.augur.net/		
+[augur]:            https://www.augur.net/      
 
 
 [defipulse]:        http://defipulse.com
@@ -2455,13 +2461,13 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [megacryptopolis]:  https://www.megacryptopolis.com/
 [bccuties]:         https://blockchaincuties.com/
 [hyperdragons]:     https://hyperdragons.alfakingdom.com/
-[decentraland]:	  	https://decentraland.org/		
-[axieinfinity]:   	https://axieinfinity.com/		
-[footbattle]:       http://footbattle.io/		
-[kittybounties]:  	http://kittybounties.com/		
-[heavencat]:      	https://heaven.cat/		
-[kittyhelper]:	  	https://kittyhelper.co/		
-[cryptoink]:      	https://www.crypt-oink.io/		
+[decentraland]:     https://decentraland.org/       
+[axieinfinity]:     https://axieinfinity.com/       
+[footbattle]:       http://footbattle.io/       
+[kittybounties]:    http://kittybounties.com/       
+[heavencat]:        https://heaven.cat/     
+[kittyhelper]:      https://kittyhelper.co/     
+[cryptoink]:        https://www.crypt-oink.io/      
 [cryptovoxels]:     https://www.cryptovoxels.com/
 
 
@@ -2473,10 +2479,10 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Autonomous organisations
 
-| DAO				| LAO / Smart Company 
-| --------------	| ---------
-| [aragon]			| [thelao]
-| [autark]			| [korporatio]
+| DAO               | LAO / Smart Company 
+| --------------    | ---------
+| [aragon]          | [thelao]
+| [autark]          | [korporatio]
 | [the_dao_next]    
 | [makerdao]
 | [molochdao]
@@ -2484,18 +2490,18 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [foundups]
 | [steam_dao]
 
-[aragon]: 			https://aragon.org/
-[autark]: 			https://www.autark.xyz/apps
-[the_dao_next]:		https://github.com/the-dao/whitepaper
-[makerdao]: 		https://makerdao.com/en/
-[molochdao]:		https://molochdao.com/
-[dorg]:				https://dorg.tech
-[foundups]:  		https://www.foundups.com/
-[steam_dao]:		https://developers.steem.io/services/steem.dao
+[aragon]:           https://aragon.org/
+[autark]:           https://www.autark.xyz/apps
+[the_dao_next]:     https://github.com/the-dao/whitepaper
+[makerdao]:         https://makerdao.com/en/
+[molochdao]:        https://molochdao.com/
+[dorg]:             https://dorg.tech
+[foundups]:         https://www.foundups.com/
+[steam_dao]:        https://developers.steem.io/services/steem.dao
 
 
-[thelao]:			https://www.thelao.io/
-[korporatio]: 		https://korporatio.com/
+[thelao]:           https://www.thelao.io/
+[korporatio]:       https://korporatio.com/
 
 ## Marketplace
 
@@ -2645,29 +2651,29 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 ## Tokenize
 
 | Overview tokenisation | Tokenize projects
-| ---------				| -----
-| [digalive]  			| [alphapoint]
-|						| [harbor]	
-|						| [polymath]
-|						| [smartvalor]
-|						| [smartlands]
-|						| [realt]
-|						| [vertalo]
-|						| [blocksquare]
-|						| [assetblock]
+| ---------             | -----
+| [digalive]            | [alphapoint]
+|                       | [harbor]  
+|                       | [polymath]
+|                       | [smartvalor]
+|                       | [smartlands]
+|                       | [realt]
+|                       | [vertalo]
+|                       | [blocksquare]
+|                       | [assetblock]
 
 
-[digalive]: 		https://digitalasset.live/
+[digalive]:         https://digitalasset.live/
 
-[alphapoint]: 		https://alphapoint.com/
-[harbor]: 			https://harbor.com/
-[polymath]: 		https://polymath.network/
-[smartvalor]: 		https://smartvalor.com/en/
-[smartlands]: 		https://smartlands.io/
-[realt]: 			https://realt.co/
-[vertalo]:			https://www.vertalo.com/
-[blocksquare]:		https://blocksquare.io/
-[assetblock]: 		https://www.assetblock.com/
+[alphapoint]:       https://alphapoint.com/
+[harbor]:           https://harbor.com/
+[polymath]:         https://polymath.network/
+[smartvalor]:       https://smartvalor.com/en/
+[smartlands]:       https://smartlands.io/
+[realt]:            https://realt.co/
+[vertalo]:          https://www.vertalo.com/
+[blocksquare]:      https://blocksquare.io/
+[assetblock]:       https://www.assetblock.com/
 
 # Layer 2
 

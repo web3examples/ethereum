@@ -40,7 +40,7 @@ var video=document.createElement("video");
 video.src="http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText;
 video.class="videoplayer";
 video.controls=false;
-video.style.height="33%";
+video.style.height="30%";
 video.autoplay=true; 
 video.muted=true;  // otherwise not playing automatically
 video.ontimeupdate = function() {VideoLocation()}; // call function when movie is at a different location
@@ -50,19 +50,21 @@ document.body.appendChild(video);
 var newline=document.createElement("br");
 document.body.appendChild(newline);
 
-CreateButton("Rewind",       ()=> video.currentTime =0 );
-CreateButton("Back 1 sec",   ()=> video.currentTime -=1 );
-CreateButton("Forward 1 sec",()=> video.currentTime +=1 );
-CreateButton("Back 30 sec",   ()=> video.currentTime -=30 );
-CreateButton("Forward 30 sec",()=> video.currentTime +=30 );
-CreateButton("25% slower",   ()=> {video.playbackRate *=0.75;video.play();});
-CreateButton("Normal speed", ()=>{video.playbackRate =1;video.play();} );
-CreateButton("25% faster",   ()=> {video.playbackRate *=1.25;video.play();} );
-CreateButton("Pause",        ()=> video.pause() );
-CreateButton("Play",         ()=> video.play() );
-CreateButton("Toggle controls",()=> { video.controls= !video.controls;} );
-CreateButton("Toggle audio",()=> { video.muted= !video.muted;} );
-CreateButton("Full screen",()=> { video.requestFullscreen(); } );
+CreateButton("Rewind",          ()=> video.currentTime =0 );
+CreateButton("Back 1 sec",      ()=> video.currentTime -=1 );
+CreateButton("Forward 1 sec",   ()=> video.currentTime +=1 );
+CreateButton("Back 30 sec",     ()=> video.currentTime -=30 );
+CreateButton("Forward 30 sec",  ()=> video.currentTime +=30 );
+CreateButton("25% slower",      ()=> {video.playbackRate *=0.75;video.play();});
+CreateButton("Normal speed",    ()=>{video.playbackRate =1;video.play();} );
+CreateButton("25% faster",      ()=> {video.playbackRate *=1.25;video.play();} );
+CreateButton("Pause",           ()=> video.pause() );
+CreateButton("Play",            ()=> video.play() );
+CreateButton("Toggle controls", ()=> { video.controls= !video.controls;} );
+CreateButton("Toggle audio",    ()=> { video.muted= !video.muted;} );
+CreateButton("25% smaller",     ()=> { video.style.height = 0.75 * parseFloat(video.style.height)+"%" } );
+CreateButton("25% larger",      ()=> { video.style.height = 1.25 * parseFloat(video.style.height)+"%" } );
+CreateButton("Full screen",     ()=> { video.requestFullscreen(); } );
 
 
 var position=document.createElement("p");

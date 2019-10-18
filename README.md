@@ -122,6 +122,9 @@ This document contains info about:
 | [eth.wiki]
 | [metalist]
 | [concourseopen]
+| [awesomeopensource]
+| [scanate_ethlist]
+
 
 [mastering]:          https://github.com/ethereumbook/ethereumbook
 [howwork]:            https://medium.com/@preethikasireddy/how-does-ethereum-work-anyway-22d1df506369
@@ -135,9 +138,8 @@ This document contains info about:
 [eth.wiki]:           https://eth.wiki
 [metalist]:           https://github.com/buddies2705/Awesome-Ethereum-Metalist
 [concourseopen]:      https://concourseopen.com/
-
-
-
+[awesomeopensource]:  https://awesomeopensource.com/categories/blockchain
+[scanate_ethlist]:    https://github.com/Scanate/EthList
 
 [youtube-exp]:        https://www.youtube.com/results?search_query=ethereum+explained
 [youtube-arch]:       https://www.youtube.com/results?search_query=ethereum+architecture
@@ -243,11 +245,23 @@ This document contains info about:
 
 # Node software
 
+## NOde overview
+
+| Overview              | Experiment 
+|---------              | -----------
+| [client-overview]     | [eth_grid]
+| [understand_nodes]
+
+[client-overview]:  http://www.ethdocs.org/en/latest/ethereum-clients
+[understand_nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
+
+[eth_grid]:         https://grid.ethereum.org/
+
+
 ## Node versions
 
-| Ethereum Nodes     | Information      | Language     |  Github            | Documentation                 | 
+| Ethereum Nodes     | Information      | Language     |  Github            | Documentation 
 | ---------------    |  --------        | ------       | --------------     | ----
-| Overview           | [client-overview]<br>[understand_nodes]|             |  
 | Go Ethereum (~70%) | [geth]           | [go]         | [geth_github]      | [geth_docs]
 | Parity (~25%)      | [parity_eth]     | [rust]       | [parity_github]    | [parity_docs]
 | Aleth/eth (cpp-eth)| [cpp_eth]        | [cpp]        | [aleth_eth_github] | [cpp_docs]
@@ -260,8 +274,6 @@ This document contains info about:
 
 
 [Pantheon]:         https://pegasys.tech/solutions/
-[client-overview]:  http://www.ethdocs.org/en/latest/ethereum-clients
-[understand_nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 
 [geth]:             https://geth.ethereum.org/
 [go]:               https://golang.org/
@@ -827,23 +839,54 @@ https://grafana.com/grafana/dashboards/6976
 | ---------------                           | --------                                  | -------             | --------------------
 | Layout, comments, natspec                 | [sol_style]<br>[natspec]<br>[tosh_layout] |                     |
 | General data types                        | [tosh_datatypes]                          | [yt_sol_7string]    | [sbe_state]
-| Ether and Time Units                      | [tosh_ethertime]                          |                     |
+| Ether and Time Units                      | [tosh_ethertime]                          |                     | [sbe_ether]
 | Control Structures                        | [tosh_control]                            |                     |
-| Function Calls                            | [tosh_io] [tosh_functionret]              |                     |
+| Function Calls                            | [tosh_io]<br>[tosh_functionret]           |                     | [sbe_hello]<br>[sbe_function]
 | Special Variables & functions             | [tosh_specials]                           |                     |
 | Operators                                 | [tosh_operators]                          |                     |
 | Variables Scoping                         | [tosh_scoping]                            |                     |
-| Arrays/Structs/Enums/Mapping              | [sol_mapping] [coursetro_map]             | [yt_sol_6datatypes] |
-| Interfacing with other Contracts          | [tosh_import] [zohaid_library]            | [yt_sol_4imports]   |
-| Creating contracts                        | [sol_create] [tosh_createcon]             |                     |
+| Arrays/Structs/Enums/Mapping              | [sol_mapping]<br>[coursetro_map]          | [yt_sol_6datatypes] | [sbe_array]<br>[sbe_struct]<br>[sbe_enum]<br>[sbe_mapping]
+| Interfacing with other Contracts          | [tosh_import]<br>[zohaid_library]         | [yt_sol_4imports]   |
+| Creating contracts                        | [sol_create]<br>[tosh_createcon]          |                     | [sbe_constructor]
 | Contract Inheritance (incl multiple)      | [tosh_inherit]                            | [yt_sol_2inherit]   |
 | Abstract Contracts                        | [tosh_abstract]                           |                     |
-| Visibility Specifiers and Getters         | [sol_vis]                                 |                     |
-| Fallback Functions                        | [tosh_fallback]                           |                     |
-| Function Modifiers                        | [tosh_modifiers]                          | [yt_sol_3modifiers] |
+| Visibility Specifiers and Getters         | [sol_vis]                                 |                     | [sbe_viewpure]<br>[sbe_visibil]
+| Fallback Functions                        | [tosh_fallback]                           |                     | 
+| Function Modifiers                        | [tosh_modifiers]                          | [yt_sol_3modifiers] | [sbe_functmod]
 | Events                                    | [tosh_events]                             | [yt_sol_5events]    |
-| Error handling                            | [sol_error] [tosh_except]                 |                     |
+| Error handling                            | [sol_error]<br>[tosh_except]              |                     |
 | Idiosyncrasies                            | [mig_idiosyncrasies]                      |                     |
+
+
+[sbe_gas]
+[sbe_inherit]
+[sbe_shadow]
+[sbe_super]
+[sbe_events]
+[sbe_error]
+[sbe_loop]
+
+
+[sbe_newcontract]
+[sbe_callcontract]
+[sbe_call]
+[sbe_dg_call]
+[sbe_library]
+[sbe_payable]
+[sbe_sendeth]
+[sbe_fallback]
+[sbe_fallbackgas]
+[sbe_reenter]
+[sbe_selfdestr]
+[sbe_hash]
+
+[sbe_sign]
+[sbe_import]
+[sbe_math]
+
+
+
+
 
 [mig_idiosyncrasies]: https://github.com/miguelmota/solidity-idiosyncrasies
 
@@ -903,7 +946,7 @@ https://grafana.com/grafana/dashboards/6976
 [sbe_callcontract]:  https://solidity-by-example.org/calling-contract
 [sbe_call]:          https://solidity-by-example.org/call
 [sbe_dg_call]:       https://solidity-by-example.org/delegatecall
-[sbe_libarary]:      https://solidity-by-example.org/Library
+[sbe_library]:       https://solidity-by-example.org/Library
 [sbe_payable]:       https://solidity-by-example.org/payable
 [sbe_sendeth]:       https://solidity-by-example.org/sending-ether
 [sbe_fallback]:      https://solidity-by-example.org/fallback
@@ -1085,14 +1128,16 @@ https://grafana.com/grafana/dashboards/6976
 [sol-coverage]:     https://github.com/sc-forks/solidity-coverage
 
 
-### Blockchain test
+### Blockchain infra test
 
 | Blockchain tests
 | --------------
 | [ethereum_test]
+| [eth_rpc_test]
+
 
 [ethereum_test]:    https://github.com/ethereum/tests
-
+[eth_rpc_test]:     https://github.com/ethereum/rpc-tests
 
 
 # Frontend
@@ -1278,7 +1323,7 @@ Also see [Explorers](#explorers)
 | [smartdec_knowledge]  |                    | [awesome_sec]          | [knownsec_checklist]
 | [list_vul]            |                    | [secure_pattern]       | [crfinlabs_checklist]
 | [dasp]                |                    | [vulnerable_mitigate]  | [ethdevs_checklist]
-| [notsosmart]          |                    |                        | [miguelmota_checklist]
+| [notsosmart]          |                    | [attack_defend]        | [miguelmota_checklist]
 | [detector_docs]
 | [solcbuginfo]
 | [attack_vectors]
@@ -1316,6 +1361,7 @@ Also see [Explorers](#explorers)
 [awesome_sec]:          https://github.com/crytic/awesome-ethereum-security
 [secure_pattern]:       http://eprints.cs.univie.ac.at/5433/7/sanerws18iwbosemain-id1-p-380f58e-35576-preprint.pdf
 [vulnerable_mitigate]:  https://yos.io/2018/10/20/smart-contract-vulnerabilities-and-how-to-mitigate-them/
+[attack_defend]:        https://arxiv.org/pdf/1908.04507.pdf
 
 [audit_standards]:      https://www.smartcontractsecurityalliance.com/
 [audit_checklist]:      https://medium.com/quillhash/quillaudits-smart-contracts-audit-check-list-d65a305ec1a3
@@ -1888,6 +1934,8 @@ Mostely the same patterns:
 
 https://github.com/ethereum934/eth-mimblewimble
 
+https://awesomeopensource.com/projects/erc20
+https://awesomeopensource.com/projects/ethereum-token
 
 
 | Erc-20 Faucet 
@@ -2259,14 +2307,14 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 | [bigquery]
 | [hookpad]
 | [geth_graphql]
-
+| [memento]
 
 
 [thegraph]:         https://thegraph.com/
 [bigquery]:         https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain
 [hookpad]:          https://hookpad.io/
 [geth_graphql]:     https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
-
+[memento]:          https://github.com/Alethio/memento
 
 ## Geo
 

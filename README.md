@@ -988,6 +988,30 @@ https://grafana.com/grafana/dashboards/6976
 [huff]:      https://github.com/AztecProtocol/huff
 [lity]:      https://www.litylang.org
 
+# Design
+
+## Simulation
+
+| Simulation                            | Load simulation
+| ------------                          | ---------------
+| [cadcad]                              | [blockzoom]
+| [gauntlet]
+| [simblock]
+| [pycatshoo]<br>[pycatshoo_paper]
+| [fraudproofsim]
+| [blockchainsimulator]
+
+[cadcad]:               https://github.com/BlockScience/cadCAD
+[gauntlet]:             https://gauntlet.network/
+[simblock]:             https://github.com/dsg-titech/simblock
+[pycatshoo]:            http://pycatshoo.org/
+[pycatshoo_paper]:      http://pycatshoo.org/SimulationOfStochasticBlockchainModels.pdf
+[fraudproofsim]:        https://github.com/jsign/fraudproofsim
+[blockchainsimulator]:  https://github.com/concept-inversion/blockchain-simulator
+
+[blockzoom]:            https://www.researchgate.net/publication/333089077_BlockZoom_Large-Scale_Blockchain_Testbed
+
+
 # Development
 
 ## Development tools
@@ -1086,24 +1110,23 @@ https://grafana.com/grafana/dashboards/6976
 [ocean_int]:             https://blog.oceanprotocol.com/continuous-integration-at-ocean-be2584564af1
 
 
-## Testing
+# Testing
+
+## Test tools
 
 | Testing overview | Tools          | Also see                                          | Coverage       | Examples
 |------------      | -------------  |----------                                         | --------       | ----------
 | [rocktest]       | [eth_tester]   | [Security tools](#security-tools)                 | [sol-coverage] | [tontine]
 | [jaxtest]        | [dappeteer]    | [Javascript test tools](../../javascript)         |                | [qainfotech_truf]
-| [solstate]       |                | [Deployment frameworks](#deployment-frameworks)   |                | [truf_test_yt]
+| [solstate]       | [consensys_tt] | [Deployment frameworks](#deployment-frameworks)   |                | [truf_test_yt]
 | [edgefundtest]   |                | [Bounties and audits](#bounties-and-audits)       |                | [ddns_test]
 | [ethhubtest]     |                | [Testnets](#testnets)                             |                | [mintest]
-|                  |                |                                                   |                | [erc20test]
-|                  |                |                                                   |                | [testguide]
-|                  |                |                                                   |                | [front_test]
-|                  |                |                                                   |                | 
-|                  |                |                                                   |                | 
-|                  |                |                                                   |                | 
-
-
-
+| [probeseven]     |                |                                                   |                | [erc20test]
+| [lisktest]       |                |                                                   |                | [testguide]
+| [kazerouni]      |                |                                                   |                | [front_test]
+| [enhopstest]     |                |                                                   |                | 
+| [softeq]         |                |                                                   |                | 
+| [qualitestgroup] |                |                                                   |                | 
 
 [rocktest]:         https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001
 [jaxtest]:          https://jaxenter.com/ins-outs-testing-blockchain-apps-146447.html
@@ -1111,9 +1134,16 @@ https://grafana.com/grafana/dashboards/6976
 [edgefundtest]:     https://medium.com/edgefund/testing-and-code-coverage-of-solidity-smart-contracts-660cb6291701
 [ethhubtest]:       https://docs.ethhub.io/ethereum-basics/development/testing/
 
+[probeseven]:       https://www.probeseven.com/blog/overview-testing-blockchain-based-application/
+[lisktest]:         https://blog.lisk.io/how-introducing-automation-testing-for-our-blockchain-significantly-improved-development-speed-and-10c0a6934e37
+[kazerouni]:        http://people.cs.vt.edu/~ayaan/assets/documents/WonderlyKazerouni-blockchain-testing.pdf
+[enhopstest]:       https://www.enhops.com/blockchain-testing
+[softeq]:           https://www.softeq.com/blockchain_testing
+[qualitestgroup]:   https://www.qualitestgroup.com/white-papers/testing-blockchain/
 
 [eth_tester]:       https://github.com/ethereum/eth-tester
 [dappeteer]:        https://github.com/decentraland/dappeteer
+[consensys_tt]:     https://github.com/ConsenSys/ethereum-developer-tools-list#testing-tools
 
 
 [tontine]:          https://developer.ibm.com/recipes/tutorials/work-with-ethereum-solidity-and-truffle-unit-testing-in-tontine-dapp-game/#r_step4
@@ -1128,7 +1158,7 @@ https://grafana.com/grafana/dashboards/6976
 [sol-coverage]:     https://github.com/sc-forks/solidity-coverage
 
 
-### Blockchain infra test
+## Blockchain infra test
 
 | Blockchain tests
 | --------------
@@ -1138,6 +1168,59 @@ https://grafana.com/grafana/dashboards/6976
 
 [ethereum_test]:    https://github.com/ethereum/tests
 [eth_rpc_test]:     https://github.com/ethereum/rpc-tests
+
+## Formal verfy
+
+| Overview          | Formal verify tools
+| ---------------   | --------------
+| [formal_overview] | [rtver_formal] 
+| [formal_paper]    | [verx]
+
+[formal_overview]:      https://github.com/pirapira/ethereum-formal-verification-overview/
+[formal_paper]:         https://www.researchgate.net/profile/Kei_Leo_Brousmiche/publication/324175498_Formal_Verification_of_Smart_Contracts_Based_on_Users_and_Blockchain_Behaviors_Models/links/5ae6c8bda6fdcc3bea9783e8/Formal-Verification-of-Smart-Contracts-Based-on-Users-and-Blockchain-Behaviors-Models.pdf
+
+
+[rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
+[verx]:                 https://verx.ch/
+
+## Fuzzing
+
+| Fuzzer
+|------
+| [contractfuzzer]
+| [echidna]
+
+[contractfuzzer]:       https://github.com/gongbell/ContractFuzzer
+[echidna]:              https://github.com/crytic/echidna
+
+## Mutation testing
+
+| Overview          | Tools
+| ---------         | --------
+| [eth_mut_test]    | [eth_mutants]
+| [get_mut_test]    | [universalmutator]
+|                   | [deviant]
+|                   | [vertigo_mut]
+|                   | [musc]
+
+[eth_mut_test]:         https://arxiv.org/pdf/1908.03707.pdf
+[get_mut_test]:         https://arxiv.org/pdf/1909.12563.pdf
+
+[eth_mutants]:          https://github.com/federicobond/eth-mutants
+[universalmutator]:     https://github.com/agroce/universalmutator
+[deviant]:              https://scholarworks.boisestate.edu/cgi/viewcontent.cgi?article=2719&context=td
+[vertigo_mut]:          https://github.com/JoranHonig/vertigo
+[musc]:                 https://github.com/belikout/MuSC-Tool-Demo-repo
+
+
+## Load testing
+
+| Load test
+| ------
+| [trebuchet]
+
+
+[trebuchet]: https://github.com/Trebuchet-Framework/Trebuchet
 
 
 # Frontend
@@ -1378,21 +1461,22 @@ Also see [Explorers](#explorers)
 
 ## Security tools
 
-| Verify smart contracts    | Security tools  | Formal verify    | Token checks    | Fuzzer             | Decompile           | Investigate
-| ----------------          |   ---           | ---------        | -------------   | ---------          | -------------       | -----
-| [mythx]                   | [sectools]      | [rtver_formal]   | [erc20_check]   | [contractfuzzer]   | [reversing]         | [chainalysis]
-| [securify]                | [teEther]       | [verx]           |                 | [echidna]          | [ethvm_decompile]   | [ey_analyzer]
-| [quantstamp_prot]         |                 | [formal_overview]|                 |                    | [evmdis]            | [elliptic]
-| [Oyente]                  |                 |                  |                 |                    | [pyevmasm]          | [cs-intell]
-| [Maian]                   |                 |                  |                 |                    | [ethersplay]        | [ciphertrace]
-| [vandal]                  |                 |                  |                 |                    | [jeb_decompiler]    | [spyderforensics]
-| [madmax]                  |                 |                  |                 |                    | [contract-library]  | [czorro]
-| [rattle]                  |                 |                  |                 |                    | [eveem]             | [scorechain]
-| [slither]                 |                 |                  |                 |                    | [yasold]            | [cipherblade]
-| [anchainai]               |                 |                  |                 |                    | [abi_dec]           | [dmgblockchain] 
-| [crytic]<br>[crytic_docs] |                 |                  |                 |                    | [opcode_tool]       | [blockchainintel]
-|                           |                 |                  |                 |                    | [octopus]           | [crystalblockchain]
-|                           |                 |                  |                 |                    | [etherscan_opcode]  | [blockseer]
+| Verify smart contracts    | Security tools  | Token checks    | Decompile           | Investigate
+| ----------------          |   ---           | -------------   | -------------       | -----
+| [mythx]                   | [sectools]      | [erc20_check]   | [reversing]         | [chainalysis]
+| [securify]                | [teEther]       |                 | [ethvm_decompile]   | [ey_analyzer]
+| [quantstamp_prot]         |                 |                 | [evmdis]            | [elliptic]
+| [Oyente]                  |                 |                 | [pyevmasm]          | [cs-intell]
+| [Maian]                   |                 |                 | [ethersplay]        | [ciphertrace]
+| [vandal]                  |                 |                 | [jeb_decompiler]    | [spyderforensics]
+| [madmax]                  |                 |                 | [contract-library]  | [czorro]
+| [rattle]                  |                 |                 | [eveem]             | [scorechain]
+| [slither]                 |                 |                 | [yasold]            | [cipherblade]
+| [anchainai]               |                 |                 | [abi_dec]           | [dmgblockchain] 
+| [crytic]<br>[crytic_docs] |                 |                 | [opcode_tool]       | [blockchainintel]
+|                           |                 |                 | [octopus]           | [crystalblockchain]
+|                           |                 |                 | [etherscan_opcode]  | [blockseer]
+
 
 [mythx]:                https://mythx.io
 [securify]:             https://securify.chainsecurity.com/
@@ -1411,15 +1495,7 @@ Also see [Explorers](#explorers)
 [teEther]:              https://github.com/nescio007/teether
 [ethersplay]:           https://github.com/crytic/ethersplay
 
-
-[rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
-[verx]:                 https://verx.ch/
-[formal_overview]:      https://github.com/pirapira/ethereum-formal-verification-overview/
-
 [erc20_check]:          https://testsuite.net/
-
-[contractfuzzer]:       https://github.com/gongbell/ContractFuzzer
-[echidna]:              https://github.com/crytic/echidna
 
 [reversing]:            https://arvanaghi.com/blog/reversing-ethereum-smart-contracts/
 [ethvm_decompile]:      https://ethervm.io/decompile
@@ -2266,20 +2342,7 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 [diode]:                https://diode.io/
 
 
-## Financial Building blocks
 
-| Building block               | Instances   | Dashboard
-| ---------------------        | ----------- | --------
-| DEX                          | [0x]        | [0xtracker]
-| Lending                      | [compound]  | 
-| Insurance                    | [etherisc]
-
-
-[0x]:               https://0x.org/
-[0xtracker]:        https://0xtracker.com/
-[compound]:         https://compound.finance/
-
-[etherisc]:         https://etherisc.com/
 
 ## Token Curated Registry
 
@@ -2458,6 +2521,13 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [loanscan]:         https://loanscan.io/
 [etherscan_defi]:   https://etherscan.io/accounts/label/defi
 
+## Lending
+
+| Lending
+| --------
+| [compound]
+
+[compound]:         https://compound.finance/
 
 ## Insurance
 
@@ -2466,11 +2536,33 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [fizzy]
 | [etherisc]
 | [sproutinsure]
+| [black_insure]
+| [chainthat]
+| [inmediate]
+| [lemonade]
+| [riskbazaar]
+| [teambrella]
+| [tierion]
 
 [fizzy]:            https://fizzy.axa/en-gb/
 [etherisc]:         https://etherisc.com/
 [sproutinsure]:     http://sproutinsure.com/
+[black_insure]:     https://www.black.insure/
+[chainthat]:        https://www.chainthat.com/
+[inmediate]:        https://inmediate.io/
+[lemonade]:         https://www.lemonade.com
+[riskbazaar]:       https://www.riskbazaar.org/
+[teambrella]:       https://teambrella.com/
+[tierion]:          https://tierion.com/
 
+## Decentralized exchange
+
+| Dex           | Tools
+| ------        | ----------- 
+| [0x]          | [0xtracker]
+
+[0x]:               https://0x.org/
+[0xtracker]:        https://0xtracker.com/
 
 ## Games
 

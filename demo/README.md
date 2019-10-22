@@ -1,6 +1,45 @@
-# Demo of ethereum software
+Demo of ethereum software
 
 These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\..))
+
+- [MetaMask](#metamask)
+- [Ethereum play](#ethereum-play)
+- [Remix](#remix)
+- [Others](#others)
+
+# MetaMask
+
+| Object                                | Instance
+| ---------------                       | ---------     
+| Athereum and metamask                 | [Athereum and metamask](Athereum and metamask.html)
+
+# Ethereum play
+
+| Object                                | Instance
+| ---------------                       | ---------     
+| Play - Transfer eth                   | [Play - Transfer eth with contract](Play - Transfer eth with contract.html)
+| Play - oracle                         | [Play - Provable Temperature Oracle](Play - Provable Temperature Oracle.html)
+| Play - ERC20 token                    | [Play - ERC20](Play - ERC20.html)
+| Play - Deploy contract ERC721         | [Play - Deploy contract ERC721](Play - Deploy contract ERC721.html)
+| Play - Check ERC721 interface         | [Play - Check ERC721 interface](Play - Check ERC721 interface.html)
+| Play - Mint one ERC721 token          | [Play - Mint one ERC721 token](Play - Mint one ERC721 token.html)
+| Play - See ERC721 token in Metamask   | [Play - See ERC721 token in Metamask](Play - See ERC721 token in Metamask.html)
+| Play - Unibright                      | [Play - Unibright](Play - Unibright.html)
+| Play - Natspec                        | [Play - Natspec](Play - Natspec.html)
+| Play_hello_example                    | [Play_hello_example](Play_hello_example.html)
+
+# Remix
+
+| Object                                | Instance
+| ---------------                       | ---------     
+| Remix - compile and use Casino        | [Remix - compile and use Casino](Remix - compile and use Casino.html)
+| Remix - deploy ropsten                | [Remix - deploy ropsten](Remix - deploy ropsten.html)
+| Remix - natspec                       | [Remix - natspec](Remix - natspec.html)
+| Remix - debug                         | [Remix - debug](Remix - debug.html)
+| Remix - ropsten - debug gas           | [Remix - ropsten - debug gas](Remix - ropsten - debug gas.html)
+
+
+# Others
 
 | Object                                | Instance
 | ---------------                       | ---------     
@@ -10,27 +49,12 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 | Websockets                            | [Use ganache-cli Windows WS](Use ganache-cli Windows WS.html) 
 | Subscriptions                         | [Use ganache-cli Windows WS Subscriptions](Use ganache-cli Windows WS Subscriptions.html)
 | Load chain                            | [Load geth goerli windows](Load geth goerli windows.html)
-| Play - Transfer eth                   | [Play - Transfer eth with contract](Play - Transfer eth with contract.html)
 | Check contract balance curl           | [Check contract balance via RPC-curl](Check contract balance via RPC-curl.html)
 | Check contract balance online         | [Check contract balance via RPC-online](Check contract balance via RPC-online.html)
 | Publish source                        | [Publish on etherscan and interact](Publish on etherscan and interact.html)
-| Remix - compile and use Casino        | [Remix - compile and use Casino](Remix - compile and use Casino.html)
-| Remix - deploy ropsten                | [Remix - deploy ropsten](Remix - deploy ropsten.html)
-| Remix - natspec                       | [Remix - natspec](Remix - natspec.html)
-| Remix - debug                         | [Remix - debug](Remix - debug.html)
-| Remix - ropsten - debug gas           | [Remix - ropsten - debug gas](Remix - ropsten - debug gas.html)
-| Play - oracle                         | [Play - Provable Temperature Oracle](Play - Provable Temperature Oracle.html)
-| Play - ERC20 token                    | [Play - ERC20](Play - ERC20.html)
-| Play - Deploy contract ERC721         | [Play - Deploy contract ERC721](Play - Deploy contract ERC721.html)
-| Play - Check ERC721 interface         | [Play - Check ERC721 interface](Play - Check ERC721 interface.html)
-| Play - Mint one ERC721 token          | [Play - Mint one ERC721 token](Play - Mint one ERC721 token.html)
-| Play - See ERC721 token in Metamask   | [Play - See ERC721 token in Metamask](Play - See ERC721 token in Metamask.html)
 | Find ERC721 token in Opensea          | [Find ERC721 token in Opensea](Find ERC721 token in Opensea.html)
-| Play - Unibright                      | [Play - Unibright](Play - Unibright.html)
 | Piet - Unibright                      | [Piet - Unibright](Piet - Unibright.html)
 | Aragon - create company               | [Aragon - create company](Aragon - create company.html)
 | Create ERC20 via web                  | [Create ERC20 via web](Create ERC20 via web.html)
 | Geth Prometheus Grafana               | [Geth Prometheus Grafana](Geth Prometheus Grafana.html)
-| Athereum and metamask                 | [Athereum and metamask](Athereum and metamask.html)
-| Play - Natspec                        | [Play - Natspec](Play - Natspec.html)
-| Play_hello_example                    | [Play_hello_example](Play_hello_example.html)
+

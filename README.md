@@ -1075,6 +1075,17 @@ https://grafana.com/grafana/dashboards/6976
 [graphdebugger]:   https://github.com/fergarrui/ethereum-graph-debugger
 
 
+### Tool tutorials
+
+| Remix
+| -------------
+| [remix_docs]
+| [remix_tut]
+
+[remix_docs]:   https://remix-ide.readthedocs.io/en/latest/
+[remix_tut]:    https://www.bitdegree.org/learn/solidity-online-compiler
+
+
 ## Deployment frameworks
 
 | Overview           |  Framework
@@ -1367,10 +1378,10 @@ Also see [Explorers](#explorers)
 
 | (Test) Networks | Etherscan            | Blockscout           | BlockexplorerOne     | Bitaps           | Aleth Lite          | Aleth             | Own
 | --------------- | ------               | -----------------    | ------------         | -----------      | -------------       | -----             | -------
-| Ropsten         | [etherscan-ropsten]  | [blockscout-ropsten] | [blockexone_ropsten] | [bitaps_ropsten] | [aleth_lt_ropsten]  |                   |
+| Ropsten         | [etherscan-ropsten]  |                      | [blockexone_ropsten] | [bitaps_ropsten] | [aleth_lt_ropsten]  |                   |
 | Kovan           | [etherscan-kovan]    | [blockscout-kovan]   |                      |                  | [aleth_lt_kovan]    |                   |
-| Rinkeby         | [etherscan-rinkeby]  | [blockscout-rinkeby] | [blockexone_rinkeby] |                  | [aleth_lt_rinkeby]  |                   |
-| Goerli          | [etherscan-goerli]   | [blockscout-goerli]  |                      |                  | [aleth_lt_goerli]   | [aleth_goerli]    |
+| Rinkeby         | [etherscan-rinkeby]  |                      | [blockexone_rinkeby] |                  | [aleth_lt_rinkeby]  |                   |
+| Goerli          | [etherscan-goerli]   |                      |                      |                  | [aleth_lt_goerli]   | [aleth_goerli]    |
 | Athereum        |                      |                      |                      |                  |                     |                   | [athereum_exp]
 
 [etherscan-ropsten]:  https://ropsten.etherscan.io/
@@ -1378,10 +1389,10 @@ Also see [Explorers](#explorers)
 [etherscan-rinkeby]:  https://rinkeby.etherscan.io/
 [etherscan-goerli]:   https://goerli.etherscan.io/
 
-[blockscout-ropsten]: https://blockscout.com/eth/ropsten
+
 [blockscout-kovan]:   https://blockscout.com/eth/kovan
-[blockscout-rinkeby]: https://blockscout.com/eth/rinkeby
-[blockscout-goerli]:  https://blockscout.com/eth/goerli
+
+
 
 [blockexone_rinkeby]: https://blockexplorer.one/ethereum/rinkeby
 [blockexone_ropsten]: https://blockexplorer.one/ethereum/ropsten
@@ -1422,7 +1433,7 @@ Also see [Explorers](#explorers)
 | [dec_app_security]
 | [pitfalls]
 | [crypto_hacks]
-
+| [mcafee_risks]
 
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
@@ -1440,6 +1451,8 @@ Also see [Explorers](#explorers)
 [dec_app_security]:     https://dasp.co
 [pitfalls]:             https://blog.bankex.org/nine-pitfalls-of-ethereum-smart-contracts-to-be-avoided-f7464761211c
 [crypto_hacks]:         https://www.tokens-economy.com/hacks/
+[mcafee_risks]:         https://www.mcafee.com/enterprise/en-us/assets/reports/rp-blockchain-security-risks.pdf
+
 
 [buggy_erc20]:          https://github.com/sec-bit/awesome-buggy-erc20-tokens
 [withdrawal]:           https://arxiv.org/pdf/1907.00903.pdf
@@ -1469,21 +1482,21 @@ Also see [Explorers](#explorers)
 
 ## Security tools
 
-| Verify smart contracts    | Security tools  | Token checks    | Decompile           | Investigate
-| ----------------          |   ---           | -------------   | -------------       | -----
-| [mythx]                   | [sectools]      | [erc20_check]   | [reversing]         | [chainalysis]
-| [securify]                | [teEther]       |                 | [ethvm_decompile]   | [ey_analyzer]
-| [quantstamp_prot]         |                 |                 | [evmdis]            | [elliptic]
-| [Oyente]                  |                 |                 | [pyevmasm]          | [cs-intell]
-| [Maian]                   |                 |                 | [ethersplay]        | [ciphertrace]
-| [vandal]                  |                 |                 | [jeb_decompiler]    | [spyderforensics]
-| [madmax]                  |                 |                 | [contract-library]  | [czorro]
-| [rattle]                  |                 |                 | [eveem]             | [scorechain]
-| [slither]                 |                 |                 | [yasold]            | [cipherblade]
-| [anchainai]               |                 |                 | [abi_dec]           | [dmgblockchain] 
-| [crytic]<br>[crytic_docs] |                 |                 | [opcode_tool]       | [blockchainintel]
-|                           |                 |                 | [octopus]           | [crystalblockchain]
-|                           |                 |                 | [etherscan_opcode]  | [blockseer]
+| Verify smart contracts    | Security tools  | Decompile           | Investigate
+| ----------------          |   ---           | -------------       | -----
+| [mythx]                   | [sectools]      | [reversing]         | [chainalysis]
+| [securify]                | [teEther]       | [ethvm_decompile]   | [ey_analyzer]
+| [quantstamp_prot]         |                 | [evmdis]            | [elliptic]
+| [Oyente]                  |                 | [pyevmasm]          | [cs-intell]
+| [Maian]                   |                 | [ethersplay]        | [ciphertrace]
+| [vandal]                  |                 | [jeb_decompiler]    | [spyderforensics]
+| [madmax]                  |                 | [contract-library]  | [czorro]
+| [rattle]                  |                 | [eveem]             | [scorechain]
+| [slither]                 |                 | [yasold]            | [cipherblade]
+| [anchainai]               |                 | [abi_dec]           | [dmgblockchain] 
+| [crytic]<br>[crytic_docs] |                 | [opcode_tool]       | [blockchainintel]
+|                           |                 | [octopus]           | [crystalblockchain]
+|                           |                 | [etherscan_opcode]  | [blockseer]
 
 
 [mythx]:                https://mythx.io
@@ -1503,7 +1516,7 @@ Also see [Explorers](#explorers)
 [teEther]:              https://github.com/nescio007/teether
 [ethersplay]:           https://github.com/crytic/ethersplay
 
-[erc20_check]:          https://testsuite.net/
+
 
 [reversing]:            https://arvanaghi.com/blog/reversing-ethereum-smart-contracts/
 [ethvm_decompile]:      https://ethervm.io/decompile
@@ -1611,6 +1624,16 @@ Also see [Explorers](#explorers)
 
 [howtoaudit]:           https://blockgeeks.com/guides/audit-smart-contract/
 [audit_bp]:             https://dev.to/smartym/how-to-test-ethereum-smart-contracts-audit-best-practices-53kg
+
+## Report issues
+
+| security contacts
+| ------------------
+| [bc_sec_contact]
+
+
+[bc_sec_contact]:   https://github.com/crytic/blockchain-security-contacts
+
 
 # Best practices
 
@@ -2033,6 +2056,23 @@ https://awesomeopensource.com/projects/ethereum-token
 [singularitynet_faucet]:    https://faucet.singularitynet.io/
 
 
+### ERC20 compliance
+
+| ERC20 compliance | Github
+| ---------------  | ---------
+| [erc20_check]    | [erc2_chk_github]
+| [erc20_veri]     | [erc20_veri_github]
+
+
+[erc20_check]:          https://testsuite.net/
+[erc20_veri]:   https://erc20-verifier.openzeppelin.com/
+
+[erc2_chk_github]:      https://github.com/tinchoabbate/slither-scripts/tree/master/erc20
+[erc20_veri_github]: https://github.com/spalladino/erc20-verifier
+
+
+
+
 ### Nonfungible tokens ERC 721
 
 
@@ -2145,6 +2185,9 @@ https://github.com/gianni-dalerta/awesome-nft
 
 https://github.com/0xjac/ERC777
 https://docs.openzeppelin.org/v2.3.0/api/token/erc777
+
+https://forum.openzeppelin.com/t/simple-erc777-token-example/746
+
 
 ### ERC 827
 
@@ -2455,7 +2498,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [squarelinkdapps] (login first)
 | [android_apps]
 | [tryethereum.today]
-
+| [blockgeeks_dapps]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -2482,7 +2525,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [squarelinkdapps]:      https://app.squarelink.com/explore
 [android_apps]:         https://play.google.com/store/search?q=ethereum&c=apps
 [tryethereum.today]:    https://tryethereum.today/
-
+[blockgeeks_dapps]:     https://blockgeeks.com/dapp-list/
 
 [nonfungible]:          https://nonfungible.com/market/history
 

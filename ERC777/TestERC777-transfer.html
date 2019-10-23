@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <meta charset="UTF-8">  
         <script src="https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>   
-       <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.1/dist/web3.min.js"></script>            
+        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.1/dist/web3.min.js"></script>            
     </head>
 <body>
 <h1>Demo ERC777</h1>
@@ -27,7 +27,7 @@ Select Rinkeby
         ];
 
         const ERC777 = new web3.eth.Contract(ERC777ABI, "0x51a8e7fEC5639Eb6861a674E4F46148561d5c5c6");  // rinkeby
-        var amount = 12345;
+        var amount = 1 *  10**18 ;
         var destAccount="0x12F9B77395aE87794A19Fba6dAf117C34A21E2c1";
         accounts=await web3.eth.getAccounts(); 
         var result = await ERC777.methods.balanceOf(destAccount).call({from: accounts[0]});        

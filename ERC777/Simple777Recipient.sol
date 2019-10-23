@@ -1,3 +1,4 @@
+// based on: https://forum.openzeppelin.com/t/simple-erc777-token-example/746
 pragma solidity ^0.5.0;
 
 import "@openzeppelin/contracts/token/ERC777/IERC777.sol";

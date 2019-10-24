@@ -27,15 +27,19 @@ Select Rinkeby
         ];
 
         const ERC777 = new web3.eth.Contract(ERC777ABI, "0x51a8e7fEC5639Eb6861a674E4F46148561d5c5c6");  // rinkeby
-        var amount = 12345 ;
+        var nrCoins = 3;
+        
+        const transferAmountHex =   "0x"+web3.utils.toBN(nrCoins).mul(web3.utils.toBN(1e18)).toString('hex');;
+        console.log(transferAmountHex)
+        
         var destAccount="0x12F9B77395aE87794A19Fba6dAf117C34A21E2c1";
         accounts=await web3.eth.getAccounts(); 
         var result = await ERC777.methods.balanceOf(destAccount).call({from: accounts[0]});        
         log(`Account ${destAccount} now has: ${result}`);
 //        log(`Transfering ${amount} to ${destAccount}`);
 //        var result = await ERC777.methods.transfer(destAccount,amount).send({from: accounts[0]});
-        log(`Sending ${amount} to ${destAccount}`);
-        var result = await ERC777.methods.send(destAccount,amount,"0x77").send({from: accounts[0]});
+        log(`Sending ${nrCoins} coins to ${destAccount}`);
+        var result = await ERC777.methods.send(destAccount,transferAmountHex,"0x77").send({from: accounts[0]});
         var returnValues = result.events.DoneStuff.returnValues;
         log(`Contract: ${returnValues.to} received tokens: ${returnValues.amount} data: ${returnValues.userData}`);
         var result = await ERC777.methods.balanceOf(destAccount).call({from: accounts[0]});        

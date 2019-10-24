@@ -7,3 +7,4 @@ old/
 *.abi
 *.bin
 demo/a.txt
+web3js/package.json

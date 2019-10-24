@@ -4,5 +4,7 @@
   "scripts": {
     "build": "browserify web3-require.js -o web3-browserify.js"
   },
-  "dependencies": {}
+  "dependencies": {
+    "web3": "^1.2.2"
+  }
 }

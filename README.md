@@ -500,6 +500,7 @@ https://grafana.com/grafana/dashboards/6976
 | [provide]                      | [provide_docs]       | [provide_github]
 | [samsung]
 | [pacs_android]                 |                      | [pacs_android_github]
+| [theforce]                     | [theforce_docs]      | [theforce_gh]
 
 [walletconnect]:        https://walletconnect.org
 [walletconnect_docs]:   https://github.com/walletconnect
@@ -554,26 +555,18 @@ https://grafana.com/grafana/dashboards/6976
 [3box_idwallet_docs]:   https://docs.3box.io/build/wallets
 [3box_idwallet_github]: https://github.com/3box/identity-wallet-js
 
-
-
-
-
-
 [provide]:              https://provide.services/
 [provide_docs]:         https://docs.provide.services/#platform-overview
 [provide_github]:       https://github.com/provideservices
-
 
 [samsung]:              https://developer.samsung.com/blockchain
 
 [pacs_android]:         https://ethereum-android.com/
 [pacs_android_github]:  https://github.com/p-acs/ethereum-android-lib
 
-
-
-
-
-
+[theforce]:             https://www.theforceprotocol.com/en-us/index.html
+[theforce_docs]:        https://www.theforceprotocol.com/dev/index.html
+[theforce_gh]:          https://github.com/theforceprotocolgroup
 
 ## Web3.js
 
@@ -640,6 +633,11 @@ https://grafana.com/grafana/dashboards/6976
 
 # Wallets
 
+| Overview
+| ------------
+| [crypto_wal_ls]
+
+[crypto_wal_ls]: https://thecontrol.co/an-overview-of-the-crypto-wallet-landscape-533a18bcd124
 
 ## Wallet (just) for coins
 
@@ -789,8 +787,8 @@ https://grafana.com/grafana/dashboards/6976
 | [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)                     | [cheatsheet1]
 | [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]  | [cheatsheet2]
 | [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]                             | [cheatsheet3] 
-| [learn_solidity]           | [secondstate]           |                                           | [kcl_class]
-| [blockgeeks_sol1]          | [contractfinder]
+| [learn_solidity]           | [secondstate]           |                                           | [kcl_class]                                 | [cheatsheet4] 
+| [blockgeeks_sol1]          | [contractfinder]        |                                           | [sheets_alex]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
 | [soliditykoans]            | [verified_contracts]
@@ -815,9 +813,10 @@ https://grafana.com/grafana/dashboards/6976
 [manojpramesh]:        https://github.com/manojpramesh/solidity-cheatsheet
 
 
-[cheatsheet1]:         https://intellipaat.com/blog/tutorial/blockchain-tutorial/blockchain-cheat-sheet/
-[cheatsheet2]:         https://s3-eu-west-1.amazonaws.com/b9-academy-assets/public/solidity-cheatsheet.png
-[cheatsheet3]:         https://topmonks.github.io/solidity_quick_ref/
+[cheatsheet1]:         https://solidity.readthedocs.io/en/latest/miscellaneous.html#cheatsheet
+[cheatsheet2]:         https://intellipaat.com/blog/tutorial/blockchain-tutorial/blockchain-cheat-sheet/
+[cheatsheet3]:         https://s3-eu-west-1.amazonaws.com/b9-academy-assets/public/solidity-cheatsheet.png
+[cheatsheet4]:         https://topmonks.github.io/solidity_quick_ref/
 
 [code_examples]:       https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
 [smartcontract_codes]: https://smartcontract.codes
@@ -840,6 +839,8 @@ https://grafana.com/grafana/dashboards/6976
 [willitscale_learn]:   https://github.com/willitscale/learning-solidity
 [bitdegree_sol]:       https://www.bitdegree.org/learn/learn-solidity
 [kcl_class]:           https://blockchain.kcl.ac.uk/cryptocurrencyclass/
+
+[sheets_alex]:         https://hackmd.io/@8j7KVkRuQjaCrNj3Uk7Tbg/solidity#/
 
 ## Details
 
@@ -1660,12 +1661,12 @@ See also [Security best practices](#security-best-practices)
 
 ## Technical best practice
 
-| Publish source                                | Register function name   | Show transaction info
-| ----------                                    |  -----------             | ---------------
-| [etherscan_verify]<br>[etherscan_ver_howto]   | [register_function]      | [radspec]
-| [etherchain_verify]                           | [4bytes]                                    
-| [blockscout_verify]                           | [clef_4bytes]
-| [ethscan_auto]                                | [curated4b]
+| Publish source                               | Publish Metadata   | Register function name   | Show transaction info
+| ----------                                   | ---------          |  -----------             | ---------------
+| [etherscan_verify]<br>[etherscan_ver_howto]  | [publish_metadata] | [register_function]      | [radspec]
+| [etherchain_verify]                          |                    | [4bytes]                                    
+| [blockscout_verify]                          |                    | [clef_4bytes]
+| [ethscan_auto]                               |                    | [curated4b]
 | [publish_ipfsremix]
 
 [etherscan_verify]:     https://etherscan.io/verifyContract
@@ -1674,7 +1675,10 @@ See also [Security best practices](#security-best-practices)
 [etherchain_verify]:    https://etherchain.org/tools/verifyContract
 [blockscout_verify]:    https://blockscout.com
 [ethscan_auto]:         https://kalis.me/verify-truffle-smart-contracts-etherscan/
-[publish_ipfsremix]:    https://twitter.com/EthereumRemix/status/1173892756265152512
+[publish_ipfsremix]:    https://medium.com/remix-ide/publish-your-metadata-and-sourcecode-to-swarm-and-ipfs-bf3fcd179cd6
+
+
+[publish_metadata]:     https://solidity.readthedocs.io/en/latest/metadata.html
 
 [register_function]:    https://metamask.github.io/metamask-docs/Best_Practices/Registering_Function_Names
 [4bytes]:               https://www.4byte.directory
@@ -2218,6 +2222,60 @@ https://tokenbuilder.umaproject.org/
 
 
 
+## Streaming money
+
+| Overview          | Subscription eip948 | Streaming money eip1620 | Streaming Token eip2100 | Recurring billing | Subscriptions (1337)
+| -----------       | -------             | -----------             | -------------           | ---------------   | -----------------------
+| [anton_str_money] | [eip948]            | [eip1620]               | [eip2100]               | [recur_bill]      | [eip1337]
+| [awesome_sub]     | [eip948_design]     | [sablier]               |                         | [dreamteam_gh]    | [1337all]
+|                   |                     | [transit_pension]       |                         |                   | [tokensub1337]
+|                   |                     |                         |                         |                   | [groundhog1337]
+|                   |                     |                         |                         |                   | [refclient1337]
+
+
+[anton_str_money]:  https://www.youtube.com/watch?v=l235ydAx5oQ
+[awesome_sub]:      https://github.com/EthereumOpenSubscriptions/awesome-blockchain-subscriptions
+
+[eip948]:           https://github.com/ethereum/EIPs/issues/948
+[eip948_design]:    https://gitcoin.co/blog/technical-deep-dive-architecture-choices-for-subscriptions-on-the-blockchain-erc948/
+
+
+[eip1620]:          https://github.com/ethereum/EIPs/issues/1620
+[sablier]:          https://sablier.app/
+[transit_pension]:  https://devpost.com/software/transit-pension-plan
+
+[eip2100]:          https://github.com/ethereum/EIPs/issues/2100
+
+
+[recur_bill]:       https://hackernoon.com/payments-of-tomorrow-decentralized-recurring-billing-47d126d895fd
+[dreamteam_gh]:     https://github.com/dreamteam-gg/smart-contracts
+
+[eip1337]:          https://github.com/ethereum/EIPs/pull/1337
+[1337all]:          https://1337alliance.com/
+[tokensub1337]:     https://github.com/austintgriffith/token-subscription
+[groundhog1337]:    https://groundhog.network/
+[refclient1337]:    https://github.com/EthereumOpenSubscriptions/reference-client
+
+
+## Onboard via QR code
+
+| Onboard 
+| ----
+| [linkdrop]
+| [squarelink_evpass]
+| [pipeline]
+| [eip1683]
+| [cryptoxmas]
+| [onbotting]
+
+[linkdrop]:             https://github.com/LinkdropHQ/linkdrop-monorepo
+[squarelink_evpass]:    https://squarelink.com/event-pass
+[pipeline]:             https://github.com/pipeos-one/pipeline
+[eip1683]:              https://github.com/ethereum/EIPs/issues/1683
+[cryptoxmas]:           https://cryptoxmas.xyz/
+[onbotting]:            https://github.com/status-im/cryptolife/tree/onbotting.eth
+
+
 ## meta transactions
 
 | Meta
@@ -2254,20 +2312,64 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 
 ## Oracles
 
-| Oracle frameworks | Tools & demo     | Github             | Documentation    
-| ----------        | ---------        | ----               | ------           
-|  [chainlink]      | [chainlink_exp]  | [chainlink_github] | [chainlink_docs] 
-|  [provable]       | [provable_test]  | [provable_github]  | [provable_docs]  
+| Oracle frameworks | Tools & demo       | Github             | Documentation    
+| ----------        | ---------          | ----               | ------           
+| [chainlink]       | [chainlink_exp]    | [chainlink_github] | [chainlink_docs] 
+| [provable]        | [provable_test]    | [provable_github]  | [provable_docs]  
+| [open_oracle]     | [open_oracle_api]  | [open_oracle_gh]   | [open_oracle_docs]
+| [iex_doracle]     | [iex_doracle_demo] | [iex_doracle_gh]   | [iex_doracle_doc]
+| [augur]           | [augur_web]        | [augur_gh]         | [augur_doc]
+| [witnet]          |                    | [witnet_gh]        | [witnet_docs]
+| [razor]           | [razor_scan]       | [razor_gh]         | [razor_docs]
+| [tellor]          |                    | [tellor_gh]        | [tellor_faq]
+| [bandproto]       |                    | [bandproto_gh]     | [bandproto_doc]
+| [aeternity]       |                    | [aeternity_gh]     | [aeternity_doc]
+
+[chainlink]:        https://chain.link
+[chainlink_exp]:    https://explorer.chain.link
+[chainlink_github]: https://github.com/smartcontractkit/chainlink
+[chainlink_docs]:   https://docs.chain.link/docs
 
 [provable]:         http://provable.xyz
 [provable_github]:  https://github.com/provable-things
 [provable_docs]:    https://docs.provable.xyz/
 [provable_test]:    http://app.provable.xyz/home/test_query
 
-[chainlink]:        https://chain.link
-[chainlink_exp]:    https://explorer.chain.link
-[chainlink_github]: https://github.com/smartcontractkit/chainlink
-[chainlink_docs]:   https://docs.chain.link/docs
+[open_oracle]:      https://medium.com/compound-finance/announcing-compound-open-oracle-development-cff36f06aad3
+[open_oracle_api]:  https://api.compound.finance/api/v2/account
+[open_oracle_docs]: https://compound.finance/developers/api
+[open_oracle_gh]:   https://github.com/compound-finance/open-oracle
+
+[iex_doracle]:      https://iex.ec/decentralized-oracles/
+[iex_doracle_demo]: https://price-feed-doracle.iex.ec/
+[iex_doracle_gh]:   https://github.com/iExecBlockchainComputing/iexec-apps/tree/master/PriceFeed
+[iex_doracle_doc]:  https://docs.iex.ec/doracle.html
+
+[augur]:        https://www.augur.net/
+[augur_web]:    https://v2.augur.net
+[augur_gh]:     https://github.com/AugurProject/augur
+[augur_doc]:    https://docs.augur.net/
+
+[witnet]:       https://witnet.io/
+[witnet_gh]:    https://github.com/witnet/witnet-rust
+[witnet_docs]:  https://docs.witnet.io/
+
+[razor]:        https://razor.network/
+[razor_scan]:   https://razorscan.io/
+[razor_gh]:     https://github.com/razor-network
+[razor_docs]:   https://docs.razor.network/
+
+[tellor]:       https://tellor.io/
+[tellor_gh]:    https://github.com/tellor-io/TellorCore
+[tellor_faq]:   https://tellor.io/faq/
+
+[bandproto]:     https://bandprotocol.com/
+[bandproto_gh]:  https://github.com/bandprotocol
+[bandproto_doc]: https://developer.bandprotocol.com/
+
+[aeternity]:        https://aeternity.com/
+[aeternity_gh]:     https://github.com/aeternity
+[aeternity_doc]:    http://aeternity.com/documentation-hub/protocol/oracles/oracles/
 
 | Oracle examples | Oracle tutorials
 | -------------   | --------------
@@ -2499,6 +2601,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [android_apps]
 | [tryethereum.today]
 | [blockgeeks_dapps]
+| [producthunt_token]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -2526,6 +2629,8 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [android_apps]:         https://play.google.com/store/search?q=ethereum&c=apps
 [tryethereum.today]:    https://tryethereum.today/
 [blockgeeks_dapps]:     https://blockgeeks.com/dapp-list/
+[producthunt_token]:    https://www.producthunt.com/@yanroux/collections/token-economy
+
 
 [nonfungible]:          https://nonfungible.com/market/history
 

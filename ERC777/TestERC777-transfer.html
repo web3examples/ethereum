@@ -4,8 +4,8 @@
         <link rel="shortcut icon" href="https://web3examples.com/logo.png">  
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <meta charset="UTF-8">  
-        <script src="https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>   
-        <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.1/dist/web3.min.js"></script>            
+        <script src="https://cdn.jsdelivr.net/npm/babel-polyfill/dist/polyfill.min.js"></script>   
+        <script src="http://web3examples.com/ethereum/web3js/web3.min.js"></script>        
     </head>
 <body>
 <h1>Demo ERC777</h1>
@@ -28,6 +28,7 @@ Select Rinkeby
 
         const ERC777 = new web3.eth.Contract(ERC777ABI, "0x51a8e7fEC5639Eb6861a674E4F46148561d5c5c6");  // rinkeby
         var nrCoins = 3;
+        console.log(web3.version);
         
         const transferAmountHex =   "0x"+web3.utils.toBN(nrCoins).mul(web3.utils.toBN(1e18)).toString('hex');;
         console.log(transferAmountHex)

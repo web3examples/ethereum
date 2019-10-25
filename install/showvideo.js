@@ -69,6 +69,8 @@ CreateButton("25% smaller",     ()=> { video.style.height = 0.75 * parseFloat(vi
 CreateButton("25% larger",      ()=> { video.style.height = 1.25 * parseFloat(video.style.height)+"%" } );
 CreateButton("Full screen",     ()=> { video.requestFullscreen(); } );
 CreateButton("Voice comments",  ()=> { responsiveVoice.speak(document.getElementById("explain").innerText) } );
+CreateButton("Cancel voice",    ()=> { responsiveVoice.cancel() } );
+
 
 var position=document.createElement("p");
 document.body.appendChild(position);

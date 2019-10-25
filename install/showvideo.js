@@ -13,10 +13,9 @@ Location| Action| Object   | Time
 </div>
 <script src="showvideo.js"></script>
 */
-
-<script src="https://code.responsivevoice.org/responsivevoice.js?key=wwYbW8EZ"></script>
-
-
+var script = document.createElement("script");  // create a script DOM node
+script.src ="https://code.responsivevoice.org/responsivevoice.js?key=wwYbW8EZ";
+document.head.appendChild(script);   
 
 var pathArray = decodeURIComponent(window.location.pathname).split( '/' );
 var filename=pathArray.pop();

@@ -14,6 +14,10 @@ Location| Action| Object   | Time
 <script src="showvideo.js"></script>
 */
 
+<script src="https://code.responsivevoice.org/responsivevoice.js?key=wwYbW8EZ"></script>
+
+
+
 var pathArray = decodeURIComponent(window.location.pathname).split( '/' );
 var filename=pathArray.pop();
 filename=filename.replace(".html", "")
@@ -65,7 +69,7 @@ CreateButton("Toggle audio",    ()=> { video.muted= !video.muted;} );
 CreateButton("25% smaller",     ()=> { video.style.height = 0.75 * parseFloat(video.style.height)+"%" } );
 CreateButton("25% larger",      ()=> { video.style.height = 1.25 * parseFloat(video.style.height)+"%" } );
 CreateButton("Full screen",     ()=> { video.requestFullscreen(); } );
-
+CreateButton("Voice comments",  ()=> { responsiveVoice.speak(document.getElementById("explain").innerText) } );
 
 var position=document.createElement("p");
 document.body.appendChild(position);

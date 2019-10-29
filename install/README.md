@@ -6,7 +6,7 @@ These video's show how to install required software. ([Up](..) [Home](..\..))
 | --------------- | ---------                                                                 | ---------                                                      | ---------
 | Metamask        | [Install MetaMask Windows](Install_MetaMask_Windows.html)                 |
 | Node.js 10      | [Install node.js 10 Windows](Install_node.js_10_Windows.html)             | [Install node.js Macintosh](Install_node.js_Macintosh.html)    | [Install node.js 10 Ubuntu](Install_node.js_10_Ubuntu.html)
-| Node.js 12      | [Install node.js 12 Windows](Install_node.js_12_Windows.html)             |                                                                | [Install node.js 12 Ubuntu](Install_node.js_12_Ubuntu.html)
+| Node.js 12      | [Install node.js 12 Windows](Install_node.js_12_Windows.html)             |                                                                | 
 | Build tools     | [Install tools Windows.html](Install_tools_Windows.html)                  | [Install tools Macintosh](Install_tools_Macintosh.html)        | [Install python Ubuntu](Install_python_Ubuntu.html) <br>[Install tools Ubuntu](Install_tools_Ubuntu.html) 
 | Web3 package    | [Install Web3 Windows](Install_Web3_Windows.html)                         | [Install Web3 Macintosh](Install_Web3_Macintosh.html)          | [Install Web3 Ubuntu](Install_Web3_Ubuntu.html)
 | Ganache-cli     | [Install ganache-cli Windows](Install_ganache_cli_Windows_Use_HTTPS.html)

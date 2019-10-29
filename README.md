@@ -253,7 +253,7 @@ This document contains info about:
 
 # Node software
 
-## NOde overview
+## Node overview
 
 | Overview              | Experiment 
 |---------              | -----------
@@ -2462,6 +2462,10 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 [thegraphens]:      https://thegraph.com/explorer/subgraph/ensdomains/ens
 
 
+//reverse
+https://github.com/wealdtech/wealdtech-solidity/blob/master/contracts/ens/ENSReverseRegister.sol
+
+
 | Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
 | ----------    | ---------                               | ----                                          | ------             | --------------             | -----
 
@@ -2577,9 +2581,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Application Overview
 
-| Dapps                             | Projects          | NFT
-| ----------                        | -----             | ----
-| [stateofthedapps]<br>[sotd_sheet] | [etnw_projects]   | [nonfungible]
+| Dapps                             | NFT
+| ----------                        |  ----
+| [stateofthedapps]<br>[sotd_sheet] | [nonfungible]
 | [dappradar]
 | [consensys-overview]
 | [mathdapp]

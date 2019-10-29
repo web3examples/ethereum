@@ -124,7 +124,7 @@ This document contains info about:
 | [eth-intro]       |                  | [weekinethereumnews] | [ethereumdev]
 | [eth-guide]       |                  | [eth_stackexchange]  | [ludu]
 | [basics]          |                  | [delegatecall]       | [austin]
-| [howwork]         | 
+| [howwork]         |                  |                      | [stanford_bc]
 | [ethdocs] (error) | 
 | [Blockchainlabsnz]
 | [eth.wiki]
@@ -165,7 +165,7 @@ This document contains info about:
 [ethereumdev]:        https://ethereumdev.io/
 [ludu]:               https://www.ludu.co/course/ethereum
 [austin]:             https://medium.com/@austin_48503/rapid-dapp-prototyping-3823e1f565c4
-
+[stanford_bc]:        https://cs251.stanford.edu/
 
 # Explorers
 
@@ -1183,10 +1183,11 @@ https://grafana.com/grafana/dashboards/6976
 | Blockchain tests
 | --------------
 | [ethereum_test]
+| [eth_test_docs]
 | [eth_rpc_test]
 
-
 [ethereum_test]:    https://github.com/ethereum/tests
+[eth_test_docs]:    https://ethereum-tests.readthedocs.io/en/latest/
 [eth_rpc_test]:     https://github.com/ethereum/rpc-tests
 
 ## Formal verfy

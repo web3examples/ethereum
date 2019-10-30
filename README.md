@@ -125,7 +125,7 @@ This document contains info about:
 | [eth-guide]       |                  | [eth_stackexchange]  | [ludu]
 | [basics]          |                  | [delegatecall]       | [austin]
 | [howwork]         |                  |                      | [stanford_bc]
-| [ethdocs] (error) | 
+| [ethdocs] (error) |                  |                      | [tu_munich]
 | [Blockchainlabsnz]
 | [eth.wiki]
 | [metalist]
@@ -166,6 +166,8 @@ This document contains info about:
 [ludu]:               https://www.ludu.co/course/ethereum
 [austin]:             https://medium.com/@austin_48503/rapid-dapp-prototyping-3823e1f565c4
 [stanford_bc]:        https://cs251.stanford.edu/
+[tu_munich]:          https://github.com/sebischair/bbse
+
 
 # Explorers
 
@@ -1147,6 +1149,7 @@ https://grafana.com/grafana/dashboards/6976
 | [enhopstest]     |                |                                                   |                | 
 | [softeq]         |                |                                                   |                | 
 | [qualitestgroup] |                |                                                   |                | 
+| [liskqa]
 
 [rocktest]:         https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001
 [jaxtest]:          https://jaxenter.com/ins-outs-testing-blockchain-apps-146447.html
@@ -1160,6 +1163,8 @@ https://grafana.com/grafana/dashboards/6976
 [enhopstest]:       https://www.enhops.com/blockchain-testing
 [softeq]:           https://www.softeq.com/blockchain_testing
 [qualitestgroup]:   https://www.qualitestgroup.com/white-papers/testing-blockchain/
+[liskqa]:           https://blog.lisk.io/how-introducing-automation-testing-for-our-blockchain-significantly-improved-development-speed-and-10c0a6934e37
+
 
 [eth_tester]:       https://github.com/ethereum/eth-tester
 [dappeteer]:        https://github.com/decentraland/dappeteer
@@ -1243,6 +1248,31 @@ https://grafana.com/grafana/dashboards/6976
 
 [trebuchet]: https://github.com/Trebuchet-Framework/Trebuchet
 
+
+## Test and QA companies
+
+| Test companies        | Test professionals
+| ----------------      | ---------
+| [etisbew]             | [denism]
+| [testingxperts]       | [richardboeve]:
+| [magicblockchainqa]   |
+| [softeq]
+| [thinksys]
+| [testfort]
+| [magicfinserv]
+| [satedev]
+
+[etisbew]:              https://www.etisbew.com/blockchain-testing.html
+[testingxperts]:        https://testingxperts.com/services/blockchain-application-testing/
+[magicblockchainqa]:    https://www.magicblockchainqa.com/our-services/#smart-contract-testing
+[softeq]:               https://www.softeq.com/blockchain_testing
+[thinksys]:             https://www.thinksys.com/qa-testing/testing-blockchain/
+[testfort]:             https://testfort.com/blockchain-testing
+[magicfinserv]:         https://www.magicfinserv.com/case-study/dedicated-blockchain-qa-service-center/
+[satedev]:              https://www.satedev.com/blockchain-testing-and-quality-assurance/
+
+[denism]:               https://medium.com/@denis_10592
+[richardboeve]:         https://www.richardboeve.com
 
 # Frontend
 
@@ -1428,7 +1458,7 @@ Also see [Explorers](#explorers)
 | [list_vul]            |                    | [secure_pattern]       | [crfinlabs_checklist]
 | [dasp]                |                    | [vulnerable_mitigate]  | [ethdevs_checklist]
 | [notsosmart]          |                    | [attack_defend]        | [miguelmota_checklist]
-| [detector_docs]
+| [detector_docs]       |                    |                        | [scsvs]
 | [solcbuginfo]
 | [attack_vectors]
 | [defects]
@@ -1478,6 +1508,8 @@ Also see [Explorers](#explorers)
 [crfinlabs_checklist]:  https://github.com/cryptofinlabs/audit-checklist
 [ethdevs_checklist]:    http://ethdevs.com/solidity-smart-contract-security-the-checklist/
 [miguelmota_checklist]: https://github.com/miguelmota/solidity-audit-checklist
+[scsvs]:                https://securing.github.io/SCSVS/
+
 
 [paper_overview]:       https://github.com/hyeonleee/Smart_Contract_Security_Analysis
 

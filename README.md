@@ -807,7 +807,7 @@ https://grafana.com/grafana/dashboards/6976
 | [top10_tut]                | [github_sol]
 | [bitdegree]                | [azure_samples]
 | [awesome-sol]              | [top5]
-| [tutorialspoint_sol]
+| [tutorialspoint_sol]       | [tenderly_ver]
 | [manojpramesh]
 
 [cryptozombies]:       https://cryptozombies.io/en/lesson/1
@@ -841,6 +841,8 @@ https://grafana.com/grafana/dashboards/6976
 [azure_samples]:       https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/application-and-smart-contract-samples
 [top5]:                https://bytescout.com/blog/top-5-smart-contracts.html
 [secondstate]:         https://eth.search.secondstate.io/
+[tenderly_ver]:        https://dashboard.tenderly.dev/explorer
+
 
 [soliditybyexample]:   https://solidity-by-example.org/
 [smartcontractprg]:    https://smartcontractprogrammer.com/
@@ -1043,7 +1045,7 @@ https://grafana.com/grafana/dashboards/6976
 | [tool-list]        | [remix-eth]      | [aragonpm]       | [surya] (uses: [graphviz])    | [truffle]
 | [toolkit]          | [superblocks]    |                  | [solgraph] (uses: [graphviz]) | [evmlab]
 | [tools-dutch]      | [ethfiddle]      |                  | [piet]                        | [graphdebugger]
-| [eth_dev]          |                  |                  | [sif]
+| [eth_dev]          |                  |                  | [sif]                         | [tenderly]<br>[tenderly_gh]
 | [dappuniversity]   |                  | 
 | [dev_tut]          |                  | 
 | [blockgeeks-devs]  |                  | 
@@ -1086,6 +1088,8 @@ https://grafana.com/grafana/dashboards/6976
 
 [evmlab]:          https://github.com/ethereum/evmlab
 [graphdebugger]:   https://github.com/fergarrui/ethereum-graph-debugger
+[tenderly]:        https://tenderly.dev
+[tenderly_gh]:     https://github.com/Tenderly
 
 
 ### Tool tutorials

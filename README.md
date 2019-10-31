@@ -81,8 +81,9 @@ This document contains info about:
   - [Tokenize](#tokenize)
 - [Layer 2](#layer-2)
 
-# Examples
+# Interactive examples
 
+## Applications
 
 | Demo application              | Link         | Github
 | ---------                     | -------      | -----
@@ -107,12 +108,21 @@ This document contains info about:
 [todolist_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/ToDoList.sol
 [ballot_github]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Ballot.sol
 
+## Tools
 
-| Type of video's   | List of video's
-| -------------     | -------------                  
-| Install           | [Install Ethereum software](install) 
-| Demo              | [Demo Ethereum software](demo)  
+| Tool
+| ------------
+| [grid-rpc]
 
+[grid-rpc](grid-rpc-app/build)
+
+## Installation video's
+
+See: [Install Ethereum software](install) 
+
+## Demo video's
+
+See: [Demo Ethereum software](demo)  
 
 # Ethereum Concepts
 
@@ -1520,7 +1530,7 @@ Also see [Explorers](#explorers)
 | ----------------          |   ---           | -------------       | -----
 | [mythx]                   | [sectools]      | [reversing]         | [chainalysis]
 | [securify]                | [teEther]       | [ethvm_decompile]   | [ey_analyzer]
-| [quantstamp_prot]         |                 | [evmdis]            | [elliptic]
+| [quantstamp_prot]         | [contract_lib]  | [evmdis]            | [elliptic]
 | [Oyente]                  |                 | [pyevmasm]          | [cs-intell]
 | [Maian]                   |                 | [ethersplay]        | [ciphertrace]
 | [vandal]                  |                 | [jeb_decompiler]    | [spyderforensics]
@@ -1530,7 +1540,7 @@ Also see [Explorers](#explorers)
 | [anchainai]               |                 | [abi_dec]           | [dmgblockchain] 
 | [crytic]<br>[crytic_docs] |                 | [opcode_tool]       | [blockchainintel]
 |                           |                 | [octopus]           | [crystalblockchain]
-|                           |                 | [etherscan_opcode]  | [blockseer]
+|                           |                 |                     | [blockseer]
 
 
 [mythx]:                https://mythx.io
@@ -1548,10 +1558,9 @@ Also see [Explorers](#explorers)
 
 [sectools]:             https://consensys.github.io/smart-contract-best-practices/security_tools/
 [teEther]:              https://github.com/nescio007/teether
+[contract_lib]:         https://contract-library.com
+
 [ethersplay]:           https://github.com/crytic/ethersplay
-
-
-
 [reversing]:            https://arvanaghi.com/blog/reversing-ethereum-smart-contracts/
 [ethvm_decompile]:      https://ethervm.io/decompile
 [evmdis]:               https://github.com/Arachnid/evmdis
@@ -1563,7 +1572,7 @@ Also see [Explorers](#explorers)
 [abi_dec]:              https://github.com/beched/abi-decompiler
 [opcode_tool]:          https://etherscan.io/opcode-tool
 [octopus]:              https://github.com/quoscient/octopus
-[etherscan_opcode]:     https://etherscan.io/opcode-tool
+
 
 [chainalysis]:          https://www.chainalysis.com/
 [ey_analyzer]:          https://www.ey.com/en_gl/news/2018/04/ey-announces-blockchain-audit-technology
@@ -1595,7 +1604,7 @@ Also see [Explorers](#explorers)
 |                       | [quillhash]        |                 | [quantstamp2]
 |                       | [hacken_io]        |                 | [quantstamp3]
 |                       | [trailofbits]      |                 | [sigmaprime_dapper]
-|                       | [chainsecurity]
+|                       | [chainsecurity]    |                 | [chainSec_audit]
 |                       | [iosiro]
 |                       | [itransition]
 |                       | [openzeppelin_secaud]
@@ -1650,6 +1659,8 @@ Also see [Explorers](#explorers)
 [quantstamp2]:          https://certificate.quantstamp.com/view/substratum-token
 [quantstamp3]:          https://certificate.quantstamp.com/view/pool-together-contracts
 [sigmaprime_dapper]:    https://blog.sigmaprime.io/dapper-wallet-review.html
+[chainSec_audit]:       https://github.com/ChainSecurity/audits
+
 
 [calistocw_audit]:      https://github.com/EthereumCommonwealth/Auditing
 [bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/

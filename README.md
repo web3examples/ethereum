@@ -415,18 +415,16 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Node as a service
 
-
-| Hosted RPC 2.0 API| Other API     | Node as a service   | Nodes on PAAS | Incentified API access
-| ---------------   | ----------    | ------------        | ------------- | -----------
-| [infura]          | [etherscan]   | [quiknode]          | [blockform]   | [vipnode]
-| [cloudflare]      | [blockcypher] | [blockdaemon]       | [kaleido]     | 
-| [fiews]           | [etherapi]    | [alchemyapi_nodes]  | [aws]         | 
-| [linkpool]        | [chainkit]    | [eth7]              | [azure]       | 
-| [ethernode]       | [usehedge]    | [chainstack]        | [google-cloud]|
-| [rockside]        | [ocyan]
-| [alchemyapi]      | [etherniti]
-| [rpcslockit]      | [blockscout_api]
-| [nodesmith]
+| Free hosted RPC   | Hosted RPC (key)  | Other API     | Node as a service   | Nodes on PAAS | Incentified API access
+| ----------------  | ---------------   | ----------    | ------------        | ------------- | -----------
+| [infura]          | [fiews]           | [etherscan]   | [quiknode]          | [blockform]   | [vipnode]
+| [cloudflare]      | [ethernode]       | [blockcypher] | [blockdaemon]       | [kaleido]     | 
+| [linkpool]        | [rockside]        | [etherapi]    | [alchemyapi_nodes]  | [aws]         | 
+| [rpcslockit]      | [alchemyapi]      | [chainkit]    | [eth7]              | [azure]       | 
+| [mycryptoapi]     | [nodesmith]       | [usehedge]    | [chainstack]        | [google-cloud]|
+|                   |                   | [ocyan]
+|                   |                   | [etherniti]
+|                   |                   | [blockscout_api]
 
 [infura]:         https://mainnet.infura.io/
 [cloudflare]:     https://cloudflare-eth.com
@@ -437,7 +435,7 @@ https://grafana.com/grafana/dashboards/6976
 [alchemyapi]:     https://docs.alchemyapi.io/docs/alchemy-api-reference
 [rpcslockit]:     https://rpc.slock.it/
 [nodesmith]:      https://docs.nodesmith.io/#/ethereum/apiRef
-
+[mycryptoapi]:    https://api.mycryptoapi.com/eth
 
 
 [etherscan]:      https://etherscan.io/apis#proxy
@@ -1081,7 +1079,7 @@ https://grafana.com/grafana/dashboards/6976
 | [tool-list]        | [remix-eth]      | [aragonpm]       | [surya] (uses: [graphviz])    | [truffle]
 | [toolkit]          | [superblocks]    |                  | [solgraph] (uses: [graphviz]) | [evmlab]
 | [tools-dutch]      | [ethfiddle]      |                  | [piet]                        | [graphdebugger]
-| [eth_dev]          |                  |                  | [sif]                         | [tenderly]<br>[tenderly_gh]
+| [eth_dev]          | [eth_build]      |                  | [sif]                         | [tenderly]<br>[tenderly_gh]
 | [dappuniversity]   |                  | 
 | [dev_tut]          |                  | 
 | [blockgeeks-devs]  |                  | 
@@ -1108,7 +1106,7 @@ https://grafana.com/grafana/dashboards/6976
 [remix-eth]:       https://remix.ethereum.org
 [superblocks]:     https://lab.superblocks.com
 [ethfiddle]:       https://ethfiddle.com/
-
+[eth_build]:       https://eth.build/
 
 
 [ethpm]:           https://www.ethpm.com/
@@ -1395,13 +1393,13 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Testnet instances
 
-| (Test) Networks | Chainnr | Info                                             | Faucet (Get test Eth)                                         | Github             | Details
-| --------------- | ------- | --------                                         |  ---------                                                    | ------             | ----------
-| Ropsten         | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]   | [ropsten_details]
-| Kovan           | 42      | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]     | [kovan_details]
-| Rinkeby         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]   | [rinkeby_details]
-| Goerli          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]    | [goerli_details]
-| Athereum        | 43110   | Ava                                              | [athereum_faucet]                                             |                    | [athereum_details]
+| (Test) Networks | Chainnr | Info                                             | Faucet (Get test Eth)                                         | Github            
+| --------------- | ------- | --------                                         |  ---------                                                    | ------            
+| Ropsten         | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]  
+| Kovan           | 42      | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]    
+| Rinkeby         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]  
+| Goerli          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]   
+| Athereum        | 43110   | Ava                                              | [athereum_faucet]                                             |                   
 
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
@@ -1423,11 +1421,32 @@ https://grafana.com/grafana/dashboards/6976
 [goerli_github]:      https://github.com/goerli/testnet
 
 
+## Testnet RPC
+
+ | Details                  | Infura RPC        | Other RPC
+ | ----------               | ------------      | ----------
+ | [ropsten_details]        | [ropsten_infura]  |
+ | [kovan_details]          | [kovan_infura]    |
+ | [rinkeby_details]        | [rinkeby_infura]  |
+ | [goerli_details]         | [goerli_infura]   | [goerli_mudit]<br>[goerli_slock]<br>[goerli_prylabs]
+ | [athereum_details]       |                   | [athereum_rpc]
+
 [ropsten_details]:    https://github.com/ethereum-lists/chains/blob/master/_data/chains/3.json
 [kovan_details]:      https://github.com/ethereum-lists/chains/blob/master/_data/chains/42.json
 [rinkeby_details]:    https://github.com/ethereum-lists/chains/blob/master/_data/chains/4.json
 [goerli_details]:     https://github.com/ethereum-lists/chains/blob/master/_data/chains/5.json
 [athereum_details]:   https://github.com/ethereum-lists/chains/blob/master/_data/chains/43110.json
+
+[ropsten_infura]:     https://ropsten.infura.io 
+[kovan_infura]:       https://kovan.infura.io
+[rinkeby_infura]:     https://rinkeby.infura.io
+[goerli_infura]:      https://goerli.infura.io
+
+[goerli_mudit]:       https://rpc.goerli.mudit.blog
+[goerli_slock]:       https://rpc.slock.it/goerli
+[goerli_prylabs]:     https://goerli.prylabs.net
+
+[athereum_rpc]:       https://ava.network:21015/ext/evm/rpc
 
 ## Testnet dashboards
 

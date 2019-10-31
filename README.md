@@ -135,6 +135,7 @@ This document contains info about:
 [transfer_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Transfer.sol
 [todolist_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/ToDoList.sol
 [ballot_github]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Ballot.sol
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Tools
 
@@ -145,14 +146,17 @@ This document contains info about:
 [grid_rpc]:         https://web3examples.com/grid-rpc-app/build
 [grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app
 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 ## Installation video's
 
 See: [Install Ethereum software](install) 
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Demo video's
 
 See: [Demo Ethereum software](demo)  
-
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 # --------------------------------------------
 

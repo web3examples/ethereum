@@ -6,7 +6,7 @@ This document contains info about:
   - [Tools](#tools)
   - [Installation video's](#installation-videos)
   - [Demo video's](#demo-videos)
-- [-----------](#)
+- [--------------------------------------------](#)
 - [Ethereum Concepts](#ethereum-concepts)
 - [Explorers](#explorers)
 - [Node software](#node-software)
@@ -154,7 +154,7 @@ See: [Install Ethereum software](install)
 See: [Demo Ethereum software](demo)  
 
 
-# -----------
+# --------------------------------------------
 
 # Ethereum Concepts
 

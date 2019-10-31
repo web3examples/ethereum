@@ -132,17 +132,18 @@ This document contains info about:
 [w3e_faucet]:        http://web3examples.com/ethereum/faucet
 [w3e_faucet_github]: https://github.com/web3examples/ethereum/tree/master/faucet
 
-[transfer_github]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Transfer.sol
+[transfer_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Transfer.sol
 [todolist_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/ToDoList.sol
 [ballot_github]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Ballot.sol
 
 ## Tools
 
-| Tool
-| ------------
-| [grid-rpc]
+| Tool          | Link       | Github
+| ------------  | -----      | ---------
+| Test RPC API  | [grid_rpc] | [grid_rpc_gh]
 
-[grid-rpc](grid-rpc-app/build)
+[grid_rpc]:         https://web3examples.com/grid-rpc-app/build
+[grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app
 
 ## Installation video's
 

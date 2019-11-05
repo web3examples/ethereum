@@ -1,14 +1,14 @@
 <div id="ipfs">QmSu3yxhYGFc2wVy7iKHUZiDJBK5Brie4dhuYiiA7M75Ea</div>
 <div id="timetable">
-Location         | Action| Object                                                  | Time
-Command window 1 | Enter | ganache-cli                                             | 2
-Command window 3 | Enter | wscurl ws://localhost:8545                              | 10
-Command window 3 | Enter | {"method": "eth_subscribe", "params": ["newHeads"]}     | 18
-Command window 1 | Scroll| {Available Accounts}                                    | 24
-Command window 1 | Copy  | {Account 0}                                             | 28
-Command window 2 | Enter | set account=                                            | 30
-Command window 2 | Paste | {Account 0} {Enter}                                     | 35
-Command window 1 | Scroll| {End of text}                                           | 38
+Location         | Action| Object                                                           | Time
+Command window 1 | Enter | ganache-cli                                                      | 2
+Command window 3 | Enter | wscurl ws://localhost:8545                                       | 10
+Command window 3 | Enter | {"id": 1, "method": "eth_subscribe", "params": ["newHeads"]}     | 18
+Command window 1 | Scroll| {Available Accounts}                                             | 24
+Command window 1 | Copy  | {Account 0}                                                      | 28
+Command window 2 | Enter | set account=                                                     | 30
+Command window 2 | Paste | {Account 0} {Enter}                                              | 35
+Command window 1 | Scroll| {End of text}                                                    | 38
 Command window 2 | Paste | curl -d "{""method"":""eth_sendTransaction"",""params"":{""from"":""%account%"",""to"":""%account%"",""value"":""0x1""}}" http://localhost:8545 | 50
 </div>
 <div id="goal">

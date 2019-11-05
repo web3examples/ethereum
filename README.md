@@ -38,7 +38,7 @@ This document contains info about:
   - [Deployment frameworks](#deployment-frameworks)
   - [Development process](#development-process)
 - [Testing](#testing)
-  - [Test tools](#test-tools)
+  - [Test process](#test-process)
   - [Blockchain infra test](#blockchain-infra-test)
   - [Formal verfy](#formal-verfy)
   - [Fuzzing](#fuzzing)
@@ -51,6 +51,7 @@ This document contains info about:
 - [Testnets](#testnets)
   - [Testnet overview](#testnet-overview)
   - [Testnet instances](#testnet-instances)
+  - [Testnet RPC](#testnet-rpc)
   - [Testnet dashboards](#testnet-dashboards)
   - [Testnet explorers](#testnet-explorers)
 - [Security](#security)
@@ -1182,22 +1183,23 @@ https://grafana.com/grafana/dashboards/6976
 
 # Testing
 
-## Test tools
+## Test process
 
-| Testing overview | Tools          | Also see                                          | Coverage       | Examples
-|------------      | -------------  |----------                                         | --------       | ----------
-| [rocktest]       | [eth_tester]   | [Security tools](#security-tools)                 | [sol-coverage] | [tontine]
-| [jaxtest]        | [dappeteer]    | [Javascript test tools](../../javascript)         |                | [qainfotech_truf]
-| [solstate]       | [consensys_tt] | [Deployment frameworks](#deployment-frameworks)   |                | [truf_test_yt]
-| [edgefundtest]   |                | [Bounties and audits](#bounties-and-audits)       |                | [ddns_test]
-| [ethhubtest]     |                | [Testnets](#testnets)                             |                | [mintest]
-| [probeseven]     |                |                                                   |                | [erc20test]
-| [lisktest]       |                |                                                   |                | [testguide]
-| [kazerouni]      |                |                                                   |                | [front_test]
-| [enhopstest]     |                |                                                   |                | 
-| [softeq]         |                |                                                   |                | 
-| [qualitestgroup] |                |                                                   |                | 
-| [liskqa]
+| Testing process  | Also see                                         | Examples
+|------------      |----------                                        | ----------
+| [rocktest]       | [Security tools](#security-tools)                | [tontine]
+| [jaxtest]        | [Javascript test tools](../../javascript)        | [qainfotech_truf]
+| [solstate]       | [Deployment frameworks](#deployment-frameworks)  | [truf_test_yt]
+| [edgefundtest]   | [Bounties and audits](#bounties-and-audits)      | [ddns_test]
+| [ethhubtest]     | [Testnets](#testnets)                            | [mintest]
+| [probeseven]     |                                                  | [erc20test]
+| [lisktest]       |                                                  | [testguide]
+| [kazerouni]      |                                                  | [front_test]
+| [enhopstest]     |                                                  | 
+| [softeq]         |                                                  
+| [qualitestgroup] |                                                  
+| [liskqa]        
+
 
 [rocktest]:         https://forum.openzeppelin.com/t/test-smart-contracts-like-a-rockstar/1001
 [jaxtest]:          https://jaxenter.com/ins-outs-testing-blockchain-apps-146447.html
@@ -1214,11 +1216,6 @@ https://grafana.com/grafana/dashboards/6976
 [liskqa]:           https://blog.lisk.io/how-introducing-automation-testing-for-our-blockchain-significantly-improved-development-speed-and-10c0a6934e37
 
 
-[eth_tester]:       https://github.com/ethereum/eth-tester
-[dappeteer]:        https://github.com/decentraland/dappeteer
-[consensys_tt]:     https://github.com/ConsenSys/ethereum-developer-tools-list#testing-tools
-
-
 [tontine]:          https://developer.ibm.com/recipes/tutorials/work-with-ethereum-solidity-and-truffle-unit-testing-in-tontine-dapp-game/#r_step4
 [qainfotech_truf]:  https://qainfotech.com/truffle-a-framework-for-solidity-smart-contracts/
 [truf_test_yt]:     https://www.youtube.com/watch?v=b2VInFwZmNw
@@ -1227,6 +1224,19 @@ https://grafana.com/grafana/dashboards/6976
 [erc20test]:        https://medium.com/coinmonks/how-to-test-ethereum-smart-contracts-ac28fa852281
 [testguide]:        https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-ethereum-smart-contracts-in-go-9fc34b178d78
 [front_test]:       https://ethereum.gitbooks.io/frontier-guide/testing_contracts_and_transactions.html
+
+
+| Tools overview     | Tools          | Coverage       
+| ---------------    | -------------  | --------       
+| [consensys_tt]     | [truffle_test] | [sol-coverage] 
+|                    | [eth_tester]   |                
+|                    | [dappeteer]    |                
+ 
+[consensys_tt]:     https://github.com/ConsenSys/ethereum-developer-tools-list#testing-tools
+
+[truffle_test]:     https://www.trufflesuite.com/docs/truffle/testing/testing-your-contracts
+[eth_tester]:       https://github.com/ethereum/eth-tester
+[dappeteer]:        https://github.com/decentraland/dappeteer
 
 [sol-coverage]:     https://github.com/sc-forks/solidity-coverage
 
@@ -1252,7 +1262,6 @@ https://grafana.com/grafana/dashboards/6976
 
 [formal_overview]:      https://github.com/pirapira/ethereum-formal-verification-overview/
 [formal_paper]:         https://www.researchgate.net/profile/Kei_Leo_Brousmiche/publication/324175498_Formal_Verification_of_Smart_Contracts_Based_on_Users_and_Blockchain_Behaviors_Models/links/5ae6c8bda6fdcc3bea9783e8/Formal-Verification-of-Smart-Contracts-Based-on-Users-and-Blockchain-Behaviors-Models.pdf
-
 
 [rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
 [verx]:                 https://verx.ch/
@@ -1285,7 +1294,6 @@ https://grafana.com/grafana/dashboards/6976
 [deviant]:              https://scholarworks.boisestate.edu/cgi/viewcontent.cgi?article=2719&context=td
 [vertigo_mut]:          https://github.com/JoranHonig/vertigo
 [musc]:                 https://github.com/belikout/MuSC-Tool-Demo-repo
-
 
 ## Load testing
 

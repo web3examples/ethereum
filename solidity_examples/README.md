@@ -10,7 +10,7 @@ You can copy-paste the examples in: [play editor]
 | Demo application              | Link         | Github
 | ---------                     | -------      | -----
 | Log your location (check-in)  | [location]   | [location_github]
-| Mini casino: bet and win      | [casino]     | [casino1_github] [casino2_github]
+| Mini casino: bet and win      | [casino]     | [casino1_github]<br>[casino2_github]
 | Faucet                        | [w3e_faucet] | [w3e_faucet_github]
 | Transfer                      |              | [transfer_github]
 | ToDoList                      |              | [todolist_github]

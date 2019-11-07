@@ -1231,12 +1231,14 @@ https://grafana.com/grafana/dashboards/6976
 | [consensys_tt]     | [truffle_test] | [sol-coverage] 
 |                    | [eth_tester]   |                
 |                    | [dappeteer]    |                
+|                    | [zep_testhelp] |
  
 [consensys_tt]:     https://github.com/ConsenSys/ethereum-developer-tools-list#testing-tools
 
 [truffle_test]:     https://www.trufflesuite.com/docs/truffle/testing/testing-your-contracts
 [eth_tester]:       https://github.com/ethereum/eth-tester
 [dappeteer]:        https://github.com/decentraland/dappeteer
+[zep_testhelp]:     https://github.com/OpenZeppelin/openzeppelin-test-helpers
 
 [sol-coverage]:     https://github.com/sc-forks/solidity-coverage
 
@@ -1265,6 +1267,8 @@ https://grafana.com/grafana/dashboards/6976
 
 [rtver_formal]:         https://runtimeverification.com/formal-design-and-modeling/
 [verx]:                 https://verx.ch/
+[manticore]:            https://github.com/trailofbits/manticore
+
 
 ## Fuzzing
 

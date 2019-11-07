@@ -813,7 +813,7 @@ https://grafana.com/grafana/dashboards/6976
 | [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)                     | [cheatsheet1]
 | [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]  | [cheatsheet2]
 | [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]                             | [cheatsheet3] 
-| [learn_solidity]           | [secondstate]           |                                           | [kcl_class]                                 | [cheatsheet4] 
+| [learn_solidity]           | [secondstate]           | [cursosolidity]                           | [kcl_class]                                 | [cheatsheet4] 
 | [blockgeeks_sol1]          | [contractfinder]        |                                           | [sheets_alex]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
@@ -862,6 +862,8 @@ https://grafana.com/grafana/dashboards/6976
 [smartcontractprg]:    https://smartcontractprogrammer.com/
 [babysteps]:           https://github.com/cyrusadkisson/solidity-baby-steps
 [compiler_errors]:     https://github.com/CJ42/Solidity-Compiler-Debug-List
+[cursosolidity]:       https://github.com/jeffprestes/cursosolidity
+
 
 [ninabreznik_learn]:   https://ninabreznik.github.io/workshop-solidity/
 [willitscale_learn]:   https://github.com/willitscale/learning-solidity

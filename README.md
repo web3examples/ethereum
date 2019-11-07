@@ -2,7 +2,7 @@ Examples related to ethereum. ([Home](..))
 
 This document contains info about:
 - [Interactive examples](#interactive-examples)
-  - [Applications](#applications)
+  - [Solidity Examples](#solidity-examples)
   - [Tools](#tools)
   - [Installation video's](#installation-videos)
   - [Demo video's](#demo-videos)
@@ -94,7 +94,7 @@ This document contains info about:
   - [Query](#query)
   - [Geo](#geo)
 - [Login and user data](#login-and-user-data)
-- [Applications](#applications-1)
+- [Applications](#applications)
   - [Use cases](#use-cases)
   - [Application Overview](#application-overview)
   - [Financial](#financial)
@@ -111,6 +111,8 @@ This document contains info about:
 - [Layer 2](#layer-2)
 
 # Interactive examples
+
+## Solidity Examples
 See: [Solidity Examples](solidity_examples) 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

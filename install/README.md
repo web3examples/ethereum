@@ -16,6 +16,9 @@ Tools that aren't trivial to install are accompanied by a video.
 | Geth            | [geth]                  | [geth_vid]   
 | Git cmd line    | [gitcmdline]            | [git_vid]    
 | Git desktop     | [gitdesktop]
+| Curl            | [curl]
+| Jq              | [jq]
+
 
 [metamask]:      https://metamask.io
 [nodejs]:        https://nodejs.org/en/
@@ -39,6 +42,11 @@ Tools that aren't trivial to install are accompanied by a video.
 [python_ubu]:    Install_python_Ubuntu.html
 [tools_ubu]:     Install_tools_Ubuntu.html
 
+[curl]:          https://curl.haxx.se/download.html
+[jq]:            https://stedolan.github.io/jq/download
+
+
+
 ## NPM based tools
 
 Note: install node.js first
@@ -60,8 +68,12 @@ Note: install node.js first
 | Tool          | Link       | Github        | Video
 | ------------  | -----      | ---------     | -----------
 | Test RPC API  | [grid_rpc] | [grid_rpc_gh] |
-| Remix         |            |               | [remix]
+| Remix         | [remix]    |               | [remix]
 
 [grid_rpc]:         https://web3examples.com/grid-rpc-app/build
 [grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app
-[remix]:            Prepare_Remix.html
+[remix]:            https://remix.ethereum.org
+[remix_prep]:       Prepare_Remix.html
+
+
+

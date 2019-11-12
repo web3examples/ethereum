@@ -18,7 +18,7 @@ Tools that aren't trivial to install are accompanied by a video.
 | Git desktop     | [gitdesktop]
 | Curl            | [curl]
 | Jq              | [jq]
-
+| Grid            | [grid]
 
 [metamask]:      https://metamask.io
 [nodejs]:        https://nodejs.org/en/
@@ -26,6 +26,9 @@ Tools that aren't trivial to install are accompanied by a video.
 [geth]:          https://geth.ethereum.org/downloads
 [gitcmdline]:    https://git-scm.com/download/win
 [gitdesktop]:    https://desktop.github.com
+[curl]:          https://curl.haxx.se/download.html
+[jq]:            https://stedolan.github.io/jq/download
+[grid]:          https://grid.ethereum.org
 
 [metamask_vid]:  Install_MetaMask_Windows.html
 [nodejs10_vid]:  Install_node.js_10_Windows.html
@@ -41,11 +44,6 @@ Tools that aren't trivial to install are accompanied by a video.
 
 [python_ubu]:    Install_python_Ubuntu.html
 [tools_ubu]:     Install_tools_Ubuntu.html
-
-[curl]:          https://curl.haxx.se/download.html
-[jq]:            https://stedolan.github.io/jq/download
-
-
 
 ## NPM based tools
 

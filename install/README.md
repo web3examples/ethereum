@@ -1,6 +1,6 @@
 # Tools and installation
 
-([Up](..) [Home](..\..))
+([Up](..) [Home](..\..))<br>
 These are all the tools can be used to work with Ethereum. Some tools just have a link to use/install the tools.
 Tools that aren't trivial to install are accompanied by a video.
 

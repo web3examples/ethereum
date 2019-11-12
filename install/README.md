@@ -43,15 +43,17 @@ Tools that aren't trivial to install are accompanied by a video.
 
 Note: install node.js first
 
-| Tool            | NPM install -g          | Install on Windows                                        | Install on Macintosh                         |  Install on Ubuntu  
-| --------------- | ---------               | ---------------------------------------------             | ---------                                    | ---------
-| Build tools     |                         | [tools](Install_tools_Windows.html)                       | [tools](Install_tools_Macintosh.html)        | [python](Install_python_Ubuntu.html) <br>[tools](Install_tools_Ubuntu.html) 
-| Web3 package    | web3                    | [Web3](Install_Web3_Windows.html)                         | [Web3](Install_Web3_Macintosh.html)          | [Web3 ](Install_Web3_Ubuntu.html)
-| Ganache-cli     | ganache-cli             | [ganache-cli](Install_ganache_cli_Windows_Use_HTTPS.html)
-| Git             |                         | [git](Install_git_Windows.html)<br>[Desktop git](https://desktop.github.com)
-| Truffle         | truffle                 | [Truffle](Install_Truffle.html)
+| Tool         | NPM install -g | Install on Windows  | Install on Macintosh  |  Install on Ubuntu  
+| ------------ | ---------      | ------------------- | ---------             | ---------
+| Web3 package | web3           | [web3_win]          | [web3_mac]            | [web3_ubu]
+| Ganache-cli  | ganache-cli    | [ganache-cli]
+| Truffle      | truffle        | [truffle]
 
-
+[web3_win]:     Install_Web3_Windows.html
+[web3_mac]:     Install_Web3_Macintosh.html
+[web3_ubu]:     Install_Web3_Ubuntu.html
+[ganache-cli]:  Install_ganache_cli_Windows_Use_HTTPS.html
+[truffle]:      Install_Truffle.html
 
 ## Online tools
 
@@ -59,7 +61,6 @@ Note: install node.js first
 | ------------  | -----      | ---------     | -----------
 | Test RPC API  | [grid_rpc] | [grid_rpc_gh] |
 | Remix         |            |               | [remix]
-
 
 [grid_rpc]:         https://web3examples.com/grid-rpc-app/build
 [grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app

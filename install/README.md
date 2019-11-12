@@ -51,24 +51,38 @@ Tools that aren't trivial to install are accompanied by a video.
 
 Note: install node.js first
 
-| Tool         | NPM install -g | Install on Windows  | Install on Macintosh  |  Install on Ubuntu  
-| ------------ | ---------      | ------------------- | ---------             | ---------
-| Web3 package | web3           | [web3_win]          | [web3_mac]            | [web3_ubu]
-| Ganache-cli  | ganache-cli    | [ganache-cli]
-| Truffle      | truffle        | [truffle]
+| NPM install -g | Package            | Install on Windows  | Install on Macintosh  |  Install on Ubuntu  
+| ------------   | -----              | ---------           | -------------------   | --------- 
+| web3           | [pkg_web3]         | [web3_win]          | [web3_mac]            | [web3_ubu]
+| ganache-cli    | [pkg_ganache_cli]  | [ganache-cli]
+| Truffle        | [pkg_truffle]      | [truffle]
+| wscurl         | [pkg_wscurl]
+| wscat          | [pkg_wscat] 
 
-[web3_win]:     Install_Web3_Windows.html
-[web3_mac]:     Install_Web3_Macintosh.html
-[web3_ubu]:     Install_Web3_Ubuntu.html
-[ganache-cli]:  Install_ganache_cli_Windows_Use_HTTPS.html
-[truffle]:      Install_Truffle.html
+[pkg_web3]:         https://www.npmjs.com/package/web3
+[pkg_ganache_cli]:  https://www.npmjs.com/package/ganache-cli
+[pkg_truffle]:      https://www.npmjs.com/package/truffle
+[pkg_wscurl]:       https://www.npmjs.com/package/wscurl
+[pkg_wscat]:        https://www.npmjs.com/package/wscat
+
+[web3_win]:         Install_Web3_Windows.html
+[web3_mac]:         Install_Web3_Macintosh.html
+[web3_ubu]:         Install_Web3_Ubuntu.html
+[ganache-cli]:      Install_ganache_cli_Windows_Use_HTTPS.html
+[truffle]:          Install_Truffle.html
 
 ## Online tools
 
-| Tool          | Link       | Github        | Video
-| ------------  | -----      | ---------     | -----------
-| Test RPC API  | [grid_rpc] | [grid_rpc_gh] |
-| Remix         | [remix]    |               | [remix]
+| Tool          | Link         | Github        | Video
+| ------------  | -----        | ---------     | -----------
+| Play editor   | [play_ed]    |
+| Api request   | [apirequest] |
+| Test RPC API  | [grid_rpc]   | [grid_rpc_gh] |
+| Remix         | [remix]      |               | [remix]
+
+
+[play_ed]:          https://playproject.io/play-ed/
+[apirequest]:       https://www.apirequest.io/
 
 [grid_rpc]:         https://web3examples.com/grid-rpc-app/build
 [grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app

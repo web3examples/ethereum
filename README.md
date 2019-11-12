@@ -3,8 +3,7 @@ Examples related to ethereum. ([Home](..))
 This document contains info about:
 - [Interactive examples](#interactive-examples)
   - [Solidity Examples](#solidity-examples)
-  - [Tools](#tools)
-  - [Installation video's](#installation-videos)
+  - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
 - [--------------------------------------------](#)
 - [Ethereum Concepts](#ethereum-concepts)
@@ -21,6 +20,7 @@ This document contains info about:
   - [Web3.js in browser](#web3js-in-browser)
 - [Wallets](#wallets)
   - [Wallet (just) for coins](#wallet-just-for-coins)
+  - [(pc) Browser with builtin wallets](#pc-browser-with-builtin-wallets)
   - [Mobile Wallets](#mobile-wallets)
   - [Hardware wallets](#hardware-wallets)
   - [Contract based wallets](#contract-based-wallets)
@@ -117,20 +117,9 @@ See: [Solidity Examples](solidity_examples)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-## Tools
+## Tools and installation
 
-| Tool          | Link       | Github
-| ------------  | -----      | ---------
-| Test RPC API  | [grid_rpc] | [grid_rpc_gh]
-
-[grid_rpc]:         https://web3examples.com/grid-rpc-app/build
-[grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app
-
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-## Installation video's
-
-See: [Install Ethereum software](install) 
+See: [Tools and installation](install) 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 ## Demo video's
@@ -142,9 +131,9 @@ See: [Demo Ethereum software](demo)
 
 # Ethereum Concepts
 
-| General info      | Youtube          | Info sources         | Online courses    
-| ---------------   | ---------------- | ---------------      | ---------------
-| [mastering]       | [youtube-exp]    | [eth-mag]            | [zastrin]
+| General info      | Youtube          | Info sources         | Online courses       | Offline cources
+| ---------------   | ---------------- | ---------------      | ---------------      | -----------
+| [mastering]       | [youtube-exp]    | [eth-mag]            | [zastrin]            | [colostate]
 | [ethereum.org]    | [youtube-arch]   | [tcrpartybot]        | [coursetro]
 | [ethhub]          |                  | [tokeneconomy]       | [tutorialspoint_eth]
 | [eth-intro]       |                  | [weekinethereumnews] | [ethereumdev]
@@ -194,6 +183,7 @@ See: [Demo Ethereum software](demo)
 [stanford_bc]:        https://cs251.stanford.edu/
 [tu_munich]:          https://github.com/sebischair/bbse
 
+[colostate]:          https://www.cs.colostate.edu/~cs481a3
 
 # Explorers
 
@@ -683,6 +673,18 @@ https://grafana.com/grafana/dashboards/6976
 [42wallets]:            https://cryptospace.ng/a-list-of-42-wallets-that-supports-ethereum-and-ethereum-tokens/
 [cryptowisser]:         https://www.cryptowisser.com/wallets/
 
+## (pc) Browser with builtin wallets
+
+| Browser
+| ------------
+| [bravebrowser]
+| [operabrowser]
+| [beakerbrowser]
+
+[bravebrowser]: https://brave.com
+[operabrowser]: https://www.opera.com
+[beakerbrowser]: https://beakerbrowser.com
+
 
 ## Mobile Wallets
 
@@ -814,7 +816,7 @@ https://grafana.com/grafana/dashboards/6976
 | [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]  | [cheatsheet2]
 | [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]                             | [cheatsheet3] 
 | [learn_solidity]           | [secondstate]           | [cursosolidity]                           | [kcl_class]                                 | [cheatsheet4] 
-| [blockgeeks_sol1]          | [contractfinder]        |                                           | [sheets_alex]
+| [blockgeeks_sol1]          | [contractfinder]        | [stupeters]                               | [sheets_alex]
 | [blockgeeks_sol2]          | [ethpm_registry]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
 | [soliditykoans]            | [verified_contracts]
@@ -863,7 +865,7 @@ https://grafana.com/grafana/dashboards/6976
 [babysteps]:           https://github.com/cyrusadkisson/solidity-baby-steps
 [compiler_errors]:     https://github.com/CJ42/Solidity-Compiler-Debug-List
 [cursosolidity]:       https://github.com/jeffprestes/cursosolidity
-
+[stupeters]:           https://gist.github.com/stupeters187
 
 [ninabreznik_learn]:   https://ninabreznik.github.io/workshop-solidity/
 [willitscale_learn]:   https://github.com/willitscale/learning-solidity

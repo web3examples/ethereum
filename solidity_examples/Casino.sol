@@ -15,7 +15,7 @@ contract Casino {
     /** Perform the bet and pay out if you win
         @dev several temporary variables are created to make debugging easier
     */
-    function betAndWin() public payable  { // returning value isn't easy to retreive
+    function betAndWin() public payable returns (bool) { // returning value isn't easy to retreive
         address payable betPlacer = address(msg.sender);
         uint bet = msg.value;
         uint payout = bet * 2;
@@ -26,6 +26,7 @@ contract Casino {
         if (win)
             betPlacer.transfer(payout);        
         emit Won(win);// logging event
+        return win;
     }
 
     /** Check the balance of the bank

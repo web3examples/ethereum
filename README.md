@@ -187,14 +187,14 @@ See: [Demo Ethereum software](demo)
 
 # Explorers
 
-| Block explorer    | Dashboards        | Block Visuals | Miners      | Tokens             | NFTs (ERC721)     |  Dapps           | Explorer source
-| ---------------   | ----------        | ------------- | -----       | -----              | -----             | -----            | --------------
-| [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    | [etchain_light]
-| [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    |                  | [etherparty]
-| [etherchain]      | [ethernodes]      | [ethtective]  |             | [enjinx_erc20]     | [opensea_rinkeby] |                  
-| [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      | [bloxy]           |                  
-| [enjinx]          | [ethstats_net]    |               |             |                    | [etherscan_tokens]|                  
-| [blockchain_com]  | [ethstats_io]     |
+| Block explorer    | Dashboards        | Block Visuals | Miners      | Tokens             | NFTs (ERC721)     |  Dapps           | Explorer source | Docker based
+| ---------------   | ----------        | ------------- | -----       | -----              | -----             | -----            | --------------  | ------
+| [etherscan]       | [bloxy_db]        | [ethviewer]   | [poolwatch] | [bloxy_erc20]      | [tokentxns]       | [bloxy_dapps]    | [etchain_light] | [epirus]
+| [ethplorer]       | [nodetracker]     | [bloxy_graph] |             | [amberdata_tokens] | [mintable_exp]    | [santiment]      | [etherparty]
+| [etherchain]      | [ethernodes]      | [ethtective]  |             | [enjinx_erc20]     | [opensea_rinkeby] | [cg_crypto_kit]  
+| [blockscout]      | [amberdata_db]    |               |             | [emoon_erc20]      | [bloxy]           | [cg_compound]
+| [enjinx]          | [ethstats_net]    |               |             |                    | [etherscan_tokens]| [cg_airsawap]
+| [blockchain_com]  | [ethstats_io]     |               |             |                    |                   | [cg_augur]
 | [btc_com]         | [etherblockchain] 
 | [blockchair]      | [dlethexplorer_db]
 | [minergate]       |
@@ -263,10 +263,17 @@ See: [Demo Ethereum software](demo)
 [etherscan_tokens]: https://rinkeby.etherscan.io/token/0x07fe0d8237299cda9fd5507d20b8602c71eb3658
 
 [bloxy_dapps]:      https://bloxy.info/list_dapps
+[santiment]:        https://graphs.santiment.net/
+[cg_crypto_kit]:    https://www.curiousgiraffe.io/cryptokitties/
+[cg_compound]:      https://www.curiousgiraffe.io/compound/
+[cg_airsawap]:      https://www.curiousgiraffe.io/airswap/
+[cg_augur]:         https://www.curiousgiraffe.io/augur/
 
 [etchain_light]:    https://github.com/gobitfly/etherchain-light
 [etherparty]:       https://github.com/etherparty/explorer
 
+
+[epirus]:           https://github.com/blk-io/epirus-free
 
 
 # Node software
@@ -342,9 +349,9 @@ See: [Demo Ethereum software](demo)
 
 ## Running node
 
-| Install & run | Install Paas      | Secure            | Management tools
-| ----          | ----------------  | ----              | -----------
-| [grid]        | [kubernetes]      | [secure]          | [eth-netstats]
+| Install & run | Install Paas      
+| ----          | ----------------  
+| [grid]        | [kubernetes]      
 | [geth_setup]  | [aws-setup]
 | [parity_setup]| [azure-setup] 
 | [running]     | [ethereum-kubernetes]
@@ -373,15 +380,15 @@ See: [Demo Ethereum software](demo)
                   
 [ha]:             https://docs.pantheon.pegasys.tech/en/latest/Deploying-Pantheon/High-Availability/
                   
-                  
-[secure]:         https://www.researchgate.net/publication/327971402_Attack_and_Defence_of_Ethereum_Remote_APIs
 
-[eth-netstats]: https://github.com/cubedro/eth-netstats
+## Secure nodes
+            
+| Secure nodes
+| -----------
+| [secure_node]
 
-https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
-https://grafana.com/grafana/download
-https://gist.github.com/karalabe/e7ca79abdec54755ceae09c08bd090cd
-https://grafana.com/grafana/dashboards/6976
+[secure_node]:         https://www.researchgate.net/publication/327971402_Attack_and_Defence_of_Ethereum_Remote_APIs
+
 
 ## Node as a service
 
@@ -392,7 +399,7 @@ https://grafana.com/grafana/dashboards/6976
 | [linkpool]        | [rockside]        | [etherapi]    | [alchemyapi_nodes]  | [aws]         | 
 | [rpcslockit]      | [alchemyapi]      | [chainkit]    | [eth7]              | [azure]       | 
 | [mycryptoapi]     | [nodesmith]       | [usehedge]    | [chainstack]        | [google-cloud]|
-|                   |                   | [ocyan]
+|                   |                   | [ocyan]       | [deploy]
 |                   |                   | [etherniti]
 |                   |                   | [blockscout_api]
 
@@ -422,7 +429,7 @@ https://grafana.com/grafana/dashboards/6976
 [alchemyapi_nodes]: https://alchemyapi.io
 [eth7]:             https://eth7.com/
 [chainstack]:       https://docs.chainstack.com/guides/getting-started#run-a-public-blockchain-node
-
+[deploy]:           https://deploy.radar.tech/
 
 [blockform]:      https://github.com/WeTrustPlatform/blockform
 [kaleido]:        https://kaleido.io 
@@ -431,6 +438,33 @@ https://grafana.com/grafana/dashboards/6976
 [google-cloud]:   https://console.cloud.google.com/marketplace/details/click-to-deploy-images/ethereum
 
 [vipnode]:        https://vipnode.org/
+
+
+
+# Manage and monitor 
+
+
+| Management nodes   | Monitoring Dapps
+| -----------        | -------------
+| [eth-netstats]     | [terminal]
+| [grafana1]         | [moesif_web3]
+| [grafana2]
+| [grafana3]
+| [grafana4]
+| [perfmon]
+
+[eth-netstats]: https://github.com/cubedro/eth-netstats
+
+[grafana1]: https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
+[grafana2]: https://grafana.com/grafana/download
+[grafana3]: https://gist.github.com/karalabe/e7ca79abdec54755ceae09c08bd090cd
+[grafana4]: https://grafana.com/grafana/dashboards/6976
+[perfmon]:  https://github.com/InPlusLab/BlockchainPerformanceMonitoring
+
+[terminal]:     https://terminal.co/
+[moesif_web3]:  https://www.moesif.com/docs/platform/ethereum-web3/
+
+
 
 # Interfaces
 
@@ -462,7 +496,7 @@ https://grafana.com/grafana/dashboards/6976
 [web3js1.2_github]:     https://github.com/ethereum/web3.js/tree/1.x
 [web3js2.0_docs]:       https://web3js.readthedocs.io/en/v2.0.0-alpha/
 [web3js2.0_github]:     https://github.com/ethereum/web3.js/tree/2.x
-[web3-wrapper_docs]:    https://0x.org/docs/web3-wrapper#introduction
+[web3-wrapper_docs]:    https://0x.org/docs/web3-wrapper
 [web3-wrapper_github]:  https://github.com/0xProject/0x-monorepo/tree/development/packages/web3-wrapper
 [etherjs_docs]:         https://docs.ethers.io/ethers.js/html/
 [etherjs_github]:       https://github.com/ethers-io/ethers.js/
@@ -646,6 +680,81 @@ https://grafana.com/grafana/dashboards/6976
 [create_browserify]: https://github.com/web3examples/ethereum/tree/master/web3js
 [browserifyweb3]:    http://web3examples.com/ethereum/web3js/web3-browserify.js
 
+
+# GraphQL interfaces
+
+## GraphQL info
+
+| Standard for Ethereum  | Graphql background info
+|----------              | -------------- 
+| [eip_1767]             | [graphql_tools]
+|                        |[awesome_graphql]
+|                        | [graphiql]
+
+[eip_1767]: https://eips.ethereum.org/EIPS/eip-1767
+
+[graphql_tools]:     https://graphql.org/code/#tools
+[awesome_graphql]:   https://github.com/chentsulin/awesome-graphql
+[graphiql]:          https://www.npmjs.com/package/graphiql
+
+## GraphQL implementations
+
+| Supplier         | User Interface | API           | Github        | Documentation           | Examples
+| ---------------  | -------------- | --------      | -----------   | ----------------------- | ---------------
+| Geth (localhost) | [gethql_ux]    | [gethql_api]  | [gethql_gh]   | [gethql1]<br>[gethql2]  | [gethql_demo]
+| Infura           | [infql_ux]     | [infql_api]   | [ethql_gh]    | [infql_doc]             | [infql_demo]
+| Consensys-ethql  | [ethql_ux]     | [ethql_api]   | [ethql_gh]    | [ethql_doc]             | [ethql_demo1]<br>[ethql_demo2]<br>[ethql_demo3]
+| Blockscout       | [bsql_ux]      | [bsql_api]    | [bsql_gh]     | [bsql_doc]
+| Dfuse            | [dfuseql_ux]   | [dfuseql_api] | [dfuseql_gh]  | [dfuseql_doc]
+| TheGraph         | [thegraph_ux]  |               | [thegraph_gh] | [thegraph_doc]
+
+[gethql_ux]:    http://localhost:8547
+[gethql_api]:   http://localhost:8547/graphql
+[gethql_gh]:    https://github.com/ethereum/go-ethereum/tree/master/graphql
+[gethql1]:      https://medium.com/ethereum-grid/exploring-ethereum-with-geth-graphql-and-grid-6df38f2a86c
+[gethql2]:      https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
+[gethql_demo]:  https://gist.github.com/karalabe/bb68b43e48a630baf73f9862521fe45c
+
+[infql_ux]:     https://hack-ethql.infura.io
+[infql_api]:    https://hack-ethql.infura.io
+[infql_doc]:    https://hack-ethql.infura.io/docs/
+[infql_demo]:   https://github.com/INFURA/ethql-examples
+
+
+[bsql_ux]:      https://blockscout.com/eth/mainnet/graphiql
+[bsql_api]:     https://blockscout.com/eth/mainnet/graphql
+[bsql_gh]:      https://github.com/blockscout
+[bsql_doc]:     https://docs.blockscout.com/for-users/api/graphql
+
+[dfuseql_ux]:   https://mainnet.eth.dfuse.io/graphiql
+[dfuseql_api]:  https://mainnet.eth.dfuse.io/graphql
+[dfuseql_gh]:   https://github.com/dfuse-io/example-graphql-apollo/tree/master
+[dfuseql_doc]:  https://docs.dfuse.io/reference/ethereum/graphql/
+
+[ethql_ux]:     https://ethql-alpha.infura.io/graphql
+[ethql_api]:    https://ethql-alpha.infura.io/graphql
+[ethql_gh]:     https://github.com/ConsenSys/ethql
+[ethql_doc]:    https://github.com/ConsenSys/ethql/wiki
+[ethql_demo1]:  https://github.com/ConsenSys/ethql/wiki/Top-Level-Queries
+[ethql_demo2]:  https://github.com/ConsenSys/ethql/wiki/Example-Use-Cases
+[ethql_demo3]:  https://bitfalls.com/2018/08/01/ethql-exploring-ethereum-blockchain-graphql/
+
+
+[thegraph_ux]:  https://thegraph.com/explorer/
+[thegraph_gh]:  https://github.com/graphprotocol/
+[thegraph_doc]: https://thegraph.com/docs/quick-start
+
+## Alternative data access
+
+| Alternative
+| ----------------
+| [bigquery]
+| [hookpad]
+| [memento]
+
+[bigquery]:         https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain
+[hookpad]:          https://hookpad.io/
+[memento]:          https://github.com/Alethio/memento
 
 # Wallets
 
@@ -1168,11 +1277,11 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Test process
 
-| Testing process  | Also see                                         | Examples
-|------------      |----------                                        | ----------
-| [rocktest]       | [Security tools](#security-tools)                | [tontine]
-| [jaxtest]        | [Javascript test tools](../../javascript)        | [qainfotech_truf]
-| [solstate]       | [Deployment frameworks](#deployment-frameworks)  | [truf_test_yt]
+| Testing process  | Also see                                         | Examples            | Courses
+|------------      |----------                                        | ----------          | ------------
+| [rocktest]       | [Security tools](#security-tools)                | [tontine]           | [cz_testing]
+| [jaxtest]        | [Javascript test tools](../../javascript)        | [qainfotech_truf]   | [bc_tester]
+| [solstate]       | [Deployment frameworks](#deployment-frameworks)  | [truf_test_yt]      | [b9_qa]
 | [edgefundtest]   | [Bounties and audits](#bounties-and-audits)      | [ddns_test]
 | [ethhubtest]     | [Testnets](#testnets)                            | [mintest]
 | [probeseven]     |                                                  | [erc20test]
@@ -1208,6 +1317,9 @@ https://grafana.com/grafana/dashboards/6976
 [testguide]:        https://hackernoon.com/a-step-by-step-guide-to-testing-and-deploying-ethereum-smart-contracts-in-go-9fc34b178d78
 [front_test]:       https://ethereum.gitbooks.io/frontier-guide/testing_contracts_and_transactions.html
 
+[cz_testing]:       https://cryptozombies.io/en/lesson/11
+[bc_tester]:        https://www.icblockchain.com/blockchain_tester.php
+[b9_qa]:            https://academy.b9lab.com/courses/course-v1:B9lab+ETH-QA-101+2019-05/about
 
 | Tools overview     | Tools          | Coverage       
 | ---------------    | -------------  | --------       
@@ -1330,15 +1442,14 @@ https://grafana.com/grafana/dashboards/6976
 
 ## Libraries
 
-| React                 | Angular                   | Vue
-| -----------           | ---------                 | ------
-| [openzep-starter]     | [web3-in-angular]         | [vueweb3]
-| [truffle-react]       | [angulartruffledapp]      | [trufflevue]
+| React                 | Angular                   | Vue            | RxJs
+| -----------           | ---------                 | ------         | -------
+| [openzep-starter]     | [web3-in-angular]         | [vueweb3]      | [subspace]
+| [truffle-react]       | [angulartruffledapp]      | [trufflevue]   | [drizzle]
 | [rimble]              | [quintorangular]          | [vuebox]
 | [web3react]           | [limelabsangular]         | [vuedark]
 | [vortex]              | [ngeth]
 | [tasit]
-| [drizzle]
 | [dapparatus]
 
 
@@ -1362,7 +1473,7 @@ https://grafana.com/grafana/dashboards/6976
 [vuebox]:               https://truffleframework.org/boxes/vue-box
 [vuedark]:              https://truffleframework.org/boxes/vue-dark-chocolate
 
- 
+[subspace]: https://subspace.status.im/
 
 
 # Testnets
@@ -1580,22 +1691,21 @@ Also see [Explorers](#explorers)
 
 ## Security tools
 
-| Verify smart contracts    | Security tools  | Decompile           | Investigate
-| ----------------          |   ---           | -------------       | -----
-| [mythx]                   | [sectools]      | [reversing]         | [chainalysis]
-| [securify]                | [teEther]       | [ethvm_decompile]   | [ey_analyzer]
-| [quantstamp_prot]         | [contract_lib]  | [evmdis]            | [elliptic]
-| [Oyente]                  |                 | [pyevmasm]          | [cs-intell]
-| [Maian]                   |                 | [ethersplay]        | [ciphertrace]
-| [vandal]                  |                 | [jeb_decompiler]    | [spyderforensics]
-| [madmax]                  |                 | [contract-library]  | [czorro]
-| [rattle]                  |                 | [eveem]             | [scorechain]
-| [slither]                 |                 | [yasold]            | [cipherblade]
-| [anchainai]               |                 | [abi_dec]           | [dmgblockchain] 
-| [crytic]<br>[crytic_docs] |                 | [opcode_tool]       | [blockchainintel]
-|                           |                 | [octopus]           | [crystalblockchain]
-|                           |                 |                     | [blockseer]
-
+| Verify smart contracts    | Security tools  | Decompile / disassemble | Investigate        | Investigate dapps
+| ----------------          |   ---           | -------------           | -----              | --------------
+| [mythx]                   | [sectools]      | [reversing]             | [chainalysis]      | [aragraph]
+| [securify]                | [teEther]       | [ethvm_decompile]       | [ey_analyzer]      
+| [quantstamp_prot]         | [contract_lib]  | [evmdis]                | [elliptic]         
+| [Oyente]                  |                 | [pyevmasm]              | [cs-intell]        
+| [Maian]                   |                 | [ethersplay]            | [ciphertrace]      
+| [vandal]                  |                 | [jeb_decompiler]        | [spyderforensics]  
+| [madmax]                  |                 | [contract-library]      | [czorro]
+| [rattle]                  |                 | [eveem]                 | [scorechain]
+| [slither]                 |                 | [yasold]                | [cipherblade]
+| [anchainai]               |                 | [abi_dec]               | [dmgblockchain] 
+| [crytic]<br>[crytic_docs] |                 | [opcode_tool]           | [blockchainintel]
+|                           |                 | [octopus]               | [crystalblockchain]
+|                           |                 | [abi_decode]            | [blockseer]
 
 [mythx]:                https://mythx.io
 [securify]:             https://securify.chainsecurity.com/
@@ -1626,7 +1736,7 @@ Also see [Explorers](#explorers)
 [abi_dec]:              https://github.com/beched/abi-decompiler
 [opcode_tool]:          https://etherscan.io/opcode-tool
 [octopus]:              https://github.com/quoscient/octopus
-
+[abi_decode]:           https://www.moesif.com/solidity-abi-hex-decoder/decode
 
 [chainalysis]:          https://www.chainalysis.com/
 [ey_analyzer]:          https://www.ey.com/en_gl/news/2018/04/ey-announces-blockchain-audit-technology
@@ -1641,6 +1751,11 @@ Also see [Explorers](#explorers)
 [blockchainintel]:      https://www.blockchainintel.com
 [crystalblockchain]:    https://crystalblockchain.com/
 [blockseer]:            https://www.blockseer.com
+
+
+[aragraph]:             https://github.com/ConsenSys/aragraph
+
+
 
 ## Bounties and audits
 
@@ -1659,7 +1774,7 @@ Also see [Explorers](#explorers)
 |                       | [hacken_io]        |                 | [quantstamp3]
 |                       | [trailofbits]      |                 | [sigmaprime_dapper]
 |                       | [chainsecurity]    |                 | [chainSec_audit]
-|                       | [iosiro]
+|                       | [iosiro]           |                 | [ens_audit]
 |                       | [itransition]
 |                       | [openzeppelin_secaud]
 |                       | [blockchainfirm]
@@ -1714,7 +1829,7 @@ Also see [Explorers](#explorers)
 [quantstamp3]:          https://certificate.quantstamp.com/view/pool-together-contracts
 [sigmaprime_dapper]:    https://blog.sigmaprime.io/dapper-wallet-review.html
 [chainSec_audit]:       https://github.com/ChainSecurity/audits
-
+[ens_audit]:            https://blog.sigmaprime.io/status-ens-review.html
 
 [calistocw_audit]:      https://github.com/EthereumCommonwealth/Auditing
 [bugbounty]:            https://consensys.github.io/smart-contract-best-practices/bug_bounty_list/
@@ -2422,6 +2537,8 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 | [tellor]          |                    | [tellor_gh]        | [tellor_faq]
 | [bandproto]       |                    | [bandproto_gh]     | [bandproto_doc]
 | [aeternity]       |                    | [aeternity_gh]     | [aeternity_doc]
+| [gardener]        | [gardener_mon]     | [gardener_gh]      | [gardener_doc]
+| [orfeed]          | [orfeed_demo]<br>[orfeed_demo_gh] | [orfeed_gh1]<br>[orfeed_gh2] | [orfeed_doc]
 
 [chainlink]:        https://chain.link
 [chainlink_exp]:    https://explorer.chain.link
@@ -2469,6 +2586,26 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 [aeternity_gh]:     https://github.com/aeternity
 [aeternity_doc]:    http://aeternity.com/documentation-hub/protocol/oracles/oracles/
 
+
+
+[gardener]:         https://gardeneroracle.io/
+[gardener_mon]:     https://monitor.gardeneroracle.io/
+[gardener_gh]:      https://github.com/EspeoBlockchain
+[gardener_doc]:     https://gardener.readthedocs.io/en/latest/
+
+
+
+
+
+[orfeed]:           https://www.orfeed.org/
+[orfeed_demo]:      https://orfeed.netlify.com/
+[orfeed_demo_gh]:   https://github.com/Destiner/orfeed-demo
+[orfeed_gh1]:       https://github.com/ProofSuite/OrFeedSmartContracts
+[orfeed_gh2]:       https://github.com/mikedeshazer/OrFeedSmartContracts
+[orfeed_doc]:       https://www.orfeed.org/docs/
+
+
+
 | Oracle examples | Oracle tutorials
 | -------------   | --------------
 | [randomoracle]  | [toptal_oracle]
@@ -2489,13 +2626,13 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 | [ens_build]       |               |                   | [ens_luxe]
 | [ens_docu]        |               |                   | [ens_xyz]
 | [ens_work]   
-
+| [ult_guide_ens]
 
 [ens]:              https://ens.domains/
 [ens_discuss]:      https://discuss.ens.domains/
 [ens_docu]:         https://docs.ens.domains/
 
-
+[ult_guide_ens]:    https://medium.com/@eric.conner/the-ultimate-guide-to-ens-names-aa541586067a
 
 
 
@@ -2528,7 +2665,7 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 |-------------- | -------------      | ----------------      |  --------------  | ----------
 | [ens_manager] | [reg_tut]          | [etherscan_ens]       | [enslisting]     | Metamask: .....eth/ (trailing /)
 | [enssimple]   |                    | [etherchain_ens]      | [ensopensea]     | [thegraphens]
-| [encircaens]  |                    | [emoon_ens]           | [gomommy]
+| [encircaens]  |                    | [emoon_ens]           | [gomommy]        | [cur_giraffe_ens]
 |               |                    | [opensea_ens] (log in)| [namebazaar]
 |               |                    |                       | [emoonens]
 
@@ -2557,7 +2694,7 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 [emoonens]:         https://www.emoon.io/category/ENS
 
 [thegraphens]:      https://thegraph.com/explorer/subgraph/ensdomains/ens
-
+[cur_giraffe_ens]: https://www.curiousgiraffe.io/ens/
 
 //reverse
 https://github.com/wealdtech/wealdtech-solidity/blob/master/contracts/ens/ENSReverseRegister.sol
@@ -2570,6 +2707,8 @@ https://github.com/wealdtech/wealdtech-solidity/blob/master/contracts/ens/ENSRev
 
 
 
+// https://medium.com/the-ethereum-name-service/migrating-your-ensnow-domains-to-the-new-registrar-c0085eaaeff2
+https://now.ens.domains/
 
 
 ### ENS Alternatives
@@ -2617,22 +2756,7 @@ https://github.com/wealdtech/wealdtech-solidity/blob/master/contracts/ens/ENSRev
 [gsn]:              https://gsn.openzeppelin.com/
 
 
-## Query
 
-| Query
-|----------
-| [thegraph]
-| [bigquery]
-| [hookpad]
-| [geth_graphql]
-| [memento]
-
-
-[thegraph]:         https://thegraph.com/
-[bigquery]:         https://console.cloud.google.com/marketplace/details/ethereum/crypto-ethereum-blockchain
-[hookpad]:          https://hookpad.io/
-[geth_graphql]:     https://blog.ethereum.org/2019/07/10/geth-v1-9-0/
-[memento]:          https://github.com/Alethio/memento
 
 ## Geo
 
@@ -2704,6 +2828,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [tryethereum.today]
 | [blockgeeks_dapps]
 | [producthunt_token]
+| [dap_ps]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -2732,7 +2857,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [tryethereum.today]:    https://tryethereum.today/
 [blockgeeks_dapps]:     https://blockgeeks.com/dapp-list/
 [producthunt_token]:    https://www.producthunt.com/@yanroux/collections/token-economy
-
+[dap_ps]:               https://dap.ps/
 
 [nonfungible]:          https://nonfungible.com/market/history
 
@@ -2743,12 +2868,12 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 [defi_intro]:   https://medium.com/quiknode/the-ultimate-intro-to-defi-dada84136c3
 
-| Overview          | Financial   | Dashboards     | 
-|------------       | ----        | -----
-| [defiprime]       | [zerion]    | [defipulse]
-| [defimap]         | [instadapp] | [loanscan]
-| [defirate]        | [bamboo]    | [etherscan_defi]
-| [100defi]         | [balance]   |
+| Overview          | Financial   | Dashboards        
+|------------       | ----        | -----             
+| [defiprime]       | [zerion]    | [defipulse]       
+| [defimap]         | [instadapp] | [loanscan]        
+| [defirate]        | [bamboo]    | [etherscan_defi]  
+| [100defi]         | [balance]   | [tokenanalyst]
 | [awedefi]         | [settle]
 | [ongdefi]         | [dexag]
 |                   | [airswap]
@@ -2778,6 +2903,11 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [defipulse]:        http://defipulse.com
 [loanscan]:         https://loanscan.io/
 [etherscan_defi]:   https://etherscan.io/accounts/label/defi
+[tokenanalyst]:     https://www.tokenanalyst.io/analytics
+
+
+
+
 
 ## Lending
 
@@ -2824,9 +2954,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 ## Games
 
-| Overview          | Games                 | Game development platform
-| ----------        | ------------          | -------------
-| [bcgworld]        | [cheezewiz]           | [blockade]
+| Overview          | Games                 | Game development platform  
+| ----------        | ------------          | -------------              
+| [bcgworld]        | [cheezewiz]           | [blockade]                 
 | [dappsmarket]     | [cryptokit]           | [ultraio]
 | [cryptogaming]    | [ethernaut]           | [cocosbcx]
 | [state_games]     | [mycryptoHeroes]      | [xaya]
@@ -2876,6 +3006,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [ultraio]:          https://ultra.io/
 [cocosbcx]:         https://www.cocosbcx.io/
 [xaya]:             https://xaya.io/
+
 
 
 ## Autonomous organisations

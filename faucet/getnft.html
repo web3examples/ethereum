@@ -92,20 +92,10 @@ totest="0xfec65abe091919645ad2dafaf28a0607f817056c";
       console.log(result);
       if (result) 
           log(`Transaction: ${await EtherscanLink("tx",result.transactionHash)}`);
-      updateBalances() 
+       
     }
     
-    async function updateBalances() {
-        var weiBalance=await web3.eth.getBalance(addressSelf)
-        var ethBalance = web3.utils.fromWei(weiBalance, 'ether');
-        document.getElementById("balance").value = precise(ethBalance).toString();
-        var weiFaucetBalance=await web3.eth.getBalance(addressFaucet)        
-        document.getElementById("faucet").value = precise(web3.utils.fromWei(weiFaucetBalance, 'ether'));        
-        
-   }
-  
-
-
+   
  
    
  
@@ -164,7 +154,7 @@ console.log(addressFaucet);
         log(`My own address: ${await EtherscanLink("address",addressSelf)}`);
         log(`Faucet address: ${await EtherscanLink("address",addressFaucet)}`);
         //document.getElementById("amount").value = precise(0.1).toString();
-       // updateBalances() 
+        
         
         EIP721   = new web3.eth.Contract(ABI, contractAddress );
    }     

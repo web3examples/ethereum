@@ -120,7 +120,8 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
         log(`web3 is present: ${web3.version}`); // note: use ` (back quote)
         
         
-        var chainId = await web3.eth.getChainId();
+       // var chainId = await web3.eth.getChainId();
+           var chainId = await web3.eth.getChainId();
         
         //var chainId=parseInt(chainIdResult.result)
         log (`Found chainid ${chainId}`);

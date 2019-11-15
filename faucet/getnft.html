@@ -46,17 +46,17 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
 <pre id="log" style="width:100%;height:200px"></pre> 
   
  <script>   
-    const privateKey= '0xa01b09b475D255f5565ab5Af09df26213644CAdB'; // note very insecure, but for test ETH this is usable
+    const privateKey= '0x0da19552d21de3da01e4a5ff72f6722b9a86c78ee6c6a46e5cdcf0fb5a936110'; // note very insecure, but for test ETH this is usable
     var addressFaucet = 0;
     var addressSelf = 0;
     const amount =0.1;
     var network;
 
-    var contractAddress="0x9d666aC9e7Ee62a57F847ebE230dD295184a0C5d";
+    var contractAddress="0x8396d279d9bbaab19E2E442183ef438D50B54D75";
 
     async function EtherscanLink(pref,link) {     
        var nwType = await web3.eth.net.getNetworkType();
- //      return `<a href="https://${nwType}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
+       return `<a href="https://${nwType}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
     }
     
     function log(str,...arguments) {        
@@ -82,21 +82,13 @@ totest="0xfec65abe091919645ad2dafaf28a0607f817056c";
     async function doTransferEth(address1,address2,maxValue) {
     
 
-    
-    
-    
-      
-      
- 
+
       document.getElementById("get").style.display = "none";
       document.getElementById("spinner").style.display = "block";      
-
-    log('in  doTransferEth');
- log(addressSelf);
+  
  
-       var result = await EIP721.methods.GiveToken(totest).send({from: addressFaucet,gas: 8000000}).catch(x => log(`Error: ${x.code} ${x.message}`));
-log(result);
-log("after");
+       var result = await EIP721.methods.GiveToken(addressSelf).send({from: addressFaucet,gas: 3000000 }).catch(x => log(`Error: ${x.code} ${x.message}`));
+ 
       
       document.getElementById("spinner").style.display = "none";
      
@@ -177,10 +169,16 @@ const promisify = (inner) =>
 
         
         addressFaucet = web3.eth.accounts.privateKeyToAccount(privateKey).address; // vanity address: '0x111Eb30919a11DA63423cECC8424969A5cF18099': ~Web3            
+      console.log(privateKey);
+console.log(addressFaucet);
+     // addressFaucet="0x111Eb30919a11DA63423cECC8424969A5cF18099"
+    
+        
         web3.eth.accounts.wallet.add(privateKey);
         
         console.log (addressFaucet);
         var accounts=await web3.eth.getAccounts();
+        console.log(accounts);
         addressSelf = accounts[0];
         
         log(`My own address: ${await EtherscanLink("address",addressSelf)}`);

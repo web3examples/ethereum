@@ -49,17 +49,21 @@ Tools that aren't trivial to install are accompanied by a video.
 
 Note: install node.js first
 
-| NPM install -g | Package            | Install on Windows  | Install on Macintosh  |  Install on Ubuntu  
-| ------------   | -----              | ---------           | -------------------   | --------- 
-| web3           | [pkg_web3]         | [web3_win]          | [web3_mac]            | [web3_ubu]
-| ganache-cli    | [pkg_ganache_cli]  | [ganache-cli]
-| Truffle        | [pkg_truffle]      | [truffle]
-| wscurl         | [pkg_wscurl]
-| wscat          | [pkg_wscat] 
+| NPM install -g             | Package            | Install on Windows  | Install on Macintosh  |  Install on Ubuntu  
+| ------------               | -----              | ---------           | -------------------   | --------- 
+| web3                       | [pkg_web3]         | [web3_win]          | [web3_mac]            | [web3_ubu]
+| ganache-cli                | [pkg_ganache_cli]  | [ganache-cli]
+| truffle                    | [pkg_truffle]      | [truffle]
+| @truffle/hdwallet-provider | [pkg_hdw]
+| @openzeppelin/contracts    | [pkg_openzepcontr]
+| wscurl                     | [pkg_wscurl]
+| wscat                      | [pkg_wscat] 
 
 [pkg_web3]:         https://www.npmjs.com/package/web3
 [pkg_ganache_cli]:  https://www.npmjs.com/package/ganache-cli
 [pkg_truffle]:      https://www.npmjs.com/package/truffle
+[pkg_hdw]:          https://www.npmjs.com/package/@truffle/hdwallet-provider
+[pkg_openzepcontr]: https://www.npmjs.com/package/@openzeppelin/contracts
 [pkg_wscurl]:       https://www.npmjs.com/package/wscurl
 [pkg_wscat]:        https://www.npmjs.com/package/wscat
 

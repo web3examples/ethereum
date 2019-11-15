@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="shortcut icon" href="https://web3examples.com/logo.png">  
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <meta charset="UTF-8">  
+        <script src="https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>   
+       <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.1/dist/web3.min.js"></script>            
+    </head>
+<html>
+
+
+<style>
+.loader {
+  border: 8px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 8px solid #3498db;
+  width: 20px;
+  height: 20px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  text-align: center;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+</style>
+<h1>Web3Examples Faucet</h1>
+My own Balance: <input type="text" name="balance" id="balance" value="0"/>ETH<br>
+Faucet Balance: <input type="text" name="faucet" id="faucet" value="0"/>ETH<br>
+<br>
+Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
+<br>
+<div class="loader" id="spinner"  style="display:none">#</div>
+<input type="button" id="give" value="Give to faucet" style="border-radius: 10px;font-size : 30px;width: 200;height: 50;color:yellow;background-color:Red "   class="primary" onclick="doTransferEth(addressSelf,addressFaucet,10)"/>
+<input type="button" id="get" value="Get from faucet" style="border-radius: 10px;font-size : 30px;width: 200;height: 50;color:yellow;background-color:Green " class="primary" onclick="doTransferEth(addressFaucet,addressSelf,0.1)"/>
+
+<br>
+<pre id="log" style="width:100%;height:200px"></pre> 
+  
+ <script>   
+    const privateKey= '0x0da19552d21de3da01e4a5ff72f6722b9a86c78ee6c6a46e5cdcf0fb5a936110'; // note very insecure, but for test ETH this is usable
+    var addressFaucet = 0;
+    var addressSelf = 0;
+    const amount =0.1;
+    var network;
+
+    var contractAddress="0xf94e4580Aa218a015267DDA302D1C9a76D575237";
+
+    async function EtherscanLink(pref,link) {     
+       var nwType = await web3.eth.net.getNetworkType();
+       return `<a href="https://${nwType}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
+    }
+    
+    function log(str,...arguments) {        
+        var logstr=arguments.toString();
+        document.getElementById("log").innerHTML +=str+" "+logstr+"\n";
+    }      
+
+    function precise(x) {
+      return Number.parseFloat(x).toFixed(5);
+    }
+
+    
+    async function doTransferEth(address1,address2,maxValue) {
+      var result = 0
+      
+      var amount = document.getElementById("amount").value;
+            
+      if (amount > maxValue) {
+        log (`Max amount to transfer is ${maxValue} ETH`);
+        return;
+      }
+      var amountWei=web3.utils.toWei(amount )
+      
+      document.getElementById("give").style.display = "none";
+      document.getElementById("get").style.display = "none";
+      document.getElementById("spinner").style.display = "block";      
+
+      
+      result = await  web3.eth.sendTransaction({from: address1,to: address2,gas: 200000,value: amountWei}).catch(x => log(`Error: ${x.code} ${x.message}`));
+      document.getElementById("spinner").style.display = "none";
+      document.getElementById("give").style.display = "block";
+      document.getElementById("get").style.display = "block";          
+      console.log(result);
+      if (result) 
+          log(`Transaction: ${await EtherscanLink("tx",result.transactionHash)}`);
+      updateBalances() 
+    }
+    
+    async function updateBalances() {
+        var weiBalance=await web3.eth.getBalance(addressSelf)
+        var ethBalance = web3.utils.fromWei(weiBalance, 'ether');
+        document.getElementById("balance").value = precise(ethBalance).toString();
+        var weiFaucetBalance=await web3.eth.getBalance(addressFaucet)        
+        document.getElementById("faucet").value = precise(web3.utils.fromWei(weiFaucetBalance, 'ether'));        
+        
+   }
+   
+   
+const promisify = (inner) =>
+  new Promise((resolve, reject) =>
+    inner((err, res) => {
+      if (err) { reject(err) }
+      resolve(res);
+    })
+  );   
+   
+   async function ethChainId() {
+        return await promisify(cb =>ethereum.sendAsync(   
+        {
+            method: "eth_chainId",
+            params: [ ], 
+            id: 1
+        },cb) ).catch(console.log);
+   }   
+   
+   
+   
+   
+   
+    
+    async function asyncloaded() {
+        if (typeof ethereum !== 'undefined')
+            await ethereum.enable().catch( (reason) => log('User rejected provider access',reason.message.substring(0,50)) )
+        if ((typeof ethereum == 'undefined')|| !Web3.givenProvider) { // Checking if web3 is accessible
+            log("Web3 interface is not found. "+
+            "Please install <a href='https://metamask.io'>Metamask</a>"+
+            " or use <a href='https://www.opera.com/crypto'>Opera Crypto (android)");
+            return; // stop this function
+        }
+        web3 = new Web3(Web3.givenProvider || ethereum); // switch to version 1.0 when using metamask; provide web3 functions for Opera
+        //typeof web3 === 'undefined' || web3 == 'undefined'
+        log(`web3 is present: ${web3.version}`); // note: use ` (back quote)
+        
+        
+        var chainIdResult = await ethChainId();
+        
+        var chainId=parseInt(chainIdResult.result)
+        log (`Found chainid ${chainId}`);
+        
+        
+        const chainInfo = await fetch(`https://raw.githubusercontent.com/ethereum-lists/chains/master/_data/chains/${chainId}.json`);
+        const chainJson = await chainInfo.json();
+        console.log(chainJson);
+        
+        log(`Chain id: ${chainId} name: ${chainJson.name} shortname: ${chainJson.shortName} <a href="${chainJson.infoURL}" target="_blank" >more info</a>`);
+        
+        
+        
+        network = await web3.eth.net.getNetworkType().catch( (reason) => log(`Cannnot find network ${reason}`) );            
+        log(`Ethereum network: ${network}`) 
+        if (typeof network === 'undefined' || network == "main") 
+            { log("Please select a test network");return;}
+
+        
+        addressFaucet = web3.eth.accounts.privateKeyToAccount(privateKey).address; // vanity address: '0x111Eb30919a11DA63423cECC8424969A5cF18099': ~Web3            
+        web3.eth.accounts.wallet.add(privateKey);
+        
+        console.log (addressFaucet);
+        var accounts=await web3.eth.getAccounts();
+        addressSelf = accounts[0];
+        
+        log(`My own address: ${await EtherscanLink("address",addressSelf)}`);
+        log(`Faucet address: ${await EtherscanLink("address",addressFaucet)}`);
+        document.getElementById("amount").value = precise(0.1).toString();
+        updateBalances() 
+   }     
+   window.addEventListener('load', asyncloaded);       
+
+  </script>     
+        
+</html>

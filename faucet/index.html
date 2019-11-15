@@ -103,27 +103,7 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
         
    }
    
-   
-const promisify = (inner) =>
-  new Promise((resolve, reject) =>
-    inner((err, res) => {
-      if (err) { reject(err) }
-      resolve(res);
-    })
-  );   
-   
-   async function ethChainId() {
-        return await promisify(cb =>ethereum.sendAsync(   
-        {
-            method: "eth_chainId",
-            params: [ ], 
-            id: 1
-        },cb) ).catch(console.log);
-   }   
-   
-   
-   
-   
+  
    
     
     async function asyncloaded() {

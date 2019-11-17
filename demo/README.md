@@ -18,6 +18,7 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 
 | Object                                | Instance
 | ---------------                       | ---------     
+| Play - hello example                  | [Play - hello example](Play_hello_example.html)
 | Play - Transfer eth                   | [Play - Transfer eth with contract](Play_Transfer_eth_with_contract.html)
 | Play - oracle                         | [Play - Provable Temperature Oracle](Play_Provable_Temperature_Oracle.html)
 | Play - ERC20 token                    | [Play - ERC20](Play_ERC20.html)
@@ -27,7 +28,6 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 | Play - See ERC721 token in Metamask   | [Play - See ERC721 token in Metamask](Play_See_ERC721_token_in_Metamask.html)
 | Play - Unibright                      | [Play - Unibright](Play_Unibright.html)
 | Play - Natspec                        | [Play - Natspec](Play_Natspec.html)
-| Play - hello example                  | [Play - hello example](Play_hello_example.html)
 
 # Remix
 

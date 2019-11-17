@@ -1499,13 +1499,19 @@ See: [Demo Ethereum software](demo)
 
 ## Testnet instances
 
-| (Test) Networks | Chainnr | Info                                             | Faucet (Get test Eth)                                         | Github            
-| --------------- | ------- | --------                                         |  ---------                                                    | ------            
-| Ropsten         | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]  
-| Kovan           | 42      | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]    
-| Rinkeby         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]  
-| Goerli          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]   
-| Athereum        | 43110   | Ava                                              | [athereum_faucet]                                             |                   
+| (Test) Networks | More info         | Chainnr | Consensus                                        | Faucet (Get test Eth)                                         | Github            
+| --------------- | ---------         | ------- | --------                                         |  ---------                                                    | ------            
+| Ropsten         | [ropsten_github]  | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]  
+| Kovan           | [kovan]           | 42      | PoA, Parity (aura)                                | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]    
+| Rinkeby         | [rinkeby]         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]  
+| Goerli          | [goerli]          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]   
+| Athereum        | [athereum]        | 43110   | Ava                                              | [athereum_faucet]                                             |                   
+
+[kovan]:    https://kovan-testnet.github.io/website/
+[rinkeby]:  https://www.rinkeby.io
+[goerli]:   https://goerli.net/
+[athereum]: https://athereum.ava.network/
+
 
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
@@ -1881,6 +1887,7 @@ See also [Security best practices](#security-best-practices)
 | [blockscout_verify]                          |                    | [clef_4bytes]
 | [ethscan_auto]                               |                    | [curated4b]
 | [publish_ipfsremix]
+| [komputing]
 
 [etherscan_verify]:     https://etherscan.io/verifyContract
 [etherscan_ver_howto]:  https://tokenmint.io/blog/how-to-verify-ethereum-smart-contracts-source-code.html
@@ -1889,7 +1896,7 @@ See also [Security best practices](#security-best-practices)
 [blockscout_verify]:    https://blockscout.com
 [ethscan_auto]:         https://kalis.me/verify-truffle-smart-contracts-etherscan/
 [publish_ipfsremix]:    https://medium.com/remix-ide/publish-your-metadata-and-sourcecode-to-swarm-and-ipfs-bf3fcd179cd6
-
+[komputing]:            http://komputing.org:8081/
 
 [publish_metadata]:     https://solidity.readthedocs.io/en/latest/metadata.html
 

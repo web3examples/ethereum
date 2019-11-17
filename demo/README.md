@@ -5,6 +5,7 @@ These video's give demos of how to use the ethereum tools. ([Up](..) [Home](..\.
 - [MetaMask](#metamask)
 - [Ethereum play](#ethereum-play)
 - [Remix](#remix)
+- [RPC API](#rpc-api)
 - [Others](#others)
 
 # MetaMask

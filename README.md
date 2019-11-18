@@ -1505,7 +1505,7 @@ See: [Demo Ethereum software](demo)
 | Kovan           | [kovan]           | 42      | PoA, Parity (aura)                                | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]    
 | Rinkeby         | [rinkeby]         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]  
 | Goerli          | [goerli]          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]   
-| Athereum        | [athereum]        | 43110   | Ava                                              | [athereum_faucet]                                             |                   
+| Athereum        | [athereum]        | 43110   | Ava                                              | [athereum_faucet]                                             |  [ava_github]               
 
 [kovan]:    https://kovan-testnet.github.io/website/
 [rinkeby]:  https://www.rinkeby.io
@@ -1531,7 +1531,7 @@ See: [Demo Ethereum software](demo)
 [kovan_github]:       https://github.com/kovan-testnet/proposal
 [rinkeby_github]:     https://github.com/ethereum/EIPs/issues/225
 [goerli_github]:      https://github.com/goerli/testnet
-
+[ava_github]:         https://github.com/ava-labs
 
 ## Testnet RPC
 

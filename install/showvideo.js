@@ -55,7 +55,7 @@ video.ontimeupdate = function() {VideoLocation()}; // call function when movie i
 video.addEventListener('error', videoerror, true);
 document.body.appendChild(video);
 
-vidaddsource("http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText);
+//vidaddsource("http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText);
 vidaddsource("https://ipfs.io/ipfs/"+ipfs_element.innerText);
 
 

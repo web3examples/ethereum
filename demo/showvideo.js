@@ -13,6 +13,9 @@ Location| Action| Object   | Time
 </div>
 <script src="showvideo.js"></script>
 */
+//var script = document.createElement("script");  // create a script DOM node
+//script.src ="https://code.responsivevoice.org/responsivevoice.js?key=wwYbW8EZ";
+//document.head.appendChild(script);   
 
 var pathArray = decodeURIComponent(window.location.pathname).split( '/' );
 var filename=pathArray.pop();
@@ -35,9 +38,14 @@ function videoerror(event)
     alert(`Video error: ${error.message}`);     // Here comes the error message
 }
 
+
+function vidaddsource(sourceLocation) {
+  var source=document.createElement("source");
+  source.src = sourceLocation;
+  video.appendChild(source);
+}
+
 var video=document.createElement("video");
-//video.src="https://siderus.io/ipfs/"+ipfs_element.innerText;
-video.src="http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText;
 video.class="videoplayer";
 video.controls=false;
 video.style.height="30%";
@@ -46,6 +54,15 @@ video.muted=true;  // otherwise not playing automatically
 video.ontimeupdate = function() {VideoLocation()}; // call function when movie is at a different location
 video.addEventListener('error', videoerror, true);
 document.body.appendChild(video);
+
+vidaddsource("http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText);
+vidaddsource("https://ipfs.io/ipfs/"+ipfs_element.innerText);
+
+
+
+
+
+
 
 var newline=document.createElement("br");
 document.body.appendChild(newline);
@@ -65,6 +82,8 @@ CreateButton("Toggle audio",    ()=> { video.muted= !video.muted;} );
 CreateButton("25% smaller",     ()=> { video.style.height = 0.75 * parseFloat(video.style.height)+"%" } );
 CreateButton("25% larger",      ()=> { video.style.height = 1.25 * parseFloat(video.style.height)+"%" } );
 CreateButton("Full screen",     ()=> { video.requestFullscreen(); } );
+//CreateButton("Voice comments",  ()=> { responsiveVoice.speak(document.getElementById("explain").innerText) } );
+//CreateButton("Cancel voice",    ()=> { responsiveVoice.cancel() } );
 
 
 var position=document.createElement("p");
@@ -220,5 +239,4 @@ console.log("In ReadTimeTable");
     generateTable(table,tabledata.slice(1));
     return tabledata;
 }             
-
 

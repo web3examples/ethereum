@@ -10,7 +10,8 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | ------------                   | --------       | ---------       | -----                  | -----------            | -----------               
 | Chrome browser                 | Offline        | [chrome]
 | Metamask                       | Offline        | [metamask]      | [metamask_vid]
-| Play editor                    | Web            | [play_gh]       | [play_ed]
+| Faucet                         | Online         | [ropsten_faucet]
+| Play editor                    | Web            | [play_ed]
 | ...                                      
 | Remix                          | Web            | [remix]         | [remix_prep]
 | Remix desktop                  | Offline        | [remix_desktop]
@@ -37,8 +38,14 @@ The tools are sorted in the order of usefullness while learning ethereum.
 
 
 [chrome]:           https://www.google.com/chrome/
-[play_gh]:          https://github.com/playproject-io/play-ed
+[metamask]:      https://metamask.io
 [play_ed]:          https://playproject.io/play-ed/
+[ropsten_faucet]:   https://faucet.metamask.io/
+
+
+
+
+
 [apirequest]:       https://www.apirequest.io/
 [grid_rpc]:         https://web3examples.com/grid-rpc-app/build
 [grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app
@@ -49,7 +56,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 
 
 
-[metamask]:      https://metamask.io
+
 [remix_desktop]: https://github.com/ethereum/remix-desktop/releases
 [nodejs]:        https://nodejs.org/en/
 [ganache]:       https://www.trufflesuite.com/ganache

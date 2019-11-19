@@ -6,34 +6,34 @@ Tools that aren't trivial to install are accompanied by a video.
 The tools are sorted in the order of usefullness while learning ethereum.
 
 
-| Tool                       | Type           | source / link   | Install on Windows     | Install on Macintosh   |  Install on Ubuntu        | Documentation   | Video
-| ------------               | --------       | ---------       | -----                  | -----------            | -----------               | --------------  | -----
-| Chrome browser             | Offline        | [chrome]
-| Metamask                   | Offline        | [metamask]      | [metamask_vid]
-| Play editor                | Online         | [play_gh]       | [play_ed]
-| ...                                  
-| Remix                      | Online         | [remix]         | [remix_prep]           |                        |                           | [remix_ide_doc]  
-| Remix desktop              | Offline        | [remix_desktop]
-| ....                                 
-| Api request                | Offline        |                 | [apirequest]         
-| Test RPC API               | Offline        | [grid_rpc_gh]   | [grid_rpc]           
-| Node.js 10                 | Offline        | [nodejs]        | [nodejs10_vid]         | [nodejs10_mac]         | [nodejs10_ubu]
-| Node.js 12                 | Offline        | [nodejs]        | [nodejs12_vid]         |                        |
-| Build tools                | Offline        |                 | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]
-| Ganache                    | Offline        | [ganache]       | [ganache_vid]
-| Geth                       | Offline        | [geth]          | [geth_vid]   
-| Git cmd line               | Offline        | [gitcmdline]    | [git_vid]    
-| Git desktop                | Offline        | [gitdesktop]
-| Curl                       | Offline        | [curl]
-| Jq                         | Offline        | [jq]
-| Grid                       | Offline        | [grid]
-| web3                       | npm install -g | [pkg_web3]         | [web3_win]          | [web3_mac]            | [web3_ubu]
-| ganache-cli                | npm install -g | [pkg_ganache_cli]  | [ganache-cli]
-| truffle                    | npm install -g | [pkg_truffle]      | [truffle]
-| @truffle/hdwallet-provider | npm install -g | [pkg_hdw]
-| @openzeppelin/contracts    | npm install -g | [pkg_openzepcontr]
-| wscurl                     | npm install -g | [pkg_wscurl]
-| wscat                      | npm install -g | [pkg_wscat] 
+| Tool                           | Type           | source / link   | Install on Windows     | Install on Macintosh   |  Install on Ubuntu        
+| ------------                   | --------       | ---------       | -----                  | -----------            | -----------               
+| Chrome browser                 | Offline        | [chrome]
+| Metamask                       | Offline        | [metamask]      | [metamask_vid]
+| Play editor                    | Online         | [play_gh]       | [play_ed]
+| ...                                      
+| Remix                          | Online         | [remix]         | [remix_prep]
+| Remix desktop                  | Offline        | [remix_desktop]
+| ....                                     
+| Api request                    | Offline        |                 | [apirequest]         
+| Test RPC API                   | Offline        | [grid_rpc_gh]   | [grid_rpc]           
+| Node.js 10                     | Offline        | [nodejs]        | [nodejs10_vid]         | [nodejs10_mac]         | [nodejs10_ubu]
+| Node.js 12                     | Offline        | [nodejs]        | [nodejs12_vid]         |                        |
+| Build tools                    | Offline        |                 | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]
+| Ganache                        | Offline        | [ganache]       | [ganache_vid]
+| Geth                           | Offline        | [geth]          | [geth_vid]   
+| Git cmd line                   | Offline        | [gitcmdline]    | [git_vid]    
+| Git desktop                    | Offline        | [gitdesktop]
+| Curl                           | Offline        | [curl]
+| Jq                             | Offline        | [jq]
+| Grid                           | Offline        | [grid]
+| web3                           | npm install -g | [pkg_web3]         | [web3_win]          | [web3_mac]            | [web3_ubu]
+| ganache-cli                    | npm install -g | [pkg_ganache_cli]  | [ganache-cli]
+| truffle                        | npm install -g | [pkg_truffle]      | [truffle]
+| @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
+| @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
+| wscurl                         | npm install -g | [pkg_wscurl]
+| wscat                          | npm install -g | [pkg_wscat] 
 
 
 [chrome]:           https://www.google.com/chrome/

@@ -10,8 +10,12 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | ------------                   | --------       | ---------       | -----                  | -----------            | -----------               
 | Chrome browser                 | Offline        | [chrome]
 | Metamask                       | Offline        | [metamask]      | [metamask_vid]
-| Faucet                         | Online         | [ropsten_faucet]
+| Ropsten faucet                 | Web            | [ropsten_faucet]
 | Play editor                    | Web            | [play_ed]
+| Ropsten explorer               | Web            | [ropsten_etherscan]
+| Athereum config                | Web            | [athereum_config]
+| Athereum faucet                | Web            | [athereum_faucet]
+| Athereum explorer              | Web            | [athereum_explorer]
 | ...                                      
 | Remix                          | Web            | [remix]         | [remix_prep]
 | Remix desktop                  | Offline        | [remix_desktop]
@@ -37,13 +41,14 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | wscat                          | npm install -g | [pkg_wscat] 
 
 
-[chrome]:           https://www.google.com/chrome/
-[metamask]:      https://metamask.io
-[play_ed]:          https://playproject.io/play-ed/
-[ropsten_faucet]:   https://faucet.metamask.io/
-
-
-
+[chrome]:             https://www.google.com/chrome/
+[metamask]:           https://metamask.io
+[ropsten_faucet]:     https://faucet.metamask.io/
+[play_ed]:            https://playproject.io/play-ed/
+[ropsten_etherscan]:  https://ropsten.etherscan.io/
+[athereum_faucet]:    https://github.com/ava-labs/athereum-faucet
+[athereum_config]:    https://github.com/ethereum-lists/chains/blob/master/_data/chains/43110.json
+[athereum_explorer]:  http://athexplorer.ava.network
 
 
 [apirequest]:       https://www.apirequest.io/

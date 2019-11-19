@@ -10,13 +10,13 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | ------------                   | --------       | ---------       | -----                  | -----------            | -----------               
 | Chrome browser                 | Offline        | [chrome]
 | Metamask                       | Offline        | [metamask]      | [metamask_vid]
-| Play editor                    | Online         | [play_gh]       | [play_ed]
+| Play editor                    | Web            | [play_gh]       | [play_ed]
 | ...                                      
-| Remix                          | Online         | [remix]         | [remix_prep]
+| Remix                          | Web            | [remix]         | [remix_prep]
 | Remix desktop                  | Offline        | [remix_desktop]
 | ....                                     
-| Api request                    | Offline        |                 | [apirequest]         
-| Test RPC API                   | Offline        | [grid_rpc_gh]   | [grid_rpc]           
+| Api request                    | Web            | [apirequest]         
+| Test RPC API                   | Web            | [grid_rpc]           
 | Node.js 10                     | Offline        | [nodejs]        | [nodejs10_vid]         | [nodejs10_mac]         | [nodejs10_ubu]
 | Node.js 12                     | Offline        | [nodejs]        | [nodejs12_vid]         |                        |
 | Build tools                    | Offline        |                 | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]

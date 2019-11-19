@@ -1,4 +1,4 @@
-pragma solidity >=0.4.0 <0.7.0;
+pragma solidity ^0.5.12;
 
 contract Test {
     uint[] aa=[1,2,3,4];

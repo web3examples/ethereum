@@ -4,11 +4,37 @@
 These are all the tools can be used to work with Ethereum. Some tools just have a link to use/install the tools.
 Tools that aren't trivial to install are accompanied by a video.
 
+## Online tools
+
+| Tool          | source (github) | Link          | Documentation   | Video
+| ------------  | ---------       | -----         | -----------     | -----------
+| Play editor   | [play_gh]       | [play_ed]     |                 |
+| Api request   |                 | [apirequest]  |                 |
+| Test RPC API  | [grid_rpc_gh]   | [grid_rpc]    |                 |
+| Remix         |                 | [remix]       | [remix_ide_doc] | [remix_prep]
+
+
+[play_gh]:          https://github.com/playproject-io/play-ed
+
+
+[play_ed]:          https://playproject.io/play-ed/
+[apirequest]:       https://www.apirequest.io/
+
+[grid_rpc]:         https://web3examples.com/grid-rpc-app/build
+[grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app
+[remix]:            https://remix.ethereum.org
+[remix_prep]:       Prepare_Remix.html
+
+[remix_ide_doc]:    https://remix-ide.readthedocs.io/en/latest/
+
+
+
 ## Installer based tools
 
 | Tool            | Source                  | Install on Windows     | Install on Macintosh   |  Install on Ubuntu  
 | --------------- | ---------               | ----------------       | ---------              | ---------
 | Metamask        | [metamask]              | [metamask_vid]         |                        |
+| Remix desktop   | [remix_desktop]
 | Node.js 10      | [nodejs]                | [nodejs10_vid]         | [nodejs10_mac]         | [nodejs10_ubu]
 | Node.js 12      | [nodejs]                | [nodejs12_vid]         |                        |
 | Build tools     |                         | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]
@@ -20,7 +46,9 @@ Tools that aren't trivial to install are accompanied by a video.
 | Jq              | [jq]
 | Grid            | [grid]
 
+
 [metamask]:      https://metamask.io
+[remix_desktop]: https://github.com/ethereum/remix-desktop/releases
 [nodejs]:        https://nodejs.org/en/
 [ganache]:       https://www.trufflesuite.com/ganache
 [geth]:          https://geth.ethereum.org/downloads
@@ -72,24 +100,4 @@ Note: install node.js first
 [web3_ubu]:         Install_Web3_Ubuntu.html
 [ganache-cli]:      Install_ganache_cli_Windows_Use_HTTPS.html
 [truffle]:          Install_Truffle.html
-
-## Online tools
-
-| Tool          | Link         | Github        | Video
-| ------------  | -----        | ---------     | -----------
-| Play editor   | [play_ed]    |
-| Api request   | [apirequest] |
-| Test RPC API  | [grid_rpc]   | [grid_rpc_gh] |
-| Remix         | [remix]      |               | [remix_prep]
-
-
-[play_ed]:          https://playproject.io/play-ed/
-[apirequest]:       https://www.apirequest.io/
-
-[grid_rpc]:         https://web3examples.com/grid-rpc-app/build
-[grid_rpc_gh]:      https://github.com/web3examples/grid-rpc-app
-[remix]:            https://remix.ethereum.org
-[remix_prep]:       Prepare_Remix.html
-
-
 

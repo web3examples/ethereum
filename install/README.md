@@ -80,7 +80,7 @@ Note: install node.js first
 | Play editor   | [play_ed]    |
 | Api request   | [apirequest] |
 | Test RPC API  | [grid_rpc]   | [grid_rpc_gh] |
-| Remix         | [remix]      |               | [remix]
+| Remix         | [remix]      |               | [remix_prep]
 
 
 [play_ed]:          https://playproject.io/play-ed/

@@ -13,7 +13,8 @@ You can copy-paste the examples in: [play editor]
 | Arrays                        |              | [arrays]
 | Types                         |              | [types]
 | Visibility                    |              | [visibility]
-| Remix_Modifier                |              | [remix_modifier]
+| Remix Error                   |              | [remix_error]
+| Remix Modifier                |              | [remix_modifier]
 | Remix Memory                  |              | [remix_memory]
 | Remix Functions               |              | [remix_functions]
 | Remix Factory                 |              | [remix_factory]
@@ -56,5 +57,5 @@ You can copy-paste the examples in: [play editor]
 [types]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/Types.sol
 [visibility]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/Visibility.sol
 [remix_modifier]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Modifier.sol
-
-
+[remix_error]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Error.sol
+ 

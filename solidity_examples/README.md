@@ -10,8 +10,12 @@ You can copy-paste the examples in: [play editor]
 | Demo application              | Link         | Github
 | ---------                     | -------      | -----
 | Transfer                      |              | [transfer_github]
-| Remix Factory                 |              | [remix_factory]
+| Arrays                        |              | [arrays]
+| Types                         |              | [types]
+| Visibility                    |              | [visibility]
+| Remix Memory                  |              | [remix_memory]
 | Remix Functions               |              | [remix_functions]
+| Remix Factory                 |              | [remix_factory]
 | ToDoList                      |              | [todolist_github]
 | Ballot                        |              | [ballot_github]
 | Travel agency                 |              | [ta_github]
@@ -46,3 +50,7 @@ You can copy-paste the examples in: [play editor]
 [verybasicnft]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/VeryBasicNFT.sol  
 [remix_factory]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Factory.sol 
 [remix_functions]:  https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Functions.sol
+[remix_memory]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Memory.sol
+[arrays]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/Arrays.sol
+[types]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/Types.sol
+[visibility]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/Visibility.sol

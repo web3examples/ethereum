@@ -10,7 +10,8 @@ You can copy-paste the examples in: [play editor]
 | Demo application              | Link         | Github
 | ---------                     | -------      | -----
 | Transfer                      |              | [transfer_github]
-| Remix_Factory                 |              | [remix_factory]
+| Remix Factory                 |              | [remix_factory]
+| Remix Functions               |              | [remix_functions]
 | ToDoList                      |              | [todolist_github]
 | Ballot                        |              | [ballot_github]
 | Travel agency                 |              | [ta_github]
@@ -44,3 +45,4 @@ You can copy-paste the examples in: [play editor]
 [verybasictoken]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/VeryBasicToken.sol
 [verybasicnft]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/VeryBasicNFT.sol  
 [remix_factory]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Factory.sol 
+[remix_functions]:  https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Functions.sol

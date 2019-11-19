@@ -28,21 +28,17 @@ var ipfs_element = document.getElementById("ipfs")
 ipfs_element.hidden=true;
 
 function videoerror(event)
-{   let error = event;
-    if (event.path && event.path[0]) {     // Chrome v60
-      error = event.path[0].error;
-    }    
-    if (event.originalTarget) { // Firefox v55
-      error = error.originalTarget.error;
-    }
-    alert(`Video error: ${error.message}`);     // Here comes the error message
+{   console.log(event);
+    console.log(`Video error: can't access ${event.target.src}`);     // Here comes the error message
 }
 
 
 function vidaddsource(sourceLocation) {
   var source=document.createElement("source");
   source.src = sourceLocation;
+  source.onerror="videoerror(event)";
   video.appendChild(source);
+  //source.addEventListener('error', videoerror, true);
 }
 
 var video=document.createElement("video");
@@ -55,14 +51,9 @@ video.ontimeupdate = function() {VideoLocation()}; // call function when movie i
 video.addEventListener('error', videoerror, true);
 document.body.appendChild(video);
 
-//vidaddsource("http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText);
+
+vidaddsource("http://www.gpersoon.com:8080/ipfs/"+ipfs_element.innerText); // video player tries out different versions
 vidaddsource("https://ipfs.io/ipfs/"+ipfs_element.innerText);
-
-
-
-
-
-
 
 var newline=document.createElement("br");
 document.body.appendChild(newline);

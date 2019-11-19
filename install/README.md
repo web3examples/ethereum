@@ -1,7 +1,7 @@
 # Tools and installation
 
 ([Up](..) [Home](..\..))<br>
-These are all the tools can be used to work with Ethereum. Some tools just have a link to use/install the tools.
+These are tools that can be used to work with Ethereum. Some tools just have a link to use/install the tools.
 Tools that aren't trivial to install are accompanied by a video.
 The tools are sorted in the order of usefullness while learning ethereum.
 
@@ -46,8 +46,8 @@ The tools are sorted in the order of usefullness while learning ethereum.
 [ropsten_faucet]:     https://faucet.metamask.io/
 [play_ed]:            https://playproject.io/play-ed/
 [ropsten_etherscan]:  https://ropsten.etherscan.io/
-[athereum_faucet]:    https://github.com/ava-labs/athereum-faucet
 [athereum_config]:    https://github.com/ethereum-lists/chains/blob/master/_data/chains/43110.json
+[athereum_faucet]:    http://athfaucet.ava.network/
 [athereum_explorer]:  http://athexplorer.ava.network
 
 

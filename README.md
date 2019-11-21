@@ -2109,6 +2109,18 @@ Mostely the same patterns:
 
 # Building blocks
 
+
+## Data time libarries
+
+| Library
+| ----
+| [BokkyPooBahs_dt]
+| [pipermerriam_dt]
+
+[BokkyPooBahs_dt]: https://github.com/bokkypoobah/BokkyPooBahsDateTimeLibrary
+[pipermerriam_dt]: https://github.com/pipermerriam/ethereum-datetime
+
+
 ## Tokens
 
 ### Token overview

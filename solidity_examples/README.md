@@ -11,6 +11,7 @@ You can copy-paste the examples in: [play editor]
 | ---------                     | -------      | -----
 | Transfer                      |              | [transfer_github]
 | Arrays                        |              | [arrays]
+| Mapping                       |              | [mapping]
 | Types                         |              | [types]
 | Visibility                    |              | [visibility]
 | Remix Error                   |              | [remix_error]
@@ -58,4 +59,4 @@ You can copy-paste the examples in: [play editor]
 [visibility]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/Visibility.sol
 [remix_modifier]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Modifier.sol
 [remix_error]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Error.sol
- 
+[mapping]:          https://github.com/web3examples/ethereum/blob/master/solidity_examples/Mapping.sol

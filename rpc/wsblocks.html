@@ -1,0 +1,26 @@
+<body>
+Get latest Ethereum blocknumber via websockets<br>
+Compare to <a href="https://etherscan.io/blocks" target="_blank">Etherscan</a>
+<pre id="log" style="width:100%;height:200px"></pre> 
+<script>
+function log(logstr) {   
+    document.getElementById("log").innerHTML +=logstr+"\n";
+}    
+var socket = new WebSocket("wss://mainnet.infura.io/ws")
+const request=JSON.stringify({"id": 1, "method": "eth_subscribe", "params": ["newHeads"]});
+socket.onopen = function (event) {
+console.log(socket)
+  log(`Sending: ${request}`);
+  socket.send(request); 
+};
+socket.onmessage = async function (event) {
+    var data=JSON.parse(event.data);
+    log(event.data);
+    log(`Current blocknumber = ${parseInt(data.params.result.number)}`);
+}
+socket.onerror = function(error) {
+  log(`[error] ${error.message}`);
+};
+</script>
+</body>
+

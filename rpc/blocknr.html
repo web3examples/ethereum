@@ -1,0 +1,26 @@
+<body>
+Get current Ethereum blocknumber<br>
+Compare to <a href="https://etherscan.io/blocks" target="_blank">Etherscan</a>
+<pre id="log" style="width:100%;height:200px"></pre> 
+<script>
+function log(logstr) {   
+    document.getElementById("log").innerHTML +=logstr+"\n";
+}      
+async function f() {
+  const request=JSON.stringify({"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":67});
+  log(request);
+  const rawResponse = await fetch('https://mainnet.infura.io', {
+    method: 'POST',
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    body: request
+  });
+  const content = await rawResponse.json();
+  log(JSON.stringify(content));
+  log(`Current blocknumber = ${parseInt(content.result)}`);
+}
+f();
+</script>
+</body>

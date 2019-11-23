@@ -8,7 +8,7 @@ function log(logstr) {
 }      
 async function f() {
   const request=JSON.stringify({"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":67});
-  log(request);
+  log(`Sending ${request}`);
   const rawResponse = await fetch('https://mainnet.infura.io', {
     method: 'POST',
     headers: {
@@ -18,7 +18,7 @@ async function f() {
     body: request
   });
   const content = await rawResponse.json();
-  log(JSON.stringify(content));
+  log(`Received ${JSON.stringify(content)}`);
   log(`Current blocknumber = ${parseInt(content.result)}`);
 }
 f();

@@ -1,13 +1,13 @@
 @echo off
 :loop
 call :jsonrpc web3_clientVersion
-call :jsonrpc net_version
-call :jsonrpc eth_chainId
-call :jsonrpc eth_mining
 call :jsonrpc eth_gasPrice
-call :jsonrpc eth_blockNumber
-call :jsonrpc eth_accounts
+call :jsonrpc eth_hashrate
+call :jsonrpc eth_mining
+call :jsonrpc eth_protocolVersion
 call :jsonrpc eth_syncing
+call :jsonrpc net_listening
+call :jsonrpc net_peerCount
 pause
 
 :jsonrpc

@@ -24,5 +24,5 @@ These are tools to use the RPC interface of ethereum nodes.
 [gen_inf_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/general_info_mainnet.infura.io.cmd
 [sha3_inf_win]:     https://github.com/web3examples/ethereum/blob/master/rpc/web3_sha3_mainnet.infura.io.cmd
 [bcdata_inf_win]:   https://github.com/web3examples/ethereum/blob/master/rpc/bcdata_mainnet.infura.io.cmd
-[blocknr]:          https://web3examples/ethereum/rpc/blocknr.html
-[wsblocks]:         https://web3examples/ethereum/rpc/wsblocks.html
+[blocknr]:          https://web3examples.com/ethereum/rpc/blocknr.html
+[wsblocks]:         https://web3examples.com/ethereum/rpc/wsblocks.html

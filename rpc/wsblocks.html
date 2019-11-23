@@ -6,20 +6,21 @@ Compare to <a href="https://etherscan.io/blocks" target="_blank">Etherscan</a>
 function log(logstr) {   
     document.getElementById("log").innerHTML +=logstr+"\n";
 }    
-var socket = new WebSocket("wss://mainnet.infura.io/ws")
-const request=JSON.stringify({"id": 1, "method": "eth_subscribe", "params": ["newHeads"]});
+const server="wss://mainnet.infura.io/ws";
+log(`Opening connection to ${server}`);
+var socket = new WebSocket(server);
 socket.onopen = function (event) {
-console.log(socket)
-  log(`Sending: ${request}`);
-  socket.send(request); 
+    const request=JSON.stringify({"id": 1, "method": "eth_subscribe", "params": ["newHeads"]});
+    log(`Connection opened, sending: ${request}`);
+    socket.send(request); 
 };
 socket.onmessage = async function (event) {
+    log(`Received ${event.data}`);
     var data=JSON.parse(event.data);
-    log(event.data);
     log(`Current blocknumber = ${parseInt(data.params.result.number)}`);
 }
 socket.onerror = function(error) {
-  log(`[error] ${error.message}`);
+    log(`[error] ${error.message}`);
 };
 </script>
 </body>

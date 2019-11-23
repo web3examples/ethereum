@@ -21,6 +21,6 @@ pause
 exit /b
 :nw
 echo %1
-curl -H "Content-Type: application/json" -g --data "%body:"=""%"  --fail --silent --show-error %1
+curl -H "Content-Type: application/json" -g --data "%body:"=""%" %1
 echo.
 exit /b

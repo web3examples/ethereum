@@ -13,7 +13,6 @@ pause
 :jsonrpc
 echo %1
 set body= {"jsonrpc":"2.0","method":"%1","params":[],"id":67}
-curl -H "Content-Type: application/json" -g --data "%body:"=""%"  --fail --silent --show-error https://mainnet.infura.io
+curl -H "Content-Type: application/json" -g --data "%body:"=""%" https://mainnet.infura.io
 echo.
 exit /b
-

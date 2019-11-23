@@ -1,7 +1,0 @@
-a.txt
-eth_getBalance-several networks.cmd
-README.md
-status-mainnet.infura.io.cmd
-web3_clientVersion-mainnet.infura.io
-web3_clientVersion-mainnet.infura.io.cmd
-web3_clientVersion-several networks.cmd

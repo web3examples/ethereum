@@ -45,6 +45,11 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
 
+
+https://emn178.github.io/online-tools/keccak_256.html
+https://www.4byte.directory
+https://www.binaryhexconverter.com/hex-to-decimal-converter
+
 [chrome]:             https://www.google.com/chrome/
 [metamask]:           https://metamask.io
 [ropsten_faucet]:     https://faucet.metamask.io/

@@ -10,7 +10,10 @@ These are tools to use the RPC interface of ethereum nodes.
 | web3_clientVersion | localhost 8545    | [ver_local_win]
 | web3_sha3          | mainnet infura    | [sha3_inf_win]
 | eth_getBalance     | mainnet infura    | [bal_inf_win]    | [bal_inf_linux]
-| eth_getBalance     | several networks  | [bal_sev_win]    |
+| eth_getBalance     | several networks  | [bal_sev_win]
+| eth_accounts       | localhost 8545    | [act_local_win]
+| eth_sendTransaction| localhost 8545    | [trans_local_win]
+| eth_call           | ropsten           | [call_rop_win]
 | general info       | mainnet infura    | [gen_inf_win]
 | blockchain data    | mainnet infura    | [bcdata_inf_win]
 | eth_blockNumber    | mainnet infura    |                  |                   | [blocknr]
@@ -28,3 +31,6 @@ These are tools to use the RPC interface of ethereum nodes.
 [blocknr]:          https://web3examples.com/ethereum/rpc/blocknr.html
 [wsblocks]:         https://web3examples.com/ethereum/rpc/wsblocks.html
 [ver_local_win]:    https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_port_8545.cmd
+[trans_local_win]:  https://github.com/web3examples/ethereum/blob/master/rpc/eth_sendTransaction_ganache.cmd
+[act_local_win]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_accounts_ganache.cmd
+[call_rop_win]:     https://github.com/web3examples/ethereum/blob/master/rpc/eth_call_ropsten.cmd

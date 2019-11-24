@@ -28,6 +28,9 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | wscat                          | npm install -g | [pkg_wscat] 
 | Api request                    | Web            | [apirequest]         
 | Test RPC API                   | Web            | [grid_rpc]           
+| Keccak                         | Web            | [keccak_256]
+| 4byte directory                | Web            | [4byte]
+| hex decimal convertor          | Web            | [hexdec]
 | ......
 | Ganache                        | Offline        | [ganache]                        | [ganache_vid]
 | Grid                           | Offline        | [grid]
@@ -46,9 +49,9 @@ The tools are sorted in the order of usefullness while learning ethereum.
 
 
 
-https://emn178.github.io/online-tools/keccak_256.html
-https://www.4byte.directory
-https://www.binaryhexconverter.com/hex-to-decimal-converter
+[keccak_256]:         https://emn178.github.io/online-tools/keccak_256.html
+[4byte]:              https://www.4byte.directory
+[hexdec]:             https://www.binaryhexconverter.com/hex-to-decimal-converter
 
 [chrome]:             https://www.google.com/chrome/
 [metamask]:           https://metamask.io

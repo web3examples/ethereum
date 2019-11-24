@@ -6,10 +6,10 @@ Tools that aren't trivial to install are accompanied by a video.
 The tools are sorted in the order of usefullness while learning ethereum.
 
 
-| Tool                           | Type           | source / link   | Install on Windows     | Install on Macintosh   |  Install on Ubuntu        
-| ------------                   | --------       | ---------       | -----                  | -----------            | -----------               
+| Tool                           | Type           | source / link                    | Install on Windows     | Install on Macintosh   |  Install on Ubuntu        
+| ------------                   | --------       | ---------                        | -----                  | -----------            | -----------               
 | Chrome browser                 | Offline        | [chrome]
-| Metamask                       | Offline        | [metamask]      | [metamask_vid]
+| Metamask                       | Offline        | [metamask]                       | [metamask_vid]
 | Ropsten faucet                 | Web            | [ropsten_faucet]
 | Play editor                    | Web            | [play_ed]
 | Ropsten explorer               | Web            | [ropsten_etherscan]
@@ -17,28 +17,30 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Athereum faucet                | Web            | [athereum_faucet]
 | Athereum explorer              | Web            | [athereum_explorer]
 | ...                                      
-| Remix                          | Web            | [remix]         | [remix_prep]
+| Remix                          | Web            | [remix]                         | [remix_prep]
 | Remix desktop                  | Offline        | [remix_desktop]
 | ....                                     
 | Curl                           | Offline        | [curl]
-| Node.js 10                     | Offline        | [nodejs]        | [nodejs10_vid]         | [nodejs10_mac]         | [nodejs10_ubu]
-| Node.js 12                     | Offline        | [nodejs]        | [nodejs12_vid]         |                        |
+| Build tools                    | Offline        |                                  | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]
+| Node.js 10                     | Offline        | [nodejs]                         | [nodejs10_vid]         | [nodejs10_mac]         | [nodejs10_ubu]
+| Node.js 12                     | Offline        | [nodejs]                         | [nodejs12_vid]         |                        |
 | wscurl                         | npm install -g | [pkg_wscurl]
 | wscat                          | npm install -g | [pkg_wscat] 
 | Api request                    | Web            | [apirequest]         
 | Test RPC API                   | Web            | [grid_rpc]           
 | ......
-| Build tools                    | Offline        |                 | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]
-| Ganache                        | Offline        | [ganache]       | [ganache_vid]
-| Geth                           | Offline        | [geth]          | [geth_vid]   
-| Git cmd line                   | Offline        | [gitcmdline]    | [git_vid]    
-| Git desktop                    | Offline        | [gitdesktop]
-
-| Jq                             | Offline        | [jq]
+| Ganache                        | Offline        | [ganache]                        | [ganache_vid]
 | Grid                           | Offline        | [grid]
-| web3                           | npm install -g | [pkg_web3]         | [web3_win]          | [web3_mac]            | [web3_ubu]
-| ganache-cli                    | npm install -g | [pkg_ganache_cli]  | [ganache-cli]
-| truffle                        | npm install -g | [pkg_truffle]      | [truffle]
+| Prometheus                     | Offline        | [prometheus]<br>[prometheus_yml] | [geth_prometheus_grafana]
+| Grafana                        | Offline        | [grafana]<br>[dashboard_json]    | [geth_prometheus_grafana]
+| Geth                           | Offline        | [geth]                           | [geth_vid]   
+| ......
+| Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
+| Git desktop                    | Offline        | [gitdesktop]
+| Jq                             | Offline        | [jq]
+| web3                           | npm install -g | [pkg_web3]                       | [web3_win]          | [web3_mac]            | [web3_ubu]
+| ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
+| truffle                        | npm install -g | [pkg_truffle]                    | [truffle]
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
@@ -104,3 +106,8 @@ The tools are sorted in the order of usefullness while learning ethereum.
 [ganache-cli]:      Install_ganache_cli_Windows_Use_HTTPS.html
 [truffle]:          Install_Truffle.html
 
+[prometheus]: https://prometheus.io/
+[prometheus_yml]: https://github.com/karalabe/geth-prometheus
+[grafana]: https://grafana.com/
+[dashboard_json]: https://gist.github.com/karalabe/e7ca79abdec54755ceae09c08bd090cd
+[geth_prometheus_grafana]: http://web3examples.com/ethereum/demo/Geth_Prometheus_Grafana.html

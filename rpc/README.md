@@ -7,6 +7,7 @@ These are tools to use the RPC interface of ethereum nodes.
 | ----               | ----              | ------------     |-----------        | ----------
 | web3_clientVersion | mainnet infura    | [ver_inf_win]    | [ver_inf_linux]
 | web3_clientVersion | several networks  | [ver_sev_win]    |
+| web3_clientVersion | localhost 8545    | [ver_local_win]
 | web3_sha3          | mainnet infura    | [sha3_inf_win]
 | eth_getBalance     | mainnet infura    | [bal_inf_win]    | [bal_inf_linux]
 | eth_getBalance     | several networks  | [bal_sev_win]    |
@@ -26,3 +27,4 @@ These are tools to use the RPC interface of ethereum nodes.
 [bcdata_inf_win]:   https://github.com/web3examples/ethereum/blob/master/rpc/bcdata_mainnet.infura.io.cmd
 [blocknr]:          https://web3examples.com/ethereum/rpc/blocknr.html
 [wsblocks]:         https://web3examples.com/ethereum/rpc/wsblocks.html
+[ver_local_win]:    https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_port_8545.cmd

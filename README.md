@@ -456,7 +456,6 @@ See: [RPC Commands](rpc)
 
 # Manage and monitor 
 
-
 | Management nodes   | Monitoring Dapps
 | -----------        | -------------
 | [eth-netstats]     | [terminal]
@@ -465,6 +464,7 @@ See: [RPC Commands](rpc)
 | [grafana3]
 | [grafana4]
 | [perfmon]
+| [mon_sheet]
 
 [eth-netstats]: https://github.com/cubedro/eth-netstats
 
@@ -473,6 +473,8 @@ See: [RPC Commands](rpc)
 [grafana3]: https://gist.github.com/karalabe/e7ca79abdec54755ceae09c08bd090cd
 [grafana4]: https://grafana.com/grafana/dashboards/6976
 [perfmon]:  https://github.com/InPlusLab/BlockchainPerformanceMonitoring
+[mon_sheet]:    https://kauri.io/article/5ab5c4d558e04a73accebc652ef2246b/v3/monitor-your-geth-node-with-google-sheet
+
 
 [terminal]:     https://terminal.co/
 [moesif_web3]:  https://www.moesif.com/docs/platform/ethereum-web3/

@@ -35,6 +35,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Ganache                        | Offline        | [ganache]                        | [ganache_vid]
 | Grid                           | Offline        | [grid]
 | Prometheus                     | Offline        | [prometheus]<br>[prometheus_yml] | [geth_prometheus_grafana]
+| 7Zip                           | Offline        | [7zip]
 | Grafana                        | Offline        | [grafana]<br>[dashboard_json]    | [geth_prometheus_grafana]
 | Geth                           | Offline        | [geth]                           | [geth_vid]   
 | ......
@@ -48,7 +49,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
 
-
+[7zip]:               https://www.7-zip.org/
 [keccak_256]:         https://emn178.github.io/online-tools/keccak_256.html
 [4byte]:              https://www.4byte.directory
 [hexdec]:             https://www.binaryhexconverter.com/hex-to-decimal-converter

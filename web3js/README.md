@@ -9,10 +9,11 @@ Demo of Javascript features
 | --------        | ----
 | Version         | [version]
 | getBlockNumber  | [getblocknumber]
+| Vanity account  | [vanity_account]
 
 [version]:           https://github.com/web3examples/ethereum/blob/master/web3js/version.js
 [getblocknumber]:    https://github.com/web3examples/ethereum/blob/master/web3js/getBlockNumber.js
- 
+ [vanity_account]:   https://github.com/web3examples/ethereum/blob/master/web3js/vanity_account.js
  
 # HTML and Javascript
   

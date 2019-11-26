@@ -39,10 +39,11 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Grafana                        | Offline        | [grafana]<br>[dashboard_json]    | [geth_prometheus_grafana]
 | Geth                           | Offline        | [geth]                           | [geth_vid]   
 | ......
+| web3                           | npm install -g | [pkg_web3]                       | [web3_win]          | [web3_mac]            | [web3_ubu]
+| ......
 | Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
 | Git desktop                    | Offline        | [gitdesktop]
 | Jq                             | Offline        | [jq]
-| web3                           | npm install -g | [pkg_web3]                       | [web3_win]          | [web3_mac]            | [web3_ubu]
 | ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
 | truffle                        | npm install -g | [pkg_truffle]                    | [truffle]
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]

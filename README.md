@@ -3,6 +3,7 @@ Examples related to ethereum. ([Home](..))
 This document contains info about:
 - [Interactive examples](#interactive-examples)
   - [Solidity Examples](#solidity-examples)
+  - [Webj3 (javascript) examples](#webj3-javascript-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
   - [RPC Commands](#rpc-commands)
@@ -121,6 +122,11 @@ This document contains info about:
 
 ## Solidity Examples
 See: [Solidity Examples](solidity_examples) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Webj3 (javascript) examples
+See: [Web3js](web3js) 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

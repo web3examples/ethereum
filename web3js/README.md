@@ -5,11 +5,14 @@ Web3.js examples based on Javascript
 # Javascript - node.js
 Demo of Javascript features
 
-| Feature     | Demo
-| --------    | ----
-| Version     | [version]
+| Feature         | Demo
+| --------        | ----
+| Version         | [version]
+| getBlockNumber  | [getblocknumber]
 
 [version]:           https://github.com/web3examples/ethereum/blob/master/web3js/version.js
+[getblocknumber]:    https://github.com/web3examples/ethereum/blob/master/web3js/getBlockNumber.js
+ 
  
 # HTML and Javascript
   

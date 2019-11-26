@@ -1,17 +1,15 @@
 # Web3.js  <!-- omit in toc --> 
+([Up](..) [Home](..\..))
 Web3.js examples based on Javascript
 
-Demo of Javascript features
-
-([Up](..) [Home](..\..))
-
 # Javascript - node.js
+Demo of Javascript features
 
 | Feature     | Demo
 | --------    | ----
 | Version     | [version]
 
-[version]:           https://github.com/web3examples/ethereum/we3js/blob/master/demo/version.js
+[version]:           https://github.com/web3examples/ethereum/blob/master/web3js/version.js
  
 # HTML and Javascript
   
@@ -20,7 +18,7 @@ Demo of Javascript features
 | web3js_web | [web3js_web] |  [web3js_web_gh]
  
  [web3js_web]: web3js_web.html
- [web3js_web_gh]: https://github.com/web3examples/ethereum/we3js/blob/master/demo/web3js_web.html
+ [web3js_web_gh]: https://github.com/web3examples/ethereum/blob/master/web3js/web3js_web.html
 
 # Basics
 

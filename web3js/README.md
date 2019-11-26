@@ -13,6 +13,8 @@ Demo of Javascript features
 | Sign             | [sign]
 | Send Transaction | [sendtransaction]
 | Sign Transaction | [signtransaction]
+| Call Ropsten     | [call_ropsten]
+| Send Ganache     | [send_ganache]
 
 [version]:           https://github.com/web3examples/ethereum/blob/master/web3js/version.js
 [getblocknumber]:    https://github.com/web3examples/ethereum/blob/master/web3js/getBlockNumber.js
@@ -20,6 +22,8 @@ Demo of Javascript features
 [sign]:              https://github.com/web3examples/ethereum/blob/master/web3js/sign.js
 [sendtransaction]:   https://github.com/web3examples/ethereum/blob/master/web3js/sendtransaction.js
 [signtransaction]:   https://github.com/web3examples/ethereum/blob/master/web3js/signtransaction.js
+[call_ropsten]:      https://github.com/web3examples/ethereum/blob/master/web3js/call_ropsten.js
+[send_ganache]:      https://github.com/web3examples/ethereum/blob/master/web3js/send_ganache.js
  
  
 # HTML and Javascript

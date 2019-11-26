@@ -39,6 +39,8 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Grafana                        | Offline        | [grafana]<br>[dashboard_json]    | [geth_prometheus_grafana]
 | Geth                           | Offline        | [geth]                           | [geth_vid]   
 | ......
+| Visual Studio Code             | Offline        | [vscode]
+| Notepad++                      | Offline        | [notepad++]
 | web3                           | npm install -g | [pkg_web3]                       | [web3_win]          | [web3_mac]            | [web3_ubu]
 | ......
 | Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
@@ -49,6 +51,9 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
+
+[notepad++]:        https://notepad-plus-plus.org
+[vscode]:           https://code.visualstudio.com/
 
 [7zip]:               https://www.7-zip.org/
 [keccak_256]:         https://emn178.github.io/online-tools/keccak_256.html

@@ -22,7 +22,3 @@ async function f() {
     console.log(`TestPayaddress ${TestPayaddress} has ${x} ether`);
 }
 f();
-
-
- 
- 

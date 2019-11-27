@@ -17,6 +17,7 @@ You can copy-paste the examples in: [play editor]
 | Remix Error                   |              | [remix_error]
 | Remix Modifier                |              | [remix_modifier]
 | Remix Memory                  |              | [remix_memory]
+| Memory Storage                |              | [memory_storage]
 | Remix Functions               |              | [remix_functions]
 | Remix Factory                 |              | [remix_factory]
 | ToDoList                      |              | [todolist_github]
@@ -60,3 +61,4 @@ You can copy-paste the examples in: [play editor]
 [remix_modifier]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Modifier.sol
 [remix_error]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Error.sol
 [mapping]:          https://github.com/web3examples/ethereum/blob/master/solidity_examples/Mapping.sol
+[memory_storage]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Memory_Storage.sol

@@ -16,6 +16,7 @@ Demo of Javascript features
 | Call Ropsten     | [call_ropsten]
 | Send Ganache     | [send_ganache]
 | Subscribe        | [subscribe]
+| Logtest          | [logtest]
 
 [version]:           https://github.com/web3examples/ethereum/blob/master/web3js/version.js
 [getblocknumber]:    https://github.com/web3examples/ethereum/blob/master/web3js/getBlockNumber.js
@@ -26,7 +27,8 @@ Demo of Javascript features
 [call_ropsten]:      https://github.com/web3examples/ethereum/blob/master/web3js/call_ropsten.js
 [send_ganache]:      https://github.com/web3examples/ethereum/blob/master/web3js/send_ganache.js
 [subscribe]:         https://github.com/web3examples/ethereum/blob/master/web3js/subscribe.js
- 
+[logtest]:           https://github.com/web3examples/ethereum/blob/master/web3js/logtest.js
+
 # HTML and Javascript
   
 | Feature    | Link         | Github

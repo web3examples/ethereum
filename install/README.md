@@ -43,7 +43,8 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Notepad++                      | Offline        | [notepad++]
 | web3                           | npm install -g | [pkg_web3]                       | [web3_win]          | [web3_mac]            | [web3_ubu]
 | ......
-| simplehttpserver               | Offline        | [simplehttpserver]
+| Budo                           | npm install -g | [pkg_budo]                       | budo
+| simplehttpserver               | Offline        | [simplehttpserver]               | python -m SimpleHTTPServer 80
 | CDN unpkg                      | Web            | [unpkg]
 | CDN jsdelivr                   | Web            | [jsdelivr]
 | Browserify                     | npm install -g | [pkg_browserify]
@@ -56,7 +57,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
-
+[pkg_budo]:                 https://www.npmjs.com/package/budo
 [simplehttpserver]:         https://docs.python.org/2/library/simplehttpserver.html
 [pkg_browserify]:           https://www.npmjs.com/package/browserify
 [unpkg]:                    https://unpkg.com

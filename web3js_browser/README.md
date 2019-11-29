@@ -1,4 +1,4 @@
-# Web3.js browser  <!-- omit in toc --> 
+# Web3.js in browser  <!-- omit in toc --> 
 ([Up](..) [Home](..\..))
 Web3.js examples in browser
 
@@ -38,5 +38,9 @@ Result is accessible via: [web3examples_web3-browserify.js]
 [web3-browserify.js]:              https://github.com/web3examples/ethereum/blob/master/web3js_browser/web3-browserify.js
 [web3examples_web3-browserify.js]: http://web3examples.com/ethereum/web3js_browser/web3-browserify.js
 
+# SimpleHTTPServer
 
-web3-browserify.js
+Use the SimpleHTTPServer in the following way:
+[go-web.cmd]
+
+[go-web.cmd] https://github.com/web3examples/ethereum/blob/master/web3js_browser/go-web.cmd

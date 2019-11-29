@@ -21,7 +21,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Remix desktop                  | Offline        | [remix_desktop]
 | ....                                     
 | Curl                           | Offline        | [curl]
-| Build tools                    | Offline        |                                  | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]
+| Build tools (includes python)  | Offline        |                                  | [toolswin_vid]         | [tools_mac]            | [python_ubu]<br>[tools_ubu]
 | Node.js 10                     | Offline        | [nodejs]                         | [nodejs10_vid]         | [nodejs10_mac]         | [nodejs10_ubu]
 | Node.js 12                     | Offline        | [nodejs]                         | [nodejs12_vid]         |                        |
 | wscurl                         | npm install -g | [pkg_wscurl]
@@ -43,6 +43,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Notepad++                      | Offline        | [notepad++]
 | web3                           | npm install -g | [pkg_web3]                       | [web3_win]          | [web3_mac]            | [web3_ubu]
 | ......
+| simplehttpserver               | Offline        | [simplehttpserver]
 | CDN unpkg                      | Web            | [unpkg]
 | CDN jsdelivr                   | Web            | [jsdelivr]
 | Browserify                     | npm install -g | [pkg_browserify]
@@ -55,9 +56,11 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
-[pkg_browserify]:         https://www.npmjs.com/package/browserify
-[unpkg]: https://unpkg.com
-[jsdelivr]: https://www.jsdelivr.com/
+
+[simplehttpserver]:         https://docs.python.org/2/library/simplehttpserver.html
+[pkg_browserify]:           https://www.npmjs.com/package/browserify
+[unpkg]:                    https://unpkg.com
+[jsdelivr]:                 https://www.jsdelivr.com/
 
 [notepad++]:        https://notepad-plus-plus.org
 [vscode]:           https://code.visualstudio.com/

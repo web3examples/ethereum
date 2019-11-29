@@ -28,7 +28,7 @@ Web3.js examples in browser
 [web3js_web_gh]:         https://github.com/web3examples/ethereum/blob/master/web3js_browser/web3js_web.html
 [metamask_inserted_gh]:  https://github.com/web3examples/ethereum/blob/master/web3js_browser/metamask_inserted.html
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
-[getAccounts_gh]:        https://github.com/web3examples/ethereum/blob/master/web3js_browser getaccounts.html
+[getAccounts_gh]:        https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts.html
 [sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
 
 

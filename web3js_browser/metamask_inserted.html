@@ -7,10 +7,7 @@
         function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
-        if (location.href.slice(0,5)=="file:") 
-            log("Please run via webserver");
-        else
-            log(`Version of web3.js: ${web3.version.api}`);
+        log(`Version of web3.js: ${web3.version.api}`);        
         </script>        
     </body>
 </html>

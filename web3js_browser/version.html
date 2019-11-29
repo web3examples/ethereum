@@ -4,14 +4,17 @@
         <script src="web3-browserify.js"></script>  
     </head>
     <body>
-        <h1>Web3.js version with web3-browserify.js</h1>
+        <h1>web3.version</h1>
         <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
         function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
-        web3 = new Web3();
-        log(`Version of web3.js: ${web3.version}`);
+        async function f() {            
+            web3 = new Web3();
+            log(`Version of web3.js: ${web3.version}`);
+        }
+        f();
         </script>        
     </body>
 </html>

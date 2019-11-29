@@ -1,21 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="http://web3examples.com/ethereum/web3js_browser/web3-browserify.js"></script>  
+        <script src="web3-browserify.js"></script>  
     </head>
     <body>
-        <h1>Web3.js version with web3-browserify.js</h1>
+        <h1>getBlockNumber</h1>
         <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
         function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
         async function f() {            
-            if (location.href.slice(0,5)=="file:") { log("Please run via webserver");return;}
-            console.log(Web3.givenProvider);
             web3 = new Web3(Web3.givenProvider); // provider from metamask
             log(`Version of web3.js: ${web3.version}`);
-            var BlockNumber=await web3.eth.getBlockNumber();
+            var BlockNumber=await web3.eth.getBlockNumber().catch(log);
             log(`Blocknumber=${BlockNumber}`);
         }
         f();

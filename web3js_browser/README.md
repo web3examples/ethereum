@@ -12,6 +12,7 @@ Web3.js examples in browser
 | getBlockNumber    | [getBlockNumber]      | [getBlockNumber_gh]
 | getAccounts 1     | [getAccounts1]        | [getAccounts1_gh]
 | getAccounts 2     | [getAccounts2]        | [getAccounts2_gh]
+| getAccounts 3     | [getAccounts3]        | [getAccounts3_gh]
 | sendTransaction   | [sendtransaction]     | [sendtransaction_gh]
 |
 | web3js_web | [web3js_web] | [web3js_web_gh]
@@ -23,6 +24,7 @@ Web3.js examples in browser
 [getBlockNumber]:    https://web3examples.com/ethereum/web3js_browser/getBlockNumber.html
 [getAccounts1]:      https://web3examples.com/ethereum/web3js_browser/getaccounts1.html
 [getAccounts2]:      https://web3examples.com/ethereum/web3js_browser/getaccounts2.html
+[getAccounts3]:      https://web3examples.com/ethereum/web3js_browser/getaccounts3.html
 [sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
 
 [htmlframework_gh]:      https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework.html
@@ -32,6 +34,7 @@ Web3.js examples in browser
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
 [getAccounts1_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts1.html
 [getAccounts2_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts2.html
+[getAccounts3_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts3.html
 [sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
 
 

@@ -167,7 +167,7 @@ See: [Demo Ethereum software](demo)
 | [basics]          |                  | [delegatecall]       | [austin]
 | [howwork]         |                  |                      | [stanford_bc]
 | [ethdocs] (error) |                  |                      | [tu_munich]
-| [Blockchainlabsnz]
+| [Blockchainlabsnz]|                  |                      | [portland_state]
 | [eth.wiki]
 | [metalist]
 | [concourseopen]
@@ -208,6 +208,7 @@ See: [Demo Ethereum software](demo)
 [austin]:             https://medium.com/@austin_48503/rapid-dapp-prototyping-3823e1f565c4
 [stanford_bc]:        https://cs251.stanford.edu/
 [tu_munich]:          https://github.com/sebischair/bbse
+[portland_state]:     https://www.thefengs.com/wuchang/courses/cs410b/  
 
 [colostate]:          https://www.cs.colostate.edu/~cs481a3
 

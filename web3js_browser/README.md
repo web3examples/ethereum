@@ -9,13 +9,16 @@ Web3.js examples in browser
 | html framework    | [htmlframework]       | [htmlframework_gh]
 | Version           | [version]             | [version_gh]
 | Metamask inserted | [metamask_inserted]   | [metamask_inserted_gh]
-| getBlockNumber    | [getBlockNumber]      | [getBlockNumber_gh]
-| getAccounts 1     | [getAccounts1]        | [getAccounts1_gh]
-| getAccounts 2     | [getAccounts2]        | [getAccounts2_gh]
-| getAccounts 3     | [getAccounts3]        | [getAccounts3_gh]
-| sendTransaction   | [sendtransaction]     | [sendtransaction_gh]
+| get BlockNumber   | [getBlockNumber]      | [getBlockNumber_gh]
+| get Accounts 1    | [getAccounts1]        | [getAccounts1_gh]
+| get Accounts 2    | [getAccounts2]        | [getAccounts2_gh]
+| get Accounts 3    | [getAccounts3]        | [getAccounts3_gh]
+| send Transaction  | [sendtransaction]     | [sendtransaction_gh]
+| accounts Changed  | [accountsChanged]     | [accountsChanged_gh]
+| chain Changed     | [chainChanged]        | [chainChanged_gh]
 |
-| web3js_web | [web3js_web] | [web3js_web_gh]
+| web3js_web        | [web3js_web]          | [web3js_web_gh]
+| E2E Test Dapp     | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
 
 [htmlframework]:     https://web3examples.com/ethereum/web3js_browser/htmlframework.html   
 [version]:           https://web3examples.com/ethereum/web3js_browser/version.html
@@ -25,7 +28,12 @@ Web3.js examples in browser
 [getAccounts1]:      https://web3examples.com/ethereum/web3js_browser/getaccounts1.html
 [getAccounts2]:      https://web3examples.com/ethereum/web3js_browser/getaccounts2.html
 [getAccounts3]:      https://web3examples.com/ethereum/web3js_browser/getaccounts3.html
+[accountsChanged]:   https://web3examples.com/ethereum/web3js_browser/accountsChanged.html
+[chainChanged]:      https://web3examples.com/ethereum/web3js_browser/chainChanged.html
 [sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
+[E2E_Test_Dapp]:     https://web3examples.com/ethereum/web3js_browser/E2E_Test_Dapp.html
+
+
 
 [htmlframework_gh]:      https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework.html
 [version_gh]:            https://github.com/web3examples/ethereum/blob/master/web3js_browser/version.html
@@ -36,6 +44,9 @@ Web3.js examples in browser
 [getAccounts2_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts2.html
 [getAccounts3_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts3.html
 [sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
+[accountsChanged_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/accountsChanged.html
+[chainChanged_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/chainChanged.html
+[E2E_Test_Dapp_gh]:      https://github.com/MetaMask/metamask-extension/tree/develop/test/e2e/contract-test
 
 
 # Browserify

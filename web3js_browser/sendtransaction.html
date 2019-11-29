@@ -27,9 +27,9 @@
             log(`toadr    ${toadr} has ${Web3.utils.fromWei ( await web3.eth.getBalance(toadr), 'ether')} ether` );
             log(`Transfering 0.01 ether`);
             obj= await web3.eth.sendTransaction({
-            from: fromadr,
-            to: toadr,
-            value: Web3.utils.toWei('0.01', 'ether')
+                from: fromadr,
+                to: toadr,
+                value: Web3.utils.toWei('0.01', 'ether')
             }).catch(x=>log(x.message));
             log(`Stored in block ${obj.blockNumber}`)
             log(`fromadr ${fromadr} has ${Web3.utils.fromWei ( await web3.eth.getBalance(fromadr), 'ether')} ether` );

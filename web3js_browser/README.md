@@ -13,8 +13,8 @@ Web3.js examples in browser
 [version]:         version.html
 [web3js_web]:      web3js_web.html
 
-[version_gh]:      https://github.com/web3examples/ethereum/blob/master/web3js_brower/version.html
-[web3js_web_gh]:   https://github.com/web3examples/ethereum/blob/master/web3js_brower/web3js_web.html
+[version_gh]:      https://github.com/web3examples/ethereum/blob/master/web3js_browser/version.html
+[web3js_web_gh]:   https://github.com/web3examples/ethereum/blob/master/web3js_browser/web3js_web.html
 
 # Basics
 

@@ -9,7 +9,9 @@ Web3.js examples in browser
 | Version           | [version]             | [version_gh]
 | Metamask inserted | [metamask_inserted]   | [metamask_inserted_gh]
 | getBlockNumber    | [getBlockNumber]      | [getBlockNumber_gh]
-
+| sendTransaction   | [sendtransaction]     | [sendtransaction_gh]
+|
+|
 | web3js_web | [web3js_web] | [web3js_web_gh]
 
 
@@ -17,11 +19,14 @@ Web3.js examples in browser
 [web3js_web]:        https://web3examples.com/ethereum/web3js_browser/web3js_web.html
 [metamask_inserted]: https://web3examples.com/ethereum/web3js_browser/metamask_inserted.html
 [getBlockNumber]:    https://web3examples.com/ethereum/web3js_browser/getBlockNumber.html
+[sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
 
 [version_gh]:            https://github.com/web3examples/ethereum/blob/master/web3js_browser/version.html
 [web3js_web_gh]:         https://github.com/web3examples/ethereum/blob/master/web3js_browser/web3js_web.html
 [metamask_inserted_gh]:  https://github.com/web3examples/ethereum/blob/master/web3js_browser/metamask_inserted.html
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
+[sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
+
 
 # Browserify
 

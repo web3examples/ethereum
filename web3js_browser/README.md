@@ -41,6 +41,6 @@ Result is accessible via: [web3examples_web3-browserify.js]
 # SimpleHTTPServer
 
 Use the SimpleHTTPServer in the following way:
-[go-web.cmd]
+* [go-web.cmd]
 
-[go-web.cmd] https://github.com/web3examples/ethereum/blob/master/web3js_browser/go-web.cmd
+[go-web.cmd]: https://github.com/web3examples/ethereum/blob/master/web3js_browser/go-web.cmd

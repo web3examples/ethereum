@@ -3,11 +3,11 @@ Examples related to ethereum. ([Home](..))
 This document contains info about:
 - [Interactive examples](#interactive-examples)
   - [Solidity Examples](#solidity-examples)
+  - [RPC Examples](#rpc-examples)
   - [Webjs3 (javascript) examples](#webjs3-javascript-examples)
   - [Webjs3 (browser) examples](#webjs3-browser-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
-  - [RPC Commands](#rpc-commands)
 - [--------------------------------------------](#)
 - [Ethereum Concepts](#ethereum-concepts)
 - [Explorers](#explorers)
@@ -126,6 +126,12 @@ See: [Solidity Examples](solidity_examples)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## RPC Examples
+
+See: [RPC Examples](rpc)  
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 ## Webjs3 (javascript) examples
 See: [Web3js](web3js) 
 
@@ -136,7 +142,6 @@ See: [Web3js_browser](web3js_browser)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
 ## Tools and installation
 
 See: [Tools and installation](install) 
@@ -145,11 +150,6 @@ See: [Tools and installation](install)
 ## Demo video's
 
 See: [Demo Ethereum software](demo)  
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-## RPC Commands
-
-See: [RPC Commands](rpc)  
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
 

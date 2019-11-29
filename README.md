@@ -4,6 +4,7 @@ This document contains info about:
 - [Interactive examples](#interactive-examples)
   - [Solidity Examples](#solidity-examples)
   - [Webjs3 (javascript) examples](#webjs3-javascript-examples)
+  - [Webjs3 (browser) examples](#webjs3-browser-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
   - [RPC Commands](#rpc-commands)
@@ -129,6 +130,12 @@ See: [Solidity Examples](solidity_examples)
 See: [Web3js](web3js) 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Webjs3 (browser) examples
+See: [Web3js_browser](web3js_browser) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
 
 ## Tools and installation
 

@@ -43,6 +43,10 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Notepad++                      | Offline        | [notepad++]
 | web3                           | npm install -g | [pkg_web3]                       | [web3_win]          | [web3_mac]            | [web3_ubu]
 | ......
+| CDN unpkg                      | Web            | [unpkg]
+| CDN jsdelivr                   | Web            | [jsdelivr]
+| Browserify                     | npm install -g | [pkg_browserify]
+
 | Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
 | Git desktop                    | Offline        | [gitdesktop]
 | Jq                             | Offline        | [jq]
@@ -51,6 +55,9 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
+[pkg_browserify]:         https://www.npmjs.com/package/browserify
+[unpkg]: https://unpkg.com
+[jsdelivr]: https://www.jsdelivr.com/
 
 [notepad++]:        https://notepad-plus-plus.org
 [vscode]:           https://code.visualstudio.com/

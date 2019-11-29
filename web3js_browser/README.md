@@ -23,13 +23,20 @@ Web3.js examples in browser
 [metamask_inserted_gh]:  https://github.com/web3examples/ethereum/blob/master/web3js_browser/metamask_inserted.html
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
 
-# Basics
+# Browserify
 
-Create a browser compatible version of web3.js 1.0
+Create a browser compatible version of web3.js 1.x
 * npm install -g web3
-* npm install -g browserify
-* npm link browserify
 * npm link web3
-* browserify web3-require.js -o web3-browserify.js 
+* npm install -g [pkg_browserify]
+* browserify [web3-require.js] -o [web3-browserify.js]
+
+Result is accessible via: [web3examples_web3-browserify.js]
+
+[browserify]:                      https://www.npmjs.com/package/browserify
+[web3-require.js]:                 https://github.com/web3examples/ethereum/blob/master/web3js_browser/web3-require.js
+[web3-browserify.js]:              https://github.com/web3examples/ethereum/blob/master/web3js_browser/web3-browserify.js
+[web3examples_web3-browserify.js]: http://web3examples.com/ethereum/web3js_browser/web3-browserify.js
 
 
+web3-browserify.js

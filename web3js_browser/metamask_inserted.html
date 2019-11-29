@@ -1,17 +1,16 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="web3-browserify.js"></script>  
-    </head>
     <body>
-        <h1>web3.js version with web3-browserify.js</h1>
+        <h1>Web3.js 0.20.x via MetaMask (deprecated)</h1>
         <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
         function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
-        web3 = new Web3();
-        log(`Version of web3.js: ${web3.version}`);
+        if (location.href.slice(0,5)=="file:") 
+            log("Please run via webserver");
+        else
+            log(`Version of web3.js: ${web3.version.api}`);
         </script>        
     </body>
 </html>

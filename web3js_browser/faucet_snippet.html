@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="web3-browserify.js"></script>  
+    </head>
+    <body>
+        <h1>Faucet snippet</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() { 
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
+                methods: [{
+                    name: 'eth_requestAccounts',
+                    call: 'eth_requestAccounts',
+                    params: 0
+                }]
+            });
+            log(`Version of web3.js: ${web3.version}`);            
+            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
+            var acts=await web3.eth.getAccounts().catch(log);
+            log(`Here are the accounts: ${JSON.stringify(acts)}`);
+            
+            const privateKey= '0x0da19552d21de3da01e4a5ff72f6722b9a86c78ee6c6a46e5cdcf0fb5a936110'; 
+                               // note very insecure, but for test ETH this is usable   
+            var addressFaucet = web3.eth.accounts.privateKeyToAccount(privateKey).address; 
+            web3.eth.accounts.wallet.add(privateKey);
+            result = await  web3.eth.sendTransaction({from: addressFaucet,to: acts[0],value: 1})
+               .catch(x => log(`Error: ${x.code} ${x.message}`));    
+            log(`Transaction hash: ${result.transactionHash}`);
+        }
+        f();
+        </script>        
+    </body>
+</html>
+ 
+ 
+  
+      
+      
+      
+   

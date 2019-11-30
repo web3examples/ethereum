@@ -34,7 +34,7 @@
             log(`Storing distance to HHS: distance=${dist} (hex:${web3.utils.toHex(dist)})`);
             x=await DistanceHHSContract.methods.StoreDistanceHHS(dist)
                 .send({from: acts[0]}).catch((reason)=>log(`Cannnot do transaction ${reason}`));
-            log(`Transaction hash: ${EtherscanLink("tx",x.transactionHash)}`);             
+            log(`Transaction hash: ${x.transactionHash}`);
         }
         f();
         </script>        

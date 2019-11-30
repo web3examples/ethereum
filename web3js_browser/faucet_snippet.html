@@ -29,6 +29,8 @@
                                // note very insecure, but for test ETH this is usable   
             var addressFaucet = web3.eth.accounts.privateKeyToAccount(privateKey).address; 
             web3.eth.accounts.wallet.add(privateKey);
+            var fb=await web3.eth.getBalance(addressFaucet);
+            log(`Faucet has ${fb}`);            
             result = await  web3.eth.sendTransaction({from: addressFaucet,to: acts[0],value: 1})
                .catch(x => log(`Error: ${x.code} ${x.message}`));    
             log(`Transaction hash: ${result.transactionHash}`);

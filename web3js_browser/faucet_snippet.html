@@ -30,10 +30,13 @@
             var addressFaucet = web3.eth.accounts.privateKeyToAccount(privateKey).address; 
             web3.eth.accounts.wallet.add(privateKey);
             var fb=await web3.eth.getBalance(addressFaucet);
-            log(`Faucet has ${fb}`);            
+            log(`Faucet has ${fb}`);
+            log(`Wait about 20 seconds for transaction, note: no metamask confirm`);
             result = await  web3.eth.sendTransaction({from: addressFaucet,to: acts[0],gas: 200000,value: 1})
                .catch(x => log(`Error: ${x.code} ${x.message}`));    
             log(`Transaction hash: ${result.transactionHash}`);
+            var fb=await web3.eth.getBalance(addressFaucet);
+            log(`Faucet now has ${fb}`);
         }
         f();
         </script>        

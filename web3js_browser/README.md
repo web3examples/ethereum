@@ -4,20 +4,33 @@ Web3.js examples in browser
 
 # HTML and Javascript
   
-| Feature           | Link                  | Github
-| ---------         | -------               | ----------- 
-| html framework    | [htmlframework]       | [htmlframework_gh]
-| Version           | [version]             | [version_gh]
-| Metamask inserted | [metamask_inserted]   | [metamask_inserted_gh]
-| get BlockNumber   | [getBlockNumber]      | [getBlockNumber_gh]
-| get Accounts 1    | [getAccounts1]        | [getAccounts1_gh]
-| get Accounts 2    | [getAccounts2]        | [getAccounts2_gh]
-| get Accounts 3    | [getAccounts3]        | [getAccounts3_gh]
-| send Transaction  | [sendtransaction]     | [sendtransaction_gh]
-| accounts Changed  | [accountsChanged]     | [accountsChanged_gh]
-| chain Changed     | [chainChanged]        | [chainChanged_gh]
-| ..............
-| E2E Test Dapp     | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
+| Feature                       | Link                  | Github
+| ---------                     | -------               | ----------- 
+| html framework                | [htmlframework]       | [htmlframework_gh]
+| Version                       | [version]             | [version_gh]
+| Metamask inserted             | [metamask_inserted]   | [metamask_inserted_gh]
+| get BlockNumber               | [getBlockNumber]      | [getBlockNumber_gh]
+| get Accounts 1                | [getAccounts1]        | [getAccounts1_gh]
+| get Accounts 2                | [getAccounts2]        | [getAccounts2_gh]
+| get Accounts 3                | [getAccounts3]        | [getAccounts3_gh]
+| send Transaction              | [sendtransaction]     | [sendtransaction_gh]
+| accounts Changed              | [accountsChanged]     | [accountsChanged_gh]
+| chain Changed                 | [chainChanged]        | [chainChanged_gh]
+| ..............   
+| E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
+| Mini casino: bet and win      | [casino]              | [casino1_github]<br>[casino2_github]
+| Log your location (check-in)  | [location]            | [location_github]
+| Faucet                        | [w3e_faucet]          | [w3e_faucet_github]
+
+[location]:          http://web3examples.com/location
+[location_github]:   https://github.com/web3examples/location
+
+[casino]:            http://web3examples.com/ethereum/casino/
+[casino1_github]:    https://github.com/web3examples/ethereum/tree/master/casino
+[casino2_github]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Casino.sol
+
+[w3e_faucet]:        http://web3examples.com/ethereum/faucet
+[w3e_faucet_github]: https://github.com/web3examples/ethereum/tree/master/faucet
 
 [htmlframework]:     https://web3examples.com/ethereum/web3js_browser/htmlframework.html   
 [version]:           https://web3examples.com/ethereum/web3js_browser/version.html

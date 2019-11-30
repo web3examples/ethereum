@@ -16,13 +16,11 @@ Web3.js examples in browser
 | send Transaction  | [sendtransaction]     | [sendtransaction_gh]
 | accounts Changed  | [accountsChanged]     | [accountsChanged_gh]
 | chain Changed     | [chainChanged]        | [chainChanged_gh]
-|
-| web3js_web        | [web3js_web]          | [web3js_web_gh]
+| ..............
 | E2E Test Dapp     | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
 
 [htmlframework]:     https://web3examples.com/ethereum/web3js_browser/htmlframework.html   
 [version]:           https://web3examples.com/ethereum/web3js_browser/version.html
-[web3js_web]:        https://web3examples.com/ethereum/web3js_browser/web3js_web.html
 [metamask_inserted]: https://web3examples.com/ethereum/web3js_browser/metamask_inserted.html
 [getBlockNumber]:    https://web3examples.com/ethereum/web3js_browser/getBlockNumber.html
 [getAccounts1]:      https://web3examples.com/ethereum/web3js_browser/getaccounts1.html
@@ -37,7 +35,6 @@ Web3.js examples in browser
 
 [htmlframework_gh]:      https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework.html
 [version_gh]:            https://github.com/web3examples/ethereum/blob/master/web3js_browser/version.html
-[web3js_web_gh]:         https://github.com/web3examples/ethereum/blob/master/web3js_browser/web3js_web.html
 [metamask_inserted_gh]:  https://github.com/web3examples/ethereum/blob/master/web3js_browser/metamask_inserted.html
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
 [getAccounts1_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts1.html

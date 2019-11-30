@@ -24,11 +24,14 @@
             log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
             var acts=await web3.eth.getAccounts().catch(log);
             log(`Here are the accounts: ${JSON.stringify(acts)}`);
+            
             const contractCasino="0x548961aBD98E4C45AD87Fc510A663DEc20007580"
-            const CasinoABI=[{"constant": false,"inputs": [],"name": "betAndWin","outputs": [{"name": 
-                "win","type": "bool"}],"payable": true,"stateMutability": "payable","type": "function"}];
-            const CasinoContract= new web3.eth.Contract(CasinoABI, contractCasino );
-            var result = await CasinoContract.methods.betAndWin().send({from: acts[0],value:1});
+            const CasinoABI=[{"constant": false,"inputs": [],"name": "betAndWin",
+                "outputs": [{"name":"win","type": "bool"}],"payable": true,
+                "stateMutability": "payable","type": "function"}];
+            const CasinoContract= new web3.eth.Contract(CasinoABI,contractCasino);
+            var result = await CasinoContract.methods.betAndWin()
+                .send({from: acts[0],value:1});
             var win=web3.utils.hexToNumber((result.events[0].raw.data));          
             log(`Win result=${win}`);
         }

@@ -17,8 +17,9 @@ Web3.js examples in browser
 | accounts Changed              | [accountsChanged]     | [accountsChanged_gh]
 | chain Changed                 | [chainChanged]        | [chainChanged_gh]
 | ..............   
-| E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
-| Mini casino: bet and win      | [casino]              | [casino1_github]<br>[casino2_github]
+| E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp1_gh]<br>[E2E_Test_Dapp2_gh]
+| Mini casino: snippet          | [casino_snippet]      | [casino_snippet_gh]
+| Mini casino: full version     | [casino]              | [casino1_github]<br>[casino2_github]
 | Log your location (check-in)  | [location]            | [location_github]
 | Faucet                        | [w3e_faucet]          | [w3e_faucet_github]
 
@@ -26,6 +27,7 @@ Web3.js examples in browser
 [location_github]:   https://github.com/web3examples/location
 
 [casino]:            http://web3examples.com/ethereum/casino/
+
 [casino1_github]:    https://github.com/web3examples/ethereum/tree/master/casino
 [casino2_github]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Casino.sol
 
@@ -43,7 +45,7 @@ Web3.js examples in browser
 [chainChanged]:      https://web3examples.com/ethereum/web3js_browser/chainChanged.html
 [sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
 [E2E_Test_Dapp]:     https://web3examples.com/ethereum/web3js_browser/E2E_Test_Dapp.html
-
+[casino_snippet]:    https://web3examples.com/ethereum/web3js_browser/casino_snippet.html
 
 
 [htmlframework_gh]:      https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework.html
@@ -56,8 +58,9 @@ Web3.js examples in browser
 [sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
 [accountsChanged_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/accountsChanged.html
 [chainChanged_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/chainChanged.html
-[E2E_Test_Dapp_gh]:      https://github.com/MetaMask/metamask-extension/tree/develop/test/e2e/contract-test
-
+[E2E_Test_Dapp1_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/E2E_Test_Dapp.html
+[E2E_Test_Dapp2_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/E2E_Test_Dapp.js
+[casino_snippet_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/casino_snippet.html
 
 # Browserify
 

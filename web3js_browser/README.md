@@ -22,6 +22,7 @@ Web3.js examples in browser
 | E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp1_gh]<br>[E2E_Test_Dapp2_gh]
 | Mini casino: snippet          | [casino_snippet]      | [casino_snippet_gh]
 | Mini casino: full version     | [casino]              | [casino1_github]<br>[casino2_github]
+| Location snippet              | [location_snippet]    | [location_snippet_gh]
 | Log your location (check-in)  | [location]            | [location_github]
 | Faucet                        | [w3e_faucet]          | [w3e_faucet_github]
 
@@ -49,7 +50,7 @@ Web3.js examples in browser
 [sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
 [E2E_Test_Dapp]:     https://web3examples.com/ethereum/web3js_browser/E2E_Test_Dapp.html
 [casino_snippet]:    https://web3examples.com/ethereum/web3js_browser/casino_snippet.html
-
+[location_snippet]:  https://web3examples.com/ethereum/web3js_browser/location_snippet.html
 
 [htmlframework1_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework1.html
 [htmlframework2_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework2.html
@@ -65,6 +66,7 @@ Web3.js examples in browser
 [E2E_Test_Dapp1_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/E2E_Test_Dapp.html
 [E2E_Test_Dapp2_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/E2E_Test_Dapp.js
 [casino_snippet_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/casino_snippet.html
+[location_snippet_gh]:   https://github.com/web3examples/ethereum/blob/master/web3js_browser/location_snippet.html
 
 # Browserify
 

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="web3-browserify.js"></script>  
+    </head>
+    <body>
+        <h1>Location snippet (select Rinkeby)</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() { 
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
+                methods: [{
+                    name: 'eth_requestAccounts',
+                    call: 'eth_requestAccounts',
+                    params: 0
+                }]
+            });
+            log(`Version of web3.js: ${web3.version}`);            
+            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
+            var acts=await web3.eth.getAccounts().catch(log);
+            log(`Here are the accounts: ${JSON.stringify(acts)}`);
+            
+            var dist=100;
+            DistanceHHSaddress="0x609F224c0c9405a1e7FD404114ca8A8606edC3a3"
+            DistanceHHSABI=[{"constant": false,"inputs": [{"name": "distance",
+                "type": "uint256"}],"name": "StoreDistanceHHS","outputs": [],
+                "payable": false,"stateMutability": "nonpayable","type": "function"}];            
+            const DistanceHHSContract   = new web3.eth.Contract(DistanceHHSABI, DistanceHHSaddress);            
+            log(`Storing distance to HHS: distance=${dist} (hex:${web3.utils.toHex(dist)}) `);
+            x=await DistanceHHSContract.methods.StoreDistanceHHS(dist)
+                .send({from: accounts[0]}).catch( (reason) => log(`Cannnot do transaction ${reason}`));
+            log(`Transaction hash: ${EtherscanLink("tx",x.transactionHash)}`);             
+        }
+        f();
+        </script>        
+    </body>
+</html>

@@ -33,7 +33,7 @@
             const DistanceHHSContract   = new web3.eth.Contract(DistanceHHSABI, DistanceHHSaddress);            
             log(`Storing distance to HHS: distance=${dist} (hex:${web3.utils.toHex(dist)}) `);
             x=await DistanceHHSContract.methods.StoreDistanceHHS(dist)
-                .send({from: accounts[0]}).catch( (reason) => log(`Cannnot do transaction ${reason}`));
+                .send({from: acts[0]}).catch( (reason) => log(`Cannnot do transaction ${reason}`));
             log(`Transaction hash: ${EtherscanLink("tx",x.transactionHash)}`);             
         }
         f();

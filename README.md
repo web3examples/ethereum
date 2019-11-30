@@ -2855,6 +2855,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [stateofthedapps]<br>[sotd_sheet] | [nonfungible]
 | [dappradar]
 | [consensys-overview]
+| [operadapps]
 | [mathdapp]
 | [dappreview]
 | [dappcom]
@@ -2880,6 +2881,7 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
+[operadapps]:           https://www.opera.com/dapps-store
 
 [dappradar]:            https://dappradar.com/
 [consensys-overview]:   https://media.consensys.net/40-ethereum-apps-you-can-use-right-now-d643333769f7

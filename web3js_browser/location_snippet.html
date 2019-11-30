@@ -30,10 +30,10 @@
             DistanceHHSABI=[{"constant": false,"inputs": [{"name": "distance",
                 "type": "uint256"}],"name": "StoreDistanceHHS","outputs": [],
                 "payable": false,"stateMutability": "nonpayable","type": "function"}];            
-            const DistanceHHSContract   = new web3.eth.Contract(DistanceHHSABI, DistanceHHSaddress);            
-            log(`Storing distance to HHS: distance=${dist} (hex:${web3.utils.toHex(dist)}) `);
+            const DistanceHHSContract=new web3.eth.Contract(DistanceHHSABI,DistanceHHSaddress);            
+            log(`Storing distance to HHS: distance=${dist} (hex:${web3.utils.toHex(dist)})`);
             x=await DistanceHHSContract.methods.StoreDistanceHHS(dist)
-                .send({from: acts[0]}).catch( (reason) => log(`Cannnot do transaction ${reason}`));
+                .send({from: acts[0]}).catch((reason)=>log(`Cannnot do transaction ${reason}`));
             log(`Transaction hash: ${EtherscanLink("tx",x.transactionHash)}`);             
         }
         f();

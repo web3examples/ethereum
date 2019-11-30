@@ -18,10 +18,13 @@
                     call: 'eth_requestAccounts',
                     params: 0
                 }]
-            });        
+            });
+            log(`Version of web3.js: ${web3.version}`);            
             var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
-            var acts=await web3.eth.getAccounts().catch(x=>log(x.message));
+            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
+            var acts=await web3.eth.getAccounts().catch(log);
             log(`Here are the accounts: ${JSON.stringify(acts)}`);
+            
             ethereum.on('accountsChanged', newacts => { 
                 acts=newacts;
                 log(`We have new accounts: ${JSON.stringify(acts)}`);

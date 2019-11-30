@@ -19,7 +19,7 @@
                     params: 0
                 }]
             });        
-            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            var result=await web3.eth_requestAccounts().catch(x=>log(x.message);console.log(x););
             log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
             var acts=await web3.eth.getAccounts().catch(log);
             log(`Here are the accounts: ${JSON.stringify(acts)}`);

@@ -7,30 +7,30 @@ You can copy-paste the examples in: [play editor]
 [play editor]: https://playproject.io/play-ed/
 
 
-| Demo application              | Link         | Github
-| ---------                     | -------      | -----
-| Get Set Emit                  |              | [getsetemit]
-| Transfer                      |              | [transfer_github]
-| Arrays                        |              | [arrays]
-| Mapping                       |              | [mapping]
-| Types                         |              | [types]
-| Visibility                    |              | [visibility]
-| Remix Error                   |              | [remix_error]
-| Remix Modifier                |              | [remix_modifier]
-| Remix Memory                  |              | [remix_memory]
-| Memory Storage                |              | [memory_storage]
-| Remix Functions               |              | [remix_functions]
-| Remix Factory                 |              | [remix_factory]
-| ToDoList                      |              | [todolist_github]
-| Ballot                        |              | [ballot_github]
-| Travel agency                 |              | [ta_github]
-| Auction                       |              | [auction_github]
-| Oracle                        |              | [oracle_github]
-| VeryBasicToken                |              | [verybasictoken]
-| VeryBasicNFT                  |              | [verybasicnft]
-| Log your location (check-in)  | [location]   | [location_github]
-| Faucet                        | [w3e_faucet] | [w3e_faucet_github]
-| Mini casino: bet and win      | [casino]     | [casino1_github]<br>[casino2_github]
+| Demo application              | Link            | Github
+| ---------                     | -------         | -----
+| Get Set Emit                  | [getsetemit_ln] | [getsetemit]
+| Transfer                      |                 | [transfer_github]
+| Arrays                        |                 | [arrays]
+| Mapping                       |                 | [mapping]
+| Types                         |                 | [types]
+| Visibility                    |                 | [visibility]
+| Remix Error                   |                 | [remix_error]
+| Remix Modifier                |                 | [remix_modifier]
+| Remix Memory                  |                 | [remix_memory]
+| Memory Storage                |                 | [memory_storage]
+| Remix Functions               |                 | [remix_functions]
+| Remix Factory                 |                 | [remix_factory]
+| ToDoList                      |                 | [todolist_github]
+| Ballot                        |                 | [ballot_github]
+| Travel agency                 |                 | [ta_github]
+| Auction                       |                 | [auction_github]
+| Oracle                        |                 | [oracle_github]
+| VeryBasicToken                |                 | [verybasictoken]
+| VeryBasicNFT                  |                 | [verybasicnft]
+| Log your location (check-in)  | [location]      | [location_github]
+| Faucet                        | [w3e_faucet]    | [w3e_faucet_github]
+| Mini casino: bet and win      | [casino]        | [casino1_github]<br>[casino2_github]
 
 [location]:          http://web3examples.com/location
 [location_github]:   https://github.com/web3examples/location
@@ -63,6 +63,8 @@ You can copy-paste the examples in: [play editor]
 [remix_error]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Error.sol
 [mapping]:          https://github.com/web3examples/ethereum/blob/master/solidity_examples/Mapping.sol
 [memory_storage]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Memory_Storage.sol
+
+[getsetemit_ln]:    https://web3examples.com/ethereum/web3js_browser/getset.html
 [getsetemit]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSetEmit.sol
 
 

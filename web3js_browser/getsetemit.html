@@ -111,7 +111,7 @@
             }
             {   // Get        
                 result = await GetSetEmitContract.methods.Get().call({from: acts[0]}).catch(console.log);
-                console.log(`Get result: ${result}`);                        
+                log(`Get result: ${result}`);                        
                 log(`Wait about 20 seconds for the transaction to process`);            
             }
             {   // Set

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="http://web3examples.com/lib/web3-browserify.js"></script>  
+        <script src="https://web3examples.com/lib/web3-browserify.js"></script>  
     </head>
     <body>
         <h1>GetSet (select Goerli)</h1>
@@ -96,7 +96,7 @@
                     call: 'eth_requestAccounts',
                     params: 0
                 }]
-            });
+            }).catch(log);
             log(`Version of web3.js: ${web3.version}`);            
             var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
             log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);

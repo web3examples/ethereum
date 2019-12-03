@@ -16,6 +16,7 @@ These are tools to use the RPC interface of ethereum nodes.
 | eth_call           | ropsten           | [call_rop_win]
 | general info       | mainnet infura    | [gen_inf_win]
 | blockchain data    | mainnet infura    | [bcdata_inf_win]
+| GetSetEmit         | ropsten infura    | [getsetemit_win]
 | eth_blockNumber    | mainnet infura    |                  |                   | [blocknr]
 | eth_subscribe      | mainnet infura    |                  |                   | [wsblocks]
 
@@ -34,3 +35,4 @@ These are tools to use the RPC interface of ethereum nodes.
 [trans_local_win]:  https://github.com/web3examples/ethereum/blob/master/rpc/eth_sendTransaction_ganache.cmd
 [act_local_win]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_accounts_ganache.cmd
 [call_rop_win]:     https://github.com/web3examples/ethereum/blob/master/rpc/eth_call_ropsten.cmd
+[getsetemit_win]:   https://github.com/web3examples/ethereum/blob/master/rpc/getsetemit.cmd

@@ -1,6 +1,6 @@
 // solidity: https://github.com/web3examples/ethereum/blob/master/solidity_examples/getset.sol
 const Web3 = require('web3');
-const web3 = new Web3('http://localhost:8545' );
+const web3 = new Web3('https://goerli.infura.io' );
 const TestPayABI= [
     {
         "anonymous": false,
@@ -81,13 +81,13 @@ const TestPayABI= [
     ];
     
 async function f() {      
-    const TestPayaddress="0x4a07a27eF50c2bA0df2e8635A3Ef43E16a391343"; // replace with real address
+    const TestPayaddress="0x493575AedD646B2baDB38863803081EAE3edef48"; // goerli address
     var acts=await web3.eth.getAccounts();
     const ContractTestPay   = new web3.eth.Contract(TestPayABI, TestPayaddress );
     var result = await ContractTestPay.methods.Set(6).send({from: acts[0]}).catch(console.log);
     var decoded=result.events.Log.returnValues;
-    console.log(`message=${decoded[0]} address=${decoded[1]} value=${decoded[2]}`);
+    log(`Event emitted: message=${decoded.message} address=${decoded.caller} value=${decoded.value}`);
     var result = await ContractTestPay.methods.Set(6).call({from: acts[0]}).catch(console.log);
-    console.log(result);
+    log(`Function result (calculated via read only call): ${result}`);
 }
 f();

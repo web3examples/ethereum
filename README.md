@@ -168,7 +168,7 @@ See: [Demo Ethereum software](demo)
 | [howwork]         |                  |                      | [stanford_bc]
 | [ethdocs] (error) |                  |                      | [tu_munich]
 | [Blockchainlabsnz]|                  |                      | [portland_state]
-| [eth.wiki]
+| [eth.wiki]        |           
 | [metalist]
 | [concourseopen]
 | [awesomeopensource]
@@ -955,7 +955,7 @@ See: [Demo Ethereum software](demo)
 | [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]                             | [cheatsheet3] 
 | [learn_solidity]           | [secondstate]           | [cursosolidity]                           | [kcl_class]                                 | [cheatsheet4] 
 | [blockgeeks_sol1]          | [contractfinder]        | [stupeters]                               | [sheets_alex]
-| [blockgeeks_sol2]          | [ethpm_registry]
+| [blockgeeks_sol2]          | [ethpm_registry]        |                                           | [certik_sol]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
 | [soliditykoans]            | [verified_contracts]
 | [top10_tut]                | [github_sol]
@@ -963,6 +963,8 @@ See: [Demo Ethereum software](demo)
 | [awesome-sol]              | [top5]
 | [tutorialspoint_sol]       | [tenderly_ver]
 | [manojpramesh]
+
+[certik_sol]:           https://solidity-tour.certik.org/
 
 [cryptozombies]:       https://cryptozombies.io/en/lesson/1
 [solidity_indepth]:    https://solidity.readthedocs.io/en/develop/solidity-in-depth.html
@@ -1034,7 +1036,7 @@ See: [Demo Ethereum software](demo)
 | Function Modifiers                        | [tosh_modifiers]                          | [yt_sol_3modifiers] | [sbe_functmod]
 | Events                                    | [tosh_events]                             | [yt_sol_5events]    |
 | Error handling                            | [sol_error]<br>[tosh_except]              |                     |
-| Idiosyncrasies                            | [mig_idiosyncrasies]                      |                     |
+
 
 
 [sbe_gas]
@@ -1065,9 +1067,6 @@ See: [Demo Ethereum software](demo)
 
 
 
-
-
-[mig_idiosyncrasies]: https://github.com/miguelmota/solidity-idiosyncrasies
 
 [sol_vis]:           https://solidity.readthedocs.io/en/develop/contracts.html#visibility-and-getters
 [sol_create]:        https://solidity.readthedocs.io/en/develop/contracts.html#creating-contracts
@@ -1139,6 +1138,39 @@ See: [Demo Ethereum software](demo)
 [sbe_math]:          https://solidity-by-example.org/safe-math
 
 
+## Advanced solidity
+
+| Overview
+| ----------------
+|[mig_idiosyncrasies]
+
+[mig_idiosyncrasies]: https://github.com/miguelmota/solidity-idiosyncrasies
+
+### Upgradeable contracts
+
+| Upgrade
+| ------
+| [upgradablecontracts]
+
+[upgradablecontracts]:  https://docs.upgradablecontracts.com/
+
+### Create2
+
+| Create2
+|--------
+| [miguelmota_create2]
+| [det_dep_proxy]
+| [ricmoo_create2]
+
+
+[miguelmota_create2]:   https://github.com/miguelmota/solidity-create2-example
+[det_dep_proxy]:        https://github.com/Zoltu/deterministic-deployment-proxy
+[ricmoo_create2]:       https://blog.ricmoo.com/wisps-the-magical-world-of-create2-5c2177027604
+
+
+
+
+
 ## Alternative languages for solidity
 
 | Alternatives
@@ -1202,7 +1234,7 @@ See: [Demo Ethereum software](demo)
 | [toolkit]          | [superblocks]    |                  | [solgraph] (uses: [graphviz]) | [evmlab]
 | [tools-dutch]      | [ethfiddle]      |                  | [piet]                        | [graphdebugger]
 | [eth_dev]          | [eth_build]      |                  | [sif]                         | [tenderly]<br>[tenderly_gh]
-| [dappuniversity]   |                  | 
+| [dappuniversity]   | [certik_ide]     | 
 | [dev_tut]          |                  | 
 | [blockgeeks-devs]  |                  | 
 | [buidl] 
@@ -1211,6 +1243,8 @@ See: [Demo Ethereum software](demo)
 | [ethereumbuild] 
 | [parity_wiki]
 
+
+[certik_ide]:      https://solidity-tour.certik.org/ide
 [consensys-dev]:   https://ethereum.consensys.net/
 [tool-list]:       https://github.com/ConsenSys/ethereum-developer-tools-list
 [tools-dutch]:     https://www.uitlegblockchain.nl/tools-voor-de-ontwikkeling-van-ethereum-dapps/
@@ -1726,9 +1760,9 @@ Also see [Explorers](#explorers)
 
 ## Security tools
 
-| Verify smart contracts    | Security tools  | Decompile / disassemble | Investigate        | Investigate dapps
-| ----------------          |   ---           | -------------           | -----              | --------------
-| [mythx]                   | [sectools]      | [reversing]             | [chainalysis]      | [aragraph]
+| Verify smart contracts    | Security tools  | Decompile / disassemble | Investigate        | Investigate dapps | Create2
+| ----------------          |   ---           | -------------           | -----              | --------------    | --------
+| [mythx]                   | [sectools]      | [reversing]             | [chainalysis]      | [aragraph]        | [certikcreate2]
 | [securify]                | [teEther]       | [ethvm_decompile]       | [ey_analyzer]      
 | [quantstamp_prot]         | [contract_lib]  | [evmdis]                | [elliptic]         
 | [Oyente]                  |                 | [pyevmasm]              | [cs-intell]        
@@ -1790,7 +1824,7 @@ Also see [Explorers](#explorers)
 
 [aragraph]:             https://github.com/ConsenSys/aragraph
 
-
+[certikcreate2]:  https://create2-audit.certik.org/
 
 ## Bounties and audits
 

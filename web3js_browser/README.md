@@ -16,6 +16,7 @@ Web3.js examples in browser
 | ..............
 | html framework 2              | [htmlframework2]      | [htmlframework2_gh]
 | send Transaction              | [sendtransaction]     | [sendtransaction_gh]
+| Get Set Emit                  | [getsetemit]          | [getsetemit_gh]
 | accounts Changed              | [accountsChanged]     | [accountsChanged_gh]
 | chain Changed                 | [chainChanged]        | [chainChanged_gh]
 | ..............   
@@ -53,6 +54,7 @@ Web3.js examples in browser
 [casino_snippet]:    https://web3examples.com/ethereum/web3js_browser/casino_snippet.html
 [location_snippet]:  https://web3examples.com/ethereum/web3js_browser/location_snippet.html
 [faucet_snippet]:    https://web3examples.com/ethereum/web3js_browser/faucet_snippet.html
+[getsetemit]:        https://web3examples.com/ethereum/web3js_browser/getsetemit.html
 
 
 [htmlframework1_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework1.html
@@ -71,6 +73,7 @@ Web3.js examples in browser
 [casino_snippet_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/casino_snippet.html
 [location_snippet_gh]:   https://github.com/web3examples/ethereum/blob/master/web3js_browser/location_snippet.html
 [faucet_snippet_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/faucet_snippet.html
+[getsetemit_gh]:         https://github.com/web3examples/ethereum/blob/master/web3js_browser/getsetemit.html
 
 # Browserify
 

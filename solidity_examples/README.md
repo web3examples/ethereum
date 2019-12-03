@@ -9,7 +9,7 @@ You can copy-paste the examples in: [play editor]
 
 | Demo application              | Link         | Github
 | ---------                     | -------      | -----
-| Get Set                       |              | [getset]
+| Get Set Emit                  |              | [getsetemit]
 | Transfer                      |              | [transfer_github]
 | Arrays                        |              | [arrays]
 | Mapping                       |              | [mapping]
@@ -63,6 +63,6 @@ You can copy-paste the examples in: [play editor]
 [remix_error]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Error.sol
 [mapping]:          https://github.com/web3examples/ethereum/blob/master/solidity_examples/Mapping.sol
 [memory_storage]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Memory_Storage.sol
-[getset]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSet.sol
+[getsetemit]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSetEmit.sol
 
 

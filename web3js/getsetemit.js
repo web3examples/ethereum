@@ -1,6 +1,6 @@
 // solidity: https://github.com/web3examples/ethereum/blob/master/solidity_examples/getset.sol
 const Web3 = require('web3');
-const web3 = new Web3('https://goerli.infura.io' );
+const web3 = new Web3('https://ropsten.infura.io' );
 const TestPayABI= [
     {
         "anonymous": false,
@@ -81,7 +81,7 @@ const TestPayABI= [
     ];
     
 async function f() {      
-    const TestPayaddress="0x493575AedD646B2baDB38863803081EAE3edef48"; // goerli address
+    const TestPayaddress="0x2bD819440B8621214A17e7BCFD70107bBE0A28fC"; // Ropsten address
     var acts=await web3.eth.getAccounts();
     const ContractTestPay   = new web3.eth.Contract(TestPayABI, TestPayaddress );
     var result = await ContractTestPay.methods.Set(6).send({from: acts[0]}).catch(console.log);

@@ -1,7 +1,7 @@
-// Deployed on Goerli 0x493575AedD646B2baDB38863803081EAE3edef48
+// Deployed on Ropsten 0x2bD819440B8621214A17e7BCFD70107bBE0A28fC
 pragma solidity ^0.5.12;
 
-contract SetGet {
+contract SetGetEmit {
     uint8 public storedData;
     event Log(string message,address caller, uint8 value);
   

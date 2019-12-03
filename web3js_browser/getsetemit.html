@@ -110,15 +110,21 @@
                 var GetSetEmitContract=new web3.eth.Contract(GetSetEmitABI, GetSetEmitAddress);
             }
             {   // Get        
-                result = await GetSetEmitContract.methods.Get().call({from: acts[0]}).catch(console.log);
+                result = await GetSetEmitContract.methods.Get()
+                    .call({from: acts[0]}).catch(console.log);
                 log(`Get result: ${result}`);                        
                 log(`Wait about 20 seconds for the transaction to process`);            
             }
             {   // Set
-                result = await GetSetEmitContract.methods.Set(6).send({from: acts[0]}).catch(console.log);
+                result = await GetSetEmitContract.methods.Set(6)
+                    .send({from: acts[0]}).catch(console.log);
                 var decoded=result.events.Log.returnValues;
-                log(`Event emitted: message=${decoded.message} address=${decoded.caller} value=${decoded.value}`);
-                result = await GetSetEmitContract.methods.Set(6).call({from: acts[0]}).catch(console.log);
+                log(`Event emitted:
+                     message=${decoded.message} 
+                     address=${decoded.caller} 
+                     value=${decoded.value}`);
+                result = await GetSetEmitContract.methods.Set(6)
+                    .call({from: acts[0]}).catch(console.log);
                 log(`Function result (calculated via read only call): ${result}`);
             }
         }

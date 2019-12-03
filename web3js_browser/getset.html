@@ -102,12 +102,13 @@
             log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
             var acts=await web3.eth.getAccounts().catch(log);
             log(`Here are the accounts: ${JSON.stringify(acts)}`);
-
+            log(`Wait for the transaction to process`);
             const TestPayaddress="0x493575AedD646B2baDB38863803081EAE3edef48"; // goerli address
             var acts=await web3.eth.getAccounts();
             const ContractTestPay   = new web3.eth.Contract(TestPayABI, TestPayaddress );
             var result = await ContractTestPay.methods.Set(6).send({from: acts[0]}).catch(console.log);
             var decoded=result.events.Log.returnValues;
+            console.log(decoded);
             log(`Event emitted: message=${decoded[0]} address=${decoded[1]} value=${decoded[2]}`);
             var result = await ContractTestPay.methods.Set(6).call({from: acts[0]}).catch(console.log);
             log(`Function result (calculated via read only call): ${result}`);

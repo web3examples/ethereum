@@ -205,7 +205,8 @@
     }
   },
   "schemaVersion": "3.0.19",
-  "updatedAt": "2019-12-06T14:59:46.606Z",
+  "updatedAt": "2019-12-06T15:36:58.318Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },

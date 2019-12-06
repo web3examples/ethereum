@@ -52,13 +52,14 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Opera desktop browser          | Offline        | [opera]
 | Opera mobile                   | Mobile         | [opera]
 | MetaMask mobile (beta)         | Mobile         | [metamask]
-
+| .......
+| truffle                        | npm install -g | [pkg_truffle]                    | [truffle]
+| @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
+| ......
 | Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
 | Git desktop                    | Offline        | [gitdesktop]
 | Jq                             | Offline        | [jq]
 | ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
-| truffle                        | npm install -g | [pkg_truffle]                    | [truffle]
-| @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
 [metamaskmobile]: https://github.com/MetaMask/metamask-mobile

@@ -21,6 +21,7 @@ You can copy-paste the examples in: [play editor]
 | Memory Storage                |                 | [memory_storage]
 | Remix Functions               |                 | [remix_functions]
 | Remix Factory                 |                 | [remix_factory]
+| Workd Hours                   |                 | [workedhours]
 | ToDoList                      |                 | [todolist_github]
 | Ballot                        |                 | [ballot_github]
 | Travel agency                 |                 | [ta_github]
@@ -67,4 +68,4 @@ You can copy-paste the examples in: [play editor]
 [getsetemit_ln]:    https://web3examples.com/ethereum/web3js_browser/getset.html
 [getsetemit]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSetEmit.sol
 
-
+[workedhours]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol

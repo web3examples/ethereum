@@ -6,6 +6,7 @@ This document contains info about:
   - [RPC Examples](#rpc-examples)
   - [Webjs3 (javascript) examples](#webjs3-javascript-examples)
   - [Webjs3 (browser) examples](#webjs3-browser-examples)
+  - [Truffle examples](#truffle-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
 - [--------------------------------------------](#)
@@ -38,6 +39,9 @@ This document contains info about:
 - [Solidity](#solidity)
   - [Solidity Overview](#solidity-overview)
   - [Details](#details)
+  - [Advanced solidity](#advanced-solidity)
+    - [Upgradeable contracts](#upgradeable-contracts)
+    - [Create2](#create2)
   - [Alternative languages for solidity](#alternative-languages-for-solidity)
 - [Design](#design)
   - [Simulation](#simulation)
@@ -141,6 +145,13 @@ See: [Web3js](web3js)
 See: [Web3js_browser](web3js_browser) 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Truffle examples
+See: [Truffle Examples](truffle_examples) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 
 ## Tools and installation
 

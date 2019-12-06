@@ -9,6 +9,7 @@ You can copy-paste the examples in: [play editor]
 
 | Demo application              | Link            | Github
 | ---------                     | -------         | -----
+| Hello World                   |                 | [helloworld]
 | Get Set Emit                  | [getsetemit_ln] | [getsetemit]
 | Transfer                      |                 | [transfer_github]
 | Arrays                        |                 | [arrays]
@@ -69,3 +70,4 @@ You can copy-paste the examples in: [play editor]
 [getsetemit]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSetEmit.sol
 
 [workedhours]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol
+[helloworld]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/HelloWorld.sol

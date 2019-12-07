@@ -1,7 +1,11 @@
 const HDWalletProvider = require('@truffle/hdwallet-provider');
+
 const fs = require('fs');
-const mnemonic = fs.readFileSync(".secret").toString().trim();  // contains mnemonic
-const infuraKey = fs.readFileSync(".infura").toString().trim(); // infura key
+const mnemonic = fs.readFileSync(".secret")
+    .toString().trim(); // contains mnemonic
+const infuraKey = fs.readFileSync(".infura")
+    .toString().trim(); // infura key
+    
 const adr=new HDWalletProvider(mnemonic,"https://localhost:8545")
 console.log(`Deployment account: ${adr.getAddress()}`); 
 

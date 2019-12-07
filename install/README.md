@@ -55,6 +55,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | .......
 | truffle                        | npm install -g | [pkg_truffle]                    | [truffle]
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
+| bip39                          | npm install -g | [pkg_bip39]
 | ......
 | Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
 | Git desktop                    | Offline        | [gitdesktop]
@@ -62,8 +63,10 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
-[metamaskmobile]: https://github.com/MetaMask/metamask-mobile
-[opera]:    https://www.opera.com
+
+[pkg_bip39]:                https://www.npmjs.com/package/bip39
+[metamaskmobile]:           https://github.com/MetaMask/metamask-mobile
+[opera]:                    https://www.opera.com
 
 [pkg_budo]:                 https://www.npmjs.com/package/budo
 [simplehttpserver]:         https://docs.python.org/2/library/simplehttpserver.html

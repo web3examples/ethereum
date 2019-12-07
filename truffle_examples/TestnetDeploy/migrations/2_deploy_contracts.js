@@ -1,5 +1,5 @@
-var HelloWorld = artifacts.require("HelloWorld");
+var Loop = artifacts.require("Loop");
 module.exports = function(deployer) {
-    deployer.deploy(HelloWorld);
+    deployer.deploy(Loop);
     // Additional contracts can be deployed here
 };

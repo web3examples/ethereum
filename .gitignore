@@ -6,5 +6,5 @@ package-lock.json
 old/
 *.abi
 *.bin
-demo/a.txt
+a.txt
 web3js/package.json

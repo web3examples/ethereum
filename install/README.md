@@ -58,12 +58,15 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | bip39                          | npm install -g | [pkg_bip39]
 | ......
 | Jq                             | Offline        | [jq]
+| Jsonpath test                  | Web            | [jsonpath]
 | .......
 | Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
 | Git desktop                    | Offline        | [gitdesktop]
 | ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 
+
+[jsonpath]:                 https://jsonpath.curiousconcept.com/
 
 [pkg_bip39]:                https://www.npmjs.com/package/bip39
 [metamaskmobile]:           https://github.com/MetaMask/metamask-mobile

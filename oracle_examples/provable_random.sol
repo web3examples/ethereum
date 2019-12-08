@@ -2,6 +2,7 @@ pragma solidity >= 0.5.0 < 0.6.0;
 import "github.com/provable-things/ethereum-api/provableAPI.sol";
 contract RandomExample is usingProvable {
     bytes public result;
+    bytes32 public queryId;
     constructor() public { 
         provable_setProof(proofType_Ledger); 
     }
@@ -13,7 +14,7 @@ contract RandomExample is usingProvable {
             result = bytes(_result);
     }
     function GetRandom() public {
-        provable_newRandomDSQuery(
+        queryId=provable_newRandomDSQuery(
             0,     // QUERY_EXECUTION_DELAY
             2,     // NUM_RANDOM_BYTES_REQUESTED
             200000 // GAS_FOR_CALLBACK

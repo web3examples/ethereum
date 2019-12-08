@@ -57,9 +57,10 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | bip39                          | npm install -g | [pkg_bip39]
 | ......
+| Jq                             | Offline        | [jq]
+| .......
 | Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
 | Git desktop                    | Offline        | [gitdesktop]
-| Jq                             | Offline        | [jq]
 | ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 

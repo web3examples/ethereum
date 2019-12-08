@@ -1,5 +1,5 @@
-var Loop = artifacts.require("Loop");
+var Debug = artifacts.require("Debug");
 module.exports = function(deployer) {
-    deployer.deploy(Loop);
+    deployer.deploy(Debug);
     // Additional contracts can be deployed here
 };

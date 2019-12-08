@@ -7,6 +7,7 @@ This document contains info about:
   - [Webjs3 (javascript) examples](#webjs3-javascript-examples)
   - [Webjs3 (browser) examples](#webjs3-browser-examples)
   - [Truffle examples](#truffle-examples)
+  - [Oracle examples](#oracle-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
 - [--------------------------------------------](#)
@@ -53,7 +54,7 @@ This document contains info about:
 - [Testing](#testing)
   - [Test process](#test-process)
   - [Blockchain infra test](#blockchain-infra-test)
-  - [Formal verfy](#formal-verfy)
+  - [Formal verify](#formal-verify)
   - [Fuzzing](#fuzzing)
   - [Mutation testing](#mutation-testing)
   - [Load testing](#load-testing)
@@ -148,6 +149,11 @@ See: [Web3js_browser](web3js_browser)
 
 ## Truffle examples
 See: [Truffle Examples](truffle_examples) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Oracle examples
+See: [Oracle Examples](oracle_examples) 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

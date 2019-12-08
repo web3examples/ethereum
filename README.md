@@ -1424,7 +1424,7 @@ See: [Demo Ethereum software](demo)
 [eth_test_docs]:    https://ethereum-tests.readthedocs.io/en/latest/
 [eth_rpc_test]:     https://github.com/ethereum/rpc-tests
 
-## Formal verfy
+## Formal verify
 
 | Overview          | Formal verify tools
 | ---------------   | --------------
@@ -1473,10 +1473,11 @@ See: [Demo Ethereum software](demo)
 | Load test
 | ------
 | [trebuchet]
+| [chainhammer]
 
 
-[trebuchet]: https://github.com/Trebuchet-Framework/Trebuchet
-
+[trebuchet]:    https://github.com/Trebuchet-Framework/Trebuchet
+[chainhammer]:  https://github.com/drandreaskrueger/chainhammer
 
 ## Test and QA companies
 

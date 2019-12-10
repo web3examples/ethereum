@@ -11,7 +11,6 @@ This document contains info about:
   - [Pattern examples](#pattern-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
-- [<hr>](#hr)
 - [Ethereum Concepts](#ethereum-concepts)
 - [Explorers](#explorers)
 - [Node software](#node-software)
@@ -163,9 +162,6 @@ See: [Pattern Examples](pattern_examples)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-
-
 ## Tools and installation
 
 See: [Tools and installation](install) 
@@ -176,8 +172,6 @@ See: [Tools and installation](install)
 See: [Demo Ethereum software](demo)  
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
-
-# --------------------------------------------
 
 # Ethereum Concepts
 

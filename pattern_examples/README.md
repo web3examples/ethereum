@@ -12,7 +12,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Selfdestruct         | [selfdestruct]
 | Create               | [create]
 | Modifiers            | [modifiers]
-| Commit Reveal.sol    | [commitreveal]
+| Commit Reveal        | [commitreveal]
 
 [proxy_basic]:          https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_basic.sol
 [proxy_return]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_return.sol

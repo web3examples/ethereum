@@ -14,6 +14,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Modifiers            | [modifiers]
 | Commit Reveal        | [commitreveal]
 | Withdraw             | [withdraw]
+| Verify Source        | [verifysource]
 
 [proxy_basic]:          https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_basic.sol
 [proxy_return]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_return.sol
@@ -26,3 +27,4 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [modifiers]:    https://github.com/web3examples/ethereum/tree/master/pattern_examples/modifiers.sol
 [commitreveal]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/commitreveal.sol
 [withdraw]:     https://github.com/web3examples/ethereum/tree/master/pattern_examples/withdraw
+[verifysource]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/verifysource.sol

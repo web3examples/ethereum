@@ -1995,13 +1995,13 @@ See also [Security best practices](#security-best-practices)
 | -------------------                            | --------------------------------------------------------
 | Verifier / oracle                              | [pattern1_oracle]<br>[maxwoe_action]<br>[fravoll_oracle]
 | Reverse Verifier                               | [pattern2_reverseoracle]
-| Ricardian contract                             | [pattern3_legalpair]<br>[wiki_ricardian]
+| Ricardian contract                             | [pattern3_legalpair]<br>[wiki_ricardian]<br>[ricardian_bind]
 | Encrypt                                        | [pattern4_encrypt]
 | Tokenisation                                   | [pattern5_tokenise]
 | Off-chain data                                 | [pattern6_offchain]
 | State channel                                  | [pattern7_state]
 | Multisig                                       | [pattern8_multisig]
-| Offchain secret                                | [pattern9_offchain]
+| Offchain secret                                | [pattern9_offchain]<br>[hashlock]
 | X-Confirmation                                 | [pattern10_xconf]
 | Contract Registry                              | [pattern11_registry]<br>[maxwoe_maintenance]<br>[i6mi6] Name Registry
 | Relay / upgradeable / proxy                    | [maxwoe_maintenance]<br>[fravoll_proxy]<br>[zep_proxy]<br>[indorse]
@@ -2049,6 +2049,8 @@ See also [Security best practices](#security-best-practices)
 | Unstructured Storage                           | [zep_unstruct]
 | Frontrunning prevention                        | [coinmonks_order]<br>[frontrun]
 
+[hashlock]: https://en.bitcoin.it/wiki/Hashlock
+[ricardian_bind]:   https://medium.com/ltonetwork/ricardian-contracts-legally-binding-agreements-on-the-blockchain-4c103f120707
 
 [frontrun]:  https://forum.openzeppelin.com/t/protecting-against-front-running-and-transaction-reordering/1314
 [coinmonks_order]:  https://medium.com/coinmonks/solidity-transaction-ordering-attacks-1193a014884e

@@ -1161,8 +1161,11 @@ See: [Demo Ethereum software](demo)
 | Overview
 | ----------------
 |[mig_idiosyncrasies]
+|[subtleties]
 
 [mig_idiosyncrasies]: https://github.com/miguelmota/solidity-idiosyncrasies
+[subtleties]: https://github.com/ethereum/wiki/wiki/Subtleties
+
 
 ### Upgradeable contracts
 
@@ -1729,7 +1732,9 @@ Also see [Explorers](#explorers)
 | [pitfalls]
 | [crypto_hacks]
 | [mcafee_risks]
+| [enc_attack]
 
+[enc_attack]: https://medium.com/better-programming/the-encyclopedia-of-smart-contract-attacks-vulnerabilities-dfc1129fdaac
 [swc]:                  https://github.com/SmartContractSecurity/SWC-registry
 [known_attacks1]:       https://blog.sigmaprime.io/solidity-security.html
 [known_attacks2]:       https://consensys.github.io/smart-contract-best-practices/known_attacks/

@@ -54,13 +54,13 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | MetaMask mobile (beta)         | Mobile         | [metamask]
 | .......
 | truffle                        | npm install -g | [pkg_truffle]                    | [truffle]
+| Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid] 
 | @truffle/<br>hdwallet-provider | npm install -g | [pkg_hdw]
 | bip39                          | npm install -g | [pkg_bip39]
 | ......
 | Jq                             | Offline        | [jq]
 | Jsonpath test                  | Web            | [jsonpath]
 | .......
-| Git cmd line                   | Offline        | [gitcmdline]                     | [git_vid]    
 | Git desktop                    | Offline        | [gitdesktop]
 | ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]

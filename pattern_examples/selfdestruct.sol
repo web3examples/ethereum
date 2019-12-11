@@ -2,14 +2,14 @@ pragma solidity ^0.5.12;
 
 contract Mortal {
 
-  string public name="Moral";
+  string public name="Mortal";
 
-  function destroy() public onlyOwner {
+  function destroy() public  { // note add security
     selfdestruct(msg.sender);
   }
 
-  function destroyAndSend(address recipient) public onlyOwner {
+  function destroyAndSend(address payable recipient) public  {
+      // note add security
     selfdestruct(recipient);
   }
 }
-

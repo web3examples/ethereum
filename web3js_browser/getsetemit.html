@@ -90,43 +90,42 @@
             }
         ];
         async function f() { 
-            {   // Prepare   
-                web3 = new Web3(Web3.givenProvider); // provider from metamask         
-                web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
-                    methods: [{
-                        name: 'eth_requestAccounts',
-                        call: 'eth_requestAccounts',
-                        params: 0
-                    }]
-                });
-                log(`Version of web3.js: ${web3.version}`);            
-                var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
-                log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
-                var acts=await web3.eth.getAccounts().catch(log);
-                log(`Here are the accounts: ${JSON.stringify(acts)}`);
-            }
-            {   // Connect contract
-                var GetSetEmitAddress="0x2bD819440B8621214A17e7BCFD70107bBE0A28fC"; // Ropsten address
-                var GetSetEmitContract=new web3.eth.Contract(GetSetEmitABI, GetSetEmitAddress);
-            }
-            {   // Get        
-                result = await GetSetEmitContract.methods.Get()
-                    .call({from: acts[0]}).catch(console.log);
-                log(`Get result: ${result}`);                        
-                log(`Wait about 20 seconds for the transaction to process`);            
-            }
-            {   // Set
-                result = await GetSetEmitContract.methods.Set(6)
-                    .send({from: acts[0]}).catch(console.log);
-                var decoded=result.events.Log.returnValues;
-                log(`Event emitted:
-                     message=${decoded.message} 
-                     address=${decoded.caller} 
-                     value=${decoded.value}`);
-                result = await GetSetEmitContract.methods.Set(6)
-                    .call({from: acts[0]}).catch(console.log);
-                log(`Function result (calculated via read only call): ${result}`);
-            }
+            // Prepare   
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
+                methods: [{
+                    name: 'eth_requestAccounts',
+                    call: 'eth_requestAccounts',
+                    params: 0
+                }]
+            });
+            log(`Version of web3.js: ${web3.version}`);            
+            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
+            var acts=await web3.eth.getAccounts().catch(log);
+            log(`Here are the accounts: ${JSON.stringify(acts)}`);
+         
+            // Connect contract
+            var GetSetEmitAddress="0x2bD819440B8621214A17e7BCFD70107bBE0A28fC"; // Ropsten address
+            var GetSetEmitContract=new web3.eth.Contract(GetSetEmitABI, GetSetEmitAddress);
+         
+            // Get        
+            result = await GetSetEmitContract.methods.Get()
+                .call({from: acts[0]}).catch(console.log);
+            log(`Get result: ${result}`);                        
+         
+            // Set
+            log(`Wait about 20 seconds for the transaction to process`);            
+            result = await GetSetEmitContract.methods.Set(6)
+                .send({from: acts[0]}).catch(console.log);
+            var decoded=result.events.Log.returnValues;
+            log(`Event emitted:
+                 message=${decoded.message} 
+                 address=${decoded.caller} 
+                 value=${decoded.value}`);
+            result = await GetSetEmitContract.methods.Set(6)
+                .call({from: acts[0]}).catch(console.log);
+            log(`Function result (calculated via read only call): ${result}`);
         }
         f(); 
         </script>        

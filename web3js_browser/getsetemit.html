@@ -118,14 +118,17 @@
             log(`Wait about 20 seconds for the transaction to process`);            
             result = await GetSetEmitContract.methods.Set(6)
                 .send({from: acts[0]}).catch(console.log);
+                
             var decoded=result.events.Log.returnValues;
             log(`Event emitted:
                  message=${decoded.message} 
                  address=${decoded.caller} 
                  value=${decoded.value}`);
-            result = await GetSetEmitContract.methods.Set(6)
-                .call({from: acts[0]}).catch(console.log);
-            log(`Function result (calculated via read only call): ${result}`);
+                 
+            // alternative way to get results     
+            // result = await GetSetEmitContract.methods.Set(6)
+            //    .call({from: acts[0]}).catch(console.log);
+            // log(`Function result (calculated via read only call): ${result}`);
         }
         f(); 
         </script>        

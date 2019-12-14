@@ -37,6 +37,11 @@
             const qsymbol   = await VeryBasicTokenContract.methods.symbol().call({from: acts[0]}).catch(console.log);
             const qdecimals = await VeryBasicTokenContract.methods.decimals().call({from: acts[0]}).catch(console.log);
 
+console.log(window.location);
+console.log(window.href);
+console.log(window);
+
+
             log(`Adding icon for ${qname} symbol ${qsymbol} decimals ${qdecimals}`);
             const params=
                 {type:'ERC20',
@@ -59,4 +64,5 @@
         </script>        
     </body>
 </html>
+
 

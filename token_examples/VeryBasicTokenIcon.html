@@ -1,3 +1,6 @@
+<!--  https://github.com/ethereum/EIPs/blob/master/EIPS/eip-747.md
+      https://github.com/MetaMask/metamask-extension/blob/develop/app/scripts/controllers/preferences.js#L184
+-->
 <!DOCTYPE html>
 <html>
     <head>
@@ -11,8 +14,7 @@
         function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
-        async function f() { 
-        
+        async function f() {         
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
             web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
                 methods: [{
@@ -23,43 +25,33 @@
             });
             log(`Version of web3.js: ${web3.version}`);            
             var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
-            //log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
             var acts=await web3.eth.getAccounts().catch(log);
-            //log(`Here are the accounts: ${JSON.stringify(acts)}`);
-                              
-            // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-747.md
-            //https://github.com/MetaMask/metamask-extension/blob/develop/app/scripts/controllers/preferences.js#L184
-
           
             var VeryBasicTokenAddress="0x31a289430c79a38Ae290B9789DE4992710d796Ec";  
             var VeryBasicTokenContract=new web3.eth.Contract(VeryBasisTokenABI, VeryBasicTokenAddress);            
             log(`Retrieving information from contract ${VeryBasicTokenAddress}`);
-            const qname     = await VeryBasicTokenContract.methods.name().call({from: acts[0]}).catch(console.log);
-            const qsymbol   = await VeryBasicTokenContract.methods.symbol().call({from: acts[0]}).catch(console.log);
-            const qdecimals = await VeryBasicTokenContract.methods.decimals().call({from: acts[0]}).catch(console.log);
-
-
-
+            const name     = await VeryBasicTokenContract.methods.name()
+                .call({from: acts[0]}).catch(console.log);
+            const symbol   = await VeryBasicTokenContract.methods.symbol()
+                .call({from: acts[0]}).catch(console.log);
+            const decimals = await VeryBasicTokenContract.methods.decimals()
+                .call({from: acts[0]}).catch(console.log);
             const url = new URL("VeryBasicTokenIcon.png",window.location.href);
-
-
-            log(`Adding icon for ${qname} symbol ${qsymbol} decimals ${qdecimals} image ${url.href}`);
-            const params=
-                {type:'ERC20',
-                "options":    {
+            log(`Adding icon for ${name} symbol ${symbol} decimals ${decimals}`);
+            log(`Image ${url.href}`);
+            const params={type:'ERC20',"options": {
                     "address":VeryBasicTokenAddress,
                     "decimals":qdecimals,
                     "symbol":qsymbol,
                     "decimals":qdecimals,
                     "image": url.href
-                  }
                 }
-                window.web3.currentProvider.sendAsync({
+            }
+            window.web3.currentProvider.sendAsync({
                 method: 'metamask_watchAsset',
                 params: params,
                 id: Math.round(Math.random() * 100000),
-              }, (err) => console.log(err) );
- 
+            }, (err) => console.log(err) );
         }
         f();
         </script>        

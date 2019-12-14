@@ -1,7 +1,7 @@
 // Adapted from https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20
 // https://raw.githubusercontent.com/web3examples/ethereum/master/token_examples/VeryBasicToken.sol
 
-pragma solidity ^0.5.0;
+pragma solidity ^0.5.12;
 
 contract Token_erc20 {
     string private _name;

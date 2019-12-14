@@ -138,6 +138,6 @@ const VeryBasisTokenABI=[
         "name": "Transfer",
         "type": "event"
       }
-    ];
+    ]
     
     

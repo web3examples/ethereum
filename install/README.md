@@ -16,6 +16,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Athereum config                | Web            | [athereum_config]
 | Athereum faucet                | Web            | [athereum_faucet]
 | Athereum explorer              | Web            | [athereum_explorer]
+| Git desktop                    | Offline        | [gitdesktop]
 | ...                                      
 | Remix                          | Web            | [remix]                         | [remix_prep]
 | Remix desktop                  | Offline        | [remix_desktop]
@@ -33,6 +34,7 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | hex decimal convertor          | Web            | [hexdec]
 | ......
 | Ganache                        | Offline        | [ganache]                        | [ganache_vid]
+| ganache-cli (less resources)   | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
 | Grid                           | Offline        | [grid]
 | Prometheus                     | Offline        | [prometheus]<br>[prometheus_yml] | [geth_prometheus_grafana]
 | 7Zip                           | Offline        | [7zip]
@@ -61,9 +63,8 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Jq                             | Offline        | [jq]
 | Jsonpath test                  | Web            | [jsonpath]
 | .......
-| Git desktop                    | Offline        | [gitdesktop]
-| ganache-cli                    | npm install -g | [pkg_ganache_cli]                | [ganache-cli]
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
+
 
 
 [jsonpath]:                 https://jsonpath.curiousconcept.com/

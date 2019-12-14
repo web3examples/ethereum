@@ -64,8 +64,9 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | Jsonpath test                  | Web            | [jsonpath]
 | .......
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
+| @openzeppelin/<br>test-helpers | npm install -g | [pkg_ozhelpers]
 
-
+[pkg_ozhelpers]:            https://www.npmjs.com/package/@openzeppelin/test-helpers
 
 [jsonpath]:                 https://jsonpath.curiousconcept.com/
 

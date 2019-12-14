@@ -1,5 +1,5 @@
 // Adapted from https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC20
-// https://raw.githubusercontent.com/web3examples/ethereum/master/solidity_examples/VeryBasicToken.sol
+// https://raw.githubusercontent.com/web3examples/ethereum/master/token_examples/VeryBasicToken.sol
 
 pragma solidity ^0.5.0;
 

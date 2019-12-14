@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://web3examples.com/lib/web3-browserify.js"></script>  
+        <script src="VeryBasicToken.abi"></script>  
+    </head>
+    <body>
+        <h1>VeryBasicToken Icon</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() { 
+        
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
+                methods: [{
+                    name: 'eth_requestAccounts',
+                    call: 'eth_requestAccounts',
+                    params: 0
+                }]
+            });
+            log(`Version of web3.js: ${web3.version}`);            
+            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
+            var acts=await web3.eth.getAccounts().catch(log);
+            log(`Here are the accounts: ${JSON.stringify(acts)}`);
+                              
+            // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-747.md
+            //https://github.com/MetaMask/metamask-extension/blob/develop/app/scripts/controllers/preferences.js#L184
+
+          
+            var VeryBasicTokenAddress="0x826a78659B4eca86BB1Fa181c85D21c1EfE72849";  
+            var VeryBasicTokenContract=new web3.eth.Contract(VeryBasisTokenABI, VeryBasicTokenAddress);            
+            const qname     = await VeryBasicTokenContract.methods.name().call({from: acts[0]}).catch(console.log);
+            const qsymbol   = await VeryBasicTokenContract.methods.symbol().call({from: acts[0]}).catch(console.log);
+            const qdecimals = await VeryBasicTokenContract.methods.decimals().call({from: acts[0]}).catch(console.log);
+
+            log(`Adding icon for ${qname} symbol ${qsymbol} decimals ${qdecimals}`);
+            const params=
+                {type:'ERC20',
+                "options":    {
+                    "address":VeryBasicTokenAddress,
+                    "decimals":qdecimals,
+                    "symbol":qsymbol,
+                    "decimals":qdecimals,
+                    "image": window.location.origin+"/VeryBasicTokenIcon.png"
+                  }
+                }
+                window.web3.currentProvider.sendAsync({
+                method: 'metamask_watchAsset',
+                params: params,
+                id: Math.round(Math.random() * 100000),
+              }, (err) => console.log(err) );
+ 
+        }
+        f();
+        </script>        
+    </body>
+</html>
+

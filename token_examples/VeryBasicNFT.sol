@@ -1,6 +1,6 @@
 // based on https://github.com/ConsenSys/artifaqt/blob/master/contract/contracts/eip721
 // Use for educational purposes only // without approval functions
-pragma solidity ^0.5.0;
+pragma solidity ^0.5.12;
 
 contract EIP721 {  
     event Transfer(address indexed _from, address indexed _to, uint256 indexed _tokenId);

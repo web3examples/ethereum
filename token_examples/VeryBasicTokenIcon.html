@@ -5,7 +5,7 @@
         <script src="VeryBasicToken.abi"></script>  
     </head>
     <body>
-        <h1>VeryBasicToken Icon</h1>
+        <h1>VeryBasicToken Icon (Ropsten)</h1>
         <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
         function log(logstr) {   
@@ -31,7 +31,7 @@
             //https://github.com/MetaMask/metamask-extension/blob/develop/app/scripts/controllers/preferences.js#L184
 
           
-            var VeryBasicTokenAddress="0x826a78659B4eca86BB1Fa181c85D21c1EfE72849";  
+            var VeryBasicTokenAddress="0x31a289430c79a38Ae290B9789DE4992710d796Ec";  
             var VeryBasicTokenContract=new web3.eth.Contract(VeryBasisTokenABI, VeryBasicTokenAddress);            
             const qname     = await VeryBasicTokenContract.methods.name().call({from: acts[0]}).catch(console.log);
             const qsymbol   = await VeryBasicTokenContract.methods.symbol().call({from: acts[0]}).catch(console.log);

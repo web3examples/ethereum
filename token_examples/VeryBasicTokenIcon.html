@@ -40,11 +40,11 @@
             log(`Adding icon for ${name} symbol ${symbol} decimals ${decimals}`);
             log(`Image ${url.href}`);
             const params={type:'ERC20',"options": {
-                    "address":VeryBasicTokenAddress,
-                    "decimals":qdecimals,
-                    "symbol":qsymbol,
-                    "decimals":qdecimals,
-                    "image": url.href
+                "address":  VeryBasicTokenAddress,
+                "decimals": decimals,
+                "symbol":   symbol,
+                "decimals": decimals,
+                "image":    url.href
                 }
             }
             window.web3.currentProvider.sendAsync({

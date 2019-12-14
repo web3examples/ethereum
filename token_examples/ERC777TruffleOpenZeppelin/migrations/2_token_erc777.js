@@ -17,7 +17,7 @@ module.exports = async function(deployer) {
     await deployer.deploy(Token_erc777);
     const token = await Token_erc777.deployed();
     console.log("Deploy erc777 recipient")
-    await   deployer.deploy(Simple777Recipient,token.address);
+    await deployer.deploy(Simple777Recipient,token.address);
   
 };
 

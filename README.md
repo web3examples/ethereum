@@ -9,6 +9,7 @@ This document contains info about:
   - [Truffle examples](#truffle-examples)
   - [Oracle examples](#oracle-examples)
   - [Pattern examples](#pattern-examples)
+  - [Token examples](#token-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
 - [Ethereum Concepts](#ethereum-concepts)

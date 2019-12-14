@@ -162,6 +162,12 @@ See: [Pattern Examples](pattern_examples)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## Token examples
+See: [Token Examples](token_examples) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 ## Tools and installation
 
 See: [Tools and installation](install) 

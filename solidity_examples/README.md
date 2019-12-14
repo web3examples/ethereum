@@ -28,8 +28,6 @@ You can copy-paste the examples in: [play editor]
 | Travel agency                 |                 | [ta_github]
 | Auction                       |                 | [auction_github]
 | Oracle                        |                 | [oracle_github]
-| VeryBasicToken                |                 | [verybasictoken]
-| VeryBasicNFT                  |                 | [verybasicnft]
 | Log your location (check-in)  | [location]      | [location_github]
 | Faucet                        | [w3e_faucet]    | [w3e_faucet_github]
 | Mini casino: bet and win      | [casino]        | [casino1_github]<br>[casino2_github]
@@ -52,9 +50,6 @@ You can copy-paste the examples in: [play editor]
 [auction_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/SimpleAuction.sol
 [oracle_github]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/ProvableTempOracle.sol
 
-
-[verybasictoken]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/VeryBasicToken.sol
-[verybasicnft]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/VeryBasicNFT.sol  
 [remix_factory]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Factory.sol 
 [remix_functions]:  https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Functions.sol
 [remix_memory]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Memory.sol

@@ -9,12 +9,13 @@ contract EIP721 {
     string public  symbol;
     address public  admin;
     uint256 public  counter = 10;
-    uint256[] internal allTokens; 
-    mapping(uint256 => uint256) internal allTokensIndex;  
-    mapping(address => uint256[]) internal ownedTokens;   
-    mapping(uint256 => address) internal ownerOfToken;    
-    mapping(uint256 => uint256) internal ownedTokensIndex; 
-    mapping(uint256 => string) internal tokenURIs; 
+    uint256[]                      internal allTokens; 
+    mapping(uint256 => uint256)    internal allTokensIndex;      
+    mapping(address => uint256[])  internal ownedTokens;  
+    mapping(uint256 => uint256)    internal ownedTokensIndex;     
+    mapping(uint256 => address)    internal ownerOfToken;
+    mapping(uint256 => string)     internal tokenURIs; 
+    
     address public receivedOperator;    // public to easily check
     address public receivedFrom;        // public to easily check
     uint256 public receivedTokenId;     // public to easily check

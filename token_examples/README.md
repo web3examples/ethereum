@@ -12,5 +12,7 @@ Several Token Examples. ([Up](..) [Home](..\..))
 [verybasictoken_gh]:            https://github.com/web3examples/ethereum/blob/master/token_examples/VeryBasicToken.sol
 [verybasicnft_gh]:              https://github.com/web3examples/ethereum/blob/master/token_examples/VeryBasicNFT.sol  
 [verybasictokenicon_gh]:        https://github.com/web3examples/ethereum/blob/master/token_examples/VeryBasicTokenIcon.html
+[erc20truffleopenzeppelin_gh]:  https://github.com/web3examples/ethereum/tree/master/token_examples/ERC20TruffleOpenZeppelin
+
 [verybasictokenicon]:           https://web3examples.com/ethereum/token_examples/VeryBasicTokenIcon.html
-[erc20truffleopenzeppelin_gh]:  https://web3examples.com/ethereum/token_examples/ERC20TruffleOpenZeppelin
+

@@ -4,7 +4,6 @@ package-lock.json
 .secret
 .infura
 old/
-*.abi
 *.bin
 a.txt
 web3js/package.json

@@ -38,11 +38,15 @@
             const qdecimals = await VeryBasicTokenContract.methods.decimals().call({from: acts[0]}).catch(console.log);
 
 console.log(window.location);
-console.log(window.href);
+console.log(window.location.href);
 console.log(window);
 
-const url = new URL('./VeryBasicTokenIcon.png');
+const url = new URL('.\VeryBasicTokenIcon.png');
 console.log(url);
+
+
+const url2 = new URL(window.location.href);
+console.log(url2);
 
             log(`Adding icon for ${qname} symbol ${qsymbol} decimals ${qdecimals}`);
             const params=

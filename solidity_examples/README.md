@@ -93,6 +93,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | ---------                     | -------         | -----
 | Log your location (check-in)  | [location]      | [location_github]
 | Faucet                        | [w3e_faucet]    | [w3e_faucet_github]
+
 [location]:          http://web3examples.com/location
 [location_github]:   https://github.com/web3examples/location
 [w3e_faucet]:        http://web3examples.com/ethereum/faucet

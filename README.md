@@ -10,6 +10,7 @@ This document contains info about:
   - [Oracle examples](#oracle-examples)
   - [Pattern examples](#pattern-examples)
   - [Token examples](#token-examples)
+  - [Test examples](#test-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
 - [Ethereum Concepts](#ethereum-concepts)
@@ -165,6 +166,11 @@ See: [Pattern Examples](pattern_examples)
 
 ## Token examples
 See: [Token Examples](token_examples) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Test examples
+See: [Test Examples](test_examples) 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 

@@ -5,7 +5,8 @@ Several Test Examples. ([Up](..) [Home](..\..))
 | Demo application   | Contract        | Test
 | ---------          | -----           | ------------
 | Mapping            | [mapping]       | [mapping_test]
-| SafeMath           |                 |
+| SafeMath           |                 | [safemath_test]
+
 
 [mapping]:           https://github.com/web3examples/ethereum/tree/master/test_examples/Mapping.sol
 [mapping_test]:      https://github.com/web3examples/ethereum/tree/master/test_examples/Mapping_test.sol

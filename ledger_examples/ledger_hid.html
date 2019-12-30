@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="webusb-browserify.js"></script>  
+    </head>
+    <body>
+        <h1>Connect to Ledger via HID</h1>
+        <input type="button" value="Click to connect" onclick="f()">
+        <pre id="log" style="width:100%;height:200px"></pre>
+<script>
+    function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        
+log("Set chrome://flags/#enable-experimental-web-platform-features");
+        
+async function f() {    
+    const transport = await TransportWebUSB.create().catch(x=>log(`Error: ${x.message}`));
+    if (transport) {    
+        log(`Connected to ${transport.deviceModel.id}`);
+        const eth = new AppEth(transport);
+        var res=await eth.getAppConfiguration();
+        log(`Version: ${res.version}`);
+        var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(console.log);
+        log(`Lowlevel address: ${keypair.address}`);
+        
+        const engine = new ProviderEngine();
+        getTransport=()=> transport;
+        const rpcUrl = "https://ropsten.infura.io/";
+        const networkId = 3;
+        const ledger = createLedgerSubprovider(getTransport, {
+            networkId,
+            accountsLength: 1   // nr of accounts retrieved
+        });
+        engine.addProvider(ledger);
+        engine.addProvider(new RpcSubprovider({ rpcUrl }));
+        engine.start(); // start polling for blocks
+        const web3 = new Web3(engine);
+        var acts=await web3.eth.getAccounts()
+        log(`Via Web3 address: ${acts[0]}`); // accounts of ledger
+    }
+}
+</script>

@@ -19,10 +19,11 @@ async function f() {
     if (transport) {    
         log(`Connected to ${transport.deviceModel.id}`);
         const eth = new AppEth(transport);
-        var res=await eth.getAppConfiguration();
+        var res=await eth.getAppConfiguration().catch(x=>log(`Error: ${x.message}`));;
         log(`Version: ${res.version}`);
-        var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(console.log);
-        log(`Lowlevel address: ${keypair.address}`);
+        var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(x=>log(`Error: ${x.message}`));
+        if (keypair)
+            log(`Lowlevel address: ${keypair.address}`);
         
         const engine = new ProviderEngine();
         getTransport=()=> transport;
@@ -36,8 +37,9 @@ async function f() {
         engine.addProvider(new RpcSubprovider({ rpcUrl }));
         engine.start(); // start polling for blocks
         const web3 = new Web3(engine);
-        var acts=await web3.eth.getAccounts()
-        log(`Via Web3 address: ${acts[0]}`); // accounts of ledger
+        var acts=await web3.eth.getAccounts().catch(x=>console.log(`Error: ${x.message}`));
+        if (acts)        
+            log(`Via Web3 address: ${acts[0]}`); // accounts of ledger
     }
 }
 </script>

@@ -16,10 +16,8 @@ log("Run from HTTPS connection");
 async function f() {
     const transport = await TransportU2F.create().catch(x=>log(`Error: ${x.message}`)).catch(console.log);
     if (transport) { 
-        console.log(transport);    
-        //log(`Connected to ${transport.deviceModel.id}`);
+        //log(`Connected to ${transport.deviceModel.id}`); // not present with U2F
         const eth = new AppEth(transport);
-        console.log(eth);
         var res=await eth.getAppConfiguration().catch(x=>log(`Error: ${x.message}`));;
         log(`Version: ${res.version}`);
         var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(x=>log(`Error: ${x.message}`));
@@ -37,7 +35,6 @@ async function f() {
         engine.addProvider(ledger);
         engine.addProvider(new RpcSubprovider({ rpcUrl }));
         engine.start(); // start polling for blocks
-        console.log(engine);
         const web3 = new Web3(engine);
         var acts=await web3.eth.getAccounts().catch(x=>console.log(`Error: ${x.message}`));
         if (acts)        

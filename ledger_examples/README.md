@@ -11,8 +11,8 @@ Several Ledger Examples. ([Up](..) [Home](..\..))
 
 [low_level_ledger_gh]:      https://github.com/web3examples/ethereum/tree/master/ledger_examples/low_level_ledger.js
 [nano_ledger_gh]:           https://github.com/web3examples/ethereum/tree/master/ledger_examples/nano_ledger.js
-[ledger_u2f]:               https://github.com/web3examples/ethereum/tree/master/ledger_examples/ledger_u2f.html
-[ledger_hid]:               https://github.com/web3examples/ethereum/tree/master/ledger_examples/ledger_hid.html
+[ledger_u2f_gh]:               https://github.com/web3examples/ethereum/tree/master/ledger_examples/ledger_u2f.html
+[ledger_hid_gh]:               https://github.com/web3examples/ethereum/tree/master/ledger_examples/ledger_hid.html
 
-[ledger_u2f_gh]:            https://web3examples.com/ethereum/ledger_examples/ledger_u2f.html
-[ledger_hid_gh]:            https://web3examples.com/ethereum/ledger_examples/ledger_hid.html
+[ledger_u2f]:            https://web3examples.com/ethereum/ledger_examples/ledger_u2f.html
+[ledger_hid]:            https://web3examples.com/ethereum/ledger_examples/ledger_hid.html

@@ -66,6 +66,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 
 | Demo application     | Github
 | ---------            | -----
+| Global types         | [sol6_globaltypes]
 | Abstract             | [sol6_abstract]
 | Address external     | [sol6_addressexternal]
 | Fallback Receive     | [sol6_fallbackreceive]
@@ -76,6 +77,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Shadowing            | [sol6_shadowing]
 | Try Catch            | [sol6_trycatch]
 
+[sol6_globaltypes]:         https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_globaltypes.sol
 [sol6_abstract]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_abstract.sol
 [sol6_addressexternal]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_addressexternal.sol
 [sol6_fallbackreceive]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_fallbackreceive.sol

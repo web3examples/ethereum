@@ -65,6 +65,12 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | .......
 | @openzeppelin/<br>contracts    | npm install -g | [pkg_openzepcontr]
 | @openzeppelin/<br>test-helpers | npm install -g | [pkg_ozhelpers]
+| ........
+| Surya                          | npm install -g | [surya]
+| graphviz / dot                 | Offline        | [graphviz]
+
+[surya]:        https://github.com/ConsenSys/surya
+[graphviz]:     https://graphviz.gitlab.io/download/
 
 [pkg_ozhelpers]:            https://www.npmjs.com/package/@openzeppelin/test-helpers
 

@@ -13,7 +13,7 @@ contract Tree {
 /// @param rings1 The number of rings from dendrochronological sample
 /// @param rings2 The number of rings from dendrochronological sample 
 /// @return age1 in years, rounded up for partial years
-/// @return age2 in years, rounded up for partial years // shown seperately with solidity 0.6.0
+/// @return age2 in years, rounded up for partial years // shown separately with solidity 0.6.0
     function age(uint256 rings1, uint256 rings2) external pure returns (uint256 age1,uint256 age2) {
         return (rings1 + 1,rings2 + 1);
     }

@@ -27,6 +27,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Travel agency                 |                 | [ta_github]
 | Auction                       |                 | [auction_github]
 | Mini casino: bet and win      | [casino]        | [casino1_github]<br>[casino2_github]
+| Natspec                       |                 | [natspec]
 
 [casino]:            http://web3examples.com/ethereum/casino/
 [casino1_github]:    https://github.com/web3examples/ethereum/tree/master/casino
@@ -34,17 +35,18 @@ Also see: [Oracle Examples](..\oracle_examples)
 [transfer_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Transfer.sol
 [todolist_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/ToDoList.sol
 [ballot_github]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Ballot.sol
-[ta_github]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/TravelAgency.sol
-[auction_github]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/SimpleAuction.sol
-[arrays]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/Arrays.sol
-[types]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/Types.sol
-[visibility]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/Visibility.sol
-[mapping]:          https://github.com/web3examples/ethereum/blob/master/solidity_examples/Mapping.sol
-[memory_storage]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Memory_Storage.sol
-[getsetemit_ln]:    https://web3examples.com/ethereum/web3js_browser/getset.html
-[getsetemit]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSetEmit.sol
-[workedhours]:      https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol
-[helloworld]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/HelloWorld.sol
+[ta_github]:         https://github.com/web3examples/ethereum/blob/master/solidity_examples/TravelAgency.sol
+[auction_github]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/SimpleAuction.sol
+[arrays]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/Arrays.sol
+[types]:             https://github.com/web3examples/ethereum/blob/master/solidity_examples/Types.sol
+[visibility]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/Visibility.sol
+[mapping]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/Mapping.sol
+[memory_storage]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Memory_Storage.sol
+[getsetemit_ln]:     https://web3examples.com/ethereum/web3js_browser/getset.html
+[getsetemit]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSetEmit.sol
+[workedhours]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol
+[helloworld]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/HelloWorld.sol
+[natspec]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/Natspec.sol
 
 # Solidity 5 - Remix
 
@@ -76,6 +78,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Override multiple    | [sol6_overridemultiple]
 | Shadowing            | [sol6_shadowing]
 | Try Catch            | [sol6_trycatch]
+| Natspec              | [sol6_natspec]
 
 [sol6_globaltypes]:         https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_globaltypes.sol
 [sol6_abstract]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_abstract.sol
@@ -87,6 +90,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 [sol6_overridemultiple]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_overridemultiple.sol
 [sol6_shadowing]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_shadowing.sol
 [sol6_trycatch]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_trycatch.sol
+[sol6_natspec]:             https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_natspec.sol
 
 
 # Solidity 5 - complete applications

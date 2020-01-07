@@ -68,6 +68,12 @@ The tools are sorted in the order of usefullness while learning ethereum.
 | ........
 | Surya                          | npm install -g | [surya]
 | graphviz / dot                 | Offline        | [graphviz]
+| .........
+| smartdec                       | Web            | [smartdec]
+| ethlint                        | npm install -g | [ethlint]
+
+[smartdec]: https://tool.smartdec.net/
+[ethlint]:  https://github.com/duaraghav8/Ethlint
 
 [surya]:        https://github.com/ConsenSys/surya
 [graphviz]:     https://graphviz.gitlab.io/download/

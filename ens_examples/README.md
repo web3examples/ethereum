@@ -14,7 +14,7 @@ Several ENS Examples. ([Up](..) [Home](..\..))
 | web3examples.eth      | [web3examples]
 
 
-[ens_addr]:             https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_addr.html
+[ens_addr_ens]:         https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_addr.html
 [ens_addr_web3js]:      https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_addr_web3js.html
 [ens_reverse_ens]:      https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_reverse_ens.html
 [ens_reverse_web3js]:   https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_reverse_web3js.html

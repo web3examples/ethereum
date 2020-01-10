@@ -16,14 +16,14 @@ Several ENS Examples. ([Up](..) [Home](..\..))
 | web3examples.eth      | [web3examples]
 
 
-[ens_addr_ens_gh]:         https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_addr.html
+[ens_addr_ens_gh]:         https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_addr_ens.html
 [ens_addr_web3js_gh]:      https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_addr_web3js.html
 [ens_reverse_ens_gh]:      https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_reverse_ens.html
 [ens_reverse_web3js_gh]:   https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_reverse_web3js.html
 [ens_ipfs_ens_gh]:         https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_ipfs_ens.html
 [ens_ipfs_web3js_gh]:      https://github.com/web3examples/ethereum/tree/master/ens_examples/ens_ipfs_web3js.html
 
-[ens_addr_ens]:         https://web3examples.com/ethereum/ens_examples/ens_addr.html
+[ens_addr_ens]:         https://web3examples.com/ethereum/ens_examples/ens_addr_ens.html
 [ens_addr_web3js]:      https://web3examples.com/ethereum/ens_examples/ens_addr_web3js.html
 [ens_reverse_ens]:      https://web3examples.com/ethereum/ens_examples/ens_reverse_ens.html
 [ens_reverse_web3js]:   https://web3examples.com/ethereum/ens_examples/ens_reverse_web3js.html

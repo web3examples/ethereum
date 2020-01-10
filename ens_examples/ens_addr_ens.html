@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <script src="ens-web3-browserify.js"></script> 
+    </head>
+    <body>
+        <h1>ENS Address (ens api) (Ropsten)</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() { 
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
+                methods: [{
+                    name: 'eth_requestAccounts',
+                    call: 'eth_requestAccounts',
+                    params: 0
+                }]
+            });
+            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            const ens  = new ENS(web3.currentProvider);
+            const name='web3examples.eth';
+            log(`Checking ${name}`);   
+            var pr=ens.resolver(name);
+            pr.instancePromise.catch(log); // trick to catch error
+            var ResolverContract=await pr;
+            if (ResolverContract)
+                log(`Address: ${await ResolverContract.addr()}`);                      
+        }
+        f();
+        </script>        
+    </body>
+</html>

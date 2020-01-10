@@ -2836,7 +2836,6 @@ https://github.com/wealdtech/wealdtech-solidity/blob/master/contracts/ens/ENSRev
 
 | Oracles       | Instances                               | Tools & demo                                  | Github             | Documentation              | Tutorial
 | ----------    | ---------                               | ----                                          | ------             | --------------             | -----
-
 | ENS and IPFS          | See [../ipfs]
 
 

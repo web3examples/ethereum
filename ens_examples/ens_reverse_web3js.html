@@ -17,8 +17,7 @@
             var nh=namehash.hash(lookup);
             var name=await ResolverContract.methods.name(nh).call()
             return name;
-        }        
-        
+        }                
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
             web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
@@ -28,8 +27,7 @@
                     params: 0
                 }]
             });
-            var result=await web3.eth_requestAccounts();
-            
+            var result=await web3.eth_requestAccounts();            
             var address="0xEA9a7c7cD8d4Dc3acc6f0AaEc1506C8D6041a1c5";
             log (`Address: ${address}`);
             var reverse=await Reverse(address)
@@ -39,7 +37,3 @@
         </script>        
     </body>
 </html>
-
-
-
-

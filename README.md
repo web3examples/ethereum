@@ -2794,6 +2794,7 @@ https://github.com/ConsenSys/MultiSigWallet/blob/master/MultiSigWalletWithDailyL
 [ens_xyz]:          https://gen.xyz/
 
 ### ENS tools
+
 |Ens registrar  | registrar tutorial |Ens explorer           | Ens market place | Tools 
 |-------------- | -------------      | ----------------      |  --------------  | ----------
 | [ens_manager] | [reg_tut]          | [etherscan_ens]       | [enslisting]     | Metamask: .....eth/ (trailing /)

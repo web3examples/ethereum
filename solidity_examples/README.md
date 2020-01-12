@@ -79,6 +79,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Shadowing            | [sol6_shadowing]
 | Try Catch            | [sol6_trycatch]
 | Natspec              | [sol6_natspec]
+| Slice                | [sol6_slice]
 
 [sol6_globaltypes]:         https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_globaltypes.sol
 [sol6_abstract]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_abstract.sol
@@ -91,7 +92,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 [sol6_shadowing]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_shadowing.sol
 [sol6_trycatch]:            https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_trycatch.sol
 [sol6_natspec]:             https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_natspec.sol
-
+[sol6_slice]:               https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_slice.sol
 
 # Solidity 5 - complete applications
 

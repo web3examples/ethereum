@@ -15,6 +15,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Commit Reveal        | [commitreveal]
 | Withdraw             | [withdraw]
 | Verify Source        | [verifysource]
+| Multisig Prep        | [multisigprep]
 
 [proxy_basic]:          https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_basic.sol
 [proxy_return]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_return.sol
@@ -28,3 +29,5 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [commitreveal]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/commitreveal.sol
 [withdraw]:     https://github.com/web3examples/ethereum/tree/master/pattern_examples/withdraw
 [verifysource]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/verifysource.sol
+
+[multisigprep]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/multisigprep.sol

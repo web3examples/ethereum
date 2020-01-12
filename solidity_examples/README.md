@@ -94,6 +94,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 [sol6_natspec]:             https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_natspec.sol
 [sol6_slice]:               https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol6_slice.sol
 
+
 # Solidity 5 - complete applications
 
 | Demo application              | Link            | Github

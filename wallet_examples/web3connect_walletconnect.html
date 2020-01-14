@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="web3connect-browserify.js"></script>  
+    </head>
+    <body>
+        <h1>Web3connect provider</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() {                     
+            const web3Connect = new Web3Connect.Core({
+                network: "mainnet", // optional
+                providerOptions: {
+                    walletconnect: {
+                        package: WalletConnectProvider,
+                            options: { infuraId: "0" } // dummy infura code!!
+                    }
+                }
+            });
+            web3Connect.toggleModal();
+            web3Connect.on("connect", OnConnect);
+        }        
+        async function OnConnect(provider) {
+            const web3 = new Web3(provider); // add provider to web3
+            var acts=await web3.eth.getAccounts().catch(log);
+            log(`Here are the accounts: ${JSON.stringify(acts)}`);
+        }
+        f();
+        </script>        
+    </body>
+</html>

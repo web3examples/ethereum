@@ -13,6 +13,7 @@ This document contains info about:
   - [Test examples](#test-examples)
   - [Ledger examples](#ledger-examples)
   - [ENS examples](#ens-examples)
+  - [Wallet examples](#wallet-examples)
   - [Tools and installation](#tools-and-installation)
   - [Demo video's](#demo-videos)
 - [Ethereum Concepts](#ethereum-concepts)
@@ -185,6 +186,13 @@ See: [Ledger Examples](ledger_examples)
 See: [ENS Examples](ens_examples) 
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## Wallet examples
+See: [Wallet Examples](wallet_examples) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 
 
 ## Tools and installation

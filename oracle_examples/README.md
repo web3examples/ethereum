@@ -11,3 +11,14 @@ Several Oracle Examples. ([Up](..) [Home](..\..))
 [provable_random]:      https://github.com/web3examples/ethereum/tree/master/oracle_examples/provable_random.sol
 [provable_temperature]: https://github.com/web3examples/ethereum/tree/master/oracle_examples/provable_temperature.sol
 [provable_ipfs]:        https://github.com/web3examples/ethereum/tree/master/oracle_examples/provable_ipfs.sol
+
+
+
+| Example API Feeds     | API
+| -----------------     | ---
+| Time                  | [time]
+| Random names          | [names]
+
+[time]:     http://worldtimeapi.org/api/timezone/Europe/Amsterdam
+[names]:    https://uinames.com/api/?amount=1
+

@@ -11,6 +11,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Proxy Test           | [proxy_test]
 | Selfdestruct         | [selfdestruct]
 | Create               | [create]
+| Create sol 6.2       | [sol6.2_create]
 | Modifiers            | [modifiers]
 | Commit Reveal        | [commitreveal]
 | Withdraw             | [withdraw]
@@ -31,3 +32,4 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [verifysource]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/verifysource.sol
 
 [multisigprep]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/multisigprep.sol
+[sol6.2_create]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/sol6.2_create.sol

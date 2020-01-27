@@ -1006,7 +1006,7 @@ See: [Demo Ethereum software](demo)
 | [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]                             | [cheatsheet3] 
 | [learn_solidity]           | [secondstate]           | [cursosolidity]                           | [kcl_class]                                 | [cheatsheet4] 
 | [blockgeeks_sol1]          | [contractfinder]        | [stupeters]                               | [sheets_alex]
-| [blockgeeks_sol2]          | [ethpm_registry]        |                                           | [certik_sol]
+| [blockgeeks_sol2]          | [ethpm_registry]        | [se_examples]                             | [certik_sol]
 | [yt_sol_1basics]           | [openzeppelin_ctr]
 | [soliditykoans]            | [verified_contracts]
 | [top10_tut]                | [github_sol]
@@ -1015,6 +1015,9 @@ See: [Demo Ethereum software](demo)
 | [tutorialspoint_sol]       | [tenderly_ver]
 | [manojpramesh]
 
+
+
+[se_examples]:         https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
 [certik_sol]:           https://solidity-tour.certik.org/
 
 [cryptozombies]:       https://cryptozombies.io/en/lesson/1

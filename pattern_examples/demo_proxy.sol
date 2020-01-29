@@ -25,7 +25,6 @@ contract Proxy_Return_Storage {
         }
     }
 }
-
 pragma solidity ^0.5.12;
 contract SimpleStorage {
     uint8 storedData;
@@ -35,5 +34,4 @@ contract SimpleStorage {
     function get() public view returns (uint8) {
         return storedData;
     }
-
 }

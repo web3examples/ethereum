@@ -42,7 +42,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 [visibility]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/Visibility.sol
 [mapping]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/Mapping.sol
 [memory_storage]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Memory_Storage.sol
-[getsetemit_ln]:     https://web3examples.com/ethereum/web3js_browser/getset.html
+[getsetemit_ln]:     https://web3examples.com/ethereum/web3js_browser/getsetemit.html
 [getsetemit]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/GetSetEmit.sol
 [workedhours]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol
 [helloworld]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/HelloWorld.sol

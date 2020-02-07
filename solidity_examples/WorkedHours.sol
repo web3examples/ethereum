@@ -1,4 +1,4 @@
-pragma solidity ^0.5.12;
+pragma solidity ^0.5.12; // https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol
 
 contract RegisterHours {
     address public approver;

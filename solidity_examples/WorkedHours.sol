@@ -1,36 +1,43 @@
 pragma solidity ^0.5.12;
 
 contract RegisterHours {
-  
-  struct RegHour { // Struct
-        uint date;        // store the date in an integer format (like now)
-        uint workedhours; // hours is a reserved variable in Solidity
+    address public approver;
+    address public owner;
+    uint public hourrate = 0.01 ether;
+    mapping(address => uint ) public RegisteredHours; // store the worked hours for the different users 
+    mapping(address => uint ) public ApprovedHours; // store the approved hours for the different users 
+
+    event LogWorkedHours   (address worker,uint8 day,uint8 month,uint16 year,uint workedhours); // hours is a reserved variable in Solidity    
+    event LogApprovedHours (address approver, address worker, uint nrhours);
+                                    
+    constructor() public payable { // allow to send some eth to contract during creation
+        owner     = msg.sender;
+        approver  = msg.sender; // initialy contract creator is approver
+    }  
+    function SetApprover(address _approver) public { 
+        require (owner == msg.sender,"Only contract creater can set approver");
+        approver = _approver;
+    }  
+    function SaveHours(uint8 day, uint8 month, uint16 year, uint workedhours) public {
+        emit LogWorkedHours(msg.sender,day,month,year,workedhours);
+        RegisteredHours[msg.sender] += workedhours;    
     }
-   mapping(address => RegHour) public RegisteredHours; // store the worked hours for the different users of the contract
-   address payable[] public List; // store the address in an array to be able to find the for the payout
-                                  // must be payable, to be able to use it directly in the payout function
-   
-  function GetNow() public view returns (uint)  { // show the integer value of the current date/time
-    return now;
-  }
-  function NrOfAddress() public view returns (uint) { // check how many addresses are one the list
-    return List.length;
-  }
-  
-  function StoreHours(uint date, uint workedhours) public {
-     RegisteredHours[msg.sender] = RegHour(date,workedhours);
-     List.push(msg.sender);
-  }
-  
-  function Payout() public { // payout the hours that everyone has worked
-    for (uint i=0; i< List.length; i++) { // a for loop has risks for higher number of records, ok for a demo
-        List[i].transfer(0.0001 ether);   // just pay some eth for the worked hours; remember to flag that payout has been done
-      }
-  }
-  
-  function Balance() public view returns (uint) { // check the balance of the contract
-      return address(this).balance;
-  }
-  
-  function() payable external { } // the contract should be able to receive some eth to be able to pay out later
+    function Approve(address worker) public returns(uint approved) { // approve the worked hours
+        approved = RegisteredHours[worker];
+        emit LogApprovedHours(msg.sender,worker,approved);
+        ApprovedHours[worker] += approved;
+        RegisteredHours[worker] = 0;
+    }  
+    function SetRate(uint _hourrate) public { // set hourly rate (in eth)
+        hourrate = _hourrate;
+    }      
+    function RetrievePayment() public returns(uint topay) { // retrieve payment by worker
+        topay = ApprovedHours[msg.sender] * hourrate;
+        ApprovedHours[msg.sender] = 0; // update before payout to prevent reentrancy issues
+        msg.sender.call.value(topay)(""); // pay    
+    }  
+    function Balance() public view returns (uint) { // check the balance of the contract
+        return address(this).balance;
+    }  
+    function() payable external { } // receive eth to be able to pay out later
 }

@@ -11,8 +11,8 @@ Also see: [Oracle Examples](..\oracle_examples)
 
 # Solidity 5 - play editor
 
-| Demo application              | Link            | Github
-| ---------                     | -------         | -----
+| Demo application              | Link            | Github               | Video
+| ---------                     | -------         | -----                | -------
 | Hello World                   |                 | [helloworld]
 | Get Set Emit                  | [getsetemit_ln] | [getsetemit]
 | Transfer                      |                 | [transfer_github]
@@ -21,7 +21,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Types                         |                 | [types]
 | Visibility                    |                 | [visibility]
 | Memory Storage                |                 | [memory_storage]
-| Worked Hours                  |                 | [workedhours]
+| Worked Hours                  |                 | [workedhours]       | [workedhours_video]
 | ToDoList                      |                 | [todolist_github]
 | Ballot                        |                 | [ballot_github]
 | Travel agency                 |                 | [ta_github]
@@ -47,6 +47,9 @@ Also see: [Oracle Examples](..\oracle_examples)
 [workedhours]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol
 [helloworld]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/HelloWorld.sol
 [natspec]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/Natspec.sol
+
+
+[workedhours_video]: https://ipfs.io/ipfs/QmNyNScmwTfxr6rCV8QtWu17egJBxnFeuRV8W844hVG6ox
 
 # Solidity 5 - Remix
 

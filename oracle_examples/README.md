@@ -19,7 +19,9 @@ Several Oracle Examples. ([Up](..) [Home](..\..))
 | Time                  | [time]
 | Random names          | [names]
 | Nasa                  | [nasa]
+| Kraken                | [kraken]
 
 [time]:     http://worldtimeapi.org/api/timezone/Europe/Amsterdam
 [names]:    https://uinames.com/api/?amount=1
 [nasa]:     https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY
+[kraken]:   https://api.kraken.com/0/public/Ticker?pair=ETHUSD

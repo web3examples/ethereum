@@ -5,8 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <meta charset="UTF-8">  
                 <script src="https://cdn.jsdelivr.net/npm/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>   
-       <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.1/dist/web3.min.js"></script> 
-        
+       <!--script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.2.1/dist/web3.min.js"></script--> 
+        <script src="https://web3examples.com/lib/web3-browserify.js"></script> 
         
     </head>
 <html>
@@ -109,7 +109,7 @@ totest="0xfec65abe091919645ad2dafaf28a0607f817056c";
             await ethereum.enable().catch( (reason) => log('User rejected provider access',reason.message.substring(0,50)) )
         
         }
-        if ((typeof ethereum == 'undefined')|| !Web3.givenProvider) { // Checking if web3 is accessible
+        if ((typeof ethereum == 'undefined')&& !Web3.givenProvider) { // Checking if web3 is accessible
             log("Web3 interface is not found. "+
             "Please install <a href='https://metamask.io'>Metamask</a>"+
             " or use <a href='https://www.opera.com/crypto'>Opera Crypto (android)");
@@ -117,7 +117,7 @@ totest="0xfec65abe091919645ad2dafaf28a0607f817056c";
         }
         web3 = new Web3(Web3.givenProvider || ethereum); // switch to version 1.0 when using metamask; provide web3 functions for Opera
         //typeof web3 === 'undefined' || web3 == 'undefined'
-        log(`web3 is present: ${web3.version}`); // note: use ` (back quote)
+        log(`web3 is present: ${await web3.version}`); // note: use ` (back quote)
         
         
         var chainId = await web3.eth.getChainId();

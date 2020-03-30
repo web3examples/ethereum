@@ -4,21 +4,28 @@ contract A {
     function foo()  pure external returns (string memory) {
         return "A";
     }
-    function getFooAddress() public view returns(address) {
-        return this.foo.address;
+    function boo()  pure external returns (string memory) {
+        return "B";
     }
 }
 
 contract B {
    A acontract;
-   address x;
-   
-   constructor(address _addr) public {
+
+    constructor(address _addr) public {
        acontract = A(_addr);
-       x = acontract.foo.address;
-   } 
+    } 
    
-   function getAddress() view public returns (address) {
-       return x;
-   }
+    function getBooAddress() public view returns(address) {
+        return acontract.boo.address;
+    }
+    function getFooAddress() public view returns(address) {
+        return acontract.foo.address;
+    }
+    function getFooSelector() public view returns(bytes4) {
+        return acontract.foo.selector;
+    }
+    function getBooSelector() public view returns(bytes4) {
+        return acontract.boo.selector;
+    }
 }   

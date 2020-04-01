@@ -15,7 +15,6 @@ contract RegisterParticipants {
             ListParticipant[i] = ListParticipant[ListParticipant.length - 1]; // switch
             IndexInList[msg.sender]=0;
             IndexInList[ListParticipant[i]]=i;          
-            delete ListParticipant[ListParticipant.length - 1]; // now we can delete last
             ListParticipant.pop();
         }
         if (Join) {

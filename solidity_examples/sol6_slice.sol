@@ -3,7 +3,9 @@ pragma solidity 0.6.1;
 contract Slice{
     
     bytes exampleBytes = hex'abcd';
+    
     event logbytes(bytes);
+    
     function test(bytes calldata data, uint n) external  {
         bytes memory b=bytes(data[:n]);
         emit logbytes(b);

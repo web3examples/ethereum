@@ -1051,7 +1051,7 @@ See: [Demo Ethereum software](demo)
 [azure_samples]:       https://github.com/Azure-Samples/blockchain/tree/master/blockchain-workbench/application-and-smart-contract-samples
 [top5]:                https://bytescout.com/blog/top-5-smart-contracts.html
 [secondstate]:         https://eth.search.secondstate.io/
-[tenderly_ver]:        https://dashboard.tenderly.dev/explorer
+[tenderly_ver]:        https://dashboard.tenderly.co/explorer
 
 
 [soliditybyexample]:   https://solidity-by-example.org/
@@ -1335,7 +1335,7 @@ See: [Demo Ethereum software](demo)
 
 [evmlab]:          https://github.com/ethereum/evmlab
 [graphdebugger]:   https://github.com/fergarrui/ethereum-graph-debugger
-[tenderly]:        https://tenderly.dev
+[tenderly]:        https://tenderly.co
 [tenderly_gh]:     https://github.com/Tenderly
 
 

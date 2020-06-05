@@ -11,6 +11,7 @@ Several Token Examples. ([Up](..) [Home](..\..))
 | ERC777 callback solidity         |                            | [erc777callback_gh]
 | VeryBasicNFT                     |                            | [verybasicnft_gh]
 | ERC721 (NFT) Truffe OpenZeppelin |                            | [erc721truffleopenzeppelin_gh]
+| ERC721 (NFT) Remix OpenZeppelin  |                            | [erc721remixopenzeppelin_gh]
 
 
 
@@ -21,6 +22,7 @@ Several Token Examples. ([Up](..) [Home](..\..))
 [erc721truffleopenzeppelin_gh]: https://github.com/web3examples/ethereum/tree/master/token_examples/ERC721TruffleOpenZeppelin
 [erc777truffleopenzeppelin_gh]: https://github.com/web3examples/ethereum/tree/master/token_examples/ERC777TruffleOpenZeppelin
 [erc777callback_gh]:            https://github.com/web3examples/ethereum/tree/master/token_examples/ERC777Callback.sol
+[erc721remixopenzeppelin_gh]:   https://github.com/web3examples/ethereum/tree/master/token_examples/ERC721RemixOpenZeppelin.sol
 
 [verybasictokenicon]:           https://web3examples.com/ethereum/token_examples/VeryBasicTokenIcon.html
 

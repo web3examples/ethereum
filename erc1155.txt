@@ -1,0 +1,75 @@
+https://eips.ethereum.org/EIPS/eip-1155  (spec)
+
+
+
+
+erc 1155 reference implementation
+
+
+solidity 6
+https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token/ERC1155
+
+bevat IERC1155MetadataURI.sol
+
+
+
+
+
+
+studenten: 
+solidity 6
+
+IERC1155Metadata.sol
+
+
+
+https://github.com/enjin/erc-1155/tree/master/contracts
+solidity 5
+IERC1155Metadata.sol
+
+
+
+https://github.com/gnosis/conditional-tokens-contracts/tree/master/contracts/ERC1155
+
+
+
+
+https://github.com/pixowl/thesandbox-contracts/blob/master/contracts_common/src/Interfaces/ERC1155.sol
+solidity 5
+
+
+https://github.com/arcadeum/multi-token-standard/tree/master/contracts/interfaces
+solidity 6.8
+(voorheen horizon games)
+
+
+https://github.com/0xProject/0x-monorepo/tree/development/contracts/erc1155/contracts/src/interfaces
+solidity 5.9
+
+
+https://github.com/pelith/erc-1155-adapter/blob/master/contracts/ERC1155.sol
+0.5.0
+
+
+https://github.com/ProjectOpenSea/multi-token-standard/blob/master/contracts/tokens/ERC1155/ERC1155.sol
+0.5.12
+
+
+https://github.com/fuchsi21/CatchCoins_ERC1155/tree/master/smart_contracts/lib
+0.5.0
+
+
+https://github.com/chislab/openzeppelin-contracts/blob/master/token/ERC1155/ERC1155.sol
+0.6.0
+
+
+https://github.com/election-futures-dev/augur-v2-contracts/blob/master/contracts/libraries/token/ERC1155.sol
+0.5.15
+
+
+https://github.com/baxterjfinch/dissent_erc_1155/blob/master/dissent_1155.sol
+0.6
+
+
+https://github.com/sam6132/ERC115/tree/master/erc-1155/contracts
+0.5

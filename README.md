@@ -358,16 +358,17 @@ See: [Demo Ethereum software](demo)
 
 ## Node overview
 
-| Overview              | Experiment 
-|---------              | -----------
-| [client-overview]     | [eth_grid]
-| [understand_nodes]
+| Overview              | Experiment  | Inner workings
+|---------              | ----------- | --------------
+| [client-overview]     | [eth_grid]  | [understand_source]
+|						|			  | [understand_nodes]
 
 [client-overview]:  http://www.ethdocs.org/en/latest/ethereum-clients
 [understand_nodes]: https://kauri.io/article/48d5098292fd4f11b251d1b1814f0bba/ethereum-101-part-2-understanding-nodes
 
 [eth_grid]:         https://grid.ethereum.org/
 
+[understand_source]: https://gisli.hamstur.is/2020/08/understanding-ethereum-by-studying-the-source-code/
 
 ## Node versions
 
@@ -470,28 +471,33 @@ See: [Demo Ethereum software](demo)
 
 ## Node as a service
 
-| Free hosted RPC   | Hosted RPC (key)  | Other API     | Node as a service   | Nodes on PAAS | Incentified API access
-| ----------------  | ---------------   | ----------    | ------------        | ------------- | -----------
-| [infura]          | [fiews]           | [etherscan]   | [quiknode]          | [blockform]   | [vipnode]
-| [cloudflare]      | [ethernode]       | [blockcypher] | [blockdaemon]       | [kaleido]     | 
-| [linkpool]        | [rockside]        | [etherapi]    | [alchemyapi_nodes]  | [aws]         | 
-| [rpcslockit]      | [alchemyapi]      | [chainkit]    | [eth7]              | [azure]       | 
-| [mycryptoapi]     | [nodesmith]       | [usehedge]    | [chainstack]        | [google-cloud]|
-|                   |                   | [ocyan]       | [deploy]
-|                   |                   | [etherniti]
-|                   |                   | [blockscout_api]
+| Free hosted RPC   | Hosted RPC (key)  | Other API          | Node as a service   | Nodes on PAAS | Incentified API access | Main other chains
+| ----------------  | ---------------   | ----------         | ------------        | ------------- | -----------            | ---------
+| [infura]          | [fiews]           | [etherscan]        | [quiknode]          | [blockform]   | [vipnode]              | [athereummain_rpc]
+| [cloudflare]      | [ethernode]       | [blockcypher]      | [blockdaemon]       | [kaleido]     | [pocket]
+| [linkpool]        | [rockside]        | [etherapi]         | [alchemyapi_nodes]  | [aws]         | [nownodes]
+| [rpcslockit]      | [alchemyapi]      | [chainkit]         | [eth7]              | [azure]       | 
+| [mycryptoapi]     | [nodesmith]       | [usehedge]         | [chainstack]        | [google-cloud]|
+|                   | [anyblockan]      | [ocyan]            | [deploy]
+|                   | [getblock]        | [etherniti]        | [bloqnodes]
+|                   | [rivet]           | [blockscout_api]   |
+|                   | [bloqconnect]     |
 
 [infura]:         https://mainnet.infura.io/
 [cloudflare]:     https://cloudflare-eth.com
-[fiews]:          https://fiews.io/free-rpc
 [linkpool]:       https://docs.linkpool.io/docs/rpc_main
+[rpcslockit]:     https://rpc.slock.it/
+[mycryptoapi]:    https://api.mycryptoapi.com/eth
+
+[fiews]:          https://fiews.io/free-rpc
 [ethernode]:      https://www.ethernode.biz/
 [rockside]:       https://www.rockside.io/documentation/index.html#usage
 [alchemyapi]:     https://docs.alchemyapi.io/docs/alchemy-api-reference
-[rpcslockit]:     https://rpc.slock.it/
-[nodesmith]:      https://docs.nodesmith.io/#/ethereum/apiRef
-[mycryptoapi]:    https://api.mycryptoapi.com/eth
-
+[nodesmith]:      https://nodesmith.io/network/ethereum/
+[anyblockan]:     https://www.anyblockanalytics.com/ethereum-rpc
+[getblock]:       https://getblock.io/
+[rivet]:          https://rivet.cloud/
+[bloqconnect]:    https://www.bloq.com/products/platform/bloq-connect/
 
 [etherscan]:      https://etherscan.io/apis#proxy
 [blockcypher]:    https://www.blockcypher.com/dev/ethereum/#blockchain
@@ -508,6 +514,7 @@ See: [Demo Ethereum software](demo)
 [eth7]:             https://eth7.com/
 [chainstack]:       https://docs.chainstack.com/guides/getting-started#run-a-public-blockchain-node
 [deploy]:           https://deploy.radar.tech/
+[bloqnodes]:        https://www.bloq.com/products/platform/bloq-nodes/
 
 [blockform]:      https://github.com/WeTrustPlatform/blockform
 [kaleido]:        https://kaleido.io 
@@ -516,7 +523,10 @@ See: [Demo Ethereum software](demo)
 [google-cloud]:   https://console.cloud.google.com/marketplace/details/click-to-deploy-images/ethereum
 
 [vipnode]:        https://vipnode.org/
+[pocket]:         https://pokt.network/
+[nownodes]:       https://nownodes.io/
 
+[athereummain_rpc]:       https://api.avax.network/ext/bc/C/rpc
 
 
 # Manage and monitor 
@@ -1604,6 +1614,7 @@ See: [Demo Ethereum software](demo)
 | Overview        
 | --------------
 | [comp_testnets]
+| [atlas]
 | [network_ids]
 | [coinmonks_testnets]
 | [kauri_testnets]
@@ -1611,6 +1622,7 @@ See: [Demo Ethereum software](demo)
 | [ethhub_testnets]
 
 [network_ids]:        https://chainid.network/
+[atlas]:              https://github.com/ethereum-navigator/atlas/blob/master/atlas.json
 [comp_testnets]:      https://ethereum.stackexchange.com/questions/27048/comparison-of-the-different-testnets
 [coinmonks_testnets]: https://medium.com/coinmonks/ethereum-test-network-21baa86072fa
 [kauri_testnets]:     https://kauri.io/article/3eba08b801a44776a07607b9e046dd08/ethereum-101-part-6-mainnet-and-testnets
@@ -1623,16 +1635,17 @@ See: [Demo Ethereum software](demo)
 | (Test) Networks | More info         | Chainnr | Consensus                                        | Faucet (Get test Eth)                                         | Github            
 | --------------- | ---------         | ------- | --------                                         |  ---------                                                    | ------            
 | Ropsten         | [ropsten_github]  | 3       | Pow, Geth & Parity  (for protocol devs)          | [metamask-faucet]<br>[ropsten-faucet]<br>[ropsten-bitaps]     | [ropsten_github]  
-| Kovan           | [kovan]           | 42      | PoA, Parity (aura)                                | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]    
+| Kovan           | [kovan]           | 42      | PoA, Parity (aura)                               | [kovan-faucet]<br>[tokenpla]<br>[kovan-gitter]                | [kovan_github]    
 | Rinkeby         | [rinkeby]         | 4       | PoA, Geth (clique)                               | [rinkeby-faucet]                                              | [rinkeby_github]  
 | Goerli          | [goerli]          | 5       | PoA, Geth, Pantheon, Nethermind, Parity (clique) | [goerli-faucet1]<br>[goerli-faucet2]                          | [goerli_github]   
-| Athereum        | [athereum]        | 43110   | Ava                                              | [athereum_faucet]                                             |  [ava_github]               
+| Athereum        | [athereum]        | 43110   | Ava                                              | [athereum_faucet]                                             | [ava_github]               
+| Lukso test      | [lukso]           | 0x16    |                                                  | [lukso_faucet]                                                | [lukso_github]
 
 [kovan]:    https://kovan-testnet.github.io/website/
 [rinkeby]:  https://www.rinkeby.io
 [goerli]:   https://goerli.net/
 [athereum]: https://athereum.ava.network/
-
+[lukso]:    https://lukso.network/
 
 [metamask-faucet]:    https://faucet.metamask.io
 [ropsten-faucet]:     https://faucet.ropsten.be/
@@ -1646,13 +1659,15 @@ See: [Demo Ethereum software](demo)
 [rinkeby-faucet]:     https://faucet.rinkeby.io/
 [goerli-faucet1]:     https://goerli-faucet.slock.it/
 [goerli-faucet2]:     https://faucet.goerli.mudit.blog/
-[athereum_faucet]:    http://athfaucet.ava.network
+[athereum_faucet]:    https://faucet.avax-test.network/
+[lukso_faucet]:       http://faucet.l14.lukso.network/
 
 [ropsten_github]:     https://github.com/ethereum/ropsten
 [kovan_github]:       https://github.com/kovan-testnet/proposal
 [rinkeby_github]:     https://github.com/ethereum/EIPs/issues/225
 [goerli_github]:      https://github.com/goerli/testnet
 [ava_github]:         https://github.com/ava-labs
+[lukso_github]:       https://github.com/lukso-network
 
 ## Testnet RPC
 
@@ -1679,7 +1694,8 @@ See: [Demo Ethereum software](demo)
 [goerli_slock]:       https://rpc.slock.it/goerli
 [goerli_prylabs]:     https://goerli.prylabs.net
 
-[athereum_rpc]:       https://ava.network:21015/ext/evm/rpc
+[athereum_rpc]:       https://testapi.avax.network/ext/bc/C/rpc
+
 
 ## Testnet dashboards
 
@@ -1717,6 +1733,8 @@ Also see [Explorers](#explorers)
 | Rinkeby         | [etherscan-rinkeby]  |                      | [blockexone_rinkeby] |                  | [aleth_lt_rinkeby]  |                   |
 | Goerli          | [etherscan-goerli]   |                      |                      |                  | [aleth_lt_goerli]   | [aleth_goerli]    |
 | Athereum        |                      |                      |                      |                  |                     |                   | [athereum_exp]
+| Athereum-test   |                      |                      |                      |                  |                     |                   | [athereum_test_exp]
+| Lukso           |                      | [blockscout-lukso]   |                      |                  |                     |                   |
 
 [etherscan-ropsten]:  https://ropsten.etherscan.io/
 [etherscan-kovan]:    https://kovan.etherscan.io/
@@ -1725,7 +1743,7 @@ Also see [Explorers](#explorers)
 
 
 [blockscout-kovan]:   https://blockscout.com/eth/kovan
-
+[blockscout-lukso]:   https://blockscout.com/lukso/l14
 
 
 [blockexone_rinkeby]: https://blockexplorer.one/ethereum/rinkeby
@@ -1740,8 +1758,8 @@ Also see [Explorers](#explorers)
 
 [aleth_goerli]:       https://goerli.aleth.io/
 
-[athereum_exp]:       http://athexplorer.ava.network
-
+[athereum_exp]:       https://cchain.explorer.avax.network/
+[athereum_test_exp]:  https://cchain.explorer.avax-test.network/
 
 
 

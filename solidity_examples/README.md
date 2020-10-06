@@ -13,6 +13,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 
 | Demo application              | Link            | Github               | Video
 | ---------                     | -------         | -----                | -------
+| SimpleStorage                 |                 |
 | Hello World                   |                 | [helloworld]
 | Get Set Emit                  | [getsetemit_ln] | [getsetemit]
 | Transfer                      |                 | [transfer_github]
@@ -29,6 +30,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Mini casino: bet and win      | [casino]        | [casino1_github]<br>[casino2_github]
 | Natspec                       |                 | [natspec]
 
+[simplestorage]:     https://github.com/web3examples/ethereum/tree/master/SimpleStorage  
 [casino]:            http://web3examples.com/ethereum/casino/
 [casino1_github]:    https://github.com/web3examples/ethereum/tree/master/casino
 [casino2_github]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Casino.sol

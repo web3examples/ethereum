@@ -13,7 +13,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 
 | Demo application              | Link            | Github               | Video
 | ---------                     | -------         | -----                | -------
-| SimpleStorage                 |                 |
+| SimpleStorage                 |                 | [simplestorage]
 | Hello World                   |                 | [helloworld]
 | Get Set Emit                  | [getsetemit_ln] | [getsetemit]
 | Transfer                      |                 | [transfer_github]

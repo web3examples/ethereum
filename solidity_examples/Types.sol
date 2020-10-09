@@ -1,4 +1,4 @@
-pragma solidity ^0.5.12;
+pragma solidity ^0.5.11;
 
 contract Types {
     bool public a; // note: public variables => getter

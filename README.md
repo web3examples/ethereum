@@ -187,6 +187,12 @@ See: [ENS Examples](ens_examples)
 
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+## TheGraph examples
+See: [TheGraph Examples](thegraph_examples) 
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
 ## Wallet examples
 See: [Wallet Examples](wallet_examples) 
 

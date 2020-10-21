@@ -1,4 +1,4 @@
-pragma solidity ^0.5.12;
+pragma solidity ^0.5.11;
 
 contract RegisterParticipants {
     mapping(address => bool) public MapParticipant;
@@ -13,10 +13,9 @@ contract RegisterParticipants {
         uint i=IndexInList[msg.sender];
         if (i > 0) { // Delete previous participation entry
             ListParticipant[i] = ListParticipant[ListParticipant.length - 1]; // switch
-            delete ListParticipant[ListParticipant.length - 1]; // now we can delete last
-            ListParticipant.length--; // no longer allowed in solidity 6
             IndexInList[msg.sender]=0;
-            IndexInList[ListParticipant[i]]=i;
+            IndexInList[ListParticipant[i]]=i;          
+            ListParticipant.pop();
         }
         if (Join) {
              ListParticipant.push(msg.sender); 

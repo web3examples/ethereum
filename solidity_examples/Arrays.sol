@@ -17,7 +17,7 @@ contract TestArray {
       List.push(temp);
     }
   
-    function ListLength() public returns(uint) {
+    function ListLength() public view returns(uint) {
       return List.length;
     }
 }

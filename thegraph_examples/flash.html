@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Flash</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() { 
+            const query=`
+                  {
+                    flashLoans(first: 10, orderBy: timestamp, orderDirection: desc) {
+                      id
+                      reserve {
+                        name
+                        symbol
+                      }
+                      amount,
+                      target,
+                      timestamp
+                    }
+                  }  
+                  `
+            const URL = 'https://api.thegraph.com/subgraphs/name/aave/protocol';             
+            let body = JSON.stringify({query: query});
+            var res=await fetch(URL, {
+                method: 'post',
+                headers: {'Content-Type': 'application/json'},
+                body: body
+            })
+            var json=await res.json()            
+            for (const flashsloan of json.data.flashLoans) 
+                log(JSON.stringify(flashsloan) )
+        }
+        f();
+        </script>        
+    </body>
+</html>

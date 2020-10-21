@@ -78,7 +78,6 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Address external     | [sol6_addressexternal]
 | Fallback Receive     | [sol6_fallbackreceive]
 | Library              | [sol6_library]
-| Mapping              | [sol6_mapping]
 | Override             | [sol6_override]
 | Override multiple    | [sol6_overridemultiple]
 | Shadowing            | [sol6_shadowing]

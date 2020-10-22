@@ -1,0 +1,61 @@
+<!-- First install the "snap" version of metamask from one of the following links:
+    https://github.com/MetaMask/metamask-snaps-beta/releases
+    https://github.com/NodeFactoryIo/metamask-snaps-beta/releases
+-->
+<!doctype html>
+<html>
+  <body>
+    <h1>MetaMask snap: add account</h1>    
+    <button class="add" id="add" onclick="add()">Add</button>    
+  </body>
+  <script>
+    const adr="0x0000000000000000000000000000000000000000" // this is the account that will be added to metamask
+    document.getElementById("add").innerHTML=`Add: ${adr}`
+    var snap= // this is the code of the snap, that will run in the metamask environment
+    `    
+    async function run() {
+        console.log("Try to add address ${adr}");
+        const callparam={
+              method: 'wallet_manageIdentities',
+              params: [ 'add', { address: '${adr}' }],
+            }
+        const result=await wallet.send(callparam).catch(console.log)
+        console.log(result)
+    }
+    run()
+    `
+
+    var snapbundle= // this is a wrapper for the snap, normally made by "snap build"
+    `() => (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i])
+    {var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);
+    if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");
+    throw a.code="MODULE_NOT_FOUND",a}
+    var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];
+    return o(n||r)},p,p.exports,r,e,n,t)}
+    return n[i].exports}
+    for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()
+    ({1:[function(require,module,exports){
+    ${snap}
+    },{}]},{},[1])`
+
+    const blobsnap = new Blob([snapbundle], {type : 'application/javascript'});
+    var urlsnap=URL.createObjectURL(blobsnap)   // this is a link to the wrapped snap, so it can be loaded by metamask
+    
+    var package={  // this is the source for the "package.json" that links to the snap and requirst premissions
+        "web3Wallet": {
+            "bundle": { "url": urlsnap }, // this is the link to the snap
+            "initialPermissions": { "wallet_manageIdentities": {} } // these are the permissions
+        }
+    }
+    
+    const blob = new Blob([JSON.stringify(package, null, 2)], {type : 'application/json'});
+    var url=URL.createObjectURL(blob)    // this is a link to the package, which can be loaded by metamask
+
+    async function add () { // install snap & get permissions
+      await ethereum.send({
+        method: 'wallet_enable',
+        params: [{ wallet_plugin: { [url]: {} } }]
+      })
+    }
+  </script>
+</html>

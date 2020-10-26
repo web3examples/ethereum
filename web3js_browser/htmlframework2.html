@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script src="web3-browserify.js"></script>  
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
     </head>
     <body>
         <h1>HTML Framework 2</h1>
@@ -12,15 +12,9 @@
         }
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
-            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
-                methods: [{
-                    name: 'eth_requestAccounts',
-                    call: 'eth_requestAccounts',
-                    params: 0
-                }]
-            });
+
             log(`Version of web3.js: ${web3.version}`);            
-            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
             log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
             var acts=await web3.eth.getAccounts().catch(log);
             log(`Here are the accounts: ${JSON.stringify(acts)}`);

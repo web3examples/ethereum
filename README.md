@@ -1017,6 +1017,7 @@ See: [Demo Ethereum software](demo)
 
 | Overview                   | Solidity collections    | Solidity code examples                    | Solidity training                           | Cheat sheets
 | -----------------          |  ---------------        | ----------------                          | -------------                               | -------
+| [soliditylang]             |                         |                                           |                                             |
 | [cryptozombies]            | [code_examples]         | [soliditybyexample]<br>[smartcontractprg] | [remix-eth] (workshops)                     | [cheatsheet1]
 | [solidity_indepth]         | [smartcontract_codes]   | [babysteps]                               | [ninabreznik_learn]<br>[willitscale_learn]  | [cheatsheet2]
 | [solidity_overview]        | [etherscan_verified]    | [compiler_errors]                         | [bitdegree_sol]                             | [cheatsheet3] 
@@ -1032,7 +1033,7 @@ See: [Demo Ethereum software](demo)
 | [manojpramesh]
 
 
-
+[soliditylang]:         https://soliditylang.org
 [se_examples]:         https://ethereum.stackexchange.com/questions/2940/where-can-i-find-some-solidity-smart-contract-source-code-examples
 [certik_sol]:           https://solidity-tour.certik.org/
 

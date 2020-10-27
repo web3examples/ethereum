@@ -3,10 +3,10 @@ TheGraph examples
 
 # TheGraph
 
-| Feature          | Link       | Github html   | Github JS | Github JS Vanilla
-| --------         | ----       | --------      | --------  | -------------------
-| Flash            | [flashweb] | [flashweb_gh] | [flash]   | [flash_vjs]
-| ENS              | [ensweb]   | [ensweb_gh]
+| Feature             | Link       | Github html   | Github JS | Github JS Vanilla
+| --------            | ----       | --------      | --------  | -------------------
+| Flash loans on Aave | [flashweb] | [flashweb_gh] | [flash]   | [flash_vjs]
+| ENS                 | [ensweb]   | [ensweb_gh]
 
 [flash_js]:          https://github.com/web3examples/ethereum/blob/master/thegraph_examples/flash.js
 [flash_vjs]:         https://github.com/web3examples/ethereum/blob/master/thegraph_examples/flash.js

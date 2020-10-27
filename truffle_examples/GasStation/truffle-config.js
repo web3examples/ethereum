@@ -52,5 +52,5 @@ module.exports = {
     // default gasPrice: 20000000000, // 20 gwei
     },
     mocha: { },
-    compilers: { solc: {} }
+    compilers: { solc: { version: "^0.6.10"} }
 }

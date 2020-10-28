@@ -17,17 +17,17 @@ async function GetJson(url) {
 async function init() {
     userAddr  = (await window.ethereum.enable())[0]
     window.ethereum.on("accountsChanged", async (accounts) => {
-            userAddr = accounts[0];
-			log(`New address:    ${userAddr}`)
-    	});
+        userAddr = accounts[0];
+        log(`New address:    ${userAddr}`)
+    });
     log(`My address:     ${userAddr}`)
     const nid = window.ethereum.networkVersion   
     if (nid != 4) { alert("I only know the addresses for rinkeby"); return }
     const CaptureTheFlaginfo = await GetJson("build/contracts/CaptureTheFlag.json")
     const PayMasterInfo      = await GetJson("build/contracts/NaivePaymaster.json")
     const PayMasterAdr       = PayMasterInfo.networks[nid].address
-	const gsnConfig          = await gsn.resolveConfigurationGSN(window.ethereum,{paymasterAddress: PayMasterAdr})
-	const gsnProvider        = new gsn.RelayProvider(window.ethereum, gsnConfig)	
+    const gsnConfig          = await gsn.resolveConfigurationGSN(window.ethereum,{paymasterAddress: PayMasterAdr})
+    const gsnProvider        = new gsn.RelayProvider(window.ethereum, gsnConfig)
     web3                     = new Web3(gsnProvider)
     CaptureTheFlagContract   = new web3.eth.Contract(CaptureTheFlaginfo.abi,CaptureTheFlaginfo.networks[nid].address) 
     PayMasterContract        = new web3.eth.Contract(PayMasterInfo.abi,     PayMasterInfo.networks[nid].address) 
@@ -37,7 +37,7 @@ async function init() {
 async function GetHolder() {
     var result=await CaptureTheFlagContract.methods.flagHolder().call()
     log(`Current holder: ${result}`)
-    var pmbalance=await PayMasterContract.methods.getRelayHubDeposit().call()    
+    var pmbalance=await PayMasterContract.methods.getRelayHubDeposit().call()
     log(`PayMaster left: ${web3.utils.fromWei(pmbalance, 'ether')} eth`)
 }
 async function gsnContractCall() {    

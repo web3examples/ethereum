@@ -1,0 +1,277 @@
+{
+  "contractName": "RelayHubInterface",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "target",
+          "type": "address"
+        }
+      ],
+      "name": "depositFor",
+      "outputs": [],
+      "stateMutability": "payable",
+      "type": "function",
+      "payable": true
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.6.12+commit.27d51765\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[{\"internalType\":\"address\",\"name\":\"target\",\"type\":\"address\"}],\"name\":\"depositFor\",\"outputs\":[],\"stateMutability\":\"payable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Z/blockchain/web3examples/ethereum/truffle_examples/GasStation/contracts/RelayHubInterface.sol\":\"RelayHubInterface\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Z/blockchain/web3examples/ethereum/truffle_examples/GasStation/contracts/RelayHubInterface.sol\":{\"keccak256\":\"0x69552d946ca68c12af3294de323afa5a4e22e1d94147901330e16a95527bc78e\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://57a62698a2fe866d4732e7872b6e50471ef6299d4328393c49b4c7df30758f4d\",\"dweb:/ipfs/QmRj1XS2rv5tKSX4k3HBQkddDPKRsLHxzycsESpTDHPdP3\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b5060ef8061001f6000396000f3fe608060405260043610601c5760003560e01c8063aa67c919146021575b600080fd5b6037600480360381019060339190604f565b6039565b005b50565b60008135905060498160a5565b92915050565b600060208284031215606057600080fd5b6000606c84828501603c565b91505092915050565b6000607e826085565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60ac816075565b811460b657600080fd5b5056fea26469706673582212204fb85ad35ae8affe62757cd1f0cfc9d813f624290baddeca31fdd0f305636bc264736f6c634300060c0033",
+  "deployedBytecode": "0x608060405260043610601c5760003560e01c8063aa67c919146021575b600080fd5b6037600480360381019060339190604f565b6039565b005b50565b60008135905060498160a5565b92915050565b600060208284031215606057600080fd5b6000606c84828501603c565b91505092915050565b6000607e826085565b9050919050565b600073ffffffffffffffffffffffffffffffffffffffff82169050919050565b60ac816075565b811460b657600080fd5b5056fea26469706673582212204fb85ad35ae8affe62757cd1f0cfc9d813f624290baddeca31fdd0f305636bc264736f6c634300060c0033",
+  "immutableReferences": {},
+  "sourceMap": "91:140:3:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "91:140:3:-:0;;;;;;;;;;;;;;;;;;;;;131:96;;;;;;;;;;;;;:::i;:::-;;:::i;:::-;;;;:::o;5:130:-1:-;;85:6;72:20;63:29;;97:33;124:5;97:33;:::i;:::-;57:78;;;;:::o;142:241::-;;246:2;234:9;225:7;221:23;217:32;214:2;;;262:1;259;252:12;214:2;297:1;314:53;359:7;350:6;339:9;335:22;314:53;:::i;:::-;304:63;;276:97;208:175;;;;:::o;390:91::-;;452:24;470:5;452:24;:::i;:::-;441:35;;435:46;;;:::o;488:121::-;;561:42;554:5;550:54;539:65;;533:76;;;:::o;616:117::-;685:24;703:5;685:24;:::i;:::-;678:5;675:35;665:2;;724:1;721;714:12;665:2;659:74;:::o",
+  "source": "// SPDX-License-Identifier:MIT\npragma solidity ^0.6.9;\npragma experimental ABIEncoderV2;\n \ncontract RelayHubInterface   {\n    \n    function depositFor(address target) public virtual payable { // only the interface\n       \n    }\n \n}\n",
+  "sourcePath": "Z:/blockchain/web3examples/ethereum/truffle_examples/GasStation/contracts/RelayHubInterface.sol",
+  "ast": {
+    "absolutePath": "/Z/blockchain/web3examples/ethereum/truffle_examples/GasStation/contracts/RelayHubInterface.sol",
+    "exportedSymbols": {
+      "RelayHubInterface": [
+        249
+      ]
+    },
+    "id": 250,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 241,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "31:23:3"
+      },
+      {
+        "id": 242,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "55:33:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 249,
+        "linearizedBaseContracts": [
+          249
+        ],
+        "name": "RelayHubInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 247,
+              "nodeType": "Block",
+              "src": "190:37:3",
+              "statements": []
+            },
+            "documentation": null,
+            "functionSelector": "aa67c919",
+            "id": 248,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositFor",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 245,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 244,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 248,
+                  "src": "151:14:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 243,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "150:16:3"
+            },
+            "returnParameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:0:3"
+            },
+            "scope": 249,
+            "src": "131:96:3",
+            "stateMutability": "payable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 250,
+        "src": "91:140:3"
+      }
+    ],
+    "src": "31:201:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/Z/blockchain/web3examples/ethereum/truffle_examples/GasStation/contracts/RelayHubInterface.sol",
+    "exportedSymbols": {
+      "RelayHubInterface": [
+        249
+      ]
+    },
+    "id": 250,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 241,
+        "literals": [
+          "solidity",
+          "^",
+          "0.6",
+          ".9"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "31:23:3"
+      },
+      {
+        "id": 242,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "55:33:3"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 249,
+        "linearizedBaseContracts": [
+          249
+        ],
+        "name": "RelayHubInterface",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 247,
+              "nodeType": "Block",
+              "src": "190:37:3",
+              "statements": []
+            },
+            "documentation": null,
+            "functionSelector": "aa67c919",
+            "id": 248,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "depositFor",
+            "nodeType": "FunctionDefinition",
+            "overrides": null,
+            "parameters": {
+              "id": 245,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 244,
+                  "mutability": "mutable",
+                  "name": "target",
+                  "nodeType": "VariableDeclaration",
+                  "overrides": null,
+                  "scope": 248,
+                  "src": "151:14:3",
+                  "stateVariable": false,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 243,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "151:7:3",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "150:16:3"
+            },
+            "returnParameters": {
+              "id": 246,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "190:0:3"
+            },
+            "scope": 249,
+            "src": "131:96:3",
+            "stateMutability": "payable",
+            "virtual": true,
+            "visibility": "public"
+          }
+        ],
+        "scope": 250,
+        "src": "91:140:3"
+      }
+    ],
+    "src": "31:201:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.6.12+commit.27d51765.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "3.3.1",
+  "updatedAt": "2020-10-28T12:31:06.666Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

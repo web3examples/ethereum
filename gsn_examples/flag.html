@@ -1,18 +1,25 @@
 <html>
 <head>
-    <title>GSNv2 Test</title>
     <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
     <script src="importmodules\gsn-browserify.js"></script>
 <script>
 let userAddr   // The user's address
 let CaptureTheFlagContract
 
+function log(logstr) {   
+    document.getElementById("log").innerHTML +=logstr+"\n";
+}
 async function GetJson(url) {
     const f=await fetch(url)
     return await f.json()
 }
 async function init() {
     userAddr  = (await window.ethereum.enable())[0]
+    window.ethereum.on("accountsChanged", async (accounts) => {
+            userAddr = accounts[0];
+			log(`New address:    ${userAddr}`)
+    	});
+    log(`My address:     ${userAddr}`)
     const nid = window.ethereum.networkVersion   
     if (nid != 4) { alert("I only know the addresses for rinkeby"); return }
     const CaptureTheFlaginfo = await GetJson("build/contracts/CaptureTheFlag.json")
@@ -22,17 +29,24 @@ async function init() {
 	const gsnProvider        = new gsn.RelayProvider(window.ethereum, gsnConfig)	
     web3                     = new Web3(gsnProvider)
     CaptureTheFlagContract   = new web3.eth.Contract(CaptureTheFlaginfo.abi,CaptureTheFlaginfo.networks[nid].address) 
+    await GetHolder()
+
+}
+async function GetHolder() {
+    var result=await CaptureTheFlagContract.methods.flagHolder().call()
+    log(`Current holder: ${result}`)
 }
 async function gsnContractCall() {    
-    var result=await CaptureTheFlagContract.methods.captureFlag().send({from:userAddr})
-    console.log(result.blockHash)
-    console.log(result.blockNumber)    
+    log("Sign the transaction and wait 20 seconds")
+    await CaptureTheFlagContract.methods.captureFlag().send({from:userAddr})
+    await GetHolder()    
 }   
 init()
 </script>
 </head>
 <body>
-    <h2>GSNv2 Test App</h2>
-    <button onClick="gsnContractCall()">Capture the Flag (for free)</button>
+    <h2>GSNv2 Test App: Capture the flag</h2>
+    <button onClick="gsnContractCall()">Capture the Flag (use eth-less account)</button>
+    <pre id="log" style="width:100%;height:200px"></pre>
 </body>
 </html>

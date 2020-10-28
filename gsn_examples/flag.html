@@ -5,6 +5,7 @@
 <script>
 let userAddr   // The user's address
 let CaptureTheFlagContract
+let PayMasterContract
 
 function log(logstr) {   
     document.getElementById("log").innerHTML +=logstr+"\n";
@@ -29,12 +30,15 @@ async function init() {
 	const gsnProvider        = new gsn.RelayProvider(window.ethereum, gsnConfig)	
     web3                     = new Web3(gsnProvider)
     CaptureTheFlagContract   = new web3.eth.Contract(CaptureTheFlaginfo.abi,CaptureTheFlaginfo.networks[nid].address) 
+    PayMasterContract        = new web3.eth.Contract(PayMasterInfo.abi,     PayMasterInfo.networks[nid].address) 
     await GetHolder()
 
 }
 async function GetHolder() {
     var result=await CaptureTheFlagContract.methods.flagHolder().call()
     log(`Current holder: ${result}`)
+    var pmbalance=await PayMasterContract.methods.getRelayHubDeposit().call()    
+    log(`PayMaster left: ${web3.utils.fromWei(pmbalance, 'ether')} eth`)
 }
 async function gsnContractCall() {    
     log("Sign the transaction and wait 20 seconds")

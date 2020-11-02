@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
+    </head>
+    <body>
+        <h1>3Box profile</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>        
+        <img id="userphoto" style="width:100px;height:100px"></img>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function GetImageIPFS(cid) { //retrieve the CID from an IPFS server
+            var data=await fetch(`https://ipfs.io/ipfs/${cid}`)
+            if (!data) return undefined
+            var blob=await data.blob()
+            var url=URL.createObjectURL(blob) // store image as an object that can be used with an image
+            return url;
+        } 
+        
+        async function f() { 
+            await import("https://unpkg.com/3box/dist/3box.js") 
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
+            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
+            if (!result || !result[0]) {log("No ethereum address");return; }
+            const profile = await Box.getProfile(result[0])
+            if (!profile) { log("profile not found on 3box");return }
+            if (profile.name) log(`Name: ${profile.name?profile.name:"not found"}`)
+            if (profile.emoji) log(`Emoji: ${profile.emoji?profile.emoji:"not found"}`)
+            if (!profile.image) { log("no image found on 3box");return }
+            var imagecid=(profile.image[0].contentUrl)[`\/`] // retrieve the image cid from the profile object
+            document.getElementById("userphoto").src=await GetImageIPFS(imagecid)
+        }
+        f();
+        </script>        
+    </body>
+</html>

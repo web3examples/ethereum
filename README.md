@@ -537,10 +537,10 @@ See: [Demo Ethereum software](demo)
 
 # Manage and monitor 
 
-| Management nodes   | Monitoring Dapps
-| -----------        | -------------
-| [eth-netstats]     | [terminal]
-| [grafana1]         | [moesif_web3]
+| Management nodes   | Monitoring Dapps | General smart contract monitoring
+| -----------        | -------------    | ------------
+| [eth-netstats]     | [terminal]       | [defender_oz]
+| [grafana1]         | [moesif_web3]    | [tenderly.co]
 | [grafana2]
 | [grafana3]
 | [grafana4]
@@ -560,7 +560,8 @@ See: [Demo Ethereum software](demo)
 [terminal]:     https://terminal.co/
 [moesif_web3]:  https://www.moesif.com/docs/platform/ethereum-web3/
 
-
+[defender_oz]:  https://defender.openzeppelin.com
+[tenderly.co]:  https://tenderly.co
 
 # Interfaces
 
@@ -2997,6 +2998,8 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 | [blockgeeks_dapps]
 | [producthunt_token]
 | [dap_ps]
+| [everest]
+| [thedapplist]
 
 [stateofthedapps]:      https://www.stateofthedapps.com/
 [sotd_sheet]:           https://docs.google.com/spreadsheets/d/1VdRMFENPzjL2V-vZhcc_aa5-ysf243t5vXlxC2b054g/htmlview
@@ -3027,6 +3030,9 @@ Also see: [Ecosystem - Projects](../ecosystem/#projects)
 [blockgeeks_dapps]:     https://blockgeeks.com/dapp-list/
 [producthunt_token]:    https://www.producthunt.com/@yanroux/collections/token-economy
 [dap_ps]:               https://dap.ps/
+
+[everest]:              http://everest.link
+[thedapplist]:          https://thedapplist.com
 
 [nonfungible]:          https://nonfungible.com/market/history
 

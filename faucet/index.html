@@ -4,7 +4,7 @@
         <link rel="shortcut icon" href="https://web3examples.com/logo.png">  
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
         <meta charset="UTF-8">  
-        <script src="http://web3examples.com/lib/web3-browserify.js"></script>           
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
     </head>
 <html>
 
@@ -54,8 +54,8 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
 
     async function EtherscanLink(pref,link) {     
        var nwType = await web3.eth.net.getNetworkType();
-       return `<a href="https://${nwType}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`;
-    }
+       return `<a href="https://${nwType}.etherscan.io/${pref}/${link}" target="_blank" >${link}</a>`; 
+    } 
     
     function log(str,...arguments) {        
         var logstr=arguments.toString();

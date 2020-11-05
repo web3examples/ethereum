@@ -8,7 +8,7 @@ Demo of Javascript features
 | Feature          | Demo
 | --------         | ----
 | Version          | [version]
-| getBlockNumber   | [getblocknumber]
+| getBlockNumber   | [getblocknumber_cloudflare]<br>[getblocknumber_infura]
 | Vanity account   | [vanity_account]
 | Sign             | [sign]
 | Send Transaction | [sendtransaction]
@@ -20,8 +20,9 @@ Demo of Javascript features
 | Logtest          | [logtest]
 
 
-[version]:           https://github.com/web3examples/ethereum/blob/master/web3js/version.js
-[getblocknumber]:    https://github.com/web3examples/ethereum/blob/master/web3js/getBlockNumber.js
+[version]:                    https://github.com/web3examples/ethereum/blob/master/web3js/version.js
+[getblocknumber_cloudflare]:  https://github.com/web3examples/ethereum/blob/master/web3js/getBlockNumber_cloudflare.js
+[getblocknumber_infura]:      https://github.com/web3examples/ethereum/blob/master/web3js/getBlockNumber_infura.js
 [vanity_account]:    https://github.com/web3examples/ethereum/blob/master/web3js/vanity_account.js
 [sign]:              https://github.com/web3examples/ethereum/blob/master/web3js/sign.js
 [sendtransaction]:   https://github.com/web3examples/ethereum/blob/master/web3js/sendtransaction.js

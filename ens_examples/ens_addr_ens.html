@@ -12,14 +12,7 @@
         }
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
-            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
-                methods: [{
-                    name: 'eth_requestAccounts',
-                    call: 'eth_requestAccounts',
-                    params: 0
-                }]
-            });
-            var result=await web3.eth_requestAccounts().catch(x=>log(x.message));
+            var result=await web3.eth.requestAccounts()
             const ens  = new ENS(web3.currentProvider);
             const name='web3examples.eth';
             log(`Checking ${name}`);   

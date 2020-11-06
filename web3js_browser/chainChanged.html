@@ -24,7 +24,7 @@
             ethereum.on('chainChanged', newChain);
             ethereum.on('networkChanged',newChain); // still used in metamask mobile
             ethereum.on('chainIdChanged',newChain);      // temp workaround
-            ethereum.autoRefreshOnNetworkChange = false; // temp workaround                    
+            ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
             function newChain(newchainId) {
                 chainId=newchainId;
                 log(`We have a new chain: ${chainId}`);

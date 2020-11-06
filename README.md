@@ -1,9 +1,4 @@
-
-
-|[library.md](Library) 
-
-# Interactive examples
-
+# Interactive examples Ethereum
 
 | Name |
 | ----- |

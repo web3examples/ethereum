@@ -20,7 +20,7 @@ Web3.js examples in browser
 | accounts Changed              | [accountsChanged]     | [accountsChanged_gh]
 | chain Changed                 | [chainChanged]        | [chainChanged_gh]
 | ..............   
-| E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp1_gh]<br>[E2E_Test_Dapp2_gh]
+| E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
 | Mini casino: snippet          | [casino_snippet]      | [casino_snippet_gh]
 | Mini casino: full version     | [casino]              | [casino1_github]<br>[casino2_github]
 | Location snippet              | [location_snippet]    | [location_snippet_gh]
@@ -50,7 +50,8 @@ Web3.js examples in browser
 [accountsChanged]:   https://web3examples.com/ethereum/web3js_browser/accountsChanged.html
 [chainChanged]:      https://web3examples.com/ethereum/web3js_browser/chainChanged.html
 [sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
-[E2E_Test_Dapp]:     https://web3examples.com/ethereum/web3js_browser/E2E_Test_Dapp.html
+[E2E_Test_Dapp]:     https://metamask.github.io/test-dapp
+
 [casino_snippet]:    https://web3examples.com/ethereum/web3js_browser/casino_snippet.html
 [location_snippet]:  https://web3examples.com/ethereum/web3js_browser/location_snippet.html
 [faucet_snippet]:    https://web3examples.com/ethereum/web3js_browser/faucet_snippet.html
@@ -68,8 +69,7 @@ Web3.js examples in browser
 [sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
 [accountsChanged_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/accountsChanged.html
 [chainChanged_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/chainChanged.html
-[E2E_Test_Dapp1_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/E2E_Test_Dapp.html
-[E2E_Test_Dapp2_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/E2E_Test_Dapp.js
+[E2E_Test_Dapp_gh]:      https://github.com/MetaMask/test-dapp/blob/master/src/index.js
 [casino_snippet_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/casino_snippet.html
 [location_snippet_gh]:   https://github.com/web3examples/ethereum/blob/master/web3js_browser/location_snippet.html
 [faucet_snippet_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/faucet_snippet.html

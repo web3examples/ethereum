@@ -1,5 +1,5 @@
 ([Up](..) [Home](..\..))
-# Interactive Ethereum
+# Ethereum Examples
 
 | Tool                              | Building block
 | -----                             | ------------------

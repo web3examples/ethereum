@@ -13,7 +13,8 @@
 |[Ledger Examples](ledger_examples)          |[Defender Examples](defender_examples)
 |[Wallet Examples](wallet_examples) 
 
-#Tools
+# Other
+
 | List
 |------------
 |[Tools and installation](install) 

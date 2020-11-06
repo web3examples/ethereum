@@ -3,7 +3,7 @@
 
 | Name |
 | ----- |
-| [Solidity Examples](solidity_examples) 
+|[Solidity Examples](solidity_examples) 
 |[RPC Examples](rpc)  
 |[Web3js](web3js) 
 |[Web3js_browser](web3js_browser) 
@@ -18,4 +18,7 @@
 |[Wallet Examples](wallet_examples) 
 |[Tools and installation](install) 
 |[Demo Ethereum software](demo)  
-
+|[3Box Examples](3box_examples)
+|[Defender Examples](defender_examples)
+|[Gasstation Examples](gsn_examples)
+|[MetaMask Snaps Examples](snaps_example)

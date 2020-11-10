@@ -3,7 +3,7 @@
 
 | Tool                              | Building block                    | Layer 2
 | -----                             | ------------------                | ------
-|[Solidity](solidity_examples)      |[Token](token_examples)            | 
+|[Solidity](solidity_examples)      |[Token](token_examples)            | [ZKSync](layer2_zksync) 
 |[RPC](rpc)                         |[ENS](ens_examples) 
 |[Web3js](web3js)                   |[Gasstation](gsn_examples)
 |[Web3js_browser](web3js_browser)   |[MetaMask Snaps](snaps_example)

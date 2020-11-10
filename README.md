@@ -1,9 +1,9 @@
 ([Up](..) [Home](..\..))
 # Ethereum Examples
 
-| Tool                              | Building block
-| -----                             | ------------------
-|[Solidity](solidity_examples)      |[Token](token_examples)
+| Tool                              | Building block                    | Layer 2
+| -----                             | ------------------                | ------
+|[Solidity](solidity_examples)      |[Token](token_examples)            | 
 |[RPC](rpc)                         |[ENS](ens_examples) 
 |[Web3js](web3js)                   |[Gasstation](gsn_examples)
 |[Web3js_browser](web3js_browser)   |[MetaMask Snaps](snaps_example)
@@ -17,6 +17,8 @@
 
 | List
 |------------
+|[Ethereum background](..\library\ethereum.md)
+|[Layer2 background](..\library\eth_layer2.md)
 |[Tools and installation](install) 
 |[Demo Ethereum software](demo)  
 

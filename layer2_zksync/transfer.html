@@ -1,0 +1,60 @@
+ <html>
+ <body>
+
+ <script type="text/javascript" src="https://cdn.ethers.io/lib/ethers-5.0.umd.min.js"></script>
+ <script type="text/javascript" src="https://unpkg.com/zksync@0.6.3/dist/main.js"></script>
+ <script type="text/javascript">
+ (async () => {
+    await zksync.crypto.loadZkSyncCrypto();
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    await window.ethereum.enable();
+    var accounts=await provider.listAccounts()
+    const signer = provider.getSigner()
+    var userAddress = await signer.getAddress();
+    const bcnetwork = await provider.getNetwork();    
+    var networkname = bcnetwork.chainId === 1 ? 'mainnet' : bcnetwork.name; // ethers identifies mainnet as 'homestead' so we rename for clarity
+    var balance = await provider.getBalance(accounts[0])
+    console.log(ethers.utils.formatEther(balance))
+
+    const zksProvider = await zksync.getDefaultProvider(networkname);
+    console.log(zksProvider);
+    const SyncWallet = await zksync.Wallet.fromEthSigner(signer, zksProvider); // login (by signing a message)
+    console.log(SyncWallet);
+
+    if ( ! await SyncWallet.isSigningKeySet()) {
+         const changePubkey= await SyncWallet.setSigningKey();
+        console.log(changePubkey)
+        // Wait till transaction is committed
+        const receipt = await changePubkey.awaitReceipt();
+        console.log(receipt);
+    }
+    console.log(`Private key: ${ethers.utils.hexlify(SyncWallet.signer.privateKey)}`)
+    console.log(`Public key: ${SyncWallet.signer.pubKeyHash()}`)
+    
+    console.log("ETH  balance:", ethers.utils.formatEther(await SyncWallet.getBalance("ETH" )));
+    console.log("MLTT balance:", ethers.utils.formatEther(await SyncWallet.getBalance("MLTT")));
+    
+    
+    var state=await zksProvider.getState(accounts[0])
+    console.log(state);      
+
+    var transfer={
+        to: "0x6c728716a68499d486cDA1701AB13C7b57f30aA0",
+        token: "0x0000000000000000000000000000000000000000",
+        amount: ethers.utils.parseEther("0.001"), 
+        fee: ethers.utils.parseEther("0.001") 
+    }
+       
+    //const transactionReceipt = await SyncWallet.syncTransfer(transfer)    
+    //console.log(transactionReceipt)
+
+    
+ })();
+ 
+ // https://rinkeby.zksync.io/account
+ // https://rinkeby.zkscan.io/explorer
+ 
+ </script>
+ </body>
+ </html>
+ 

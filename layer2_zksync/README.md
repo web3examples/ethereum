@@ -9,6 +9,5 @@ Demo of Javascript features
 | --------            | ----       | --------      
 | Transer             | [transfer] | [transfer_gh] 
  
-[transfer]:    https://web3examples.com/ethereum/web3js_browser/transfer.html  
-
-[transfer_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/transfer.html
+[transfer]:    https://web3examples.com/ethereum/layer2_zksync/transfer.html  
+[transfer_gh]:     https://github.com/web3examples/ethereum/blob/master/layer2_zksync/transfer.html

@@ -1,7 +1,7 @@
 @echo off
 
 set /p infuraKey=<.infura
-set request=web3_clientVersion
+set request=eth_blockNumber
 set body={"jsonrpc":"2.0","method":"%request%","params":[],"id":67}
 echo Mainnets
 call :nw https://mainnet.infura.io /v3/%infuraKey%

@@ -6,7 +6,7 @@ Compare to <a href="https://etherscan.io/blocks" target="_blank">Etherscan</a>
 function log(logstr) {   
     document.getElementById("log").innerHTML +=logstr+"\n";
 }    
-const server="ws://localhost:8545";
+const server="ws://localhost:7545";
 log(`Opening connection to ${server}`);
 var socket = new WebSocket(server);
 socket.onopen = function (event) {

@@ -3,36 +3,51 @@
 ([Up](..) [Home](..\..))<br>
 These are tools to use the RPC interface of ethereum nodes.
 
-| Command            | Target            | Windows          | Linux             | Website
-| ----               | ----              | ------------     |-----------        | ----------
-| web3_clientVersion | mainnet infura    | [ver_inf_win]    | [ver_inf_linux]
-| web3_clientVersion | several networks  | [ver_sev_win]    |
-| web3_clientVersion | localhost 8545    | [ver_local_win]
-| web3_sha3          | mainnet infura    | [sha3_inf_win]
-| eth_getBalance     | mainnet infura    | [bal_inf_win]    | [bal_inf_linux]
-| eth_getBalance     | several networks  | [bal_sev_win]
-| eth_accounts       | localhost 8545    | [act_local_win]
-| eth_sendTransaction| localhost 8545    | [trans_local_win]
-| eth_call           | ropsten           | [call_rop_win]
-| general info       | mainnet infura    | [gen_inf_win]
-| blockchain data    | mainnet infura    | [bcdata_inf_win]
-| GetSetEmit         | ropsten infura    | [getsetemit_win]
-| eth_blockNumber    | mainnet infura    |                  |                   | [blocknr]
-| eth_subscribe      | mainnet infura    |                  |                   | [wsblocks]
+| Command                    | Win Ganache (7545)  | Win Geth (8525)  | Win mainnet    | Win several networks | Linux mainnet    | Web interface
+| ----                       | ------------        |-----------       | ----------     | ----                 | ----             | ------
+| web3_clientVersion         | [ver_win_gan]       | [ver_win_geth]   | [ver_win_main] | [ver_win_sev]        | [ver_linux_main]
+| eth_accounts               | [act_win_gan]       |                  |                | 
+| eth_sendTransaction        | [trans_win_gan]     |                  |                |
+| eth_blockNumber            | [bl_win_gan]        |                  | [bl_win_sev]   |                      |                  | [blocknr]
+| eth_getBalance             | [bal_win_gan]       |                  | [bal_win_sev]  |                      | [bal_linux_main]
+| eth_call                   |                     |                  | [call_win_main]     
+| general info               |                     |                  | [gen_inf_win]
+| blockchain data            |                     |                  | [bcdata_win_inf]
+| GetSetEmit                 |                     |                  |                | [getsetemit_win]
+| eth_subscribe (webinterface)| [wsblocks_gan]     |                  | [wsblocks]
 
-[ver_inf_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_mainnet.infura.io.cmd 
-[ver_inf_linux]:    https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_mainnet.infura.io
-[ver_sev_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_several_networks.cmd
-[bal_inf_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_mainnet.infura.io.cmd
-[bal_inf_linux]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_mainnet.infura.io
-[bal_sev_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_several_networks.cmd
-[gen_inf_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/general_info_mainnet.infura.io.cmd
-[sha3_inf_win]:     https://github.com/web3examples/ethereum/blob/master/rpc/web3_sha3_mainnet.infura.io.cmd
-[bcdata_inf_win]:   https://github.com/web3examples/ethereum/blob/master/rpc/bcdata_mainnet.infura.io.cmd
+
+[ver_win_gan]:       https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_ganache.cmd
+[ver_win_geth]:      https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_geth.cmd
+[ver_win_main]:      https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_mainnet.cmd 
+[ver_win_sev]:       https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_several_networks.cmd
+[ver_linux_main]:    https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_mainnet
+
+[act_win_gan]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_accounts_ganache.cmd
+
+[trans_win_gan]:  https://github.com/web3examples/ethereum/blob/master/rpc/eth_sendTransaction_ganache.cmd
+
+[bl_win_gan]:       https://github.com/web3examples/ethereum/blob/master/rpc/eth_blockNumber_ganache.cmd
+[bl_win_sev]:       https://github.com/web3examples/ethereum/blob/master/rpc/eth_blockNumber_several_networks.cmd
+
+
+
+[bal_win_gan]:      https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_ganache.cmd
+[bal_linux_main]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_mainnet.infura.io
+[bal_win_sev]:      https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_several_networks.cmd
+
+[call_win_main]:     https://github.com/web3examples/ethereum/blob/master/rpc/eth_call_mainnet.cmd
+
+
+
+[gen_inf_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/general_info_mainnet.cmd
+
+[bcdata_win_inf]:   https://github.com/web3examples/ethereum/blob/master/rpc/bcdata_mainnet.cmd
 [blocknr]:          https://web3examples.com/ethereum/rpc/blocknr.html
 [wsblocks]:         https://web3examples.com/ethereum/rpc/wsblocks.html
-[ver_local_win]:    https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_port_8545.cmd
-[trans_local_win]:  https://github.com/web3examples/ethereum/blob/master/rpc/eth_sendTransaction_ganache.cmd
-[act_local_win]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_accounts_ganache.cmd
-[call_rop_win]:     https://github.com/web3examples/ethereum/blob/master/rpc/eth_call_ropsten.cmd
+[wsblocks_gan]:     https://web3examples.com/ethereum/rpc/wsblocks_ganache.html
+
+
+
+
 [getsetemit_win]:   https://github.com/web3examples/ethereum/blob/master/rpc/getsetemit.cmd

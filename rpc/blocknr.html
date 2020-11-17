@@ -9,7 +9,7 @@ function log(logstr) {
 async function f() {
   const request=JSON.stringify({"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":67});
   log(`Sending ${request}`);
-  const rawResponse = await fetch('https://mainnet.infura.io', {
+  const rawResponse = await fetch('https://cloudflare-eth.com', {
     method: 'POST',
     headers: {
       'Accept': 'application/json',

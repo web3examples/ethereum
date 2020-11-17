@@ -6,7 +6,7 @@ Compare to <a href="https://etherscan.io/blocks" target="_blank">Etherscan</a>
 function log(logstr) {   
     document.getElementById("log").innerHTML +=logstr+"\n";
 }    
-const server="wss://mainnet.infura.io/ws";
+const server="wss://cloudflare-eth.com/ws";
 log(`Opening connection to ${server}`);
 var socket = new WebSocket(server);
 socket.onopen = function (event) {

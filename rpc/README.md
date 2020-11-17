@@ -5,18 +5,18 @@ These are tools to use the RPC interface of ethereum nodes.
 
 ## Commands
 
-| Command                    | Win Ganache (7545)  | Win Geth (8545)  | Win mainnet    | Win several networks | Linux mainnet    | Web interface
-| ----                       | ------------        |-----------       | ----------     | ----                 | ----             | ------
+| Command                    | Win Ganache (7545)  | Win Geth (8545)  | Win mainnet    | Win several networks | Linux mainnet    | Web interface Ganache | Web int Mainnet
+| ----                       | ------------        |-----------       | ----------     | ----                 | ----             | ------                |
 | web3_clientVersion         | [ver_win_gan]       | [ver_win_geth]   | [ver_win_main] | [ver_win_sev]        | [ver_linux_main]
 | eth_accounts               | [act_win_gan]       |                  |                | 
 | eth_sendTransaction        | [trans_win_gan]     |                  |                |
-| eth_blockNumber            | [bl_win_gan]        |                  |                | [bl_win_sev]         |                  | [blocknr]
+| eth_blockNumber            | [bl_win_gan]        |                  |                | [bl_win_sev]         |                  | [blocknr_gan]         | [blocknr]
 | eth_getBalance             | [bal_win_gan]       |                  |                | [bal_win_sev]        | [bal_linux_main]
 | eth_call                   |                     |                  | [call_win_main]     
 | general info               |                     |                  | [gen_inf_win]
 | blockchain data            |                     |                  | [bcdata_win_inf]
 | GetSetEmit                 |                     |                  |                | [getsetemit_win]
-| eth_subscribe (ganache)    |                    |                  |                 |                   |                   |  [wsblocks_gan]    
+| eth_subscribe (ganache)    |                     |                  |                |                   |                     |  [wsblocks_gan]    
 
 ## RPC Websites
 
@@ -45,6 +45,8 @@ These are tools to use the RPC interface of ethereum nodes.
 [bl_win_sev]:       https://github.com/web3examples/ethereum/blob/master/rpc/eth_blockNumber_several_networks.cmd
 
 
+[blocknr]:          https://web3examples.com/ethereum/rpc/blocknr.html
+[blocknr_gan]:      https://web3examples.com/ethereum/rpc/blocknr_ganache.html
 
 [bal_win_gan]:      https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_ganache.cmd
 [bal_linux_main]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_mainnet
@@ -57,7 +59,7 @@ These are tools to use the RPC interface of ethereum nodes.
 [gen_inf_win]:      https://github.com/web3examples/ethereum/blob/master/rpc/general_info_mainnet.cmd
 
 [bcdata_win_inf]:   https://github.com/web3examples/ethereum/blob/master/rpc/bcdata_mainnet.cmd
-[blocknr]:          https://web3examples.com/ethereum/rpc/blocknr.html
+
 
 [wsblocks_gan]:     https://web3examples.com/ethereum/rpc/wsblocks_ganache.html
 

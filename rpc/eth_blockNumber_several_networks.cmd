@@ -1,5 +1,5 @@
 @echo off
-
+rem get the infuraKey from the text file ".infura"
 set /p infuraKey=<.infura
 set request=eth_blockNumber
 set body={"jsonrpc":"2.0","method":"%request%","params":[],"id":67}

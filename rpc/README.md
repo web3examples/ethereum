@@ -8,8 +8,8 @@ These are tools to use the RPC interface of ethereum nodes.
 | web3_clientVersion         | [ver_win_gan]       | [ver_win_geth]   | [ver_win_main] | [ver_win_sev]        | [ver_linux_main]
 | eth_accounts               | [act_win_gan]       |                  |                | 
 | eth_sendTransaction        | [trans_win_gan]     |                  |                |
-| eth_blockNumber            | [bl_win_gan]        |                  | [bl_win_sev]   |                      |                  | [blocknr]
-| eth_getBalance             | [bal_win_gan]       |                  | [bal_win_sev]  |                      | [bal_linux_main]
+| eth_blockNumber            | [bl_win_gan]        |                  |                | [bl_win_sev]         |                  | [blocknr]
+| eth_getBalance             | [bal_win_gan]       |                  |                | [bal_win_sev]        | [bal_linux_main]
 | eth_call                   |                     |                  | [call_win_main]     
 | general info               |                     |                  | [gen_inf_win]
 | blockchain data            |                     |                  | [bcdata_win_inf]

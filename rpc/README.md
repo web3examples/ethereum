@@ -3,7 +3,7 @@
 ([Up](..) [Home](..\..))<br>
 These are tools to use the RPC interface of ethereum nodes.
 
-| Command                    | Win Ganache (7545)  | Win Geth (8525)  | Win mainnet    | Win several networks | Linux mainnet    | Web interface
+| Command                    | Win Ganache (7545)  | Win Geth (8545)  | Win mainnet    | Win several networks | Linux mainnet    | Web interface
 | ----                       | ------------        |-----------       | ----------     | ----                 | ----             | ------
 | web3_clientVersion         | [ver_win_gan]       | [ver_win_geth]   | [ver_win_main] | [ver_win_sev]        | [ver_linux_main]
 | eth_accounts               | [act_win_gan]       |                  |                | 
@@ -14,7 +14,7 @@ These are tools to use the RPC interface of ethereum nodes.
 | general info               |                     |                  | [gen_inf_win]
 | blockchain data            |                     |                  | [bcdata_win_inf]
 | GetSetEmit                 |                     |                  |                | [getsetemit_win]
-| eth_subscribe (webinterface)| [wsblocks_gan]     |                  | [wsblocks]
+| eth_subscribe (ganache)    |                    |                  |                 |                   |                   |  [wsblocks_gan]    
 
 
 [ver_win_gan]:       https://github.com/web3examples/ethereum/blob/master/rpc/web3_clientVersion_ganache.cmd
@@ -33,7 +33,7 @@ These are tools to use the RPC interface of ethereum nodes.
 
 
 [bal_win_gan]:      https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_ganache.cmd
-[bal_linux_main]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_mainnet.infura.io
+[bal_linux_main]:    https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_mainnet
 [bal_win_sev]:      https://github.com/web3examples/ethereum/blob/master/rpc/eth_getBalance_several_networks.cmd
 
 [call_win_main]:     https://github.com/web3examples/ethereum/blob/master/rpc/eth_call_mainnet.cmd
@@ -44,10 +44,10 @@ These are tools to use the RPC interface of ethereum nodes.
 
 [bcdata_win_inf]:   https://github.com/web3examples/ethereum/blob/master/rpc/bcdata_mainnet.cmd
 [blocknr]:          https://web3examples.com/ethereum/rpc/blocknr.html
-[wsblocks]:         https://web3examples.com/ethereum/rpc/wsblocks.html
+
 [wsblocks_gan]:     https://web3examples.com/ethereum/rpc/wsblocks_ganache.html
 
 
 
 
-[getsetemit_win]:   https://github.com/web3examples/ethereum/blob/master/rpc/getsetemit.cmd
+[getsetemit_win]:   https://github.com/web3examples/ethereum/blob/master/rpc/GetSetEmit.cmd

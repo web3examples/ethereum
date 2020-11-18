@@ -1,0 +1,27 @@
+<body>
+Get latest Ethereum blocknumbers via websockets of Ganache<br>
+<pre id="log" style="width:100%;height:200px"></pre> 
+<script>
+function log(logstr) {   
+    document.getElementById("log").innerHTML +=logstr+"\n";
+}    
+const server="ws://localhost:8546";
+log(`Opening connection to ${server}`);
+var socket = new WebSocket(server);
+socket.onopen = function (event) {
+    const request=JSON.stringify({"id": 1, "method": "eth_subscribe", "params": ["newHeads"]});
+    log(`Connection opened, sending: ${request}`);
+    socket.send(request); 
+};
+socket.onmessage = async function (event) {
+    log(`Received ${event.data}`);
+    var data=JSON.parse(event.data);
+    var nr=data.params.result.number
+    log(`Current blocknumber = ${parseInt(nr)} (dec) ${nr} (hex)`);
+}
+socket.onerror = function(error) {
+    log(`[error] ${error.message}`);
+};
+</script>
+</body>
+

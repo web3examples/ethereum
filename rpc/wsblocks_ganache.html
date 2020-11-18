@@ -1,6 +1,5 @@
 <body>
 Get latest Ethereum blocknumbers via websockets of Ganache<br>
-Compare to <a href="https://etherscan.io/blocks" target="_blank">Etherscan</a>
 <pre id="log" style="width:100%;height:200px"></pre> 
 <script>
 function log(logstr) {   
@@ -17,7 +16,8 @@ socket.onopen = function (event) {
 socket.onmessage = async function (event) {
     log(`Received ${event.data}`);
     var data=JSON.parse(event.data);
-    log(`Current blocknumber = ${parseInt(data.params.result.number)}`);
+    var nr=data.params.result.number
+    log(`Current blocknumber = ${parseInt(nr)} (dec) ${nr} (hex)`);
 }
 socket.onerror = function(error) {
     log(`[error] ${error.message}`);

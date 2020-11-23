@@ -23,7 +23,7 @@
             var chainId=await web3.eth.getChainId();
             log(`We are on chain: ${JSON.stringify(chainId)}`);            
             
-            ethereum.on('accountsChanged', newAct)
+            ethereum.on('accountsChanged', newActs)
             ethereum.on('chainChanged',    newChain);
             ethereum.on('networkChanged',  newChain);  // still used in metamask mobile
             ethereum.on('chainIdChanged',  newChain);  // temp workaround

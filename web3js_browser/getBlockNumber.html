@@ -17,7 +17,7 @@
             var BlockNumber=await web3.eth.getBlockNumber().catch(log);
             log(`Blocknumber=${BlockNumber}`);
         }
-        f();
+        window.addEventListener('DOMContentLoaded', f);  
         </script>        
     </body>
 </html>

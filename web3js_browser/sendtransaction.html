@@ -38,7 +38,7 @@
             log(`toadr    ${toadr} has ${Web3.utils.fromWei ( 
                 await web3.eth.getBalance(toadr), 'ether')} ether` );
         }
-        f();
+        window.addEventListener('DOMContentLoaded', f);  
         </script>        
     </body>
 </html>

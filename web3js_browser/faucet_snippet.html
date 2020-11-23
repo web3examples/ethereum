@@ -33,7 +33,7 @@
             fb=await web3.eth.getBalance(addressFaucet);
             log(`Faucet now has ${fb}`);
         }
-        f();
+        window.addEventListener('DOMContentLoaded', f);  
         </script>        
     </body>
 </html>

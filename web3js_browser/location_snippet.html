@@ -31,7 +31,7 @@
                 .send({from: acts[0]}).catch((reason)=>log(`Cannnot do transaction ${reason}`));
             log(`Transaction hash: ${x.transactionHash}`);
         }
-        f();
+        window.addEventListener('DOMContentLoaded', f);  
         </script>        
     </body>
 </html>

@@ -18,7 +18,7 @@
             var acts=await web3.eth.getAccounts().catch(log);
             log(`Here are the accounts: ${JSON.stringify(acts)}`);
         }
-        f();
+        window.addEventListener('DOMContentLoaded', f);  
         </script>        
     </body>
 </html>

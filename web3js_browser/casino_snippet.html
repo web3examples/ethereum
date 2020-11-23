@@ -29,7 +29,7 @@
             var win=web3.utils.hexToNumber((result.events[0].raw.data));          
             log(`Win result=${win}`);
         }
-        f();
+        window.addEventListener('DOMContentLoaded', f);  
         </script>        
     </body>
 </html>

@@ -13,20 +13,20 @@
         }
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
-            newChain()
-            newActs()
+            await newChain()
+            await newActs()
             ethereum.on('accountsChanged', newActs)
             ethereum.on('chainChanged',    newChain);
             ethereum.on('networkChanged',  newChain);  // depricated / still used in metamask mobile
             ethereum.on('chainIdChanged',  newChain);  // depricated / temp workaround
             ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
             
-            function newChain(newchainId) {
+            async function newChain(newchainId) {
                 var chainId=await web3.eth.getChainId();
                 var networkId=await web3.eth.net.getId();
                 log(`We are on chain: ${chainId} and network ${networkId}`);
             }
-            function newActs() { 
+            async function newActs() { 
                 var acts=await web3.eth.getAccounts()
                 log(`We have accounts: ${JSON.stringify(acts)}`);
             }

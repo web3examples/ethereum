@@ -29,7 +29,7 @@
             ethereum.on('chainIdChanged',  newChain);  // depricated / temp workaround
             ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
             function newChain(newchainId) {
-                chainId=parseInt(newchainId); // sometimes in hexadecimal
+                chainId=Number(newchainId); // sometimes in hexadecimal (e.g. starting with 0x)
                 log(`We have a new chain: ${JSON.stringify(newchainId)} ${chainId} (dec) 0x${chainId.toString(16)} (hex)`);
             }
             function newActs(newacts) { 

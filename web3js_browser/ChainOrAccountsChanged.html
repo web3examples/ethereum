@@ -21,6 +21,8 @@
             ethereum.on('chainIdChanged',  newChain);  // depricated / temp workaround
             ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
             
+            var result=await web3.eth.requestAccounts().catch(x=>{log(x.message);console.log(x);});
+            
             async function newChain(newchainId) {
                 var chainId=await web3.eth.getChainId();
                 var networkId=await web3.eth.net.getId();

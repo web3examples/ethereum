@@ -8,3 +8,4 @@ old/
 a.txt
 web3js/package.json
 
+*.log

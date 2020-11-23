@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
+    </head>
+    <body>
+        <h1>chainChanged</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() { 
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+
+            log(`Version of web3.js: ${web3.version}`);            
+            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
+            log(`Value from eth requestAccounts: ${JSON.stringify(result)}`);
+            var acts=await web3.eth.getAccounts().catch(log);
+            log(`Here are the accounts: ${JSON.stringify(acts)}`);
+            
+            var chainId=await web3.eth.getChainId();
+            log(`We are on chain: ${JSON.stringify(chainId)}`);            
+            
+            ethereum.on('accountsChanged', newAct)
+            ethereum.on('chainChanged',    newChain);
+            ethereum.on('networkChanged',  newChain);  // still used in metamask mobile
+            ethereum.on('chainIdChanged',  newChain);  // temp workaround
+            ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
+            function newChain(newchainId) {
+                chainId=newchainId;
+                log(`We have a new chain: ${chainId}`);
+            }
+            function newActs(newacts) { 
+                acts=newacts;
+                log(`We have new accounts: ${JSON.stringify(acts)}`);
+            })
+        }
+        window.addEventListener('DOMContentLoaded', f);  
+        </script>        
+    </body>
+</html>
+

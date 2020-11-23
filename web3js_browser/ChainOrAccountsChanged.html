@@ -13,54 +13,22 @@
         }
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
-
-            log(`Version of web3.js: ${web3.version}`);            
-            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
-            log(`Value from eth requestAccounts: ${JSON.stringify(result)}`);
-            var acts=await web3.eth.getAccounts().catch(log);
-            log(`Here are the accounts: ${JSON.stringify(acts)}`);
-            
-            var chainId=await web3.eth.getChainId();
-            newChain(chainId)
-            log(`We are on chain: ${JSON.stringify(chainId)}`);  
-
-            var networkId=await web3.eth.net.getId();
-            newNetwork(networkId)
-           
-            
+            newChain()
+            newActs()
             ethereum.on('accountsChanged', newActs)
             ethereum.on('chainChanged',    newChain);
-            ethereum.on('networkChanged',  newNetwork);  // depricated / still used in metamask mobile
-            ethereum.on('chainIdChanged',  newNetwork);  // depricated / temp workaround
+            ethereum.on('networkChanged',  newChain);  // depricated / still used in metamask mobile
+            ethereum.on('chainIdChanged',  newChain);  // depricated / temp workaround
             ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
             
-            function newNetwork(newnetworkId) {
-                log(`type=${typeof(newnetworkId)}`)
-                if (typeof(newnetworkId) == "string") {
-                    if (newnetworkId.includes("0x")) 
-                        networkId=parseInt(newnetworkId,16) // sometimes in hexadecimal (e.g. starting with 0x)
-                    else
-                        networkId = parseInt(newnetworkId)
-                } else  
-                    networkId = newnetworkId
-                log(`We are on network: ${JSON.stringify(newnetworkId)} ${networkId} (dec) 0x${networkId.toString(16)} (hex)`);
-            }
-            
-            
             function newChain(newchainId) {
-                log(`type=${typeof(newchainId)}`)
-                if (typeof(newchainId) == "string") {
-                    if (newchainId.includes("0x")) 
-                        chainId=parseInt(newchainId,16) // sometimes in hexadecimal (e.g. starting with 0x)
-                    else
-                        chainId = parseInt(newchainId)
-                } else  
-                    chainId = newchainId
-                log(`We are on chain: ${JSON.stringify(newchainId)} ${chainId} (dec) 0x${chainId.toString(16)} (hex)`);
+                var chainId=await web3.eth.getChainId();
+                var networkId=await web3.eth.net.getId();
+                log(`We are on chain: ${chainId} and network ${networkId}`);
             }
-            function newActs(newacts) { 
-                acts=newacts;
-                log(`We have new accounts: ${JSON.stringify(acts)}`);
+            function newActs() { 
+                var acts=await web3.eth.getAccounts()
+                log(`We have accounts: ${JSON.stringify(acts)}`);
             }
         }
         window.addEventListener('DOMContentLoaded', f);  

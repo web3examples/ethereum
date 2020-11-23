@@ -30,10 +30,13 @@
             ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
             function newChain(newchainId) {
                 log(`type=${typeof(newchainId)}`)
-                if ((typeof(newchainId) == string) && (newchainId.includes("0x")) )
-                    chainId=parstInt(newchainId,16)
-                else
-                    chainId = newchainId;
+                if (typeof(newchainId) == "string") {
+                    if (newchainId.includes("0x")) 
+                        chainId=parseInt(newchainId,16)
+                    else
+                        chainId = parseInt(newchainId)
+                } else  
+                    chainId = newchainId
                 chainId=Number(newchainId); // sometimes in hexadecimal (e.g. starting with 0x)
                 log(`We have a new chain: ${JSON.stringify(newchainId)} ${chainId} (dec) 0x${chainId.toString(16)} (hex)`);
             }

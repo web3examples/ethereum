@@ -32,12 +32,11 @@
                 log(`type=${typeof(newchainId)}`)
                 if (typeof(newchainId) == "string") {
                     if (newchainId.includes("0x")) 
-                        chainId=parseInt(newchainId,16)
+                        chainId=parseInt(newchainId,16) // sometimes in hexadecimal (e.g. starting with 0x)
                     else
                         chainId = parseInt(newchainId)
                 } else  
                     chainId = newchainId
-                chainId=Number(newchainId); // sometimes in hexadecimal (e.g. starting with 0x)
                 log(`We have a new chain: ${JSON.stringify(newchainId)} ${chainId} (dec) 0x${chainId.toString(16)} (hex)`);
             }
             function newActs(newacts) { 

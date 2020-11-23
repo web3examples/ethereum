@@ -8,7 +8,6 @@ Web3.js examples in browser
 | ---------                     | -------               | ----------- 
 | html framework 1              | [htmlframework1]      | [htmlframework1_gh]
 | Version                       | [version]             | [version_gh]
-| Metamask inserted             | [metamask_inserted]   | [metamask_inserted_gh]
 | get BlockNumber               | [getBlockNumber]      | [getBlockNumber_gh]
 | get Accounts 1                | [getAccounts1]        | [getAccounts1_gh]
 | get Accounts 2                | [getAccounts2]        | [getAccounts2_gh]
@@ -42,7 +41,7 @@ Web3.js examples in browser
 [htmlframework1]:    https://web3examples.com/ethereum/web3js_browser/htmlframework1.html   
 [htmlframework2]:    https://web3examples.com/ethereum/web3js_browser/htmlframework2.html   
 [version]:           https://web3examples.com/ethereum/web3js_browser/version.html
-[metamask_inserted]: https://web3examples.com/ethereum/web3js_browser/metamask_inserted.html
+
 [getBlockNumber]:    https://web3examples.com/ethereum/web3js_browser/getBlockNumber.html
 [getAccounts1]:      https://web3examples.com/ethereum/web3js_browser/getaccounts1.html
 [getAccounts2]:      https://web3examples.com/ethereum/web3js_browser/getaccounts2.html
@@ -61,7 +60,7 @@ Web3.js examples in browser
 [htmlframework1_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework1.html
 [htmlframework2_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/htmlframework2.html
 [version_gh]:            https://github.com/web3examples/ethereum/blob/master/web3js_browser/version.html
-[metamask_inserted_gh]:  https://github.com/web3examples/ethereum/blob/master/web3js_browser/metamask_inserted.html
+
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
 [getAccounts1_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts1.html
 [getAccounts2_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts2.html

@@ -1,5 +1,6 @@
 const Casino = artifacts.require("Casino");
 
 module.exports = function(deployer) {
-  deployer.deploy(Casino,{value: 10000000000000000}); // fund with 0.01 eth
+  deployer.deploy(Casino,{value: 1E18}); // fund with 1 eth
 };
+

@@ -91,22 +91,14 @@ Bet: <input type="text" name="bet" id="bet" value="0"/>ETH<br>
             document.getElementById("balance").value = precise(ethBalance).toString();
             var weiBankBalance=await web3.eth.getBalance(contractCasino)
             document.getElementById("bank").value = precise(web3.utils.fromWei(weiBankBalance, 'ether'));
-            var proposedBetWei=(Math.min(Number(weiBalance),Number(weiBankBalance))/10).toString() ;
+            var proposedBetWei=(Math.min(Number(weiBalance),(Number(weiBankBalance))/10).toFixed(0)).toString() ;
             document.getElementById("bet").value = precise(web3.utils.fromWei(proposedBetWei, 'ether'));
             log(`Balance: ${precise(ethBalance)} ETH`);
        }
         
         async function asyncloaded() {
-            if (typeof ethereum !== 'undefined')
-                await ethereum.enable().catch( (reason) => log('User rejected provider access',reason.message.substring(0,50)) )
-            if (! (Web3.givenProvider || ethereum) ) { // Checking if web3 is accessible
-                log("Web3 interface is not found. "+
-                "Please install <a href='https://metamask.io'>Metamask</a>"+
-                " or use <a href='https://www.opera.com/crypto'>Opera Crypto (android)");
-                return; // stop this function
-            }
-            web3 = new Web3(Web3.givenProvider || ethereum); // switch to version 1.0 when using metamask; provide web3 functions for Opera
-            //typeof web3 === 'undefined' || web3 == 'undefined'
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
             log(`web3 is present: ${web3.version}`); // note: use ` (back quote)
             const network = await web3.eth.net.getId().catch( (reason) => log(`Cannnot find network ${reason}`) );            
             if (typeof network === 'undefined' || network != 5) 

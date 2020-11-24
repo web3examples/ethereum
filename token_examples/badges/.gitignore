@@ -1,0 +1,10 @@
+
+.idea/
+node_modules/
+
+old/
+
+.infura
+.secret
+.figma
+.DS_Store

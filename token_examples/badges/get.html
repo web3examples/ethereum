@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
+    </head>
+    <body>
+        <h1>Get World Badge</h1>
+        <button onclick="GetWorldBadge()">GetWorldBadge</button>        
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+
+
+var globalaccounts;
+var nft_address
+
+var globallisttemplates=[]
+var fglobalTemplatesLoaded=false;
+
+// images are loaded from https://cloudflare-ipfs.com/ipfs/..  (svg doesn't allways work)
+async function GetTemplates() {	
+	globallisttemplates=[]	
+	var nrTemplates = await nft_contract.methods.nrTemplates().call()
+	//var currentcourse=GlobalCourseList.GetCurrentCourse() - Unused
+    console.log(nrTemplates)
+    for (var i=0;i<nrTemplates;i++) {
+        var info=await nft_contract.methods.GetTemplateInfo(i).call()		
+		globallisttemplates.push(info)
+	}
+    console.log(globallisttemplates)
+	fglobalTemplatesLoaded=true;
+}	
+
+function FindBadge(wantedname) {
+	if (!fglobalTemplatesLoaded) return undefined;
+	console.log(globallisttemplates)
+	for (var i=0;i<globallisttemplates.length;i++) {
+	    var name=globallisttemplates[i].name
+        if (name==wantedname) return i;	 
+	}
+	return -1;
+}
+
+ 
+ 
+var globalbadgeinfo=[]
+
+
+ async function GetJson(source) {    
+	var f=await fetch(source)    
+    try {
+        var Items=await f.json();            
+    } catch (e) {
+        console.error(`Json parse error ${e} ${source}`);
+    }
+    return Items;  
+}
+
+
+
+async function GetWorldBadge() {
+	
+	
+	var sbn="Worldbatch"
+	
+	log(`Looking for badge ${sbn}`)
+	if (!web3) {
+		log("Login first");
+		return;
+	}
+	
+	if (!fglobalTemplatesLoaded) {
+		log("List of badges is not loaded yet, wait a while and retry");
+		return;
+	}
+			
+
+	var wantedid=FindBadge(sbn)
+	if (wantedid < 0) {
+		log(`No badges are present ${sbn} ${wantedid}`);
+		return;
+	}
+		
+	var mybalance=await web3.eth.getBalance(globalaccounts[0]);	
+	log(`mybalance ${web3.utils.fromWei(mybalance, 'ether')} ether`)
+	
+	
+    console.log(`my balance ${mybalance}`)
+    
+	const privateKey= '0x0da19552d21de3da01e4a5ff72f6722b9a86c78ee6c6a46e5cdcf0fb5a936110'; // note very insecure, but for test ETH this is usable   
+	var addressFaucet = web3.eth.accounts.privateKeyToAccount(privateKey).address; 
+    console.log(addressFaucet)
+	web3.eth.accounts.wallet.add(privateKey);
+	var value=web3.utils.toWei('10', 'milli');
+	console.log(value)
+    
+    if (mybalance < value) {
+        log("Wait 20 seconds to get some ETH")
+        result = await  web3.eth.sendTransaction({from: addressFaucet,to: globalaccounts[0],gas: 200000,value: value}).catch(x => log(`Error: ${x.code} ${x.message}`));    
+        
+        var etherscan=`https://rinkeby.etherscan.io/tx/${result.transactionHash}`
+        log(`<a href="${etherscan}" target="_blank">etherscan</a>`)
+        
+        
+        
+    //    log(`mybalance ${web3.utils.fromWei(mybalance, 'ether')} ether`)
+        } 
+
+	mybalance=await web3.eth.getBalance(globalaccounts[0]);
+    
+    
+	log(`Getting badge now`) 
+    log("Confirm metamask popup and wait 20 seconds");
+	var result=await nft_contract.methods.createToken(globalaccounts[0],wantedid).send({from: globalaccounts[0]})
+	log("after")
+    
+    var id=result.events.Transfer.returnValues._tokenId
+    //  var id=parseInt(result.logs[1].args[0].toString())    
+	var etherscan=`https://rinkeby.etherscan.io/tx/${result.blockHash}`
+	//log(`<a href="${etherscan}" target="_blank">etherscan</a>`)
+	log("Badge received")
+    log(`Details about this badge...<br>`)
+	log(`id:${id}<br>`)
+	var opensea=`https://rinkeby.opensea.io/assets/${nft_address}/${id}`
+	log(`<a href="${opensea}" target="_blank">opensea</a><br>`)
+	
+    
+    
+    
+}
+
+
+async function main() {
+    if (!window.ethereum) {
+      log("Install metamask")
+      return
+    }
+    web3 = new Web3(Web3.givenProvider); // provider from metamask  
+    var result=await web3.eth.requestAccounts().catch(x=>log(x.message));    
+    globalaccounts=await web3.eth.getAccounts().catch(log);
+    var nid=(await web3.eth.net.getId());
+    if (nid !=4) {
+      	log(`Make sure you are on the Rinkeby network (currently ${nid})`);  
+        return
+     }
+     var nft_jsonurl="https://raw.githubusercontent.com/OdysseyMomentum/Ana-Plastic/main/badges/build/contracts/WORLDNFT.json"
+     nft_jsonobject=await GetJson(nft_jsonurl)    
+     nft_address=nft_jsonobject.networks[nid].address		
+     var nft_code=await web3.eth.getCode(nft_address)
+    
+    if (nft_code.length <=2) {       
+        console.error("No contract code");        
+    } else {
+		nft_contract = await new web3.eth.Contract(nft_jsonobject.abi, nft_jsonobject.networks[nid].address);
+		await GetTemplates(); 
+	}
+}       
+       main()
+        </script>        
+    </body>
+</html>
+

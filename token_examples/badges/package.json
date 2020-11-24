@@ -1,0 +1,29 @@
+{
+  "name": "koios-badges",
+  "version": "1.0.0",
+  "description": "Koios-Badges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build contract": "truffle migrate --reset --network rinkeby"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/larsmeulenbroek/Koios-Badges.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/larsmeulenbroek/Koios-Badges/issues"
+  },
+  "homepage": "https://github.com/larsmeulenbroek/Koios-Badges#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "@truffle/hdwallet-provider": "^1.2.0",
+    "@walletconnect/web3-provider": "1.0.5",
+    "ipfs-http-client": "^45.0.0",
+    "node-fetch": "^2.6.1",
+    "web3": "^1.2.11",
+    "web3modal": "^1.7.0"
+  }
+}

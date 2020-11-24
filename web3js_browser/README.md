@@ -41,8 +41,8 @@ Web3.js examples in browser
 [casino_snippet_gh]: https://github.com/web3examples/ethereum/blob/master/web3js_browser/casino_snippet.html
 
 
-[faucet]:            http://web3examples.com/ethereum/faucet
-[faucet_gh]:         https://github.com/web3examples/ethereum/tree/master/faucet
+[faucet]:            https://web3examples.com/ethereum/faucet
+[faucet_gh]:         https://github.com/web3examples/ethereum/blob/master/faucet/index.html
 [faucet_snippet]:    https://web3examples.com/ethereum/web3js_browser/faucet_snippet.html
 [faucet_snippet_gh]: https://github.com/web3examples/ethereum/blob/master/web3js_browser/faucet_snippet.html
 

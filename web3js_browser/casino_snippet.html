@@ -13,18 +13,18 @@
         }
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
-            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
-            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
-            var acts=await web3.eth.getAccounts().catch(log);
-            log(`Here are the accounts: ${JSON.stringify(acts)}`);
-            
+            var acts=await web3.eth.requestAccounts().catch(x=>log(x.message));            
             const contractCasino="0xfDC02989Ba838da44aCb16D6d9fB393DfEe3AFC5"
-            const CasinoABI=[{"constant": false,"inputs": [],"name": "betAndWin",
-                "outputs": [{"name":"win","type": "bool"}],"payable": true,
-                "stateMutability": "payable","type": "function"}];
+            const CasinoABI=[{  "constant": false,
+                                "inputs": [],
+                                "name": "betAndWin",
+                                "outputs": [{"name": "win","type": "bool"}],
+                                "payable": true,
+                                "stateMutability": "payable",
+                                "type": "function"
+                            }];
             const CasinoContract= new web3.eth.Contract(CasinoABI,contractCasino);
-            var result = await CasinoContract.methods.betAndWin()
-                .send({from: acts[0],value:1});
+            var result = await CasinoContract.methods.betAndWin().send({from: acts[0],value:1});
             var win=web3.utils.hexToNumber((result.events[0].raw.data));          
             log(`Win result=${win}`);
         }

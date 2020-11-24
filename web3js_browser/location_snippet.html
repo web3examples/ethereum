@@ -13,13 +13,7 @@
         }
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
-
-            log(`Version of web3.js: ${web3.version}`);            
-            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
-            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
-            var acts=await web3.eth.getAccounts().catch(log);
-            log(`Here are the accounts: ${JSON.stringify(acts)}`);
-            
+            var acts=await web3.eth.requestAccounts().catch(x=>log(x.message));
             var dist=100;
             DistanceHHSaddress="0x609F224c0c9405a1e7FD404114ca8A8606edC3a3"
             DistanceHHSABI=[{"constant": false,"inputs": [{"name": "distance",

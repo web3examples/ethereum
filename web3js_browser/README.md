@@ -19,16 +19,20 @@ Web3.js examples in browser
 | E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
 | Mini casino: snippet          | [casino_snippet]      | [casino_snippet_gh]       | [casino_sol_gh]
 | Mini casino: full version     | [casino]              | [casino1_gh]              | [casino_sol_gh]
-| Location snippet              | [location_snippet]    | [location_snippet_gh]     | [location_sol_gh]  
+| Location snippet              | [location_snip]       | [location_snip_gh]        | [location_sol_gh]  
 | Log your location (check-in)  | [location]            | [location_gh]             | [location_sol_gh]  
+| List location                 | [listlocation]        | [listlocation_gh]         | [location_sol_gh]  
 | Faucet snippet                | [faucet_snippet]      | [faucet_snippet_gh]
 | Faucet                        | [faucet]              | [faucet_gh]
 
 [location]:          http://web3examples.com/location
 [location_gh]:       https://github.com/web3examples/location
 [location_sol_gh]:   https://github.com/web3examples/location/blob/master/truffle/contracts/DistanceHHS.sol
-[location_snippet]:  https://web3examples.com/ethereum/web3js_browser/location_snippet.html
-[location_snippet_gh]:   https://github.com/web3examples/ethereum/blob/master/web3js_browser/location_snippet.html
+[location_snip]:     https://web3examples.com/ethereum/web3js_browser/location_snippet.html
+[location_snip_gh]:  https://github.com/web3examples/ethereum/blob/master/web3js_browser/location_snippet.html
+[listlocation]:      http://web3examples.com/location/listlocation.html
+[listlocation_gh]:   https://github.com/web3examples/location/blob/master/listlocation.html
+
 
 [casino]:            http://web3examples.com/ethereum/casino/
 [casino_gh]:         https://github.com/web3examples/ethereum/tree/master/casino

@@ -91,7 +91,7 @@ Bet: <input type="text" name="bet" id="bet" value="0"/>ETH<br>
             document.getElementById("balance").value = precise(ethBalance).toString();
             var weiBankBalance=await web3.eth.getBalance(contractCasino)
             document.getElementById("bank").value = precise(web3.utils.fromWei(weiBankBalance, 'ether'));
-            var proposedBetWei=(Math.min(Number(weiBalance),(Number(weiBankBalance))/10).toFixed(0)).toString() ;
+            var proposedBetWei=(Math.min(Number(weiBalance),(Number(weiBankBalance))/30).toFixed(0)).toString() ;
             document.getElementById("bet").value = precise(web3.utils.fromWei(proposedBetWei, 'ether'));
             log(`Balance: ${precise(ethBalance)} ETH`);
        }

@@ -77,7 +77,11 @@ module.exports = {
        gas: 4465030,
        gasPrice: 10000000000,
     },
-
+    rinkeby: {
+        provider: () => new HDWalletProvider(mnemonic, `https://rinkeby.infura.io/v3/${infuraKey}`),
+        network_id: 4,       // rinkeby id
+        skipDryRun: true
+    },
 
     // Useful for private networks
     // private: {

@@ -32,7 +32,7 @@
   100% { transform: rotate(360deg); }
 }
 </style>
-<h1>Bet and Win</h1>
+<h1>Bet and Win (Rinkeby)</h1>
 Balance: <input type="text" name="balance" id="balance" value="0"/>ETH<br>
 Bank Balance: <input type="text" name="bank" id="bank" value="0"/>ETH<br>
 <br>
@@ -45,7 +45,7 @@ Bet: <input type="text" name="bet" id="bet" value="0"/>ETH<br>
   
     
  <script>   
-        const contractCasino="0x548961aBD98E4C45AD87Fc510A663DEc20007580"
+        const contractCasino="0xfDC02989Ba838da44aCb16D6d9fB393DfEe3AFC5"
         const CasinoABI=[{"constant": false,"inputs": [],"name": "betAndWin","outputs": [{"name": "win","type": "bool"}],"payable": true,"stateMutability": "payable","type": "function"}];
         var accounts
 
@@ -101,9 +101,9 @@ Bet: <input type="text" name="bet" id="bet" value="0"/>ETH<br>
             var result=await web3.eth.requestAccounts().catch(x=>log(x.message));
             log(`web3 is present: ${web3.version}`); // note: use ` (back quote)
             const network = await web3.eth.net.getId().catch( (reason) => log(`Cannnot find network ${reason}`) );            
-            if (typeof network === 'undefined' || network != 5) 
-                { log("Please select Goerli test network");return;}
-            log("Ethereum network: Goerli")
+            if (typeof network === 'undefined' || network != 4) 
+                { log("Please select Rinkeby test network");return;}
+            log("Ethereum network: Rinkeby")
             accounts=await web3.eth.getAccounts();            
             log(`Ethereum address: ${EtherscanLink("address",accounts[0])}`);
             log(`Contract address: ${EtherscanLink("address",contractCasino)}`);

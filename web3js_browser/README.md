@@ -7,10 +7,8 @@ Web3.js examples in browser
 | Feature                       | Link                  | Github HTML/Javascript     | Github Solidity
 | ---------                     | -------               | -----------                | ------------------
 | Version                       | [version]             | [version_gh]
-| get BlockNumber               | [getBlockNumber]      | [getBlockNumber_gh]
-| get Accounts 1                | [getAccounts1]        | [getAccounts1_gh]
-| get Accounts 2                | [getAccounts2]        | [getAccounts2_gh]
-| get Accounts 3                | [getAccounts3]        | [getAccounts3_gh]
+| getBlockNumber                | [getBlockNumber]      | [getBlockNumber_gh]
+| requestAccounts               | [reqAccounts]         | [reqAccounts_gh]
 | ..............
 | send Transaction              | [sendtransaction]     | [sendtransaction_gh]
 | Get Set Emit                  | [getsetemit]          | [getsetemit_gh]
@@ -49,16 +47,11 @@ Web3.js examples in browser
 [version]:           https://web3examples.com/ethereum/web3js_browser/version.html
 
 [getBlockNumber]:    https://web3examples.com/ethereum/web3js_browser/getBlockNumber.html
-[getAccounts1]:      https://web3examples.com/ethereum/web3js_browser/getaccounts1.html
-[getAccounts2]:      https://web3examples.com/ethereum/web3js_browser/getaccounts2.html
-[getAccounts3]:      https://web3examples.com/ethereum/web3js_browser/getaccounts3.html
+[reqAccounts]:      https://web3examples.com/ethereum/web3js_browser/getaccounts3.html
 [ca_changed]:        https://web3examples.com/ethereum/web3js_browser/ChainOrAccountsChanged.html
 
 [sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
 [E2E_Test_Dapp]:     https://metamask.github.io/test-dapp
-
-
-
 
 [getsetemit]:        https://web3examples.com/ethereum/web3js_browser/getsetemit.html
 
@@ -66,9 +59,7 @@ Web3.js examples in browser
 [version_gh]:            https://github.com/web3examples/ethereum/blob/master/web3js_browser/version.html
 
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
-[getAccounts1_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts1.html
-[getAccounts2_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts2.html
-[getAccounts3_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts3.html
+[reqAccounts_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts3.html
 [sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
 [ca_changed_gh]:         https://github.com/web3examples/ethereum/blob/master/web3js_browser/ChainOrAccountsChanged.html
 

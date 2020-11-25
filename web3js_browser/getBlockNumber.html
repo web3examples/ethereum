@@ -2,22 +2,22 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
     </head>
     <body>
         <h1>getBlockNumber</h1>
         <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
-        function log(logstr) {   
+        function log(logstr) {
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
-        async function f() {            
+        async function f() {
             web3 = new Web3(Web3.givenProvider); // provider from metamask
             log(`Version of web3.js: ${web3.version}`);
             var BlockNumber=await web3.eth.getBlockNumber().catch(log);
             log(`Blocknumber=${BlockNumber}`);
         }
-        window.addEventListener('DOMContentLoaded', f);  
-        </script>        
+        window.addEventListener('DOMContentLoaded', f);
+        </script>
     </body>
 </html>

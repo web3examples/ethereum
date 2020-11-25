@@ -15,7 +15,7 @@
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
   
             var result=await web3.eth.requestAccounts().catch(x=>{log(x.message);console.log(x);});
-            log(`Value from eth_requestAccounts: ${JSON.stringify(result)}`);
+            log(`Value from requestAccounts: ${JSON.stringify(result)}`);
             var acts=await web3.eth.getAccounts().catch(log);
             log(`Here are the accounts: ${JSON.stringify(acts)}`);
         }

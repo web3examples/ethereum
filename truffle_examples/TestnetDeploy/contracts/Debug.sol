@@ -1,4 +1,4 @@
-// endless loop to demonstrate debugging
+// to demonstrate debugging
 pragma solidity ^0.5.12;
 contract Debug { 
     uint public result;  

@@ -61,9 +61,8 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Remix Modifier       | [remix_modifier]
 | Remix Memory         | [remix_memory]
 | Remix Functions      | [remix_functions]
-| Remix Factory        | [remix_factory]
 
-[remix_factory]:    https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Factory.sol 
+
 [remix_functions]:  https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Functions.sol
 [remix_memory]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Memory.sol
 [remix_modifier]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/Remix_Modifier.sol

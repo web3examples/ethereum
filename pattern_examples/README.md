@@ -6,10 +6,11 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | ---------             | -----
 | Openzeppelin Upgrades | [oz_db1]<br>[oz_db2]  |   [oz_deploy]<br>[oz_upgrade]
 | Proxy Storage         | [proxy_storage]
+| Modifiers             | [modifiers]
+| Factory               | [factory]
 | Selfdestruct          | [selfdestruct]
 | Create                | [create]
 | Create sol 6.2        | [sol6.2_create]
-| Modifiers             | [modifiers]
 | Commit Reveal         | [commitreveal]
 | Withdraw              | [withdraw]
 | Verify Source         | [verifysource]
@@ -36,3 +37,4 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [oz_db2]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug2.sol
 [oz_deploy]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/migrations/2_deploy_contracts.js
 [oz_upgrade]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/migrations/3_upgrade_contracts.js
+[factory]:    https://github.com/web3examples/ethereum/blob/master/pattern_examples/factory.sol 

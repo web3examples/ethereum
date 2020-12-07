@@ -171,6 +171,44 @@
           }
         }
       }
+    },
+    "f9f79945c10c1a632069a2a7ee3ad909161423dc5b38529473fd6a1843c23b86": {
+      "address": "0x1e58c685a2483184719b357EA4CFe5cCBAA6EFc2",
+      "txHash": "0x9c3552d5849bf4d1d63febdc17babeb3d4f269c7b051ca364d1e4f23facd1c79",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug2",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug2.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "3bc96e6a5ce1208127a5240aa263750f2b782eed70a9f6a4522cb30e903568cf": {
+      "address": "0xde49Bd90F05D526647C5Cf1dcd3B5237D24e55B7",
+      "txHash": "0x4949ef52855784cbd85d3dc3ad2e47421e3d538804789f6d692fb100b9fc3f53",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug2",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug2.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
     }
   },
   "admin": {

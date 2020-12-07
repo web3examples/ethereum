@@ -4,10 +4,10 @@
 pragma solidity ^0.6.0;
 import "@openzeppelin/upgrades-core/contracts/Initializable.sol";
 
-contract Debug1 { 
+contract Debug1 is Initializable { 
     uint public result;  
     
-    function initialize(uint q) public {
+    function initialize(uint q) public initializer {
         result = q;
     }   
     function set(uint x) public {

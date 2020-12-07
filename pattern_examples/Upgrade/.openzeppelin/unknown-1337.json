@@ -78,15 +78,15 @@
       }
     },
     "0d61d9b01555914658278971b23e1279d860d2be190027eb27183615a955e538": {
-      "address": "0x79257325A7392a7E2B3eE52869Fb45037eaa6851",
-      "txHash": "0x82921c7e4473d8cabb73c5679aed808392cac42d69424bc153d2eb424e1e3a7a",
+      "address": "0x093Eb46E0924BA517f5021b7b7289B3B66AFb3d8",
+      "txHash": "0xe255ed89166f3c3571f37e95aa4d226c38aade9b0e50a00bdf0e341e0c81a49e",
       "layout": {
         "storage": [
           {
             "contract": "Debug1",
             "label": "result",
             "type": "t_uint256",
-            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug1.sol:9"
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug1.sol:8"
           }
         ],
         "types": {
@@ -192,8 +192,8 @@
       }
     },
     "3bc96e6a5ce1208127a5240aa263750f2b782eed70a9f6a4522cb30e903568cf": {
-      "address": "0xde49Bd90F05D526647C5Cf1dcd3B5237D24e55B7",
-      "txHash": "0x4949ef52855784cbd85d3dc3ad2e47421e3d538804789f6d692fb100b9fc3f53",
+      "address": "0x3E4dD13b76a3013924A03D0cAe4B4DA556982742",
+      "txHash": "0xd389a4af29ef1211ecbc4af15b2882b807bad4d907c4e1308bdc47390b90646e",
       "layout": {
         "storage": [
           {
@@ -209,10 +209,96 @@
           }
         }
       }
+    },
+    "6adc550646d794fa4509b90311a13b514d619de295a83205648bcfd944a8ef9d": {
+      "address": "0xa6B3bd357EA44628400d186a3c7B8012ed399d10",
+      "txHash": "0x7e0a5e113d25c46252a7a047844c0886967415d9ca529157f7c194a44650b28e",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\upgrades-core\\contracts\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\upgrades-core\\contracts\\Initializable.sol:28"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\upgrades-core\\contracts\\Initializable.sol:63"
+          },
+          {
+            "contract": "Debug1",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug1.sol:8"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
+    },
+    "9d69fc6f051f281b4825e5860d5d9dd9527b8215b37a1042bc4375d9900688dc": {
+      "address": "0xF10d1059f16d73cefc381bbB0138C47040ED4303",
+      "txHash": "0xcc3c942fbadc63a7d09b8f2dd7d3390bc4ad483f38b91c3db5e2d3ecc856e8fe",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Initializable",
+            "label": "initialized",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\upgrades-core\\contracts\\Initializable.sol:23"
+          },
+          {
+            "contract": "Initializable",
+            "label": "initializing",
+            "type": "t_bool",
+            "src": "..\\@openzeppelin\\upgrades-core\\contracts\\Initializable.sol:28"
+          },
+          {
+            "contract": "Initializable",
+            "label": "______gap",
+            "type": "t_array(t_uint256)50_storage",
+            "src": "..\\@openzeppelin\\upgrades-core\\contracts\\Initializable.sol:63"
+          },
+          {
+            "contract": "Debug2",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug2.sol:6"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          },
+          "t_bool": {
+            "label": "bool"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]"
+          }
+        }
+      }
     }
   },
   "admin": {
-    "address": "0xEc885b929d9370990ec1A0101d8e4F9C9f9532F2",
-    "txHash": "0x41ab771d9c78e2ed8af8eeecaa55753933581d3b7b39b2aa546bdbfa240e9f30"
+    "address": "0x4956FA75c1142aAdba0635bbfddaFDbe027a569C",
+    "txHash": "0x778b59dcc9dd0def04748127c3963fd926ab53fd14e156ae71c4be49175e7bae"
   }
 }

@@ -4,11 +4,8 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 
 | Demo application      | Solidity Github        | Deploy Github
 | ---------             | -----
-| Proxy Basic           | [proxy_basic]
-| Proxy Return          | [proxy_return]
+| Openzeppelin Upgrades | [oz_db1]<br>[oz_db2]  |   [oz_deploy]<br>[oz_upgrade]
 | Proxy Storage         | [proxy_storage]
-| Proxy Return Storage  | [proxy_return_storage]
-| Proxy Test            | [proxy_test]
 | Selfdestruct          | [selfdestruct]
 | Create                | [create]
 | Create sol 6.2        | [sol6.2_create]
@@ -17,7 +14,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Withdraw              | [withdraw]
 | Verify Source         | [verifysource]
 | Multisig Prep         | [multisigprep]
-| Openzeppelin Upgrades | [oz_db1]<br>[oz_db2]  |   [oz_deploy]<br>[oz_upgrade]
+
 
 [proxy_basic]:          https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_basic.sol
 [proxy_return]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_return.sol

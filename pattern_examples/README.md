@@ -8,7 +8,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Proxy Storage         | [proxy_storage]
 | Modifiers             | [modifiers]
 | Factory               | [factory]
-| Selfdestruct          | [selfdestruct_create2]
+| Selfdestruct & create2| [selfdestruct_create2]
 | Commit Reveal         | [commitreveal]
 | Withdraw              | [withdraw]
 | Verify Source         | [verifysource]

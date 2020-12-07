@@ -8,9 +8,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Proxy Storage         | [proxy_storage]
 | Modifiers             | [modifiers]
 | Factory               | [factory]
-| Selfdestruct          | [selfdestruct]
-| Create                | [create]
-| Create sol 6.2        | [sol6.2_create]
+| Selfdestruct          | [selfdestruct_create2]
 | Commit Reveal         | [commitreveal]
 | Withdraw              | [withdraw]
 | Verify Source         | [verifysource]
@@ -23,7 +21,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [proxy_storage]:        https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_storage.sol
 [proxy_test]:           https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_test.sol
 
-[selfdestruct]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/selfdestruct.sol
+[selfdestruct_create2]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/selfdestruct_create2.sol
 [create]:       https://github.com/web3examples/ethereum/tree/master/pattern_examples/create.sol
 [modifiers]:    https://github.com/web3examples/ethereum/tree/master/pattern_examples/modifiers.sol
 [commitreveal]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/commitreveal.sol

@@ -1,5 +1,10 @@
-// endless loop to demonstrate debugging
-pragma solidity ^0.5.12;
+// SPDX-License-Identifier: MIT
+// npm install @openzeppelin/truffle-upgrades
+
+pragma solidity ^0.6.0;
+
+import "@openzeppelin/upgrades-core/contracts/Initializable.sol";
+
 contract Debug1 { 
     uint public result;  
     function set(uint x) public {
@@ -14,4 +19,5 @@ contract Debug1 {
     function initialize(uint q) public {
         result = q;
     }
+ 
 }

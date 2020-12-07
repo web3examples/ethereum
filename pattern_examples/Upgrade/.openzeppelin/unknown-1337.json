@@ -1,0 +1,180 @@
+{
+  "manifestVersion": "3.1",
+  "impls": {
+    "f8b292fb1e3b17dbcc04489c340a3607587290279c0afcdecfc902594bbc46e9": {
+      "address": "0xf780E77e9B772447D9Ec852586317850CD68EAfb",
+      "txHash": "0x36906f3efdb996e5d59d60e82f43e084ce9a6d3169f34e5daa12d1bba455147a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug1",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "Debug1.sol:4"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "94ebb765c458b5014dbaca76e3b0c71164978fd9799d4f7ff8f3746a57df8893": {
+      "address": "0xf46E75aB905e216d30542FA24BB66E7e0451A9ca",
+      "txHash": "0xe1a4f0e4b7adc4562cf5250e6947be7292e95c25d092b7e19f2af18054b852c5",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug1",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "Debug1.sol:4"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "4022b0de6ffe83285fe9040a4083e563e6ef56860eeb5a43e96c4126e67f5809": {
+      "address": "0x32658274f13929ade76A8820BCA5FE1091580395",
+      "txHash": "0x05cd2429a563cd85fb45411b330aa6f792472a4febb07b94240f532491490c74",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug1",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "Debug1.sol:4"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "a5e31b41b0fdecfc6968b292239d3aa45901cb493b609840baa37b524e630b15": {
+      "address": "0x2a86c25515d94d1cde271668d818935F6c857a6D",
+      "txHash": "0xf936270e55195de5b223e45b542c711673b15ec499af60726b6a6348c1a9f810",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug2",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "Debug2.sol:4"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "0d61d9b01555914658278971b23e1279d860d2be190027eb27183615a955e538": {
+      "address": "0x79257325A7392a7E2B3eE52869Fb45037eaa6851",
+      "txHash": "0x82921c7e4473d8cabb73c5679aed808392cac42d69424bc153d2eb424e1e3a7a",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug1",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug1.sol:9"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "001629e060196511fd6e8f4bbcbfe41d40b10dd97ae8b0744cd11fe1930d3c99": {
+      "address": "0x872DD5293A59E3F4Ef2e079F798c47f8cFD924b5",
+      "txHash": "0x223b25583ff648b870a8b192cff16878fccc7c4b04960f771d854bcb52518be3",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug2",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug2.sol:7"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "bec34ae5428c212a1431c36f0694049e21d5ee4e124472746fb52b1cad421aa1": {
+      "address": "0x88B5c4043Fa5A652e4Fd7d77F8842437114F90c8",
+      "txHash": "0x4368a7058938543c81f23d847334b8f7050de5e972813e5eaf8228f099a1fd48",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug1",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug1.sol:9"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "d28e673f0e2315e20961faeeda4e9c697139c465170e5f890dba6a6f38f7a62a": {
+      "address": "0x8fCb6aaA05fc27d43DF39C6b982Ca3f5C3449c8b",
+      "txHash": "0x6ad13a7ab3a059784107727e86df3e73649ce234c64fa07897518615ab01ae0b",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug1",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug1.sol:9"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    },
+    "c99c148acc2a47a782fd487de62629d9baa8b132834cc50350406de129eefa08": {
+      "address": "0x0F5117D59Ae6Bf1427Fe758e57EfbffcFfc956e7",
+      "txHash": "0xc25394db2c1bd4dc1b9c24f342561edfc45261b838e3ff0fc5f2800fcd2697f6",
+      "layout": {
+        "storage": [
+          {
+            "contract": "Debug2",
+            "label": "result",
+            "type": "t_uint256",
+            "src": "..\\..\\..\\..\\..\\..\\Z\\blockchain\\web3examples\\ethereum\\pattern_examples\\Upgrade\\contracts\\Debug2.sol:7"
+          }
+        ],
+        "types": {
+          "t_uint256": {
+            "label": "uint256"
+          }
+        }
+      }
+    }
+  },
+  "admin": {
+    "address": "0xEc885b929d9370990ec1A0101d8e4F9C9f9532F2",
+    "txHash": "0x41ab771d9c78e2ed8af8eeecaa55753933581d3b7b39b2aa546bdbfa240e9f30"
+  }
+}

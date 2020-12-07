@@ -2,21 +2,22 @@
 
 Several Pattern Examples. ([Up](..) [Home](..\..))
 
-| Demo application     | Github
-| ---------            | -----
-| Proxy Basic          | [proxy_basic]
-| Proxy Return         | [proxy_return]
-| Proxy Storage        | [proxy_storage]
-| Proxy Return Storage | [proxy_return_storage]
-| Proxy Test           | [proxy_test]
-| Selfdestruct         | [selfdestruct]
-| Create               | [create]
-| Create sol 6.2       | [sol6.2_create]
-| Modifiers            | [modifiers]
-| Commit Reveal        | [commitreveal]
-| Withdraw             | [withdraw]
-| Verify Source        | [verifysource]
-| Multisig Prep        | [multisigprep]
+| Demo application      | Solidity Github        | Deploy Github
+| ---------             | -----
+| Proxy Basic           | [proxy_basic]
+| Proxy Return          | [proxy_return]
+| Proxy Storage         | [proxy_storage]
+| Proxy Return Storage  | [proxy_return_storage]
+| Proxy Test            | [proxy_test]
+| Selfdestruct          | [selfdestruct]
+| Create                | [create]
+| Create sol 6.2        | [sol6.2_create]
+| Modifiers             | [modifiers]
+| Commit Reveal         | [commitreveal]
+| Withdraw              | [withdraw]
+| Verify Source         | [verifysource]
+| Multisig Prep         | [multisigprep]
+| Openzeppelin Upgrades | [oz_db1]<br>[oz_db2]  |   [oz_deploy]<br>[oz_upgrade]
 
 [proxy_basic]:          https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_basic.sol
 [proxy_return]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/proxy_return.sol
@@ -33,3 +34,8 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 
 [multisigprep]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/multisigprep.sol
 [sol6.2_create]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/sol6.2_create.sol
+
+[oz_db1]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug1.sol
+[oz_db2]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug2.sol
+[oz_deploy]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/migrations/2_deploy_contracts.js
+[oz_upgrade]:   https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/migrations/3_upgrade_contracts.js

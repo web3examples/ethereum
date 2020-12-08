@@ -11,7 +11,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Selfdestruct & create2| [selfdestruct_create2]
 | Commit Reveal         | [commitreveal]
 | Send Transfer Call    | [sendtransfercall]
-| Multisig Prep         | [multisigprep]
+
 | Verify Source         | [verifysource]
 
 [oz_db1]:               https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug1.sol
@@ -24,9 +24,6 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [selfdestruct_create2]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/selfdestruct_create2.sol
 [commitreveal]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/commitreveal.sol
 [sendtransfercall]:     https://github.com/web3examples/ethereum/blob/master/pattern_examples/sendtransfercall.sol
-
-
-[multisigprep]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/multisigprep.sol
 
 
 

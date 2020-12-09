@@ -1,24 +1,31 @@
+// SPDX-License-Identifier: MIT
 // Based on https://solidity.ethereum.org/2020/10/28/solidity-0.8.x-preview
+// https://solidity-blog.s3.eu-central-1.amazonaws.com/data/08preview/soljson.js
+
 pragma solidity >0.7.0;
 
 contract ContractError {
     function Underflow() public pure returns (uint) {
          uint x = 0;
          x--; // this will generate an underflow
+         return x;
     }
+    function UncheckedUnderflow() public pure returns (uint) {
+         uint x = 0;
+         unchecked { x--; } // this will generate an underflow
+         return x;
+    } 
 }
 
 contract C {
     ContractError e = new ContractError();
-    event logbytes(bytes);
-
-    function TestUnderflow() public returns (string memory) {
+    
+    function TestUnderflow() public view returns (string memory) {
          try e.Underflow() returns (uint) {
             return "Ok";
         } catch Error(string memory reason) {
             return reason;
         } catch (bytes memory reason) { 
-            emit logbytes(reason);
             uint x=0;
             for (uint i=0;i<4;i++) //get first 4 bytes
                 x = (x<<8) + uint(uint8(reason[i]));

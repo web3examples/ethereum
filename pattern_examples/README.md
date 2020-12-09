@@ -11,8 +11,9 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Selfdestruct & create2| [selfdestruct_create2]
 | Commit Reveal         | [commitreveal]
 | Send Transfer Call    | [sendtransfercall]
-
 | Verify Source         | [verifysource]
+| Safemath underflow    | [safemath_underflow]
+| Solidity 8 underflow  | [sol8_underflow] 
 
 [oz_db1]:               https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug1.sol
 [oz_db2]:               https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug2.sol
@@ -24,12 +25,6 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [selfdestruct_create2]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/selfdestruct_create2.sol
 [commitreveal]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/commitreveal.sol
 [sendtransfercall]:     https://github.com/web3examples/ethereum/blob/master/pattern_examples/sendtransfercall.sol
-
-
-
-[verifysource]: https://github.com/web3examples/ethereum/tree/master/pattern_examples/verifysource.sol
-
-
-
-
-
+[verifysource]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/verifysource.sol
+[safemath_underflow]:   https://github.com/web3examples/ethereum/blob/master/pattern_examples/safemath_underflow.sol
+[sol8_underflow]:       https://github.com/web3examples/ethereum/blob/master/pattern_examples/sol8_underflow.sol

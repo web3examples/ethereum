@@ -1,0 +1,447 @@
+{
+  "contractName": "TestPublish",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "MyName",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function",
+      "constant": true
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "_MyName",
+          "type": "string"
+        }
+      ],
+      "name": "SetMyName",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"MyName\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"string\",\"name\":\"_MyName\",\"type\":\"string\"}],\"name\":\"SetMyName\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/Z/blockchain/web3examples/ethereum/pattern_examples/Verify/contracts/verifysource.sol\":\"TestPublish\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Z/blockchain/web3examples/ethereum/pattern_examples/Verify/contracts/verifysource.sol\":{\"keccak256\":\"0x405f964b401bd647f6ad86a6cd47d07f839c62afe3ddc5d3e8f57956b21c674a\",\"urls\":[\"bzz-raw://b4ad34dc000058e797cda973e13d6e8d1a0a1d11618d1d2529de8cfbc1c89bec\",\"dweb:/ipfs/Qma68aLXRpXCiUyTSse47sDuSDShTnYdxPuGyJ9wChRmYi\"]}},\"version\":1}",
+  "bytecode": "0x60806040526040518060400160405280601d81526020017f54657374207075626c69636174696f6e20746f2045746865727363616e0000008152506000908051906020019061004f929190610062565b5034801561005c57600080fd5b5061010d565b828054600181600116156101000203166002900490600052602060002090601f01602090048101928261009857600085556100df565b82601f106100b157805160ff19168380011785556100df565b828001600101855582156100df579182015b828111156100de5782518255916020019190600101906100c3565b5b5090506100ec91906100f0565b5090565b5b808211156101095760008160009055506001016100f1565b5090565b6102cc8061011c6000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063283f65021461003b578063eb8f4bfe146100be575b600080fd5b610043610137565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610135600480360360208110156100d457600080fd5b81019080803590602001906401000000008111156100f157600080fd5b82018360208201111561010357600080fd5b8035906020019184600183028401116401000000008311171561012557600080fd5b90919293919293905050506101d5565b005b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101cd5780601f106101a2576101008083540402835291602001916101cd565b820191906000526020600020905b8154815290600101906020018083116101b057829003601f168201915b505050505081565b8181600091906101e69291906101eb565b505050565b828054600181600116156101000203166002900490600052602060002090601f0160209004810192826102215760008555610268565b82601f1061023a57803560ff1916838001178555610268565b82800160010185558215610268579182015b8281111561026757823582559160200191906001019061024c565b5b5090506102759190610279565b5090565b5b8082111561029257600081600090555060010161027a565b509056fea26469706673582212207bfb7c7a7acf56a1fb0129008669b33d109accfb5fed59ed8a1e1f077d84da0364736f6c63430007050033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063283f65021461003b578063eb8f4bfe146100be575b600080fd5b610043610137565b6040518080602001828103825283818151815260200191508051906020019080838360005b83811015610083578082015181840152602081019050610068565b50505050905090810190601f1680156100b05780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b610135600480360360208110156100d457600080fd5b81019080803590602001906401000000008111156100f157600080fd5b82018360208201111561010357600080fd5b8035906020019184600183028401116401000000008311171561012557600080fd5b90919293919293905050506101d5565b005b60008054600181600116156101000203166002900480601f0160208091040260200160405190810160405280929190818152602001828054600181600116156101000203166002900480156101cd5780601f106101a2576101008083540402835291602001916101cd565b820191906000526020600020905b8154815290600101906020018083116101b057829003601f168201915b505050505081565b8181600091906101e69291906101eb565b505050565b828054600181600116156101000203166002900490600052602060002090601f0160209004810192826102215760008555610268565b82601f1061023a57803560ff1916838001178555610268565b82800160010185558215610268579182015b8281111561026757823582559160200191906001019061024c565b5b5090506102759190610279565b5090565b5b8082111561029257600081600090555060010161027a565b509056fea26469706673582212207bfb7c7a7acf56a1fb0129008669b33d109accfb5fed59ed8a1e1f077d84da0364736f6c63430007050033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "291:169:1:-:0;;;317:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;291:169;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o;:::-;;;;;;;",
+  "deployedSourceMap": "291:169:1:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;317:52;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;374:83;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;317:52;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;374:83::-;444:7;;435:6;:16;;;;;;;:::i;:::-;;374:83;;:::o;-1:-1:-1:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::i;:::-;;;:::o;:::-;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "// Verify code from https://ethereum-play.github.io/editor-solidity/ on etherscan:\r\n// Check tab output.json, notice the compiler version and optimizer:true\r\n// Stored here: https://ropsten.etherscan.io/address/0x55bdf79860ca3a68d53171d3a3a2fa4696a16f61#code\r\n\r\npragma solidity ^0.7.0;\r\n\r\n\r\ncontract TestPublish {\r\n  string public MyName=\"Test publication to Etherscan\";\r\n  function SetMyName(string calldata _MyName) external {\r\n     MyName = _MyName;\r\n  }\r\n}\r\n",
+  "sourcePath": "Z:/blockchain/web3examples/ethereum/pattern_examples/Verify/contracts/verifysource.sol",
+  "ast": {
+    "absolutePath": "/Z/blockchain/web3examples/ethereum/pattern_examples/Verify/contracts/verifysource.sol",
+    "exportedSymbols": {
+      "TestPublish": [
+        48
+      ]
+    },
+    "id": 49,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "262:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 48,
+        "linearizedBaseContracts": [
+          48
+        ],
+        "name": "TestPublish",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "283f6502",
+            "id": 37,
+            "mutability": "mutable",
+            "name": "MyName",
+            "nodeType": "VariableDeclaration",
+            "scope": 48,
+            "src": "317:52:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 35,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "317:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "hexValue": "54657374207075626c69636174696f6e20746f2045746865727363616e",
+              "id": 36,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "338:31:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_5c2c630688f8e5fcd7cb208bd268232a2ad73420354eb8e147005bc4f465413e",
+                "typeString": "literal_string \"Test publication to Etherscan\""
+              },
+              "value": "Test publication to Etherscan"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46,
+              "nodeType": "Block",
+              "src": "427:30:1",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 44,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 42,
+                      "name": "MyName",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37,
+                      "src": "435:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 43,
+                      "name": "_MyName",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "444:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_calldata_ptr",
+                        "typeString": "string calldata"
+                      }
+                    },
+                    "src": "435:16:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 45,
+                  "nodeType": "ExpressionStatement",
+                  "src": "435:16:1"
+                }
+              ]
+            },
+            "functionSelector": "eb8f4bfe",
+            "id": 47,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "SetMyName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 39,
+                  "mutability": "mutable",
+                  "name": "_MyName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47,
+                  "src": "393:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "393:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "392:25:1"
+            },
+            "returnParameters": {
+              "id": 41,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "427:0:1"
+            },
+            "scope": 48,
+            "src": "374:83:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 49,
+        "src": "291:169:1"
+      }
+    ],
+    "src": "262:200:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/Z/blockchain/web3examples/ethereum/pattern_examples/Verify/contracts/verifysource.sol",
+    "exportedSymbols": {
+      "TestPublish": [
+        48
+      ]
+    },
+    "id": 49,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "262:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 48,
+        "linearizedBaseContracts": [
+          48
+        ],
+        "name": "TestPublish",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "functionSelector": "283f6502",
+            "id": 37,
+            "mutability": "mutable",
+            "name": "MyName",
+            "nodeType": "VariableDeclaration",
+            "scope": 48,
+            "src": "317:52:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 35,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "317:6:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": {
+              "hexValue": "54657374207075626c69636174696f6e20746f2045746865727363616e",
+              "id": 36,
+              "isConstant": false,
+              "isLValue": false,
+              "isPure": true,
+              "kind": "string",
+              "lValueRequested": false,
+              "nodeType": "Literal",
+              "src": "338:31:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_stringliteral_5c2c630688f8e5fcd7cb208bd268232a2ad73420354eb8e147005bc4f465413e",
+                "typeString": "literal_string \"Test publication to Etherscan\""
+              },
+              "value": "Test publication to Etherscan"
+            },
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 46,
+              "nodeType": "Block",
+              "src": "427:30:1",
+              "statements": [
+                {
+                  "expression": {
+                    "id": 44,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "id": 42,
+                      "name": "MyName",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37,
+                      "src": "435:6:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_storage",
+                        "typeString": "string storage ref"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "id": 43,
+                      "name": "_MyName",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "444:7:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_calldata_ptr",
+                        "typeString": "string calldata"
+                      }
+                    },
+                    "src": "435:16:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage",
+                      "typeString": "string storage ref"
+                    }
+                  },
+                  "id": 45,
+                  "nodeType": "ExpressionStatement",
+                  "src": "435:16:1"
+                }
+              ]
+            },
+            "functionSelector": "eb8f4bfe",
+            "id": 47,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "SetMyName",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 40,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 39,
+                  "mutability": "mutable",
+                  "name": "_MyName",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 47,
+                  "src": "393:23:1",
+                  "stateVariable": false,
+                  "storageLocation": "calldata",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_calldata_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "393:6:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "visibility": "internal"
+                }
+              ],
+              "src": "392:25:1"
+            },
+            "returnParameters": {
+              "id": 41,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "427:0:1"
+            },
+            "scope": 48,
+            "src": "374:83:1",
+            "stateMutability": "nonpayable",
+            "virtual": false,
+            "visibility": "external"
+          }
+        ],
+        "scope": 49,
+        "src": "291:169:1"
+      }
+    ],
+    "src": "262:200:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {
+    "4": {
+      "events": {},
+      "links": {},
+      "address": "0xe174ae3f658fF63C98751aC452D3Fb1534e5E78C",
+      "transactionHash": "0xe203c7b058b8e9c10c643c216f8d9d0ef1b8962b053ed365c856a5eabf101a04"
+    },
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xc1df01dCF414E3213b790A696Ec5351308D495d9",
+      "transactionHash": "0xe06e7bbccf48a6643ce51610860d443a738e70eac6966fce6d111b9c1a12f45b"
+    }
+  },
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-12-09T11:06:51.556Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}

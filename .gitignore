@@ -9,3 +9,4 @@ a.txt
 web3js/package.json
 
 *.log
+token_examples/ERC20TruffleOpenZeppelin/.etherscan

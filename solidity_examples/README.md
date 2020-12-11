@@ -29,6 +29,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 | Auction                       |                 | [auction_github]
 | Mini casino: bet and win      | [casino]        | [casino1_github]<br>[casino2_github]
 | Natspec                       |                 | [natspec]
+| bytes2uint                    |                 | [bytes2uint]
 
 [simplestorage]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/SimpleStorage.sol
 [casino]:            http://web3examples.com/ethereum/casino/
@@ -49,6 +50,7 @@ Also see: [Oracle Examples](..\oracle_examples)
 [workedhours]:       https://github.com/web3examples/ethereum/blob/master/solidity_examples/WorkedHours.sol
 [helloworld]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/HelloWorld.sol
 [natspec]:           https://github.com/web3examples/ethereum/blob/master/solidity_examples/Natspec.sol
+[bytes2uint]:        https://github.com/web3examples/ethereum/blob/master/solidity_examples/bytes2uint.sol
 
 
 [workedhours_video]: https://ipfs.io/ipfs/QmNyNScmwTfxr6rCV8QtWu17egJBxnFeuRV8W844hVG6ox

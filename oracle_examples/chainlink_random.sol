@@ -3,6 +3,7 @@
 
 pragma solidity ^0.6.0;
 import "https://github.com/smartcontractkit/chainlink/evm-contracts/src/v0.6/VRFConsumerBase.sol";
+// https://github.com/smartcontractkit/chainlink/blob/develop/evm-contracts/src/v0.6/VRFConsumerBase.sol
 
 contract RandomNumberConsumer is VRFConsumerBase {
     bytes32 internal keyHash;

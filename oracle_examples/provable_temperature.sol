@@ -1,6 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 import "github.com/provable-things/ethereum-api/provableAPI_0.6.sol";
+// import "https://raw.githubusercontent.com/provable-things/ethereum-api/master/provableAPI_0.6.sol"
 
 contract TempOracleContract is usingProvable {
    string  public temp;

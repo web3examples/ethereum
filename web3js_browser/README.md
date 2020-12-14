@@ -47,7 +47,7 @@ Web3.js examples in browser
 [version]:           https://web3examples.com/ethereum/web3js_browser/version.html
 
 [getBlockNumber]:    https://web3examples.com/ethereum/web3js_browser/getBlockNumber.html
-[reqAccounts]:      https://web3examples.com/ethereum/web3js_browser/getaccounts3.html
+[reqAccounts]:      https://web3examples.com/ethereum/web3js_browser/RequestAccounts.html
 [ca_changed]:        https://web3examples.com/ethereum/web3js_browser/ChainOrAccountsChanged.html
 
 [sendtransaction]:   https://web3examples.com/ethereum/web3js_browser/sendtransaction.html
@@ -59,7 +59,7 @@ Web3.js examples in browser
 [version_gh]:            https://github.com/web3examples/ethereum/blob/master/web3js_browser/version.html
 
 [getBlockNumber_gh]:     https://github.com/web3examples/ethereum/blob/master/web3js_browser/getBlockNumber.html
-[reqAccounts_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/getaccounts3.html
+[reqAccounts_gh]:       https://github.com/web3examples/ethereum/blob/master/web3js_browser/RequestAccounts.html
 [sendtransaction_gh]:    https://github.com/web3examples/ethereum/blob/master/web3js_browser/sendtransaction.html
 [ca_changed_gh]:         https://github.com/web3examples/ethereum/blob/master/web3js_browser/ChainOrAccountsChanged.html
 

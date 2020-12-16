@@ -1,0 +1,560 @@
+{
+    "contractName": "A",
+    "abi": [
+        {
+            "inputs": [],
+            "name": "ExtA",
+            "outputs": [
+                {
+                    "internalType": "string",
+                    "name": "",
+                    "type": "string"
+                }
+            ],
+            "stateMutability": "view",
+            "type": "function"
+        }
+    ],
+    "metadata": "{\"compiler\":{\"version\":\"0.7.0+commit.9e61f92b\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"ExtA\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"z:/blockchain/web3examples/ethereum/visualize_examples/visualize.sol\":\"A\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"z:/blockchain/web3examples/ethereum/visualize_examples/visualize.sol\":{\"keccak256\":\"0xcc69faf5df31af26d85bf201b3cc495b572790b9ccf2fc676a75cad20b52d9a7\",\"urls\":[\"bzz-raw://be4458310afec8fbe68dfc029daee20c731c86f2c0352f35e685842c35c3e314\",\"dweb:/ipfs/QmaxQtudz5TTtxccXcWfX6DDosRf9W3Yu6eEyfR7aaP5ob\"]}},\"version\":1}",
+    "bytecode": "608060405234801561001057600080fd5b5060f98061001f6000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c8063672e638114602d575b600080fd5b603360a5565b6040805160208082528351818301528351919283929083019185019080838360005b83811015606b5781810151838201526020016055565b50505050905090810190601f16801560975780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6040805180820190915260048152634578744160e01b60208201529056fea26469706673582212200781e0373f25887bd95907facc14e22e4e7e62139464a2137b0e460a849583c264736f6c63430007000033",
+    "deployedBytecode": "6080604052348015600f57600080fd5b506004361060285760003560e01c8063672e638114602d575b600080fd5b603360a5565b6040805160208082528351818301528351919283929083019185019080838360005b83811015606b5781810151838201526020016055565b50505050905090810190601f16801560975780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b6040805180820190915260048152634578744160e01b60208201529056fea26469706673582212200781e0373f25887bd95907facc14e22e4e7e62139464a2137b0e460a849583c264736f6c63430007000033",
+    "sourceMap": "47:116:0:-:0;;;;;;;;;;;;;;;;;;;",
+    "deployedSourceMap": "47:116:0:-:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;73:87;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;139:13;;;;;;;;;;;;-1:-1:-1;;;139:13:0;;;;73:87;:::o",
+    "sourcePath": "z:/blockchain/web3examples/ethereum/visualize_examples/visualize.sol",
+    "compiler": {
+        "name": "solc",
+        "version": "0.7.0+commit.9e61f92b"
+    },
+    "ast": {
+        "absolutePath": "z:/blockchain/web3examples/ethereum/visualize_examples/visualize.sol",
+        "exportedSymbols": {
+            "A": [
+                13
+            ],
+            "B": [
+                41
+            ],
+            "Base": [
+                2
+            ]
+        },
+        "id": 42,
+        "license": null,
+        "nodeType": "SourceUnit",
+        "nodes": [
+            {
+                "id": 1,
+                "literals": [
+                    "solidity",
+                    "^",
+                    "0.7",
+                    ".0"
+                ],
+                "nodeType": "PragmaDirective",
+                "src": "0:23:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [],
+                "contractDependencies": [],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 2,
+                "linearizedBaseContracts": [
+                    2
+                ],
+                "name": "Base",
+                "nodeType": "ContractDefinition",
+                "nodes": [],
+                "scope": 42,
+                "src": "27:16:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "arguments": null,
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 3,
+                            "name": "Base",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 2,
+                            "src": "61:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Base_$2",
+                                "typeString": "contract Base"
+                            }
+                        },
+                        "id": 4,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "61:4:0"
+                    }
+                ],
+                "contractDependencies": [
+                    2
+                ],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 13,
+                "linearizedBaseContracts": [
+                    13,
+                    2
+                ],
+                "name": "A",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "body": {
+                            "id": 11,
+                            "nodeType": "Block",
+                            "src": "128:32:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "hexValue": "45787441",
+                                        "id": 9,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "string",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "146:6:0",
+                                        "subdenomination": null,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_stringliteral_41f683f51bc25fa6aa5fc723d19c4eb33b8fa8ac016ddc1cea3cf89cf48b43e8",
+                                            "typeString": "literal_string \"ExtA\""
+                                        },
+                                        "value": "ExtA"
+                                    },
+                                    "functionReturnParameters": 8,
+                                    "id": 10,
+                                    "nodeType": "Return",
+                                    "src": "139:13:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "functionSelector": "672e6381",
+                        "id": 12,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "ExtA",
+                        "nodeType": "FunctionDefinition",
+                        "overrides": null,
+                        "parameters": {
+                            "id": 5,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "86:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 8,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 7,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "overrides": null,
+                                    "scope": 12,
+                                    "src": "113:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 6,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "113:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "112:15:0"
+                        },
+                        "scope": 13,
+                        "src": "73:87:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 42,
+                "src": "47:116:0"
+            },
+            {
+                "abstract": false,
+                "baseContracts": [
+                    {
+                        "arguments": null,
+                        "baseName": {
+                            "contractScope": null,
+                            "id": 14,
+                            "name": "Base",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 2,
+                            "src": "181:4:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_Base_$2",
+                                "typeString": "contract Base"
+                            }
+                        },
+                        "id": 15,
+                        "nodeType": "InheritanceSpecifier",
+                        "src": "181:4:0"
+                    }
+                ],
+                "contractDependencies": [
+                    2
+                ],
+                "contractKind": "contract",
+                "documentation": null,
+                "fullyImplemented": true,
+                "id": 41,
+                "linearizedBaseContracts": [
+                    41,
+                    2
+                ],
+                "name": "B",
+                "nodeType": "ContractDefinition",
+                "nodes": [
+                    {
+                        "constant": false,
+                        "id": 17,
+                        "mutability": "mutable",
+                        "name": "acontract",
+                        "nodeType": "VariableDeclaration",
+                        "overrides": null,
+                        "scope": 41,
+                        "src": "192:11:0",
+                        "stateVariable": true,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                            "typeIdentifier": "t_contract$_A_$13",
+                            "typeString": "contract A"
+                        },
+                        "typeName": {
+                            "contractScope": null,
+                            "id": 16,
+                            "name": "A",
+                            "nodeType": "UserDefinedTypeName",
+                            "referencedDeclaration": 13,
+                            "src": "192:1:0",
+                            "typeDescriptions": {
+                                "typeIdentifier": "t_contract$_A_$13",
+                                "typeString": "contract A"
+                            }
+                        },
+                        "value": null,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 24,
+                            "nodeType": "Block",
+                            "src": "270:32:0",
+                            "statements": [
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "hexValue": "696e7442",
+                                        "id": 22,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": true,
+                                        "kind": "string",
+                                        "lValueRequested": false,
+                                        "nodeType": "Literal",
+                                        "src": "288:6:0",
+                                        "subdenomination": null,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_stringliteral_f187e91f8100c8f61602bf4aff942015829496813f511542fcf6663f10e23e23",
+                                            "typeString": "literal_string \"intB\""
+                                        },
+                                        "value": "intB"
+                                    },
+                                    "functionReturnParameters": 21,
+                                    "id": 23,
+                                    "nodeType": "Return",
+                                    "src": "281:13:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "id": 25,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "intB",
+                        "nodeType": "FunctionDefinition",
+                        "overrides": null,
+                        "parameters": {
+                            "id": 18,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "228:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 21,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 20,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "overrides": null,
+                                    "scope": 25,
+                                    "src": "255:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 19,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "255:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "254:15:0"
+                        },
+                        "scope": 41,
+                        "src": "215:87:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "internal"
+                    },
+                    {
+                        "body": {
+                            "id": 39,
+                            "nodeType": "Block",
+                            "src": "368:75:0",
+                            "statements": [
+                                {
+                                    "assignments": [
+                                        31
+                                    ],
+                                    "declarations": [
+                                        {
+                                            "constant": false,
+                                            "id": 31,
+                                            "mutability": "mutable",
+                                            "name": "s",
+                                            "nodeType": "VariableDeclaration",
+                                            "overrides": null,
+                                            "scope": 39,
+                                            "src": "379:15:0",
+                                            "stateVariable": false,
+                                            "storageLocation": "memory",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_string_memory_ptr",
+                                                "typeString": "string"
+                                            },
+                                            "typeName": {
+                                                "id": 30,
+                                                "name": "string",
+                                                "nodeType": "ElementaryTypeName",
+                                                "src": "379:6:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_string_storage_ptr",
+                                                    "typeString": "string"
+                                                }
+                                            },
+                                            "value": null,
+                                            "visibility": "internal"
+                                        }
+                                    ],
+                                    "id": 34,
+                                    "initialValue": {
+                                        "argumentTypes": null,
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "id": 32,
+                                            "name": "intB",
+                                            "nodeType": "Identifier",
+                                            "overloadedDeclarations": [],
+                                            "referencedDeclaration": 25,
+                                            "src": "395:4:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_internal_view$__$returns$_t_string_memory_ptr_$",
+                                                "typeString": "function () view returns (string memory)"
+                                            }
+                                        },
+                                        "id": 33,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "395:6:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_memory_ptr",
+                                            "typeString": "string memory"
+                                        }
+                                    },
+                                    "nodeType": "VariableDeclarationStatement",
+                                    "src": "379:22:0"
+                                },
+                                {
+                                    "expression": {
+                                        "argumentTypes": null,
+                                        "arguments": [],
+                                        "expression": {
+                                            "argumentTypes": [],
+                                            "expression": {
+                                                "argumentTypes": null,
+                                                "id": 35,
+                                                "name": "acontract",
+                                                "nodeType": "Identifier",
+                                                "overloadedDeclarations": [],
+                                                "referencedDeclaration": 17,
+                                                "src": "419:9:0",
+                                                "typeDescriptions": {
+                                                    "typeIdentifier": "t_contract$_A_$13",
+                                                    "typeString": "contract A"
+                                                }
+                                            },
+                                            "id": 36,
+                                            "isConstant": false,
+                                            "isLValue": false,
+                                            "isPure": false,
+                                            "lValueRequested": false,
+                                            "memberName": "ExtA",
+                                            "nodeType": "MemberAccess",
+                                            "referencedDeclaration": 12,
+                                            "src": "419:14:0",
+                                            "typeDescriptions": {
+                                                "typeIdentifier": "t_function_external_view$__$returns$_t_string_memory_ptr_$",
+                                                "typeString": "function () view external returns (string memory)"
+                                            }
+                                        },
+                                        "id": 37,
+                                        "isConstant": false,
+                                        "isLValue": false,
+                                        "isPure": false,
+                                        "kind": "functionCall",
+                                        "lValueRequested": false,
+                                        "names": [],
+                                        "nodeType": "FunctionCall",
+                                        "src": "419:16:0",
+                                        "tryCall": false,
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_memory_ptr",
+                                            "typeString": "string memory"
+                                        }
+                                    },
+                                    "functionReturnParameters": 29,
+                                    "id": 38,
+                                    "nodeType": "Return",
+                                    "src": "412:23:0"
+                                }
+                            ]
+                        },
+                        "documentation": null,
+                        "functionSelector": "19c9da48",
+                        "id": 40,
+                        "implemented": true,
+                        "kind": "function",
+                        "modifiers": [],
+                        "name": "ExtB",
+                        "nodeType": "FunctionDefinition",
+                        "overrides": null,
+                        "parameters": {
+                            "id": 26,
+                            "nodeType": "ParameterList",
+                            "parameters": [],
+                            "src": "326:2:0"
+                        },
+                        "returnParameters": {
+                            "id": 29,
+                            "nodeType": "ParameterList",
+                            "parameters": [
+                                {
+                                    "constant": false,
+                                    "id": 28,
+                                    "mutability": "mutable",
+                                    "name": "",
+                                    "nodeType": "VariableDeclaration",
+                                    "overrides": null,
+                                    "scope": 40,
+                                    "src": "353:13:0",
+                                    "stateVariable": false,
+                                    "storageLocation": "memory",
+                                    "typeDescriptions": {
+                                        "typeIdentifier": "t_string_memory_ptr",
+                                        "typeString": "string"
+                                    },
+                                    "typeName": {
+                                        "id": 27,
+                                        "name": "string",
+                                        "nodeType": "ElementaryTypeName",
+                                        "src": "353:6:0",
+                                        "typeDescriptions": {
+                                            "typeIdentifier": "t_string_storage_ptr",
+                                            "typeString": "string"
+                                        }
+                                    },
+                                    "value": null,
+                                    "visibility": "internal"
+                                }
+                            ],
+                            "src": "352:15:0"
+                        },
+                        "scope": 41,
+                        "src": "313:130:0",
+                        "stateMutability": "view",
+                        "virtual": false,
+                        "visibility": "external"
+                    }
+                ],
+                "scope": 42,
+                "src": "167:279:0"
+            }
+        ],
+        "src": "0:451:0"
+    },
+    "functionHashes": {
+        "ExtA()": "672e6381"
+    },
+    "gasEstimates": {
+        "creation": {
+            "codeDepositCost": "49800",
+            "executionCost": "99",
+            "totalCost": "49899"
+        },
+        "external": {
+            "ExtA()": "infinite"
+        }
+    }
+}

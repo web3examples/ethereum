@@ -11,7 +11,7 @@
 |[Pattern](pattern_examples)        |[Oracle](oracle_examples)
 |[Test](test_examples)              |[TheGraph](thegraph_examples) 
 |[Ledger](ledger_examples)          |[Defender](defender_examples)
-|[Wallet](wallet_examples) 
+|[Wallet](wallet_examples)          |[Security](security_examples) 
 
 # Other
 

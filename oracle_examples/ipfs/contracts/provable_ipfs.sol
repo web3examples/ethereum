@@ -1,7 +1,5 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
-
-
 //import "github.com/provable-things/ethereum-api/provableAPI_0.6.sol"; // remix
 //save "https://raw.githubusercontent.com/provable-things/ethereum-api/master/provableAPI_0.6.sol"; locally & 
 import "./provableAPI_0.6.sol";

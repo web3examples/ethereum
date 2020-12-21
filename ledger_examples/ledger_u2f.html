@@ -19,7 +19,7 @@ async function f() {
         //log(`Connected to ${transport.deviceModel.id}`); // not present with U2F
         const eth = new AppEth(transport);
         var res=await eth.getAppConfiguration().catch(x=>log(`Error: ${x.message}`));;
-        log(`Firmware version: ${res.version}`);
+        log(`Software version: ${res.version}`);
         var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(x=>log(`Error: ${x.message}`));
         if (keypair)
             log(`Lowlevel address: ${keypair.address}`);

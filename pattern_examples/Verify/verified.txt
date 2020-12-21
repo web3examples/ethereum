@@ -1,0 +1,3 @@
+Verifying TestPublish
+Pass - Verified: https://rinkeby.etherscan.io/address/0x4a3a6397C742398Fc7DD59fDbf32742154f29003#contracts
+Successfully verified 1 contract(s).

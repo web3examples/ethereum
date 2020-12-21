@@ -27,7 +27,7 @@ const infuraKey = fs.readFileSync(".infura")
     .toString().trim(); // infura key
 const etherscanKey = fs.readFileSync(".etherscan")
     .toString().trim(); // etehrscan key
-console.log(etherscanKey)    
+
 
 module.exports = {
   /**
@@ -58,10 +58,11 @@ module.exports = {
     // timeout: 100000
   },
   compilers: { solc: { version: "^0.7.0"} },
-  plugins: [
-    'truffle-plugin-verify'
+
+   plugins: [
+      'truffle-plugin-verify'
   ],
   api_keys: {
-    etherscan: etherscanKey
+      etherscan: etherscanKey
   }
-};
+}

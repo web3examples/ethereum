@@ -1,8 +1,6 @@
 // SPDX-License-Identifier: MIT
-// Based on https://solidity.ethereum.org/2020/10/28/solidity-0.8.x-preview
-// https://solidity-blog.s3.eu-central-1.amazonaws.com/data/08preview/soljson.js
 
-pragma solidity >0.7.0;
+pragma solidity ^0.8.0;
 
 contract ContractError {
     function Underflow() public pure returns (uint) {
@@ -29,7 +27,7 @@ contract C {
             uint x=0;
             for (uint i=0;i<4;i++) //get first 4 bytes
                 x = (x<<8) + uint(uint8(reason[i]));
-            byte b4=reason[reason.length-1]; // get last byte
+            bytes1 b4=reason[reason.length-1]; // get last byte
             if (x == 0x4e487b71) { // abi.encodeWithSignature("Panic(uint256)"))
                 if (b4 == hex'11')
                     return "Panic: underflow or overflow";

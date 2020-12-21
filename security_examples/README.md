@@ -8,8 +8,8 @@ Several security Examples. ([Up](..) [Home](..\..))
 | Roles        | [role_gh]
 
 
-[role]:         https://github.com/web3examples/ethereum/tree/master/security_examples\accesscontrol\contracts\role.sol
-[whitelist]:    https://github.com/web3examples/ethereum/tree/master/security_examples\accesscontrol\contracts\whitelist.sol
+[role]:         https://github.com/web3examples/ethereum/tree/master/security_examples/accesscontrol/contracts/role.sol
+[whitelist]:    https://github.com/web3examples/ethereum/tree/master/security_examples/accesscontrol/contracts/whitelist.sol
 
 
 

@@ -10,6 +10,7 @@ async function f() {
         console.log(`Version: ${res.version}`);
         var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(console.log);
         console.log(`Lowlevel address: ${keypair.address}`)
+        console.log(keypair)
     }
 }
 f();    

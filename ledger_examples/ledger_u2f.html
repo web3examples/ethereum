@@ -26,8 +26,8 @@ async function f() {
         
         const engine = new ProviderEngine();
         getTransport=()=> transport;
-        const rpcUrl = "https://ropsten.infura.io/";
-        const networkId = 3;
+        const rpcUrl = "https://cloudflare-eth.com"; // "https://ropsten.infura.io/";
+        const networkId = 1;
         const ledger = createLedgerSubprovider(getTransport, {
             networkId,
             accountsLength: 1   // nr of accounts retrieved

@@ -1,13 +1,16 @@
-pragma solidity ^0.6.1;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.7.0;
 
 contract MultisigPrep {
     address public _savedest;
     uint    public _savevalue;
     bytes   public _savedata;
+    string  public _stored;
     event str(string);
 
     function Store(string calldata message ) external returns(string memory) {
-        return "Store succeeded";
+        _stored = message;
+        return _stored;
     }
     function Prepare(address destination, uint value, bytes calldata data) external {
         _savedest=destination;
@@ -16,7 +19,7 @@ contract MultisigPrep {
     }    
     function Execute() external returns(bytes memory) {    
         require(_savedest != address(0),"Not prepared");
-        (bool success,bytes memory res) = _savedest.call.value(_savevalue)(_savedata);
+        (bool success,bytes memory res) = _savedest.call{value:_savevalue}(_savedata);
         require(success, "Failed to execute transaction");
         _savedest=address(0);
         return res;

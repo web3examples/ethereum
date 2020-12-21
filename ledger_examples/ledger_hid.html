@@ -10,11 +10,9 @@
 <script>
     function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
-        }
-        
+    }
 log("Set chrome://flags/#enable-experimental-web-platform-features");
 log("Make sure you have the latest firmware on the ledger (at least 1.6.1)")
-        
 async function f() {    
     const transport = await TransportWebUSB.create().catch(x=>log(`Error: ${x.message}`));
     if (transport) {    
@@ -25,7 +23,6 @@ async function f() {
         var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(x=>log(`Error: ${x.message}`));
         if (keypair)
             log(`Lowlevel address: ${keypair.address}`);
-        
         const engine = new ProviderEngine();
         getTransport=()=> transport;
          const rpcUrl = "https://cloudflare-eth.com"; // "https://ropsten.infura.io/";

@@ -6,8 +6,8 @@ Several Ledger Examples. ([Up](..) [Home](..\..))
 | ---------                               | -----          | -------------
 | Low Level Ledger                        |                | [low_level_ledger_gh]
 | Nano Ledger                             |                | [nano_ledger_gh]      
-| Ledger u2f                              | [ledger_u2f]   | [ledger_u2f_gh]
 | Ledger hid                              | [ledger_hid]   | [ledger_hid_gh]
+| Ledger u2f (deprecated)                 | [ledger_u2f]   | [ledger_u2f_gh]
 | Library: Webusb Require                 |                | [webusb_require_gh]
 
 [low_level_ledger_gh]:  https://github.com/web3examples/ethereum/tree/master/ledger_examples/low_level_ledger.js

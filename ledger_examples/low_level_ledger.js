@@ -8,9 +8,9 @@ async function f() {
         const eth = new AppEth(transport);
         var res=await eth.getAppConfiguration();
         console.log(`Version: ${res.version}`);
-        var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(console.log);
-        console.log(`Lowlevel address: ${keypair.address}`)
-        console.log(keypair)
+        var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(x=>console.log(`Error: ${x.message}`));
+        if (keypair)
+            console.log(`Lowlevel address: ${keypair.address}`)
     }
 }
 f();    

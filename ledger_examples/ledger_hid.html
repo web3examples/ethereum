@@ -13,6 +13,7 @@
         }
         
 log("Set chrome://flags/#enable-experimental-web-platform-features");
+log("Make sure you have the latest firmware on the ledger (at least 1.6.2)")
         
 async function f() {    
     const transport = await TransportWebUSB.create().catch(x=>log(`Error: ${x.message}`));
@@ -20,7 +21,7 @@ async function f() {
         log(`Connected to ${transport.deviceModel.id}`);
         const eth = new AppEth(transport);
         var res=await eth.getAppConfiguration().catch(x=>log(`Error: ${x.message}`));;
-        log(`Version: ${res.version}`);
+        log(`Firmware version: ${res.version}`);
         var keypair=await eth.getAddress("44'/60'/0'/0/0").catch(x=>log(`Error: ${x.message}`));
         if (keypair)
             log(`Lowlevel address: ${keypair.address}`);

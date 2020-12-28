@@ -1,1 +1,1 @@
-browserify ens-web3-require.js -o ens-web3-browserify.js 
+browserify namehash-require.js -o namehash-browserify.js 

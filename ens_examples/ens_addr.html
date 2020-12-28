@@ -11,8 +11,7 @@
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
         async function f() { 
-            web3 = new Web3(Web3.givenProvider); // provider from metamask      
-            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));                        
+            web3 = new Web3(Web3.givenProvider); // provider from metamask  
             const name='web3examples.eth';
             log(`Checking ${name}`);            
             var address=await web3.eth.ens.getAddress(name);

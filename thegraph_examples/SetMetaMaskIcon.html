@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Set TheGraph Icon in MetaMask</h1>
+        <script type="text/javascript">        
+            var param={
+                type: 'ERC20', 
+                options: {
+                    address:    "0xc944e90c64b2c07662a292be6244bdf05cda44a7", 
+                    symbol:     "GRT", 
+                    decimals:   18, 
+                    image:      "https://avatars0.githubusercontent.com/u/38020273?s=200&v=4"
+                }
+            }
+            ethereum.request({method: 'wallet_watchAsset',params: param }) ;
+        </script>
+    </body>
+</html>

@@ -1,25 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-         <script src="ens-web3-browserify.js"></script> 
+         <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script>
     </head>
     <body>
-        <h1>ENS Address (web3.js api) (Ropsten)</h1>
+        <h1>ENS Address (web3.js api) (Goerli)</h1>
         <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
         function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
         async function f() { 
-            web3 = new Web3(Web3.givenProvider); // provider from metamask         
-            web3.extend({ // web3.eth.requestAccounts() isn't available (yet)
-                methods: [{
-                    name: 'eth_requestAccounts',
-                    call: 'eth_requestAccounts',
-                    params: 0
-                }]
-            });
-            var result=await web3.eth_requestAccounts();
+            web3 = new Web3(Web3.givenProvider); // provider from metamask      
+            var result=await web3.eth.requestAccounts().catch(x=>log(x.message));                        
             const name='web3examples.eth';
             log(`Checking ${name}`);            
             var address=await web3.eth.ens.getAddress(name);

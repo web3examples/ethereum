@@ -1,4 +1,5 @@
-pragma solidity ^0.5.12;
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.7.0;
 
 contract RegisterParticipants {
     mapping(address => bool) public MapParticipant;
@@ -6,7 +7,7 @@ contract RegisterParticipants {
     mapping(address => uint) public IndexInList;
     address public owner;
     
-    constructor() public { 
+    constructor()  { 
         ListParticipant.push(address(0)); // "use" address 0, to make tests easier
         owner=msg.sender;
     }  

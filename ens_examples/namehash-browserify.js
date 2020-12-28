@@ -4148,9 +4148,6 @@ return {
 }));
 
 },{"./idna-map":8,"punycode":5}],10:[function(require,module,exports){
-//Web3        = require('web3');
-//ENS         = require('ethereum-ens');
-namehash    = require('eth-ens-namehash');
-//contentHash = require('content-hash')
+namehash=require('eth-ens-namehash');
 
 },{"eth-ens-namehash":6}]},{},[10]);

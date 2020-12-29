@@ -34,9 +34,9 @@ contract NaivePaymaster is BasePaymaster {
 		_verifyForwarder(relayRequest);
 		(signature, approvalData, maxPossibleGas);
 		
-		require(relayRequest.request.to == ourTarget);
+		require(relayRequest.request.to == ourTarget,"Only our own contract");
 		emit PreRelayed(now);
-                return (abi.encode(now), false);
+        return (abi.encode(now), false);
 	}
 
 	function postRelayedCall(
@@ -50,7 +50,7 @@ contract NaivePaymaster is BasePaymaster {
 	}
 
   function versionPaymaster() external virtual view override returns (string memory) {
-    return "1.0";
+    return "2.1.0";
   }
 
 }

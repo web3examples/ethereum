@@ -46,15 +46,15 @@
     "absolutePath": "@opengsn/gsn/contracts/interfaces/IRelayRecipient.sol",
     "exportedSymbols": {
       "IRelayRecipient": [
-        1410
+        1562
       ]
     },
-    "id": 1411,
+    "id": 1563,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1383,
+        "id": 1535,
         "literals": [
           "solidity",
           "^",
@@ -62,7 +62,7 @@
           ".2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "31:23:12"
+        "src": "31:23:13"
       },
       {
         "abstract": true,
@@ -70,15 +70,15 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 1384,
+          "id": 1536,
           "nodeType": "StructuredDocumentation",
-          "src": "56:165:12",
+          "src": "56:165:13",
           "text": " a contract must implement this interface in order to support relayed transaction.\n It is better to inherit the BaseRelayRecipient as its implementation."
         },
         "fullyImplemented": false,
-        "id": 1410,
+        "id": 1562,
         "linearizedBaseContracts": [
-          1410
+          1562
         ],
         "name": "IRelayRecipient",
         "nodeType": "ContractDefinition",
@@ -86,13 +86,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1385,
+              "id": 1537,
               "nodeType": "StructuredDocumentation",
-              "src": "263:203:12",
+              "src": "263:203:13",
               "text": " return if the forwarder is trusted to forward relayed transactions to us.\n the forwarder is required to verify the sender's signature, and verify\n the call is not a replay."
             },
             "functionSelector": "572b6c05",
-            "id": 1392,
+            "id": 1544,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -100,18 +100,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1388,
+              "id": 1540,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1387,
+                  "id": 1539,
                   "mutability": "mutable",
                   "name": "forwarder",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1392,
-                  "src": "499:17:12",
+                  "scope": 1544,
+                  "src": "499:17:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -119,10 +119,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1386,
+                    "id": 1538,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "499:7:12",
+                    "src": "499:7:13",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -133,21 +133,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "498:19:12"
+              "src": "498:19:13"
             },
             "returnParameters": {
-              "id": 1391,
+              "id": 1543,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1390,
+                  "id": 1542,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1392,
-                  "src": "546:4:12",
+                  "scope": 1544,
+                  "src": "546:4:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -155,10 +155,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1389,
+                    "id": 1541,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "546:4:12",
+                    "src": "546:4:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -168,10 +168,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "545:6:12"
+              "src": "545:6:13"
             },
-            "scope": 1410,
-            "src": "471:81:12",
+            "scope": 1562,
+            "src": "471:81:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
@@ -179,12 +179,12 @@
           {
             "body": null,
             "documentation": {
-              "id": 1393,
+              "id": 1545,
               "nodeType": "StructuredDocumentation",
-              "src": "558:290:12",
+              "src": "558:290:13",
               "text": " return the sender of this call.\n if the call came through our trusted forwarder, then the real sender is appended as the last 20 bytes\n of the msg.data.\n otherwise, return `msg.sender`\n should be used in the contract anywhere instead of msg.sender"
             },
-            "id": 1398,
+            "id": 1550,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -192,24 +192,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1394,
+              "id": 1546,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "872:2:12"
+              "src": "872:2:13"
             },
             "returnParameters": {
-              "id": 1397,
+              "id": 1549,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1396,
+                  "id": 1548,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1398,
-                  "src": "906:15:12",
+                  "scope": 1550,
+                  "src": "906:15:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -217,10 +217,10 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 1395,
+                    "id": 1547,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "906:15:12",
+                    "src": "906:15:13",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -231,10 +231,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "905:17:12"
+              "src": "905:17:13"
             },
-            "scope": 1410,
-            "src": "853:70:12",
+            "scope": 1562,
+            "src": "853:70:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
@@ -242,12 +242,12 @@
           {
             "body": null,
             "documentation": {
-              "id": 1399,
+              "id": 1551,
               "nodeType": "StructuredDocumentation",
-              "src": "929:409:12",
+              "src": "929:409:13",
               "text": " return the msg.data of this call.\n if the call came through our trusted forwarder, then the real sender was appended as the last 20 bytes\n of the msg.data - so this method will strip those 20 bytes off.\n otherwise, return `msg.data`\n should be used in the contract instead of msg.data, where the difference matters (e.g. when explicitly\n signing or hashing the"
             },
-            "id": 1404,
+            "id": 1556,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -255,24 +255,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1400,
+              "id": 1552,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1360:2:12"
+              "src": "1360:2:13"
             },
             "returnParameters": {
-              "id": 1403,
+              "id": 1555,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1402,
+                  "id": 1554,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1404,
-                  "src": "1394:12:12",
+                  "scope": 1556,
+                  "src": "1394:12:13",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -280,10 +280,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1401,
+                    "id": 1553,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1394:5:12",
+                    "src": "1394:5:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -293,10 +293,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1393:14:12"
+              "src": "1393:14:13"
             },
-            "scope": 1410,
-            "src": "1343:65:12",
+            "scope": 1562,
+            "src": "1343:65:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
@@ -305,7 +305,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "486ff0cd",
-            "id": 1409,
+            "id": 1561,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -313,24 +313,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1405,
+              "id": 1557,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1439:2:12"
+              "src": "1439:2:13"
             },
             "returnParameters": {
-              "id": 1408,
+              "id": 1560,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1407,
+                  "id": 1559,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1409,
-                  "src": "1473:13:12",
+                  "scope": 1561,
+                  "src": "1473:13:13",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -338,10 +338,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1406,
+                    "id": 1558,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1473:6:12",
+                    "src": "1473:6:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -351,34 +351,34 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1472:15:12"
+              "src": "1472:15:13"
             },
-            "scope": 1410,
-            "src": "1414:74:12",
+            "scope": 1562,
+            "src": "1414:74:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "external"
           }
         ],
-        "scope": 1411,
-        "src": "222:1268:12"
+        "scope": 1563,
+        "src": "222:1268:13"
       }
     ],
-    "src": "31:1460:12"
+    "src": "31:1460:13"
   },
   "legacyAST": {
     "absolutePath": "@opengsn/gsn/contracts/interfaces/IRelayRecipient.sol",
     "exportedSymbols": {
       "IRelayRecipient": [
-        1410
+        1562
       ]
     },
-    "id": 1411,
+    "id": 1563,
     "license": "MIT",
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1383,
+        "id": 1535,
         "literals": [
           "solidity",
           "^",
@@ -386,7 +386,7 @@
           ".2"
         ],
         "nodeType": "PragmaDirective",
-        "src": "31:23:12"
+        "src": "31:23:13"
       },
       {
         "abstract": true,
@@ -394,15 +394,15 @@
         "contractDependencies": [],
         "contractKind": "contract",
         "documentation": {
-          "id": 1384,
+          "id": 1536,
           "nodeType": "StructuredDocumentation",
-          "src": "56:165:12",
+          "src": "56:165:13",
           "text": " a contract must implement this interface in order to support relayed transaction.\n It is better to inherit the BaseRelayRecipient as its implementation."
         },
         "fullyImplemented": false,
-        "id": 1410,
+        "id": 1562,
         "linearizedBaseContracts": [
-          1410
+          1562
         ],
         "name": "IRelayRecipient",
         "nodeType": "ContractDefinition",
@@ -410,13 +410,13 @@
           {
             "body": null,
             "documentation": {
-              "id": 1385,
+              "id": 1537,
               "nodeType": "StructuredDocumentation",
-              "src": "263:203:12",
+              "src": "263:203:13",
               "text": " return if the forwarder is trusted to forward relayed transactions to us.\n the forwarder is required to verify the sender's signature, and verify\n the call is not a replay."
             },
             "functionSelector": "572b6c05",
-            "id": 1392,
+            "id": 1544,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -424,18 +424,18 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1388,
+              "id": 1540,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1387,
+                  "id": 1539,
                   "mutability": "mutable",
                   "name": "forwarder",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1392,
-                  "src": "499:17:12",
+                  "scope": 1544,
+                  "src": "499:17:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -443,10 +443,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 1386,
+                    "id": 1538,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "499:7:12",
+                    "src": "499:7:13",
                     "stateMutability": "nonpayable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
@@ -457,21 +457,21 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "498:19:12"
+              "src": "498:19:13"
             },
             "returnParameters": {
-              "id": 1391,
+              "id": 1543,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1390,
+                  "id": 1542,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1392,
-                  "src": "546:4:12",
+                  "scope": 1544,
+                  "src": "546:4:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -479,10 +479,10 @@
                     "typeString": "bool"
                   },
                   "typeName": {
-                    "id": 1389,
+                    "id": 1541,
                     "name": "bool",
                     "nodeType": "ElementaryTypeName",
-                    "src": "546:4:12",
+                    "src": "546:4:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bool",
                       "typeString": "bool"
@@ -492,10 +492,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "545:6:12"
+              "src": "545:6:13"
             },
-            "scope": 1410,
-            "src": "471:81:12",
+            "scope": 1562,
+            "src": "471:81:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "public"
@@ -503,12 +503,12 @@
           {
             "body": null,
             "documentation": {
-              "id": 1393,
+              "id": 1545,
               "nodeType": "StructuredDocumentation",
-              "src": "558:290:12",
+              "src": "558:290:13",
               "text": " return the sender of this call.\n if the call came through our trusted forwarder, then the real sender is appended as the last 20 bytes\n of the msg.data.\n otherwise, return `msg.sender`\n should be used in the contract anywhere instead of msg.sender"
             },
-            "id": 1398,
+            "id": 1550,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -516,24 +516,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1394,
+              "id": 1546,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "872:2:12"
+              "src": "872:2:13"
             },
             "returnParameters": {
-              "id": 1397,
+              "id": 1549,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1396,
+                  "id": 1548,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1398,
-                  "src": "906:15:12",
+                  "scope": 1550,
+                  "src": "906:15:13",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -541,10 +541,10 @@
                     "typeString": "address payable"
                   },
                   "typeName": {
-                    "id": 1395,
+                    "id": 1547,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "906:15:12",
+                    "src": "906:15:13",
                     "stateMutability": "payable",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address_payable",
@@ -555,10 +555,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "905:17:12"
+              "src": "905:17:13"
             },
-            "scope": 1410,
-            "src": "853:70:12",
+            "scope": 1562,
+            "src": "853:70:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
@@ -566,12 +566,12 @@
           {
             "body": null,
             "documentation": {
-              "id": 1399,
+              "id": 1551,
               "nodeType": "StructuredDocumentation",
-              "src": "929:409:12",
+              "src": "929:409:13",
               "text": " return the msg.data of this call.\n if the call came through our trusted forwarder, then the real sender was appended as the last 20 bytes\n of the msg.data - so this method will strip those 20 bytes off.\n otherwise, return `msg.data`\n should be used in the contract instead of msg.data, where the difference matters (e.g. when explicitly\n signing or hashing the"
             },
-            "id": 1404,
+            "id": 1556,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -579,24 +579,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1400,
+              "id": 1552,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1360:2:12"
+              "src": "1360:2:13"
             },
             "returnParameters": {
-              "id": 1403,
+              "id": 1555,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1402,
+                  "id": 1554,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1404,
-                  "src": "1394:12:12",
+                  "scope": 1556,
+                  "src": "1394:12:13",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -604,10 +604,10 @@
                     "typeString": "bytes"
                   },
                   "typeName": {
-                    "id": 1401,
+                    "id": 1553,
                     "name": "bytes",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1394:5:12",
+                    "src": "1394:5:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes_storage_ptr",
                       "typeString": "bytes"
@@ -617,10 +617,10 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1393:14:12"
+              "src": "1393:14:13"
             },
-            "scope": 1410,
-            "src": "1343:65:12",
+            "scope": 1562,
+            "src": "1343:65:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "internal"
@@ -629,7 +629,7 @@
             "body": null,
             "documentation": null,
             "functionSelector": "486ff0cd",
-            "id": 1409,
+            "id": 1561,
             "implemented": false,
             "kind": "function",
             "modifiers": [],
@@ -637,24 +637,24 @@
             "nodeType": "FunctionDefinition",
             "overrides": null,
             "parameters": {
-              "id": 1405,
+              "id": 1557,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "1439:2:12"
+              "src": "1439:2:13"
             },
             "returnParameters": {
-              "id": 1408,
+              "id": 1560,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1407,
+                  "id": 1559,
                   "mutability": "mutable",
                   "name": "",
                   "nodeType": "VariableDeclaration",
                   "overrides": null,
-                  "scope": 1409,
-                  "src": "1473:13:12",
+                  "scope": 1561,
+                  "src": "1473:13:13",
                   "stateVariable": false,
                   "storageLocation": "memory",
                   "typeDescriptions": {
@@ -662,10 +662,10 @@
                     "typeString": "string"
                   },
                   "typeName": {
-                    "id": 1406,
+                    "id": 1558,
                     "name": "string",
                     "nodeType": "ElementaryTypeName",
-                    "src": "1473:6:12",
+                    "src": "1473:6:13",
                     "typeDescriptions": {
                       "typeIdentifier": "t_string_storage_ptr",
                       "typeString": "string"
@@ -675,28 +675,28 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "1472:15:12"
+              "src": "1472:15:13"
             },
-            "scope": 1410,
-            "src": "1414:74:12",
+            "scope": 1562,
+            "src": "1414:74:13",
             "stateMutability": "view",
             "virtual": true,
             "visibility": "external"
           }
         ],
-        "scope": 1411,
-        "src": "222:1268:12"
+        "scope": 1563,
+        "src": "222:1268:13"
       }
     ],
-    "src": "31:1460:12"
+    "src": "31:1460:13"
   },
   "compiler": {
     "name": "solc",
     "version": "0.6.12+commit.27d51765.Emscripten.clang"
   },
   "networks": {},
-  "schemaVersion": "3.3.1",
-  "updatedAt": "2020-10-28T15:20:59.044Z",
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-12-29T09:50:58.810Z",
   "devdoc": {
     "kind": "dev",
     "methods": {},

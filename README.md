@@ -6,7 +6,7 @@
 |[Solidity](solidity_examples)      |[Token](token_examples)            | [ZKSync](layer2_zksync) 
 |[RPC](rpc)                         |[ENS](ens_examples) 
 |[Web3js](web3js)                   |[Gasstation](gsn_examples)
-|[Web3js_browser](web3js_browser)   |[MetaMask Snaps](snaps_example)
+|[Web3js_browser](web3js_browser)   |[MetaMask Snaps](snaps_examples)
 |[Truffle](truffle_examples)        |[3Box](3box_examples)
 |[Pattern](pattern_examples)        |[Oracle](oracle_examples)
 |[Test](test_examples)              |[TheGraph](thegraph_examples) 

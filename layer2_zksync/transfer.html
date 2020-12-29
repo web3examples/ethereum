@@ -30,7 +30,7 @@
             amount: ethers.utils.parseEther("0.001"), 
             fee:    ethers.utils.parseEther("0.001") 
         }
-        log(`Sending ${ethers.utils.formatEther(transfer.amount)} ETH to: ${transfer.to}`)
+        log(`Sending ${ethers.utils.formatEther(transfer.amount)} ETH<br>from: ${accounts[0]}<br>to: ${transfer.to}`)
         const transferTransaction  = await SyncWallet.syncTransfer(transfer)        
         const transactionReceipt   = await transferTransaction.awaitReceipt();
         log(`L2 ETH balance: ${ethers.utils.formatEther(await SyncWallet.getBalance("ETH" ))}`);

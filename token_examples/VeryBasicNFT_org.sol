@@ -1,7 +1,6 @@
-// SPDX-License-Identifier: MIT
 // based on https://github.com/ConsenSys/artifaqt/blob/master/contract/contracts/eip721
 // Use for educational purposes only // without approval functions
-pragma solidity ^0.8.0;
+pragma solidity ^0.5.12;
 
 contract EIP721 {  
     event Transfer(address indexed _from, address indexed _to, uint256 indexed _tokenId);
@@ -27,10 +26,10 @@ contract EIP721 {
     bytes4 internal constant ONERC721RECEIVED_FUNCTION_SIGNATURE = 0x150b7a02;
 
     modifier tokenExists(uint256 _tokenId) {
-        require(ownerOfToken[_tokenId] != address(0));
+        require(uint256(ownerOfToken[_tokenId]) != 0);
         _;
     }
-    constructor (string memory _name, string memory _symbol) {
+    constructor (string memory _name, string memory _symbol) public {
         admin = msg.sender;
         name = _name;
         symbol = _symbol;
@@ -44,7 +43,7 @@ contract EIP721 {
     } 
     modifier allowedToTransfer(address _from, address _to, uint256 _tokenId) {
         require(ownerOfToken[_tokenId] == _from);
-        require(_to != address(0)); //not allowed to burn in transfer method
+        require(uint256(_to) != 0); //not allowed to burn in transfer method
         _;
     }
     function transferFrom(address _from, address _to, uint256 _tokenId) public payable
@@ -89,13 +88,13 @@ contract EIP721 {
         return ownedTokens[_owner][_index];
     }
     function balanceOf(address _owner) external view returns (uint256) {
-        require(_owner != address(0));
+        require(uint256(_owner) != 0);
         return ownedTokens[_owner].length;
     }
     function tokenURI(uint256 _tokenId) external view returns (string memory) {
         return tokenURIs[_tokenId];
     }
-    function supportsInterface(bytes4 interfaceID) external pure returns (bool) {
+    function supportsInterface(bytes4 interfaceID) external view returns (bool) {
         if (interfaceID == ERC721_BASE_INTERFACE_SIGNATURE ||
         interfaceID == ERC721_METADATA_INTERFACE_SIGNATURE ||
         interfaceID == ERC721_ENUMERABLE_INTERFACE_SIGNATURE) {
@@ -119,15 +118,14 @@ contract EIP721 {
         uint256 allTokensLength = allTokens.length;
         allTokens[allIndex] = allTokens[allTokensLength - 1];
         allTokensIndex[allTokens[allTokensLength-1]] = allIndex;
-        
-        allTokens.pop();
-        
+        delete allTokens[allTokensLength-1];
+        allTokens.length -= 1;
         uint256 ownerIndex = ownedTokensIndex[_tokenId];
         uint256 ownerLength = ownedTokens[_from].length;
         ownedTokens[_from][ownerIndex] = ownedTokens[_from][ownerLength-1];
         ownedTokensIndex[ownedTokens[_from][ownerLength-1]] = ownerIndex;
-        ownedTokens[_from].pop();
-        
+        delete ownedTokens[_from][ownerLength-1];
+        ownedTokens[_from].length -= 1;
         delete ownerOfToken[_tokenId];
     }
     function createToken(address _minter) public {

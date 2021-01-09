@@ -3,11 +3,13 @@ package-lock.json
 *.bak
 .secret
 .infura
+.etherscan
 old/
 *.bin
 a.txt
 web3js/package.json
-
+.*
 *.log
 token_examples/ERC20TruffleOpenZeppelin/.etherscan
+pattern_examples/Verify/.etherscan
 pattern_examples/Verify/.etherscan

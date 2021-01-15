@@ -16,7 +16,7 @@ Web3.js examples in browser
 | ..............   
 | E2E Test Dapp                 | [E2E_Test_Dapp]       | [E2E_Test_Dapp_gh]
 | Mini casino: snippet          | [casino_snippet]      | [casino_snippet_gh]       | [casino_sol_gh]
-| Mini casino: full version     | [casino]              | [casino1_gh]              
+| Mini casino: full version     | [casino]              | [casino_gh]              
 | Location snippet              | [location_snip]       | [location_snip_gh]        | [location_sol_gh]  
 | Log your location (check-in)  | [location]            | [location_gh]             
 | List location                 | [listlocation]        | [listlocation_gh]         

@@ -1,6 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Load in remix: remix.loadurl("https://github.com/web3examples/ethereum/solidity_examples/Casino.sol")
-pragma solidity >=0.5.0 <0.9.0;
+pragma solidity >=0.7.0 <0.9.0;
 
 /// @author Gerard Persoon
 /// @title A simple casino

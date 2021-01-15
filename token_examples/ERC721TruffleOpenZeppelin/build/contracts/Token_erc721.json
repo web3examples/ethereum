@@ -1045,8 +1045,7 @@
             }
           ],
           "name": "Approval",
-          "type": "event",
-          "signature": "0x8c5be1e5ebec7d5bd14f71427d1e84f3dd0314c0f7b2291e5b200ac8c7c3b925"
+          "type": "event"
         },
         "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31": {
           "anonymous": false,
@@ -1071,8 +1070,7 @@
             }
           ],
           "name": "ApprovalForAll",
-          "type": "event",
-          "signature": "0x17307eab39ab6107e8899845ad3d59bd9653f200f220920489ca2b5937696c31"
+          "type": "event"
         },
         "0x6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f6": {
           "anonymous": false,
@@ -1085,8 +1083,7 @@
             }
           ],
           "name": "MinterAdded",
-          "type": "event",
-          "signature": "0x6ae172837ea30b801fbfcdd4108aa1d5bf8ff775444fd70256b44e6bf3dfc3f6"
+          "type": "event"
         },
         "0xe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb66692": {
           "anonymous": false,
@@ -1099,8 +1096,7 @@
             }
           ],
           "name": "MinterRemoved",
-          "type": "event",
-          "signature": "0xe94479a9f7e1952cc78f2d6baab678adc1b772d936c6583def489e524cb66692"
+          "type": "event"
         },
         "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef": {
           "anonymous": false,
@@ -1125,17 +1121,16 @@
             }
           ],
           "name": "Transfer",
-          "type": "event",
-          "signature": "0xddf252ad1be2c89b69c2b068fc378daa952ba7f163c4a11628f55a4df523b3ef"
+          "type": "event"
         }
       },
       "links": {},
-      "address": "0x3C30a97A49EA505413cb9759fD55d297314ffc17",
-      "transactionHash": "0x088ccc9551205c05a33b047890d4ea196924c32b53f796c520d9ff3d4fb2e5dd"
+      "address": "0xAdBfA1e20D66dB42E47a476caD1E3B7A1F089456",
+      "transactionHash": "0xfe87eb2f2dbf81598f3b1d928406661a49dabd6fd3f8de0de50a39098835377d"
     }
   },
-  "schemaVersion": "3.0.19",
-  "updatedAt": "2019-12-14T13:40:07.621Z",
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2021-01-15T10:39:36.163Z",
   "networkType": "ethereum",
   "devdoc": {
     "methods": {

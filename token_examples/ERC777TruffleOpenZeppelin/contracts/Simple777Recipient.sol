@@ -1,4 +1,5 @@
-pragma solidity ^0.5.0;
+// SPDX-License-Identifier: MIT
+pragma solidity >=0.7.0 <0.8.0;
 
 import "@openzeppelin/contracts/token/ERC777/IERC777.sol";
 import "@openzeppelin/contracts/introspection/IERC1820Registry.sol";
@@ -17,7 +18,7 @@ contract Simple777Recipient is IERC777Recipient {
 
     event DoneStuff(address operator, address from, address to, uint256 amount, bytes userData, bytes operatorData);
 
-    constructor (address token) public {
+    constructor (address token) {
         _token = IERC777(token);
 
         _erc1820.setInterfaceImplementer(address(this), TOKENS_RECIPIENT_INTERFACE_HASH, address(this));
@@ -30,7 +31,7 @@ contract Simple777Recipient is IERC777Recipient {
         uint256 amount,
         bytes calldata userData,
         bytes calldata operatorData
-    ) external {
+    ) external override {
         require(msg.sender == address(_token), "Simple777Recipient: Invalid token");
 
         // do stuff

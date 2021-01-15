@@ -5,7 +5,7 @@ Several Token Examples. ([Up](..) [Home](..\..))
 | Demo application | VeryBasic Sol        | OpenZeppelin Remix                    | OpenZeppelin Truffle          | Website with demo     | Website github
 | ---------        | -----                | -----                                 | ----------------              | ----                  |
 | ERC20            | [verybasictoken_gh]  | [erc20remix_gh]                       | [erc20truffleoz_gh]           | [verybasictokenicon]  | [verybasictokenicon_gh]
-| ERC721           | [verybasicnft_gh]    | [erc721remix_gh]<br>[erc721remix2_gh] | [erc721truffleoz_gh] 
+| ERC721           | [verybasicnft_gh]    | [erc721remix1_gh]<br>[erc721remix2_gh] | [erc721truffleoz_gh] 
 | ERC777           |                      |                                       | [erc777truffleoz_gh]<br>[erc777callback_gh]
 
 [verybasictoken_gh]:            https://github.com/web3examples/ethereum/blob/master/token_examples/VeryBasicToken.sol

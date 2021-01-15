@@ -14,7 +14,7 @@
         async function f() { 
             web3 = new Web3(Web3.givenProvider); // provider from metamask         
             var acts=await web3.eth.requestAccounts().catch(x=>log(x.message));            
-            const contractCasino="0xfDC02989Ba838da44aCb16D6d9fB393DfEe3AFC5"
+            const contractCasino="0x96d04CDF71cDA085CE53d8652B50D594CFB59af3"
             const CasinoABI=[{    "constant": false,
                                   "inputs": [],
                                   "name": "betAndWin",

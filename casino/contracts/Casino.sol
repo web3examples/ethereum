@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 // Load in remix: remix.loadurl("https://github.com/web3examples/ethereum/solidity_examples/Casino.sol")
+// Carefull with gas-estimates: due to random this doesn''t allways work
 pragma solidity >=0.7.0 <0.9.0;
 
 /// @author Gerard Persoon

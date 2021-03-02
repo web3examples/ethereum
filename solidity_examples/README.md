@@ -118,4 +118,6 @@ Also see: [Oracle Examples](..\oracle_examples)
 
 | Demo application       | Github
 | ---------              | -----
-| Automated Market Maker |  https://github.com/web3examples/ethereum/blob/master/solidity_examples/amm.sol
+| Automated Market Maker | [amm]
+
+[amm]:  https://github.com/web3examples/ethereum/blob/master/solidity_examples/amm.sol

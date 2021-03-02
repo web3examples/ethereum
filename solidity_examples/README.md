@@ -114,3 +114,8 @@ Also see: [Oracle Examples](..\oracle_examples)
 [w3e_faucet]:        http://web3examples.com/ethereum/faucet
 [w3e_faucet_github]: https://github.com/web3examples/ethereum/tree/master/faucet
 
+# Solidity 8 - Remix
+
+| Demo application       | Github
+| ---------              | -----
+| Automated Market Maker |  https://github.com/web3examples/ethereum/blob/master/solidity_examples/amm.sol

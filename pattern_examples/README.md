@@ -13,7 +13,7 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 | Send Transfer Call    | [sendtransfercall]
 | Verify Source         | [verifysource]
 | Safemath underflow    | [safemath_underflow]
-| Solidity 8 underflow  | [sol8_underflow] 
+| Solidity 8.1 underflow  | [sol81_underflow] 
 
 [oz_db1]:               https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug1.sol
 [oz_db2]:               https://github.com/web3examples/ethereum/tree/master/pattern_examples/Upgrade/contracts/Debug2.sol
@@ -27,4 +27,4 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [sendtransfercall]:     https://github.com/web3examples/ethereum/blob/master/pattern_examples/sendtransfercall.sol
 [verifysource]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/verifysource.sol
 [safemath_underflow]:   https://github.com/web3examples/ethereum/blob/master/pattern_examples/safemath_underflow.sol
-[sol8_underflow]:       https://github.com/web3examples/ethereum/blob/master/pattern_examples/sol8_underflow.sol
+[sol81_underflow]:       https://github.com/web3examples/ethereum/blob/master/pattern_examples/sol81_underflow.sol

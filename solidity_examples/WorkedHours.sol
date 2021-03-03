@@ -26,7 +26,7 @@ contract RegisterHours {
     function CheckMyTotalHours() public view returns (uint) { 
         uint totalhours=0;
         for (uint i=0; i< RegisteredHoursArray[msg.sender].length; i++) { // a for loop has risks for higher number of records, ok for a demo
-             RegHour memory topay=RegisteredHoursArray[msg.sender][RegisteredHoursArray[msg.sender].length-1];
+             RegHour memory topay=RegisteredHoursArray[msg.sender][i];
              totalhours +=topay.workedhours;
         }
         return totalhours;

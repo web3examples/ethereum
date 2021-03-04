@@ -34,7 +34,7 @@ Metamask patterns
 
 | Pattern              | Link       | Github        
 | ---------            | -----      | -- 
-| Add token icon       | [AddIcon]  | [AddIcon_gh]: 
+| Add token icon       | [AddIcon]  | [AddIcon_gh]
 | Add and switch chain | [AddChain] | [AddChain_gh]
 
 [AddIcon]:     https://web3examples.com/ethereum/pattern_examples/AddIcon.html

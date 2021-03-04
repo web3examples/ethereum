@@ -3,7 +3,7 @@
 Several Pattern Examples. ([Up](..) [Home](..\..))
 
 | Demo application      | Solidity Github        | Deploy Github
-| ---------             | -----
+| ---------             | -----                  |-- 
 | Openzeppelin Upgrades | [oz_db1]<br>[oz_db2]  |   [oz_deploy]<br>[oz_upgrade]
 | Proxy Storage         | [proxy_storage]
 | Modifiers             | [modifiers]
@@ -27,4 +27,19 @@ Several Pattern Examples. ([Up](..) [Home](..\..))
 [sendtransfercall]:     https://github.com/web3examples/ethereum/blob/master/pattern_examples/sendtransfercall.sol
 [verifysource]:         https://github.com/web3examples/ethereum/tree/master/pattern_examples/verifysource.sol
 [safemath_underflow]:   https://github.com/web3examples/ethereum/blob/master/pattern_examples/safemath_underflow.sol
-[sol81_underflow]:       https://github.com/web3examples/ethereum/blob/master/pattern_examples/sol81_underflow.sol
+[sol81_underflow]:      https://github.com/web3examples/ethereum/blob/master/pattern_examples/sol81_underflow.sol
+
+
+Metamask patterns
+
+| Pattern              | Link       | Github        
+| ---------            | -----      | -- 
+| Add token icon       | [AddIcon]  | [AddIcon_gh]: 
+| Add and switch chain | [AddChain] | [AddChain_gh]
+
+[AddIcon]:     https://web3examples.com/ethereum/pattern_examples/AddIcon.html
+[AddChain]:    https://web3examples.com/ethereum/pattern_examples/AddChain.html
+
+[AddIcon_gh]:  https://github.com/web3examples/ethereum/blob/master/pattern_examples/AddIcon.html
+[AddChain_gh]: https://github.com/web3examples/ethereum/blob/master/pattern_examples/AddChain.html
+

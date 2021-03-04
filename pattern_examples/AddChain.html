@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
+    </head>
+    <body>
+        <h1>Add XDAI chain to MetaMask</h1>
+        <input type="button" value="xDai"  onclick="SwitchToxDai()"/>
+         <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        var param=
+          [
+            {
+              "chainId": "0x64",
+              "chainName": "xDAI Chain",
+              "rpcUrls": ["https://dai.poa.network"],
+              "iconUrls": [
+                "https://xdaichain.com/fake/example/url/xdai.svg",
+                "https://xdaichain.com/fake/example/url/xdai.png"
+              ],
+              "nativeCurrency": {
+                "name": "xDAI",
+                "symbol": "xDAI",
+                "decimals": 18
+              }
+            }
+          ]
+        function SwitchToxDai() {
+            ethereum.request({method: 'wallet_addEthereumChain',params: param }) ;
+         }
+        async function f() { 
+            web3 = new Web3(Web3.givenProvider); // provider from metamask         
+            await newChain()
+            await newActs()
+            ethereum.on('accountsChanged', newActs)
+            ethereum.on('chainChanged',    newChain);
+            ethereum.on('networkChanged',  newChain);  // depricated / still used in metamask mobile
+            ethereum.on('chainIdChanged',  newChain);  // depricated / temp workaround
+            ethereum.autoRefreshOnNetworkChange = false; // temp workaround  // doesn't work on metamask mobile
+           
+                        
+            var result=await web3.eth.requestAccounts().catch(x=>{log(x.message);console.log(x);});
+            
+            async function newChain(newchainId) {
+                var chainId=await web3.eth.getChainId();
+                var networkId=await web3.eth.net.getId();
+                log(`We are on chain: ${chainId} and network ${networkId}`);
+            }
+            async function newActs() { 
+                var acts=await web3.eth.getAccounts()
+                log(`We have accounts: ${JSON.stringify(acts)}`);
+            }
+        }
+        window.addEventListener('DOMContentLoaded', f);  
+        </script>
+    </body>
+</html>

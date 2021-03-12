@@ -5,22 +5,23 @@
         <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
     </head>
     <body>
-        <h1>Add XDAI chain to MetaMask</h1>
-        <input type="button" value="xDai"  onclick="SwitchToxDai()"/>
+        <h1>Add Chains to MetaMask</h1>
+        Also see <a href="https://chainlist.org">chainlist.org</a><br>
+        <input type="button" value="xDai"  onclick="AddChain(paramxdai)"/>
+        <input type="button" value="Fantom"  onclick="AddChain(paramfantom)"/>
          <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
         function log(logstr) {   
             document.getElementById("log").innerHTML +=logstr+"\n";
         }
-        var param=
+        var paramxdai=
           [
             {
               "chainId": "0x64",
               "chainName": "xDAI Chain",
               "rpcUrls": ["https://dai.poa.network"],
               "iconUrls": [
-                "https://xdaichain.com/fake/example/url/xdai.svg",
-                "https://xdaichain.com/fake/example/url/xdai.png"
+                "https://gblobscdn.gitbook.com/spaces%2F-Lpi9AHj62wscNlQjI-l%2Favatar.png?alt=media",
               ],
               "nativeCurrency": {
                 "name": "xDAI",
@@ -29,7 +30,28 @@
               }
             }
           ]
-        function SwitchToxDai() {
+          
+        var paramfantom=
+          [
+            {
+              "chainId": "0xFA",
+              "chainName": "Fantom Opera",
+              "rpcUrls": ["https://rpcapi.fantom.network/1"],
+              "iconUrls": [ "https://fantom.foundation/wp-content/themes/fantom-web/images/fantom_logo_white_new.svg"
+              ],
+              "nativeCurrency": {
+                "name": "ftm",
+                "symbol": "FTM",
+                "decimals": 18
+              },
+              "blockExplorerUrls": [
+                "https://ftmscan.com/"
+              ]
+            }
+          ]        
+          
+          
+        function AddChain(param) {
             ethereum.request({method: 'wallet_addEthereumChain',params: param }) ;
          }
         async function f() { 

@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 // Store the NFT json files at https://jsonkeeper.com/ and provide the suffix as input for CreateNFT
 pragma solidity ^0.8.0;
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/master/contracts/token/ERC721/ERC721.sol";
+import "https://github.com/OpenZeppelin/openzeppelin-contracts/contracts/token/ERC721/ERC721.sol";
 
 contract TestNFT is ERC721 {
 

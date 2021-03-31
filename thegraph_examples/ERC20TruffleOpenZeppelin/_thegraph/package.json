@@ -1,0 +1,16 @@
+{
+  "name": "titantoken",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ koiosonline/titantoken",
+    "create-local": "graph create --node http://localhost:8020/ gpersoon/titantoken",
+    "remove-local": "graph remove --node http://localhost:8020/ gpersoon/titantoken",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 gpersoon/titantoken"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.19.0",
+    "@graphprotocol/graph-ts": "0.19.0"
+  }
+}

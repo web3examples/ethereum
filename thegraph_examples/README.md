@@ -14,3 +14,18 @@ TheGraph examples
 [flashweb]:          https://web3examples.com/ethereum/thegraph_examples/flash.html
 [ensweb_gh]:         https://github.com/web3examples/ethereum/blob/master/thegraph_examples/ens.html
 [ensweb]:            https://web3examples.com/ethereum/thegraph_examples/ens.html
+
+
+# Deploy subgraph
+
+| Name            | dApp        | Graph Explorer | Solidity   | subraph.yml | schema.graphql | mapppings.ts | github
+| ----            | -           | ---            | --         |  --         | -              | -            | -
+| ERC20Token      | [erc20html] | [erc20exp]     | [erc20sol] | [erc20map]  |[erc20graphql] | [erc20yaml]   | [erc20gh]
+
+[erc20html]: https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/ShowERC20Token.html
+[erc20exp]:  https://thegraph.com/explorer/subgraph/web3examples/erc20token
+[erc20sol]:     https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/contracts/ERC20Token.sol
+[erc20map]:     https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/ERC20Token/src/mappings.ts
+[erc20graphql]: https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/schema.graphql
+[erc20yaml]:    https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/subgraph.yaml
+[erc20gh]:      https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/

@@ -1,0 +1,34 @@
+<!-- https://thegraph.com/explorer/subgraph/web3examples/erc20token -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Titan tokens owners</h1>
+        <pre id="log" style="width:100%;height:200px"></pre>
+        <script type="text/javascript">
+        function log(logstr) {   
+            document.getElementById("log").innerHTML +=logstr+"\n";
+        }
+        async function f() { 
+            const query=`
+                {
+                  users(first:5) {
+                    id
+                    address
+                    balance
+                  }
+                } 
+                  `
+            const URL = 'https://api.thegraph.com/subgraphs/name/web3examples/erc20token';             
+            let body = JSON.stringify({query: query});
+            var res=await fetch(URL, {
+                method: 'post',
+                headers: {'Content-Type': 'application/json'},
+                body: body
+            })
+            var json=await res.json()                   
+            log(JSON.stringify(json,null,'   ') )
+        }
+        f();
+        </script>        
+    </body>
+</html>

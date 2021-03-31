@@ -18,15 +18,15 @@ TheGraph examples
 
 # Deploy subgraph
 
-| Name            | dApp        | dApp github   | Graph Explorer | Solidity   | subraph.yml | schema.graphql | mapppings.ts | github
-| ----            | -           | ---           |-           | --         |  --         | -              | -            | -
-| ERC20Token      | [erc20html] | [erc20htmlgh] |[erc20exp]     | [erc20sol] | [erc20map]  |[erc20graphql] | [erc20yaml]   | [erc20gh]
+| Name            | dApp        | dApp github   | Graph Explorer | Solidity   | subgraph.yml | schema.graphql | mapppings.ts | github
+| ----            | -           | ---           |-               | --         |  --          | -              | -            | -
+| ERC20Token      | [erc20html] | [erc20htmlgh] |[erc20exp]      | [erc20sol] | [erc20map]   |[erc20graphql]  | [erc20yaml]   | [erc20gh]
 
 [erc20html]:    https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/ShowERC20Token.html
 [erc20htmlgh]:  https://web3examples.com/ethereum/thegraph_examples/ERC20TruffleOpenZeppelin/ShowERC20Token.html
 [erc20exp]:     https://thegraph.com/explorer/subgraph/web3examples/erc20token
 [erc20sol]:     https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/contracts/ERC20Token.sol
-[erc20map]:     https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/ERC20Token/src/mappings.ts
-[erc20graphql]: https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/schema.graphql
-[erc20yaml]:    https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/subgraph.yaml
+[erc20map]:     https://github.com/web3examples/ethereum/blob/master/thegraph_examples/ERC20TruffleOpenZeppelin/ERC20Token/src/mapping.ts
+[erc20graphql]: https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/ERC20Token/schema.graphql
+[erc20yaml]:    https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/ERC20Token/subgraph.yaml
 [erc20gh]:      https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/

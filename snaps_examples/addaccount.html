@@ -40,8 +40,8 @@
             method: 'wallet_enable',
             params: [{ wallet_plugin: { [url]: {} } }]
         }
-        log(`ethereum.send:<br>${JSON.stringify(cmd, null, 4)}`)
-        await ethereum.send(cmd)
+        log(`ethereum.sendAsync:<br>${JSON.stringify(cmd, null, 4)}`)
+        await ethereum.sendAsync(cmd)
     }
   </script>
 </html>

@@ -1,3 +1,13 @@
+<!--
+For standard chains you need wallet_switchEthereumChain 
+https://github.com/ethereum/EIPs/pull/3326
+https://ethereum-magicians.org/t/eip-3326-wallet-switchethereumchain/5471
+
+
+
+-->
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,6 +17,7 @@
     <body>
         <h1>Add Chains to MetaMask</h1>
         Also see <a href="https://chainlist.org">chainlist.org</a><br>
+        <input type="button" value="Rinkeby"  onclick="AddChain(paramrinkeby)"/>
         <input type="button" value="xDai"  onclick="AddChain(paramxdai)"/>
         <input type="button" value="Fantom"  onclick="AddChain(paramfantom)"/>
          <pre id="log" style="width:100%;height:200px"></pre>
@@ -36,7 +47,7 @@
             {
               "chainId": "0xFA",
               "chainName": "Fantom Opera",
-              "rpcUrls": ["https://rpcapi.fantom.network/1"],
+              "rpcUrls": ["https://rpc.fantom.network"],
               "iconUrls": [ "https://fantom.foundation/wp-content/themes/fantom-web/images/fantom_logo_white_new.svg"
               ],
               "nativeCurrency": {
@@ -49,6 +60,25 @@
               ]
             }
           ]        
+          
+          
+          var paramrinkeby=
+          [
+            {
+              "chainId": "0x4",
+              "chainName": "Rinkeby Network",
+              "rpcUrls": ["https://rinkeby.infura.io/v3/undefined"],
+              "nativeCurrency": {
+                "name": "rin",
+                "symbol": "RIN",
+                "decimals": 18
+              },
+              "blockExplorerUrls": [
+                "https://rinkeby.etherscan.io/"
+              ]
+            }
+          ]        
+          
           
           
         function AddChain(param) {

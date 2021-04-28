@@ -20,7 +20,7 @@ TheGraph examples
 
 | Name            | dApp        | dApp github   | Graph Explorer | Solidity   | subgraph.yml | schema.graphql | mapppings.ts | github
 | ----            | -           | ---           |-               | --         |  --          | -              | -            | -
-| ERC20Token      | [erc20html] | [erc20htmlgh] |[erc20exp]      | [erc20sol] | [erc20map]   |[erc20graphql]  | [erc20yaml]   | [erc20gh]
+| ERC20Token      | [erc20html] | [erc20htmlgh] |[erc20exp]      | [erc20sol] | [erc20yaml]  |[erc20graphql]  |  [erc20map]  | [erc20gh]
 
 [erc20html]:    https://github.com/web3examples/ethereum/tree/master/thegraph_examples/ERC20TruffleOpenZeppelin/ShowERC20Token.html
 [erc20htmlgh]:  https://web3examples.com/ethereum/thegraph_examples/ERC20TruffleOpenZeppelin/ShowERC20Token.html

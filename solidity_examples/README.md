@@ -116,8 +116,12 @@ Also see: [Oracle Examples](..\oracle_examples)
 
 # Solidity 8 - Remix
 
-| Demo application       | Github
-| ---------              | -----
-| Automated Market Maker | [amm]
+| Demo application              | Github
+| ---------                     | -----
+| Automated Market Maker        | [amm]
+| Error message in solidity 8.4 | [error]
 
-[amm]:  https://github.com/web3examples/ethereum/blob/master/solidity_examples/amm.sol
+[amm]:     https://github.com/web3examples/ethereum/blob/master/solidity_examples/amm.sol
+[error]:   https://github.com/web3examples/ethereum/blob/master/solidity_examples/sol84_error.sol
+
+

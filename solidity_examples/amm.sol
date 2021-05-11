@@ -10,16 +10,16 @@ contract Coins {
         CoinB[address(this)]=100000000; // Get some CoinB
     }
 
-    function ActBalance(address act) public view returns (uint,uint){
+    function ActBalance(address act) public view returns (uint ABal,uint BBal){
         return ( CoinA[act],CoinB[act] );
     }
     
-    function AMMBalance() public view returns (uint,uint,uint){
+    function AMMBalance() public view returns (uint ABal,uint BBal,uint AMMBal){
         address act=address(this);
         return ( CoinA[act],CoinB[act], CoinA[act]*CoinB[act]  );
     }
     
-    function MyBalance() public view returns (uint,uint){
+    function MyBalance() public view returns (uint ABal,uint BBal){
         return   ActBalance(msg.sender);
     }
     
@@ -27,7 +27,7 @@ contract Coins {
         CoinA[msg.sender]  += amountA;
     }
     
-    function ExchangeAforB(uint amountA) public returns (uint) {
+    function ExchangeAforB(uint amountA) public returns (uint BAmount) {
         uint mult=CoinA[address(this)] * CoinB[address(this)];
         CoinA[address(this)] += amountA;
         CoinA[msg.sender]    -= amountA;

@@ -1,5 +1,4 @@
-// Deployed on Ropsten 0x2bD819440B8621214A17e7BCFD70107bBE0A28fC
-pragma solidity ^0.5.11;
+pragma solidity ^0.8.7;
 
 contract SetGetEmit {
     uint8 public storedData;

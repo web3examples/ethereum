@@ -6,7 +6,7 @@
         <script src="https://unpkg.com/web3@latest/dist/web3.min.js"></script> 
     </head>
     <body>
-        <h1>GetSetEmit (select Ropsten)</h1>
+        <h1>GetSetEmit (select Goerli)</h1>
         <pre id="log" style="width:100%;height:200px"></pre>
         <script type="text/javascript">
         function log(logstr) {   
@@ -100,7 +100,7 @@
             log(`Here are the accounts: ${JSON.stringify(acts)}`);
          
             // Connect contract
-            var GetSetEmitAddress="0x2bD819440B8621214A17e7BCFD70107bBE0A28fC"; // Ropsten address
+            var GetSetEmitAddress="0x2e9cC4Cd27640e820f272F0272a09CAe78AA0FE2"; // Goerli address
             var GetSetEmitContract=new web3.eth.Contract(GetSetEmitABI, GetSetEmitAddress);
          
             // Get        

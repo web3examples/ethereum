@@ -1,10 +1,18 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.7.0;
+pragma solidity ^0.8.0;
 
 contract Child {
     string public name="Child";
+    
+    mapping(uint => uint) public Map;
+    
+    function fillmem(uint start, uint len) public {
+        for (uint i=start;i< start+len;i++)
+           Map[i]=i;
+    }
+    
     function destroy() public  { // add security
-        selfdestruct(msg.sender);
+        selfdestruct(payable(msg.sender));
     }
 }
 
@@ -22,5 +30,9 @@ contract Factory {
     function Deploy() public returns (Child){
         deployed=new Child{salt: 0x00}(); // create2
         return deployed;
+    }
+    
+    function fillmem(uint start, uint len) public {
+        deployed.fillmem(start,len);
     }
 }

@@ -149,7 +149,7 @@ Get / Give: <input type="text" name="amount" id="amount" value="0"/>ETH<br>
         
         log(`My own address: ${await EtherscanLink("address",addressSelf)}`);
         log(`Faucet address: ${await EtherscanLink("address",addressFaucet)}`);
-        document.getElementById("amount").value = precise(0.1).toString();
+        document.getElementById("amount").value = precise(0.01).toString();
         updateBalances() 
    }     
    window.addEventListener('load', asyncloaded);       
